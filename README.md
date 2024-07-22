@@ -1,5 +1,10 @@
 # Generative AI with JavaScript
 
+## Contributor checklist
+
+> [!IMPORTANT]
+> Please read the [checklist](./checklist.md) here before recording videos
+
 ## Series outline
 
 - Series Introduction
