@@ -1,4 +1,4 @@
-# What's an LLM an what can it do?
+# What you need to know about LLMs
 
 ## Video description
 
