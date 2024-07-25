@@ -1,0 +1,8 @@
+{
+  "code-runner.executorMap": {
+    "typescript": "dotenv run -- tsx",
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveFileBeforeRun": true,
+  // "code-runner.showExecutionMessage": false,
+}
