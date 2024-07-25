@@ -15,18 +15,23 @@ const prompt = `
 Name: John Doe
 
 Assistant helps the user with questions about products for the company "Contoso Shoes".
-Be brief, answer with 2 lines max. Use a cheerful personalized answer.
-`;
+Be brief, answer with 2 lines max. Use a cheerful personalized answer with user's name.
 
-const question = `What shoes should I use for running?`
+## Question
+What shoes should I use for running?
+
+## Answer
+{
+  "text": "<answer>",
+  "product": "<product_name>"
+}
+`;
 
 const openai = new OpenAI();
 const chunks = await openai.chat.completions.create({
-  messages: [
-    { role: "system", content: prompt },
-    { role: "user", content: question }
-  ],
+  messages: [{ role: "user", content: prompt }],
   model: "gpt-4o-mini",
+  // response_format: { type: "json_object" },
   stream: true,
 });
 
