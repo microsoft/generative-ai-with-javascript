@@ -1,16 +1,9 @@
 {
   "name": "demos",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
+    "langchain": "^0.2.11",
     "openai": "^4.53.0",
     "tsx": "^4.16.2"
   }
