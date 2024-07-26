@@ -5,7 +5,10 @@
 TBD
 
 Links:
-- https://github.com/sinedied/ollama-javascript-playground/
+- AI JavaScript playground: https://aka.ms/ai/js/play
+- Phi-3 cookbook: https://aka.ms/phi3/cookbook
+- Azure OpenAI quickstart: https://aka.ms/ai/js/azure-quickstart
 
 ## Script
 
+TBD

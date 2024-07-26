@@ -5,8 +5,11 @@
 TBD
 
 Links:
-- https://js.langchain.com/
-- https://github.com/Azure-Samples/langchainjs-quickstart-demo
+- LangChain.js docs: https://js.langchain.com
+- Ask YouTube API demo: https://aka.ms/ai/js/ask-yt
+- Create your AI chat with RAG workshop: https://aka.ms/ws/openai-rag-qdrant
 
 ## Script
+
+TBD
 

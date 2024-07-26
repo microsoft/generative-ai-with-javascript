@@ -5,8 +5,10 @@
 TBD
 
 Links:
-- https://github.com/microsoft/Phi-3CookBook/
-- https://ollama.com
+- Phi-3 cookbook: https://aka.ms/phi3/cookbook
+- AI JavaScript playground: https://aka.ms/ai/js/play
+- Ollama website: https://ollama.com
 
 ## Script
 
+TBD

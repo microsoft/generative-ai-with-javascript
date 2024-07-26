@@ -5,7 +5,10 @@
 TBD
 
 Links:
-- https://learn.microsoft.com/training/modules/apply-prompt-engineering-azure-openai/
+- Prompt engineering training: https://aka.ms/genai/prompts
+- Generative AI course: https://aka.ms/genai/beginners
+- Awesome GPTs prompts: https://github.com/ai-boost/awesome-prompts
+
 
 ## Script
 

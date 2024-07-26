@@ -5,8 +5,12 @@
 TBD
 
 Links:
-- https://github.com/Azure-Samples/serverless-chat-langchainjs
-- https://learn.microsoft.com/en-us/training/modules/use-own-data-azure-openai/
+- Serverless AI chat demo: https://aka.ms/ai/js/chat
+- Implement RAG training: https://aka.ms/genai/rag
+- Create your AI chat with RAG workshop: https://aka.ms/ws/openai-rag-qdrant
+
 
 ## Script
+
+TBD
 

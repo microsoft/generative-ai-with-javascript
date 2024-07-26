@@ -5,7 +5,10 @@
 TBD
 
 Links:
-- https://learn.microsoft.com/training/modules/embrace-responsible-ai-principles-practices/
+- Intro to LLMs training: https://aka.ms/genai/llms
+- Responsible AI training: https://aka.ms/genai/rai
+- Azure OpenAI quickstart: https://aka.ms/ai/js/azure-quickstart
 
 ## Script
 
+TBD
