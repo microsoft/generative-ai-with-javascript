@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "humao.rest-client"
+    "humao.rest-client",
+    "formulahendry.code-runner"
   ]
 }
