@@ -1,18 +1,5 @@
 # Generative AI with JavaScript
 
-## Task to be completed
-
-- [ ] Create a [./scripts](./scripts) for your video, following existing scripts template (see [example](./scripts/01-llm-basics.md))
-- [ ] Read the [checklist](./checklist.md) before recording your video
-- [ ] Record your videos (see [example](TODO ADD LINK TO RECORDING))
-- [ ] Edit your videos to remove blanks and mistakes and export 2 videos: one for your screen and one for your camera, both fullscreen with audio (for synchronization)
-- [ ] Upload your videos to this sharepoint folder: [Generative AI with JavaScript recordings](https://microsofteur-my.sharepoint.com/:f:/g/personal/yolasors_microsoft_com/EqirxuaHxI1Kp0TW9IbEsYkBIsFuyrcM8ltSzsoEtUqj7A?e=nFw2OT)
-
-## Contributor checklist
-
-> [!IMPORTANT]
-> Please read the [checklist](./checklist.md) here before recording videos
-
 ## Series outline
 
 - Series Introduction
