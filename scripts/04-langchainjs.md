@@ -4,5 +4,9 @@
 
 TBD
 
+Links:
+- https://js.langchain.com/
+- https://github.com/Azure-Samples/langchainjs-quickstart-demo
+
 ## Script
 

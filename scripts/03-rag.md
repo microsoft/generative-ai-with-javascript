@@ -4,5 +4,8 @@
 
 TBD
 
+Links:
+- https://github.com/Azure-Samples/serverless-chat-langchainjs
+
 ## Script
 

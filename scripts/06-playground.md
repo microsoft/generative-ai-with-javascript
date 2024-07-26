@@ -4,5 +4,8 @@
 
 TBD
 
+Links:
+- https://github.com/sinedied/ollama-javascript-playground/
+
 ## Script
 

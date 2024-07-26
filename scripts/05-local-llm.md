@@ -4,5 +4,9 @@
 
 TBD
 
+Links:
+- https://github.com/microsoft/Phi-3CookBook/
+- https://ollama.com
+
 ## Script
 
