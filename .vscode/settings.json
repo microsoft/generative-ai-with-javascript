@@ -1,7 +1,7 @@
 {
   "code-runner.executorMap": {
-    "typescript": "dotenv run -- tsx",
-    "javascript": "dotenv run -- node",
+    "typescript": "cd demos && dotenv run -- tsx",
+    "javascript": "cd demos && dotenv run -- node",
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.saveFileBeforeRun": true,
