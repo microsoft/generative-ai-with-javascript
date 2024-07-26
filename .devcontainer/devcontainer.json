@@ -1,0 +1,33 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+  "name": "ollama-js",
+
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/prulloac/devcontainer-features/ollama:1": {
+      "pull": "phi3,all-minilm:l6-v2"
+    }
+  },
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "formulahendry.code-runner",
+        "humao.rest-client"
+      ]
+    }
+  },
+
+  "postCreateCommand": "npm install -g ollamazure tsx; cd demos && npm install",
+
+  // Set minimal host requirements for the container.
+  "hostRequirements": {
+    "memory": "16gb"
+  }
+}
