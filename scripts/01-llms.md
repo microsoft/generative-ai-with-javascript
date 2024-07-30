@@ -4,7 +4,7 @@
 
 Learn the basics of Large Language Models (LLMs) before you start working with them! We'll explore what LLMs are, how they're created, and their practical applications. You'll learn about the different types of models, the concept of tokenization, the limits of LLMs and why Responsible AI is important.
 
-Resources links:
+Links:
 - Intro to LLMs training: https://aka.ms/genai/llms
 - Responsible AI training: https://aka.ms/genai/rai
 - Azure OpenAI quickstart: https://aka.ms/ai/js/azure-quickstart
