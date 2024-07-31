@@ -1,6 +1,6 @@
 # Demo - Essential prompt engineering techniques
 
-**Prerequisites**:
+## Prerequisites
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Node.js](https://nodejs.org/en/) v20+
 - [Code runner extension for VS Code](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
@@ -10,6 +10,52 @@ Before running the demo, make sure you have the packages installed by running th
 ```bash
 npm install
 ```
+
+You will also need either an [Azure OpenAI service resource](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) with a `gpt-4o` deployment, an [OpenAI key](https://platform.openai.com/api-keys), or [Ollama](https://ollama.com) installed and running locally.
+
+### Using OpenAI
+
+1. Create a `.env` file in the root of the repository with the following content:
+  ```
+  OPENAI_API_KEY=<your_openai_api_key>
+  ```
+2. Update the `demo.ts` code to change the following line:
+  ```typescript
+  import { AzureOpenAI as OpenAI } from "openai";
+  ```
+  to
+  ```typescript
+  import { OpenAI } from "openai";
+  ```
+
+### Using Ollama
+
+1. Download and install Ollama from [https://ollama.com](https://ollama.com).
+2. Download the `Phi3` model with the following command:
+  ```bash
+  ollama download phi3:medium
+  ```
+3. Make an alias for the Phi3 model named `gpt-4o` with the following command:
+  ```bash
+  ollama cp phi3:medium gpt-4o
+  ```
+4. Create a `.env` file in the root of the repository with the following content:
+  ```
+  OPENAI_BASE_URL=http://localhost:11434/v1
+  OPENAI_API_KEY=__dummy_for_ollama__
+  ```
+5. Update the `demo.ts` code to change the following line:
+  ```typescript
+  import { AzureOpenAI as OpenAI } from "openai";
+  ```
+  to
+  ```typescript
+  import { OpenAI } from "openai";
+  ```
+
+
+
+
 
 ## Scenario
 

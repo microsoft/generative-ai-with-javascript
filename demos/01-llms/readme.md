@@ -1,6 +1,6 @@
 # Demo - What you need to know about LLMs
 
-**Prerequisites**:
+## Prerequisites
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [GitHub Copilot extension for VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 - [GitHub Copilot](https://github.com/features/copilot) enabled
