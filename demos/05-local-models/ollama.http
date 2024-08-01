@@ -8,10 +8,10 @@ POST http://localhost:11434/api/generate
 Content-Type: application/json
 
 {
-  "prompt": "Once upon a time",
+  "prompt": "Translate in Japanese: Hello world",
   "model": "phi3",
   "options": {
-    "max_tokens": 20
+    "temperature": 0
   },
   "stream": false
 }
