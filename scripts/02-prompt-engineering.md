@@ -9,6 +9,10 @@ Links:
 - Generative AI course: https://aka.ms/genai/beginners
 - Awesome GPTs prompts: https://github.com/ai-boost/awesome-prompts
 
+Watch this series' playlist: https://aka.ms/genai-js
+All slides and code sample: https://aka.ms/genai-js/content
+
+#ai #prompt-engineering #openai
 
 ## Script
 

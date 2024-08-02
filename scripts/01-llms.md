@@ -9,6 +9,11 @@ Links:
 - Responsible AI training: https://aka.ms/genai/rai
 - Azure OpenAI quickstart: https://aka.ms/ai/js/azure-quickstart
 
+Watch this series' playlist: https://aka.ms/genai-js
+All slides and code sample: https://aka.ms/genai-js/content
+
+#ai #llm #openai
+
 ## Script
 
 Hey everyone, in this session, we'll review the essential things that you need to know when you're working with LLMs.
