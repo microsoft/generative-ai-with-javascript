@@ -1,5 +1,11 @@
 # Generative AI with JavaScript
 
+Feel free to reuse, adapt and share this content!
+
+
+
+
+
 ## Series outline
 
 - Series Introduction

@@ -2,7 +2,7 @@
 
 ## Description
 
-DUnlock the full potential of AI with practical prompt engineering tips! Learn how to craft precise, effective prompts that deliver accurate results. Perfect for developers aiming to elevate their AI projects!
+Unlock the full potential of AI with practical prompt engineering tips! Learn how to craft precise, effective prompts that deliver accurate results. Perfect for developers aiming to elevate their AI projects!
 
 Links:
 - Prompt engineering training: https://aka.ms/genai/prompts
@@ -16,7 +16,9 @@ All slides and code sample: https://aka.ms/genai-js/content
 
 ## Script
 
-In this session, we'll talk about practical prompt engineering techniques that you can use in your apps to get more effective prompts. Let's start by defining what exactly is prompt engineering. Prompt engineering is the process of designing and optimizing prompts to get better results from AI models. You'll often hear some fancy names when talking about prompt engineering techniques, but behind the fancy names, there are simple concepts that you can easily understand and apply.
+In this session, we'll talk about practical prompt engineering techniques that you can use in your apps to get more effective prompts.
+
+Let's start by defining what exactly is prompt engineering. Prompt engineering is the process of designing and optimizing prompts to get better results from AI models. You'll often hear some fancy names when talking about prompt engineering techniques, but behind the fancy names, there are simple concepts that you can easily understand and apply.
 
 Let's start with zero-shot. It simply means that you can generate results without providing any specific example, just using the general training data of the model. Here I'm trying to translate text from English to French. "Hello world" in French is "bonjour le monde." Because there were enough texts that were provided in the training material of the model, both in French and English, I don't need anything more to get the result that I want.
 

@@ -17,6 +17,7 @@ All slides and code sample: https://aka.ms/genai-js/content
 ## Script
 
 Welcome to this new session series!
+
 You've probably figured out that this series is all about generative AI but with a little twist. We'll talk about AI with a focus on using it to create applications using JavaScript.
 
 It might sound a bit strange to you to do AI with JavaScript. Everyone knows that the language for AI is Python, right? While it's true that Python is probably the best language to create, train, and fine-tune AI models, it's a different story when it's a matter of creating applications using these AI models. Most AI models are consumed using web APIs. That means that any language that can make HTTP calls can actually do AI.
