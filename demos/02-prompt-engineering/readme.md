@@ -53,10 +53,6 @@ You will also need either an [Azure OpenAI service resource](https://learn.micro
   import { OpenAI } from "openai";
   ```
 
-
-
-
-
 ## Scenario
 
 ### Preparation
