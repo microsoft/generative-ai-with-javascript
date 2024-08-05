@@ -4,7 +4,7 @@
 
 # Generative AI with JavaScript
 
-[![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/Azure-Samples/generative-ai-with-javascript?hide_repo_select=true&ref=main&quickstart=true)
+[![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/microsoft/generative-ai-with-javascript?hide_repo_select=true&ref=main&quickstart=true)
 [![Watch the video series](https://img.shields.io/badge/YouTube-d95652.svg?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=nYXSKs8qMY8&list=PLI7iePan8aH7FRDmefj-NAnoxM9V0USZm&index=3)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](LICENSE)
