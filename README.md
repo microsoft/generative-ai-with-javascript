@@ -50,7 +50,7 @@ New segments will be added to the series over time, so stay tuned!
 
 ## Run the demos
 
-Demos are located in the [demo/](demos/) folder are organized by sessions. Each session has a folder with a `readme.md` file that explains the demo, its prerequisites and how to run it.
+Demos are located in the [demo/](demos/) folder and organized by sessions. Each session has a folder with a `readme.md` file that explains the demo, its prerequisites and how to run it.
 
 ## Resources
 
