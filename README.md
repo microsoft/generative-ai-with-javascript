@@ -21,7 +21,7 @@ This repository contains the code samples and resources for the *Generative AI w
 
 [📺 Watch the video series](https://aka.ms/genai-js)
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > All the content in this repository is open-source, so feel free to **reuse it, adapt it to make it your own, and share it with others!**
 
 ### How to use this repository?
