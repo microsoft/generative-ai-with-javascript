@@ -36,15 +36,15 @@ It's organized as follows:
 
 ## Series outline
 
-| Session | Description | Slides | Demo | Script | Video |
-|---------|-------------|--------|------|--------|-------|
-| Series introduction | Introduces the series and its content. | [Slides](slides/00-intro.pptx) | - | [Script](sessions/00-intro.md) |  |
-| What you need to know about LLMs | Explores what are LLMs, how they're trained, how they work and their limits. | [Slides](slides/01-llms.pptx) | [Demo](demos/01-llms/) | [Script](sessions/01-llms.md) |  |
-| Essential product engineering techniques | Practical product engineering techniques to get the best out of AI models. | [Slides](slides/02-prompt-engineering.pptx) | [Demo](demos/02-prompt-engineering/) | [Script](sessions/02-prompt-engineering.md) |  |
-| Improve AI accuracy and reliability with RAG | Introduces Retrieval-Augmented Generation, to use AI with your own data. | [Slides](slides/03-rag.pptx) | [Demo](demos/03-rag/) | [Script](sessions/03-rag.md) |  |
-| Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [Slides](slides/04-langchainjs.pptx) | [Demo](demos/04-langchainjs/) | [Script](sessions/04-langchainjs.md) |  |
-| Run AI models on your local machine with Ollama | Shows how to integrate local AI models into your development workflow. | [Slides](slides/05-local-models.pptx) | [Demo](demos/05-local-models/) | [Script](sessions/05-local-models.md) |  |
-| Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [Slides](slides/06-playground.pptx) | [Demo](demos/06-playground/) | [Script](sessions/06-playground.md) |  |
+| # | Session | Description | Slides | Demo | Script | Video |
+|---|---------|-------------|--------|------|--------|-------|
+| 0 | Series introduction | Introduces the series and its content. | [Slides](slides/00-intro.pptx) | - | [Script](sessions/00-intro.md) |  |
+| 1 | What you need to know about LLMs | Explores what are LLMs, how they're trained, how they work and their limits. | [Slides](slides/01-llms.pptx) | [Demo](demos/01-llms/) | [Script](sessions/01-llms.md) |  |
+| 2 | Essential prompt engineering techniques | Practical prompt engineering techniques to get the best out of AI models. | [Slides](slides/02-prompt-engineering.pptx) | [Demo](demos/02-prompt-engineering/) | [Script](sessions/02-prompt-engineering.md) |  |
+| 3 | Improve AI accuracy and reliability with RAG | Introduces Retrieval-Augmented Generation, to use AI with your own data. | [Slides](slides/03-rag.pptx) | [Demo](demos/03-rag/) | [Script](sessions/03-rag.md) |  |
+| 4 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [Slides](slides/04-langchainjs.pptx) | [Demo](demos/04-langchainjs/) | [Script](sessions/04-langchainjs.md) |  |
+| 5 | Run AI models on your local machine with Ollama | Shows how to integrate local AI models into your development workflow. | [Slides](slides/05-local-models.pptx) | [Demo](demos/05-local-models/) | [Script](sessions/05-local-models.md) |  |
+| 6 | Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [Slides](slides/06-playground.pptx) | [Demo](demos/06-playground/) | [Script](sessions/06-playground.md) |  |
 
 New segments will be added to the series over time, so stay tuned!
 
