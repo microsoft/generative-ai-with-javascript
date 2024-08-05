@@ -17,7 +17,7 @@
 
 ## Overview
 
-This repository contains the code samples and resources for the **Generative AI with JavaScript** content series. The series covers the basics of generative AI and how to build AI applications using JavaScript, from local development to deployment on Azure. It includes demos, best practices, and tips to supercharge your AI skills!
+This repository contains the code samples and resources for the *Generative AI with JavaScript* content series. The series covers the basics of generative AI and how to build AI applications using JavaScript, from local development to deployment on Azure. It includes demos, best practices, and tips to supercharge your AI skills!
 
 [📺 Watch the video series](https://aka.ms/genai-js)
 
@@ -39,7 +39,7 @@ It's organized as follows:
 | Session | Description | Slides | Demo | Script | Video |
 |---------|-------------|--------|------|--------|-------|
 | Series introduction | Introduces the series and its content. | [Slides](slides/00-intro.pptx) | - | [Script](sessions/00-intro.md) |  |
-| What you need to know about LLMs | Explores what are LLMs, how they're trained, how they work and their limits. | [Slides](slides/01-basics.pptx) | [Demo](demos/01-llms/) | [Script](sessions/01-basics.md) |  |
+| What you need to know about LLMs | Explores what are LLMs, how they're trained, how they work and their limits. | [Slides](slides/01-llms.pptx) | [Demo](demos/01-llms/) | [Script](sessions/01-llms.md) |  |
 | Essential product engineering techniques | Practical product engineering techniques to get the best out of AI models. | [Slides](slides/02-prompt-engineering.pptx) | [Demo](demos/02-prompt-engineering/) | [Script](sessions/02-prompt-engineering.md) |  |
 | Improve AI accuracy and reliability with RAG | Introduces Retrieval-Augmented Generation, to use AI with your own data. | [Slides](slides/03-rag.pptx) | [Demo](demos/03-rag/) | [Script](sessions/03-rag.md) |  |
 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [Slides](slides/04-langchainjs.pptx) | [Demo](demos/04-langchainjs/) | [Script](sessions/04-langchainjs.md) |  |
