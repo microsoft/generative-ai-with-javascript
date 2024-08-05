@@ -1,4 +1,4 @@
-# Get started with AI for free using Phi3
+# Get started with AI for free using Phi-3
 
 ## Description
 
