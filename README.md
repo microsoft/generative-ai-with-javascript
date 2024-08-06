@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./logo.png" alt="" align="center" height="128" />
+<img src="./docs/images/logo.png" alt="" align="center" height="128" />
 
 # Generative AI with JavaScript
 
