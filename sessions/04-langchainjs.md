@@ -10,7 +10,7 @@ Links:
 - Create your AI chat with RAG workshop: https://aka.ms/ws/openai-rag-qdrant
 
 Watch this series' playlist: https://aka.ms/genai-js
-All slides and code sample: https://aka.ms/genai-js/content
+All slides and code samples: https://aka.ms/genai-js/content
 
 #ai #langchain #openai
 
