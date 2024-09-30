@@ -45,8 +45,10 @@ It's organized as follows:
 | 4 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [pptx](slides/04-langchainjs.pptx) / [pdf](slides/pdf/04-langchainjs.pdf) | [Demo](demos/04-langchainjs/) | [Script](sessions/04-langchainjs.md) |  |
 | 5 | Run AI models on your local machine with Ollama | Shows how to integrate local AI models into your development workflow. | [pptx](slides/05-local-models.pptx) / [pdf](slides/pdf/05-local-models.pdf) | [Demo](demos/05-local-models/) | [Script](sessions/05-local-models.md) |  |
 | 6 | Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [pptx](slides/06-playground.pptx) / [pdf](slides/pdf/06-playground.pdf) | [Demo](demos/06-playground/) | [Script](sessions/06-playground.md) |  |
-| 7 | Introduction to Azure AI Studio | Kickstart your journey with Azure AI Studio. | [pptx](slides/07-ai-studio.pptx) / [pdf](slides/pdf/07-ai-studio.pdf) | - | [Script](sessions/07-ai-studio.md) |  |
-| 8 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](slides/08-azure-tools.pptx) / [pdf](slides/pdf/08-azure-tools.pdf) | - | [Script](sessions/08-azure-tools.md) |  |
+| 7 | Introduction to Azure AI Studio | Kickstart your journey with Azure AI Studio. | [pptx](slides/07-ai-studio.pptx) / [pdf](slides/pdf/07-ai-studio.pdf) | [Demo](demos/07-ai-studio/) | [Script](sessions/07-ai-studio.md) |  |
+| 8 | Building Generative AI Apps with Azure Cosmos DB | Build generative AI apps with Azure Cosmos DB and vector search. | [pptx](slides/08-cosmos-db.pptx) / [pdf](slides/pdf/08-cosmos-db.pdf) | [Demo](demos/08-cosmos-db/) | [Script](sessions/08-cosmos-db.md) |  |
+| 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](slides/08-azure-tools.pptx) / [pdf](slides/pdf/08-azure-tools.pdf) | - | [Script](sessions/08-azure-tools.md) |  |
+| 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](slides/10-chat-protocol.pptx) / [pdf](slides/pdf/10-chat-protocol.pdf) | [Demo](demos/10-chat-protocol/) | [Script](sessions/10-chat-protocol.md) |  |
 
 New segments will be added to the series over time, so stay tuned!
 
