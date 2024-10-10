@@ -11,13 +11,13 @@
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
-[Overview](#overview) • [Videos](#videos) • [Quickstart](#quickstart) • [Tutorials](#tutorials) • [Code samples](#code-samples) • [Community](#community) • [More resources](#more-resources)
+[Overview](#overview) • [Quickstart](#quickstart) • [Video series](#video-series) • [Tutorials](#tutorials) • [Code samples](#code-samples) • [Community](#community) • [More resources](#more-resources)
 
 </div>
 
 ## Overview
 
-The repository centralize all our content related to the *Generative AI with JavaScript* topic. You'll find code samples, tutorials as well all the resources from the video series, with best practices and tips to supercharge your AI skills. If you're a JavaScript developer looking to get started with AI, or if you already have some experience and want to learn more, you've come to the right place!
+The repository centralize *all our content* related to the **Generative AI with JavaScript** topic. You'll find code samples, tutorials as well all the resources from the video series, with best practices and tips to supercharge your AI skills. If you're a JavaScript developer looking to get started with AI, or if you already have some experience and want to learn more, you've come to the right place!
 
 We cover the basics of generative AI and how to build AI applications using JavaScript, from local development to deployment on Azure, up to running and scaling your AI models. This is a living repository, so come back often to check for new content! ✨
 
@@ -28,7 +28,7 @@ We cover the basics of generative AI and how to build AI applications using Java
 
 ### How to use this repository?
 
-You'll find here all everything associated with the video series, including slides, demos, scripts, as well as additional code samples, tutorials, and resources.
+You'll find in the repo all the content associated with the video series, including slides, demos, scripts, as well as additional code samples, tutorials, and resources.
 You can use it to follow along with the series, run the demos, replay the sessions or reuse the content in your own presentations. Once you've learned what you need, you can use the code samples and tutorials to kickstart your own AI applications.
 
 It's organized as follows:
@@ -39,7 +39,15 @@ It's organized as follows:
 - [**Code samples**](#code-samples): Contains code samples that you can use as a starting point for your own projects.
 - [**Community**](#community): How to join the Azure AI community on Discord.
 
-## Videos series
+## Quickstart
+
+TODO
+
+- Ollama
+- GitHub Models
+- Azure OpenAI
+
+## Video series
 
 | # | Session | Description | Slides | Demo | Script | Video |
 |---|---------|-------------|--------|------|--------|-------|
@@ -61,15 +69,9 @@ New segments will be added to the series over time, so stay tuned!
 
 Demos are located in the [demo/](demos/) folder and organized by sessions. Each session has a folder with a `readme.md` file that explains the demo, its prerequisites and how to run it.
 
-## Quickstart
-
-TODO
-
-- Ollama
-- GitHub Models
-- Azure OpenAI
-
 ## Tutorials
+
+You can find here hands-on tutorials to put your AI skills into practice, with step-by-step instructions that will guide you through the process of building applications making use of AI with JavaScript.
 
 | Name | Description | Duration | Level | Links |
 | ---- | ----------- | -------- | ----- | ----- |
@@ -78,6 +80,8 @@ TODO
 | Integrate OpenAI, Communication, and Organizational Data Features into a Line of Business App | This tutorial demonstrates how Azure OpenAI, Azure Communication Services, and Microsoft Graph/Microsoft Graph Toolkit can be integrated into a Line of Business (LOB) application to enhance user productivity, elevate the user experience, and take LOB apps to the next level | 3h | Beginner | [Tutorial](https://learn.microsoft.com/microsoft-cloud/dev/tutorials/openai-acs-msgraph) / [Repo](https://github.com/microsoft/MicrosoftCloud) |
 
 ## Code samples
+
+The following code samples are available to help you get started with building your own AI applications. Use them to learn how to architect your applications, experiment with different features, or use them as a starting point for your own projects.
 
 | Name | Description | GitHub Repo | Technologies |
 | ---- | ----------- | ----------- | ------------ |
