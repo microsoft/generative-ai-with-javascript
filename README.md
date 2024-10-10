@@ -43,7 +43,7 @@ It's organized as follows:
 
 If you're eager to put your hands on the code, you can pick one of the following quickstarts to get started right away:
 
-- [Get started with Ollama and Phi-3, directly in your browser](https://github.com/sinedied/ollama-javascript-playground/) (Needs a free [GitHub account](https://github.com/join))
+- [Get started with Ollama and Phi-3, directly in your browser](https://github.com/sinedied/ollama-javascript-playground#ollama-javascript-playground) (Needs a free [GitHub account](https://github.com/join))
 - Get started with GitHub Models, directly in your browser (WIP)
 - [Get started with Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai/chatgpt-quickstart?tabs=command-line%2Ctypescript%2Cpython-new&pivots=programming-language-javascript) (Needs a free [Azure account](https://azure.com/free))
 
