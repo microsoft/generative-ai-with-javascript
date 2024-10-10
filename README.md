@@ -71,14 +71,11 @@ TODO
 
 ## Tutorials
 
-TODO
-
 | Name | Description | Duration | Level | Links |
 | ---- | ----------- | -------- | ----- | ----- |
-
-
-- Chat LC.js
-- Dan WS
+| Azure OpenAI RAG workshop - Qdrant version | Explore the fundamentals of custom ChatGPT experiences based on a corpus of documents. We will create a vector database and fill-in with data from PDF documents, and then build a chat website and API to be able to ask questions about information contained in these documents. | 3h | Beginner | [Tutorial](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md) / [Repo](https://github.com/Azure-Samples/azure-openai-rag-workshop) |
+| Azure OpenAI RAG workshop - AI Search version | Explore the fundamentals of custom ChatGPT experiences based on a corpus of documents. We will create a vector database and fill-in with data from PDF documents, and then build a chat website and API to be able to ask questions about information contained in these documents. | 3h | Beginner | [Tutorial](https://moaw.dev/workshop/?src=gh:azure-samples/azure-openai-rag-workshop/docs/) / [Repo](https://github.com/Azure-Samples/azure-openai-rag-workshop) |
+| Integrate OpenAI, Communication, and Organizational Data Features into a Line of Business App | This tutorial demonstrates how Azure OpenAI, Azure Communication Services, and Microsoft Graph/Microsoft Graph Toolkit can be integrated into a Line of Business (LOB) application to enhance user productivity, elevate the user experience, and take LOB apps to the next level | 3h | Beginner | [Tutorial](https://learn.microsoft.com/microsoft-cloud/dev/tutorials/openai-acs-msgraph) / [Repo](https://github.com/microsoft/MicrosoftCloud) |
 
 ## Code samples
 
