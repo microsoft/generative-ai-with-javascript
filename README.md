@@ -17,7 +17,7 @@
 
 ## Overview
 
-The repository centralize *all our content* related to the **Generative AI with JavaScript** topic. You'll find code samples, tutorials as well all the resources from the video series, with best practices and tips to supercharge your AI skills. If you're a JavaScript developer looking to get started with AI, or if you already have some experience and want to learn more, you've come to the right place!
+The repository aims to centralize our content related to the **Generative AI with JavaScript** topic. You'll find code samples, tutorials as well all the resources from the video series, with best practices and tips to supercharge your AI skills. If you're a JavaScript developer looking to get started with AI, or if you already have some experience and want to learn more, you've come to the right place!
 
 We cover the basics of generative AI and how to build AI applications using JavaScript, from local development to deployment on Azure, up to running and scaling your AI models. This is a living repository, so come back often to check for new content! ✨
 
