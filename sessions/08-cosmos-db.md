@@ -8,6 +8,7 @@ Links:
 - Vector search with Cosmos DB: https://aka.ms/CosmosVectorSearch
 - Docs, demos, videos and more: https://aka.ms/CosmosAISamples
 - Serverless AI chat demo: https://aka.ms/ai/js/chat
+- Try Azure Cosmos DB for free: https://aka.ms/trycosmosdb
 
 Watch this series' playlist: https://aka.ms/genai-js
 All slides and code samples: https://aka.ms/genai-js/content

@@ -114,3 +114,4 @@ Here are some additional resources that you might find useful on your AI journey
 
 - Generative AI for Beginners: https://github.com/microsoft/generative-ai-for-beginners
 - Phi-3 cookbook: https://aka.ms/phi3/cookbook
+- Try Azure Cosmos DB for free: https://aka.ms/trycosmosdb
