@@ -1,4 +1,4 @@
-# Demo - Introduction to Azure AI Studio
+# Demo - Introduction to Azure AI Foundry
 
 ## Prerequisites
 - [Azure account](https://azure.microsoft.com/free)
@@ -8,11 +8,11 @@
 
 ### Preparation
 
-1. Open the AI Studio website: https://ai.azure.com in a full screen browser
+1. Open the AI Foundry website: https://ai.azure.com in a full screen browser
 
 ### Demo
 
-1. Provide a brief overview of what Azure AI Studio is, comparing it to an airport for generative AI applications.
+1. Provide a brief overview of what Azure AI Foundry is, comparing it to an airport for generative AI applications.
 2. Look for recent projects or initiate the setup of a hub if this is your first visit.
 3. **Understand hubs and projects**:
   - Explain that a hub functions as an airport terminal for resource sharing, while a project is akin to a plane with its own specific purpose.
@@ -29,4 +29,4 @@
   - Open the playground feature to interact with the model in a chat context, defining the system message and starting a conversation.
 13. Utilize the multimodal capabilities of the model by uploading an image, allowing the model to interpret and explain it. Ask the model to describe the image.
 14. Access and review code samples, including JSON and cURL examples, for future development purposes.
-15. Briefly mention other available tools in Azure AI Studio, such as prompt flow, evaluation, and fine-tuning, which will be covered in later lessons. 
+15. Briefly mention other available tools in Azure AI Foundry, such as prompt flow, evaluation, and fine-tuning, which will be covered in later lessons. 
