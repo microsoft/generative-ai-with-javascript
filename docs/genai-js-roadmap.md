@@ -1,5 +1,13 @@
 https://microsoft-my.sharepoint.com/:w:/p/johalexander/ER5AolNL_lxOpvQg1jFOJkIBI8Wq-f2fO8oTMHxMF0F-8Q?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1724681276866&web=1
 
+<!-- Inspired by the Java Developer Roadmap: https://github.com/devoxx/JavaRoadmap -->
+
+- AI Playbook: https://learn.microsoft.com/ai/playbook/
+
+- AI on Azure: https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/
+
+- https://learn.microsoft.com/en-us/collections/5dj3hoep3n88gk
+
 
 ![](./images/genai-js-roadmap.drawio.svg)
 
@@ -17,20 +25,42 @@ https://microsoft-my.sharepoint.com/:w:/p/johalexander/ER5AolNL_lxOpvQg1jFOJkIBI
 
 ## Introduction to Gen AI
 
+- [Introduction to building Gen AI | Learn](https://learn.microsoft.com/azure/developer/ai/introduction-build-generative-ai-solutions)
+- [Concepts and considerations | Learn](https://learn.microsoft.com/azure/developer/ai/gen-ai-concepts-considerations-developers)
+- [Develop AI apps with JavaScript | Learn](https://learn.microsoft.com/azure/developer/javascript/ai/azure-ai-for-javascript-developers)
 
-- Develop AI apps with JS & Azure
-  * https://learn.microsoft.com/en-us/azure/developer/javascript/ai/azure-ai-for-javascript-developers?toc=%2Fazure%2Fdeveloper%2Fai%2Ftoc.json&bc=%2Fazure%2Fdeveloper%2Fai%2Fbreadcrumb%2Ftoc.json
+## AI Models
 
-- AI Playbook: https://learn.microsoft.com/en-us/ai/playbook/
+- [Understanding LLMs | Learn](https://learn.microsoft.com/ai/playbook/technology-guidance/generative-ai/getting-started/use-case-recommend)
 
-## Responsible AI
-- Learn path: https://learn.microsoft.com/en-us/azure/ai/responsible-ai
-- https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/default-safety-policies
-- https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/abuse-monitoring
-- https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython-new
+### [Azure AI Foundry](https://ai.azure.com/)
+
+
 
 - Experimentation: https://learn.microsoft.com/en-us/ai/playbook/technology-guidance/generative-ai/working-with-llms/experiment-recommend
   * https://learn.microsoft.com/en-us/azure/ai-studio/how-to/model-catalog-overview
+
+
+### [OpenAI SDK](https://github.com/openai/openai-node)
+
+
+### Running locally
+
+- [Ollama](https://ollama.com)
+- [LM Studio](https://lmstudio.ai)
+- [AI Toolkit for Visual Studio Code | VS Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+
+
+
+
+## Responsible AI
+
+- [Responsible AI principles and practices | Learn](https://learn.microsoft.com/en-us/training/modules/embrace-responsible-ai-principles-practices/)
+- [Default content safety policies | Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/default-safety-policies)
+- [Abuse monitoring | Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/abuse-monitoring)
+- [Content filtering | Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter)
+
+## Prompt engineering
 
 - Prompt: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering?tabs=chat
   * https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions
