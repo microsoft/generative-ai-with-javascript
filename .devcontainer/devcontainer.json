@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-  "name": "ollama-js",
+  "name": "genai-js",
 
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bullseye",
@@ -24,7 +24,7 @@
     }
   },
 
-  "postCreateCommand": "npm install -g ollamazure tsx; cd demos && npm install",
+  "postCreateCommand": "npm install -g ollamazure tsx; npm install; cd videos/demos && npm install",
 
   // Set minimal host requirements for the container.
   "hostRequirements": {
