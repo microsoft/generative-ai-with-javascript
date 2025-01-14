@@ -1,0 +1,12 @@
+{
+  "name": "genai-js",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "openai": "^4.78.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
