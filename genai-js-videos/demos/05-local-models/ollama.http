@@ -1,0 +1,73 @@
+##################################################################
+# VS Code with REST Client extension is needed to use this file.
+# Download at: https://aka.ms/vscode/rest-client
+##################################################################
+
+# Text completion
+POST http://localhost:11434/api/generate
+Content-Type: application/json
+
+{
+  "prompt": "Translate in Japanese: Hello world",
+  "model": "phi3",
+  "options": {
+    "temperature": 0
+  },
+  "stream": false
+}
+
+###
+
+# Chat completion
+POST http://localhost:11434/api/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "Say hello in French, Japanese, and Spanish."
+    }
+  ],
+  "model": "phi3",
+  "stream": false
+}
+
+###
+
+# Embeddings
+POST http://localhost:11434/api/embed
+Content-Type: application/json
+
+{
+  "input": [
+    "Why is the sky blue?",
+    "Hello world"
+  ],
+  "model": "all-minilm:l6-v2"
+}
+
+###
+
+# OpenAI API compatibility
+POST http://localhost:11434/v1/chat/completions
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "Say hello in French, Japanese, and Spanish."
+    }
+  ],
+  "model": "phi3",
+  "response_format": { "type": "json_object" }
+}
