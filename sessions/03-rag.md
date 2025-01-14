@@ -36,4 +36,4 @@ Now, if we try to ask something that's not in the provided documents, let's see 
 
 If you're interested in this sample, you can have a look at the links in the video description or here, and be sure to take a look at the other videos in the series to learn how we made it.
 
-In the next session, we'll see how you can speed up your AI developments using the Longchain JS framework.
+In the next session, we'll see how you can speed up your AI developments using the Langchain JS framework.

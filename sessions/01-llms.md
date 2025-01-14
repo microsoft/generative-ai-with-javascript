@@ -40,4 +40,4 @@ Another limit that you have to keep in mind is while these AI models are powerfu
 
 It's also why at Microsoft, we've been deeply committed to responsible AI. Responsible AI is a framework for building AI systems according to six principles. Fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For Microsoft, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more and more present in products and services that people use every day. And this is not only for us. It's something that you also have to keep in mind when using AI models to build your own applications.
 
-In the next session, we'll talk about essential product engineering techniques that will help you get the best out of AI models.
+In the next session, we'll talk about essential prompt engineering techniques that will help you get the best out of AI models.
