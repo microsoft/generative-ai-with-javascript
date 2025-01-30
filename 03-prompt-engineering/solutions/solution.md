@@ -1,16 +1,29 @@
 Here's the solution:
 
 ```javascript
+import { OpenAI } from "openai";
+import readline from "readline";
 
-// Prompt for the user to input the values 
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-const height = prompt("Enter the current height above the ground in meters:"); 
+const question = (query) => {
+  return new Promise((resolve) => {
+    rl.question(query, (answer) => {
+      resolve(answer);
+    });
+  });
+};
 
-const speed = prompt("Enter the speed at which you're moving forward in meters per second:"); 
+const name = await question("Enter the current height above the ground in meters:");
 
-const gravity = prompt("Enter the gravity in meters per second squared:"); 
+const speed = await question("Enter the speed at which you're moving forward in meters per second:");
 
-const wind = prompt("Enter the wind speed upwards in meters per second:"); 
+const gravity = await question("Enter the gravity in meters per second squared:"); 
+
+const wind = await question("Enter the wind speed upwards in meters per second:"); 
 
 // Distance to the hill 
 const distance = 100; 
