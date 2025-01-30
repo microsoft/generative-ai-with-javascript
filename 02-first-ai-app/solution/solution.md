@@ -2,6 +2,7 @@ Here's the solution
 
 ```javascript 
 
+import { OpenAI } from "openai";
 // 1. Define the prompt
 // ----------------------------------- 
 
