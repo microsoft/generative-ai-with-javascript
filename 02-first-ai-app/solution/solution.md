@@ -10,6 +10,9 @@ const messages = [
     "role": "developer", 
     "content": "You're a helpful assistant here to assist Leonardo Da Vinci with the calculations and design of his inventions." 
 
+}, {
+  "role": "user",
+  "content": "users prompt goes here"
 }]; 
 
 // 2. Create client
