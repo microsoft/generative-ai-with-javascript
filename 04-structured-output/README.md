@@ -30,7 +30,9 @@ You glance down and your heart sinks. The stone is part of the Aztec calendar, a
 
 "Who are you, and what have you done?" he demands in Nahuatl. 
 
-![Meeting with Aztecs](./assets/meeting.png)
+<div>
+  <img src="./assets/meeting.jpeg" alt="Meeting with Aztecs" width="400" />
+</div> 
 
 You take a deep breath, trying to steady your nerves. "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you. We did not mean to damage your sacred calendar.
 
