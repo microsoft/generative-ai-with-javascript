@@ -18,7 +18,9 @@ You reach into your satchel and pull out the Time Beetle, a device you discovere
 
 The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. The air is thick with the scent of incense, and the distant sounds of chanting fill your ears. As you look around, you realize that you've landed in the heart of the Aztec Empire. The aerial screw, now a bit worse for wear, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
 
-![Aztec calendar](./assets/aztec.png) 
+<div>
+  <img src="./assets/aztec.jpeg" alt="Aztec calendar" />
+</div> 
 
 *Aztec calendar - Wikipedia* 
 
