@@ -13,17 +13,54 @@ In this lesson, you will learn:
 
 - **Slides:** [pptx](../../videos/slides/03-rag.pptx) / [pdf](../../videos/slides/pdf/03-rag.pdf)
 
-## Narrative: The birth of the World Wide Web
+## Narrative - Genesis
 
-Your journey through time and technology has brought you to the [CERN](https://en.wikipedia.org/wiki/CERN) around 1992, where you are about to meet Tim Berners-Lee, the inventor of the World Wide Web. As you walk through the corridors of the research facility, you can't help but feel a sense of excitement and anticipation. You finally arrive at a small office, where Tim is waiting to greet you.
+The air was thick with the scent of incense and the distant hum of Aztec chants. The temple walls were adorned with intricate carvings depicting gods and warriors, their stories etched in stone. Leonardo da Vinci, with his ever-curious eyes, examined the carvings closely, tracing the lines with his fingers. "Incredibile, the craftsmanship is beyond anything I've seen," he murmured, his Italian accent adding a melodic lilt to his words.
 
-You can't wait to hear more about the World Wide Web and the incredible impact it will have on the world. As you prepare to ask your questions, you want to make sure the answers are as accurate and informative as possible. You've heard about a new technique called Retrieval-Augmented Generation (RAG) that can help enhance the responses of AI models by integrating external data sources. This seems like the perfect opportunity to put it to the test.
+You held the time beetle device, its surface warm and pulsating with a faint blue glow. The device felt almost alive in your hand, its energy resonating with the ancient surroundings. "Leonardo, it's time to go," you said, pressing the button. The device whirred to life, and a mechanical voice echoed, "It's time to go home, it's time for 'genesis'."
 
-![Illustration of the CERN in the 1990's](assets/cern.jpg)
+"Genesis? Che cosa significa?" Leonardo asked, his brow furrowing in confusion. Before you could respond, the world around you dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time.
+
+![](./assets/mansion.jpeg)
+
+You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, its grandeur casting a shadow over the garden. Leonardo looked around, his eyes wide with wonder. "Mio Dio". 
+
+Leonardo looked around, his eyes wide with wonder. "Mio Dio, this place is beautiful!"
+
+### Running from the Dogs
+
+![Running from the dogs](./assets/dogs.jpeg)
+
+Before you could take in more of the scenery, a low growl caught your attention. You turned to see a pack of large, imposing dogs bounding towards you, their teeth bared and eyes fixed on you. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
+
+The dogs were fast, their paws thudding against the ground as they closed the distance. You could hear their snarls growing louder, and your heart pounded in your chest. Just as you reached the mansion's door, it swung open, and a pair of servants rushed out.
+
+The servants looked you up and down, their expressions a mix of curiosity and suspicion. Without a word, they gestured for you to follow them. You and Leonardo exchanged a quick glance before stepping inside. The interior was just as impressive as the garden, with ornate furnishings, intricate tapestries, and gleaming chandeliers. The air was filled with the scent of polished wood and fresh flowers.
+
+The servants led you through the grand halls of the mansion, their footsteps echoing on the marble floors. You descended a spiral staircase, the stone steps cool under your feet, and entered a dimly lit basement. The air was damp and cool, carrying the faint scent of mildew. The only light came from a flickering candle in the distance, casting long shadows on the stone walls. The servants stopped in front of a heavy wooden door and knocked.
+
+![](./assets/ada.jpeg)
+
+The door creaked open, revealing Ada Lovelace, her eyes sparkling with curiosity. "Ah, it's about time you arrived," she said, her voice warm and welcoming. "We need you to run an errand."
+
+Charles Babbage stepped forward, examining the time beetle in your hand. His eyes lit up with fascination as he inspected the device. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
+
+Leonardo nodded, "Sì, it has been acting strangely."
+
+Ada took the device, her fingers deftly inspecting it. "It's good for one more turn and return trip, but we need a missing part—gold. Without it, the device won't function properly."
+
+She spoke into the device, "1324, Mansa Musa." You barely had time to react. "Wait, stop!" you shouted, but it was too late. The world spun around you once more, the basement dissolving into a whirl of colors and sounds.
+
+### Mansa Musa
+
+You found yourselves in the bustling streets of Timbuktu, the air filled with the scent of spices and the sound of merchants haggling. The marketplace was a riot of colors, with stalls overflowing with vibrant fabrics, exotic fruits, and shimmering jewelry. Leonardo looked around in awe. "Mio Dio, this place is magnificent!"
+
+_To be continued..._
 
 ## Known Challenges with LLMs
 
 Before we talk about the specifics of RAG, let's take a moment to discuss some of the known challenges with LLMs. These models are trained on huge amounts of text data and can generate responses that are contextually relevant and grammatically correct. However, just like any data that you can find on the internet, the information generated by LLMs can sometimes be inaccurate, incomplete, or misleading, because of multiple factors:
+
 - **Out of date sources:** The data used to train the model may be outdated and no longer accurate.
 - **Wrong or inaccurate information:** The sources used to train the model may contain incorrect or misleading information, like fake news or biased opinions.
 - **Non-authoritative sources:** The model may not be able to distinguish between authoritative and non-authoritative sources in its training data, leading to unreliable information.
@@ -187,11 +224,16 @@ Once you run this code, you should see the data found by in the CSV file by the 
 
 ![An example of a RAG system in action](assets/rag-example.png)
 
-## Assignment - Hallway chat with Tim Berners-Lee
+## Assignment
 
-It's time for your conversation with the father of the web! Let's create a chatbot that acts as a virtual Tim Berners-Lee in 1992, answering your questions about the Web in making. But in order to avoid creating a break in the space-time continuum, we'll need to make sure that the answers are as accurate and informative as possible, so we'll use Wikipedia data to provide grounding to the AI-generated responses.
+As you lean closer to the device being worked on by Ada Lovelace, you notice a faint glow emanating from its core. The device is small and looks familiar, time beetle, do you know what this is?
 
-You can start from the code example provided above, and modify it to include a retrieval mechanism that fetches Tim Berners-Lee's information from Wikipedia.
+Beetle: of course, it's me, or well it will be. Im missing a few parts though. Come to think of it, I'm missing a lot of parts, I don't even have a shell yet.
+
+Ada: The time beetle is a device that allows you to travel through time and space, that is once we get it to work properly. For now, we need to add a new feature to it, a retrieval-augmented generation (RAG) module. This will help us retrieve information and needed context from different time periods as you're traveling.
+You: Ok, fine I'll help, or it seems I've already helped as I'm here using a functioning version of the device. What do you need me to do?
+
+We want to make sure we refer to all sorts of sources, Wikipedia is a good start.
 
 Here's an example code that retrieves text information about Tim Berners-Lee from Wikipedia:
 
@@ -200,6 +242,10 @@ const response = await fetch('https://en.wikipedia.org/w/api.php?format=json&act
 const data = await response.json();
 const text = Object.values(data.query.pages)[0]?.extract;
 ```
+
+## Solution
+
+[Solution](./solution/rag-www.js)
 
 ## Knowledge Check
 
