@@ -15,13 +15,17 @@ In this lesson, you will learn:
 
 ## Narrative - Genesis
 
-The air was thick with the scent of incense and the distant hum of Aztec chants. The temple walls were adorned with intricate carvings depicting gods and warriors, their stories etched in stone. Leonardo da Vinci, with his ever-curious eyes, examined the carvings closely, tracing the lines with his fingers. "Incredibile, the craftsmanship is beyond anything I've seen," he murmured, his Italian accent adding a melodic lilt to his words.
+> *Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Alexandria, Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues...*
 
-You held the time beetle device, its surface warm and pulsating with a faint blue glow. The device felt almost alive in your hand, its energy resonating with the ancient surroundings. "Leonardo, it's time to go," you said, pressing the button. The device whirred to life, and a mechanical voice echoed, "It's time to go home, it's time for 'genesis'."
+The air was thick with incense and the hum of Aztec chants. The temple walls, adorned with carvings of gods and warriors, captivated Leonardo da Vinci. "Incredibile, the craftsmanship is beyond anything I've seen," he murmured, tracing the lines with his fingers.
 
-"Genesis? Che cosa significa?" Leonardo asked, his brow furrowing in confusion. Before you could respond, the world around you dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time.
+You held the time beetle device, its surface warm and pulsating with a faint blue glow. 
 
-![](./assets/mansion.jpeg)
+**You**: "Leonardo, it's time to go," you said, pressing the button. The device whirred to life, and a mechanical voice echoed, "It's time to go home, it's time for 'genesis'."
+
+**Leonardo:** "Genesis? Che cosa significa?" Leonardo asked, confused. Before you could respond, the world dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time
+
+![Old mansion shown in a deep fog](./assets/mansion.jpeg)
 
 You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, its grandeur casting a shadow over the garden. Leonardo looked around, his eyes wide with wonder. "Mio Dio". 
 
@@ -31,25 +35,23 @@ Leonardo looked around, his eyes wide with wonder. "Mio Dio, this place is beaut
 
 ![Running from the dogs](./assets/dogs.jpeg)
 
-Before you could take in more of the scenery, a low growl caught your attention. You turned to see a pack of large, imposing dogs bounding towards you, their teeth bared and eyes fixed on you. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
+Before you could take in more of the scenery, a low growl caught your attention. A pack of large, imposing dogs bounded towards you, teeth bared. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
 
-The dogs were fast, their paws thudding against the ground as they closed the distance. You could hear their snarls growing louder, and your heart pounded in your chest. Just as you reached the mansion's door, it swung open, and a pair of servants rushed out.
+You just reached the mansion's door, it swung open, and a pair of servants rushed out. They looked you up and down, their expressions a mix of curiosity and suspicion, then gestured for you to follow them.
 
-The servants looked you up and down, their expressions a mix of curiosity and suspicion. Without a word, they gestured for you to follow them. You and Leonardo exchanged a quick glance before stepping inside. The interior was just as impressive as the garden, with ornate furnishings, intricate tapestries, and gleaming chandeliers. The air was filled with the scent of polished wood and fresh flowers.
+Inside, the mansion was just as impressive as the garden, with ornate furnishings and gleaming chandeliers. The servants led you through grand halls, down a spiral staircase, and into a dimly lit basement. The air was damp and cool, with a faint scent of mildew. The only light came from a flickering candle, casting long shadows on the stone walls. The servants stopped in front of a heavy wooden door and knocked
 
-The servants led you through the grand halls of the mansion, their footsteps echoing on the marble floors. You descended a spiral staircase, the stone steps cool under your feet, and entered a dimly lit basement. The air was damp and cool, carrying the faint scent of mildew. The only light came from a flickering candle in the distance, casting long shadows on the stone walls. The servants stopped in front of a heavy wooden door and knocked.
+![Ada Lovelace and Charles Babbage working on a device](./assets/ada.jpeg)
 
-![](./assets/ada.jpeg)
+The door creaked open, revealing Ada Lovelace, her eyes sparkling with curiosity. "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
 
-The door creaked open, revealing Ada Lovelace, her eyes sparkling with curiosity. "Ah, it's about time you arrived," she said, her voice warm and welcoming. "We need you to run an errand."
-
-Charles Babbage stepped forward, examining the time beetle in your hand. His eyes lit up with fascination as he inspected the device. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
+Charles Babbage stepped forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
 
 Leonardo nodded, "Sì, it has been acting strangely."
 
-Ada took the device, her fingers deftly inspecting it. "It's good for one more turn and return trip, but we need a missing part—gold. Without it, the device won't function properly."
+Ada took the device, inspecting it deftly. "It's good for one more turn and return trip, but we need a missing part—gold. Without it, the device won't function properly."
 
-She spoke into the device, "1324, Mansa Musa." You barely had time to react. "Wait, stop!" you shouted, but it was too late. The world spun around you once more, the basement dissolving into a whirl of colors and sounds.
+She spoke into the device, "1324, Mansa Musa." You barely had time to react. "Wait, stop!" you shouted, but it was too late. The world spun around you, the basement dissolving into a whirl of colors and sounds
 
 ### Mansa Musa
 
@@ -58,6 +60,14 @@ You found yourselves in the bustling streets of Timbuktu, the air filled with th
 _To be continued..._
 
 ## Known Challenges with LLMs
+
+**Ada:** the device isn't quite ready, we need to give it more capabilities. We need to make it smarter, more aware of the world around it. The idea is for it to be able to retrieve information from different time periods and use it to generate responses that are accurate and relevant. Can you help with that?
+
+**You:** of course, sounds like we need to _augment_ the responses of the device with data, makes sense.
+
+**Ada:** Let's talk about a concept I'd like to call RAG, or Retrieval-Augmented Generation.
+
+### Challenges with LLMs
 
 Before we talk about the specifics of RAG, let's take a moment to discuss some of the known challenges with LLMs. These models are trained on huge amounts of text data and can generate responses that are contextually relevant and grammatically correct. However, just like any data that you can find on the internet, the information generated by LLMs can sometimes be inaccurate, incomplete, or misleading, because of multiple factors:
 
@@ -109,7 +119,8 @@ After you've implemented a way to retrieve information from your data sources, y
 
 For example, if you're building an app to answer questions about cars, you could have a prompt like this:
 
-```
+```text
+
 ## Instructions
 Answer questions about cars using only the sources below.
 If there's not enough data in provided sources, say that you don't know.
@@ -224,14 +235,17 @@ Once you run this code, you should see the data found by in the CSV file by the 
 
 ![An example of a RAG system in action](assets/rag-example.png)
 
-## Assignment
+## Assignment - helping Ada and Charles
 
-As you lean closer to the device being worked on by Ada Lovelace, you notice a faint glow emanating from its core. The device is small and looks familiar, time beetle, do you know what this is?
+Having learned about RAG, you're now ready to help Ada and Charles with their device. However, upon closer inspection the device is looking familiar. 
 
-Beetle: of course, it's me, or well it will be. Im missing a few parts though. Come to think of it, I'm missing a lot of parts, I don't even have a shell yet.
+**You:** time beetle, do you know what this is?
 
-Ada: The time beetle is a device that allows you to travel through time and space, that is once we get it to work properly. For now, we need to add a new feature to it, a retrieval-augmented generation (RAG) module. This will help us retrieve information and needed context from different time periods as you're traveling.
-You: Ok, fine I'll help, or it seems I've already helped as I'm here using a functioning version of the device. What do you need me to do?
+**Beetle:** of course, it's me, or well it will be. Im missing a few parts though. Come to think of it, I'm missing a lot of parts, I don't even have a shell yet.
+
+**Ada:** The time beetle is a device that allows you to travel through time and space, that is once we get it to work properly. As I was saying, we need to add a new feature to it, a retrieval-augmented generation (RAG) module. This will help us retrieve information and needed context from different time periods as you're traveling.
+
+**You:** Ok, fine I'll help, or it seems I've already helped as I'm here using a functioning version of the device. What do you need me to do?
 
 We want to make sure we refer to all sorts of sources, Wikipedia is a good start.
 
@@ -255,7 +269,7 @@ const text = Object.values(data.query.pages)[0]?.extract;
 - [ ] B. The retriever generates relevant information based on the model's training data.
 - [ ] C. The retriever finds relevant information from external data sources.
 
-<!-- Answer: C  -->
+[](./solution/solution-quiz.md)
 
 ## Self-Study Resources
 
