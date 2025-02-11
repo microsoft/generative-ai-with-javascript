@@ -8,6 +8,10 @@ In this lesson, you will learn to:
 
 - Explore how generative AI can enhance user experience in JavaScript applications.
 
+## Related resources
+
+[![Watch a short video about Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
+
 ## Generative AI
 
 By now, I'm sure you've heard of a tool like ChatGPT or generative AI. The idea is that you provide a prompt, a sentence and as output you get a full paragraph or even a full page of text. This text can be used for a variety of purposes, from generating creative writing to answering questions or even writing code.
@@ -231,7 +235,7 @@ To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that 
  
 > TIP try out different prompts, try to add context and/or change the wording to see how the result changes. Additionally, try to have the LLM generate a plan that includes step-by-step instructions for how to build the lighthouse.
 
-## Solution 
+## Solution
 
 [Solution](./solution/solution.md)
 
