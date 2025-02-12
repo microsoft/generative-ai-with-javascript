@@ -28,11 +28,15 @@ Looking around the boat, you find a long oar resting against the side. Grasping 
 
 ### Help me, Leonardo 
 
-You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly. The air is filled with the scent of the river and the distant murmur of the bustling city. As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease. 
+You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly. The air is filled with the scent of the river and the distant murmur of the bustling city. As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-![Leonardo Da Vinci standing next to a crate in the harbour](./assets/leonardo.png) 
+```html
+<div >
+  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="100" >
+</div>
+```
 
-You approach him and ask, 
+You approach him and ask: 
 
 **You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
 
@@ -62,9 +66,11 @@ The old man nods.
 
 Relief washes over you as you follow the old man through the bustling streets of Florence. The city is alive with activity—vendors selling birds, fruits, wooden toys, and much more. The air is filled with the sounds of haggling, laughter, and the clatter of horse-drawn carts. The narrow streets are lined with buildings adorned with colorful frescoes and intricate stonework. 
 
-The old man leads you to a large wooden door, which he unlocks and pushes open. You step inside and are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. The room is a chaotic symphony of gears, pulleys, and tools, much like your workshop in London, but with an abundance of detailed drawings and sketches covering the walls. 
+The old man leads you to a large wooden door, which he unlocks and pushes open. You step inside and are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. The room is a chaotic symphony of gears, pulleys, and tools, much like your workshop in London, but with an abundance of detailed drawings and sketches covering the walls.
 
-![Lenoardos workshop](./assets/leonardo-workshop.png)
+<div>
+  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="100" >
+</div>
 
 You ask the Time Beetle to inquire about Leonardo's whereabouts. 
 
@@ -417,7 +423,9 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 
 **Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
-![Aerial screw, Leonardo Da Vinci](./assets/helicopter.jpg)
+<div>
+  <img src="./assets/helicopter.png" alt="Aerial screw, Leonardo Da Vinci" width="100" >
+</div>
 
 *Leonardo Da Vinci’s Aerial Screw image credit Wikipedia* 
 
