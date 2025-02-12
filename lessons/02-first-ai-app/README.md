@@ -368,11 +368,9 @@ I want you to generate recipes for me.
 
 Running `tokenizer` on the sentence above gives us 9 tokens.
 
-**You:** 9, that wasn't much, sounds like I can have a lot of tokens in my context window then?
+**You:**, that wasn't much, sounds like I can have a lot of tokens in my context window then?
 
 **Time beetle:** Yes, you can experiment with different context window sizes to see how it affects the AI's responses. In fact, if you set a context window size of 100, you will limit the AI and how much it considers for input and output. Here's how you can set the context window in your app:
-
-```javascript
 
 You can define the context window in your app like this:
 
