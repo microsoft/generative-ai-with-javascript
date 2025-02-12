@@ -5,6 +5,7 @@ In this lesson, you will learn:
 - The basics of Retrieval-Augmented Generation (RAG) and how it can be used to enhance the responses of generative AI models.
 - How to integrate external data sources into your AI application.
 - To leverage your data to improve the relevance and accuracy of the AI-generated content.
+
 ## Getting Started
 
 Follow these steps to get started with this curriculum:
