@@ -6,6 +6,21 @@ In this chapter, you will learn the following:
 - **Extract information from prompts** and reflect it on the output. 
 - **Present different types of output** like JSON and other types of formats for easy consumption by services.
 
+## Getting Started
+
+Follow these steps to get started with this curriculum:
+
+1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or this link:
+   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
+
+2. **Clone the Repository**: Select the _clone_ button in the upper right-hand corner of the repository or this link:
+   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
+
+3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
+
+    Click the button below to start a Codespace:
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
+
 ## Narrative - out of the frying pan and into the fire
 
 > _Our story so far: You a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers, or well you're in the process of escaping them and is looking for a way to land safely, if possible_. 
