@@ -8,6 +8,8 @@ In this chapter, you will learn the following:
 
 ## Narrative - out of the frying pan and into the fire
 
+> _Our story so far: You a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers, or well you're in the process of escaping them and is looking for a way to land safely, if possible_. 
+
 The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. The Roman soldiers below are relentless, their shouts growing fainter as you gain altitude. You, a mechanically trained engineer from 1860, marvel at the ingenuity of Leonardo's design, but the urgency of the situation keeps you focused.
 
 "Leonardo, we need to find a way out of this!" you shout over the roar of the wind.
@@ -19,55 +21,71 @@ You reach into your satchel and pull out the Time Beetle, a device you discovere
 The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. The air is thick with the scent of incense, and the distant sounds of chanting fill your ears. As you look around, you realize that you've landed in the heart of the Aztec Empire. The aerial screw, now a bit worse for wear, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
 
 <div>
-  <img src="./assets/aztec.jpeg" alt="Aztec calendar" width="400" />
+  <img src="./assets/aztec.png" alt="Aztec calendar" width="400" />
 </div> 
 
 *Aztec calendar - Wikipedia* 
 
-Leonardo da Vinci steps forward, his eyes wide with wonder. "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
+Leonardo da Vinci steps forward, his eyes wide with wonder.
+
+**Leonardo:** "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
 
 You glance down and your heart sinks. The stone is part of the Aztec calendar, and the aerial screw has damaged a section of it. Before you can react, a group of Aztec soldiers approaches, their obsidian-tipped spears glinting menacingly in the sunlight. Their leader, a tall warrior with a feathered headdress, steps forward, his eyes narrowing as he takes in your strange attire and the damaged calendar.
 
-"Who are you, and what have you done?" he demands in Nahuatl. 
+**Soldier leader** "Who are you, and what have you done?" he demands in Nahuatl. 
 
 <div>
-  <img src="./assets/meeting.jpeg" alt="Meeting with Aztecs" width="400" />
+  <img src="./assets/meeting.png" alt="Meeting with Aztecs" width="400" />
 </div> 
 
-You take a deep breath, trying to steady your nerves. "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you. We did not mean to damage your sacred calendar.
+You take a deep breath, trying to steady your nerves. 
 
-The warrior's eyes widen in surprise, but he remains cautious. "You will come with us to meet the ruler Montezuma. He will decide your fate.
+**You:** "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you. We did not mean to damage your sacred calendar.
 
-As you follow the soldiers towards the pyramid, you can't help but feel a mix of relief and apprehension. The journey has only just begun, and the challenges ahead are unknown. But with Leonardo by your side and the Time Beetle in your possession, you feel a spark of hope.
+The warrior's eyes widen in surprise, but he remains cautious. 
+
+**Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
+
+As you follow the soldiers towards the pyramid, you can't help but feel a mix of relief and apprehension. 
 
 Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers. His piercing gaze falls upon you, and he gestures for you to approach.
 
-"You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
+**Montezuma** "You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
+
+<div>
+  <img src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="400" />
+</div> 
 
 ## Let’s play a game
 
-Leonardo steps forward, his calm demeanour a stark contrast to the tension in the air. "We come in peace," he says, his voice steady. "We seek knowledge and understanding. Allow us to demonstrate the power of our machine and share our knowledge with you." 
+Leonardo steps forward, his calm demeanour a stark contrast to the tension in the air. 
 
-Montezuma considers this for a moment before a sly smile spread across his face. "Very well. I propose a game of Patolli. If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
+**Leonardo:** "We come in peace," he says, his voice steady. "We seek knowledge and understanding. Allow us to demonstrate the power of our machine and share our knowledge with you." 
+
+Montezuma considers this for a moment before a sly smile spread across his face. 
+
+**Montezuma:** "Very well. I propose a game of Patolli. If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
 
 The tension in the room is palpable as a Patolli board is brought out and set up before Montezuma. The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
 
-![Playing a game of Patolli](./assets/game.png) 
+<div>
+  <img src="./assets/game.png" alt="Playing a game of Patolli" width="400" />
+</div>
 
 Montezuma wins the first game, his skill and experience evident. Leonardo, however, remains undeterred. He studies the board carefully, his mind working through the strategies and probabilities. The second game is a close contest, but Leonardo manages to secure a victory, evening the score. 
+
+**Leonardo:** "One more game," he says, his eyes gleaming with determination.  George (Time beetle), we need to win this one, give me the right moves.
+
+**Time beetle:** Very well, calculating... Here you go...
 
 The final game is a nail-biter. The Aztec soldiers and courtiers gather around, their eyes fixed on the board. Every move is met with gasps and murmurs of anticipation. Leonardo's hands move with precision and confidence, and as the game progresses, it becomes clear that he has the upper hand. 
 
 With a final, decisive move, Leonardo wins the game. The room erupts in cheers and applause, the Aztecs clearly impressed by his skill and composure. Montezuma, though disappointed, nods in respect. 
 
-"You have won fairly," Montezuma says, his voice carrying a note of admiration. "You are free to go, and you may keep your device. But know that you are always welcome here, should you wish to return." 
+**Montezuma:** "You have won fairly," Montezuma says, his voice carrying a note of admiration. "You are free to go, and you may keep your device. But know that you are always welcome here, should you wish to return." 
 
-As you and Leonardo make your way back to the aerial screw, you can't help but feel a sense of triumph and relief. The journey has been perilous, but you have emerged victorious, and the bond between you and Leonardo has only grown stronger. 
-
-"What do you think, Leonardo?" you ask quietly. 
-
-He smiles, his eyes twinkling with curiosity. "I think we are about to embark on an extraordinary adventure." 
-
+**Time beetle:** I won't say anything if you don't Leonardo ;)
+ 
 > Patolli is one of the oldest known games in the Americas, played by various pre-Columbian Mesoamerican cultures, including the Aztecs. 
 > 
 > It is a game of strategy and luck, often associated with gambling. 
@@ -96,19 +114,31 @@ He smiles, his eyes twinkling with curiosity. "I think we are about to embark on
 
 ## Structured Output
 
+**Time beetle:** Hey folks, want to know how I beat Montezuma?
+
+**You:** Sshh, not so loud, we're still in the Aztec Empire.
+
+**Time beetle:** Oh right, sorry, yea so structured output is how. You asked for the right moves and I gave them to you in a structured way.
+
 Structured output refers to different data formats that are used to present information in a structured manner. Formats like JSON, XML, and CSV are commonly used and makes it easy to consume data by services.
 
 Generative AI models can output data in various formats. However, output of unstructured text can make it difficult to extract information and hand it over to other services. Structured output can help in this regard.
 
-Another aspect, even if for human consumption is that it's easier to read and understand the data if it follows a structure that is familiar to the reader.
+**You:** Well, aren't you clever ;)
 
-In this chapter, you will learn how to leverage structured output effectively and present different types of output for easy consumption by services.
+**Time beetle:** I try my best :)
+
+Another aspect, even if for human consumption is that it's easier to read and understand the data if it follows a structure that is familiar to the reader.
 
 Let's look at a few examples of input and asking for specific output formats can help in extracting information that at least makes it easier to understand and consume.
 
+**You:** Ok, it's not like we got any other plans, let's hear it.
+
 ## Shaping the output
 
-Let's start with a simple example. Imagine you're Leonardo da Vinci and you're trying to come up with ideas for inventions using 15th-century technology. You want to know what resources you need and how much effort it would take to build each invention. Here's how you can ask for this information:
+**Time beetle:** Let's start with a simple example. Imagine you're Leonardo da Vinci and you're trying to come up with ideas for inventions using 15th-century technology. You want to know what resources you need and how much effort it would take to build each invention. Here's how you can ask for this information:
+
+**Leonardo:** Oh I like this game, everyone pretend you're me :)
 
 > Prompt: Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention
 
@@ -147,9 +177,19 @@ Sure! Here are some detailed ideas for inventions you can build using 15th-centu
 This is an OK looking response, every idea is structured in the same way, and it's easy to understand. What if you wanted it some other way though? For that, you can instruct how you want it in the text itself or even present an output template. Let's show each technique.
 ```
 
+**Leonardo:** Yep totally stealing that water-powered mill idea, I can see it now, a mill by the river, grinding grain into flour, it's perfect! I like this gizmo. What else am I thinking little Gizmo? This will make me less reliant on people like Sforza.
+
+**Time beetle:** Sure, if you could ever finish a project, Leonardo.
+
+**Leonardo:** Hey, I'm working on it!
+
+**Time beetle:** Sure you are, Leonardo, sure you are, that and a hundred other projects.
+
+**Time beetle:** George, please, and let's look at how you can instruct the model to present the output in a more structured way.
+
 ### Instructing in the text
 
-You can improve your prompt by instructing the model on how you want the output to be structured. For example, you can ask for a table format with columns that you need. Here's how you can modify the prompt:
+**Time beetle:** You can improve your prompt by instructing the model on how you want the output to be structured. For example, you can ask for a table format with columns that you need. Here's how you can modify the prompt:
 
 > Prompt: Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with columns: title, description, resource needed, effort
 
@@ -164,6 +204,10 @@ Result:
 
 This time we end up with a table that is easier to read and understand.
 ```
+
+**Leonardo:** I like this, will save me a lot of time for sure.
+
+**You:** Yea, for me too.
 
 ### Presenting an output template
 
@@ -220,13 +264,25 @@ Generate ideas for inventions I can build given 1500th century technology, pleas
  **Effort**: Very High - Requires intricate metalworking and a deep understanding of mechanics. Building a reliable clock involves precise assembly and calibration.
 ```
 
+**Leonardo:** This is great, but who is Jason?
+
+**Time beetle:** JSON, Leonardo, JSON. It's a structured format that is easy to consume by services or applications.
+
+**Leonardo:** That's what I said, Jason.
+
+**Time beetle:** _Sigh_.
+
 As you can see, the output is structured according to the specifications in the output template. This makes it easier to read and understand and it also creates repeatable output that can be easily consumed by other services or applications.
 
 Of course a service benefits from even more structured output, like JSON, XML, or CSV so let's look at how you can ask for that.
 
+**Time beetle:** But wait, there's more!
+
+**You:** There always is with you, George. _sigh_
+
 ### Even more structured output with formats like JSON, XML, or CSV
 
-So far, you've seen how you can control the output structure by instructing the model in the prompt. You have even provided an output template. Let's take that idea a step further and see how it can be applied to more structured output formats like JSON and other types of formats.
+**Time beetle:** So far, you've seen how you can control the output structure by instructing the model in the prompt. You have even provided an output template. Let's take that idea a step further and see how it can be applied to more structured output formats like JSON and other types of formats.
 
 Modify the prompt accordingly to ask for JSON output:
 
@@ -303,9 +359,13 @@ Sure! Here are some ideas for inventions you can build using 15th-century techno
 
 This is great, this output is something you can send to another service or application that can consume JSON data.
 
+**You:** If you say so.
+
+**Time beetle:** I do, I do.
+
 ## Extracting data from prompts
 
-Imagine you're building a chatbot that helps users find information about trips to book. You want to extract key details from the user's input to provide relevant responses. Let's say you have a description like so: Type where you would like to go, when you want to travel, and your budget.
+**Time beetle:** Imagine you're building a chatbot that helps users find information about trips to book. You want to extract key details from the user's input to provide relevant responses. Let's say you have a description like so: Type where you would like to go, when you want to travel, and your budget.
 
 Hopefully the user reads said instruction, what does a prompt look like that extracts the information? 
 
@@ -323,7 +383,11 @@ Hopefully the user reads said instruction, what does a prompt look like that ext
 }
 ```
 
-Let's try this with a similar prompt, let's vary the user input a bit so we can be sure the model is doing the right thing.
+**Leonardo:** He doesn't stop talking does he?
+
+**You:** Let's see if I can find the off switch.
+
+**Time beetle:** Let's try this with a similar prompt, let's vary the user input a bit so we can be sure the model is doing the right thing.
 
 > Prompt: Extract the following information from a users prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: Going to US, max 1200 dollars, January maybe.
 >
@@ -344,7 +408,15 @@ What you can do as a developer is then create a template like so:
 Extract the following information from a users prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: {user_input}.
 ```
 
-For chat bots, this is a very powerful feature as it allows you to extract information from the user's input. What if the user might ask for all sorts of things? You can create a template where you describe skills, things that your chatbot can do and what parameters it needs, here's how you can do that:
+**You:** Found it, take that George!
+
+**Time beetle:** _Powering down_
+
+**Leonardo:** Peace and quite at last.
+
+**Time beetle:** _Initiating emergency startup_ Where was I again? Oh yes.
+
+**Time beetle:** For chat bots, this is a very powerful feature as it allows you to extract information from the user's input. What if the user might ask for all sorts of things? You can create a template where you describe skills, things that your chatbot can do and what parameters it needs, here's how you can do that:
 
 ```text
 Here are some skills you have:
@@ -399,14 +471,22 @@ Let's try it with the following user inputs, that is this is the value for {user
 
 This combination of presenting skills and parameters and extracting data from prompts is also known as _tool calling_ or _function calling_. A response like this from your model makes it easy for you as developer to understand what the user wants and how to call a corresponding function to fulfill the user's request.
 
+**You:** Well that lasted for a full 20 seconds. Actually, what you said there, George, that was pretty good.
+
 ## Assignment - repair the aerial screw
 
-The aerial screw took some damage during the escape from the Roman soldiers and the subsequent landing in the Aztec Empire. Leonardo da Vinci's machine is quite sensitive and it requires very specific input to repair it. You need to provide the necessary information to your time beetle (AI Assistant) to help you repair the aerial screw.
+**Time beetle:** I need both of your attention, we have a problem. The aerial screw took some damage during the escape from the Roman soldiers and the landing in the Aztec Empire. Leonardo da Vinci's machine is quite sensitive and it requires very specific input to repair it. You need to provide the necessary information to your time beetle (AI Assistant) to help you repair the aerial screw.
 
-Leonardo: So I managed to fix the damage to the aerial screw but now it needs a boot sequence: left left up right:
+**Leonardo:** So I managed to fix the damage to the aerial screw but now it needs a boot sequence: left left up right:
 You: sounds easy enough, just that text?
-Leonardo: Yes, but it' special, it needs to be mirrored, that's how I write all my text. And of course I use a Caesar cipher with a shift of 3 becuase he's Italian. :)
-You: Ok fine.
+
+**Leonardo:** Yes, but it' special, it needs to be mirrored, that's how I write all my text. And of course I use a Caesar cipher with a shift of 3 because I'm Italian. :)
+
+**You:** Yes, could you just type it in then?
+
+**Leonardo:** I could, but I'm intrigued to see if you and the time beetle can do it.
+
+**You:** Really? Fine.
 
 Instruction: Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
 
