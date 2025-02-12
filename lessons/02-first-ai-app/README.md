@@ -24,17 +24,18 @@ When you open your eyes, the world has shifted. Your feet feel unsteady, and you
 
 Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. The rhythmic motion of rowing is soothing, and as you get closer, the buildings come into sharper focus. They are old, their architecture reminiscent of a Renaissance painting. Ornate facades, arched windows, and weathered stone walls greet your eyes. You sigh, realizing you're not in London. The question now is, where and when are you this time?
 
-![Boat on the rive, man standing with a paddle](./assets/boat.png)
+<div>
+  <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width="400" >
+</div>
 
 ### Help me, Leonardo 
 
 You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly. The air is filled with the scent of the river and the distant murmur of the bustling city. As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-```html
-<div >
-  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="100" >
+<div>
+  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="400" >
 </div>
-```
+
 
 You approach him and ask: 
 
@@ -69,7 +70,7 @@ Relief washes over you as you follow the old man through the bustling streets of
 The old man leads you to a large wooden door, which he unlocks and pushes open. You step inside and are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. The room is a chaotic symphony of gears, pulleys, and tools, much like your workshop in London, but with an abundance of detailed drawings and sketches covering the walls.
 
 <div>
-  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="100" >
+  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="400" >
 </div>
 
 You ask the Time Beetle to inquire about Leonardo's whereabouts. 
@@ -424,7 +425,7 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 **Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
 <div>
-  <img src="./assets/helicopter.png" alt="Aerial screw, Leonardo Da Vinci" width="100" >
+  <img src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="400" >
 </div>
 
 *Leonardo Da Vinci’s Aerial Screw image credit Wikipedia* 
