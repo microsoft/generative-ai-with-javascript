@@ -6,9 +6,17 @@ In this lesson, you will learn to:
 - Write a basic app.
 - Understand system prompts.
 
+## Related resources
+
+[![Watch a short video about RAG](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
+
 ## Narrative: Picture yourself in a boat on a river
 
-Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the azure hues of the Mediterranean Sea. As you gaze out at the vast expanse of water, you feel a profound sense of accomplishment. The world is changing, and you are at the forefront of a new era of innovation. The ancient Greeks and Romans have laid the foundation for modern civilization, and you are contributing to its future.
+> *Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the time beetle.*
+>
+> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning and learn about the Generative AI. 
+
+Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. As you gaze out at the vast expanse of water, you feel a profound sense of accomplishment. The world is changing, and you are at the forefront of a new era of innovation.
 
 Proud of your achievements, your thoughts turn to your workshop in London. You look down at the time beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light. A tingling sensation spreads through your body, and suddenly, the world around you dissolves into a whirlwind of colors. You close your eyes and whisper, "Please let it be London."
 
@@ -24,29 +32,33 @@ You manage to secure the boat at the dock and start walking along the wooden pla
 
 ![Leonardo Da Vinci standing next to a crate in the harbour](./assets/leonardo.png) 
 
-You approach him and ask, "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
+You approach him and ask, 
 
-The Time Beetle responds, "Of course, I'll translate into 15th century Italian. 'Dove sono?'" 
+**You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
 
-The old man replies, "Siete a Firenze, signore. E chi siete voi?" 
+**Time beetle:** The Time Beetle responds, "Of course, I'll translate into 15th century Italian. 'Dove sono?'" 
 
-The Time Beetle translates, "He says you're in Florence, and asks who you are." 
+**Old man:** The old man replies, "Siete a Firenze, signore. E chi siete voi?" 
 
-You respond, "Tell him I'm a maker of things, and I'm looking for a place to work." 
+**Time beetle:** The Time Beetle translates, "He says you're in Florence, and asks who you are." 
 
-The old man nods, "Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci?" 
+**You:** "Tell him I'm a maker of things, and I'm looking for a place to work."
 
-The Time Beetle translates, "He asks if you've heard of Leonardo da Vinci." 
+The old man nods. 
 
-"Of course," you say. "Tell him I have and I would like to meet him." 
+**Old man:** Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci? 
 
-The Time Beetle translates, "Sì, mi piacerebbe incontrarlo e discutere di un progetto qui a Firenze con lui." 
+**Time beetle:** The Time Beetle translates, "He asks if you've heard of Leonardo da Vinci." 
 
-The old man smiles, "Allora, seguitemi, vi porterò da lui." 
+**You:** "Of course," you say. "Tell him I have and I would like to meet him." 
 
-You ask, "What did he say?" 
+**Time beetle:** The Time Beetle translates, "Sì, mi piacerebbe incontrarlo e discutere di un progetto qui a Firenze con lui.", yes, I would like to meet him and discuss a project here in Florence with him.
 
-The Time Beetle responds, "He said he'll take you to Leonardo." 
+**Old man:** The old man smiles, "Allora, seguitemi, vi porterò da lui."
+
+**You:** You ask, "What did he say?"
+
+**Time beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
 
 Relief washes over you as you follow the old man through the bustling streets of Florence. The city is alive with activity—vendors selling birds, fruits, wooden toys, and much more. The air is filled with the sounds of haggling, laughter, and the clatter of horse-drawn carts. The narrow streets are lined with buildings adorned with colorful frescoes and intricate stonework. 
 
@@ -54,29 +66,44 @@ The old man leads you to a large wooden door, which he unlocks and pushes open. 
 
 ![Lenoardos workshop](./assets/leonardo-workshop.png)
 
-You ask the Time Beetle to inquire about Leonardo's whereabouts. "Dove è Leonardo?" 
+You ask the Time Beetle to inquire about Leonardo's whereabouts. 
 
-The old man turns to you with a smile, "Sono io (that’s me), Leonardo da Vinci. Chi siete voi?"
+**You:** "Dove è Leonardo?" 
 
-You feel a thrill of recognition. "I thought so. I'm a fellow maker, out of place and time."
+**Old man:** The old man turns to you with a smile, "Sono io (that’s me), Leonardo da Vinci. Chi siete voi?", who are you?
 
-Leonardo's eyes sparkle with curiosity. "Interessante, cosa vi porta qui?"
+You feel a thrill of recognition. 
 
-The Time Beetle translates, "He asks what brings you here."
+**You:** I thought so. I'm a fellow maker, out of place and time."
 
-You explain, "Well, I was working on a project, and I ended up here."
+**Leonardo:** Leonardo's eyes sparkle with curiosity. "Interessante, cosa vi porta qui?"
 
-You show him the Time Beetle, and his eyes light up with fascination. He examines it closely as you explain how it works and how you ended up in Florence. Leonardo looks at you with excitement. "You're a maker of things. I have a project that might interest you. I've been working on a machine that can generate text based on verbal input. Would you like to help me with it?"
+The Time Beetle translates.
 
-Leonardo da Vinci, asking you to help him with a project—you can hardly believe it. You nod eagerly and say, "I would be honored to help you with your project."
+**Time beetle:**  "He asks what brings you here."
 
+You explain: 
+
+**You:** "Well, I was working on a project, and I ended up here."
+
+You show him the Time Beetle, and his eyes light up with fascination. He examines it closely as you explain how it works and how you ended up in Florence. 
+
+Leonardo looks at you with excitement. 
+
+**Leonardo:** "You're a maker of things. I have a project that might interest you. I've been working on a machine that can generate text based on verbal input. Would you like to help me with it?"
+
+Leonardo da Vinci, asking you to help him with a project—you can hardly believe it. You nod eagerly and say: 
+
+**You:** I would be honored to help you with your project,
 "Sarebbe un onore aiutarti con il tuo progetto." 
 
 ## Development Environment Setup 
 
-Before you can help Leonardo with his project you need to consider the “tools of the trade” that you need to get started with helping him. See below list for a set of essential tools and libraries.
+Before you can help Leonardo with his project you need to consider the “tools of the trade” that you need to get started with helping him. 
 
-So, what do you need to get started? An AI app isn't that different from a regular app, you need a:
+**You:** "Time beetle, what do I need to get started with this project?" Suggest tools and libraries that I need that can help me build an AI app that you're able to run.
+
+**Time beetle:** I'm compatible with most machines running in the 21st century, see below list for a set of essential tools and libraries.
 
 - **Text editor**, for example Visual Studio Code.  
 - **Terminal**, for running commands. 
@@ -86,11 +113,15 @@ So, what do you need to get started? An AI app isn't that different from a regul
 
 - **API key**. You'll need an API key to access the generative AI model. You can get this from the model provider, for example OpenAI or Azure OpenAI.
 
+**You:** Thank you, Time Beetle, I guess you'll go get those somehow from that Web you spoke about?
+
+**Time beetle:** Yes, I already have those it says and projects a keyboard and screen on the wall in front of you.
+
 ## Writing a Basic App 
 
-To write an app, at its simplest it's about sending a request to an API and displaying the response. Let's break it down: 
+**You:** Tell me more about the actual writing of the app, how do I get started?
 
- 
+**Time beetle:** Of course, to write an app, at its simplest it's about sending a request to an API and displaying the response. Let's break it down: 
 
 - **Input**: for a simple text generation app, the input is the text you want to generate more text from. You can either collect this input from the user or hardcode it in your app, we'll start with hardcoding it. 
 
@@ -98,9 +129,13 @@ To write an app, at its simplest it's about sending a request to an API and disp
 
 - **Response**: the API will return a response with the generated text. You need to extract this text from the response and display it to the user.
 
+**You:** That sounds simple enough, can you take me through a scenario that would make sense given the situation where in?
+
+**Time beetle:** Sure, let's see how we can build a simple app that generates Italian text based on English input.
+
 ## Your first app - teach me Italian
 
-Generative AI models can be used for many things, for example, language translation. In fact, it accepts input in one language and can generate text in another language. Let's start with a simple app that takes English input and generates Italian text.
+**Time beetle:** Generative AI models can be used for many things, for example, language translation. In fact, it accepts input in one language and can generate text in another language. Let's start with a simple app that takes English input and generates Italian text.
 
 ```javascript 
 
@@ -151,9 +186,23 @@ Let's explain what's happening here:
   - `messages`, the prompt to send to the model. Also note how we set the role to "user" to indicate that the input text is from the user. Had it been from the AI, we would set the role to "system". What you send to messages is conversation, a list of messages. 
 - Extracting the generated text from the response and printing it to the console.
 
+**You:** I think I get it. So if I change the value of the `question` variable to something else, the app will generate a different Italian translation?
+
+**Time beetle:** Exactly, you can change the input text to anything you want. Also note how GitHub models is being used as the base URL for the API together with a GitHub token as the API key.
+
+**You:** Why is that important?
+
+**Time beetle:** It's important to use a base URL and API key that are specific to the model you're using. GitHub Models is a platform that hosts a variety of models, all with different capabilities and features, it' also free to use.
+
+**You:** Oh good, I don't know who to pay anyways and I doubt they accept my currency here. :) 
+
 ## Chat
 
-So far, we've been using a simple prompt to generate text. Another approach is to carry on a conversation with the AI. The idea is to provide a list of messages as context, and the AI will generate a response based on that context. The effect is that the AI appears to be conversing with you and will infer from context, so you don't have to type a long prompt each time. Here's what a conversation can look like:
+**Time beetle:** Generative AI models can also be used to generate text based on a conversation. You can simulate a conversation with the AI by providing a list of messages as context like the conversation has already happened.
+
+**You:** That sounds interesting, but why is that useful?
+
+**Time beetle:** It's useful because it allows the AI to provide a better response based on more context than just a single prompt. Let's look at a conversation below to illustrate this: 
 
 ```text
 
@@ -175,7 +224,11 @@ AI: Rome is known for its ancient ruins, art, and vibrant culture. You can visit
 
 ```
 
-Imagine if a sentence like "Tell me more about it" were taken out of context, the AI wouldn't know what "it" refers to. This is where context is important, and this context is something we can provide to the AI model through the prompt. Below is how we can construct a conversation with the AI: 
+**Time beetle:** Imagine if a sentence like "Tell me more about it" were taken out of context, the AI wouldn't know what "it" refers to. This is where context is important, and this context is something we can provide to the AI model through the prompt. 
+
+**You:** I think I get it, how do I construct a conversation with the AI using this JavaScript language you speak of?
+
+**Time beetle:** Below is how we can construct a conversation with the AI: 
 
 ```javascript 
 
@@ -228,9 +281,19 @@ console.log(completion.choices[0]?.message?.content);
 
 Now the AI will provide a list of chat messages as context, and the AI will generate a response based on that context. This is a more interactive way to use generative AI models and can be used in chat bots, customer service applications, and more.
 
-## Improving the chat conversation with a system message 
+**You:** Ok, so if I understand the conversation correctly, the AI will now have the following context: _I'm going to Rome next month_, so based on that it should filter out irrelevant information and provide a more relevant response?
 
-So far, you've seen a constructed conversation to simulate a previous conversation to provide context to the AI to ensure a better response and makes the user type less. There's a way to improve this further by adding a system message to the conversation. A system message creates a "personality" for the AI and can be used to provide additional context. This AI seems to be helping the user plan a trip to Italy, so a system message could be something like "I'm an AI travel assistant, here to help you plan your trip to Italy." This message sets the tone for the conversation and helps the AI understand its role in the interaction.
+**Time beetle:** Exactly, the AI will use the context to generate a response that is more relevant to the conversation. 
+
+## Improving the chat conversation with a system message
+
+**You:** I see, but is there a way to improve this further?
+
+**Time beetle:** Yes, you can add a system message to the conversation. A system message creates a "personality" for the AI and can be used to provide additional context. 
+
+**You:** Ok, so in the context of the conversation we've been having, what would a system message look like?
+
+**Time beetle:** a system message for this conversation could be something like _"I'm an AI travel assistant, here to help you plan your trip to Italy."_ This message sets the tone for the conversation and helps the AI understand its role in the interaction.
 
 To create such a message, ensure it has the type "developer" like so:
 
@@ -243,9 +306,19 @@ const message = {
 
 > Note: this used to be called "system". This is a recent change and "developer" is the new term for it.
 
-## Customizing the level of creativity 
+**You:** Ok, great, I'll make sure to include a system message in my chat conversations. Out ouf curiosity, what does a system message look like for you?
 
-How the AI responds to you depends on how you phrase things but also on something known as "temperature", this is a variable with a value between 0 and 1 that determines how creative the AI's responses are. A temperature of 0 will result in more predictable responses, while a temperature of 1 will result in more creative and varied responses. You can adjust the temperature based on the context of your conversation and the type of responses you want from the AI. Here's how you can set it below:
+**Time beetle:** A system message for me could be something like _"I'm the Time Beetle, here to help you navigate through time and space. I should be helpful in providing you with information and guidance about the time era you're in along with the tools you need to get back to your own time."_
+
+### Temperature
+
+**You:** Anything else I should know about chat conversations?
+
+**Time beetle:** Yes, you can adjust the "temperature" of the AI's responses. The temperature is a variable with a value between 0 and 1 that determines how creative the AI's responses are. A temperature of 0 will result in more predictable responses, while a temperature of 1 will result in more creative and varied responses. You can adjust the temperature based on the context of your conversation and the type of responses you want from the AI.
+
+**You:** So if set the temperature to 0, the AI will provide more predictable responses, and if I set it to 1, the AI will provide more creative responses? What temperature do you have?
+
+**Time beetle:** I have a temperature of 0.7 and yes you're correct, the AI will provide more creative responses with a higher temperature. Let's see how you can set the temperature in your app:
 
 ```javascript
 
@@ -272,18 +345,20 @@ As you can see, you can adjust the temperature based on the context of your conv
 
 ## Context window
 
-The context window is another important concept in generative AI models. It refers to the number of input tokens and output tokens used by the model to generate a response. A larger context window allows the AI to consider more context and generate more coherent responses.
+**You:** There's more right?
 
-Different models have different limits to output tokens. Take the following model as example `gpt-4o-2024-08-06` it has the following specifications:
+**Time beetle:** Yes, another important concept in generative AI models is the context window. The context window is the number of previous messages that the AI uses to generate a response. A larger context window allows the AI to consider more context and generate more coherent responses.
+
+**Time beetle:** Different models have different limits to output tokens. Take the following model as example `gpt-4o-2024-08-06` it has the following specifications:
 
 - Maximum output tokens: roughly 16k tokens.
 - Maximum context window size: 128k.
 
 The means the majority of token can be spent on the input tokens, i.e 128k - 16k = 112k tokens.
 
-How much is a token though? A token is a word or a part of a word and differs slightly by language.
+**You:** Got it, context window, tokens, how much is a token though?
 
-There's a tool you can use to measure that's recommended by OpenAI, it's called [tokenizer](https://platform.openai.com/tokenizer). Let's try a sentence and see how many tokens it is:
+**Time beetle:** A token is a word or a part of a word and differs slightly by language. There's a tool you can use to measure that's recommended by OpenAI, it's called [tokenizer](https://platform.openai.com/tokenizer). Let's try a sentence and see how many tokens it is:
 
 ```text
 I want you to generate recipes for me.
@@ -292,6 +367,12 @@ I want you to generate recipes for me.
 ![Demo of tokenizer](./assets/tokenizer.png)
 
 Running `tokenizer` on the sentence above gives us 9 tokens.
+
+**You:** 9, that wasn't much, sounds like I can have a lot of tokens in my context window then?
+
+**Time beetle:** Yes, you can experiment with different context window sizes to see how it affects the AI's responses. In fact, if you set a context window size of 100, you will limit the AI and how much it considers for input and output. Here's how you can set the context window in your app:
+
+```javascript
 
 You can define the context window in your app like this:
 
@@ -320,19 +401,27 @@ const completion = await openai.chat.completions.create({
 
 > TIP: experiment with different context window sizes to see how it affects the AI's responses.
 
-## Assignment - building an engineering assistant 
+## Assignment - building an engineering assistant
 
 Leonardo suddenly asked to inspect the time beetle closer, he looked at it from all sides, even shook it and said, 
 
-Leonardo: "Posso costruire quello". Leonardo looked at you and said, "I need an assistant that can help me with the calculations and design of the aerial screw, can you build me an assistant that can do that?"
+**Leonardo:** Leonardo looked at you and said, "I need an assistant that can help me with the calculations and design of the aerial screw, can you build me an assistant that can do that?"
 
-You: Of course, I can build that for you.
+**You:** Of course, I can build that for you, Time beetle we can help with that right?
+
+**Time beetle:** Yes, not a problem, in fact the aerial screw is one of Leonardo's most fascinating and visionary inventions. Designed in the late 1480s...
+
+**You:** All I needed was a yes, let's save the lecture for later.
+
+**Time beetle:** Rude..
+
+**You:** What?
+
+**Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
 ![Aerial screw, Leonardo Da Vinci](./assets/helicopter.jpg)
 
 *Leonardo Da Vinci’s Aerial Screw image credit Wikipedia* 
-
-Leonardo da Vinci's aerial screw is one of his most fascinating and visionary inventions. Designed in the late 1480s, this early concept of a helicopter showcases Leonardo's incredible foresight and understanding of aerodynamics 
 
 > **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
 >
