@@ -20,6 +20,7 @@ Follow these steps to get started with this curriculum:
 
     Click the button below to start a Codespace:
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
+
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
