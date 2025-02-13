@@ -326,7 +326,7 @@ const message = {
 };
 ```
 
-> Note: this used to be called "system". This is a recent change and "developer" is the new term for it.
+> Note: this used to be called "system". This is a recent change and "developer" is the new term for it. For some models this is still called "system", so if you have any issues use "system".
 
 **You:** Ok, great, I'll make sure to include a system message in my chat conversations. Out ouf curiosity, what does a system message look like for you?
 
@@ -459,6 +459,10 @@ Your assignment is to build an engineering assistant that can help Leonardo with
 - It should be able to generate text based on user input. 
 
 - You should set a system message to introduce the assistant.  
+
+Check out [Sample app](./sample-app/) to get started.
+
+> TIP: Consider what the system message should be and what input you should provide.
 
 ## Solution
 
