@@ -71,6 +71,11 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
   <img src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="400" />
 </div> 
 
+<audio controls>
+  <source src="./assets/montezuma.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ## Talk to Montezuma
 
 If you want to talk to Montezuma, run the app [Montezuma](./characters/). 
