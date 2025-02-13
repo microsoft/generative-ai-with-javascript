@@ -71,6 +71,12 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
   <img src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="400" />
 </div> 
 
+## Talk to Montezuma
+
+If you want to talk to Montezuma, run the app [Montezuma](./characters/). 
+
+> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+
 ## Let’s play a game
 
 Leonardo steps forward, his calm demeanour a stark contrast to the tension in the air. 
