@@ -28,15 +28,19 @@ You held the time beetle device, its surface warm and pulsating with a faint blu
 
 You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, its grandeur casting a shadow over the garden. Leonardo looked around, his eyes wide with wonder. "Mio Dio". 
 
-![Old mansion shown in a deep fog](./assets/mansion.jpeg)
+<div>
+  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="400">
+</div>
 
 Leonardo looked around, his eyes wide with wonder. "Mio Dio, this place is beautiful!" although a bit, how do you say, spooky?.
 
 ### Running from the Dogs
 
-![Running from the dogs](./assets/dogs.jpeg)
-
 Before you could take in more of the scenery, a low growl caught your attention. A pack of large, imposing dogs bounded towards you, teeth bared. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
+
+<div>
+  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="400">
+</div>
 
 You just reached the mansion's door, it swung open, and a pair of servants rushed out. They looked you up and down, their expressions a mix of curiosity and suspicion, then gestured for you to follow them.
 
@@ -46,7 +50,9 @@ The door creaked open, revealing Ada Lovelace, her eyes sparkling with curiosity
 
 Charles Babbage stepped forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
 
-![Ada Lovelace and Charles Babbage working on a device](./assets/ada.jpeg)
+<div>
+  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="400">
+</div>
 
 Leonardo nodded, "Sì, it has been acting strangely."
 
@@ -55,6 +61,17 @@ Leonardo nodded, "Sì, it has been acting strangely."
 **You:** of course, sounds like we need to _augment_ the responses of the device with data, makes sense.
 
 **Ada:** Let's talk about a concept I'd like to call RAG, or Retrieval-Augmented Generation.
+
+## Talk to Ada Lovelace
+
+<div>
+  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="400">
+</div>
+
+If you want to talk to Ada, run the app [Ada Lovelace](./characters/).
+
+> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+<audio controls src="characters/public/ada.mp3" title="background music Ada"></audio>
 
 ## Known Challenges with LLMs
 
