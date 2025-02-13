@@ -119,6 +119,14 @@ You look out over the city; the ancient buildings stretch out below you. The Aer
 
 *Taking off* 
 
+## Talk to Sforza
+
+If you want to talk to Sforza, run the app [Sforza](./characters/). 
+
+> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+<audio controls src="characters/public/sforza.mp3" title="background music Sforza"></audio>
+
+
 ## What is prompt engineering
 
 **Time beetle:** We need to talk about prompt engineering.
