@@ -6,6 +6,21 @@ In this lesson, you will learn:
 - How to integrate external data sources into your AI application.
 - To leverage your data to improve the relevance and accuracy of the AI-generated content.
 
+## Getting Started
+
+Follow these steps to get started with this curriculum:
+
+1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or this link:
+   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
+
+2. **Clone the Repository**: Select the _clone_ button in the upper right-hand corner of the repository or this link:
+   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
+
+3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
+
+    Click the button below to start a Codespace:
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
+
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
