@@ -137,6 +137,13 @@ _Time device, “George” the metallic beetle_
 >
 > The city also served as the seat of the Ptolemaic Kingdom, which was established after Alexander's death. Under the Ptolemies, Alexandria continued to grow in size and wealth, rivaling even Rome in its splendor.
 
+## Talk to Dinocrates
+
+If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
+
+> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+<audio controls src="characters/public/dinocrates.mp3" title="background music Dinocrates"></audio>
+
 ## What can Generative AI do for me and my apps?
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
