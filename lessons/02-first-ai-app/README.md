@@ -119,6 +119,14 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 **You:** I would be honored to help you with your project,
 "Sarebbe un onore aiutarti con il tuo progetto." 
 
+## Talk to Leonardo
+
+If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
+
+> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+
+<audio controls src="characters/public/leonardo.mp3" title="background music Leonardo"></audio>
+
 ## Development Environment Setup 
 
 Before you can help Leonardo with his project you need to consider the “tools of the trade” that you need to get started with helping him. 
