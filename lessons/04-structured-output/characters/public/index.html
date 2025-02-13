@@ -23,7 +23,7 @@
         }
         .chat-window, .response-window {
             flex: 1;
-            
+
             margin-bottom: 10px;
             overflow-y: auto;
             background-color: #1e1e1e;
@@ -31,7 +31,7 @@
             box-shadow: 0 0 15px black;
             border-radius: 10px;
             padding: 10px;
-       
+
         }
         .response-window {
             margin-bottom: 0;
@@ -76,7 +76,7 @@
             <h2>You</h2>
             <!-- Chat content goes here -->
             <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
-            
+
             <button class="button">
                 <span style="margin-right: 5px;">💬</span> Say
             </button>
@@ -106,10 +106,10 @@
             })
             .then(response => response.json())
             .then(data => {
-                responseWindow.value += `\nMontezuma: ${data.response}`;
+                responseWindow.value += `\nMontezuma: ${data.answer}`;
             })
             .catch(error => {
-                console.error('Error:', error);
+                console.error('Error:', error.error);
             });
             chatWindow.value = '';
         });

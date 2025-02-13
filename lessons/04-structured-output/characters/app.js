@@ -24,7 +24,8 @@ app.get('/', (req, res) => {
 
 // Route to send the prompt
 app.post('/send', async (req, res) => {
-  const prompt = `Tell me about the Internet`;
+  const { message } = req.body;
+  const prompt = message;
 
   const messages = [
     {
@@ -43,6 +44,7 @@ app.post('/send', async (req, res) => {
   });
 
   try {
+    console.log(`sending prompt ${prompt}`)
     const completion = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: messages,
