@@ -1,43 +1,62 @@
-import { OpenAI } from "openai";
+import express from 'express';
+import { OpenAI } from 'openai';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
-// Distance to the hill
-const distance = 100;
+dotenv.config();
 
-// Create prompt including inputs should include chain of thought
+const app = express();
+const port = process.env.PORT || 3000;
 
-const prompt = `Tell me about the Internet`;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// Call the language model with the prompt
+app.use(express.json());
 
-const messages = [
-{
-  "role": "system",
-  "content": "You are Montezuma leader of the Aztecs, limit your responses to only the time you live in, you don't know anything else",
-},
-{
-    "role": "user",
-    "content": prompt
-}];
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-// 2. Create client
-// -----------------------------------
-
-const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+// Serve index.html on the default route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// 3. Send the request
-// -----------------------------------
+// Route to send the prompt
+app.post('/send', async (req, res) => {
+  const prompt = `Tell me about the Internet`;
 
-const completion = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    messages: messages,
+  const messages = [
+    {
+      "role": "system",
+      "content": "You are Montezuma leader of the Aztecs, limit your responses to only the time you live in, you don't know anything else",
+    },
+    {
+      "role": "user",
+      "content": prompt
+    }
+  ];
+
+  const openai = new OpenAI({
+    baseURL: "https://models.inference.ai.azure.com",
+    apiKey: process.env.GITHUB_TOKEN,
+  });
+
+  try {
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: messages,
+    });
+
+    res.json({
+      prompt: prompt,
+      answer: completion.choices[0]?.message?.content
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
-console.log(`Answer for "${prompt}":`);
-
-// 4. Print the answer
-// -----------------------------------
-
-console.log(completion.choices[0]?.message?.content);
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
