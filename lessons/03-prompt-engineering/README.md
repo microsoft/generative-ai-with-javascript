@@ -366,49 +366,7 @@ Distance to hill
 
 Incorporate this prompt as part of a prompt, use the chain-of-though technique to arrive at a response. 
 
-Here's some starter code:
-
-```javascript
-// Prompt for the user to input the values 
-
-// TODO, collect height, speed, gravity, wind, distance to hill
-
-
-// Create prompt including inputs should include chain of thought 
-
-const prompt = `TODO`; 
-
-// Call the language model with the prompt 
-
-const messages = [ 
-{ 
-    "role": "user", 
-    "content": prompt 
-}]; 
-
-// 2. Create client
-// -----------------------------------
-
-const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
-});
-
-// 3. Send the request
-// -----------------------------------
-
-const completion = await openai.chat.completions.create({
-    model: 'gpt-4',
-    messages: messages,
-});
-
-console.log(`Answer for "${prompt}":`);
-
-// 4. Print the answer
-// -----------------------------------
-
-console.log(completion.choices[0]?.message?.content); 
-```
+Here's a starter project [Starter project](./sample-app/)
 
 ## Solution
 
