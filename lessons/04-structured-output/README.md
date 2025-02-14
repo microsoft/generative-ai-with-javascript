@@ -27,15 +27,23 @@ If you haven't already forked/cloned this repo in a previous chapter, follow the
 
 > _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
 
-The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. The Roman soldiers below are relentless, their shouts growing fainter as you gain altitude. You, a mechanically trained engineer from 1860, marvel at the ingenuity of Leonardo's design, but the urgency of the situation keeps you focused.
+The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. The Roman soldiers below are relentless, their shouts growing fainter as you gain altitude.
 
-"Leonardo, we need to find a way out of this!" you shout over the roar of the wind.
+**You:** "Leonardo, we need to find a way out of this!" you shout over the roar of the wind.
 
-Leonardo, his eyes alight with a mix of fear and excitement, nods. "I have faith in my invention, but we need more than faith to escape these soldiers."
+Leonardo, his eyes alight with a mix of fear and excitement, nods.
 
-You reach into your satchel and pull out the Time Beetle, a device you discovered in your travels. "This might be our only chance," you say, pressing the beetle's intricate mechanisms. A bright light envelops you both, and the world around you shifts and warps.
+**Leonardo:** "I have faith in my invention, but we need more than faith to escape these soldiers."
 
-The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. The air is thick with the scent of incense, and the distant sounds of chanting fill your ears. As you look around, you realize that you've landed in the heart of the Aztec Empire. The aerial screw, now a bit worse for wear, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
+You reach into your satchel and pull out the Time Beetle, a device you discovered in your travels.
+
+**You:** "This might be our only chance," you say, pressing the beetle's intricate mechanisms. A bright light envelops you both, and the world around you shifts and warps.
+
+### The Aztec Empire
+
+The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. The air is thick with the scent of incense, and the distant sounds of chanting fill your ears. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
+
+The aerial screw, now a bit worse for wear, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
 
 <div>
   <img src="./assets/aztec.png" alt="Aztec calendar" width="400" />
@@ -47,7 +55,9 @@ Leonardo da Vinci steps forward, his eyes wide with wonder.
 
 **Leonardo:** "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
 
-You glance down and your heart sinks. The stone is part of the Aztec calendar, and the aerial screw has damaged a section of it. Before you can react, a group of Aztec soldiers approaches, their obsidian-tipped spears glinting menacingly in the sunlight. Their leader, a tall warrior with a feathered headdress, steps forward, his eyes narrowing as he takes in your strange attire and the damaged calendar.
+You glance down and your heart sinks. The stone is part of the Aztec calendar, and the aerial screw has damaged a section of it. 
+
+Before you can react, a group of Aztec soldiers approaches, their obsidian-tipped spears glinting menacingly in the sunlight.
 
 **Soldier leader** "Who are you, and what have you done?" he demands in Nahuatl. 
 
@@ -55,15 +65,13 @@ You glance down and your heart sinks. The stone is part of the Aztec calendar, a
   <img src="./assets/meeting.png" alt="Meeting with Aztecs" width="400" />
 </div> 
 
-You take a deep breath, trying to steady your nerves. 
+You take a deep breath, trying to steady your nerves.
 
 **You:** "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you. We did not mean to damage your sacred calendar.
 
 The warrior's eyes widen in surprise, but he remains cautious. 
 
 **Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
-
-As you follow the soldiers towards the pyramid, you can't help but feel a mix of relief and apprehension. 
 
 Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers. His piercing gaze falls upon you, and he gestures for you to approach.
 
@@ -90,23 +98,23 @@ Leonardo steps forward, his calm demeanour a stark contrast to the tension in th
 
 **Leonardo:** "We come in peace," he says, his voice steady. "We seek knowledge and understanding. Allow us to demonstrate the power of our machine and share our knowledge with you." 
 
-Montezuma considers this for a moment before a sly smile spread across his face. 
-
 **Montezuma:** "Very well. I propose a game of Patolli. If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
 
-The tension in the room is palpable as a Patolli board is brought out and set up before Montezuma. The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
+The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
 
 <div>
   <img src="./assets/game.png" alt="Playing a game of Patolli" width="400" />
 </div>
 
-Montezuma wins the first game, his skill and experience evident. Leonardo, however, remains undeterred. He studies the board carefully, his mind working through the strategies and probabilities. The second game is a close contest, but Leonardo manages to secure a victory, evening the score. 
+Montezuma wins the first game, his skill and experience evident. Leonardo, however, remains undeterred. He studies the board carefully, his mind working through the strategies and probabilities. 
+
+The second game is a close contest, but Leonardo manages to secure a victory, evening the score. 
 
 **Leonardo:** "One more game," he says, his eyes gleaming with determination.  George (Time beetle), we need to win this one, give me the right moves.
 
 **Time beetle:** Very well, calculating... Here you go...
 
-The final game is a nail-biter. The Aztec soldiers and courtiers gather around, their eyes fixed on the board. Every move is met with gasps and murmurs of anticipation. Leonardo's hands move with precision and confidence, and as the game progresses, it becomes clear that he has the upper hand. 
+The final game is a nail-biter. The Aztec soldiers and courtiers gather around, their eyes fixed on the board. 
 
 With a final, decisive move, Leonardo wins the game. The room erupts in cheers and applause, the Aztecs clearly impressed by his skill and composure. Montezuma, though disappointed, nods in respect. 
 
@@ -528,44 +536,10 @@ You: sounds easy enough, just that text?
 
 Instruction: Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
 
-See the [sample app](./sample-app) for code to get started with. It contains a Node.js project with all the dependencies you need. If you haven't created a Codespace, please do so now as you will need it to get the AI communication to work. See start of this lesson for instructions on creating a codespace.
+See the [sample app](./sample-app) for code to get started with. It contains a Node.js project with all the dependencies you need.
 
-```javascript
-import { OpenAI } from "openai";
-
-const prompt = `TODO`; 
-
-// Call the language model with the prompt 
-
-const messages = [ 
-{ 
-    "role": "user", 
-    "content": prompt 
-}]; 
-
-// 2. Create client
-// -----------------------------------
-
-const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
-});
-
-// 3. Send the request
-// -----------------------------------
-
-const completion = await openai.chat.completions.create({
-    model: 'gpt-4',
-    messages: messages,
-});
-
-console.log(`Answer for "${prompt}":`);
-
-// 4. Print the answer
-// -----------------------------------
-
-console.log(completion.choices[0]?.message?.content); 
-```
+> NOTE: If you haven't created a Codespace, please do so now as you will need it to get the AI communication in the sample app to work.
+> See start of this lesson for instructions on creating a codespace.
 
 ## Solution
 
@@ -588,7 +562,6 @@ Additionally, we learned how to extract data from prompts and present it in a st
 By leveraging structured output effectively, you can make it easier to understand and consume information generated by generative AI models.
 
 ## Knowledge Check
-
 
 Q: What is structured output used for?
 
