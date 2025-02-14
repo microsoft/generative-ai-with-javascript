@@ -148,7 +148,7 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 
 **Time beetle:** Oh right, sorry, yea so structured output is how. You asked for the right moves and I gave them to you in a structured way.
 
-Structured output refers to different data formats that are used to present information in a structured manner. Formats like JSON, XML, and CSV are commonly used and makes it easy to consume data by services.
+Structured output uses specific data formats to organize information clearly. Common formats like JSON, XML, and CSV make it easier for services to process and use the data
 
 Generative AI models can output data in various formats. However, output of unstructured text can make it difficult to extract information and hand it over to other services. Structured output can help in this regard.
 
@@ -315,6 +315,16 @@ Of course a service benefits from even more structured output, like JSON, XML, o
 Modify the prompt accordingly to ask for JSON output:
 
 > **Prompt**: Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present in json format, include properties for title, description, resources, needed, effort
+> 
+> Example of the JSON output:
+> [
+>   {
+>     "title": "",
+>     "description": ".",
+>     "resources_needed": "",
+>     "effort": ""
+>   }
+> ]
 
 ```text
 > Response:
@@ -417,7 +427,7 @@ Hopefully the user reads said instruction, what does a prompt look like that ext
 
 **Time beetle:** Let's try this with a similar prompt, let's vary the user input a bit so we can be sure the model is doing the right thing.
 
-> Prompt: Extract the following information from a users prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: Going to US, max 1200 dollars, January maybe.
+> Prompt: Extract the following information from a users prompt: location, when, budget, currency. Respond with the extracted data in JSON format. User prompt: Going to US, max 1200 dollars, January maybe.
 >
 > Response:
 
@@ -463,7 +473,7 @@ Figure out which skill to use based on a users prompt and extract the necessary 
 {user_input}
 ```
 
-Let's try it with the following user inputs, that is this is the value for {user_input}:
+Assuming that {user_input} contains the previous skills, let's try out the following user inputs:
 
 > Prompt: Going to US, max 1200 dollars, January maybe.
 > Result:
@@ -518,7 +528,7 @@ You: sounds easy enough, just that text?
 
 Instruction: Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
 
-Here's a piece of code to get started with:
+See the [sample app](./sample-app) for code to get started with. It contains a Node.js project with all the dependencies you need. If you haven't created a Codespace, please do so now as you will need it to get the AI communication to work. See start of this lesson for instructions on creating a codespace.
 
 ```javascript
 import { OpenAI } from "openai";
@@ -579,7 +589,6 @@ By leveraging structured output effectively, you can make it easier to understan
 
 ## Knowledge Check
 
-Generate a question with 2 correct responses and one incorrect:
 
 Q: What is structured output used for?
 
