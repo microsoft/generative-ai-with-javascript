@@ -143,7 +143,7 @@ _Time device, “George” the metallic beetle_
 
 If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
 
-> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/01-intro-to-genai/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
 <audio controls src="characters/public/dinocrates.mp3" title="background music Dinocrates"></audio>
 
 ## What can Generative AI do for me and my apps?
