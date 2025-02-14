@@ -125,7 +125,7 @@ You look out over the city; the ancient buildings stretch out below you. The Aer
 
 If you want to talk to Sforza, run the app [Sforza](./characters/). 
 
-> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/03-prompt-engineering/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
 <audio controls src="characters/public/sforza.mp3" title="background music Sforza"></audio>
 
 
