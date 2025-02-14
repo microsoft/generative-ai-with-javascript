@@ -10,12 +10,14 @@ In this lesson, you will learn to:
 
 ## Getting Started
 
-Follow these steps to get started with this curriculum:
+If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
 
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or this link:
+1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
+2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
+3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 
-2. **Clone the Repository**: Select the _clone_ button in the upper right-hand corner of the repository or this link:
+
    [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
 
 3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
