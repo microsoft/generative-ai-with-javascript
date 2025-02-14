@@ -85,7 +85,7 @@ Leonardo nodded, "Sì, it has been acting strangely."
 
 If you want to talk to Ada, run the app [Ada Lovelace](./characters/).
 
-> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/05-rag/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
 <audio controls src="characters/public/ada.mp3" title="background music Ada"></audio>
 
 ## Known Challenges with LLMs
