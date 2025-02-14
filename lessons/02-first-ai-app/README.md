@@ -125,7 +125,7 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 
 If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
 
-> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/02-first-ai-app/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
 
 <audio controls src="characters/public/leonardo.mp3" title="background music Leonardo"></audio>
 
