@@ -3,17 +3,19 @@
 In this chapter, you will learn the following:
 
 - **Structured output**, what it is and how to leverage it effectively. 
-- **Extract information from prompts** and reflect it on the output. 
+- **Extract information from prompts** and incorporate it into the output. 
 - **Present different types of output** like JSON and other types of formats for easy consumption by services.
 
 ## Getting Started
 
-Follow these steps to get started with this curriculum:
+If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
 
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or this link:
+1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
+2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
+3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 
-2. **Clone the Repository**: Select the _clone_ button in the upper right-hand corner of the repository or this link:
+
    [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
 
 3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
@@ -23,7 +25,7 @@ Follow these steps to get started with this curriculum:
 
 ## Narrative - out of the frying pan and into the fire
 
-> _Our story so far: You a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers, or well you're in the process of escaping them and is looking for a way to land safely, if possible_. 
+> _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
 
 The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. The Roman soldiers below are relentless, their shouts growing fainter as you gain altitude. You, a mechanically trained engineer from 1860, marvel at the ingenuity of Leonardo's design, but the urgency of the situation keeps you focused.
 
@@ -80,7 +82,7 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
 
 If you want to talk to Montezuma, run the app [Montezuma](./characters/). 
 
-> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/04-structured-output/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
 
 ## Let’s play a game
 
@@ -154,7 +156,7 @@ Generative AI models can output data in various formats. However, output of unst
 
 **Time beetle:** I try my best :)
 
-Another aspect, even if for human consumption is that it's easier to read and understand the data if it follows a structure that is familiar to the reader.
+Another benefit, even for human readers, is that structured data is easier to read and understand when it follows a familiar format.
 
 Let's look at a few examples of input and asking for specific output formats can help in extracting information that at least makes it easier to understand and consume.
 
@@ -166,7 +168,7 @@ Let's look at a few examples of input and asking for specific output formats can
 
 **Leonardo:** Oh I like this game, everyone pretend you're me :)
 
-> Prompt: Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention
+> Prompt: Generate ideas for inventions I can build using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to build it.
 
 ```text
 Result:
@@ -211,13 +213,13 @@ This is an OK looking response, every idea is structured in the same way, and it
 
 **Time beetle:** Sure you are, Leonardo, sure you are, that and a hundred other projects.
 
-**Time beetle:** George, please, and let's look at how you can instruct the model to present the output in a more structured way.
+**Time beetle:** Let's look at how you can instruct the model to present the output in a more structured way.
 
-### Instructing in the text
+### Structuring Your Prompts for Better Output
 
 **Time beetle:** You can improve your prompt by instructing the model on how you want the output to be structured. For example, you can ask for a table format with columns that you need. Here's how you can modify the prompt:
 
-> Prompt: Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with columns: title, description, resource needed, effort
+> Prompt: Generate ideas for inventions that can be built using 15th-century technology. For each invention, provide the required resources and estimate the effort needed to construct it. Present the information in a table with the following columns: Title, Description, Resources Needed, and Effort.
 
 ```text
 Result: 
@@ -233,19 +235,19 @@ This time we end up with a table that is easier to read and understand.
 
 **Leonardo:** I like this, will save me a lot of time for sure.
 
-**You:** Yea, for me too.
+**You:** Yea, me too.
 
 ### Presenting an output template
 
 Another way of getting structured output is to present an output template, here it can be any format, from columns to JSON, XML, or CSV.
 
-> **Prompt**:
+> Prompt Generate ideas for inventions that can be built using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to construct it. Present the information using the following format:
+> 
+> Title: [Invention Name]
+> Description: [Brief Explanation]
+> Resources Needed: [List of Required Materials]
+> Effort: [Estimated Difficulty or Labor Required]
 Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with the following output template: 
->
-> Title: \n
-> Description: \n
-> Resources Needed: \n
-> Effort: \n
 
 ```text
 
@@ -306,7 +308,7 @@ Of course a service benefits from even more structured output, like JSON, XML, o
 
 **You:** There always is with you, George. _sigh_
 
-### Even more structured output with formats like JSON, XML, or CSV
+### Using structured output with formats like JSON, XML, or CSV
 
 **Time beetle:** So far, you've seen how you can control the output structure by instructing the model in the prompt. You have even provided an output template. Let's take that idea a step further and see how it can be applied to more structured output formats like JSON and other types of formats.
 
