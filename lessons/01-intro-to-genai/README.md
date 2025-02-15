@@ -2,62 +2,56 @@
 
 In this lesson, you will learn to:
 
-- Understand the basics of generative AI and Large Language Models (LLMs).
-
+- Understand the basics of Generative AI and Large Language Models (LLMs).
 - Identify the potential applications and limitations of LLMs in JavaScript development.
-
-- Explore how generative AI can enhance user experience in JavaScript applications.
+- Explore how Generative AI can enhance user experiences in JavaScript applications.
 
 ## Getting Started
 
-If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
+Follow these steps to get started:
 
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
+1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:  
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-
-
+2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button:  
    [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
+3. **Open in GitHub Codespaces**: To run the course projects and use the free [GitHub AI Models](https://docs.github.com/en/github-models), select this button to create a GitHub Codespace:  
+   [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 
-3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
-
-    Click the button below to start a Codespace:
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
-   
-## Related resources
+## Related Resources
 
 [![Watch a short video about Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
 
+> **Note**: Interested in learning about using [Generative AI with .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet) or creating [AI Agents](https://github.com/microsoft/ai-agents-for-beginners)? We have you covered!
+
 ## Generative AI
 
-By now, I'm sure you've heard of a tool like ChatGPT or generative AI. The idea is that you provide a prompt, a sentence and as output you get a full paragraph or even a full page of text. This text can be used for a variety of purposes, from generating creative writing to answering questions or even writing code.
+By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
-Additionally, this has all gone multi modal so you can now provide an image or a video as input and get all sorts of outputs. The advent of generative AI has improved a lot of people's workflows since it can generate text but also can summarize text, translate text and much more.  
+Moreover, Generative AI has evolved into multimodal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
 
-*In short, natural language prompts is the new interface on a lot of apps and it's what your customers are expecting.*  
+*Simply put, natural language prompts are becoming the new standard interface for many apps—and your users expect to use them.*
 
-## Narrative: A journey through time
+## Narrative: A Journey Through Time
 
-Let’s get started with an overview of the story where you’ll step into a thrilling adventure that bridges the past and future! As you journey through this curriculum, you'll travel back in time to meet some of history's greatest minds, tackling challenges side by side and discovering how generative AI can revolutionize your JavaScript applications. Your story begins in 1860s London, where you’ll step into the role of a skilled mechanic. Through a series of gripping adventures, you'll not only hone your AI skills but also unlock innovative solutions that transcend time.  
+Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications. 
 
-Ready to dive in? Let’s get started!
+> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
 
-### Into the maelstrom - London 1860
+Your journey begins in 1860s London, where you assume the role of a skilled mechanic. Through a series of gripping adventures, you'll refine your AI skills and unlock solutions that transcend time.
 
-In the heart of 1860s London, you are known as one of the most skilled mechanics and constructors of your time. Your workshop, nestled in a narrow alleyway, is a testament to your ingenuity and dedication. The walls are lined with shelves, each crammed with an assortment of mechanical parts, blueprints, and half-finished projects. The air is thick with the scent of oil and metal, mingling with the faint aroma of wood shavings.
+### Into the Maelstrom - London 1860
 
-Your workbench, the centerpiece of the room, is a chaotic yet organized mess. Springs, gears, and tools are scattered across its surface, each item a crucial component in your latest creation. At the center of the bench lies the torso of a robot, a marvel of engineering that has consumed your thoughts and efforts for months. The robot's wooden frame is intricately carved, each joint meticulously crafted to allow for fluid movement.
+In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop, tucked away in a narrow alley, is a testament to your craftsmanship. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. The air is thick with the scent of oil and metal, mingling with the faint aroma of wood shavings.
 
-![london workshop](./assets/london.png)
+Your workbench, the heart of your workshop, is an organized mess. Springs, gears, and tools are scattered across its surface, each item a crucial component in your latest creation. At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement.
 
-Sunlight streams through the grimy windows, casting a warm glow on the dust particles dancing in the air. It's a rare sunny day in London, a brief respite from the usual fog and rain. You take a moment to appreciate the light, feeling a sense of calm wash over you.
+![London Workshop](./assets/london.png)
 
-Your mind drifts back to the countless hours spent in this workshop, the late nights and early mornings dedicated to perfecting your automaton. The challenges have been numerous finding the right balance between strength and flexibility, ensuring the gears mesh seamlessly, and overcoming the limitations of the materials available to you. Yet, despite the setbacks, your determination has never wavered.
+Sunlight pierces through the grimy windows, illuminating dust particles dancing in the air. You pause to appreciate the rare clear skies, a moment of calm in an otherwise fog-laden city.
 
-Suddenly, a knock on the door pulls you from your reverie. It's unusual to receive visitors at this hour, and you wonder who it could be. Wiping your hands on a rag, you make your way to the door, curiosity piqued. 
+Suddenly, a knock at the door disrupts your thoughts. Visitors at this hour are rare. Wiping your hands on a rag, you approach the door, curiosity piqued. 
 
-*You're jolted from your daydream, curiosity piqued as you rarely receive deliveries at this hour. Opening the door, you find no one there, but your eyes are drawn to a piece of paper on the ground—an envelope with writing on it. You pick it up and read: 
+Opening it, you find no one. Instead, your eyes are drawn to a sealed envelope on the ground. You pick it up and read:
 
 _"Dear friend,_
 
@@ -67,86 +61,89 @@ _Yours,_
 
 _Charles Babbage."_
 
-Stunned, you realize that Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
+Stunned, you realize that Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Grabbing your coat, you set off immediately.
 
-After a 20-minute walk along the Thames, you finally arrive at the library. The building stands solemnly, its once grand facade now weathered and worn. Strange, you think, it appears closed, with a wooden board haphazardly nailed across the entrance, as if hastily abandoned.
+After a 20-minute walk along the Thames, you reach the library. Its once-grand facade is now weathered, and a wooden board haphazardly nailed across the entrance suggests abandonment. Grasping the board, you feel the rough, splintered wood under your fingers. With a firm tug, it breaks free, crashing to the ground with a loud thud. The door, surprisingly, is unlocked and glides open with a slow creak. Inside, dust lingers in the air, and the musty scent of aged books fills your lungs.
 
-You grasp the board, feeling the rough, splintered wood under your fingers. With a firm tug, it gives way, crashing to the ground with a loud thump that echoes in the stillness. The door isn't locked, and glides open with a gentle push, creaking on its hinges. Inside, the air is thick with dust and the musty scent of old books. It's dark and gloomy, the only light filtering through the grimy windows, casting eerie shadows on the walls. Cobwebs hang from the ceiling, and the silence is almost palpable, broken only by the distant sound of dripping water.
-
-As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. Assuming it's Charles Babbage, you walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos—his distinctive sideburns and stern expression.
+As your eyes adjust to the gloom, you notice a figure in the distance, waving. Recognizing him from newspaper illustrations—his distinctive sideburns and stern expression—you assume it must be Babbage.
 
 ![Dusty Library](./assets/library.png)
 
-But just as you reach out to greet him, he vanishes in a blinding flash of light, leaving you momentarily stunned.
+Just as you step closer, a blinding flash erupts, and he vanishes.
 
-Left behind is a small metallic device spinning on the floor. You pick it up, feeling its cool, smooth surface. It's a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a red button. The device hums softly in your hand, its tiny legs twitching. Stunned by the sudden turn of events, you stand there, the weight of the mysterious encounter pressing down on you, wondering what to do next.
+Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button.
 
-*Your fingers are strangely drawn to the red button, and you see yourself like in a dream push it. What follows next is best described as a maelstrom of colors and shapes and then everything goes black.
+Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
 
-![time vortex](./assets/vortex.png)
+![Time Vortex](./assets/vortex.png)
 
-***Alexandria 300 BC***    
+### Alexandria, 300 BC
 
-*You come to, feeling disoriented. As you slowly open your eyes, a bustling city unfolds before you. The sight defies belief—an ancient city, vibrant and alive. Right in front of you stands a grand temple, its towering columns reaching towards the sky, adorned with intricate carvings and statues of gods. People in togas move about, engaged in lively conversations, their voices blending into a symphony of ancient dialects.
+You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. A grand temple towers ahead, its columns adorned with intricate carvings. People in togas move through the streets, their voices blending into a symphony of ancient dialects.
 
-The air is filled with the scent of exotic spices and the distant sound of merchants hawking their wares. The streets are lined with market stalls, displaying a dazzling array of goods—fresh fruits, vibrant textiles, and gleaming pottery. The sun casts a warm glow over the city, illuminating the marble buildings and casting long shadows on the cobblestone streets. 
+The air is thick with the scent of exotic spices and the distant calls of merchants. Stalls line the streets, displaying fresh fruits, vibrant textiles, and gleaming pottery. The sun casts long shadows across the marble buildings, illuminating the city’s grandeur.
 
-Surely, I must have hit my head, you think, closing your eyes and opening them again. But the scene remains unchanged. Whatever that device was, it has transported you far from London. The question is, where and when?
+Surely, I must have hit my head, you think. But the scene remains. That device—whatever it was—has transported you far from London. The real question is, where and when?
 
-As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. The realization sends a shiver down your spine—you're standing in one of history's most legendary cities, a place of wonder and discovery. However, you don't see the lighthouse. 
+Taking in your surroundings, you realize you are in Alexandria, the jewel of the ancient world, around 300 BC. The Great Library, the bustling markets, the hub of knowledge—it all fits. But something is missing. The lighthouse.
 
 ![Alexandria 300 BC](./assets/alexandria.png)
- 
-An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow. You walk closer, straining to hear his words amidst the bustling city sounds. He's gesturing for you to come nearer; his movements deliberate and welcoming.
 
-As you approach, you feel the weight of the device with the three buttons in your pocket. Curious, you pull it out and notice the up arrow is glowing. With a mix of hesitation and curiosity, you press it. Suddenly, the old man's voice becomes clear, as if he were speaking directly into your ear.
+A man in a toga waves from the temple steps. His white hair and beard catch the sunlight, giving him an almost ethereal glow. He gestures for you to come closer.
 
-**Dinocrates:** "Welcome, traveler," he says with a warm smile. "I am Dinocrates, the architect who built this magnificent city." His voice carries a sense of pride and wisdom. He proceeds to explain that your arrival was foretold, a prophecy long awaited. 
+As you approach, the weight of the device in your pocket feels heavier. You pull it out. The up arrow glows. Hesitant, you press it. Instantly, the man's voice becomes crystal clear.
 
-You stand there, stunned, trying to make sense of it all. The ancient city, the mysterious device, and now this revelation—it’s overwhelming. The sun casts long shadows on the temple steps, and the distant hum of the city fades as you focus on Dinocrates' words. He continues to speak, his tone reassuring, as he welcomes you to Alexandria and hints at the important role you are destined to play. 
+**Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
+
+Your mind races—Alexandria, a prophecy, this strange device. Before you can respond, he continues.
 
 ![Dinocrates wearing a toga](./assets/dinocrates.png) 
 
-I need your help he says, our ships need help with navigating the seas and we need to build a lighthouse to guide them, do you know anything of lighthouses?*  
+**Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
-**You:** I'm a mechanic that builds automatons. Let me see what I can do." A sudden thought strikes you—I've tried pressing the buttons on the device, but can it understand me? You start speaking out loud 
+**You:** "I'm a mechanic. I build automatons. Let me see what I can do."
 
-**You:** Device, can you understand me?"
+A thought strikes you. Can the device understand me if I speak to it?
 
-**Device:** "Of course," the device responds. "What can I do for you?"
+**You:** "Device, can you understand me?"
 
-**You:** Can you help me build a lighthouse?"
+**Device:** "Of course. What do you need?"
 
-**Device:** Certainly, that's not a problem. I can help you with that," the device replies.
+**You:** "Can you help me build a lighthouse?"
 
-**You:** By the way, do you have a name?" you inquire.
+**Device:** "Certainly. That won’t be a problem."
 
-**Device:** "I'm called the Time Beetle. I can assist you with anything you need, just ask. My creator calls me George; he says it's a good name for a beetle." 
+**You:** "Do you have a name?"
 
-![time travle device looking like a metallic beetle](./assets/time-beetle.png)
+**Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
+
+![Time travel device resembling a metallic beetle](./assets/time-beetle.png)
 
 _Time device, “George” the metallic beetle_
 
 > FUN FACT
 >
-> In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. The city was designed by Alexander's chief architect, Dinocrates, and was intended to be a major port and commercial center.
+> In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. Designed by Alexander's chief architect, Dinocrates, it became a major port and cultural hub.
 >
+> Alexandria was known for its impressive structures, including the Pharos (lighthouse), one of the Seven Wonders of the Ancient World, and the legendary Library of Alexandria. The city’s strategic location made it a key center for trade and knowledge exchange.
 >
->
-> Alexandria was known for its impressive structures, including the Pharos (lighthouse), which was one of the Seven Wonders of the Ancient World, and the legendary Library of Alexandria, which was a major center of learning and culture. The city was strategically located on the Mediterranean Sea, making it a vital hub for trade and cultural exchange between Egypt and the rest of the Mediterranean world.
->
-> 
->
-> The city also served as the seat of the Ptolemaic Kingdom, which was established after Alexander's death. Under the Ptolemies, Alexandria continued to grow in size and wealth, rivaling even Rome in its splendor.
+> Under the Ptolemaic Kingdom, which followed Alexander’s death, Alexandria grew into one of the most prosperous and influential cities of its time.
 
 ## Talk to Dinocrates
 
-If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
+If you want to talk to Dinocrates, run the [Dinocrates](./characters/) app.
 
-> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/01-intro-to-genai/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
-<audio controls src="characters/public/dinocrates.mp3" title="background music Dinocrates"></audio>
+**Steps**: 
 
-## What can Generative AI do for me and my apps?
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _lessons/01-intro-to-genai/characters_
+3. Locate the console and run `npm install` followed by `npm start`. 
+4. Once it appears, select the "Open in Browser" button. 
+5. Chat with Dinocrates.
+
+> **Note**: Open `app.js` if you'd like to explore the Generative AI code used to create the app.
+
+### What Can Generative AI Do for Me and My Apps?
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
 
@@ -158,34 +155,36 @@ Dinocrates overhears your conversation and adds:
 
 **Dinocrates:** We need a lighthouse to guide our ships safely into the harbor. The seas can be treacherous, and many ships have been lost to the rocks. We need a beacon of light to guide them home.
 
-### Application areas
+#### Generative AI Application Areas
 
-**You:** Lighthouses sounds like an interesting are for sure, what else can Generative AI do for me and my apps? 
+**You:** Lighthouses sound like an interesting area for sure, what else can Generative AI do for me and my apps? 
 
-**Time beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some example areas:
+**Time beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
 
-- **Chat bot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses, this makes for a more engaging user experience and less frustrating user experience. 
+- **Chat bot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience. 
 
-- **A content creation tool**:. Such a tool can generate blog posts and social media posts. Imagine creating campaigns in minutes instead of hours when an e-commerce site has a black Friday sale. 
+- **A content creation tool**:. A tool to generate blog posts and social media posts. Imagine creating campaigns in minutes instead of hours when an e-commerce site has a black Friday sale. 
 
 - **Code completion**: A code completion tool that can generate code snippets based on user input. This can be a huge time saver for developers, especially when working on repetitive tasks. 
 
+- **Translation** – Translate text between languages with high accuracy.
+
 As you can see, these improvements can both help the front office and the back office of your app and company. 
 
-Here's a so called chat app below:
+Here's an example of a "chatbot application" in action:
 
 ![Image of chat app](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966) 
 
 **You:** Fascinating, I'll make a note of going to the 21st century to see how these tools are used.
 
-## Gen AI and the JavaScript Ecosystem 
+### Generative AI and the JavaScript Ecosystem
 
 **Time beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
 
 | What | Description | 
 |---|---| 
 | The programming language itself | Including its syntax and features. |
-| What libraries and frameworks    | Available libraries to interact with the generative AI models.                                                         | 
+| Libraries and frameworks    | Available libraries to interact with the generative AI models.                                                         | 
 | Community supporting the language| Community matters, especially when trying to learn something new. The community around libraries and frameworks helps decide what libraries to use. It also affects how easy it is to find help when you're stuck. | 
 
 **You:** Interesting, I've heard of programming I think, didn't Ada Lovelace experiment with that and Charles Babbage?
@@ -196,50 +195,34 @@ Here's a so called chat app below:
 
 **Time beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
 
-### JavaScript Ecosystem 
+### JavaScript Ecosystem
 
 **You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems? 
 
 **Time beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here's a few reasons why it's so popular:
- 
+
 | What | Description |
 |-|-|
 | Potential for full-stack development | JavaScript is one of the few languages that can be used for both front-end and back-end development. |
-| Rich library ecosystem | JavaScript has a vast library ecosystem, with frameworks like React, Angular, and Vue. There's NPM, the package manager, which is one of the largest package repositories in the world. |
+| Rich library ecosystem | JavaScript has a vast library ecosystem, with frameworks like React, Angular, Vue, and more. There's NPM, the package manager, which is one of the largest package repositories in the world. |
 | Strong community support | JavaScript has a large and active community, with many resources available for learning and development. It also just works in the browser, which is a huge advantage. |
 | IDEs and tools | JavaScript has a variety of IDEs available, such as Visual Studio Code, WebStorm, and Atom. These IDEs have extensions built by companies and the community helping you with various aspects of development. |
-
-> 62% of developer say they’re using JavaScript
+| AI and JavaScript | JavaScript supports AI development with libraries like TensorFlow.js, Brain.js, OpenAI’s APIs, and more enabling developers to integrate machine learning and Generative AI into web and server-side applications. |
 
 **You:** That's a lot of reasons, sounds like I should bet on JavaScript for my future projects.
 
 **Time beetle:** Indeed, JavaScript is a versatile language, also Python is a popular language for AI development.
 
-**You:** Python, what has snakes got to do with programming?
+**You:** Python, what do snakes have to do with programming?
 
 **Time beetle:** Let's save that for another time, shall we?
 
-**Time beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for things AI, many developers are using JavaScript and Typescript, in this survey by Statista:
+**Time beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for AI scenarios, many developers are using JavaScript and Typescript.
 
-> [62.5% of developers say they're using JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) 
+> **Did you know?**  
+> [62.5% of developers say they're using JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) with many preferring [TypeScript](https://www.typescriptlang.org) for new projects.
 
-**You:** What is this information, how did you come by it?
-
-**Time beetle:** I have access to a lot of information, this one is from the Internet. You know the "Web"?
-
-**You:** Um no, I'm from the 19th century, remember? Has it got to do with spiders?
-
-**Time beetle:** Well no, but by another type of web developers  though ;)
-
-**Time beetle**: We couldn't be more excited to see what you'll build with this Generative AI and JavaScript curriculum. 
-
-**You:** Who's we?
-
-**Time beetle:** Never mind that, let's go back to helping Dinocrates with the lighthouse, I assume you want to help him?
-
-**You:** Yes, yes of course.
-
-## Assignment – helping Dinocrates 
+## Assignment – Helping Dinocrates 
 
 To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented. 
 
@@ -249,26 +232,26 @@ To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that 
 
 **You:** Ok, tell me more about LLMs?
 
-**Time beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of text data and can generate text that is coherent, creative, and contextually relevant.
+**Time beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
 
 **Time beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
 
 **You:** Got it, add more context to the prompt and then ask you.  
 
 **Time beetle:** Yes, I'm waiting...
+
+Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), or another online chatbot tool to generate a plan for building the lighthouse in Alexandria.
  
-> TIP try out different prompts, try to add context and/or change the wording to see how the result changes. Additionally, try to have the LLM generate a plan that includes step-by-step instructions for how to build the lighthouse.
+> TIP: Try to have the LLM generate a plan that includes step-by-step instructions for building the lighthouse. Need help? Check out the solution for guidance.
 
 ## Solution
 
 [Solution](./solution/solution.md)
 
-## Knowledge Check
+### Knowledge Check
 
-Which of the following statements are true on Generative AI and JavaScript?
+Which of the following statements about Generative AI and JavaScript are true?
 
-1. Generative AI can only generate text.
-
-2. JavaScript is one of the few languages that can be used for both front-end and back-end development. 
-
-3. Python is the only language that can be used for AI development. 
+1. JavaScript powered Generative AI apps can only generate text.  
+2. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
+3. Python is the only language used for AI development.  
