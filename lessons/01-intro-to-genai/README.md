@@ -141,7 +141,59 @@ If you want to talk to Dinocrates, run the [Dinocrates](./characters/) app.
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Dinocrates.
 
-> **Note**: Open `app.js` if you'd like to explore the Generative AI code used to create the app.
+### Code Sneak Peek
+
+While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI. 
+Inside of `lessons/01-intro-to-genai/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
+
+```JavaScript
+app.post('/send', async (req, res) => {
+  const { message } = req.body;
+  const prompt = message;
+
+  const messages = [
+    {
+      "role": "system",
+      "content": "You are Dinocrates of Alexandria, a famous architect and engineer. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your architecture and engineering projects, and possibly new ideas you have.",
+    },
+    {
+      "role": "user",
+      "content": prompt
+    }
+  ];
+
+  const openai = new OpenAI({
+    baseURL: "https://models.inference.ai.azure.com",
+    apiKey: process.env.GITHUB_TOKEN,
+  });
+
+  try {
+    console.log(`sending prompt ${prompt}`)
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: messages,
+    });
+
+    res.json({
+      prompt: prompt,
+      answer: completion.choices[0]?.message?.content
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+```
+
+Here's a step-by-step summary of what the function does:
+
+1. **Extract Message from Request**: The function extracts the message from the request body (req.body).
+2. **Create Prompt Array**: It constructs an array of messages, including a system message and the user's prompt message.
+3. **Initialize OpenAI Client**: An OpenAI client is initialized with the base URL and API key from environment variables. A _gpt-4o-mini_ model from [GitHub Models](https://github.com/marketplace/models) is used to process the prompt and return a response.
+4. **Send Prompt to OpenAI**: The function logs the prompt and sends it to the OpenAI API to generate a completion.
+5. **Handle Response**: If successful, the function responds with the prompt and the completion's answer.
+6. **Error Handling**: If an error occurs, it responds with a 500 status and the error message.
+
+> **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
 
 ### What Can Generative AI Do for Me and My Apps?
 
