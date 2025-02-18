@@ -41,7 +41,9 @@ In the heart of 1860s London, you are recognized as one of the most skilled mech
 
 Your workbench, the heart of your workshop, is an organized mess. Springs, gears, and tools are scattered across its surface, each item a crucial component in your latest creation. At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement.
 
-![London Workshop](./assets/london.png)
+<div>
+   <img src="./assets/london.png" alt="London Workshop" width="400">
+</div>
 
 It's a rare sunny day in London, a brief respite from the usual fog and rain.
 
@@ -72,6 +74,9 @@ The door isn't locked, and glides open with a gentle push, creaking on its hinge
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. Assuming it's Charles Babbage, you walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos—his distinctive sideburns and stern expression.
 
 ![Dusty Library](./assets/library.png)
+<div>
+   <img src="./assets/library.png" alt="Dusty Library" width="400">
+</div>
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
@@ -80,6 +85,9 @@ Left behind is a small metallic device spinning on the floor. You pick it up, it
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
 
 ![Time Vortex](./assets/vortex.png)
+<div>
+   <img src="./assets/vortex.png" alt="Time Vortex" width="400">
+</div>
 
 ### Alexandria 300 BC
 
@@ -92,6 +100,9 @@ The air is filled with the scent of exotic spices and the distant sound of merch
 As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. However, you don't see the lighthouse.
 
 ![Alexandria 300 BC](./assets/alexandria.png)
+<div>
+   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
+</div>
  
 ### Meeting Dinocrates
 
@@ -106,6 +117,9 @@ As you approach, the weight of the device in your pocket feels heavier. You pull
 Your mind races—Alexandria, a prophecy, this strange device. Before you can respond, he continues.
 
 ![Dinocrates wearing a toga](./assets/dinocrates.png) 
+<div>
+   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
+</div>
 
 **Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
@@ -125,7 +139,9 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
-![Time travel device resembling a metallic beetle](./assets/time-beetle.png)
+<div>
+   <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="400">
+</div>
 
 _Time device, “George” the metallic beetle_
 
