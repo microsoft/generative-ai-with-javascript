@@ -1,0 +1,16 @@
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Sample app showcasing AI usage using GitHub model",
+  "dependencies": {
+    "openai": "^4.84.1"
+  }
+}
