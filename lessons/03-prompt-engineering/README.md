@@ -6,36 +6,23 @@ In this chapter you will learn:
 - **Prompt engineering techniques and strategies**. We will cover different prompt engineering techniques and how it can help provide better results for different scenarios. 
 - **Meta prompts**, and how they will help restrict the output and ensure its accessible and provide a better user experience. 
 
-## Getting Started
-
-If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
-
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
-   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-
-
-   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-
-3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
-
-    Click the button below to start a Codespace:
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
-
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
 
 ## Narrative: ticket to ride
 
-You: "Let's see if I can manage to get back home." 
+> **Note:** So far, you've been on a journey through time with Leonardo da Vinci, exploring the wonders of the Renaissance. You've encountered the Time Beetle, a mysterious device that allows you to travel through time and space.
+>
+> See [lesson 1](../01-intro-to-genai/README.md if you want to catch up with the story from the beginning. 
 
-Leonardo: "Yes, your, what did you call it, 'app'? It's working fine and I'm sure it will help me realize the Aerial Screw."
+> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-sforza) if you'd prefer to jump straight to the technical content.
 
-You start fiddling with the Time Beetle, whispering to yourself, "Please get me back this time."
+**You:** "Let's see if I can manage to get back home." 
 
-Before you manage to press the button, the workshop doors slam open with a thunderous bang. A man stands in the doorway, broad-shouldered and dressed in expensive clothes. His face is contorted with anger as he waves a piece of paper in the air, yelling, "Da Vinci, dov'è il mio dipinto? Where is my painting?"
+Before you manage to press the button, the workshop doors slam open with a thunderous bang. A man stands in the doorway, broad-shouldered and dressed in expensive clothes, he waves a piece of paper in the air, yelling:
+
+**Sforza**: "Da Vinci, dov'è il mio dipinto? Where is my painting?"
 
 <div>
   <img src="./assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="400">
@@ -43,51 +30,45 @@ Before you manage to press the button, the workshop doors slam open with a thund
 
 *Ludovico Sforza* 
 
-Leonardo's eyes widen in alarm. 
+Leonardo's eyes widen in alarm.
 
 **Leonardo:** "Ah, Signore, mi scusi," he stammers, then bolts towards the back of the workshop. "Quickly, there's a door in the back! I've got a ride waiting," he shouts over his shoulder.
 
-**You:** "Who is that? What's going on?"
-
-**Leonardo:** "It's Ludovico Sforza. He wants me to complete a painting, 'The Last Supper.' I've just been too busy."
+**Leonardo:** It's Sforza. He wants me to complete a painting, 'The Last Supper.'"
 
 **You:** "Couldn't you just tell him that?"
 
 **Leonardo:** "I've tried, but he's not a patient man."
 
-Heart pounding, you sprint after Leonardo. The workshop is a blur of mechanical parts and half-finished inventions. Bursting out the back door into a dark alley, you find a horse and carriage awaiting.
+You sprint after Leonardo, bursting out the back door into a dark alley, you find a horse and carriage awaiting.
 
-The carriage is packed with gadgets and gizmos, their metallic surfaces glinting in the dim light. Leonardo grabs the reins and you both leap into the carriage. With a sharp crack of the whip, the horse takes off, galloping through the narrow streets of Florence.
-
-The city whizzes by in a blur of cobblestones and ancient buildings. The clatter of hooves echoes off the walls. As you reach the outskirts of the city, you glance back and see a cloud of dust rising behind you.
+Leonardo grabs the reins and you both leap into the carriage. With a sharp crack of the whip, the horse takes off, galloping through the narrow streets of Florence.
 
 **Leonardo:** "Try pressing that gizmo, they're getting closer!"
 
-You fumble with the Time Beetle, your hands shaking. 
-
-**You:** "Okay, Time Beetle, listen carefully. I need to get back to the present, home, okay?" Just as you're about to press the button, the carriage hits a bump. The Time Beetle flies out of your hand and lands on the floor.
-
-It starts beeping and announces in a robotic voice, "Going to Rome."
+**You:** "Okay, Time Beetle, listen carefully. I need to get back to the present, home, okay?" Suddenly, the carriage hits a bump and the Time Beetle flies out of your hand and lands on the floor. It starts beeping and announces in a robotic voice, "Going to Rome."
 
 **You:** "No, not Rome, home... home..."
 
-A swirl of colours envelops the carriage, the world around you dissolving into a kaleidoscope of light. You brace yourself, whispering, "Here we go again."
+A swirl of colours envelops the carriage, the world around you dissolving into a kaleidoscope of light.
 
 ## Escape 
 
-The swirl of colors fades, and you find yourself in the carriage, now racing down the Via Appia in Rome. The ancient road is bustling with activity, and to your astonishment, you're in the middle of a horse race. Chariots thunder past, their wheels kicking up clouds of dust. The roar of the crowd fills the air, and the ground trembles beneath the pounding hooves. 
+The swirl of colors fades, and you find yourself in the carriage, now racing down the Via Appia in Rome and to your astonishment, you're in the middle of a horse race. Chariots thunder past, their wheels kicking up clouds of dust. 
 
 **You:** "Leonardo, where are we?" 
 
 **Leonardo:** "It looks like we're in the middle of a race! We need to get out of here!" 
 
-You grip the sides of the carriage as it careens through the chaos. Roman soldiers on horseback are closing in, their armor glinting in the sunlight. You spot an opening in the arena port and shout, "There! Head for the port!"
+You grip the sides of the carriage as it careens through the chaos. Roman soldiers on horseback are closing in, their armor glinting in the sunlight. 
+
+**You**: "There! Head for the port!"
 
 <div>
   <img src="./assets/escape.png" alt="Escape from Rome" width="400">
 </div>
 
-Leonardo steers the carriage towards the exit, the wheels skidding on the cobblestones. You burst through the arena port, the wooden gates splintering under the force. The soldiers are hot on your heels, their shouts echoing in your ears. 
+Leonardo steers the carriage towards the exit, the wheels skidding on the cobblestones. The soldiers are hot on your heels, their shouts echoing in your ears. 
 
 **Leonardo:** "We need to lose them! Look for a place to hide!"
 
@@ -95,25 +76,25 @@ You scan the narrow streets, your heart racing.
 
 **You:** "There! A back alley!"
 
-Leonardo veers into the alley, the carriage jolting as it navigates the tight turn. The alley is dark and narrow, lined with ancient buildings. You leap out of the carriage and help Leonardo drag a huge device from the back. It's his invention—the Aerial Screw.
+Leonardo veers into the alley, the carriage jolting as it navigates the tight turn. You leap out of the carriage and help Leonardo drag a huge device from the back. It's his invention—the _Aerial Screw_.
 
 **Leonardo:** "Quickly, we need to get this to the roof!"
 
-You both strain under the weight of the device, your muscles burning as you haul it up a narrow staircase. The sound of the soldiers' pursuit grows louder, their footsteps echoing off the walls. You reach the roof, panting and sweating.
+You both strain under the weight of the device. The sound of the soldiers' pursuit grows louder, their footsteps echoing off the walls. You reach the roof, panting and sweating.
 
 **Leonardo:** "Help me set it up!"
 
-You work together, your hands moving with practiced precision. The Aerial Screw is a marvel of engineering, its wooden blades gleaming in the sunlight. You both climb onto the device, your heart pounding in your chest.
+You work together, your hands moving with practiced precision. You both climb onto the device, your heart pounding in your chest.
 
 **Leonardo:** "Hold on tight!"
 
-With a final push, the Aerial Screw begins to spin. The blades catch the air, and you feel a sudden lift. The ground falls away beneath you as the device takes off, soaring above the rooftops of Rome. The soldiers' shouts fade into the distance, and you feel a rush of exhilaration.
+With a final push, the Aerial Screw begins to spin. The blades catch the air, and you feel a sudden lift. The ground falls away beneath you as the device takes off, soaring above the rooftops of Rome. 
 
 **You:** "We did it, Leonardo! We're flying!"
 
 **Leonardo:** "Yes, but we need to find a safe place to land."
 
-You look out over the city; the ancient buildings stretch out below you. The Aerial Screw glides smoothly through the air, and you feel a sense of awe at the sight. The sun sets on the horizon, casting a golden glow over Rome.
+You look out over the city; the ancient buildings stretch out below you.
 
 <div>
   <img src="./assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="400">
@@ -123,9 +104,20 @@ You look out over the city; the ancient buildings stretch out below you. The Aer
 
 ## Talk to Sforza
 
-If you want to talk to Sforza, run the app [Sforza](./characters/). 
+If you want to talk to Sforza, run the app [Ludovico Sforza](./characters/). 
 
-> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/03-prompt-engineering/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
+**Steps**:
+
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _lessons/03-prompt-engineering/characters_
+3. Locate the console and run `npm install` followed by `npm start`. 
+4. Once it appears, select the "Open in Browser" button.
+5. Chat with Sforza.
+
+For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
+
+If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
+
 <audio controls src="characters/public/sforza.mp3" title="background music Sforza"></audio>
 
 

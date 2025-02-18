@@ -16,7 +16,7 @@ Moreover, Generative AI has evolved into multimodal capabilities, allowing you t
 
 ## Narrative: A Journey Through Time
 
-> NOTE: Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications. 
+> _**Note**: Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications._
 
 > **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
 
@@ -24,15 +24,15 @@ Your journey begins in 1860s London, where you assume the role of a skilled mech
 
 ### Into the Maelstrom - London 1860
 
-In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop, tucked away in a narrow alley, is a testament to your craftsmanship. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. The air is thick with the scent of oil and metal, mingling with the faint aroma of wood shavings.
+In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
 
-Your workbench, the heart of your workshop, is an organized mess. Springs, gears, and tools are scattered across its surface, each item a crucial component in your latest creation. At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement.
+Your workbench, the heart of your workshop, is an organized mess.
 
 <div>
    <img src="./assets/london.png" alt="London Workshop" width="400">
 </div>
 
-It's a rare sunny day in London, a brief respite from the usual fog and rain.
+_At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
 ### A letter, for you?
 
@@ -50,15 +50,15 @@ _Charles Babbage."_
 
 ### Off to the library
 
-Stunned, you realize that Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
+Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
 
-After a 20-minute walk along the Thames, you finally arrive at the library.
+After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
-The door isn't locked, and glides open with a gentle push, creaking on its hinges. Inside, the air is thick with dust and the musty scent of old books. It's dark and gloomy, the only light filtering through the grimy windows, casting eerie shadows on the walls. Cobwebs hang from the ceiling, and the silence is almost palpable, broken only by the distant sound of dripping water.
+It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls. 
 
 > Babbage, is that you?
 
-As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. Assuming it's Charles Babbage, you walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos—his distinctive sideburns and stern expression.
+As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
 <div>
    <img src="./assets/library.png" alt="Dusty Library" width="400">
@@ -76,29 +76,21 @@ Compelled by curiosity, your fingers drift toward the red button. The moment you
 
 ### Alexandria 300 BC
 
-You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. A grand temple towers ahead, its columns adorned with intricate carvings. People in togas move through the streets, their voices blending into a symphony of ancient dialects.
+You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
 
-The air is filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
+People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
-**You:** Surely, I must have hit my head, you think, closing your eyes and opening them again. But the scene remains unchanged. Whatever that device was, it has transported you far from London. The question is, where and when?
-
-As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. However, you don't see the lighthouse.
+**You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
 
 <div>
    <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
 </div>
- 
+
 ### Meeting Dinocrates
 
-An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow. You walk closer, straining to hear his words amidst the bustling city sounds. He's gesturing for you to come nearer; his movements deliberate and welcoming.
-
-A man in a toga waves from the temple steps. His white hair and beard catch the sunlight, giving him an almost ethereal glow. He gestures for you to come closer.
-
-As you approach, the weight of the device in your pocket feels heavier. You pull it out. The up arrow glows. Hesitant, you press it. Instantly, the man's voice becomes crystal clear.
+An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
-
-Your mind races—Alexandria, a prophecy, this strange device. Before you can respond, he continues.
 
 <div>
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
@@ -150,7 +142,8 @@ If you want to talk to Dinocrates, run the [Dinocrates](./characters/) app.
 
 ### Code Sneak Peek
 
-While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI. 
+While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
+
 Inside of `lessons/01-intro-to-genai/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
 
 ```JavaScript

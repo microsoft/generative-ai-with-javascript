@@ -6,44 +6,27 @@ In this chapter, you will learn the following:
 - **Extract information from prompts** and incorporate it into the output. 
 - **Present different types of output** like JSON and other types of formats for easy consumption by services.
 
-## Getting Started
-
-If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
-
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
-   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-
-
-   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-
-3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
-
-    Click the button below to start a Codespace:
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
-
 ## Narrative - out of the frying pan and into the fire
 
-> _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
+> **Note:** _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
+>
+> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
-The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. The Roman soldiers below are relentless, their shouts growing fainter as you gain altitude.
+> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-montezuma) if you'd prefer to jump straight to the technical content.
+
+The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. 
 
 **You:** "Leonardo, we need to find a way out of this!" you shout over the roar of the wind.
 
-Leonardo, his eyes alight with a mix of fear and excitement, nods.
-
 **Leonardo:** "I have faith in my invention, but we need more than faith to escape these soldiers."
-
-You reach into your satchel and pull out the Time Beetle, a device you discovered in your travels.
 
 **You:** "This might be our only chance," you say, pressing the beetle's intricate mechanisms. A bright light envelops you both, and the world around you shifts and warps.
 
 ### The Aztec Empire
 
-The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. The air is thick with the scent of incense, and the distant sounds of chanting fill your ears. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
+The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
 
-The aerial screw, now a bit worse for wear, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
+The aerial screw, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
 
 <div>
   <img src="./assets/aztec.png" alt="Aztec calendar" width="400" />
@@ -55,9 +38,7 @@ Leonardo da Vinci steps forward, his eyes wide with wonder.
 
 **Leonardo:** "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
 
-You glance down and your heart sinks. The stone is part of the Aztec calendar, and the aerial screw has damaged a section of it. 
-
-Before you can react, a group of Aztec soldiers approaches, their obsidian-tipped spears glinting menacingly in the sunlight.
+Before you can react, a group of Aztec soldiers approaches.
 
 **Soldier leader** "Who are you, and what have you done?" he demands in Nahuatl. 
 
@@ -67,13 +48,13 @@ Before you can react, a group of Aztec soldiers approaches, their obsidian-tippe
 
 You take a deep breath, trying to steady your nerves.
 
-**You:** "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you. We did not mean to damage your sacred calendar.
+**You:** "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you.
 
 The warrior's eyes widen in surprise, but he remains cautious. 
 
 **Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
 
-Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers. His piercing gaze falls upon you, and he gestures for you to approach.
+Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers.
 
 **Montezuma** "You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
 
@@ -81,20 +62,7 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
   <img src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="400" />
 </div> 
 
-<audio controls>
-  <source src="./assets/montezuma.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-## Talk to Montezuma
-
-If you want to talk to Montezuma, run the app [Montezuma](./characters/). 
-
-> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/04-structured-output/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
-
 ## Let’s play a game
-
-Leonardo steps forward, his calm demeanour a stark contrast to the tension in the air. 
 
 **Leonardo:** "We come in peace," he says, his voice steady. "We seek knowledge and understanding. Allow us to demonstrate the power of our machine and share our knowledge with you." 
 
@@ -106,15 +74,13 @@ The game begins, and the room falls silent, save for the sound of beans being ro
   <img src="./assets/game.png" alt="Playing a game of Patolli" width="400" />
 </div>
 
-Montezuma wins the first game, his skill and experience evident. Leonardo, however, remains undeterred. He studies the board carefully, his mind working through the strategies and probabilities. 
+Montezuma wins the first game, his skill and experience evident. Leonardo, studies the board carefully, his mind working through the strategies and probabilities.
 
 The second game is a close contest, but Leonardo manages to secure a victory, evening the score. 
 
-**Leonardo:** "One more game," he says, his eyes gleaming with determination.  George (Time beetle), we need to win this one, give me the right moves.
+**Leonardo:** "One more game," he whispers, George (Time beetle), we need to win this one, give me the right moves.
 
 **Time beetle:** Very well, calculating... Here you go...
-
-The final game is a nail-biter. The Aztec soldiers and courtiers gather around, their eyes fixed on the board. 
 
 With a final, decisive move, Leonardo wins the game. The room erupts in cheers and applause, the Aztecs clearly impressed by his skill and composure. Montezuma, though disappointed, nods in respect. 
 
@@ -147,6 +113,25 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 ![Patolli board](./assets/patolli.png)
 
 *Patolli - Wikipedia*
+
+
+## Talk to Montezuma
+
+If you want to talk to Montezuma, run the app [Montezuma](./characters/). 
+
+**Steps**:
+
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _lessons/04-structured-output/characters_
+3. Locate the console and run `npm install` followed by `npm start`.
+4. Once it appears, select the "Open in Browser" button.
+5. Chat with Sforza.
+
+For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
+
+If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
+
+<audio controls src="characters/public/montezuma.mp3" title="background music Montezuma"></audio>
 
 ## Structured Output
 
