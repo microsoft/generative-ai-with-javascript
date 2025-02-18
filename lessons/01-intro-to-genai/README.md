@@ -6,19 +6,6 @@ In this lesson, you will learn to:
 - Identify the potential applications and limitations of LLMs in JavaScript development.
 - Explore how Generative AI can enhance user experiences in JavaScript applications.
 
-## Getting Started
-
-Follow these steps to get started:
-
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:  
-   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button:  
-   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-
-[![Watch a short video about Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
-
-> **Note**: Interested in learning about using [Generative AI with .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet) or creating [AI Agents](https://github.com/microsoft/ai-agents-for-beginners)? We have you covered!
-
 ## Generative AI
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
