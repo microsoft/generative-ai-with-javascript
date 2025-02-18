@@ -63,11 +63,11 @@ The repo is organized in a series of lessons. Each lesson comes with the followi
 
 | # | Lesson | Link | 
 | ---- | ----------- |----- |
-| Lesson 1 | Introduction to Generative AI and LLMs for JavaScript Developers | [Lesson 1](./01-intro-to-genai)
-| Lesson 2 | Build your first AI app | [Lesson 2](./02-first-ai-app) |
-| Lesson 3 | Prompt engineering | [Lesson 3](./03-prompt-engineering) |
-| Lesson 4 | Structured output | [Lesson 4](./04-structured-output) |
-| Lesson 5 | Retrieval augmented generation (RAG) | [Lesson 5](./05-rag) |
+| Lesson 1 | Introduction to Generative AI and LLMs for JavaScript Developers | [Lesson 1](./lessons/01-intro-to-genai)
+| Lesson 2 | Build your first AI app | [Lesson 2](./lessons/02-first-ai-app) |
+| Lesson 3 | Prompt engineering | [Lesson 3](./lessons/03-prompt-engineering) |
+| Lesson 4 | Structured output | [Lesson 4](./lessons/04-structured-output) |
+| Lesson 5 | Retrieval augmented generation (RAG) | [Lesson 5](./lessons/05-rag) |
 
 
 New segments will be added to the curriculum over time, so stay tuned!
