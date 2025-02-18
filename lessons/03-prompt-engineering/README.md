@@ -14,7 +14,7 @@ In this chapter you will learn:
 
 > **Note:** So far, you've been on a journey through time with Leonardo da Vinci, exploring the wonders of the Renaissance. You've encountered the Time Beetle, a mysterious device that allows you to travel through time and space.
 >
-> See [lesson 1](../01-intro-to-genai/README.md if you want to catch up with the story from the beginning. 
+> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-sforza) if you'd prefer to jump straight to the technical content.
 
