@@ -73,7 +73,6 @@ The door isn't locked, and glides open with a gentle push, creaking on its hinge
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. Assuming it's Charles Babbage, you walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos—his distinctive sideburns and stern expression.
 
-![Dusty Library](./assets/library.png)
 <div>
    <img src="./assets/library.png" alt="Dusty Library" width="400">
 </div>
@@ -84,7 +83,6 @@ Left behind is a small metallic device spinning on the floor. You pick it up, it
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
 
-![Time Vortex](./assets/vortex.png)
 <div>
    <img src="./assets/vortex.png" alt="Time Vortex" width="400">
 </div>
@@ -99,7 +97,6 @@ The air is filled with the scent of exotic spices and the distant sound of merch
 
 As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. However, you don't see the lighthouse.
 
-![Alexandria 300 BC](./assets/alexandria.png)
 <div>
    <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
 </div>
@@ -116,7 +113,6 @@ As you approach, the weight of the device in your pocket feels heavier. You pull
 
 Your mind races—Alexandria, a prophecy, this strange device. Before you can respond, he continues.
 
-![Dinocrates wearing a toga](./assets/dinocrates.png) 
 <div>
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
 </div>
