@@ -59,7 +59,7 @@ The repo is organized in a series of lessons. Each lesson comes with the followi
 - Solution for assignment and quiz.
 - Character app, running this app demonstrates Generative AI but gives you a chance to have conversation with a historical figure.
 
-## Video series
+## Lesson series
 
 | # | Lesson | Link | 
 | ---- | ----------- |----- |
