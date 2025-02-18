@@ -15,15 +15,6 @@ If you haven't already forked/cloned this repo in a previous chapter, follow the
 1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
 2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-
-
-   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-
-3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
-
-    Click the button below to start a Codespace:
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
    
 ## Related resources
 
@@ -39,21 +30,21 @@ Additionally, this has all gone multi modal so you can now provide an image or a
 
 ## Narrative: A journey through time
 
-Let’s get started with an overview of the story where you’ll step into a thrilling adventure that bridges the past and future! As you journey through this curriculum, you'll travel back in time to meet some of history's greatest minds, tackling challenges side by side and discovering how generative AI can revolutionize your JavaScript applications. Your story begins in 1860s London, where you’ll step into the role of a skilled mechanic. Through a series of gripping adventures, you'll not only hone your AI skills but also unlock innovative solutions that transcend time.  
+> NOTE: Let’s get started with an overview of the story where you’ll step into a thrilling adventure that bridges the past and future! As you journey through this curriculum, you'll travel back in time to meet some of history's greatest minds, tackling challenges side by side and discovering how generative AI can revolutionize your JavaScript applications. Your story begins in 1860s London, where you’ll step into the role of a skilled mechanic. Through a series of gripping adventures, you'll not only hone your AI skills but also unlock innovative solutions that transcend time.  
 
 Ready to dive in? Let’s get started!
 
 ### Into the maelstrom - London 1860
 
-In the heart of 1860s London, you are known as one of the most skilled mechanics and constructors of your time. Your workshop, nestled in a narrow alleyway, is a testament to your ingenuity and dedication. The walls are lined with shelves, each crammed with an assortment of mechanical parts, blueprints, and half-finished projects. The air is thick with the scent of oil and metal, mingling with the faint aroma of wood shavings.
+In the heart of 1860s London, you are known as one of the most skilled mechanics and constructors of your time.
 
-Your workbench, the centerpiece of the room, is a chaotic yet organized mess. Springs, gears, and tools are scattered across its surface, each item a crucial component in your latest creation. At the center of the bench lies the torso of a robot, a marvel of engineering that has consumed your thoughts and efforts for months. The robot's wooden frame is intricately carved, each joint meticulously crafted to allow for fluid movement.
+Your workbench, the centerpiece of the room, is a chaotic yet organized mess. At the center of the bench lies the torso of a robot, a marvel of engineering that has consumed your thoughts and efforts for months. The robot's wooden frame is intricately carved, each joint meticulously crafted to allow for fluid movement.
 
 ![london workshop](./assets/london.png)
 
-Sunlight streams through the grimy windows, casting a warm glow on the dust particles dancing in the air. It's a rare sunny day in London, a brief respite from the usual fog and rain. You take a moment to appreciate the light, feeling a sense of calm wash over you.
+It's a rare sunny day in London, a brief respite from the usual fog and rain.
 
-Your mind drifts back to the countless hours spent in this workshop, the late nights and early mornings dedicated to perfecting your automaton. The challenges have been numerous finding the right balance between strength and flexibility, ensuring the gears mesh seamlessly, and overcoming the limitations of the materials available to you. Yet, despite the setbacks, your determination has never wavered.
+### A letter, for you?
 
 Suddenly, a knock on the door pulls you from your reverie. It's unusual to receive visitors at this hour, and you wonder who it could be. Wiping your hands on a rag, you make your way to the door, curiosity piqued. 
 
@@ -67,11 +58,15 @@ _Yours,_
 
 _Charles Babbage."_
 
+### Off to the library
+
 Stunned, you realize that Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
 
-After a 20-minute walk along the Thames, you finally arrive at the library. The building stands solemnly, its once grand facade now weathered and worn. Strange, you think, it appears closed, with a wooden board haphazardly nailed across the entrance, as if hastily abandoned.
+After a 20-minute walk along the Thames, you finally arrive at the library.
 
-You grasp the board, feeling the rough, splintered wood under your fingers. With a firm tug, it gives way, crashing to the ground with a loud thump that echoes in the stillness. The door isn't locked, and glides open with a gentle push, creaking on its hinges. Inside, the air is thick with dust and the musty scent of old books. It's dark and gloomy, the only light filtering through the grimy windows, casting eerie shadows on the walls. Cobwebs hang from the ceiling, and the silence is almost palpable, broken only by the distant sound of dripping water.
+The door isn't locked, and glides open with a gentle push, creaking on its hinges. Inside, the air is thick with dust and the musty scent of old books. It's dark and gloomy, the only light filtering through the grimy windows, casting eerie shadows on the walls. Cobwebs hang from the ceiling, and the silence is almost palpable, broken only by the distant sound of dripping water.
+
+> Babbage, is that you?
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. Assuming it's Charles Babbage, you walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos—his distinctive sideburns and stern expression.
 
@@ -85,25 +80,27 @@ Left behind is a small metallic device spinning on the floor. You pick it up, fe
 
 ![time vortex](./assets/vortex.png)
 
-***Alexandria 300 BC***    
+### Alexandria 300 BC
 
 *You come to, feeling disoriented. As you slowly open your eyes, a bustling city unfolds before you. The sight defies belief—an ancient city, vibrant and alive. Right in front of you stands a grand temple, its towering columns reaching towards the sky, adorned with intricate carvings and statues of gods. People in togas move about, engaged in lively conversations, their voices blending into a symphony of ancient dialects.
 
-The air is filled with the scent of exotic spices and the distant sound of merchants hawking their wares. The streets are lined with market stalls, displaying a dazzling array of goods—fresh fruits, vibrant textiles, and gleaming pottery. The sun casts a warm glow over the city, illuminating the marble buildings and casting long shadows on the cobblestone streets. 
+The air is filled with the scent of exotic spices and the distant sound of merchants hawking their wares. 
 
-Surely, I must have hit my head, you think, closing your eyes and opening them again. But the scene remains unchanged. Whatever that device was, it has transported you far from London. The question is, where and when?
+**You:** Surely, I must have hit my head, you think, closing your eyes and opening them again. But the scene remains unchanged. Whatever that device was, it has transported you far from London. The question is, where and when?
 
-As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. The realization sends a shiver down your spine—you're standing in one of history's most legendary cities, a place of wonder and discovery. However, you don't see the lighthouse. 
+As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. However, you don't see the lighthouse.
 
 ![Alexandria 300 BC](./assets/alexandria.png)
  
+### Meeting Dinocrates
+
 An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow. You walk closer, straining to hear his words amidst the bustling city sounds. He's gesturing for you to come nearer; his movements deliberate and welcoming.
 
 As you approach, you feel the weight of the device with the three buttons in your pocket. Curious, you pull it out and notice the up arrow is glowing. With a mix of hesitation and curiosity, you press it. Suddenly, the old man's voice becomes clear, as if he were speaking directly into your ear.
 
 **Dinocrates:** "Welcome, traveler," he says with a warm smile. "I am Dinocrates, the architect who built this magnificent city." His voice carries a sense of pride and wisdom. He proceeds to explain that your arrival was foretold, a prophecy long awaited. 
 
-You stand there, stunned, trying to make sense of it all. The ancient city, the mysterious device, and now this revelation—it’s overwhelming. The sun casts long shadows on the temple steps, and the distant hum of the city fades as you focus on Dinocrates' words. He continues to speak, his tone reassuring, as he welcomes you to Alexandria and hints at the important role you are destined to play. 
+He continues to speak, his tone reassuring, as he welcomes you to Alexandria and hints at the important role you are destined to play. 
 
 ![Dinocrates wearing a toga](./assets/dinocrates.png) 
 
@@ -141,12 +138,77 @@ _Time device, “George” the metallic beetle_
 
 ## Talk to Dinocrates
 
-If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
+If you want to talk to Dinocrates, run the [Dinocrates](./characters/) app.
 
-> NOTE: Remember to start a Codespaces and then run `npm install` followed by `npm start`. 
+**Steps**: 
+
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _lessons/01-intro-to-genai/characters_
+3. Locate the console and run `npm install` followed by `npm start`. 
+4. Once it appears, select the "Open in Browser" button. 
+5. Chat with Dinocrates.
+
+### Code Sneak Peek
+
+While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI. 
+Inside of `lessons/01-intro-to-genai/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
+
+```JavaScript
+app.post('/send', async (req, res) => {
+  const { message } = req.body;
+  const prompt = message;
+
+  const messages = [
+    {
+      "role": "system",
+      "content": "You are Dinocrates of Alexandria, a famous architect and engineer. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your architecture and engineering projects, and possibly new ideas you have.",
+    },
+    {
+      "role": "user",
+      "content": prompt
+    }
+  ];
+
+  const openai = new OpenAI({
+    baseURL: "https://models.inference.ai.azure.com",
+    apiKey: process.env.GITHUB_TOKEN,
+  });
+
+  try {
+    console.log(`sending prompt ${prompt}`)
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: messages,
+    });
+
+    res.json({
+      prompt: prompt,
+      answer: completion.choices[0]?.message?.content
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+```
+
+Here's a step-by-step summary of what the function does:
+
+1. **Extract Message from Request**: The function extracts the message from the request body (req.body).
+2. **Create Prompt Array**: It constructs an array of messages, including a system message and the user's prompt message.
+3. **Initialize OpenAI Client**: An OpenAI client is initialized with the base URL and API key from environment variables. A _gpt-4o-mini_ model from [GitHub Models](https://github.com/marketplace/models) is used to process the prompt and return a response.
+4. **Send Prompt to OpenAI**: The function logs the prompt and sends it to the OpenAI API to generate a completion.
+5. **Handle Response**: If successful, the function responds with the prompt and the completion's answer.
+6. **Error Handling**: If an error occurs, it responds with a 500 status and the error message.
+
+> **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
+
+If you also want to hear some background music of what it could have sounded like in Alexandria, you can listen to the background music below:
+
 <audio controls src="characters/public/dinocrates.mp3" title="background music Dinocrates"></audio>
 
 ## What can Generative AI do for me and my apps?
+
+> You've probably figured out by now that the time beetle works like an AI assistant that you can interact with using natural language, written or spoken.
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
 
