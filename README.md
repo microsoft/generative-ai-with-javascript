@@ -69,8 +69,8 @@ If you're eager to put your hands on the code, you can pick one of the following
 
 ## Video series
 
-| # | Lesson | Description | Link | 
-| ---- | ----------- | -------- | ----- |
+| # | Lesson | Link | 
+| ---- | ----------- |----- |
 | Lesson 1 | Introduction to Generative AI and LLMs for JavaScript Developers | [Lesson 1](./01-intro-to-genai)
 | Lesson 2 | Build your first AI app | [Lesson 2](./02-first-ai-app) |
 | Lesson 3 | Prompt engineering | [Lesson 3](./03-prompt-engineering) |
