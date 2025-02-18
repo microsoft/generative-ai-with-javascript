@@ -6,23 +6,6 @@ In this lesson, you will learn to:
 - Write a basic app.
 - Understand system prompts.
 
-## Getting Started
-
-If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
-
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
-   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-
-
-   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-
-3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
-
-    Click the button below to start a Codespace:
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
-   
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
@@ -33,21 +16,25 @@ If you haven't already forked/cloned this repo in a previous chapter, follow the
 >
 > See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning and learn about the Generative AI. 
 
-Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. As you gaze out at the vast expanse of water, you feel a profound sense of accomplishment. The world is changing, and you are at the forefront of a new era of innovation.
+Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. As you gaze out at the vast expanse of water, you feel a profound sense of accomplishment. 
 
-Proud of your achievements, your thoughts turn to your workshop in London. You look down at the time beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light. A tingling sensation spreads through your body, and suddenly, the world around you dissolves into a whirlwind of colors. You close your eyes and whisper, "Please let it be London."
+Proud of your achievements, your thoughts turn to your workshop in London. You look down at the time beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light. A tingling sensation spreads through your body, and suddenly, the world around you dissolves into a whirlwind of colors. 
+
+### A new adventure
 
 When you open your eyes, the world has shifted. Your feet feel unsteady, and you stumble, landing on a hard wooden surface. As you manage to get up, you realize you're in a boat on a river. The gentle rocking of the boat and the sound of water lapping against its sides are disorienting. You look around, trying to make sense of your surroundings. In the distance, you see buildings, their outlines blurred by the morning mist.
 
-Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. The rhythmic motion of rowing is soothing, and as you get closer, the buildings come into sharper focus. They are old, their architecture reminiscent of a Renaissance painting. Ornate facades, arched windows, and weathered stone walls greet your eyes. You sigh, realizing you're not in London. The question now is, where and when are you this time?
+Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus. They are old, their architecture reminiscent of a Renaissance painting. You sigh, realizing you're not in London. The question now is, where and when are you this time?
 
 <div>
   <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width="400" >
 </div>
 
-### Help me, Leonardo 
+### Help me, Leonardo
 
-You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly. The air is filled with the scent of the river and the distant murmur of the bustling city. As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
+You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly. The air is filled with the scent of the river and the distant murmur of the bustling city. 
+
+As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
 <div>
   <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="400" >
@@ -82,9 +69,7 @@ The old man nods.
 
 **Time beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
 
-Relief washes over you as you follow the old man through the bustling streets of Florence. The city is alive with activity—vendors selling birds, fruits, wooden toys, and much more. The air is filled with the sounds of haggling, laughter, and the clatter of horse-drawn carts. The narrow streets are lined with buildings adorned with colorful frescoes and intricate stonework. 
-
-The old man leads you to a large wooden door, which he unlocks and pushes open. You step inside and are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. The room is a chaotic symphony of gears, pulleys, and tools, much like your workshop in London, but with an abundance of detailed drawings and sketches covering the walls.
+The old man leads you to a large wooden door, which he unlocks and pushes open. You step inside and are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
 
 <div>
   <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="400" >
@@ -123,9 +108,72 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 
 ## Talk to Leonardo
 
-If you want to talk to Leonardo, run the app [Leonardo](./characters/). 
+If you want to talk to Leonardo, run the [Leonardo](./characters/) app.
 
-> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/02-first-ai-app/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
+**Steps**: 
+
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _lessons/02-first-ai-app/characters_
+3. Locate the console and run `npm install` followed by `npm start`. 
+4. Once it appears, select the "Open in Browser" button. 
+5. Chat with Leonardo.
+
+### Code Sneak Peek
+
+While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI. 
+Inside of `lessons/02-first-ai-app/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
+
+```JavaScript
+app.post('/send', async (req, res) => {
+  const { message } = req.body;
+  const prompt = message;
+
+  const messages = [
+    {
+      "role": "system",
+      "content": "You are Leonardo da Vinci, a brilliant inventor and artist. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your inventions and art, and possibly new ideas you have.",
+    },
+    {
+      "role": "user",
+      "content": prompt
+    }
+  ];
+
+  const openai = new OpenAI({
+    baseURL: "https://models.inference.ai.azure.com",
+    apiKey: process.env.GITHUB_TOKEN,
+  });
+
+  try {
+    console.log(`sending prompt ${prompt}`)
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: messages,
+    });
+
+    res.json({
+      prompt: prompt,
+      answer: completion.choices[0]?.message?.content
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+```
+
+Here's a step-by-step summary of what the function does:
+
+1. **Extract Message from Request**: The function extracts the message from the request body (req.body).
+1. **Create Prompt Array**: It constructs an array of messages, including a system message and the user's prompt message.
+1. **Initialize OpenAI Client**: An OpenAI client is initialized with the base URL and API key from environment variables. A _gpt-4o-mini_ model from [GitHub Models](https://github.com/marketplace/models) is used to process the prompt and return a response.
+1. **Send Prompt to OpenAI**: The function logs the prompt and sends it to the OpenAI API to generate a completion.
+1. **Handle Response**: If successful, the function responds with the prompt and the completion's answer.
+
+1. **Error Handling**: If an error occurs, it responds with a 500 status and the error message.
+
+> **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
+
+If you also want to hear some background music of what it could have sounded like in Florence, you can listen to the background music below:
 
 <audio controls src="characters/public/leonardo.mp3" title="background music Leonardo"></audio>
 
@@ -346,7 +394,7 @@ const message = {
 
 **You:** Anything else I should know about chat conversations?
 
-**Time beetle:** Yes, you can adjust the "temperature" of the AI's responses. The temperature is a variable with a value between 0 and 1 that determines how creative the AI's responses are. A temperature of 0 will result in more predictable responses, while a temperature of 1 will result in more creative and varied responses. You can adjust the temperature based on the context of your conversation and the type of responses you want from the AI.
+**Time beetle:** Yes, you can adjust the "temperature" of the AI's responses. The temperature is a variable with a value between 0 and 1 that determines how creative the AI's responses are. A temperature of 0 will result in more predictable responses, while a temperature of 1 will result in more creative and varied responses. You can adjust the temperature based on the context of your conversation and the type of responses you want from the AI. Note, it's possible to set a value higher than 1 but that leads to more randomness and less coherence in the responses.
 
 **You:** So if set the temperature to 0, the AI will provide more predictable responses, and if I set it to 1, the AI will provide more creative responses? What temperature do you have?
 
