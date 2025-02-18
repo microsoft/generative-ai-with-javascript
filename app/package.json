@@ -4,16 +4,17 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-      "start": "node app.js"
+        "start": "node app.js",
+        "test": "node test.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
-      "dotenv": "^16.4.7",
-      "express": "^4.21.2",
-      "openai": "^4.85.0"
+        "dotenv": "^16.4.7",
+        "ejs": "^3.1.10",
+        "express": "^4.21.2",
+        "openai": "^4.85.0"
     }
-  }
-  
+}

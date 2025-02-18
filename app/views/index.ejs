@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to <%= title %></title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .left-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-window, .response-window {
+            flex: 1;
+
+            margin-bottom: 10px;
+            overflow-y: auto;
+            background-color: #1e1e1e;
+
+            box-shadow: 0 0 15px black;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        .response-window {
+            margin-bottom: 0;
+        }
+        .right-column img {
+            max-width: 100%;
+            height: auto;
+        }
+        textarea {
+            width: calc(100% - 10px); /* Adjust width to fit within padding */
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+
+            height: calc(80% - 20px); /* Adjust height to fit within padding */
+            border-radius: 5px;
+            padding: 5px;
+            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+        }
+
+        .button, .choose {
+            margin-top: 10px;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            width: calc(100% - 10px);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .choose {
+          margin-bottom: 20px;
+        }
+
+        .button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="column left-column">
+        <div class="chat-window">
+            <h2>You</h2>
+            <!-- Chat content goes here -->
+            <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
+
+            <button class="button">
+                <span style="margin-right: 5px;">💬</span> Say
+            </button>
+        </div>
+        <div class="response-window">
+            <h2><%= title %></h2>
+            <div>
+              <select id="list">
+                <option value="dinocrates">Dinocrates</option>
+                <option value="davinci">Da Vinci</option>
+                <option value="sforza">Sforza</option>
+                <option value="montezuma">Montezuma</option>
+                <option value="ada">Ada Lovelace</option>
+              </select>
+              <button class="choose" id="btnChange">Change</button>
+            </div>
+            <textarea rows="4" cols="50" placeholder="Response will appear here..." disabled></textarea>
+        </div>
+    </div>
+    <div class="column right-column">
+        <img src="<%= image %>" alt="{{title}}">
+    </div>
+    <script>
+        const chatWindow = document.querySelector('.chat-window textarea');
+        const responseWindow = document.querySelector('.response-window textarea');
+        const button = document.querySelector('.button');
+        const buttonChange = document.getElementById("btnChange");
+        const listEl = document.getElementById("list");
+
+        const currentUrl = new URL(window.location.href);
+        let currentCharacter = currentUrl.searchParams.get('character') || "";
+        if(currentCharacter) {
+          listEl.value = currentCharacter;
+        } else {
+          listEl.value = "ada";
+        }
+
+        buttonChange.addEventListener("click", () => {
+          let selectedValue = listEl.value;
+          // should call default route with param character
+          // Get the current URL
+          const currentUrl = new URL(window.location.href);
+
+          // Set or update the 'character' query parameter
+          currentUrl.searchParams.set('character', selectedValue);
+
+          // Update the document URL
+          window.location.href = currentUrl.toString();
+        })
+
+        button.addEventListener('click', () => {
+            const message = chatWindow.value;
+            responseWindow.value = `You: ${message}`;
+            fetch('/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                responseWindow.value += `\n<%= title %>: ${data.answer}`;
+            })
+            .catch(error => {
+                console.error('Error:', error.error);
+            });
+            chatWindow.value = '';
+        });
+    </script>
+    <audio controls autoplay loop style="display:none;">
+        <source src="<%= name %>.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
