@@ -58,6 +58,8 @@ app.get('/', (req, res) => {
   if(character) {
     let ch = getCharacterByName(character);
 
+    systemMessage = ch?.description;
+
     title = ch?.title;
     name = ch?.name;
     image = ch?.image;
@@ -83,7 +85,7 @@ app.post('/send', async (req, res) => {
   ];
 
   const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
+    baseURL: "https://models.inference.ai.azure.com", // might need to change to this url in the future: https://models.github.ai/inference
     apiKey: process.env.GITHUB_TOKEN,
   });
 
