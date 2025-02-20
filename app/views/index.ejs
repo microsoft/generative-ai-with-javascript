@@ -97,6 +97,9 @@
               </select>
               <!-- <select id="voices">
               </select> -->
+              <span>
+                <input type="checkbox" id="speak" >Hear your character speak (using Speech synthesis)</checkbox>
+              </span>
               <button class="choose" id="btnChange">Change</button>
             </div>
             <textarea rows="4" cols="50" placeholder="Response will appear here..." disabled></textarea>
@@ -117,10 +120,15 @@
         const listEl = document.getElementById("list");
         const backgroundEl = document.getElementById("background");
         const voicesEl = document.getElementById("voices");
+        const speakEl = document.getElementById("speak");
 
         const currentUrl = new URL(window.location.href);
         let currentCharacter = currentUrl.searchParams.get('character') || "";
         let currentVoice = "<%= voice  %>";
+
+        const maxVolume = 0.5
+
+        backgroundEl.volume = maxVolume;
 
         if(currentCharacter) {
           listEl.value = currentCharacter;
@@ -166,7 +174,7 @@
             speechSynthesis.speak(utterance);
 
             utterance.onend = () => {
-              backgroundEl.volume = 1;
+              backgroundEl.volume = maxVolume;
             }
         }
 
@@ -196,7 +204,12 @@
             .then(response => response.json())
             .then(data => {
                 responseWindow.value += `\n<%= title %>: ${data.answer}`;
-                say(data.answer);
+                console.log("speak enabled", speakEl.checked);
+
+                if(speakEl.checked) {
+                  say(data.answer);
+                }
+
             })
             .catch(error => {
                 console.error('Error:', error.error);
