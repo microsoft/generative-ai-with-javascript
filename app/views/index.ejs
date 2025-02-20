@@ -118,6 +118,18 @@
           listEl.value = "ada";
         }
 
+        function say(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+
+            // Optional: Set voice and other properties
+            utterance.voice = speechSynthesis.getVoices()[0]; // Choose the first available voice
+            utterance.rate = 1; // Speed of the speech
+            utterance.pitch = 1; // Pitch of the speech
+            utterance.volume = 1; // Volume of the speech
+
+            speechSynthesis.speak(utterance);
+        }
+
         buttonChange.addEventListener("click", () => {
           let selectedValue = listEl.value;
           // should call default route with param character
@@ -144,6 +156,7 @@
             .then(response => response.json())
             .then(data => {
                 responseWindow.value += `\n<%= title %>: ${data.answer}`;
+                say(data.answer);
             })
             .catch(error => {
                 console.error('Error:', error.error);
@@ -157,3 +170,15 @@
     </audio>
 </body>
 </html>
+
+<!-- 
+const utterance = new SpeechSynthesisUtterance(textInput);
+
+            // Optional: Set voice and other properties
+            utterance.voice = speechSynthesis.getVoices()[0]; // Choose the first available voice
+            utterance.rate = 1; // Speed of the speech
+            utterance.pitch = 1; // Pitch of the speech
+            utterance.volume = 1; // Volume of the speech
+
+            speechSynthesis.speak(utterance);
+-->
