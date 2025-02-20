@@ -20,7 +20,7 @@
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
-[Overview](#overview) • [Quickstart](#quickstart) • [Video series](#video-series) • [Tutorials](#tutorials) • [Code samples](#code-samples) • [Community](#community) • [More resources](#more-resources)
+[Getting Started](#getting-started) • [Lessons](#lessons) • [Keep Learning](#keep-learning) • [Other Courses](#other-courses) 
 
 </div>
 
