@@ -11,7 +11,7 @@
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
-[Overview](#overview) • [Quickstart](#quickstart) • [Video series](#video-series) • [Next steps](#next-steps)
+[Overview](#overview) • [Quickstart](#quickstart) • [Video series](#video-series) • [Keep Learning](#keep-learning)
 
 </div>
 
@@ -69,6 +69,6 @@ New segments will be added to the series over time, so stay tuned!
 
 Demos are located in the [demo/](demos/) folder and organized by sessions. Each session has a folder with a `readme.md` file that explains the demo, its prerequisites and how to run it.
 
-## Next steps
+## Keep Learning
 
 Here are some additional resources in the form of tutorials, code samples and open community that you might find useful on your learning journey: [Additional Resources](../docs/additional-resources.md)
