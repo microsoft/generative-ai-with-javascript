@@ -95,6 +95,8 @@
                 <option value="montezuma">Montezuma</option>
                 <option value="ada">Ada Lovelace</option>
               </select>
+              <!-- <select id="voices">
+              </select> -->
               <button class="choose" id="btnChange">Change</button>
             </div>
             <textarea rows="4" cols="50" placeholder="Response will appear here..." disabled></textarea>
@@ -103,31 +105,69 @@
     <div class="column right-column">
         <img src="<%= image %>" alt="{{title}}">
     </div>
+    <audio id="background" controls autoplay loop style="display:none;">
+      <source src="<%= name %>.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
     <script>
         const chatWindow = document.querySelector('.chat-window textarea');
         const responseWindow = document.querySelector('.response-window textarea');
         const button = document.querySelector('.button');
         const buttonChange = document.getElementById("btnChange");
         const listEl = document.getElementById("list");
+        const backgroundEl = document.getElementById("background");
+        const voicesEl = document.getElementById("voices");
 
         const currentUrl = new URL(window.location.href);
         let currentCharacter = currentUrl.searchParams.get('character') || "";
+        let currentVoice = "<%= voice  %>";
+
         if(currentCharacter) {
           listEl.value = currentCharacter;
         } else {
           listEl.value = "ada";
         }
 
+        let voices = [];
+        speechSynthesis.onvoiceschanged = populateVoiceList;
+
+        function populateVoiceList() {
+          voices = window.speechSynthesis.getVoices();
+          // console.log(voices);
+
+          // for (let i = 0; i < voices.length; i++) {
+          //   const option = document.createElement("option");
+          //   option.textContent = `${voices[i].name} (${voices[i].lang})`;
+          //   option.value = i;
+
+          //   if (voices[i].default) {
+          //     option.textContent += " — DEFAULT";
+
+          //   }
+
+          //   voicesEl.appendChild(option);
+          // }
+        }
+
         function say(text) {
             const utterance = new SpeechSynthesisUtterance(text);
 
+            console.log("current voice: ", currentVoice);
+
             // Optional: Set voice and other properties
-            utterance.voice = speechSynthesis.getVoices()[0]; // Choose the first available voice
+            // console.log("selected value: ", voicesEl.value);
+            // console.log("selected voice", voicesEl.value);
+            utterance.voice = voices[parseInt(currentVoice)]; // Choose the first available voice
             utterance.rate = 1; // Speed of the speech
             utterance.pitch = 1; // Pitch of the speech
             utterance.volume = 1; // Volume of the speech
 
+            backgroundEl.volume = 0.1;
             speechSynthesis.speak(utterance);
+
+            utterance.onend = () => {
+              backgroundEl.volume = 1;
+            }
         }
 
         buttonChange.addEventListener("click", () => {
@@ -164,14 +204,11 @@
             chatWindow.value = '';
         });
     </script>
-    <audio controls autoplay loop style="display:none;">
-        <source src="<%= name %>.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+
 </body>
 </html>
 
-<!-- 
+<!--
 const utterance = new SpeechSynthesisUtterance(textInput);
 
             // Optional: Set voice and other properties
@@ -181,4 +218,6 @@ const utterance = new SpeechSynthesisUtterance(textInput);
             utterance.volume = 1; // Volume of the speech
 
             speechSynthesis.speak(utterance);
--->
+
+
+            -->

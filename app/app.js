@@ -54,6 +54,7 @@ app.get('/', (req, res) => {
   let title = "Ada Lovelace";
   let name = "ada";
   let image = "ada.jpeg";
+  let voice = 2; // see here values in characters.json
 
   if(character) {
     let ch = getCharacterByName(character);
@@ -63,9 +64,10 @@ app.get('/', (req, res) => {
     title = ch?.title;
     name = ch?.name;
     image = ch?.image;
+    voice = ch?.voice;
   }
 
-  res.render("index", { title:title, name: name, image: image  });
+  res.render("index", { title:title, name: name, image: image, voice: voice  });
 });
 
 // Route to send the prompt
