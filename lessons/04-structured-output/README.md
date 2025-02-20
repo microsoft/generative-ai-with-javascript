@@ -8,11 +8,13 @@ In this chapter, you will learn the following:
 
 ## Narrative - out of the frying pan and into the fire
 
-> **Note:** _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
+> [!NOTE]
+> _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
 >
 > See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
-> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-montezuma) if you'd prefer to jump straight to the technical content.
+> [!NOTE]
+> While we recommend going through the story (it's fun!), [click here](#talk-to-montezuma) if you'd prefer to jump straight to the technical content.
 
 The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. 
 
@@ -24,27 +26,26 @@ The wind whips around you as you and Leonardo da Vinci ascend in his aerial scre
 
 ### The Aztec Empire
 
+<div>
+  <img alt="Aztec calendar, Wikipedia" style="margin-left: 15px; margin-top: 12px" align=right src="./assets/aztec.png" alt="Aztec calendar" width="300" />
+</div> 
+
 The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
 
 The aerial screw, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
 
-<div>
-  <img src="./assets/aztec.png" alt="Aztec calendar" width="400" />
-</div> 
-
-*Aztec calendar - Wikipedia* 
-
+ 
 Leonardo da Vinci steps forward, his eyes wide with wonder.
 
 **Leonardo:** "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
 
+<div>
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/meeting.png" alt="Meeting with Aztecs" width="300" />
+</div> 
+
 Before you can react, a group of Aztec soldiers approaches.
 
 **Soldier leader** "Who are you, and what have you done?" he demands in Nahuatl. 
-
-<div>
-  <img src="./assets/meeting.png" alt="Meeting with Aztecs" width="400" />
-</div> 
 
 You take a deep breath, trying to steady your nerves.
 
@@ -52,15 +53,17 @@ You take a deep breath, trying to steady your nerves.
 
 The warrior's eyes widen in surprise, but he remains cautious. 
 
+<div>
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="300" />
+</div>
+
 **Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
 
 Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers.
 
 **Montezuma** "You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
 
-<div>
-  <img src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="400" />
-</div> 
+<div style="clear: both"></div>
 
 ## Let’s play a game
 
@@ -68,11 +71,11 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
 
 **Montezuma:** "Very well. I propose a game of Patolli. If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
 
-The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
-
 <div>
-  <img src="./assets/game.png" alt="Playing a game of Patolli" width="400" />
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/game.png" alt="Playing a game of Patolli" width="300" />
 </div>
+
+The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
 
 Montezuma wins the first game, his skill and experience evident. Leonardo, studies the board carefully, his mind working through the strategies and probabilities.
 
@@ -87,7 +90,12 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 **Montezuma:** "You have won fairly," Montezuma says, his voice carrying a note of admiration. "You are free to go, and you may keep your device. But know that you are always welcome here, should you wish to return." 
 
 **Time beetle:** I won't say anything if you don't Leonardo ;)
- 
+
+<div>
+  <img style="margin-top: 55px; margin-left: 15px; margin-right: 10px" align=right width=300 src="./assets/patolli.png" alt="Patolli board" />
+</div>
+
+> [!NOTE]
 > Patolli is one of the oldest known games in the Americas, played by various pre-Columbian Mesoamerican cultures, including the Aztecs. 
 > 
 > It is a game of strategy and luck, often associated with gambling. 
@@ -110,22 +118,24 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 > 
 > The game was not just for entertainment but also involved high-stakes gambling, with players betting items like blankets, precious stones, and even their homes or freedom 
 
-![Patolli board](./assets/patolli.png)
-
 *Patolli - Wikipedia*
 
 
 ## Talk to Montezuma
 
-If you want to talk to Montezuma, run the app [Montezuma](./characters/). 
+<div>
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/montezuma.jpeg" alt="Montezuma" width="300" />
+</div>
+
+If you want to talk to Montezuma, run the app [Characters](./characters/) app. 
 
 **Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _lessons/04-structured-output/characters_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
-5. Chat with Sforza.
+5. Chat with Montezuma.
 
 For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
 

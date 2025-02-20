@@ -12,25 +12,26 @@ In this chapter you will learn:
 
 ## Narrative: ticket to ride
 
-> **Note:** So far, you've been on a journey through time with Leonardo da Vinci, exploring the wonders of the Renaissance. You've encountered the Time Beetle, a mysterious device that allows you to travel through time and space.
+> [!NOTE] 
+> So far, you've been on a journey through time with Leonardo da Vinci, exploring the wonders of the Renaissance. You've encountered the Time Beetle, a mysterious device that allows you to travel through time and space.
 >
 > See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
-> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-sforza) if you'd prefer to jump straight to the technical content.
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#talk-to-sforza) if you'd prefer to jump straight to the technical content.
 
 **You:** "Let's see if I can manage to get back home." 
 
 Before you manage to press the button, the workshop doors slam open with a thunderous bang. A man stands in the doorway, broad-shouldered and dressed in expensive clothes, he waves a piece of paper in the air, yelling:
 
+<div>
+  <img style="margin-left: 15px; margin-top: 22px" align=right src="./assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="300">
+</div>
+
 **Sforza**: "Da Vinci, dov'è il mio dipinto? Where is my painting?"
 
-<div>
-  <img src="./assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="400">
-</div> 
 
 *Ludovico Sforza* 
-
-Leonardo's eyes widen in alarm.
 
 **Leonardo:** "Ah, Signore, mi scusi," he stammers, then bolts towards the back of the workshop. "Quickly, there's a door in the back! I've got a ride waiting," he shouts over his shoulder.
 
@@ -56,6 +57,10 @@ A swirl of colours envelops the carriage, the world around you dissolving into a
 
 The swirl of colors fades, and you find yourself in the carriage, now racing down the Via Appia in Rome and to your astonishment, you're in the middle of a horse race. Chariots thunder past, their wheels kicking up clouds of dust. 
 
+<div>
+  <img align=right style="margin-left: 15px; margin-top: 12px" src="./assets/escape.png" alt="Escape from Rome" width="300">
+</div>
+
 **You:** "Leonardo, where are we?" 
 
 **Leonardo:** "It looks like we're in the middle of a race! We need to get out of here!" 
@@ -63,10 +68,6 @@ The swirl of colors fades, and you find yourself in the carriage, now racing dow
 You grip the sides of the carriage as it careens through the chaos. Roman soldiers on horseback are closing in, their armor glinting in the sunlight. 
 
 **You**: "There! Head for the port!"
-
-<div>
-  <img src="./assets/escape.png" alt="Escape from Rome" width="400">
-</div>
 
 Leonardo steers the carriage towards the exit, the wheels skidding on the cobblestones. The soldiers are hot on your heels, their shouts echoing in your ears. 
 
@@ -86,6 +87,10 @@ You both strain under the weight of the device. The sound of the soldiers' pursu
 
 You work together, your hands moving with practiced precision. You both climb onto the device, your heart pounding in your chest.
 
+<div>
+  <img style="margin-righ: 15px; margin-top: 12px;" align=right src="./assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="300">
+</div>
+
 **Leonardo:** "Hold on tight!"
 
 With a final push, the Aerial Screw begins to spin. The blades catch the air, and you feel a sudden lift. The ground falls away beneath you as the device takes off, soaring above the rooftops of Rome. 
@@ -96,15 +101,13 @@ With a final push, the Aerial Screw begins to spin. The blades catch the air, an
 
 You look out over the city; the ancient buildings stretch out below you.
 
-<div>
-  <img src="./assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="400">
-</div>
-
-*Taking off* 
-
 ## Talk to Sforza
 
-If you want to talk to Sforza, run the app [Ludovico Sforza](./characters/). 
+<div >
+  <img  src="./assets/ludovico.png" alt="Ludovico Sforza" width="300" align="right" style="margin-left: 15px; margin-top: 12px">
+</div>
+
+If you want to talk to Sforza, run the [Characters](./characters/) app. 
 
 **Steps**:
 

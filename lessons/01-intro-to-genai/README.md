@@ -16,23 +16,30 @@ Moreover, Generative AI has evolved into multimodal capabilities, allowing you t
 
 ## Narrative: A Journey Through Time
 
-> _**Note**: Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications._
+> [!NOTE] 
+> Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications._
 
-> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
+> [!NOTE]  
+> While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
+
 
 Your journey begins in 1860s London, where you assume the role of a skilled mechanic. Through a series of gripping adventures, you'll refine your AI skills and unlock solutions that transcend time.
 
 ### Into the Maelstrom - London 1860
 
+<div>
+   <img style="margin-left:15px; margin-top: 12px;" align=right src="./assets/london.png" alt="London Workshop" width="300">
+</div>
+
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
 
 Your workbench, the heart of your workshop, is an organized mess.
 
-<div>
-   <img src="./assets/london.png" alt="London Workshop" width="400">
-</div>
+
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
+
+<div style="clear: both;"></div>
 
 ### A letter, for you?
 
@@ -54,37 +61,44 @@ Charles Babbage, the great mathematician and inventor of the difference engine, 
 
 After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="300">
+</div>
+
+
 It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls. 
 
-> Babbage, is that you?
+**You:** "Hello? Mr. Babbage?"
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
+<div style="clear:both"></div>
+
 <div>
-   <img src="./assets/library.png" alt="Dusty Library" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="300">
 </div>
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
-Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button.
+Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. 
+
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button.
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
 
-<div>
-   <img src="./assets/vortex.png" alt="Time Vortex" width="400">
-</div>
+<div style="clear: both;"></div>
 
 ### Alexandria 300 BC
+
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
+</div>
 
 You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
 
 People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
 **You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
-
-<div>
-   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
-</div>
 
 ### Meeting Dinocrates
 
@@ -93,7 +107,7 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
 <div>
-   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
 </div>
 
 **Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
@@ -110,18 +124,23 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "Certainly. That won’t be a problem."
 
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
+</div>
+
 **You:** "Do you have a name?"
 
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
-<div>
-   <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="400">
-</div>
+**You:** You're right, George is a good name, it was my fathers name in fact.
+
+**Device:** ...
 
 _Time device, “George” the metallic beetle_
 
-> FUN FACT
->
+<div style="clear: both;"></div>
+
+> [!NOTE]
 > In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. Designed by Alexander's chief architect, Dinocrates, it became a major port and cultural hub.
 >
 > Alexandria was known for its impressive structures, including the Pharos (lighthouse), one of the Seven Wonders of the Ancient World, and the legendary Library of Alexandria. The city’s strategic location made it a key center for trade and knowledge exchange.
@@ -130,12 +149,16 @@ _Time device, “George” the metallic beetle_
 
 ## Talk to Dinocrates
 
-If you want to talk to Dinocrates, run the [Dinocrates](./characters/) app.
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+</div>
+
+If you want to talk to Dinocrates, run the [Characters](./characters/) app.
 
 **Steps**: 
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _lessons/01-intro-to-genai/characters_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Dinocrates.
@@ -201,6 +224,7 @@ If you also want to hear some background music of what it could have sounded lik
 
 ### What Can Generative AI Do for Me and My Apps?
 
+> [!NOTE]
 > You've probably figured out by now that the time beetle works like an AI assistant that you can interact with using natural language, written or spoken.
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
