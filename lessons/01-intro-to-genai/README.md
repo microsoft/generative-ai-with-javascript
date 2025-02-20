@@ -10,7 +10,7 @@ In this lesson, you will learn to:
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
-Moreover, Generative AI has evolved into multimodal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
+Moreover, Generative AI has evolved into multi modal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
 
 *Simply put, natural language prompts are becoming the new standard interface for many apps—and your users expect to use them.*
 
@@ -28,18 +28,16 @@ Your journey begins in 1860s London, where you assume the role of a skilled mech
 ### Into the Maelstrom - London 1860
 
 <div>
-   <img style="margin-left:15px; margin-top: 12px;" align=right src="./assets/london.png" alt="London Workshop" width="300">
+   <img style="margin-left:15px; margin-top: 12px;" align=right src="./assets/london.png" alt="London Workshop" width="400">
 </div>
 
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
 
 Your workbench, the heart of your workshop, is an organized mess.
 
-
-
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
-<div style="clear: both;"></div>
+<div style="clear: both;">&nbsp;</div>
 
 ### A letter, for you?
 
@@ -62,7 +60,7 @@ Charles Babbage, the great mathematician and inventor of the difference engine, 
 After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="400">
 </div>
 
 
@@ -72,10 +70,10 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
-<div style="clear:both"></div>
+<div style="clear:both">&nbsp;</div>
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="400">
 </div>
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
@@ -86,12 +84,12 @@ It resembles a tiny beetle, intricately designed, with three buttons: an up arro
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
 
-<div style="clear: both;"></div>
+<div style="clear: both;">&nbsp;</div>
 
 ### Alexandria 300 BC
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
 </div>
 
 You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
@@ -107,7 +105,7 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
 </div>
 
 **Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
@@ -125,7 +123,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 **Device:** "Certainly. That won’t be a problem."
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="400">
 </div>
 
 **You:** "Do you have a name?"
@@ -138,7 +136,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 _Time device, “George” the metallic beetle_
 
-<div style="clear: both;"></div>
+<div style="clear: both;">&nbsp;</div>
 
 > [!NOTE]
 > In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. Designed by Alexander's chief architect, Dinocrates, it became a major port and cultural hub.
@@ -150,7 +148,7 @@ _Time device, “George” the metallic beetle_
 ## Talk to Dinocrates
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
 </div>
 
 If you want to talk to Dinocrates, run the [Characters](./characters/) app.

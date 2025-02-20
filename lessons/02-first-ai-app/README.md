@@ -27,7 +27,7 @@ You look down at the time beetle in your hand, its metallic surface cool against
 ### A new adventure
 
 <div>
-  <img style="margin-left: 15px; margin-top:12px" align=right src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width="300" >
+  <img style="margin-left: 15px; margin-top:12px" align=right src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=400" >
 </div>
 
 When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, inn the distance, you see buildings, their outlines blurred by the morning mist.
@@ -40,7 +40,7 @@ You manage to secure the boat at the dock and start walking along the wooden pla
 
 As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-<div style="clear:both"></div>
+<div style="clear:both">&nbsp;</div>
 
 ### Help me, Leonardo
 
@@ -110,7 +110,7 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 ## Talk to Leonardo
 
 <div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-talk.jpeg" width=300>
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-talk.jpeg" width=400>
 </div>
 
 If you want to talk to Leonardo, run the [Characters](./characters/) app.
@@ -452,12 +452,11 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 **Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
 <div>
-  <img src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="400" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="400" >
 </div>
 
-*Leonardo Da Vinci’s Aerial Screw image credit Wikipedia* 
-
-> **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
+> [!NOTE]
+>  **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
 >
 > Although Leonardo never built a full-scale version of the aerial screw, his sketches and notes provide detailed insights into how he envisioned it working. He believed that if the screw was turned quickly enough, it would push against the air and lift the entire structure off the ground. 
 >
