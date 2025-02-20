@@ -81,7 +81,7 @@ After completing this course, you can continue learning by exploring the [video 
 
 You'll also find additional resources in the form of tutorials, code samples and open community here: [Additional Resources](../docs/additional-resources.md)
 
-## 🌐 Other Courses
+## 🎒 Other Courses
 
 - [Generative AI for Beginners](https://aka.ms/genai-beginners)
 - [Generative AI for Beginners .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
