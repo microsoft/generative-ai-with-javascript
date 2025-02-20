@@ -33,16 +33,28 @@ To make it a fun learning experience, we've added a narrative to each lesson. It
 
 ## 🌱 Getting Started
 
-You're recommended to fork and clone this repository even if it's not strictly necessary. 
+Along this course you'll find many code examples and exercises, so we encourage you to run and experiment with the code in your own copy of this repository:
 
-Here's how you can fork and clone should you choose to do so:
+1. Select the **Fork** button in the upper right-hand corner of the repository or select this button:
+   [![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/fork)
 
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
-   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
+2. On your forked repository, select the **Code** button, then the **Codespaces** tab, then **Create codespace**. This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with LLMs for free, without any additional setup. 
 
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
+<details>
+<summary><h3>Using your local environment</h3></summary>
 
-To run the code provided in each chapter, you will need to start a Codespaces as the code is written to interact with GitHub Models a great way to try LLMs for free.
+If you prefer working in your local environment, first you need to install the following tools:
+- [Git](https://git-scm.com/downloads)
+- [Node.js LTS](https://nodejs.org/en/download)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+
+ Then after forking the repository, you can clone it to your local machine:
+
+1. On your forked repository, select the **Code** button, then the **Local** tab, and copy the URL of your forked repository. 
+2. Open a terminal and run this command to clone the repo: `git clone <your-repo-url>`
+3. Open the cloned repository in Visual Studio Code.
+
+</details>
 
 ### 📦 Each Lesson Includes
 
