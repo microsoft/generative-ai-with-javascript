@@ -76,6 +76,8 @@ As you walk, you notice a man with a long beard and a hat, digging through a cra
   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="300" >
 </div>
 
+### At the workshop
+
 The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
 
 You ask the Time Beetle to inquire about Leonardo's whereabouts. 
