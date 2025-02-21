@@ -25,15 +25,12 @@ In this chapter you will learn:
 Before you manage to press the button, the workshop doors slam open with a thunderous bang. A man stands in the doorway, broad-shouldered and dressed in expensive clothes, he waves a piece of paper in the air, yelling:
 
 <div>
-  <img style="margin-left: 15px; margin-top: 22px" align=right src="./assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="300">
+  <img src="./assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="300">
 </div>
-
-**Sforza**: "Da Vinci, dov'è il mio dipinto? Where is my painting?"
-
 
 *Ludovico Sforza* 
 
-**Leonardo:** "Ah, Signore, mi scusi," he stammers, then bolts towards the back of the workshop. "Quickly, there's a door in the back! I've got a ride waiting," he shouts over his shoulder.
+**Sforza**: "Da Vinci, dov'è il mio dipinto? Where is my painting?"
 
 **Leonardo:** It's Sforza. He wants me to complete a painting, 'The Last Supper.'"
 
@@ -58,7 +55,7 @@ A swirl of colours envelops the carriage, the world around you dissolving into a
 The swirl of colors fades, and you find yourself in the carriage, now racing down the Via Appia in Rome and to your astonishment, you're in the middle of a horse race. Chariots thunder past, their wheels kicking up clouds of dust. 
 
 <div>
-  <img align=right style="margin-left: 15px; margin-top: 12px" src="./assets/escape.png" alt="Escape from Rome" width="300">
+  <img src="./assets/escape.png" alt="Escape from Rome" width="300">
 </div>
 
 **You:** "Leonardo, where are we?" 
@@ -79,10 +76,6 @@ You scan the narrow streets, your heart racing.
 
 Leonardo veers into the alley, the carriage jolting as it navigates the tight turn. You leap out of the carriage and help Leonardo drag a huge device from the back. It's his invention—the _Aerial Screw_.
 
-<div>
-  <img style="margin-righ: 15px; margin-top: 12px;" align=right src="./assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="300">
-</div>
-
 **Leonardo:** "Quickly, we need to get this to the roof!"
 
 You both strain under the weight of the device. The sound of the soldiers' pursuit grows louder, their footsteps echoing off the walls. You reach the roof, panting and sweating.
@@ -90,8 +83,6 @@ You both strain under the weight of the device. The sound of the soldiers' pursu
 **Leonardo:** "Help me set it up!"
 
 You work together, your hands moving with practiced precision. You both climb onto the device, your heart pounding in your chest.
-
-
 
 **Leonardo:** "Hold on tight!"
 
@@ -103,13 +94,17 @@ With a final push, the Aerial Screw begins to spin. The blades catch the air, an
 
 You look out over the city; the ancient buildings stretch out below you.
 
-## Talk to Sforza
-
-<div >
-  <img  src="./assets/ludovico.png" alt="Ludovico Sforza" width="300" align="right" style="margin-left: 15px; margin-top: 12px">
+<div>
+  <img src="./assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="300">
 </div>
 
+## Talk to Sforza
+
 If you want to talk to Sforza, run the [Characters](./characters/) app. 
+
+<div >
+  <img  src="./assets/ludovico.png" alt="Ludovico Sforza" width="300" >
+</div>
 
 **Steps**:
 

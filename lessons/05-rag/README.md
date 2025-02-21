@@ -22,25 +22,23 @@ In this lesson, you will learn:
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#talk-to-ada-lovelace) if you'd prefer to jump straight to the technical content.
 
-<div>
-  <img style="margin-left: 15px; margin-top: 15px" align=right src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
-</div>
-
 **You**: "Leonardo, it's time to go," you said, pressing the button. The device whirred to life, and a mechanical voice echoed, "It's time to go home, it's time for 'genesis'."
 
 **Leonardo:** "Genesis? Che cosa significa?" Leonardo asked, confused. Before you could respond, the world dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time
 
 You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, . Leonardo looks around, his eyes wide with wonder. "Mio Dio", my god.
 
-<div style="clear:both">&nbsp;</div>
+<div>
+  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
+</div>
 
 ### Running from the Dogs
 
-<div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
-</div>
+The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
 
-Before you could take in more of the scenery, a low growl caught your attention. A pack of large, imposing dogs bounded towards you, teeth bared. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
+<div>
+  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
+</div>
 
 You just reached the mansion's door, it swung open, and a pair of servants rushes out. After looking you up and down, they gesture for you to follow them.
 
@@ -57,7 +55,7 @@ The servants stopped in front of a heavy wooden door and the door creaks open, r
 **You:** But..
 
 <div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
+  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
 </div>
 
 Charles Babbage steps forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
@@ -72,11 +70,11 @@ Leonardo nodded, "Sì, it has been acting strangely."
 
 ## Talk to Ada Lovelace
 
-<div>
-  <img style="margin-left: 15px; margin-top: 15px" align=right src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
-</div>
-
 If you want to talk to Ada, run the [Characters](./app/) app.
+
+<div>
+  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
+</div>
 
 **Steps**:
 
