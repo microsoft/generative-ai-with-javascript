@@ -6,70 +6,59 @@ In this lesson, you will learn:
 - How to integrate external data sources into your AI application.
 - To leverage your data to improve the relevance and accuracy of the AI-generated content.
 
-## Getting Started
-
-If you haven't already forked/cloned this repo in a previous chapter, follow these steps to get started with this curriculum:
-
-1. **Fork the Repository**: Select the _fork_ button in the upper right-hand corner of the repository or select this button:
-   [![Fork](https://img.shields.io/badge/Fork-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-2. **Clone the Repository**: Navigate to your forked repository and select the clone button in the upper right-hand corner or select this button: [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-3. **Open in GitHub Codespaces**: To run the course projects quickly and easily and use the provided [GitHub Models](https://docs.github.com/en/github-models), select the following button: [![Create Codespace](https://img.shields.io/badge/Create-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-
-
-   [![Clone](https://img.shields.io/badge/Clone-Repository-blue)](https://github.com/microsoft/generative-ai-with-javascript.git)
-
-3. **Open in GitHub Codespaces**: Starting this repository with GitHub Codespaces will enable you to run the same code as it uses [GitHub Models](https://docs.github.com/en/github-models).
-
-    Click the button below to start a Codespace:
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832180352)
-
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
 
 *🎥 Click on the image above to watch a short video about RAG*
 
-- **Slides:** [pptx](../../videos/slides/03-rag.pptx) / [pdf](../../videos/slides/pdf/03-rag.pdf)
-
 ## Narrative - Genesis
 
-> *Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Alexandria, Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues...*
+> [!NOTE] 
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Alexandria, Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues.._
+>
+> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
-The air was thick with incense and the hum of Aztec chants. The temple walls, adorned with carvings of gods and warriors, captivated Leonardo da Vinci. "Incredibile, the craftsmanship is beyond anything I've seen," he murmured, tracing the lines with his fingers.
-
-You held the time beetle device, its surface warm and pulsating with a faint blue glow. 
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#talk-to-ada-lovelace) if you'd prefer to jump straight to the technical content.
 
 **You**: "Leonardo, it's time to go," you said, pressing the button. The device whirred to life, and a mechanical voice echoed, "It's time to go home, it's time for 'genesis'."
 
 **Leonardo:** "Genesis? Che cosa significa?" Leonardo asked, confused. Before you could respond, the world dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time
 
-You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, its grandeur casting a shadow over the garden. Leonardo looked around, his eyes wide with wonder. "Mio Dio". 
+You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, . Leonardo looks around, his eyes wide with wonder. "Mio Dio", my god.
 
 <div>
-  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="400">
+  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
 </div>
-
-Leonardo looked around, his eyes wide with wonder. "Mio Dio, this place is beautiful!" although a bit, how do you say, spooky?.
 
 ### Running from the Dogs
 
 Before you could take in more of the scenery, a low growl caught your attention. A pack of large, imposing dogs bounded towards you, teeth bared. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
 
 <div>
-  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="400">
+  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
 </div>
 
-You just reached the mansion's door, it swung open, and a pair of servants rushed out. They looked you up and down, their expressions a mix of curiosity and suspicion, then gestured for you to follow them.
+You just reached the mansion's door, it swung open, and a pair of servants rushes out. After looking you up and down, they gesture for you to follow them.
 
-Inside, the mansion was just as impressive as the garden, with ornate furnishings and gleaming chandeliers. The servants led you through grand halls, down a spiral staircase, and into a dimly lit basement. The air was damp and cool, with a faint scent of mildew. The only light came from a flickering candle, casting long shadows on the stone walls. The servants stopped in front of a heavy wooden door and knocked
+The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
 
-The door creaked open, revealing Ada Lovelace, her eyes sparkling with curiosity. "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
+### Meeting Ada and Charles
 
-Charles Babbage stepped forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
+**Ada:** "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
+
+**You:** "About time", you keep saying that, Dinocrates said the same, but I'm not sure what you mean?
+
+**Ada:** Hush, no time for that now, we need to talk about the device you're holding. Charles, fill them in..
+
+**You:** But..
 
 <div>
-  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="400">
+  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
 </div>
+
+Charles Babbage steps forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
 
 Leonardo nodded, "Sì, it has been acting strangely."
 
@@ -81,13 +70,24 @@ Leonardo nodded, "Sì, it has been acting strangely."
 
 ## Talk to Ada Lovelace
 
+If you want to talk to Ada, run the [Characters](./app/) app.
+
 <div>
-  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="400">
+  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
 </div>
 
-If you want to talk to Ada, run the app [Ada Lovelace](./characters/).
+**Steps**:
 
-> NOTE: Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript), navigate to _lessons/05-rag/characters_, and then run `npm install` followed by `npm start`. Once it appears, select the "Open in Browser" button.
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _/app_ in the repo root.
+3. Locate the console and run `npm install` followed by `npm start`.
+4. Once it appears, select the "Open in Browser" button.
+5. Chat with Ada.
+
+For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
+
+If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
+
 <audio controls src="characters/public/ada.mp3" title="background music Ada"></audio>
 
 ## Known Challenges with LLMs

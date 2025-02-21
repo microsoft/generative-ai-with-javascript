@@ -1,5 +1,7 @@
 # Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers
 
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 In this lesson, you will learn to:
 
 - Understand the basics of Generative AI and Large Language Models (LLMs).
@@ -10,29 +12,32 @@ In this lesson, you will learn to:
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
-Moreover, Generative AI has evolved into multimodal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
+Moreover, Generative AI has evolved into multi modal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
 
 *Simply put, natural language prompts are becoming the new standard interface for many apps—and your users expect to use them.*
 
 ## Narrative: A Journey Through Time
 
-> NOTE: Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications. 
+> [!NOTE] 
+> Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications._
 
-> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
+> [!NOTE]  
+> While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
+
 
 Your journey begins in 1860s London, where you assume the role of a skilled mechanic. Through a series of gripping adventures, you'll refine your AI skills and unlock solutions that transcend time.
 
 ### Into the Maelstrom - London 1860
 
-In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop, tucked away in a narrow alley, is a testament to your craftsmanship. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. The air is thick with the scent of oil and metal, mingling with the faint aroma of wood shavings.
+In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
 
-Your workbench, the heart of your workshop, is an organized mess. Springs, gears, and tools are scattered across its surface, each item a crucial component in your latest creation. At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement.
+Your workbench, the heart of your workshop, is an organized mess.
 
 <div>
-   <img src="./assets/london.png" alt="London Workshop" width="400">
+   <img src="./assets/london.png" alt="London Workshop"width=300 >
 </div>
 
-It's a rare sunny day in London, a brief respite from the usual fog and rain.
+_At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
 ### A letter, for you?
 
@@ -50,63 +55,69 @@ _Charles Babbage."_
 
 ### Off to the library
 
-Stunned, you realize that Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
+Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
 
-After a 20-minute walk along the Thames, you finally arrive at the library.
+After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
-The door isn't locked, and glides open with a gentle push, creaking on its hinges. Inside, the air is thick with dust and the musty scent of old books. It's dark and gloomy, the only light filtering through the grimy windows, casting eerie shadows on the walls. Cobwebs hang from the ceiling, and the silence is almost palpable, broken only by the distant sound of dripping water.
+It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls. 
 
-> Babbage, is that you?
+**You:** "Hello? Mr. Babbage?"
 
-As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. Assuming it's Charles Babbage, you walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos—his distinctive sideburns and stern expression.
+As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
 <div>
-   <img src="./assets/library.png" alt="Dusty Library" width="400">
+   <img src="./assets/library.png" alt="Dusty Library" width="300">
 </div>
+
+### What's this device?
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
-Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button.
+Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.  
 
-Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From it's back, a small antenna extends, pulsing with energy. 
+
+Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you. 
+
+Then, blackness, and a sense of falling.
 
 <div>
-   <img src="./assets/vortex.png" alt="Time Vortex" width="400">
+   <img src="./assets/vortex.png" alt="Time Vortex" width="300">
 </div>
 
 ### Alexandria 300 BC
 
-You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. A grand temple towers ahead, its columns adorned with intricate carvings. People in togas move through the streets, their voices blending into a symphony of ancient dialects.
+You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
 
-The air is filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
-
-**You:** Surely, I must have hit my head, you think, closing your eyes and opening them again. But the scene remains unchanged. Whatever that device was, it has transported you far from London. The question is, where and when?
-
-As you take in the surroundings, you guess you are in Alexandria, the jewel of the ancient world, around 300 BC. The city is a hub of knowledge and culture, home to the Great Library and the Lighthouse of Alexandria. However, you don't see the lighthouse.
+People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
 <div>
-   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
+   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
 </div>
- 
+
+**You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
+
+Am I stuck in the past? Do I dare press that button again? Before you can decide, a figure approaches you, waving.
+
 ### Meeting Dinocrates
 
-An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow. You walk closer, straining to hear his words amidst the bustling city sounds. He's gesturing for you to come nearer; his movements deliberate and welcoming.
+An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
-A man in a toga waves from the temple steps. His white hair and beard catch the sunlight, giving him an almost ethereal glow. He gestures for you to come closer.
-
-As you approach, the weight of the device in your pocket feels heavier. You pull it out. The up arrow glows. Hesitant, you press it. Instantly, the man's voice becomes crystal clear.
+<div>
+   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+</div>
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
-Your mind races—Alexandria, a prophecy, this strange device. Before you can respond, he continues.
+**You:** It was? I mean, of course, it was. I'm here to help, I think.
 
-<div>
-   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
-</div>
+**Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
 
-**Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
+**Dinocrates:** "Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
 **You:** "I'm a mechanic. I build automatons. Let me see what I can do."
+
+### The Time Beetle
 
 A thought strikes you. Can the device understand me if I speak to it?
 
@@ -122,14 +133,17 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
+**You:** You're right, George is a good name, it was my fathers name in fact.
+
+**Device:** ...
+
 <div>
-   <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="400">
+   <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
 </div>
 
 _Time device, “George” the metallic beetle_
 
-> FUN FACT
->
+> [!NOTE]
 > In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. Designed by Alexander's chief architect, Dinocrates, it became a major port and cultural hub.
 >
 > Alexandria was known for its impressive structures, including the Pharos (lighthouse), one of the Seven Wonders of the Ancient World, and the legendary Library of Alexandria. The city’s strategic location made it a key center for trade and knowledge exchange.
@@ -138,19 +152,24 @@ _Time device, “George” the metallic beetle_
 
 ## Talk to Dinocrates
 
-If you want to talk to Dinocrates, run the [Dinocrates](./characters/) app.
+If you want to talk to Dinocrates, run the [Characters](./characters/) app.
+
+<div>
+   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+</div>
 
 **Steps**: 
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _lessons/01-intro-to-genai/characters_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Dinocrates.
 
 ### Code Sneak Peek
 
-While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI. 
+While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
+
 Inside of `lessons/01-intro-to-genai/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
 
 ```JavaScript
@@ -208,6 +227,7 @@ If you also want to hear some background music of what it could have sounded lik
 
 ### What Can Generative AI Do for Me and My Apps?
 
+> [!NOTE]
 > You've probably figured out by now that the time beetle works like an AI assistant that you can interact with using natural language, written or spoken.
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.

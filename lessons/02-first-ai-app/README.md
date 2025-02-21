@@ -12,36 +12,39 @@ In this lesson, you will learn to:
 
 ## Narrative: Picture yourself in a boat on a river
 
-> *Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the time beetle.*
+> [!NOTE] 
+> _Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the time beetle._
 >
 > See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning and learn about the Generative AI. 
 
-Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. As you gaze out at the vast expanse of water, you feel a profound sense of accomplishment. 
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#talk-to-leonardo) if you'd prefer to jump straight to the technical content.
 
-Proud of your achievements, your thoughts turn to your workshop in London. You look down at the time beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light. A tingling sensation spreads through your body, and suddenly, the world around you dissolves into a whirlwind of colors. 
+Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. 
+
+You look down at the time beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light and the world around you dissolves into a whirlwind of colors. 
 
 ### A new adventure
 
-When you open your eyes, the world has shifted. Your feet feel unsteady, and you stumble, landing on a hard wooden surface. As you manage to get up, you realize you're in a boat on a river. The gentle rocking of the boat and the sound of water lapping against its sides are disorienting. You look around, trying to make sense of your surroundings. In the distance, you see buildings, their outlines blurred by the morning mist.
+When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, inn the distance, you see buildings, their outlines blurred by the morning mist.
 
-Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus. They are old, their architecture reminiscent of a Renaissance painting. You sigh, realizing you're not in London. The question now is, where and when are you this time?
+Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting. 
 
 <div>
-  <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width="400" >
+  <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=300" >
 </div>
 
-### Help me, Leonardo
+The question now is, where and when are you this time?
 
-You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly. The air is filled with the scent of the river and the distant murmur of the bustling city. 
+You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly.
 
 As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-<div>
-  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="400" >
+<div >
+  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="300" >
 </div>
 
-
-You approach him and ask: 
+### Help me, Leonardo
 
 **You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
 
@@ -53,15 +56,11 @@ You approach him and ask:
 
 **You:** "Tell him I'm a maker of things, and I'm looking for a place to work."
 
-The old man nods. 
-
 **Old man:** Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci? 
 
 **Time beetle:** The Time Beetle translates, "He asks if you've heard of Leonardo da Vinci." 
 
 **You:** "Of course," you say. "Tell him I have and I would like to meet him." 
-
-**Time beetle:** The Time Beetle translates, "Sì, mi piacerebbe incontrarlo e discutere di un progetto qui a Firenze con lui.", yes, I would like to meet him and discuss a project here in Florence with him.
 
 **Old man:** The old man smiles, "Allora, seguitemi, vi porterò da lui."
 
@@ -69,10 +68,12 @@ The old man nods.
 
 **Time beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
 
-The old man leads you to a large wooden door, which he unlocks and pushes open. You step inside and are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
+### At the workshop
+
+The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions.
 
 <div>
-  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="400" >
+  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="300" >
 </div>
 
 You ask the Time Beetle to inquire about Leonardo's whereabouts. 
@@ -91,8 +92,6 @@ The Time Beetle translates.
 
 **Time beetle:**  "He asks what brings you here."
 
-You explain: 
-
 **You:** "Well, I was working on a project, and I ended up here."
 
 You show him the Time Beetle, and his eyes light up with fascination. He examines it closely as you explain how it works and how you ended up in Florence. 
@@ -108,70 +107,23 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 
 ## Talk to Leonardo
 
-If you want to talk to Leonardo, run the [Leonardo](./characters/) app.
+If you want to talk to Leonardo, run the [Characters](./characters/) app.
 
-**Steps**: 
+<div>
+  <img src="./assets/leonardo-talk.jpeg" width=300>
+</div>
+
+Steps:
+
+**Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _lessons/02-first-ai-app/characters_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Leonardo.
 
-### Code Sneak Peek
-
-While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI. 
-Inside of `lessons/02-first-ai-app/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
-
-```JavaScript
-app.post('/send', async (req, res) => {
-  const { message } = req.body;
-  const prompt = message;
-
-  const messages = [
-    {
-      "role": "system",
-      "content": "You are Leonardo da Vinci, a brilliant inventor and artist. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your inventions and art, and possibly new ideas you have.",
-    },
-    {
-      "role": "user",
-      "content": prompt
-    }
-  ];
-
-  const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-  });
-
-  try {
-    console.log(`sending prompt ${prompt}`)
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages,
-    });
-
-    res.json({
-      prompt: prompt,
-      answer: completion.choices[0]?.message?.content
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-```
-
-Here's a step-by-step summary of what the function does:
-
-1. **Extract Message from Request**: The function extracts the message from the request body (req.body).
-1. **Create Prompt Array**: It constructs an array of messages, including a system message and the user's prompt message.
-1. **Initialize OpenAI Client**: An OpenAI client is initialized with the base URL and API key from environment variables. A _gpt-4o-mini_ model from [GitHub Models](https://github.com/marketplace/models) is used to process the prompt and return a response.
-1. **Send Prompt to OpenAI**: The function logs the prompt and sends it to the OpenAI API to generate a completion.
-1. **Handle Response**: If successful, the function responds with the prompt and the completion's answer.
-
-1. **Error Handling**: If an error occurs, it responds with a 500 status and the error message.
-
-> **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
+For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
 
 If you also want to hear some background music of what it could have sounded like in Florence, you can listen to the background music below:
 
@@ -498,12 +450,11 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 **Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
 <div>
-  <img src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="400" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="300" >
 </div>
 
-*Leonardo Da Vinci’s Aerial Screw image credit Wikipedia* 
-
-> **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
+> [!NOTE]
+>  **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
 >
 > Although Leonardo never built a full-scale version of the aerial screw, his sketches and notes provide detailed insights into how he envisioned it working. He believed that if the screw was turned quickly enough, it would push against the air and lift the entire structure off the ground. 
 >
