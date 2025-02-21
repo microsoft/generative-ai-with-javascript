@@ -30,7 +30,7 @@ Your journey begins in 1860s London, where you assume the role of a skilled mech
 ### Into the Maelstrom - London 1860
 
 <div>
-   <img align=right style="margin-left: 15px; margin-top: 12px"  src="./assets/london.png" alt="London Workshop"width=400 >
+   <img align=right style="margin-left: 15px; margin-top: 12px"  src="./assets/london.png" alt="London Workshop"width=300 >
 </div>
 
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
@@ -54,7 +54,7 @@ _Yours,_
 _Charles Babbage."_
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="300">
 </div>
 
 ### Off to the library
@@ -63,9 +63,6 @@ Charles Babbage, the great mathematician and inventor of the difference engine, 
 
 After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
-
-
-
 It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls. 
 
 **You:** "Hello? Mr. Babbage?"
@@ -73,21 +70,24 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="300">
 </div>
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
-Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. 
+Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.  
 
-It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button.
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From it's back, a small antenna extends, pulsing with energy. 
 
-Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
+Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you. 
+
+Then, blackness, and a sense of falling.
+
 
 ### Alexandria 300 BC
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
 </div>
 
 You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
