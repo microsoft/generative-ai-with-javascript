@@ -102,6 +102,10 @@ Am I stuck in the past? Do I dare press that button again? Before you can decide
 
 ### Meeting Dinocrates
 
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+</div>
+
 An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
@@ -110,9 +114,7 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 
 **Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
-</div>
+
 
 **Dinocrates:** "Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
