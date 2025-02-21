@@ -30,7 +30,7 @@ Your journey begins in 1860s London, where you assume the role of a skilled mech
 ### Into the Maelstrom - London 1860
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/london.png" alt="London Workshop"width=400 >
+   <img align=right style="margin-left: 15px; margin-top: 12px"  src="./assets/london.png" alt="London Workshop"width=400 >
 </div>
 
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
@@ -38,10 +38,6 @@ In the heart of 1860s London, you are recognized as one of the most skilled mech
 Your workbench, the heart of your workshop, is an organized mess.
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
-
-<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
-<hr />
-</div>
 
 ### A letter, for you?
 
@@ -76,10 +72,6 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
-<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
-<hr />
-</div>
-
 <div>
    <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="400">
 </div>
@@ -91,10 +83,6 @@ Left behind is a small metallic device spinning on the floor. You pick it up, it
 It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button.
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
-
-<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
-<hr />
-</div>
 
 ### Alexandria 300 BC
 
@@ -145,10 +133,6 @@ A thought strikes you. Can the device understand me if I speak to it?
 **Device:** ...
 
 _Time device, “George” the metallic beetle_
-
-<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
-<hr />
-</div>
 
 > [!NOTE]
 > In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. Designed by Alexander's chief architect, Dinocrates, it became a major port and cultural hub.
