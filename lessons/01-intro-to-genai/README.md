@@ -114,13 +114,15 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 
 **Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
 
-
-
 **Dinocrates:** "Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
 **You:** "I'm a mechanic. I build automatons. Let me see what I can do."
 
 ### The Time Beetle
+
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
+</div>
 
 A thought strikes you. Can the device understand me if I speak to it?
 
@@ -132,9 +134,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "Certainly. That won’t be a problem."
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
-</div>
+
 
 **You:** "Do you have a name?"
 
