@@ -27,7 +27,7 @@ The wind whips around you as you and Leonardo da Vinci ascend in his aerial scre
 ### The Aztec Empire
 
 <div>
-  <img alt="Aztec calendar, Wikipedia" style="margin-left: 15px; margin-top: 12px" align=right src="./assets/aztec.png" alt="Aztec calendar" width="400" />
+  <img alt="Aztec calendar, Wikipedia" style="margin-left: 15px; margin-top: 12px" align=right src="./assets/aztec.png" alt="Aztec calendar" width="300" />
 </div> 
 
 The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
@@ -39,11 +39,11 @@ Leonardo da Vinci steps forward, his eyes wide with wonder.
 
 **Leonardo:** "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
 
-<div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/meeting.png" alt="Meeting with Aztecs" width="400" />
-</div> 
-
 Before you can react, a group of Aztec soldiers approaches.
+
+<div>
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/meeting.png" alt="Meeting with Aztecs" width="300" />
+</div> 
 
 **Soldier leader** "Who are you, and what have you done?" he demands in Nahuatl. 
 
@@ -53,9 +53,7 @@ You take a deep breath, trying to steady your nerves.
 
 The warrior's eyes widen in surprise, but he remains cautious. 
 
-<div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/montezuma.jpeg" alt="Meeting with Montezuma" width="400" />
-</div>
+
 
 **Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
 
@@ -72,7 +70,7 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
 **Montezuma:** "Very well. I propose a game of Patolli. If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
 
 <div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/game.png" alt="Playing a game of Patolli" width="400" />
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/game.png" alt="Playing a game of Patolli" width="300" />
 </div>
 
 The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
@@ -92,7 +90,7 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 **Time beetle:** I won't say anything if you don't Leonardo ;)
 
 <div>
-  <img style="margin-top: 55px; margin-left: 15px; margin-right: 10px" align=right width=400 src="./assets/patolli.png" alt="Patolli board" />
+  <img style="margin-top: 55px; margin-left: 15px; margin-right: 10px" align=right width=300 src="./assets/patolli.png" alt="Patolli board" />
 </div>
 
 > [!NOTE]
@@ -124,7 +122,7 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 ## Talk to Montezuma
 
 <div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/montezuma.jpeg" alt="Montezuma" width="400" />
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/montezuma.jpeg" alt="Montezuma" width="300" />
 </div>
 
 If you want to talk to Montezuma, run the app [Characters](./characters/) app. 

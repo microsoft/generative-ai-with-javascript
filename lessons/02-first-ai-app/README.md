@@ -27,7 +27,7 @@ You look down at the time beetle in your hand, its metallic surface cool against
 ### A new adventure
 
 <div>
-  <img style="margin-left: 15px; margin-top:12px" align=right src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=400" >
+  <img style="margin-left: 15px; margin-top:12px" align=right src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=300" >
 </div>
 
 When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, inn the distance, you see buildings, their outlines blurred by the morning mist.
@@ -110,7 +110,7 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 ## Talk to Leonardo
 
 <div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-talk.jpeg" width=400>
+  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-talk.jpeg" width=300>
 </div>
 
 If you want to talk to Leonardo, run the [Characters](./characters/) app.
@@ -452,7 +452,7 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 **Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
 <div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="400" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="300" >
 </div>
 
 > [!NOTE]
