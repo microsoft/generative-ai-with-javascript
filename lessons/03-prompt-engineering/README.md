@@ -32,8 +32,6 @@ Before you manage to press the button, the workshop doors slam open with a thund
 
 **Sforza**: "Da Vinci, dov'è il mio dipinto? Where is my painting?"
 
-**Leonardo:** "Ah, Signore, mi scusi," he stammers, then bolts towards the back of the workshop. "Quickly, there's a door in the back! I've got a ride waiting," he shouts over his shoulder.
-
 **Leonardo:** It's Sforza. He wants me to complete a painting, 'The Last Supper.'"
 
 **You:** "Couldn't you just tell him that?"

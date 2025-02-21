@@ -26,7 +26,6 @@ The wind whips around you as you and Leonardo da Vinci ascend in his aerial scre
 
 ### The Aztec Empire
 
-
 The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
 
 The aerial screw, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
@@ -52,8 +51,6 @@ You take a deep breath, trying to steady your nerves.
 **You:** "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you.
 
 The warrior's eyes widen in surprise, but he remains cautious. 
-
-
 
 **Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
 

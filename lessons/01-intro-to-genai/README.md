@@ -53,6 +53,10 @@ _Yours,_
 
 _Charles Babbage."_
 
+<div>
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="300">
+</div>
+
 ### Off to the library
 
 Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
@@ -92,7 +96,7 @@ You awaken, disoriented. As your vision clears, an ancient city unfolds before y
 People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
 <div>
-   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
 </div>
 
 **You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
@@ -134,8 +138,6 @@ A thought strikes you. Can the device understand me if I speak to it?
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
 **You:** You're right, George is a good name, it was my fathers name in fact.
-
-**Device:** ...
 
 <div>
    <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">

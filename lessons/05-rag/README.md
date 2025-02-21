@@ -34,7 +34,7 @@ You land in garden, it's late at night with a thick fog and eerie lights are fli
 
 ### Running from the Dogs
 
-Before you could take in more of the scenery, a low growl caught your attention. A pack of large, imposing dogs bounded towards you, teeth bared. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
+The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
 
 <div>
   <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
