@@ -46,9 +46,13 @@ You just reached the mansion's door, it swung open, and a pair of servants rushe
 
 The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
 
-<div style="clear:both">&nbsp;</div>
-
 **Ada:** "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
+
+**You:** "About the time", you keep saying that, Dinocrates said the same, but I'm not sure what you mean?
+
+**Ada:** Hush, no time for that now, we need to talk about the device you're holding. Charles, fill them in..
+
+**You:** But..
 
 <div>
   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
