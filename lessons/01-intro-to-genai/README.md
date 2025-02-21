@@ -73,6 +73,8 @@ As your eyes adjust to the dim light, you notice a figure in the distance, wavin
    <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="300">
 </div>
 
+### What's this device?
+
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
 Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.  
@@ -96,6 +98,8 @@ People in togas move through the streets, their voices blending into a symphony 
 
 **You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
 
+Am I stuck in the past? Do I dare press that button again? Before you can decide, a figure approaches you, waving.
+
 ### Meeting Dinocrates
 
 An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
@@ -103,12 +107,14 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
 </div>
 
 **Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
 **You:** "I'm a mechanic. I build automatons. Let me see what I can do."
+
+### The Time Beetle
 
 A thought strikes you. Can the device understand me if I speak to it?
 
@@ -121,7 +127,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 **Device:** "Certainly. That won’t be a problem."
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
 </div>
 
 **You:** "Do you have a name?"
@@ -144,7 +150,7 @@ _Time device, “George” the metallic beetle_
 ## Talk to Dinocrates
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="400">
+   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
 </div>
 
 If you want to talk to Dinocrates, run the [Characters](./characters/) app.
