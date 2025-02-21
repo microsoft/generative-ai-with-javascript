@@ -9,7 +9,7 @@ In this lesson, you will learn to:
 - Explore how Generative AI can enhance user experiences in JavaScript applications.
 
 ## Generative AI
-
+ 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
 Moreover, Generative AI has evolved into multi modal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
