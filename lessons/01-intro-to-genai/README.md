@@ -39,7 +39,7 @@ Your workbench, the heart of your workshop, is an organized mess.
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
-<div style="clear: both; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
+<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
 <hr />
 </div>
 
@@ -76,7 +76,7 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
-<div style="clear: both; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
+<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
 <hr />
 </div>
 
@@ -92,7 +92,7 @@ It resembles a tiny beetle, intricately designed, with three buttons: an up arro
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, colors swirl violently around you. Then—blackness.
 
-<div style="clear: both; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
+<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
 <hr />
 </div>
 
@@ -146,7 +146,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 _Time device, “George” the metallic beetle_
 
-<div style="clear: both; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
+<div style="clear: both !important; margin-left: auto; margin-top: 60px; margin-right: auto;  font-weight: bold; text-align: center;">
 <hr />
 </div>
 
