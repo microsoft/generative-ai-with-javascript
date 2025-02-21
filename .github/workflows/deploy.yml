@@ -1,12 +1,10 @@
 name: Deploy Jekyll site to GitHub Pages
 
-on: 
+on:
   workflow_dispatch:
-
-# on:
-#   push:
-#     branches:
-#       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
