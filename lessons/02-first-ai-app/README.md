@@ -26,13 +26,13 @@ You look down at the time beetle in your hand, its metallic surface cool against
 
 ### A new adventure
 
-<div>
-  <img style="margin-left: 15px; margin-top:12px" align=right src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=300" >
-</div>
-
 When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, inn the distance, you see buildings, their outlines blurred by the morning mist.
 
 Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting. 
+
+<div>
+  <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=300" >
+</div>
 
 The question now is, where and when are you this time?
 
@@ -40,21 +40,17 @@ You manage to secure the boat at the dock and start walking along the wooden pla
 
 As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-<div style="clear:both">&nbsp;</div>
+<div >
+  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="300" >
+</div>
 
 ### Help me, Leonardo
-
-<div >
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="300" >
-</div>
 
 **You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
 
 **Time beetle:** The Time Beetle responds, "Of course, I'll translate into 15th century Italian. 'Dove sono?'" 
 
 **Old man:** The old man replies, "Siete a Firenze, signore. E chi siete voi?" 
-
-
 
 **Time beetle:** The Time Beetle translates, "He says you're in Florence, and asks who you are." 
 
@@ -72,13 +68,13 @@ As you walk, you notice a man with a long beard and a hat, digging through a cra
 
 **Time beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
 
-<div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="300" >
-</div>
-
 ### At the workshop
 
-The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
+The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions.
+
+<div>
+  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="300" >
+</div>
 
 You ask the Time Beetle to inquire about Leonardo's whereabouts. 
 
@@ -111,11 +107,11 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 
 ## Talk to Leonardo
 
-<div>
-  <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/leonardo-talk.jpeg" width=300>
-</div>
-
 If you want to talk to Leonardo, run the [Characters](./characters/) app.
+
+<div>
+  <img src="./assets/leonardo-talk.jpeg" width=300>
+</div>
 
 Steps:
 

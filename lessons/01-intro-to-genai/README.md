@@ -29,13 +29,13 @@ Your journey begins in 1860s London, where you assume the role of a skilled mech
 
 ### Into the Maelstrom - London 1860
 
-<div>
-   <img align=right style="margin-left: 15px; margin-top: 12px"  src="./assets/london.png" alt="London Workshop"width=300 >
-</div>
-
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
 
 Your workbench, the heart of your workshop, is an organized mess.
+
+<div>
+   <img src="./assets/london.png" alt="London Workshop"width=300 >
+</div>
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
@@ -53,10 +53,6 @@ _Yours,_
 
 _Charles Babbage."_
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="300">
-</div>
-
 ### Off to the library
 
 Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
@@ -70,7 +66,7 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/vortex.png" alt="Time Vortex" width="300">
+   <img src="./assets/library.png" alt="Dusty Library" width="300">
 </div>
 
 ### What's this device?
@@ -85,16 +81,19 @@ Compelled by curiosity, your fingers drift toward the red button. The moment you
 
 Then, blackness, and a sense of falling.
 
+<div>
+   <img src="./assets/vortex.png" alt="Time Vortex" width="300">
+</div>
 
 ### Alexandria 300 BC
-
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
-</div>
 
 You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
 
 People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
+
+<div>
+   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
+</div>
 
 **You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
 
@@ -102,11 +101,11 @@ Am I stuck in the past? Do I dare press that button again? Before you can decide
 
 ### Meeting Dinocrates
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
-</div>
-
 An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
+
+<div>
+   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+</div>
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
@@ -120,10 +119,6 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 
 ### The Time Beetle
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
-</div>
-
 A thought strikes you. Can the device understand me if I speak to it?
 
 **You:** "Device, can you understand me?"
@@ -134,8 +129,6 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "Certainly. That won’t be a problem."
 
-
-
 **You:** "Do you have a name?"
 
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
@@ -143,6 +136,10 @@ A thought strikes you. Can the device understand me if I speak to it?
 **You:** You're right, George is a good name, it was my fathers name in fact.
 
 **Device:** ...
+
+<div>
+   <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
+</div>
 
 _Time device, “George” the metallic beetle_
 
@@ -155,11 +152,11 @@ _Time device, “George” the metallic beetle_
 
 ## Talk to Dinocrates
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
-</div>
-
 If you want to talk to Dinocrates, run the [Characters](./characters/) app.
+
+<div>
+   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
+</div>
 
 **Steps**: 
 
