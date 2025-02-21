@@ -106,11 +106,15 @@ An elderly gentleman wearing a toga wave at you from the steps of the grand temp
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
+**You:** It was? I mean, of course, it was. I'm here to help, I think.
+
+**Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
+
 <div>
    <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
 </div>
 
-**Dinocrates:** "I need your help. Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
+**Dinocrates:** "Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
 **You:** "I'm a mechanic. I build automatons. Let me see what I can do."
 
