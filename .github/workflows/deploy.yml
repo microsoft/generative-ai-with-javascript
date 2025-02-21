@@ -1,9 +1,6 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - lessons
   workflow_dispatch:
 
 jobs:
