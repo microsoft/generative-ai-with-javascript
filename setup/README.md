@@ -22,7 +22,7 @@ We provide instructions for setting up your development environment with GitHub 
 
 The fastest way to get started is to use GitHub Codespaces as this will provide you with a pre-configured environment that has access to GitHub Models without any additional setup.
 
-However, if you prefer to work on your local machine, there's a section below that will guide you through setting up your [local environment](#running-the-app-locally).
+However, if you prefer to work on your local machine, there's a section below that will guide you through setting up your [local environment](#option-2--running-the-app-locally).
 
 ## GitHub Models explained
 
