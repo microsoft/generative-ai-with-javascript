@@ -33,7 +33,7 @@ To make it a fun learning experience, we've added a narrative to each lesson. It
 
 ## An immersive learning experience, step into history!
 
-Want to live history through the power of Generative AI? Of course you do, here's how:
+Want to live history through the power of Generative AI? Of course you do, here's how: 
 
 This is an immersive learning experience. Here's what you're getting:
 
