@@ -6,6 +6,10 @@ In this lesson, you will learn:
 - How to integrate external data sources into your AI application.
 - To leverage your data to improve the relevance and accuracy of the AI-generated content.
 
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
+
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)

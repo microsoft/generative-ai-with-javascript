@@ -6,6 +6,10 @@ In this chapter, you will learn the following:
 - **Extract information from prompts** and incorporate it into the output. 
 - **Present different types of output** like JSON and other types of formats for easy consumption by services.
 
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
+
 ## Narrative - out of the frying pan and into the fire
 
 > [!NOTE]

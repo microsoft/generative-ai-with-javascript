@@ -1,12 +1,14 @@
 # Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-
 In this lesson, you will learn to:
 
 - Understand the basics of Generative AI and Large Language Models (LLMs).
 - Identify the potential applications and limitations of LLMs in JavaScript development.
 - Explore how Generative AI can enhance user experiences in JavaScript applications.
+
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
 
 ## Generative AI
 
