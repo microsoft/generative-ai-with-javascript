@@ -31,6 +31,8 @@ To make it a fun learning experience, we've added a narrative to each lesson. It
 > [!IMPORTANT]
 > All the content in this repository is open-source, so feel free to **reuse it, adapt it to make it your own, and share it with others!**
 
+![image from character app](./background.png)
+
 ## An immersive learning experience, step into history!
 
 Want to live history through the power of Generative AI? Of course you do, here's how: 
@@ -39,11 +41,14 @@ This is an immersive learning experience. Here's what you're getting:
 
 - **Fun time travelling narrative**. Each lesson comes with a time travelling narrative where you get to meet and converse with a historical figure.
 - **Companion app**, the curriculum comes with a companion app that lets you talk to all its historical figures, Ada Lovelace, Montezuma and many more, through the power of Generative AI, did I say it has sound?
+
+  ![companion chat app, chat with people from history](./character.png)
+
+  Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
+
 - **Accessible**, accessibility is top of mind of course, you can not only read this content but there's audio tags you can try out, even the characters speaks to you.
 
 > This is learning reimagined with Generative AI
-
-![image from character app](TODO)
 
 _User quote:I love this, it's like reading a comic book_
 
@@ -70,7 +75,10 @@ If you prefer working in your local environment, first you need to install the f
 2. Open a terminal and run this command to clone the repo: `git clone <your-repo-url>`
 3. Open the cloned repository in Visual Studio Code.
 
+See more detailed instructions in the [setup guide](./setup.md).
+
 </details>
+
 
 ### 📦 Each Lesson Includes
 
