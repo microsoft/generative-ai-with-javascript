@@ -53,10 +53,6 @@ _Yours,_
 
 _Charles Babbage."_
 
-<div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/library.png" alt="Dusty Library" width="300">
-</div>
-
 ### Off to the library
 
 Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
