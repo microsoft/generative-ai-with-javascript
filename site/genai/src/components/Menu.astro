@@ -1,0 +1,19 @@
+---
+import site from '../assets/site.json';
+import '../styles/global.css';
+---
+
+<div class="items">
+
+{site.menu.map(item => (
+    <div class="item">
+    <a href={item.url} class="item-link">&nbsp;<i /> {item.name}</a>
+    </div>
+
+))}
+
+</div>
+
+<style>
+
+</style>

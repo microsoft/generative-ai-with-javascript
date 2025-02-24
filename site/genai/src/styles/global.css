@@ -1,0 +1,272 @@
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+a:visited {
+  color: #d4af37;  
+}
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    border: solid 1px black;
+    box-shadow: 0 0 5px grey;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: black;
+    font-weight: bold;
+    opacity: 0.9;
+    
+}
+
+.item:hover {
+    background: orange;
+    color: black;
+    transition: background 1s;
+    cursor: hand;
+
+}
+
+.item a {
+    display: block;
+}
+
+.item:hover a {
+    color: black;
+    
+    
+}
+
+.language-JavaScript::before, .language-javascript::before {
+    content: "JAVASCRIPT";
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-left: 14px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    border-right: solid 1px;
+    font-size: x-small;
+    border-top-right-radius: 0px;
+    border-bottom: solid 1px;
+    box-shadow: 0 0 10px black;
+}
+
+.backlink {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #d4af37;
+    text-decoration: none;
+
+    border: solid 2px #d4af37;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.content {
+    font-family: sans-serif;
+}
+
+.note {
+    background-color: darkslateblue;
+    border: solid 2px mildblue;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+pre {
+    background: midnightblue;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 10px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    p img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    p img {
+        display: block;
+        margin-left: 18px;
+        float: right;
+        margin-right: 9px;
+        margin-top: 35px;
+    }
+
+    a img {
+       margin: 0px;
+       float: left; 
+       float: none;
+    }
+}
+
+code {
+    text-wrap: auto;
+}
+
+h1, h2, h3 {
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        text-align: center;
+    }
+}
+
+table {
+    border: solid;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+td {
+    border-top: solid 1px; 
+}
+
+tr:nth-child(even) td {
+    background-color: #222;
+}
+
+.light tr:nth-child(even) td {
+    background-color: orange;
+}
+
+
+p {
+    padding: 0 10px;
+}
+
+img {
+    width: 300px;
+    box-shadow: 0 0 20px orange;
+    border-radius: 20%;
+    margin: 15px;
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 25px; /* Width of the entire scrollbar */
+    border-radius: 20px;
+    margin-left: 5px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black; /* Color of the track */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange; /* Color of the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+    border: 3px solid darkgoldenrod; /* Padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black; /* Color of the thumb when hovered */
+}
+
+.container {
+    background: black;
+    opacity: 0.85;
+    border-radius: 20px;
+    border: solid 2px #d4af37;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    min-width: 380px;
+    padding: 20px;
+    margin: 20px;
+    height: 800px;
+    overflow: auto;
+    position: relative;
+
+
+    @media (max-width: 600px) {
+      width: calc(100% - 10px);
+      padding: 0px;
+    }
+
+    
+  }
+
+.menu {
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.container .theme-switcher {
+    border-bottom: solid 1px orange;
+    padding: 5px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    position: fixed;
+    background: black;
+    width: 100%;
+    left: 18px;
+    top: 20px;
+    color: orange;
+}
+
+.container.light {
+    background-color: lightyellow !important;
+    color: black;
+}
+
+.light .note {
+    background-color: orange;
+}
+
+.light pre {
+    background-color: orange;
+} 
+
+.light .language-JavaScript::before, .light .language-javascript::before {
+    background-color: orange;
+}
+
+.container::-webkit-scrollbar {
+}
+
+.container::-webkit-scrollbar-track {
+    background: black; /* Color of the track */
+    border-radius: 20px;
+    position: absolute;
+    right: 5px;
+}
