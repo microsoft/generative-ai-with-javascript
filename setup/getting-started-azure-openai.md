@@ -13,7 +13,7 @@ To use Azure AI Foundry models, you need to take the following steps:
 
 1. Create a hub and project in the Azure AI Foundry portal.
 1. Deploy a model to your project.
-1. Add the Azure AI API key to your code.
+1. Add the Azure AI library code + API key and other credentials to your code.
 
 ### -1- Create a Hub and Project in Azure AI Foundry
 
