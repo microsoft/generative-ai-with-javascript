@@ -6,6 +6,10 @@ In this chapter you will learn:
 - **Prompt engineering techniques and strategies**. We will cover different prompt engineering techniques and how it can help provide better results for different scenarios. 
 - **Meta prompts**, and how they will help restrict the output and ensure its accessible and provide a better user experience. 
 
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
+
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)

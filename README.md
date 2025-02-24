@@ -24,37 +24,42 @@
 
 </div>
 
-This course aims to take you through a series of 5 lessons so that you can integrate Generative AI in your JavaScript apps. 
+This course aims to take you through a series of lessons so that you can integrate Generative AI in your JavaScript apps. 
 
-To make it a fun learning experience, we've added a narrative to each lesson. It's a *time travelling adventure* where you will encounter famous characters throughout history! ✨
+To make it a fun learning experience, we've added a narrative to each lesson. It's a *time traveling adventure* where you will encounter famous characters throughout history! ✨
 
-> [!IMPORTANT]
-> All the content in this repository is open-source, so feel free to **reuse it, adapt it to make it your own, and share it with others!**
-
-## An immersive learning experience, step into history!
-
-Want to live history through the power of Generative AI? Of course you do, here's how:
-
-This is an immersive learning experience. Here's what you're getting:
-
-- **Fun time travelling narrative**. Each lesson comes with a time travelling narrative where you get to meet and converse with a historical figure.
-- **Companion app**, the curriculum comes with a companion app that lets you talk to all its historical figures, Ada Lovelace, Montezuma and many more, through the power of Generative AI, did I say it has sound?
-- **Accessible**, accessibility is top of mind of course, you can not only read this content but there's audio tags you can try out, even the characters speaks to you.
-
-> This is learning reimagined with Generative AI
-
-![image from character app](TODO)
-
-_User quote:I love this, it's like reading a comic book_
-
-## 🌱 Getting Started
-
+Ready to integrate Generative AI into your JavaScript apps? This course throws you into a *time-traveling adventure*—meet history’s legends with a fun twist! ✨
+ 
+> [!IMPORTANT]  
+> Open-source vibes! Reuse, tweak, and share this content freely.
+ 
+![Character App Sneak Peek](./background.png)
+ 
+## Step Into History with AI Magic!
+ 
+Dive into an immersive ride powered by Generative AI:  
+- **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
+ 
+- **Epic Time-Travel Stories**.
+Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
+ 
+- **Companion App**. Chat with historical figures—yes, they speak back!  
+  ![Chat with History](./character.png)  
+  Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
+ 
+ 
+- **Accessibility FTW**. Read it, hear it—audio tags bring it to life.
+ 
+> “It’s like a comic book with code!” — Happy User
+ 
+## Getting Started
+ 
 Along this course you'll find many code examples and exercises, so we encourage you to run and experiment with the code in your own copy of this repository:
-
+ 
 1. Select the **Fork** button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/fork)
-
-2. On your forked repository, select the **Code** button, then the **Codespaces** tab, then **Create codespace**. This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with LLMs for free, without any additional setup. 
+ 
+2. In your forked repository, select the **Code** button, then the **Codespaces** tab, then **Create codespace**. This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with LLMs for free, without any additional setup.
 
 <details>
 <summary><h3>Using your local environment</h3></summary>
@@ -69,6 +74,8 @@ If you prefer working in your local environment, first you need to install the f
 1. On your forked repository, select the **Code** button, then the **Local** tab, and copy the URL of your forked repository. 
 2. Open a terminal and run this command to clone the repo: `git clone <your-repo-url>`
 3. Open the cloned repository in Visual Studio Code.
+
+See more detailed instructions in the [setup guide](./setup.md).
 
 </details>
 

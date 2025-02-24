@@ -6,6 +6,10 @@ In this lesson, you will learn to:
 - Write a basic app.
 - Understand system prompts.
 
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
+
 ## Related resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
