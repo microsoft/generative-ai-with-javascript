@@ -1,0 +1,100 @@
+---
+import site from "../assets/site.json"
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+
+import { parseMarkdown } from '../utils/markdown.js';
+
+
+export async function getStaticPaths() {
+
+    return site.chapters.map(chapter => ({
+        params: { slug: chapter.id },
+        props: { chapter },
+    }));
+}
+
+let id = Astro.params.slug ? Astro.params.slug : "1";
+let chapter = site.chapters.find(c => c.id == id);
+
+
+import { marked } from 'marked';
+import matter from 'gray-matter';
+import { useParams } from 'astro:router';
+import fs from 'fs';
+import path from 'path';
+
+const filePath = path.resolve(`./src/pages/chapters/${id}/README.md`);
+const fileContent = fs.readFileSync(filePath, 'utf-8');
+
+const { data, content } = matter(fileContent);
+const htmlContent = parseMarkdown(content);
+
+---
+
+<Layout>
+	
+<div class="leftnav"><i class="chevron left"></i></div>
+<div class="rightnav"><i class="chevron right"></i></div>
+
+<div class="backlink">
+    <a href="/start" class="backlink-link">Back to Chapters</a>
+</div>
+
+<div class="container">
+    <div class="theme-switcher">
+      <input type="checkbox">Toggle light/dark theme</input>
+    </div>
+    <h1>{data.title}</h1>
+    <div class="content" set:html={htmlContent}></div>
+</div>
+
+</Layout>
+
+<script>
+    document.querySelector('.theme-switcher input').addEventListener('change', function() {
+        document.querySelector('.container').classList.toggle('light', this.checked);
+    });
+
+</script>
+
+<style>
+.chevron.left::before {
+    content: "<";
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background: black;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
+}
+
+.chevron.right::before {
+    content: ">";
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background: black;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
+}
+
+  .leftnav {
+    position: fixed;
+    top: 38px;
+    left: 0px;
+    padding: 20px 10px;
+    background: black;     
+  }
+
+  .rightnav {
+    position: fixed;
+    top: 38px;
+    right: 0px;
+    padding: 20px 10px;
+    background: black;
+  }
+
+ 
+
+</style>

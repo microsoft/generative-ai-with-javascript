@@ -1,0 +1,54 @@
+---
+import site from '../assets/site.json';
+import '../styles/global.css';
+---
+
+<h2>Chapters</h2>
+
+<div class="items chapters">
+{site.chapters.map(item => (
+    <div class="chapter-detail">
+       <div> 
+       <a href={item.url} class="item-link">{item.title}</a> 
+       </div>
+    </div>
+
+))}
+
+</div>
+
+<div class="backlink">
+    <a href="/" class="backlink-link">Back to Home</a>
+</div>
+
+
+<style>
+  .item-link 
+  {
+    width: 100%;
+  }
+
+  .chapters {
+    width: 100%;
+    max-width: 600px;
+ } 
+
+ .chapter-detail {
+    background: black;
+    opacity: 0.90;
+    max-width: 600px;
+    width: 100%;
+    margin: 5px;
+    font-weight: bold;
+ }
+
+ .chapter-detail a {
+    display: block;
+    color: orange;
+    padding: 5px;
+ }
+
+ .chapter-detail a:hover {
+    text-decoration: underline;
+ }
+</style>

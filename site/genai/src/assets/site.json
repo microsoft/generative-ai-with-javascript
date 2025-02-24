@@ -1,0 +1,49 @@
+{
+    "menu": [
+        {
+            "name": "Start!",
+            "url": "/start"
+        },
+        {
+            "name": "About",
+            "url": "/about"
+        },
+        {
+            "name": "More tutorials",
+            "url": "/contact"
+        }
+    ],
+    "chapters": [
+        {
+            "title": "Chapter 1: Introduction to Generative AI",
+            "url": "/1",
+            "id": "1",
+            "description": "In this chapter, we'll introduce you to the world of generative AI and how it's changing the way we interact with technology. "  
+        
+        },
+        {
+            "title": "Chapter 2: First AI App",
+            "url": "/2",
+            "id": "2",
+            "description": "In this chapter, we'll build our first AI app using OpenAI's GPT-3 model."
+        },
+        {
+            "title": "Chapter 3: Prompt Engineering",
+            "url": "/3",
+            "id": "3",
+            "description": "In this chapter, we'll learn how to craft prompts that get the best results from our AI models."
+        },
+        {
+            "title": "Chapter 4: Structured output",
+            "url": "/4",
+            "id": "4",
+            "description": "In this chapter, we'll learn how to structure the output of our AI models to make them more useful."
+        },
+        {
+            "title": "Chapter 5: RAG in Action",
+            "url": "/5",
+            "id": "5",
+            "description": "In this chapter, we'll learn how to use the RAG pattern to ground our AI models in real-world knowledge."
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+import bg from '../assets/background.png'
+import Menu from './Menu.astro'
+---
+
+<div class="menu">
+	<img id="bg" src={bg.src}>
+
+	<Menu />
+</div>
+
+<style>
+	#bg {
+		max-width: 600px;
+    	width: 100%;
+		border-radius: 20px;
+
+		@media (max-width: 600px) {
+			border-radius: 0px;
+		}
+    	box-shadow: 0 0 10px darkslategray;
+	}
+
+	.container {
+		text-align: center;
+	}
+</style>
