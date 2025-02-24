@@ -14,12 +14,13 @@ In this lesson, you will learn:
 
 ## Narrative - Genesis
 
-> **Note*:** _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Alexandria, Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues...
-_
+> [!NOTE] 
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Alexandria, Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues.._
 >
 > See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
-> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-ada-lovelace) if you'd prefer to jump straight to the technical content.
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#talk-to-ada-lovelace) if you'd prefer to jump straight to the technical content.
 
 **You**: "Leonardo, it's time to go," you said, pressing the button. The device whirred to life, and a mechanical voice echoed, "It's time to go home, it's time for 'genesis'."
 
@@ -28,26 +29,36 @@ _
 You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, . Leonardo looks around, his eyes wide with wonder. "Mio Dio", my god.
 
 <div>
-  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="400">
+  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
 </div>
 
 ### Running from the Dogs
 
-Before you could take in more of the scenery, a low growl caught your attention. A pack of large, imposing dogs bounded towards you, teeth bared. "Run!" you shouted, grabbing Leonardo's arm and sprinting towards the mansion.
+The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
 
 <div>
-  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="400">
+  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
 </div>
 
 You just reached the mansion's door, it swung open, and a pair of servants rushes out. After looking you up and down, they gesture for you to follow them.
 
-The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
+The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
 
-Charles Babbage steps forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
+### Meeting Ada and Charles
+
+**Ada:** "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
+
+**You:** "About time", you keep saying that, Dinocrates said the same, but I'm not sure what you mean?
+
+**Ada:** Hush, no time for that now, we need to talk about the device you're holding. Charles, fill them in..
+
+**You:** But..
 
 <div>
-  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="400">
+  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
 </div>
+
+Charles Babbage steps forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
 
 Leonardo nodded, "Sì, it has been acting strangely."
 
@@ -59,16 +70,16 @@ Leonardo nodded, "Sì, it has been acting strangely."
 
 ## Talk to Ada Lovelace
 
-<div>
-  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="400">
-</div>
+If you want to talk to Ada, run the [Characters](./app/) app.
 
-If you want to talk to Ada, run the app [Ada Lovelace](./characters/).
+<div>
+  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
+</div>
 
 **Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _lessons/05-rag/characters_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Ada.

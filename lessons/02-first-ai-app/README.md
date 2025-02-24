@@ -12,11 +12,14 @@ In this lesson, you will learn to:
 
 ## Narrative: Picture yourself in a boat on a river
 
-> **Note**: *Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the time beetle.*
+
+> [!NOTE] 
+> _Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the time beetle._
 >
 > See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning and learn about the Generative AI. 
 
-> **Note**: While we recommend going through the story (it's fun!), [click here](#talk-to-leonardo) if you'd prefer to jump straight to the technical content.
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#talk-to-leonardo) if you'd prefer to jump straight to the technical content.
 
 Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. 
 
@@ -28,21 +31,21 @@ When you open your eyes, the world has shifted. As you manage to get up, you rea
 
 Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting. 
 
-The question now is, where and when are you this time?
-
 <div>
-  <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width="400" >
+  <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=300" >
 </div>
 
-### Help me, Leonardo
+The question now is, where and when are you this time?
 
 You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly.
 
 As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-<div>
-  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="400" >
+<div >
+  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci standing next to a crate in the harbour" width="300" >
 </div>
+
+### Help me, Leonardo
 
 **You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
 
@@ -66,11 +69,17 @@ As you walk, you notice a man with a long beard and a hat, digging through a cra
 
 **Time beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
 
-The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
+### At the workshop
+
+The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions.
 
 <div>
-  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="400" >
+  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="300" >
 </div>
+
+### At the workshop
+
+The old man leads you to a large wooden door, and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
 
 You ask the Time Beetle to inquire about Leonardo's whereabouts. 
 
@@ -103,14 +112,18 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 
 ## Talk to Leonardo
 
-If you want to talk to Leonardo, run the [Leonardo](./characters/) app.
+If you want to talk to Leonardo, run the [Characters](./characters/) app.
+
+<div>
+  <img src="./assets/leonardo-talk.jpeg" width=300>
+</div>
 
 Steps:
 
 **Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _lessons/02-first-ai-app/characters_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Leonardo.
@@ -442,12 +455,11 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 **Time beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
 
 <div>
-  <img src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="400" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="300" >
 </div>
 
-*Leonardo Da Vinci’s Aerial Screw image credit Wikipedia* 
-
-> **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
+> [!NOTE]
+>  **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
 >
 > Although Leonardo never built a full-scale version of the aerial screw, his sketches and notes provide detailed insights into how he envisioned it working. He believed that if the screw was turned quickly enough, it would push against the air and lift the entire structure off the ground. 
 >
