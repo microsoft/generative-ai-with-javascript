@@ -71,7 +71,10 @@ app.get('/', (req, res) => {
 
 // Route to send the prompt
 app.post('/send', async (req, res) => {
-  const { message } = req.body;
+  const { message, character } = req.body;
+
+  systemMessage = character.description;
+
   const prompt = message;
 
   const messages = [

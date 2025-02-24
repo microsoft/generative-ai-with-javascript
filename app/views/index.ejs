@@ -111,7 +111,7 @@
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ message })
+        body: JSON.stringify({ message, character: currentCharacter })
       })
         .then(response => response.json())
         .then(data => {
@@ -139,6 +139,7 @@
     }
 
     function setCharacter(character, isInitial = false) {
+      currentCharacter = character;
       if (!isInitial) {
         card.style.transition = "none"; // Disable transition for immediate effect
       }
