@@ -4,8 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 
-import json from './characters.json' assert { type: 'json' };
-import { resolveNaptr } from 'dns';
+import json from './public/characters.json' with { type: "json" };
 
 let systemMessage = json[4].description;
 let page = json[4].page;

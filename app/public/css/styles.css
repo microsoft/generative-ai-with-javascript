@@ -1,0 +1,319 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --color-1: #052b2f;
+  --color-2: #073438;
+  --color-3: #0e4b50;
+  --color-4: #2d8f85;
+  --color-5: #637c54;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  margin: 0;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.background-image {
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(4px);
+  z-index: -1;
+  opacity: 0.1;
+  transition: background 2s ease;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  perspective: 1000px;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glare {
+  --glare-y: 50%;
+  --glare-x: 50%;
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--glare-x) var(--glare-y),
+    rgba(255, 255, 255, 0.3) 100px,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.card {
+  aspect-ratio: 1 / 1.5;
+  width: 400px;
+  height: 700px;
+  background: center/cover;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: white;
+  position: relative;
+  transition: transform 0.5 s ease-out;
+  transform-style: preserve-3d;
+  animation: card-rotate-x-y 10s 1 forwards;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card h2 {
+  margin: -10px -20px;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  color: black;
+}
+
+.card p {
+  margin: 10px -20px -20px;
+  font-size: 1em;
+  opacity: 0.8;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.card:hover {
+  transform: perspective(1000px);
+}
+
+.card:hover p {
+  transform: perspective(1300px);
+}
+
+.card:hover h2 {
+  transform: perspective(2000px);
+}
+
+.image-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-list img {
+  width: 60px;
+  height: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image-list img:hover {
+  transform: scale(1.1);
+}
+
+.chat-window {
+  height: 750px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  background: black;
+}
+
+.chat-window::before,
+.chat-window::after {
+  content: "";
+  position: absolute;
+  inset: 0.5px;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--color-3),
+    var(--color-4),
+    var(--color-5),
+    var(--color-4),
+    var(--color-3)
+  );
+  border-radius: inherit;
+  animation: rotation 5s linear infinite;
+}
+
+.chat-window::after {
+  filter: blur(3.5rem);
+}
+
+.chat-window .messages {
+  height: 630px;
+  resize: none;
+  background-color: transparent;
+  border: none;
+}
+
+.button {
+  font-size: 17px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: rgb(218, 218, 218);
+  border: none;
+  padding: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(0deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+  transform: translateY(-1px);
+}
+
+.button span {
+  border-radius: 10px;
+  padding: 0.8em 1.3em;
+  padding-right: 1.2em;
+  text-shadow: 0px 0px 20px #4b4b4b;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  transition: all 0.3s;
+  background-color: rgb(29, 29, 29);
+  background-image: radial-gradient(at 95% 89%, rgb(15, 15, 15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgb(17, 17, 17) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);
+}
+
+.button:hover .send-icon {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.button-send {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+  -webkit-filter: opacity(10%) contrast(105%);
+}
+
+.button .send-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.label {
+  position: relative;
+  display: block;
+  width: 480px;
+  border-radius: 10px;
+  border: 2px solid #5e5757;
+  padding: 15px 8px 15px 10px;
+  text-align: left;
+  background-color: black;
+}
+
+.label input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgb(111, 115, 119);
+  width: 410px;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes animate-rotate {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 0, 720deg);
+  }
+}
+
+/* voice toggle */
+.voice-switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-4);
+  margin: 8px;
+}
+
+.voice-switch .label-text {
+  margin-left: 16px;
+}
+
+.voice-switch .toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #262626;
+  margin-right: 5px;
+}
+
+.voice-switch .toggle-state {
+  display: none;
+}
+
+.voice-switch .indicator {
+  height: 100%;
+  width: 200%;
+  background: #262626;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: -8px -4px 8px 0px rgb(25, 25, 25), 8px 4px 12px 0px rgb(25, 25, 25);
+}
+
+.voice-switch .toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+  background-color: white;
+}

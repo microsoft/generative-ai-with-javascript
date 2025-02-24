@@ -4,12 +4,11 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-        "start": "node app.js",
-        "test": "node test.js"
+        "start": "node app.js"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Microsoft Corporation",
+    "license": "MIT",
     "description": "",
     "dependencies": {
         "dotenv": "^16.4.7",

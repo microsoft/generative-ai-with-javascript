@@ -1,236 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talk to <%= title %></title>
-    <style>
-        body {
-            display: flex;
-            margin: 0;
-            height: 100vh;
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .column {
-            flex: 1;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .left-column {
-            display: flex;
-            flex-direction: column;
-        }
-        .chat-window, .response-window {
-            flex: 1;
-
-            margin-bottom: 10px;
-            overflow-y: auto;
-            background-color: #1e1e1e;
-
-            box-shadow: 0 0 15px black;
-            border-radius: 10px;
-            padding: 10px;
-
-        }
-        .response-window {
-            margin-bottom: 0;
-        }
-        .right-column img {
-            max-width: 100%;
-            height: auto;
-        }
-        textarea {
-            width: calc(100% - 10px); /* Adjust width to fit within padding */
-            background-color: #333;
-            color: #fff;
-            border: 1px solid #555;
-
-            height: calc(80% - 20px); /* Adjust height to fit within padding */
-            border-radius: 5px;
-            padding: 5px;
-            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-        }
-
-        .button, .choose {
-            margin-top: 10px;
-            background-color: #333;
-            color: #fff;
-            border: 1px solid #555;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-            width: calc(100% - 10px);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .choose {
-          margin-bottom: 20px;
-        }
-
-        .button:hover {
-            background-color: #555;
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
-    <div class="column left-column">
-        <div class="chat-window">
-            <h2>You</h2>
-            <!-- Chat content goes here -->
-            <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea>
-
-            <button class="button">
-                <span style="margin-right: 5px;">💬</span> Say
-            </button>
-        </div>
-        <div class="response-window">
-            <h2><%= title %></h2>
-            <div>
-              <select id="list">
-                <option value="dinocrates">Dinocrates</option>
-                <option value="davinci">Da Vinci</option>
-                <option value="sforza">Sforza</option>
-                <option value="montezuma">Montezuma</option>
-                <option value="ada">Ada Lovelace</option>
-              </select>
-              <!-- <select id="voices">
-              </select> -->
-              <span>
-                <input type="checkbox" id="speak" >Hear your character speak (using Speech synthesis)</checkbox>
-              </span>
-              <button class="choose" id="btnChange">Change</button>
-            </div>
-            <textarea rows="4" cols="50" placeholder="Response will appear here..." disabled></textarea>
-        </div>
+<audio id="backgroundAudio" controls autoplay loop style="display: none">
+  <source type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+<link rel="stylesheet" href="/css/styles.css" type="text/css" />
+<main class="background-image" id="backgroundImage"></main>
+<section>
+  <div class="container">
+    <div class="card" id="card">
+      <div class="glare" id="glare"></div>
+      <h2 id="cardTitle"></h2>
+      <p id="cardDesc"></p>
     </div>
-    <div class="column right-column">
-        <img src="<%= image %>" alt="{{title}}">
+    <div class="image-list" id="image-list"></div>
+  </div>
+  <div class="chat-window">
+    <div>
+      <textarea id="responseWindow" class="messages" rows="4" cols="50" disabled></textarea>
     </div>
-    <audio id="background" controls autoplay loop style="display:none;">
-      <source src="<%= name %>.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <script>
-        const chatWindow = document.querySelector('.chat-window textarea');
-        const responseWindow = document.querySelector('.response-window textarea');
-        const button = document.querySelector('.button');
-        const buttonChange = document.getElementById("btnChange");
-        const listEl = document.getElementById("list");
-        const backgroundEl = document.getElementById("background");
-        const voicesEl = document.getElementById("voices");
-        const speakEl = document.getElementById("speak");
+    <div>
+      <label class="label">
+        <input id="chatInput" placeholder="Type your message here..." />
+        <button class="button" id="sendBtn">
+          <div class="button-send"></div>
+          <span>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="send-icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor" />
+            </svg>
+          </span>
+        </button>
+      </label>
+      <label class="voice-switch">
+        <div class="toggle">
+          <input id="speakToggle" class="toggle-state" type="checkbox" name="check" value="check" />
+          <div class="indicator"></div>
+        </div>
+        Hear your character speak
+      </label>
+    </div>
+  </div>
+</section>
 
-        const currentUrl = new URL(window.location.href);
-        let currentCharacter = currentUrl.searchParams.get('character') || "";
-        let currentVoice = "<%= voice  %>";
+<script type="module">
+    import characters from '/characters.json' with { type: "json" };
+    const card = document.getElementById("card");
+    const glare = document.getElementById('glare');
+    const backgroundAudio = document.getElementById("backgroundAudio");
+    const backgroundImage = document.getElementById("backgroundImage");
+    const cardTitle = document.getElementById("cardTitle");
+    const cardDesc = document.getElementById("cardDesc");
+    const imageList = document.getElementById("image-list");
+    const speakToggle = document.getElementById("speakToggle");
+    const sendBtn = document.getElementById("sendBtn");
+    const chatWindow = document.getElementById("chatInput");
+    let currentCharacter = characters[0];
 
-        const maxVolume = 0.5
+    card.addEventListener("mousemove", (e) => {
+      const { clientX, clientY } = e;
+      const { left, top, width, height } = card.getBoundingClientRect();
+      const x = (clientX - left) / width * 100;
+      const y = (clientY - top) / height * 100;
+      glare.style.setProperty('--glare-x', `${x}%`);
+      glare.style.setProperty('--glare-y', `${y}%`);
+      const rotateX = (clientY - top - height / 2) / 25;
+      const rotateY = (clientX - left - width / 2) / 25;
+      card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
+  });
 
-        backgroundEl.volume = maxVolume;
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "";
+    });
 
-        if(currentCharacter) {
-          listEl.value = currentCharacter;
-        } else {
-          listEl.value = "ada";
-        }
+    characters.forEach((character) => {
+      const imgElement = document.createElement("img");
+      imgElement.src = `/images/${character.image}`;
+      imgElement.alt = character.name;
+      imgElement.dataset.title = character.title;
+      imgElement.dataset.desc = character.description; // Updated to use character.description
+      imgElement.dataset.url = character.image; // Updated to use character.image
+      imgElement.title = character.title;
+      imgElement.addEventListener("click", () => setCharacter(character));
+      imageList.appendChild(imgElement);
+    });
 
-        let voices = [];
-        speechSynthesis.onvoiceschanged = populateVoiceList;
+    speakToggle.addEventListener("change", (e) => {
+      if (e.target.checked && speechSynthesis.speaking) {
+        speechSynthesis.cancel();
+      }
+    });
 
-        function populateVoiceList() {
-          voices = window.speechSynthesis.getVoices();
-          // console.log(voices);
+    sendBtn.addEventListener("click", send);
 
-          // for (let i = 0; i < voices.length; i++) {
-          //   const option = document.createElement("option");
-          //   option.textContent = `${voices[i].name} (${voices[i].lang})`;
-          //   option.value = i;
+    chatWindow.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        send();
+      }
+    });
 
-          //   if (voices[i].default) {
-          //     option.textContent += " — DEFAULT";
+    function send() {
+      const message = chatWindow.value;
+      responseWindow.value = `You: ${message}`;
+      fetch('/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message })
+      })
+        .then(response => response.json())
+        .then(data => {
+          responseWindow.value += `\n${currentCharacter.title}: ${data.answer}`;
+          console.log("speak enabled", speakToggle.checked);
 
-          //   }
+          if (speakToggle.checked) {
+            say(data.answer);
+          }
 
-          //   voicesEl.appendChild(option);
-          // }
-        }
-
-        function say(text) {
-            const utterance = new SpeechSynthesisUtterance(text);
-
-            console.log("current voice: ", currentVoice);
-
-            // Optional: Set voice and other properties
-            // console.log("selected value: ", voicesEl.value);
-            // console.log("selected voice", voicesEl.value);
-            utterance.voice = voices[parseInt(currentVoice)]; // Choose the first available voice
-            utterance.rate = 1; // Speed of the speech
-            utterance.pitch = 1; // Pitch of the speech
-            utterance.volume = 1; // Volume of the speech
-
-            backgroundEl.volume = 0.1;
-            speechSynthesis.speak(utterance);
-
-            utterance.onend = () => {
-              backgroundEl.volume = maxVolume;
-            }
-        }
-
-        buttonChange.addEventListener("click", () => {
-          let selectedValue = listEl.value;
-          // should call default route with param character
-          // Get the current URL
-          const currentUrl = new URL(window.location.href);
-
-          // Set or update the 'character' query parameter
-          currentUrl.searchParams.set('character', selectedValue);
-
-          // Update the document URL
-          window.location.href = currentUrl.toString();
         })
-
-        button.addEventListener('click', () => {
-            const message = chatWindow.value;
-            responseWindow.value = `You: ${message}`;
-            fetch('/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ message })
-            })
-            .then(response => response.json())
-            .then(data => {
-                responseWindow.value += `\n<%= title %>: ${data.answer}`;
-                console.log("speak enabled", speakEl.checked);
-
-                if(speakEl.checked) {
-                  say(data.answer);
-                }
-
-            })
-            .catch(error => {
-                console.error('Error:', error.error);
-            });
-            chatWindow.value = '';
+        .catch(error => {
+          console.error('Error:', error.error);
         });
-    </script>
+      chatWindow.value = '';
+    }
 
-</body>
-</html>
+    function say(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.voice = speechSynthesis.getVoices()[currentCharacter.voice || 0];
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      speechSynthesis.speak(utterance);
+    }
 
-<!--
-const utterance = new SpeechSynthesisUtterance(textInput);
+    function setCharacter(character, isInitial = false) {
+      if (!isInitial) {
+        card.style.transition = "none"; // Disable transition for immediate effect
+      }
 
-            // Optional: Set voice and other properties
-            utterance.voice = speechSynthesis.getVoices()[0]; // Choose the first available voice
-            utterance.rate = 1; // Speed of the speech
-            utterance.pitch = 1; // Pitch of the speech
-            utterance.volume = 1; // Volume of the speech
+      card.style.animation = "";
+      backgroundImage.style.backgroundImage = `url("/images/tunel.gif")`;
+      setTimeout(() => {
+          card.style.backgroundImage = `url("/images/${character.image}")`; // Updated to use character.image
+          cardTitle.textContent = character.title; // Updated to use character.title
+          // cardDesc.textContent = character.description; // Updated to use character.description
+          card.style.transition = "background-image 0.5s ease"; // Added transition for smooth effect
+          card.style.animation = "animate-rotate 0.5s ease"; // Added animation for smooth effect
 
-            speechSynthesis.speak(utterance);
+          updateUrlState(character);
+        }, isInitial ? 0 : 1000);
 
+        setTimeout(() => {
+          backgroundImage.style.backgroundImage = `url("/images/${character.image}")`; // Set background for the main element
+        }, isInitial ? 0 : 2000);
 
-            -->
+        try {
+          backgroundAudio.src = `/audio/${character.name}.mp3`; // Updated to use character.name
+          backgroundAudio.play();
+        } catch (error) {
+          console.error("Error playing audio:", error);
+        }
+    }
+
+    function updateUrlState(character) {
+      const newUrl = `?character=${character.name}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    }
+
+    setCharacter(currentCharacter, true);
+</script>
