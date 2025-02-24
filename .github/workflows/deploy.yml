@@ -1,34 +1,27 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy to GitHub Pages
 
-on: 
+on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
-
-# on:
-#   push:
-#     branches:
-#       - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '2.7'
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install dependencies
-      run: bundle install
+      - name: Build project
+        run: npm run build
 
-    - name: Build site
-      run: bundle exec jekyll build --source lessons --destination _site
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
