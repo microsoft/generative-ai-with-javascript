@@ -54,7 +54,7 @@ Now, let’s deploy a **gpt-4o-mini** model to your project:
 > [!NOTE] 
 > The endpoint is similar to `https://< your hub name>.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-08-01-preview`. The endpoint name that we need is only `https://< your hub name >.openai.azure.com/`*.
 
-## Adding the Azure AI API Key to your code
+## Adding Azure to your code
 
 Now let’s update the code to use the newly deployed model. Here's the plan:
 
