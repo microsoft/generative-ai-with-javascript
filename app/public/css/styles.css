@@ -10,6 +10,9 @@
   --color-3: #0e4b50;
   --color-4: #2d8f85;
   --color-5: #637c54;
+  --chat-bubble-background: #212121;
+  --chat-container-background: #000;
+  --chat-text-color: #a3a3a3;
 }
 
 body {
@@ -143,15 +146,17 @@ section {
 .chat-window {
   height: 750px;
   border-radius: 10px;
-  padding: 20px 10px;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   margin-left: 60px;
   margin-bottom: 40px;
   position: relative;
-  background: black;
+  background: var(--chat-container-background);
+  width: 600px;
+  color: var(--chat-text-color);
+  flex-direction: column;
 }
 
 .chat-window::before,
@@ -191,13 +196,21 @@ section {
   border: none;
   padding: 2px;
   font-weight: 700;
-  cursor: pointer;
   position: relative;
   z-index: 1;
   transition: all 0.3s;
 }
 
-.button:hover {
+.button:not([disabled]) {
+  cursor: pointer;
+}
+
+.button[disabled] {
+  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: rgb(218, 218, 218);
+}
+
+.button:hover:not([disabled]) {
   background: linear-gradient(0deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
   transform: translateY(-1px);
 }
@@ -218,7 +231,7 @@ section {
     radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);
 }
 
-.button:hover .send-icon {
+.button:hover:not([disabled]) .send-icon {
   fill: white;
   transform: scale(1.2);
 }
@@ -240,7 +253,6 @@ section {
 .label {
   position: relative;
   display: block;
-  width: 480px;
   border-radius: 10px;
   border: 2px solid #5e5757;
   padding: 15px 8px 15px 10px;
@@ -254,7 +266,7 @@ section {
   outline: none;
   font-size: 16px;
   color: rgb(111, 115, 119);
-  width: 410px;
+  width: calc(100% - 70px);
 }
 
 @keyframes rotation {
@@ -317,3 +329,95 @@ section {
   transform: translate3d(25%, 0, 0);
   background-color: white;
 }
+
+/* chat conversation board */
+
+.chat__conversation-board {
+  padding: 1em 0 2em;
+  height: calc(100vh - 55px - 2em - 25px * 2 - 0.5em - 3em);
+  overflow: auto;
+}
+
+.chat__conversation-board__message__bubble {
+  background: var(--chat-bubble-background);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat__conversation-board__message-container.reversed {
+  flex-direction: row-reverse;
+}
+.chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble {
+  position: relative;
+}
+.chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble span:not(:last-child) {
+  margin: 0 0 2em 0;
+}
+.chat__conversation-board__message-container.reversed .chat__conversation-board__message__person {
+  margin: 0 0 0 1.2em;
+}
+.chat__conversation-board__message-container.reversed .chat__conversation-board__message__options {
+  align-self: center;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+.chat__conversation-board__message-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.chat__conversation-board__message__person {
+  text-align: center;
+  margin: 0 1.2em 0 0;
+}
+
+.chat__conversation-board__message__person__avatar {
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  user-select: none;
+  position: relative;
+}
+
+.chat__conversation-board__message__person__avatar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.chat__conversation-board__message__person__avatar img {
+  height: 100%;
+  width: auto;
+}
+
+.chat__conversation-board__message__person__nickname {
+  font-size: 9px;
+  color: #484848;
+  user-select: none;
+  display: none;
+}
+
+.chat__conversation-board__message__bubble span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-table;
+  word-wrap: break-word;
+  background: var(--chat-bubble-background);
+  font-size: 13px;
+  color: var(--chat-text-color);
+  padding: 0.5em 0.8em;
+  line-height: 1.5;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+}
+.chat__conversation-board__message__bubble:not(:last-child) {
+  margin: 0 0 0.3em;
+}
+
