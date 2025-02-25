@@ -35,7 +35,7 @@ Ready to integrate Generative AI into your JavaScript apps? This course throws y
  
 ![Character App Sneak Peek](./background.png)
  
-## Step Into History with AI Magic!
+## Step Into History with AI Magic! 
  
 Dive into an immersive ride powered by Generative AI:  
 - **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
