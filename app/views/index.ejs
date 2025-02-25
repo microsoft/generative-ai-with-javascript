@@ -173,5 +173,18 @@
       window.history.pushState({ path: newUrl }, '', newUrl);
     }
 
-    setCharacter(currentCharacter, true);
+    function loadCharacterFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const characterName = urlParams.get('character');
+      if (characterName) {
+        const character = characters.find(c => c.name === characterName);
+        if (character) {
+          setCharacter(character, true);
+        }
+      }else {
+        setCharacter(currentCharacter, true);
+      }
+    }
+
+    loadCharacterFromUrl();
 </script>
