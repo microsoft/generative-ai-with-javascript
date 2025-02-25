@@ -7,6 +7,10 @@ This app allows you to speak to all character features in the curriculum.
 1. Run `npm start`
 1. Open `http://localhost:3000`
 
+You should see something like:
+
+![Chat app](../character-chat.png)
+
 ## Speak to a character
 
 You're faced with a text input field. Type your message and see the response from the character you are speaking to.

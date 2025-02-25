@@ -35,7 +35,7 @@ Ready to integrate Generative AI into your JavaScript apps? This course throws y
  
 ![Character App Sneak Peek](./background.png)
  
-## Step Into History with AI Magic!
+## Step Into History with AI Magic! 
  
 Dive into an immersive ride powered by Generative AI:  
 - **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
@@ -44,7 +44,7 @@ Dive into an immersive ride powered by Generative AI:
 Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
  
 - **Companion App**. Chat with historical figures—yes, they speak back!  
-  ![Chat with History](./character.png)  
+  ![Chat with History](./character-chat.png)  
   Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
  
  
