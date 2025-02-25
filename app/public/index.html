@@ -60,6 +60,8 @@
     const sendBtn = document.getElementById("sendBtn");
     const chatWindow = document.getElementById("chatInput");
     let currentCharacter = characters[0];
+    const maxVolume = 0.5;
+    let utterance = null;
 
     card.addEventListener("mousemove", (e) => {
       const { clientX, clientY } = e;
@@ -85,12 +87,17 @@
       imgElement.dataset.desc = character.description; // Updated to use character.description
       imgElement.dataset.url = character.image; // Updated to use character.image
       imgElement.title = character.title;
-      imgElement.addEventListener("click", () => setCharacter(character));
+      imgElement.addEventListener("click", () =>
+      {
+        setCharacter(character);
+        speechSynthesis.cancel();
+      });
       imageList.appendChild(imgElement);
     });
 
     speakToggle.addEventListener("change", (e) => {
-      if (e.target.checked && speechSynthesis.speaking) {
+      // when it's set to unchecked then cancel the speech synthesis
+      if (!e.target.checked) {
         speechSynthesis.cancel();
       }
     });
@@ -130,12 +137,17 @@
     }
 
     function say(text) {
-      const utterance = new SpeechSynthesisUtterance(text);
+      utterance = new SpeechSynthesisUtterance(text);
       utterance.voice = speechSynthesis.getVoices()[currentCharacter.voice || 0];
       utterance.rate = 1;
       utterance.pitch = 1;
       utterance.volume = 1;
+      backgroundAudio.volume = 0.1;
       speechSynthesis.speak(utterance);
+      utterance.onend = function (event) {
+        backgroundAudio.volume = maxVolume;
+        utterance = null;
+      }
     }
 
     function setCharacter(character, isInitial = false) {
@@ -162,6 +174,7 @@
 
         try {
           backgroundAudio.src = `/audio/${character.name}.mp3`; // Updated to use character.name
+          backgroundAudio.volume = maxVolume;
           backgroundAudio.play();
         } catch (error) {
           console.error("Error playing audio:", error);

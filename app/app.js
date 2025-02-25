@@ -26,9 +26,6 @@ app.use(express.json());
 // use a template engine to render the page
 app.set('view engine', 'ejs');
 
-// do I need to install ejs? a: yes, how? a: npm install ejs
-app.set('views', path.join(__dirname, 'views'));
-
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -43,31 +40,6 @@ function getCharacterByName(name) {
   }
   return null;
 }
-
-// Serve index.html on the default route
-app.get('/', (req, res) => {
-  // console.log("SERVER, default route");
-
-  let character = req.query.character || "";
-  // console.log("SERVER, character", character);
-  let title = "Ada Lovelace";
-  let name = "ada";
-  let image = "ada.jpeg";
-  let voice = 2; // see here values in characters.json
-
-  if(character) {
-    let ch = getCharacterByName(character);
-
-    systemMessage = ch?.description;
-
-    title = ch?.title;
-    name = ch?.name;
-    image = ch?.image;
-    voice = ch?.voice;
-  }
-
-  res.render("index", { title:title, name: name, image: image, voice: voice  });
-});
 
 // Route to send the prompt
 app.post('/send', async (req, res) => {
