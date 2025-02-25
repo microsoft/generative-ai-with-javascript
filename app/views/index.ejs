@@ -113,8 +113,8 @@
     });
 
     speakToggle.addEventListener("change", (e) => {
-      if (e.target.checked && speechSynthesis.speaking) {
-        speechSynthesis.cancel();
+      if (e.target.checked && window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
       }
     });
 
@@ -204,7 +204,7 @@
     function speak(text) {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = "en-US";
-      const voices = speechSynthesis
+      const voices = window.speechSynthesis
                     .getVoices()
                     .filter(voice => voice.lang === "en-US");
       utterance.voice = voices[currentCharacter.voice || 0];
@@ -214,7 +214,7 @@
       utterance.onend = () => {
         console.log('Speech has finished');
       };
-      speechSynthesis.speak(utterance);
+      window.speechSynthesis.speak(utterance);
     }
 
     function setCharacter(character, isInitial = false) {
