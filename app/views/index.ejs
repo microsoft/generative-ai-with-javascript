@@ -143,8 +143,8 @@
         type: 'USER',
         message,
         character: {
+          avatar: "user-avatar.jpeg",
           title: "You",
-          id: 1
         }
       });
 
@@ -162,14 +162,11 @@
           appendConversation({
             type: 'AGENT',
             message: data.answer,
-            character: {
-              title: currentCharacter.title,
-              id: 2
-            }
+            character: currentCharacter
           });
 
           if (speakToggle.checked) {
-            say(data.answer);
+            speak(data.answer);
           }
 
         })
@@ -198,18 +195,25 @@
 
       message.textContent = options.message;
       userName.textContent = options.character.title;
-      userAvatar.src = `https://randomuser.me/api/portraits/lego/${options.character.id}.jpg`;
+      userAvatar.src = `/images/${options.character.avatar}`;
 
       responseWindow.appendChild(convo);
       responseWindow.scrollTop = responseWindow.scrollHeight;
     }
 
-    function say(text) {
+    function speak(text) {
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.voice = speechSynthesis.getVoices()[currentCharacter.voice || 0];
+      utterance.lang = "en-US";
+      const voices = speechSynthesis
+                    .getVoices()
+                    .filter(voice => voice.lang === "en-US");
+      utterance.voice = voices[currentCharacter.voice || 0];
       utterance.rate = 1;
       utterance.pitch = 1;
       utterance.volume = 1;
+      utterance.onend = () => {
+        console.log('Speech has finished');
+      };
       speechSynthesis.speak(utterance);
     }
 
@@ -237,6 +241,7 @@
 
         try {
           backgroundAudio.src = `/audio/${character.name}.mp3`; // Updated to use character.name
+          backgroundAudio.volume = 0.1;
           backgroundAudio.play();
         } catch (error) {
           console.error("Error playing audio:", error);
