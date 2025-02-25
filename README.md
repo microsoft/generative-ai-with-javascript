@@ -102,6 +102,8 @@ After completing this course, you can continue learning by exploring our additio
 | 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](slides/08-azure-tools.pptx) / [pdf](slides/pdf/08-azure-tools.pdf) | - | [Script](sessions/08-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
 | 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](slides/10-chat-protocol.pptx) / [pdf](slides/pdf/10-chat-protocol.pdf) | [Demo](demos/10-chat-protocol/) | [Script](sessions/10-chat-protocol.md) | [📺](https://www.youtube.com/watch?v=fzDCW-6hMtU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=11) |
 
+To see the full page of resources, go this [video overview page](./videos/README.md).
+
 </details>
 
 <details>
