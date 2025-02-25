@@ -11,7 +11,6 @@ let page = json[4].page;
 
 console.log("SERVER systemMessage: ", systemMessage);
 console.log("SERVER page: ", page);
-// console.log("Token: ", process.env.GITHUB_TOKEN)
 
 dotenv.config();
 
@@ -22,9 +21,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(express.json());
-
-// use a template engine to render the page
-app.set('view engine', 'ejs');
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));

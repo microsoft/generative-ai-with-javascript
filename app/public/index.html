@@ -14,24 +14,28 @@
     <div class="image-list" id="image-list"></div>
   </div>
   <div class="chat-window">
-    <div>
-      <textarea id="responseWindow" class="messages" rows="4" cols="50" disabled></textarea>
-    </div>
+    <div class="chat__conversation-board" id="responseWindow"></div>
     <div>
       <label class="label">
         <input id="chatInput" placeholder="Type your message here..." />
-        <button class="button" id="sendBtn">
+        <button class="button" id="sendBtn" disabled>
           <div class="button-send"></div>
           <span>
             <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="send-icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              class="send-icon"
-              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
             >
-              <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor" />
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
             </svg>
           </span>
         </button>
@@ -47,18 +51,37 @@
   </div>
 </section>
 
+<template id="conversationTpl">
+  <div class="chat__conversation-board__message-container">
+    <div class="chat__conversation-board__message__person">
+      <div class="chat__conversation-board__message__person__avatar">
+        <img />
+      </div>
+      <span class="chat__conversation-board__message__person__nickname">{{ userName }}</span>
+    </div>
+    <div class="chat__conversation-board__message__context">
+      <div class="chat__conversation-board__message__bubble">
+        <span>{{ message }}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script type="module">
     import characters from '/characters.json' with { type: "json" };
-    const card = document.getElementById("card");
-    const glare = document.getElementById('glare');
-    const backgroundAudio = document.getElementById("backgroundAudio");
-    const backgroundImage = document.getElementById("backgroundImage");
-    const cardTitle = document.getElementById("cardTitle");
-    const cardDesc = document.getElementById("cardDesc");
-    const imageList = document.getElementById("image-list");
-    const speakToggle = document.getElementById("speakToggle");
-    const sendBtn = document.getElementById("sendBtn");
-    const chatWindow = document.getElementById("chatInput");
+    const card = document.querySelector("#card");
+    const glare = document.querySelector('#glare');
+    const backgroundAudio = document.querySelector("#backgroundAudio");
+    const backgroundImage = document.querySelector("#backgroundImage");
+    const cardTitle = document.querySelector("#cardTitle");
+    const cardDesc = document.querySelector("#cardDesc");
+    const imageList = document.querySelector("#image-list");
+    const speakToggle = document.querySelector("#speakToggle");
+    const sendBtn = document.querySelector("#sendBtn");
+    const chatInput = document.querySelector("#chatInput");
+    const conversationTpl = document.querySelector('#conversationTpl');
+
+
     let currentCharacter = characters[0];
     const maxVolume = 0.5;
     let utterance = null;
@@ -73,7 +96,7 @@
       const rotateX = (clientY - top - height / 2) / 25;
       const rotateY = (clientX - left - width / 2) / 25;
       card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
-  });
+    });
 
     card.addEventListener("mouseleave", () => {
       card.style.transform = "";
@@ -91,6 +114,7 @@
       {
         setCharacter(character);
         speechSynthesis.cancel();
+        responseWindow.innerHTML = "";
       });
       imageList.appendChild(imgElement);
     });
@@ -104,15 +128,36 @@
 
     sendBtn.addEventListener("click", send);
 
-    chatWindow.addEventListener("keypress", (e) => {
+    chatInput.addEventListener("input", (e) => {
+      if (e.target.value) {
+        sendBtn.disabled = false;
+      } else {
+        sendBtn.disabled = true;
+      }
+    });
+
+    chatInput.addEventListener("keypress", (e) => {
       if (e.key === "Enter") {
         send();
       }
     });
 
     function send() {
-      const message = chatWindow.value;
-      responseWindow.value = `You: ${message}`;
+      const message = chatInput.value;
+      if (!message) return;
+
+
+      appendConversation({
+        type: 'USER',
+        message,
+        character: {
+          avatar: "user-avatar.jpeg",
+          title: "You",
+        }
+      });
+
+      chatInput.disabled = true;
+
       fetch('/send', {
         method: 'POST',
         headers: {
@@ -122,19 +167,29 @@
       })
         .then(response => response.json())
         .then(data => {
-          responseWindow.value += `\n${currentCharacter.title}: ${data.answer}`;
-          console.log("speak enabled", speakToggle.checked);
+          appendConversation({
+            type: 'AGENT',
+            message: data.answer,
+            character: currentCharacter
+          });
 
           if (speakToggle.checked) {
+            console.log("speaking");
             say(data.answer);
           }
 
         })
         .catch(error => {
           console.error('Error:', error.error);
+        })
+        .finally(() => {
+          chatInput.value = '';
+          chatInput.disabled = false;
+          chatInput.focus();
+          sendBtn.disabled = true;
         });
-      chatWindow.value = '';
     }
+
 
     function say(text) {
       utterance = new SpeechSynthesisUtterance(text);
@@ -148,6 +203,26 @@
         backgroundAudio.volume = maxVolume;
         utterance = null;
       }
+    }
+
+    function appendConversation(options) {
+      const convo = conversationTpl.content.cloneNode(true);
+
+      const messageContainer = convo.querySelector('.chat__conversation-board__message-container');
+      const message = convo.querySelector('.chat__conversation-board__message__bubble');
+      const userName = convo.querySelector('.chat__conversation-board__message__person__nickname');
+      const userAvatar = convo.querySelector('.chat__conversation-board__message__person__avatar img');
+
+      if (options.type === 'USER') {
+        messageContainer.classList.add('reversed');
+      }
+
+      message.textContent = options.message;
+      userName.textContent = options.character.title;
+      userAvatar.src = `/images/${options.character.avatar}`;
+
+      responseWindow.appendChild(convo);
+      responseWindow.scrollTop = responseWindow.scrollHeight;
     }
 
     function setCharacter(character, isInitial = false) {
@@ -186,5 +261,18 @@
       window.history.pushState({ path: newUrl }, '', newUrl);
     }
 
-    setCharacter(currentCharacter, true);
+    function loadCharacterFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const characterName = urlParams.get('character');
+      if (characterName) {
+        const character = characters.find(c => c.name === characterName);
+        if (character) {
+          setCharacter(character, true);
+        }
+      }else {
+        setCharacter(currentCharacter, true);
+      }
+    }
+
+    loadCharacterFromUrl();
 </script>
