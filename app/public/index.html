@@ -1,0 +1,278 @@
+<audio id="backgroundAudio" controls autoplay loop style="display: none">
+  <source type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+<link rel="stylesheet" href="/css/styles.css" type="text/css" />
+<main class="background-image" id="backgroundImage"></main>
+<section>
+  <div class="container">
+    <div class="card" id="card">
+      <div class="glare" id="glare"></div>
+      <h2 id="cardTitle"></h2>
+      <p id="cardDesc"></p>
+    </div>
+    <div class="image-list" id="image-list"></div>
+  </div>
+  <div class="chat-window">
+    <div class="chat__conversation-board" id="responseWindow"></div>
+    <div>
+      <label class="label">
+        <input id="chatInput" placeholder="Type your message here..." />
+        <button class="button" id="sendBtn" disabled>
+          <div class="button-send"></div>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="send-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </span>
+        </button>
+      </label>
+      <label class="voice-switch">
+        <div class="toggle">
+          <input id="speakToggle" class="toggle-state" type="checkbox" name="check" value="check" />
+          <div class="indicator"></div>
+        </div>
+        Hear your character speak
+      </label>
+    </div>
+  </div>
+</section>
+
+<template id="conversationTpl">
+  <div class="chat__conversation-board__message-container">
+    <div class="chat__conversation-board__message__person">
+      <div class="chat__conversation-board__message__person__avatar">
+        <img />
+      </div>
+      <span class="chat__conversation-board__message__person__nickname">{{ userName }}</span>
+    </div>
+    <div class="chat__conversation-board__message__context">
+      <div class="chat__conversation-board__message__bubble">
+        <span>{{ message }}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script type="module">
+    import characters from '/characters.json' with { type: "json" };
+    const card = document.querySelector("#card");
+    const glare = document.querySelector('#glare');
+    const backgroundAudio = document.querySelector("#backgroundAudio");
+    const backgroundImage = document.querySelector("#backgroundImage");
+    const cardTitle = document.querySelector("#cardTitle");
+    const cardDesc = document.querySelector("#cardDesc");
+    const imageList = document.querySelector("#image-list");
+    const speakToggle = document.querySelector("#speakToggle");
+    const sendBtn = document.querySelector("#sendBtn");
+    const chatInput = document.querySelector("#chatInput");
+    const conversationTpl = document.querySelector('#conversationTpl');
+
+
+    let currentCharacter = characters[0];
+    const maxVolume = 0.5;
+    let utterance = null;
+
+    card.addEventListener("mousemove", (e) => {
+      const { clientX, clientY } = e;
+      const { left, top, width, height } = card.getBoundingClientRect();
+      const x = (clientX - left) / width * 100;
+      const y = (clientY - top) / height * 100;
+      glare.style.setProperty('--glare-x', `${x}%`);
+      glare.style.setProperty('--glare-y', `${y}%`);
+      const rotateX = (clientY - top - height / 2) / 25;
+      const rotateY = (clientX - left - width / 2) / 25;
+      card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "";
+    });
+
+    characters.forEach((character) => {
+      const imgElement = document.createElement("img");
+      imgElement.src = `/images/${character.image}`;
+      imgElement.alt = character.name;
+      imgElement.dataset.title = character.title;
+      imgElement.dataset.desc = character.description; // Updated to use character.description
+      imgElement.dataset.url = character.image; // Updated to use character.image
+      imgElement.title = character.title;
+      imgElement.addEventListener("click", () =>
+      {
+        setCharacter(character);
+        speechSynthesis.cancel();
+        responseWindow.innerHTML = "";
+      });
+      imageList.appendChild(imgElement);
+    });
+
+    speakToggle.addEventListener("change", (e) => {
+      // when it's set to unchecked then cancel the speech synthesis
+      if (!e.target.checked) {
+        speechSynthesis.cancel();
+      }
+    });
+
+    sendBtn.addEventListener("click", send);
+
+    chatInput.addEventListener("input", (e) => {
+      if (e.target.value) {
+        sendBtn.disabled = false;
+      } else {
+        sendBtn.disabled = true;
+      }
+    });
+
+    chatInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        send();
+      }
+    });
+
+    function send() {
+      const message = chatInput.value;
+      if (!message) return;
+
+
+      appendConversation({
+        type: 'USER',
+        message,
+        character: {
+          avatar: "user-avatar.jpeg",
+          title: "You",
+        }
+      });
+
+      chatInput.disabled = true;
+
+      fetch('/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message, character: currentCharacter })
+      })
+        .then(response => response.json())
+        .then(data => {
+          appendConversation({
+            type: 'AGENT',
+            message: data.answer,
+            character: currentCharacter
+          });
+
+          if (speakToggle.checked) {
+            console.log("speaking");
+            say(data.answer);
+          }
+
+        })
+        .catch(error => {
+          console.error('Error:', error.error);
+        })
+        .finally(() => {
+          chatInput.value = '';
+          chatInput.disabled = false;
+          chatInput.focus();
+          sendBtn.disabled = true;
+        });
+    }
+
+
+    function say(text) {
+      utterance = new SpeechSynthesisUtterance(text);
+      utterance.voice = speechSynthesis.getVoices()[currentCharacter.voice || 0];
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      backgroundAudio.volume = 0.1;
+      speechSynthesis.speak(utterance);
+      utterance.onend = function (event) {
+        backgroundAudio.volume = maxVolume;
+        utterance = null;
+      }
+    }
+
+    function appendConversation(options) {
+      const convo = conversationTpl.content.cloneNode(true);
+
+      const messageContainer = convo.querySelector('.chat__conversation-board__message-container');
+      const message = convo.querySelector('.chat__conversation-board__message__bubble');
+      const userName = convo.querySelector('.chat__conversation-board__message__person__nickname');
+      const userAvatar = convo.querySelector('.chat__conversation-board__message__person__avatar img');
+
+      if (options.type === 'USER') {
+        messageContainer.classList.add('reversed');
+      }
+
+      message.textContent = options.message;
+      userName.textContent = options.character.title;
+      userAvatar.src = `/images/${options.character.avatar}`;
+
+      responseWindow.appendChild(convo);
+      responseWindow.scrollTop = responseWindow.scrollHeight;
+    }
+
+    function setCharacter(character, isInitial = false) {
+      currentCharacter = character;
+      if (!isInitial) {
+        card.style.transition = "none"; // Disable transition for immediate effect
+      }
+
+      card.style.animation = "";
+      backgroundImage.style.backgroundImage = `url("/images/tunel.gif")`;
+      setTimeout(() => {
+          card.style.backgroundImage = `url("/images/${character.image}")`; // Updated to use character.image
+          cardTitle.textContent = character.title; // Updated to use character.title
+          // cardDesc.textContent = character.description; // Updated to use character.description
+          card.style.transition = "background-image 0.5s ease"; // Added transition for smooth effect
+          card.style.animation = "animate-rotate 0.5s ease"; // Added animation for smooth effect
+
+          updateUrlState(character);
+        }, isInitial ? 0 : 1000);
+
+        setTimeout(() => {
+          backgroundImage.style.backgroundImage = `url("/images/${character.image}")`; // Set background for the main element
+        }, isInitial ? 0 : 2000);
+
+        try {
+          backgroundAudio.src = `/audio/${character.name}.mp3`; // Updated to use character.name
+          backgroundAudio.volume = maxVolume;
+          backgroundAudio.play();
+        } catch (error) {
+          console.error("Error playing audio:", error);
+        }
+    }
+
+    function updateUrlState(character) {
+      const newUrl = `?character=${character.name}`;
+      window.history.pushState({ path: newUrl }, '', newUrl);
+    }
+
+    function loadCharacterFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const characterName = urlParams.get('character');
+      if (characterName) {
+        const character = characters.find(c => c.name === characterName);
+        if (character) {
+          setCharacter(character, true);
+        }
+      }else {
+        setCharacter(currentCharacter, true);
+      }
+    }
+
+    loadCharacterFromUrl();
+</script>

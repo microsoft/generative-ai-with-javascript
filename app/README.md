@@ -1,0 +1,21 @@
+This app allows you to speak to all character features in the curriculum. 
+
+## Installation
+
+1. Start a GitHub Codespaces
+1. Run `npm install`
+1. Run `npm start`
+1. Open `http://localhost:3000`
+
+## Speak to a character
+
+You're faced with a text input field. Type your message and see the response from the character you are speaking to.
+
+## Change character
+
+Select the dropdown to change the character you are speaking to.
+
+## Change the character behavior
+
+In `characters.json`, there's a `description` property that will be used as a system message. If you change this, the characters personality will change.
+

@@ -26,7 +26,6 @@ Moreover, Generative AI has evolved into multi modal capabilities, allowing you 
 > [!NOTE]  
 > While we recommend going through the story (it's fun!), [click here](#talk-to-dinocrates) if you'd prefer to jump straight to the technical content.
 
-
 Your journey begins in 1860s London, where you assume the role of a skilled mechanic. Through a series of gripping adventures, you'll refine your AI skills and unlock solutions that transcend time.
 
 ### Into the Maelstrom - London 1860
