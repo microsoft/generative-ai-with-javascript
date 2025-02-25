@@ -16,6 +16,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Narrative: Picture yourself in a boat on a river
 
+
 > [!NOTE] 
 > _Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the time beetle._
 >
