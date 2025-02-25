@@ -2,19 +2,11 @@
 
 <img src="./docs/images/logo.png" alt="" align="center" height="128" />
 
-# Generative AI with JavaScript
+# Generative AI for Beginners with JavaScript
 
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/blob/main/LICENSE)
-[![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/microsoft/generative-ai-with-javascript?hide_repo_select=true&ref=main&quickstart=true)
 [![Watch the video series](https://img.shields.io/badge/Videos-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
-[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/generative-ai-with-javascript.svg?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/microsoft/generative-ai-with-javascript.svg?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/issues/)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/generative-ai-with-javascript.svg?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/pulls/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/generative-ai-with-javascript.svg?style=social&label=Watch)](https://github.com/microsoft/generative-ai-with-javascript/watchers/)
-[![GitHub forks](https://img.shields.io/github/forks/microsoft/generative-ai-with-javascript.svg?style=social&label=Fork)](https://github.com/microsoft/generative-ai-with-javascript/network/)
-[![GitHub stars](https://img.shields.io/github/stars/microsoft/generative-ai-with-javascript.svg?style=social&label=Star)](https://github.com/microsoft/generative-ai-with-javascript/stargazers/)
 
 [![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
 
@@ -24,11 +16,9 @@
 
 </div>
 
-This course aims to take you through a series of lessons so that you can integrate Generative AI in your JavaScript apps. 
+Ready to integrate Generative AI into your JavaScript apps? 
 
-To make it a fun learning experience, we've added a narrative to each lesson. It's a *time traveling adventure* where you will encounter famous characters throughout history! ✨
-
-Ready to integrate Generative AI into your JavaScript apps? This course throws you into a *time-traveling adventure*—meet history’s legends with a fun twist! ✨
+This course throws you into a *time-traveling adventure*—meet history’s legends with a fun twist, while learning Generative AI technologies ✨
  
 > [!IMPORTANT]  
 > Open-source vibes! Reuse, tweak, and share this content freely.
@@ -37,7 +27,7 @@ Ready to integrate Generative AI into your JavaScript apps? This course throws y
  
 ## Step Into History with AI Magic!
  
-Dive into an immersive ride powered by Generative AI:  
+Dive into an immersive learning experience powered by Generative AI:  
 - **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
  
 - **Epic Time-Travel Stories**.
@@ -61,30 +51,20 @@ Along this course you'll find many code examples and exercises, so we encourage 
  
 2. In your forked repository, select the **Code** button, then the **Codespaces** tab, then **Create codespace**. This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with LLMs for free, without any additional setup.
 
-<details>
-<summary><h3>Using your local environment</h3></summary>
+While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#Option-2-local-setup).
 
-If you prefer working in your local environment, first you need to install the following tools:
-- [Git](https://git-scm.com/downloads)
-- [Node.js LTS](https://nodejs.org/en/download)
-- [Visual Studio Code](https://code.visualstudio.com/download)
-
- Then after forking the repository, you can clone it to your local machine:
-
-1. On your forked repository, select the **Code** button, then the **Local** tab, and copy the URL of your forked repository. 
-2. Open a terminal and run this command to clone the repo: `git clone <your-repo-url>`
-3. Open the cloned repository in Visual Studio Code.
-
-See more detailed instructions in the [setup guide](./setup.md).
-
-</details>
+> [!NOTE]
+> Learn more about the following [concepts](./setup/README.md):  
+>
+> - GitHub Codespaces - A developer machine in the cloud.
+> - GitHub Models - Free access to AI models.
 
 ### 📦 Each Lesson Includes
 
 - A **written lesson** with an assignment and quiz.
-- A short **video**, to help further your learning.
-- **Solution** for assignment and quiz.
-- **Character app**: running this app demonstrates Generative AI and gives you a chance to have conversation with a historical figure.
+- A short **video** to help further your learning.
+- **Solutions** for each assignment and quiz.
+- **Characters** you can interact with using our [companion app](./app), demonstrating Generative AI.
 
 ## 🗃️ Lessons
 
@@ -92,8 +72,8 @@ See more detailed instructions in the [setup guide](./setup.md).
 | ---- | ----------- | ----------- |
 | 1 | [Introduction to Generative AI and LLMs for JavaScript Developers](./lessons/01-intro-to-genai) | Understand Generative AI and LLM fundamentals, their applications and limits in JavaScript, and how to use AI to enhance user experiences. |
 | 2 | [Build your first AI app](./lessons/02-first-ai-app) | Set up your development environment, write a basic app, and understand system prompts. |
-| 3 | [Prompt engineering](./lessons/03-prompt-engineering) | Learn Ppompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
-| 4 | [Structured output](./lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats (like JSON) for easier consumption. |
+| 3 | [Prompt engineering](./lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
+| 4 | [Structured output](./lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
 | 5 | [Retrieval augmented generation (RAG)](./lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
 
 New lessons will be added to the course over time, so stay tuned!
@@ -120,3 +100,7 @@ You'll also find additional resources in the form of tutorials, code samples and
 - [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+
+## Interact with community
+
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
