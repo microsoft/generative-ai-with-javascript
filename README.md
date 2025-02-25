@@ -49,11 +49,14 @@ Along this course you'll find many code examples and exercises, so we encourage 
 1. Select the **Fork** button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/fork)
  
-2. In your forked repository, select the **Code** button, then the **Codespaces** tab, then **Create codespace**. This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with LLMs for free, without any additional setup.
+2. Click the **Code** button in your forked repository, go to the **Codespaces** tab, and then choose **Create codespace**. 
 
-While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#Option-2-local-setup).
+   This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with AI models for free, without any additional setup.
 
 > [!NOTE]
+>
+> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#Option-2-local-setup).
+>
 > Learn more about the following [concepts](./setup/README.md):  
 >
 > - GitHub Codespaces - A developer machine in the cloud.
@@ -82,9 +85,29 @@ New lessons will be added to the course over time, so stay tuned!
 
 After completing this course, you can continue learning by exploring the [video series](videos/README.md) and its related content.
 
-You'll also find additional resources in the form of tutorials, code samples and open community here: [Additional Resources](../docs/additional-resources.md)
+You'll also find additional resources in the form of tutorials, code samples and open community here: [Additional Resources](./docs/additional-resources.md)
 
-## 🎒 Other Courses
+<details>
+<summary>🎬Video Series</summary>
+
+| # | Session | Description | Slides | Demo | Script | Video |
+|---|---------|-------------|--------|------|--------|-------|
+| 0 | Series introduction | Introduces the series and its content. | [pptx](slides/00-intro.pptx) / [pdf](slides/pdf/00-intro.pdf) | - | [Script](sessions/00-intro.md) | [📺](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1) |
+| 1 | What you need to know about LLMs | Explores what are LLMs, how they're trained, how they work and their limits. | [pptx](slides/01-llms.pptx) / [pdf](slides/pdf/01-llms.pdf) | [Demo](demos/01-llms/) | [Script](sessions/01-llms.md) | [📺](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)  |
+| 2 | Essential prompt engineering techniques | Practical prompt engineering techniques to get the best out of AI models. | [pptx](slides/02-prompt-engineering.pptx) / [pdf](slides/pdf/02-prompt-engineering.pdf) | [Demo](demos/02-prompt-engineering/) | [Script](sessions/02-prompt-engineering.md) | [📺](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)  |
+| 3 | Improve AI accuracy and reliability with RAG | Introduces Retrieval-Augmented Generation, to use AI with your own data. | [pptx](slides/03-rag.pptx) / [pdf](slides/pdf/03-rag.pdf) | [Demo](demos/03-rag/) | [Script](sessions/03-rag.md) | [📺](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4) |
+| 4 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [pptx](slides/04-langchainjs.pptx) / [pdf](slides/pdf/04-langchainjs.pdf) | [Demo](demos/04-langchainjs/) | [Script](sessions/04-langchainjs.md) | [📺](https://www.youtube.com/watch?v=02IDU8eCX8o&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=5) |
+| 5 | Run AI models on your local machine with Ollama | Shows how to integrate local AI models into your development workflow. | [pptx](slides/05-local-models.pptx) / [pdf](slides/pdf/05-local-models.pdf) | [Demo](demos/05-local-models/) | [Script](sessions/05-local-models.md) | [📺](https://www.youtube.com/watch?v=dLfNnoPv4AQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=6) |
+| 6 | Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [pptx](slides/06-playground.pptx) / [pdf](slides/pdf/06-playground.pdf) | [Demo](demos/06-playground/) | [Script](sessions/06-playground.md) | [📺](https://www.youtube.com/watch?v=Ds32MS9SHzU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=7) |
+| 7 | Introduction to Azure AI Foundry | Kickstart your journey with Azure AI Foundry. | [pptx](slides/07-ai-foundry.pptx) / [pdf](slides/pdf/07-ai-foundry.pdf) | [Demo](demos/07-ai-foundry/) | [Script](sessions/07-ai-foundry.md) | [📺](https://www.youtube.com/watch?v=9Mo-VOGk8ng&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=8) |
+| 8 | Building Generative AI Apps with Azure Cosmos DB | Build generative AI apps with Azure Cosmos DB and vector search. | [pptx](slides/08-cosmos-db.pptx) / [pdf](slides/pdf/08-cosmos-db.pdf) | [Demo](demos/08-cosmos-db/) | [Script](sessions/08-cosmos-db.md) | [📺](https://www.youtube.com/watch?v=-GQyaLbeqxQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=9)  |
+| 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](slides/08-azure-tools.pptx) / [pdf](slides/pdf/08-azure-tools.pdf) | - | [Script](sessions/08-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
+| 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](slides/10-chat-protocol.pptx) / [pdf](slides/pdf/10-chat-protocol.pdf) | [Demo](demos/10-chat-protocol/) | [Script](sessions/10-chat-protocol.md) | [📺](https://www.youtube.com/watch?v=fzDCW-6hMtU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=11) |
+
+</details>
+
+<details>
+<summary>🎒 Other Courses</summary>
 
 - [Generative AI for Beginners](https://aka.ms/genai-beginners)
 - [Generative AI for Beginners .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
@@ -100,6 +123,7 @@ You'll also find additional resources in the form of tutorials, code samples and
 - [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+</details>
 
 ## Interact with community
 
