@@ -83,9 +83,7 @@ New lessons will be added to the course over time, so stay tuned!
 
 ## 🙌 Keep Learning
 
-After completing this course, you can continue learning by exploring the [video series](videos/README.md) and its related content.
-
-You'll also find additional resources in the form of tutorials, code samples and open community here: [Additional Resources](./docs/additional-resources.md)
+After completing this course, you can continue learning by exploring our additional resources.
 
 <details>
 <summary>🎬Video Series</summary>
@@ -124,6 +122,8 @@ You'll also find additional resources in the form of tutorials, code samples and
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
 </details>
+
+You'll also find additional resources in the form of tutorials, code samples and open community here: [Additional Resources](./docs/additional-resources.md)
 
 ## Interact with community
 
