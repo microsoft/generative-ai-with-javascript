@@ -12,7 +12,7 @@
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
-[Getting Started](#getting-started) • [Lessons](#lessons) • [Keep Learning](#keep-learning) • [Other Courses](#other-courses) 
+[Getting Started](#getting-started) • [Lessons](#lessons) • [Keep Learning](#keep-learning)
 
 </div>
 
@@ -35,7 +35,7 @@ Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, 
  
 - **Companion App**. Chat with historical figures—yes, they speak back!  
   ![Chat with History](./character.png)  
-  Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
+  Check the [_app_](./app/) directory to run the [app locally](./setup/README.md) or use [GitHub Codespaces](./setup/README.md) to run it online.
  
  
 - **Accessibility FTW**. Read it, hear it—audio tags bring it to life.
@@ -55,21 +55,25 @@ Along this course you'll find many code examples and exercises, so we encourage 
 
 > [!NOTE]
 >
-> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#Option-2-local-setup).
+> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#option-2--running-the-app-locally).
 >
 > Learn more about the following [concepts](./setup/README.md):  
 >
 > - GitHub Codespaces - A developer machine in the cloud.
 > - GitHub Models - Free access to AI models.
 
-### 📦 Each Lesson Includes
+### Lesson description  
+
+📦 Each lesson includes:
 
 - A **written lesson** with an assignment and quiz.
 - A short **video** to help further your learning.
 - **Solutions** for each assignment and quiz.
 - **Characters** you can interact with using our [companion app](./app), demonstrating Generative AI.
 
-## 🗃️ Lessons
+## Lessons  
+
+🗃️ Table of content
 
 | # | Lesson Link  | Description |
 | ---- | ----------- | ----------- |
@@ -81,9 +85,9 @@ Along this course you'll find many code examples and exercises, so we encourage 
 
 New lessons will be added to the course over time, so stay tuned!
 
-## 🙌 Keep Learning
+## Keep Learning  
 
-After completing this course, you can continue learning by exploring our additional resources.
+🙌 After completing this course, you can continue learning by exploring our additional resources.
 
 <details>
 <summary>🎬Video Series</summary>
