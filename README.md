@@ -44,7 +44,7 @@ Dive into an immersive ride powered by Generative AI:
 Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
  
 - **Companion App**. Chat with historical figures—yes, they speak back!  
-  ![Chat with History](./character.png)  
+  ![Chat with History](./character-chat.png)  
   Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
  
  
