@@ -281,9 +281,6 @@ for await (const chunk of chunks) {
 }
 ```
 
-> [!IMPORTANT]
-> Follow [the dev setup guide](../../docs/dev-setup.md) to see how to setup your environment to run this code.
-
 You can find this code in the `example/rag-cars.js` file along with the `hybrid.csv` file containing the data used for the retrieval.
 
 **Ada:** Once you run this code, you should see the data found by in the CSV file by the retriever, formatted as a markdown table, followed by the AI-generated response to the question. Try changing the question to see how the retrieved data and response changes. You can also try asking questions about unrelated topics to see how the AI model handles them.
@@ -348,8 +345,8 @@ const text = Object.values(data.query.pages)[0]?.extract;
 
 ## Self-Study Resources
 
-- **Learn docs:** [Retrieval-Augmented Generation and Indexes](https://learn.microsoft.com/azure/ai-studio/concepts/retrieval-augmented-generation)
+- [Retrieval-Augmented Generation and Indexes](https://learn.microsoft.com/azure/ai-studio/concepts/retrieval-augmented-generation)
 - **Sample apps**:
   * [Serverless AI Chat with RAG](https://github.com/Azure-Samples/serverless-chat-langchainjs/)
   * [Ask Youtube: A RAG-based Youtube Q&A API](https://github.com/Azure-Samples/langchainjs-quickstart-demo)
-- **Full length workshop:** [Create your own ChatGPT with RAG](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md)
+- [Full length workshop: Create your own ChatGPT with RAG](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md)

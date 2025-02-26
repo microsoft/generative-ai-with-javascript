@@ -469,7 +469,7 @@ Leonardo suddenly asked to inspect the time beetle closer, he looked at it from 
 </div>
 
 > [!NOTE]
->  **The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
+>  The aerial screw, also known as the helical air screw,was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
 >
 > Although Leonardo never built a full-scale version of the aerial screw, his sketches and notes provide detailed insights into how he envisioned it working. He believed that if the screw was turned quickly enough, it would push against the air and lift the entire structure off the ground. 
 >
@@ -504,10 +504,10 @@ A3: The context window determines how creative the AI's responses are.
 
 [Solution quiz](./solution/solution-quiz.md)
 
-## References
+## Self-Study Resources
 
-- [1] [Text generation](https://platform.openai.com/docs/guides/text-generation)
-- [2] [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 
-- [3] [Tokenizer](https://platform.openai.com/tokenizer)
-- [4] [Completion API](https://platform.openai.com/docs/api-reference/completions)
-- [5] [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models) 
+- [Text generation](https://platform.openai.com/docs/guides/text-generation)
+- [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 
+- [Tokenizer](https://platform.openai.com/tokenizer)
+- [Completion API](https://platform.openai.com/docs/api-reference/completions)
+- [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models) 

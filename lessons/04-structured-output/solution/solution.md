@@ -8,9 +8,9 @@ const distance = 100;
 
 // Create prompt including inputs should include chain of thought
 
-const boot_sequence = `left left up right`;
+const bootSequence = `left left up right`;
 
-const prompt = `Provide the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. The boot sequence is: ${boot_sequence}.`;
+const prompt = `Provide the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. The boot sequence is: ${bootSequence}.`;
 
 // Call the language model with the prompt
 
