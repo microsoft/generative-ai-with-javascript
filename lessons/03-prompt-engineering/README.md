@@ -12,7 +12,13 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-[![Watch a short video about RAG](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
+[![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
+
+_This video gives you an introduction to how to "prompt" better to provide better instructions to the AI for better outcomes_
+
+*🎥 Click on the image above to watch a short video about prompt engineering*
+
+💼 Slides: [Prompt engineering](../../videos/slides/02-prompt-engineering.pptx)
 
 ## Narrative: ticket to ride
 

@@ -14,7 +14,11 @@ If you haven't already, set up your development environment. Here's how you can 
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
 
-*🎥 Click on the image above to watch a short video about RAG*
+_This video covers Retrieval Augmented Generation, RAG, a technique for "grounding" to take make the AI consider your content additionally to the the content it's been trained on for better results_
+
+*🎥 Click on the image above to watch a short video about retrieval augmented generation, RAG*
+
+💼 Slides: [Retrieval augmented generation, RAG](../../videos/slides/03-rag.pptx)
 
 ## Narrative - Genesis
 
