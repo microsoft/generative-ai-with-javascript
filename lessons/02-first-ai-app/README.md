@@ -12,9 +12,13 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-[![Watch a short video about RAG](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
+[![Watch a short video about learn language models](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
 
-Slides: [](../../slides/00-intro.pptx)
+_This video gives you an introduction to AI models called "large language models", LLMs, what they are and how you can use the to integrate AI into your apps_
+
+*🎥 Click on the image above to watch a short video about large language models*
+
+💼 Slides: [Introduction to large language models, LLMs](../../videos/slides/01-llms.pptx)
 
 ## Narrative: Picture yourself in a boat on a river
 

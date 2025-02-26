@@ -10,6 +10,14 @@ In this lesson, you will learn to:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
 
+## Related resources
+
+[![Watch a short video about introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
+
+_This video gives you an introduction to Generative AI with JavaScript_
+
+💼 Slides: [Introduction to Generative AI](../../videos/slides/00-intro.pptx)
+
 ## Generative AI
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.

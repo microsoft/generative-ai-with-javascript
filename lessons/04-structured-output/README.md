@@ -10,6 +10,18 @@ In this chapter, you will learn the following:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
 
+## Related resources
+
+It's worth rewatching the video of prompt engineering is it lays the foundations of what you're about to learn in this chapter, that is how to have the AI deliver more structured outputs.
+
+[![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
+
+_This video gives you an introduction to how to "prompt" better to provide better instructions to the AI for better outcomes_
+
+*🎥 Click on the image above to watch a short video about prompt engineering*
+
+💼 Slides: [Prompt engineering](../../videos/slides/02-prompt-engineering.pptx)
+
 ## Narrative - out of the frying pan and into the fire
 
 > [!NOTE]
