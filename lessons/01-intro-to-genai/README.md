@@ -24,7 +24,7 @@ By now, you've likely heard of tools like ChatGPT or Generative AI. The concept 
 
 Moreover, Generative AI has evolved into multi modal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
 
-*Simply put, natural language prompts are becoming the new standard interface for many apps—and your users expect to use them.*
+*Simply put, natural language interfaces are becoming the new standard interface for many apps—and your users expect to use them.*
 
 ## Narrative: A Journey Through Time
 
