@@ -101,7 +101,7 @@ You awaken, disoriented. As your vision clears, an ancient city unfolds before y
 People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
 <div>
-   <img style="margin-left: 15px; margin-top: 12px" align=right src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
+   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
 </div>
 
 **You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
