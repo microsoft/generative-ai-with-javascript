@@ -253,7 +253,9 @@ Dinocrates overhears your conversation and adds:
 
 **Time beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
 
-- **Chat bot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience. 
+- **Chat bot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience.
+
+- **Assistants and Agents** Assistants and agents can carry out more advanced instructions like leveraging tools to call APIs, run code, generate images and more. Advanced agents can carry out goals and carry out tasks autonomously.
 
 - **A content creation tool**:. A tool to generate blog posts and social media posts. Imagine creating campaigns in minutes instead of hours when an e-commerce site has a black Friday sale. 
 
