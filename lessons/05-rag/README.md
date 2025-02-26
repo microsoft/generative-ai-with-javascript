@@ -281,9 +281,6 @@ for await (const chunk of chunks) {
 }
 ```
 
-> [!IMPORTANT]
-> Follow [the dev setup guide](../../docs/dev-setup.md) to see how to setup your environment to run this code.
-
 You can find this code in the `example/rag-cars.js` file along with the `hybrid.csv` file containing the data used for the retrieval.
 
 **Ada:** Once you run this code, you should see the data found by in the CSV file by the retriever, formatted as a markdown table, followed by the AI-generated response to the question. Try changing the question to see how the retrieved data and response changes. You can also try asking questions about unrelated topics to see how the AI model handles them.

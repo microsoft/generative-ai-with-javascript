@@ -80,7 +80,7 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
 
 **Leonardo:** "We come in peace," he says, his voice steady. "We seek knowledge and understanding. Allow us to demonstrate the power of our machine and share our knowledge with you." 
 
-**Montezuma:** "Very well. I propose a game of Patolli. If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
+**Montezuma:** "Very well. I propose a game of [Patolli](#patolli). If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
 
 <div>
   <img src="./assets/game.png" alt="Playing a game of Patolli" width="300" />
@@ -103,6 +103,8 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 **Time beetle:** I won't say anything if you don't Leonardo ;)
 
 **Leonardo:** _smirks_
+
+### Patolli
 
 > [!NOTE]
 > Patolli is one of the oldest known games in the Americas, played by various pre-Columbian Mesoamerican cultures, including the Aztecs. 
@@ -169,7 +171,7 @@ Generative AI models can output data in various formats. However, output of unst
 
 **You:** Well, aren't you clever ;)
 
-**Time beetle:** I try my best :)
+**Time beetle:** I try my best ☺️
 
 Another benefit, even for human readers, is that structured data is easier to read and understand when it follows a familiar format.
 
@@ -181,7 +183,7 @@ Let's look at a few examples of input and asking for specific output formats can
 
 **Time beetle:** Let's start with a simple example. Imagine you're Leonardo da Vinci and you're trying to come up with ideas for inventions using 15th-century technology. You want to know what resources you need and how much effort it would take to build each invention. Here's how you can ask for this information:
 
-**Leonardo:** Oh I like this game, everyone pretend you're me :)
+**Leonardo:** Oh I like this game, everyone pretend you're me ☺️
 
 > Prompt: Generate ideas for inventions I can build using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to build it.
 
@@ -254,9 +256,9 @@ This time we end up with a table that is easier to read and understand.
 
 ### Presenting an output template
 
-Another way of getting structured output is to present an output template, here it can be any format, from columns to JSON, XML, or CSV.
+Another way of getting structured output is to present an output template, here it can be any format, from columns to JSON, XML, CSV to markdown.
 
-> Prompt Generate ideas for inventions that can be built using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to construct it. Present the information using the following format:
+> Prompt: Generate ideas for inventions that can be built using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to construct it. Present the information using the following format (use markdown as output format):
 > 
 > Title: [Invention Name]
 > Description: [Brief Explanation]
@@ -533,7 +535,7 @@ This combination of presenting skills and parameters and extracting data from pr
 **Leonardo:** So I managed to fix the damage to the aerial screw but now it needs a boot sequence: left left up right:
 You: sounds easy enough, just that text?
 
-**Leonardo:** Yes, but it' special, it needs to be mirrored, that's how I write all my text. And of course I use a Caesar cipher with a shift of 3 because I'm Italian. :)
+**Leonardo:** Yes, but it' special, it needs to be mirrored, that's how I write all my text. And of course I use a Caesar cipher with a shift of 3 because I'm Italian. ☺️
 
 **You:** Yes, could you just type it in then?
 

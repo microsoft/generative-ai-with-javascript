@@ -2,7 +2,7 @@ Here's the solution:
 
 ```javascript
 import { OpenAI } from "openai";
-import readline from "readline";
+import readline from "node:readline";
 
 const rl = readline.createInterface({
   input: process.stdin,

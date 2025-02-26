@@ -143,7 +143,7 @@ If you also want to hear some background music of what it could have sounded lik
 
 **Time beetle:** Well, you want to land the aerial screw, right?
 
-**You:** Yes, preferably in one piece. :)
+**You:** Yes, preferably in one piece. ☺️
 
 **Time beetle:** I thought so, now listen up! Prompt engineering is about crafting the right prompts to get the desired output from a language model. 
 
@@ -296,7 +296,7 @@ For the below calculation, take me through your reasoning for each step,
 
 The point to all this is that you shouldn't trust an answer coming from an AI. It's therefore a good idea to take the response through a reasoning process to ensure it is accurate. 
 
-**You:** So what I said before :)
+**You:** So what I said before ☺️
 
 ## Meta prompts
 
@@ -362,7 +362,7 @@ As you can see the response mention products that are not provided by Contoso In
 
 **Leonardo:** can your AI gizmo help in calculating to see if we will make it or if we need to make another time jump?  
 
-**Time beetle:** I can yes, my name is George though, I prefer that over Gizmo. I'm actually going to leave it to the two of you to figure out how to set up the prompt. :)
+**Time beetle:** I can yes, my name is George though, I prefer that over Gizmo. I'm actually going to leave it to the two of you to figure out how to set up the prompt. ☺️
 
 Build an app that asks for: 
 
