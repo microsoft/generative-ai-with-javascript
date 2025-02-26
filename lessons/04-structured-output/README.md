@@ -581,3 +581,7 @@ Q: What is structured output used for?
 
 
 [Solution quiz](./solution/solution-quiz.md)
+
+## Self-Study Resources
+
+- [Generative AI with JavaScript video series](https://aka.ms/genai-js)

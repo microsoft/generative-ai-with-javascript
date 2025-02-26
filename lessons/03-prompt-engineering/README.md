@@ -410,10 +410,10 @@ Q: What is prompt engineering?
 
 [Solution quiz](./solutions/solution-quiz.md)
 
-## References
+## Self-Study Resources
 
-- [1] [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
-- [2] [Prompt engineering fundamentals](https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md?WT.mc_id=academic-105485-koreyst)
-- [3] [Advanced prompt engineering](https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts) 
+- [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
+- [Prompt engineering fundamentals](https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md?WT.mc_id=academic-105485-koreyst)
+- [Advanced prompt engineering](https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts) 
 
  

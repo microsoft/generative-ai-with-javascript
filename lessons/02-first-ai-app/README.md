@@ -504,7 +504,7 @@ A3: The context window determines how creative the AI's responses are.
 
 [Solution quiz](./solution/solution-quiz.md)
 
-## References
+## Self-Study Resources
 
 - [Text generation](https://platform.openai.com/docs/guides/text-generation)
 - [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 

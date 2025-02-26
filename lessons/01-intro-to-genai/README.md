@@ -350,6 +350,6 @@ Which of the following statements about Generative AI and JavaScript are true?
 2. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
 3. Python is the only language used for AI development.  
 
-## References
+## Self-Study Resources
 
 - [Generative Ai JavaScript video series](https://genai-js)
