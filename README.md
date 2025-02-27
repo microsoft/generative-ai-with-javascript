@@ -43,7 +43,7 @@ Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, 
  
 ## Getting Started
  
-Along this course you'll find many code examples and exercises, so we encourage you to run and experiment with the code in your own copy of this repository:
+Throughout this course you'll find many code examples and exercises, so we encourage you to run and experiment with the code in your own copy of this repository:
  
 1. Select the **Fork** button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/fork)
@@ -56,10 +56,7 @@ Along this course you'll find many code examples and exercises, so we encourage 
 >
 > While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#option-2--running-the-app-locally).
 >
-> Learn more about the following [concepts](./setup/README.md):  
->
-> - GitHub Codespaces - A developer machine in the cloud.
-> - GitHub Models - Free access to AI models.
+> Learn more about [GitHub Codespaces and GitHub Models concepts here](./setup/README.md).  
 
 ### Lesson description  
 
