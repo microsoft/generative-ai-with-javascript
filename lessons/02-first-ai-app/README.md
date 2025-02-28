@@ -142,8 +142,6 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 If you also want to hear some background music of what it could have sounded like in Florence, you can listen to the background music below:
 
-<audio controls src="/app/public/audio/leonardo.mp3" title="background music Leonardo"></audio>
-
 ## Development Environment Setup 
 
 Before you can help Leonardo with his project you need to consider the “tools of the trade” that you need to get started with helping him. 
