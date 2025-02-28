@@ -35,7 +35,7 @@ Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, 
  
 - **Companion App**. Chat with historical figures—yes, they speak back!  
   ![Chat with History](./docs/images/character-chat.png)  
-  Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
+  Check the [_app_](./app/) directory to run the [app locally](./docs/setup/README.md#option-2--running-the-app-locally) or use [GitHub Codespaces](./docs/setup/README.md) to run it online.
 
 - **Accessibility FTW**. Read it, hear it—audio tags bring it to life.
  
@@ -54,9 +54,9 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 > [!NOTE]
 >
-> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#option-2--running-the-app-locally).
+> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](/docs/setup/README.md#option-2--running-the-app-locally).
 >
-> Learn more about [GitHub Codespaces and GitHub Models concepts here](./setup/README.md).  
+> Learn more about [GitHub Codespaces and GitHub Models concepts here](/docs/setup/README.md).  
 
 ### Lesson description  
 
@@ -97,7 +97,7 @@ New lessons will be added to the course over time, so stay tuned!
 | 4 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [pptx](/videos/slides/04-langchainjs.pptx) / [pdf](/videos/slides/pdf/04-langchainjs.pdf) | [Demo](/videos/demos/04-langchainjs/) | [Script](/videos/sessions/04-langchainjs.md) | [📺](https://www.youtube.com/watch?v=02IDU8eCX8o&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=5) |
 | 5 | Run AI models on your local machine with Ollama | Shows how to integrate local AI models into your development workflow. | [pptx](/videos/slides/05-local-models.pptx) / [pdf](/videos/slides/pdf/05-local-models.pdf) | [Demo](/videos/demos/05-local-models/) | [Script](/videos/sessions/05-local-models.md) | [📺](https://www.youtube.com/watch?v=dLfNnoPv4AQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=6) |
 | 6 | Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [pptx](/videos/slides/06-playground.pptx) / [pdf](/videos/slides/pdf/06-playground.pdf) | [Demo](/videos/demos/06-playground/) | [Script](/videos/sessions/06-playground.md) | [📺](https://www.youtube.com/watch?v=Ds32MS9SHzU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=7) |
-| 7 | Introduction to Azure AI Foundry | Kickstart your journey with Azure AI Foundry. | [pptx](/videos/slides/07-ai-foundry.pptx) / [pdf](slides/pdf/07-ai-foundry.pdf) | [Demo](demos/07-ai-foundry/) | [Script](sessions/07-ai-foundry.md) | [📺](https://www.youtube.com/watch?v=9Mo-VOGk8ng&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=8) |
+| 7 | Introduction to Azure AI Foundry | Kickstart your journey with Azure AI Foundry. | [pptx](/videos/slides/07-ai-foundry.pptx) / [pdf](/videos/slides/pdf/07-ai-foundry.pdf) | [Demo](/videos/demos/07-ai-foundry/) | [Script](/videos/sessions/07-ai-foundry.md) | [📺](https://www.youtube.com/watch?v=9Mo-VOGk8ng&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=8) |
 | 8 | Building Generative AI Apps with Azure Cosmos DB | Build generative AI apps with Azure Cosmos DB and vector search. | [pptx](/videos/slides/08-cosmos-db.pptx) / [pdf](/videos/slides/pdf/08-cosmos-db.pdf) | [Demo](/videos/demos/08-cosmos-db/) | [Script](/videos/sessions/08-cosmos-db.md) | [📺](https://www.youtube.com/watch?v=-GQyaLbeqxQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=9)  |
 | 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](/videos/slides/09-azure-tools.pptx) / [pdf](/videos/slides/pdf/09-azure-tools.pdf) | - | [Script](/videos/sessions/09-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
 | 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](/videos/slides/10-chat-protocol.pptx) / [pdf](/videos/slides/pdf/10-chat-protocol.pdf) | [Demo](/videos/demos/10-chat-protocol/) | [Script](/videos/sessions/10-chat-protocol.md) | [📺](https://www.youtube.com/watch?v=fzDCW-6hMtU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=11) |

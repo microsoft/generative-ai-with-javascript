@@ -137,7 +137,7 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 
 ## Talk to Montezuma
 
-If you want to talk to Montezuma, run the app [Characters](./characters/) app. 
+If you want to talk to Montezuma, run the app [Characters](/app/README.md) app. 
 
 <div>
   <img src="./assets/montezuma.jpeg" alt="Montezuma" width="300" />
@@ -155,7 +155,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
 
-<audio controls src="characters/public/montezuma.mp3" title="background music Montezuma"></audio>
+<audio controls src="/app/public/audio/montezuma.mp3" title="background music Montezuma"></audio>
 
 ## Structured Output
 
