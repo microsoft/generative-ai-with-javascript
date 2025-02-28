@@ -8,7 +8,7 @@ In this chapter, you will learn the following:
 
 ## Setup
 
-If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](../../setup/README.md).
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
 ## Related resources
 
