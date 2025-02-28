@@ -14,7 +14,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
 
-_This video covers Retrieval Augmented Generation, RAG, a technique for "grounding" to take make the AI consider your content additionally to the the content it's been trained on for better results_
+_This video covers Retrieval Augmented Generation, RAG, a technique for "grounding" to take make the AI consider your content additionally to the content it's been trained on for better results_
 
 *🎥 Click on the image above to watch a short video about retrieval augmented generation, RAG*
 
@@ -34,7 +34,7 @@ _This video covers Retrieval Augmented Generation, RAG, a technique for "groundi
 
 **Leonardo:** "Genesis? Che cosa significa?" Leonardo asked, confused. Before you could respond, the world dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time
 
-You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you, . Leonardo looks around, his eyes wide with wonder. "Mio Dio", my god.
+You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you. Leonardo looks around, his eyes wide with wonder. "Mio Dio", my god.
 
 <div>
   <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
@@ -124,7 +124,7 @@ At its core, RAG involves two main components: a **retriever** and a **generator
 
 - **The retriever:** it's responsible for finding relevant information from external data sources that can be used to enhance the AI-generated responses, like a search engine. This information can be in the form of text, images, or any other type of data that is relevant to the context of the conversation, although text is the most common type of data used.
 
-- **The generator:** it takes the retrieved information and use it to generate a response that is contextually relevant and informative.
+- **The generator:** it takes the retrieved information and uses it to generate a response that is contextually relevant and informative.
 
 Here's a schema illustrating how a RAG system works:
 
@@ -283,7 +283,7 @@ for await (const chunk of chunks) {
 
 You can find this code in the `example/rag-cars.js` file along with the `hybrid.csv` file containing the data used for the retrieval.
 
-**Ada:** Once you run this code, you should see the data found by in the CSV file by the retriever, formatted as a markdown table, followed by the AI-generated response to the question. Try changing the question to see how the retrieved data and response changes. You can also try asking questions about unrelated topics to see how the AI model handles them.
+**Ada:** Once you run this code, you should see the data found in the CSV file by the retriever, formatted as a markdown table, followed by the AI-generated response to the question. Try changing the question to see how the retrieved data and response changes. You can also try asking questions about unrelated topics to see how the AI model handles them.
 
 ```text
 Example of the output:
