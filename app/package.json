@@ -1,0 +1,19 @@
+{
+    "name": "characters",
+    "version": "1.0.0",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [],
+    "author": "Microsoft Corporation",
+    "license": "MIT",
+    "description": "",
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "ejs": "^3.1.10",
+        "express": "^4.21.2",
+        "openai": "^4.85.0"
+    }
+}

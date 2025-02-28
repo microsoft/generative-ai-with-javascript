@@ -2,52 +2,91 @@
 
 <img src="./docs/images/logo.png" alt="" align="center" height="128" />
 
-# Generative AI with JavaScript
+# Generative AI for Beginners with JavaScript
 
-[![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/microsoft/generative-ai-with-javascript?hide_repo_select=true&ref=main&quickstart=true)
-[![Watch the video series](https://img.shields.io/badge/YouTube-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)
-[![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/blob/main/LICENSE)
+[![Watch the video series](https://img.shields.io/badge/Videos-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
-[Overview](#overview) • [Quickstart](#quickstart) • [Video series](#video-series) • [Tutorials](#tutorials) • [Code samples](#code-samples) • [Community](#community) • [More resources](#more-resources)
+[Getting Started](#getting-started) • [Lessons](#lessons) • [Keep Learning](#keep-learning)
 
 </div>
 
-## Overview
+Ready to integrate Generative AI into your JavaScript apps? 
 
-The repository aims to centralize our content related to the **Generative AI with JavaScript** topic. You'll find code samples, tutorials as well all the resources from the video series, with best practices and tips to supercharge your AI skills. If you're a JavaScript developer looking to get started with AI, or if you already have some experience and want to learn more, you've come to the right place!
+This course throws you into a *time-traveling adventure*—meet history’s legends with a fun twist, while learning Generative AI technologies ✨
+ 
+> [!IMPORTANT]  
+> Open-source vibes! Reuse, tweak, and share this content freely.
+ 
+![Character App Sneak Peek](./background.png)
+ 
+## Step Into History with AI Magic! 
+ 
+Dive into an immersive learning experience powered by Generative AI:  
+- **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
+ 
+- **Epic Time-Travel Stories**.
+Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
+ 
+- **Companion App**. Chat with historical figures—yes, they speak back!  
+  ![Chat with History](./character-chat.png)  
+  Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
 
-We cover the basics of generative AI and how to build AI applications using JavaScript, from local development to deployment on Azure, up to running and scaling your AI models. This is a living repository, so come back often to check for new content! ✨
+- **Accessibility FTW**. Read it, hear it—audio tags bring it to life.
+ 
+> “It’s like a comic book with code!” — Happy User
+ 
+## Getting Started
+ 
+Throughout this course you'll find many code examples and exercises, so we encourage you to run and experiment with the code in your own copy of this repository:
+ 
+1. Select the **Fork** button in the upper right-hand corner of the repository or select this button:
+   [![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/fork)
+ 
+2. Click the **Code** button in your forked repository, go to the **Codespaces** tab, and then choose **Create codespace**. 
 
-[📺 Watch the video series](https://aka.ms/genai-js)
+   This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with AI models for free, without any additional setup.
 
-> [!IMPORTANT]
-> All the content in this repository is open-source, so feel free to **reuse it, adapt it to make it your own, and share it with others!**
+> [!NOTE]
+>
+> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#option-2--running-the-app-locally).
+>
+> Learn more about [GitHub Codespaces and GitHub Models concepts here](./setup/README.md).  
 
-### How to use this repository?
+### Lesson description  
 
-You'll find in the repo all the content associated with the video series, including slides, demos, scripts, as well as additional code samples, tutorials, and resources.
-You can use it to follow along with the series, run the demos, replay the sessions or reuse the content in your own presentations. Once you've learned what you need, you can use the code samples and tutorials to kickstart your own AI applications.
+📦 Each lesson includes:
 
-It's organized as follows:
-- [**Sessions**](sessions/): Contains the description, abstracts, resources links and scripts for each session.
-- [**Slides**](slides/): Contains the slides for each session.
-- [**Demos**](demos/): Contains the demos associated with each session.
-- [**Tutorials**](#tutorials): Contains hands-on tutorials that you can follow to learn more about AI and JavaScript.
-- [**Code samples**](#code-samples): Contains code samples that you can use as a starting point for your own projects.
-- [**Community**](#community): How to join the Azure AI community on Discord.
+- A **written lesson** with an assignment and quiz.
+- A short **video** to help further your learning.
+- **Solutions** for each assignment and quiz.
+- **Characters** you can interact with using our [companion app](./app), demonstrating Generative AI.
 
-## Quickstart
+## Lessons  
 
-If you're eager to put your hands on the code, you can pick one of the following quickstarts to get started right away:
+🗃️ Table of content
 
-- [Get started with Ollama and Phi-3, directly in your browser](https://github.com/sinedied/ollama-javascript-playground#ollama-javascript-playground) (Needs a free [GitHub account](https://github.com/join))
-- [Get started with GitHub Models, directly in your browser](https://github.com/Azure-Samples/github-models-javascript-playground) (Needs a free [GitHub account](https://github.com/join) and to sign up for the [public beta access](https://github.com/marketplace/models/waitlist/join))
-- [Get started with Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai/chatgpt-quickstart?tabs=command-line%2Ctypescript%2Cpython-new&pivots=programming-language-javascript) (Needs a free [Azure account](https://azure.com/free))
+| # | Lesson Link  | Description |
+| ---- | ----------- | ----------- |
+| 1 | [Introduction to Generative AI and LLMs for JavaScript Developers](./lessons/01-intro-to-genai) | Understand Generative AI and LLM fundamentals, their applications and limits in JavaScript, and how to use AI to enhance user experiences. |
+| 2 | [Build your first AI app](./lessons/02-first-ai-app) | Set up your development environment, write a basic app, and understand system prompts. |
+| 3 | [Prompt engineering](./lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
+| 4 | [Structured output](./lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
+| 5 | [Retrieval augmented generation (RAG)](./lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
 
-## Video series
+New lessons will be added to the course over time, so stay tuned!
+
+## Keep Learning  
+
+🙌 After completing this course, you can continue learning by exploring our additional resources.
+
+<details>
+<summary>🎬Video Series</summary>
 
 | # | Session | Description | Slides | Demo | Script | Video |
 |---|---------|-------------|--------|------|--------|-------|
@@ -60,58 +99,39 @@ If you're eager to put your hands on the code, you can pick one of the following
 | 6 | Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [pptx](slides/06-playground.pptx) / [pdf](slides/pdf/06-playground.pdf) | [Demo](demos/06-playground/) | [Script](sessions/06-playground.md) | [📺](https://www.youtube.com/watch?v=Ds32MS9SHzU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=7) |
 | 7 | Introduction to Azure AI Foundry | Kickstart your journey with Azure AI Foundry. | [pptx](slides/07-ai-foundry.pptx) / [pdf](slides/pdf/07-ai-foundry.pdf) | [Demo](demos/07-ai-foundry/) | [Script](sessions/07-ai-foundry.md) | [📺](https://www.youtube.com/watch?v=9Mo-VOGk8ng&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=8) |
 | 8 | Building Generative AI Apps with Azure Cosmos DB | Build generative AI apps with Azure Cosmos DB and vector search. | [pptx](slides/08-cosmos-db.pptx) / [pdf](slides/pdf/08-cosmos-db.pdf) | [Demo](demos/08-cosmos-db/) | [Script](sessions/08-cosmos-db.md) | [📺](https://www.youtube.com/watch?v=-GQyaLbeqxQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=9)  |
-| 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](slides/08-azure-tools.pptx) / [pdf](slides/pdf/08-azure-tools.pdf) | - | [Script](sessions/08-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
+| 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](slides/09-azure-tools.pptx) / [pdf](slides/pdf/09-azure-tools.pdf) | - | [Script](sessions/09-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
 | 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](slides/10-chat-protocol.pptx) / [pdf](slides/pdf/10-chat-protocol.pdf) | [Demo](demos/10-chat-protocol/) | [Script](sessions/10-chat-protocol.md) | [📺](https://www.youtube.com/watch?v=fzDCW-6hMtU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=11) |
 
-New segments will be added to the series over time, so stay tuned!
+To see the full page of resources, go this [video overview page](./videos/README.md).
 
-### Run the demos
+</details>
 
-Demos are located in the [demo/](demos/) folder and organized by sessions. Each session has a folder with a `readme.md` file that explains the demo, its prerequisites and how to run it.
+<details>
+<summary>🎒 Other Courses</summary>
 
-## Tutorials
+- [Generative AI for Beginners](https://aka.ms/genai-beginners)
+- [Generative AI for Beginners .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
+- [Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
+- [AI for Beginners](https://aka.ms/ai-beginners)
+- [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners)
+- [Data Science for Beginners](https://aka.ms/datascience-beginners)
+- [ML for Beginners](https://aka.ms/ml-beginners)
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101) 
+- [Web Dev for Beginners](https://aka.ms/webdev-beginners)
+- [IoT for Beginners](https://aka.ms/iot-beginners)
+- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners)
+- [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
+- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
+- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+</details>
 
-You can find here hands-on tutorials to put your AI skills into practice, with step-by-step instructions that will guide you through the process of building applications making use of AI with JavaScript.
+You'll also find additional resources in the form of [tutorials, code samples and more](./docs/additional-resources.md).
 
-| Name | Description | Duration | Level | Links |
-| ---- | ----------- | -------- | ----- | ----- |
-| Azure OpenAI RAG workshop - Qdrant version | Explore the fundamentals of custom ChatGPT experiences based on a corpus of documents. We will create a vector database and fill-in with data from PDF documents, and then build a chat website and API to be able to ask questions about information contained in these documents. | 3h | Beginner | [Tutorial](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md) / [Repo](https://github.com/Azure-Samples/azure-openai-rag-workshop) |
-| Azure OpenAI RAG workshop - AI Search version | Explore the fundamentals of custom ChatGPT experiences based on a corpus of documents. We will create a vector database and fill-in with data from PDF documents, and then build a chat website and API to be able to ask questions about information contained in these documents. | 3h | Beginner | [Tutorial](https://moaw.dev/workshop/?src=gh:azure-samples/azure-openai-rag-workshop/docs/) / [Repo](https://github.com/Azure-Samples/azure-openai-rag-workshop) |
-| Integrate OpenAI, Communication, and Organizational Data Features into a Line of Business App | This tutorial demonstrates how Azure OpenAI, Azure Communication Services, and Microsoft Graph/Microsoft Graph Toolkit can be integrated into a Line of Business (LOB) application to enhance user productivity, elevate the user experience, and take LOB apps to the next level | 3h | Beginner | [Tutorial](https://learn.microsoft.com/microsoft-cloud/dev/tutorials/openai-acs-msgraph) / [Repo](https://github.com/microsoft/MicrosoftCloud) |
+## Responsible AI Disclaimer
 
-## Code samples
+> [!IMPORTANT]
+> DISCLAIMER: This repository contains fictional content generated by AI. The historical characters depicted here are speaking back thanks to generative AI, which is based on training data. Any utterances made by these characters do not represent their actual views or quotes. This content is intended solely for entertainment purposes. Learn more about [Microsoft Responsible AI principles here](https://www.microsoft.com/en-us/ai/principles-and-approach/)
 
-The following code samples are available to help you get started with building your own AI applications. Use them to learn how to architect your applications, experiment with different features, or use them as a starting point for your own projects.
+## Interact with community
 
-| Name | Description | GitHub Repo | Technologies |
-| ---- | ----------- | ----------- | ------------ |
-| Serverless AI Chat with RAG using LangChain.js | This sample shows how to build a serverless AI chat experience with Retrieval-Augmented Generation using LangChain.js and Azure. |  [Repo](https://github.com/Azure-Samples/serverless-chat-langchainjs) | <sub>LangChain.js, Lit, Vite, Azure OpenAI, Azure Cosmos DB, Azure Blob Storage, Azure Functions, Azure Static Web Apps, AZD</sub> |
-| Serverless Azure OpenAI Quick Start with LlamaIndex | This sample shows how to quickly get started with LlamaIndex.ai on Azure |  [Repo](https://github.com/Azure-Samples/llama-index-javascript) | <sub>LlamaIndex.ts, Next.js, Azure OpenAI, Azure Container Apps, Docker, AZD</sub> |
-| Serverless Azure OpenAI Assistant Quick Start | Azure OpenAI Assistants allows you to create AI assistants tailored to your needs through custom instructions and augmented by advanced tools. |  [Repo](https://github.com/Azure-Samples/azure-openai-assistant-javascript) | <sub>HTML-CSS-JavaScript, Azure Static Web Apps, Azure Blob Storage, Azure Functions, Azure OpenAI, AZD</sub> |
-| Serverless RAG application with LlamaIndex and code interpreter on Azure Container Apps | This is a LlamaIndex project using Next.js bootstrapped with create-llama. It uses Azure Container Apps as a serverless deployment platform. |  [Repo](https://github.com/Azure-Samples/llama-index-azure-code-interpreter) | <sub>Azure OpenAI, LlamaIndex, Azure Container Apps, Next.js, GitHub Actions, TypeScript, AZD</sub> |
-| Azure OpenAI keyless deployment | Example Azure OpenAI deployment and RBAC role for your user account for keyless access. |  [Repo](https://github.com/Azure-Samples/azure-openai-keyless-js) | <sub>Azure OpenAI, AZD, JavaScript</sub> |
-| Azure OpenAI secure UI starter | Reusable OpenAI secure UI and infrastructure for AI Chat with Azure. |  [Repo](https://github.com/Azure-Samples/openai-secure-ui-js) | <sub>Lit, Vite, Web Components, Azure OpenAI, Azure Blob Storage, Azure Functions, Azure Static Web Apps, AZD</sub> |
-| Azure OpenAI with LangChain.js | Demonstrates how to use Azure OpenAI with LangChain.js. |  [Repo](https://github.com/Azure-Samples/openai-langchainjs) | <sub>LangChain.js, Azure OpenAI, TypeScript</sub> |
-| Azure API Management with Azure Open AI | Demonstrates how to add Azure API Management on top of your Azure Open AI endpoints. |  [Repo](https://github.com/Azure-Samples/genai-gateway-apim) | <sub>Azure Open AI, Azure API Management, Express, Node.js, AZD</sub> |
-| Ask YouTube: LangChain.js + Azure Quickstart | Build a generative AI application using LangChain.js from local to Azure. |  [Repo](https://github.com/Azure-Samples/langchainjs-quickstart-demo) | <sub>LangChain.js, Azure OpenAI, Azure AI Search, Azure Functions</sub> |
-| Ollama JavaScript Playground | Generative AI playground using Ollama OpenAI API and JavaScript. Try AI models in your browser! |  [Repo](https://github.com/sinedied/ollama-javascript-playground/) | <sub>TypeScript, Ollama, Azure OpenAI, GitHub Codespaces</sub> |
-| Copilot / Node.js + OpenAI Todo app | Discover how to use GitHub Copilot to quickly build a Node.js application with OpenAI and Azure. |  [Repo](https://github.com/Azure-Samples/copilot-openai-todo) | <sub>Azure OpenAI, Azure App Service, Azure CosmosDB, Express, TypeScript, TypeChat, GitHub Actions</sub> |
-| ChatGPT + Enterprise data with Azure OpenAI and Azure AI Search | A TypeScript sample app for the Retrieval Augmented Generation pattern running on Azure. |  [Repo](https://github.com/Azure-Samples/azure-search-openai-javascript) | <sub>LangChain.js, Lit, Vite, Azure OpenAI, Azure Cosmos DB, Azure Blog Storage, Azure Container Apps, Azure Static Web Apps, Docker, AZD</sub> |
-| Azure OpenAI Chat Frontend | The Chat App Protocol compliant user-interface building block for your chat-gpt like RAG pattern applications built with Azure OpenAI and Azure AI Search. |  [Repo](https://github.com/Azure-Samples/azure-openai-chat-frontend) | <sub>Chat Protocol, Lit, Azure Static Web Apps, AZD</sub> |
-| Enterprise-grade Reference Architecture for JavaScript | Intelligent enterprise-grade reference architecture for JavaScript featuring OpenAI integration, Azure Developer CLI template, and Playwright tests. |  [Repo](https://github.com/Azure-Samples/contoso-real-estate) | <sub>Azure Container Apps, Azure Functions, Azure Cosmos DB, SWA, Fastify, Next.js, Angular, AZD</sub> |
-
-## Community
-
-**Join the Azure AI community on Discord: https://aka.ms/genai-discord**
-
-If you're looking to connect with others, we have a community of AI enthusiasts, developers, and experts who are passionate about AI and are always willing to help. 
-
-There's even a dedicated [#JavaScript channel](https://discordapp.com/channels/1113626258182504448/1237357005555892225) where you can ask questions, share your projects, and discuss your about your favorite topics.
-
-## More resources
-
-Here are some additional resources that you might find useful on your AI journey:
-
-- Generative AI for Beginners: https://github.com/microsoft/generative-ai-for-beginners
-- Phi-3 cookbook: https://aka.ms/phi3/cookbook
-- Try Azure Cosmos DB for free: https://aka.ms/trycosmosdb
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
