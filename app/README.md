@@ -9,7 +9,7 @@ This app allows you to speak to all character features in the curriculum.
 
 You should see something like:
 
-![Chat app](../character-chat.png)
+![Chat app](../docs/images/character-chat.png)
 
 ## Speak to a character
 
