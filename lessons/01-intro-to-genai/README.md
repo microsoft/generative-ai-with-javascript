@@ -177,7 +177,7 @@ If you want to talk to Dinocrates, run the [Characters](/app/README.md) app.
 
 While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
 
-Inside of `lessons/01-intro-to-genai/characters/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
+Inside of `/app/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
 
 ```JavaScript
 app.post('/send', async (req, res) => {
@@ -230,7 +230,7 @@ Here's a step-by-step summary of what the function does:
 
 If you also want to hear some background music of what it could have sounded like in Alexandria, you can listen to the background music below:
 
-<audio controls src="characters/public/dinocrates.mp3" title="background music Dinocrates"></audio>
+<audio controls src="/app/public/audio/dinocrates.mp3" title="background music Dinocrates"></audio>
 
 ### What Can Generative AI Do for Me and My Apps?
 

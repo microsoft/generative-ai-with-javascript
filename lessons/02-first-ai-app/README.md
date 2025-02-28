@@ -133,7 +133,7 @@ Steps:
 **Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _/app_ in the repo root.
+2. Navigate to _/app/README.md_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Leonardo.
@@ -142,7 +142,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 If you also want to hear some background music of what it could have sounded like in Florence, you can listen to the background music below:
 
-<audio controls src="characters/public/leonardo.mp3" title="background music Leonardo"></audio>
+<audio controls src="/app/public/audio/leonardo.mp3" title="background music Leonardo"></audio>
 
 ## Development Environment Setup 
 
