@@ -228,10 +228,6 @@ Here's a step-by-step summary of what the function does:
 
 > **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
 
-If you also want to hear some background music of what it could have sounded like in Alexandria, you can listen to the background music below:
-
-<audio controls src="/app/public/audio/dinocrates.mp3" title="background music Dinocrates"></audio>
-
 ### What Can Generative AI Do for Me and My Apps?
 
 > [!NOTE]

@@ -96,8 +96,6 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
 
-<audio controls src="/app/public/audio/ada.mp3" title="background music Ada"></audio>
-
 ## Known Challenges with LLMs
 
 **Ada**, to get us started, we need to talk more about the artificial intelligence we're going to use to power the device. We'll use so called AI models that when paired with a retrieval mechanism to data can improve the quality of the AI's responses.

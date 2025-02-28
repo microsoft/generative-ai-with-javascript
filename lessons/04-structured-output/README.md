@@ -155,8 +155,6 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
 
-<audio controls src="/app/public/audio/montezuma.mp3" title="background music Montezuma"></audio>
-
 ## Structured Output
 
 **Time beetle:** Hey folks, want to know how I beat Montezuma?
