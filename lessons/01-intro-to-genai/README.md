@@ -159,7 +159,7 @@ _Time device, “George” the metallic beetle_
 
 ## Talk to Dinocrates
 
-If you want to talk to Dinocrates, run the [Characters](./characters/) app.
+If you want to talk to Dinocrates, run the [Characters](/app/README.md) app.
 
 <div>
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">

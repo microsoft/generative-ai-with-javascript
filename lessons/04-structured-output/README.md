@@ -137,7 +137,7 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 
 ## Talk to Montezuma
 
-If you want to talk to Montezuma, run the app [Characters](./characters/) app. 
+If you want to talk to Montezuma, run the app [Characters](/app/README.md) app. 
 
 <div>
   <img src="./assets/montezuma.jpeg" alt="Montezuma" width="300" />

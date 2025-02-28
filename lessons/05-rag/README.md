@@ -78,7 +78,7 @@ Leonardo nodded, "Sì, it has been acting strangely."
 
 ## Talk to Ada Lovelace
 
-If you want to talk to Ada, run the [Characters](./app/) app.
+If you want to talk to Ada, run the [Characters](/app/README.md) app.
 
 <div>
   <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">

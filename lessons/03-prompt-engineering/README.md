@@ -110,7 +110,7 @@ You look out over the city; the ancient buildings stretch out below you.
 
 ## Talk to Sforza
 
-If you want to talk to Sforza, run the [Characters](./characters/) app. 
+If you want to talk to Sforza, run the [Characters](/app/README.md) app. 
 
 <div >
   <img  src="./assets/ludovico.png" alt="Ludovico Sforza" width="300" >

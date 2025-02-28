@@ -122,7 +122,7 @@ Leonardo da Vinci, asking you to help him with a project—you can hardly believ
 
 ## Talk to Leonardo
 
-If you want to talk to Leonardo, run the [Characters](./characters/) app.
+If you want to talk to Leonardo, run the [Characters](/app/README.md) app.
 
 <div>
   <img src="./assets/leonardo-talk.jpeg" width=300>
