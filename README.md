@@ -23,7 +23,7 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
 > [!IMPORTANT]  
 > Open-source vibes! Reuse, tweak, and share this content freely.
  
-![Character App Sneak Peek](./background.png)
+![Character App Sneak Peek](./docs/images/background.png)
  
 ## Step Into History with AI Magic! 
  
@@ -34,7 +34,7 @@ Dive into an immersive learning experience powered by Generative AI:
 Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
  
 - **Companion App**. Chat with historical figures—yes, they speak back!  
-  ![Chat with History](./character-chat.png)  
+  ![Chat with History](./docs/images/character-chat.png)  
   Check the [_app_](./app/) directory to run the [app locally](./setup.md) or use [GitHub Codespaces](./setup.md) to run it online.
 
 - **Accessibility FTW**. Read it, hear it—audio tags bring it to life.

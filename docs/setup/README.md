@@ -42,11 +42,11 @@ To test out various AI models, GitHub Models offers an interactive playground. T
 
 > Here's a [playground](https://github.com/marketplace/models) for you to test and explore different AI models. 
 
-![GitHub Models playground](playground.png)
+![GitHub Models playground](../images/playground.png)
 
 Additionally, developers can grab code snippets to integrate these models into their applications.
 
-![Playground code snippets](./playground-snippets.png)
+![Playground code snippets](../images/playground-snippets.png)
 
 Through a simple interface, you can explore model responses, evaluate performance, and determine the best fit for your application requirements. Hosted within GitHub's infrastructure, these models offer reliable access and consistent performance, making them ideal for development and testing phases. Best of all, there is a free tier to start your exploration without any cost.
 
@@ -109,7 +109,7 @@ Let's create a GitHub Codespace to use for the rest of this course.
 1. Click the **Code** dropdown button and then select the **Codespaces** tab
 1. Select the **+** option.
 
-    ![Create Codespace](./create-codespace.png)
+    ![Create Codespace](../images/create-codespace.png)
 
 ### Verifying your Codespace is running correctly with GitHub Models
 
