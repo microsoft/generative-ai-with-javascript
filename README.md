@@ -54,9 +54,9 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 > [!NOTE]
 >
-> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](./setup/README.md#option-2--running-the-app-locally).
+> While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](/docs/setup/README.md#option-2--running-the-app-locally).
 >
-> Learn more about [GitHub Codespaces and GitHub Models concepts here](./setup/README.md).  
+> Learn more about [GitHub Codespaces and GitHub Models concepts here](/docs/setup/README.md).  
 
 ### Lesson description  
 

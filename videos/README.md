@@ -7,7 +7,7 @@
 [![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/microsoft/generative-ai-with-javascript?hide_repo_select=true&ref=main&quickstart=true)
 [![Watch the video series](https://img.shields.io/badge/YouTube-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)
-[![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](/LICENSE)
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
