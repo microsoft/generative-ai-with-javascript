@@ -1,4 +1,4 @@
-# Structured output
+# Lesson 4: Structured output
 
 In this chapter, you will learn the following:
 
@@ -22,7 +22,7 @@ _This video gives you an introduction to how to "prompt" better to provide bette
 
 💼 Slides: [Prompt engineering](../../videos/slides/02-prompt-engineering.pptx)
 
-## Narrative - out of the frying pan and into the fire
+## Narrative - Out of the frying pan and into the fire
 
 > [!NOTE]
 > _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
@@ -73,8 +73,6 @@ The warrior's eyes widen in surprise, but he remains cautious.
 Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers.
 
 **Montezuma** "You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
-
-<div style="clear: both">&nbsp;</div>
 
 ## Let’s play a game
 
@@ -153,7 +151,8 @@ If you want to talk to Montezuma, run the app [Characters](/app/README.md) app.
 
 For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
 
-If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 ## Structured Output
 
@@ -526,7 +525,7 @@ This combination of presenting skills and parameters and extracting data from pr
 
 **You:** Well that lasted for a full 20 seconds. Actually, what you said there, George, that was pretty good.
 
-## Assignment - repair the aerial screw
+## Assignment - Repair the aerial screw
 
 **Time beetle:** I need both of your attention, we have a problem. The aerial screw took some damage during the escape from the Roman soldiers and the landing in the Aztec Empire. Leonardo da Vinci's machine is quite sensitive and it requires very specific input to repair it. You need to provide the necessary information to your time beetle (AI Assistant) to help you repair the aerial screw.
 
@@ -572,14 +571,14 @@ By leveraging structured output effectively, you can make it easier to understan
 
 Q: What is structured output used for?
 
-- A) Presenting information in a structured manner
-- B) Extracting data from prompts
-- C) Generating unstructured text
+A1: Presenting information in a structured manner.
 
+A2: Extracting data from prompts.
 
+A3: Generating unstructured text.
 
 [Solution quiz](./solution/solution-quiz.md)
 
-## Self-Study Resources
+## Self-Study resources
 
 - [Generative AI with JavaScript video series](https://aka.ms/genai-js)
