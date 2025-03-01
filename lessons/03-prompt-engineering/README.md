@@ -1,4 +1,4 @@
-# Lesson 3 Prompt Engineering
+# Lesson 3: Prompt engineering
 
 In this chapter you will learn:
 
@@ -20,7 +20,7 @@ _This video gives you an introduction to how to "prompt" better to provide bette
 
 💼 Slides: [Prompt engineering](../../videos/slides/02-prompt-engineering.pptx)
 
-## Narrative: ticket to ride
+## Narrative: Ticket to ride
 
 > [!NOTE] 
 > So far, you've been on a journey through time with Leonardo da Vinci, exploring the wonders of the Renaissance. You've encountered the Time Beetle, a mysterious device that allows you to travel through time and space.
@@ -126,9 +126,10 @@ If you want to talk to Sforza, run the [Characters](/app/README.md) app.
 
 For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
 
-If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
-## What is prompt engineering
+## What is prompt engineering?
 
 **Time beetle:** We need to talk about prompt engineering.
 
@@ -346,7 +347,7 @@ As you can see the response mentions products that are not provided by Contoso I
 
 **You:** I see, I can see that coming in handy.
 
-## Assignment - let's help our heroes land the aerial screw 
+## Assignment - Let's help our heroes land the aerial screw 
 
 **You:** This is the part where you show me how to land the aerial screw, right?
 
@@ -407,7 +408,7 @@ Q: What is prompt engineering?
 
 [Solution quiz](./solutions/solution-quiz.md)
 
-## Self-Study Resources
+## Self-Study resources
 
 - [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 - [Prompt engineering fundamentals](https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md?WT.mc_id=academic-105485-koreyst)
