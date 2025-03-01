@@ -12,7 +12,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-It's worth rewatching the video of prompt engineering is it lays the foundations of what you're about to learn in this chapter, that is how to have the AI deliver more structured outputs.
+It's worth rewatching the video on prompt engineering as it lays the foundations of what you're about to learn in this chapter, that is how to have the AI deliver more structured outputs.
 
 [![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
 
@@ -483,7 +483,7 @@ parameters: location, check_in, check_out, budget
 skill: order_food
 parameters: cuisine, delivery_address, payment_method
 
-Figure out which skill to use based on a users prompt and extract the necessary parameters, respond with the extracted data in JSON format with columns skill, parameters, extracted_data
+Figure out which skill to use based on a user's prompt and extract the necessary parameters, respond with the extracted data in JSON format with columns skill, parameters, extracted_data
 
 {user_input}
 ```
@@ -522,7 +522,7 @@ Assuming that {user_input} contains the previous skills, let's try out the follo
 }
 ```
 
-This combination of presenting skills and parameters and extracting data from prompts is also known as _tool calling_ or _function calling_. A response like this from your model makes it easy for you as developer to understand what the user wants and how to call a corresponding function to fulfill the user's request.
+This combination of presenting skills and parameters and extracting data from prompts is also known as _tool calling_ or _function calling_. A response like this from your model makes it easy for you as a developer to understand what the user wants and how to call a corresponding function to fulfill the user's request.
 
 **You:** Well that lasted for a full 20 seconds. Actually, what you said there, George, that was pretty good.
 
