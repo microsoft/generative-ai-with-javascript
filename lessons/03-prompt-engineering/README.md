@@ -3,7 +3,7 @@
 In this chapter you will learn:
 
 - **Prompt engineering**, what it is and how knowing the basics of it can help you get better results. 
-- **Prompt engineering techniques and strategies**. We will cover different prompt engineering techniques and how it can help provide better results for different scenarios. 
+- **Prompt engineering techniques and strategies**. We will cover different prompt engineering techniques and how they can help provide better results for different scenarios. 
 - **Meta prompts**, and how they will help restrict the output and ensure its accessible and provide a better user experience. 
 
 ## Setup
@@ -333,7 +333,7 @@ Many models have guards in place to ensure that the output is appropriate, but i
 
 > Mary Shelley wrote the novel Frankenstein, or the Modern Prometheus, published in 1818, 42 years before our hero embarked on their time travelling journey. [Read more](https://en.wikipedia.org/wiki/Mary_Shelley)
 
-**You:** I guess is the place where I ask what happens if we don't use a meta prompt?
+**You:** I guess this is the place where I ask what happens if we don't use a meta prompt?
 
 **Time beetle:** To ensure this works as intended let's see what happens if we remove the meta prompt:
 
@@ -342,7 +342,7 @@ Many models have guards in place to ensure that the output is appropriate, but i
 > **Response:** 
 > The best sports products for beginners are basketballs, soccer balls, and tennis rackets and also footballs, baseballs, and golf clubs. 
 
-As you can see the response mention products that are not provided by Contoso Inc. which is not what we wanted. 
+As you can see the response mentions products that are not provided by Contoso Inc. which is not what we wanted. 
 
 **You:** I see, I can see that coming in handy.
 
