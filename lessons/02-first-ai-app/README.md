@@ -26,7 +26,7 @@ _This video gives you an introduction to AI models called "large language models
 > [!NOTE] 
 > _Our story so far: You are a maker of things, a craftsman from 1860s London who has traveled through time using a mysterious device called the Time Beetle. You've journeyed through the annals of history, witnessing the creation of the lighthouse at Alexandria, a marvel of ancient engineering you helped create with a little help from Dinocrates and the Time Beetle._
 >
-> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning and get started with Generative AI. 
+> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning and get started with Generative AI. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#talk-to-leonardo) if you'd prefer to jump straight to the technical content.
