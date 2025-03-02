@@ -78,6 +78,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 | 3 | [Prompt engineering](./lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
 | 4 | [Structured output](./lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
 | 5 | [Retrieval augmented generation (RAG)](./lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
+| 6 | Additional chapters are coming soon! | ... |
 
 New lessons will be added to the course over time, so stay tuned!
 
