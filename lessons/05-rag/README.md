@@ -101,7 +101,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 **Ada:** Let’s start by discussing the AI we’ll use to power the device. We’ll rely on “AI models” paired with a data retrieval system to boost response quality.
 
-First, we need to address some challenges before diving into RAG details. These models, trained on vast text data, can produce relevant and correct responses. But, like any data source, their output can be inaccurate, incomplete, or misleading due to various factors.
+First, you need to address some challenges before diving into RAG details. These models, trained on vast text data, can produce relevant and correct responses. But, like any data source, their output can be inaccurate, incomplete, or misleading due to various factors.
 
 - **Out of date sources:** The data used to train the model may be outdated and no longer accurate.
 - **Wrong or inaccurate information:** The sources used to train the model may contain incorrect or misleading information, like fake news or biased opinions.

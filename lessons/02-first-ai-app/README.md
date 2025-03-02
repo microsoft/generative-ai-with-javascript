@@ -219,11 +219,11 @@ console.log(completion.choices[0]?.message?.content);
 
 Let's explain what's happening here:
 
-- Creating the question as 'Hello, how are you?'. This is the text we want to translate to Italian.
+- Creating the question as 'Hello, how are you?'. This is the text you want to translate to Italian.
 - Creating the augmented prompt, which contains the input text and some additional instructions what to do, i.e translate. Note how we're using string interpolation to include the input text in the prompt and how that instruction is to translate the text to Italian.
 - Creating the client with properties:
   - `model`, what model to use. 
-  - `messages`, the prompt to send to the model. Also note how we set the role to "user" to indicate that the input text is from the user. Had it been from the AI, we would set the role to "system".
+  - `messages`, the prompt to send to the model. Also note how you set the role to "user" to indicate that the input text is from the user. Had it been from the AI, you would set the role to "system".
 - Extracting the generated text from the response and printing it to the console.
 
 **You:** I think I get it. So if I change the value of the `question` variable to something else, the app will generate a different Italian translation?
