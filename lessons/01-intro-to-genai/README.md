@@ -340,11 +340,13 @@ Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chat
 
 ### Knowledge Check
 
-Which of the following statements about Generative AI and JavaScript are true?
+**Question:** Which of the following statements about Generative AI and JavaScript are true?
 
-1. JavaScript powered Generative AI apps can only generate text.  
-2. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
-3. Python is the only language used for AI development.  
+A. JavaScript powered Generative AI apps can only generate text.  
+B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
+C. Python is the only language used for AI development.  
+
+[Quiz solution](./solution/solution-quiz.md)
 
 ## Self-Study Resources
 

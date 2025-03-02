@@ -484,13 +484,13 @@ Check out [Sample app](./sample-app/) to get started.
 
 ## Knowledge check
 
-Q: What is the purpose of the context window in generative AI models?
+**Question:** What is the purpose of the context window in generative AI models? Select all that apply.
 
-A1: The context window allows the AI to consider more context and generate more coherent responses. 
+A. The context window allows the AI to consider more context and generate more coherent responses. 
 
-A2: The context window is the number of previous messages that the AI uses to generate a response. 
+B. The context window is the number of previous messages that the AI uses to generate a response. 
 
-A3: The context window determines how creative the AI's responses are.
+C. The context window determines how creative the AI's responses are.
 
 [Solution quiz](./solution/solution-quiz.md)
 
