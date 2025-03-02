@@ -12,7 +12,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-[![Watch a short video about learn language models](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
+[![Watch a short video about large language models](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
 
 _This video gives you an introduction to AI models called "large language models", LLMs, what they are and how you can use them to integrate AI into your apps._
 
@@ -37,7 +37,7 @@ You look down at the Time Beetle in your hand, its metallic surface cool against
 
 ### A new adventure
 
-When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, inn the distance, you see buildings, their outlines blurred by the morning mist.
+When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, in the distance, you see buildings, their outlines blurred by the morning mist.
 
 Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting. 
 
@@ -142,7 +142,7 @@ Before you can assist Leonardo with his project, you should first think about th
 
 **You:** "Time Beetle, what do I need to get started with this project?" Suggest tools and libraries that I need that can help me build an AI app that you're able to run.
 
-**Time Beetle:** I'm compatible with most machines running in the 21st century, see below list for a set of essential tools and libraries.
+**Time Beetle:** I'm compatible with most machines running in the 21st century, see the following list for a set of essential tools and libraries.
 
 - **Text editor**, for example Visual Studio Code.  
 - **Terminal**, for running commands. 
@@ -166,7 +166,7 @@ Before you can assist Leonardo with his project, you should first think about th
 
 - **API request**: You need to send a request to the generative AI model API with the input text. This is done using the fetch function in JavaScript (Node.js). Included in this request should also be your API key. It's recommended as you consider security to not hardcode the API key in your app but rather use environment variables. Additionally, consider looking into managed identity if you're using a provider like Azure as it's considered a more secure way to access resources. With managed identity you can assign more granular permissions to your app. The best part is that the cloud provider takes care of the authentication for you. 
 
-- **Response**: the API will return a response with the generated text. You need to extract this text from the response and display it to the user.
+- **Response**: The API will return a response with the generated text. You need to extract this text from the response and display it to the user.
 
 **You:** That sounds simple enough, can you take me through a scenario that would make sense given the situation we're in?
 
