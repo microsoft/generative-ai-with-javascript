@@ -1,6 +1,6 @@
 # Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers
 
-In this lesson, you will learn to:
+In this chapter you will learn:
 
 - Understand the basics of Generative AI and Large Language Models (LLMs).
 - Identify the potential applications and limitations of LLMs in JavaScript development.
@@ -12,7 +12,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-[![Watch a short video about introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
+[![Watch a short video about an Introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
 
 _This video gives you an introduction to Generative AI with JavaScript_
 
@@ -22,7 +22,7 @@ _This video gives you an introduction to Generative AI with JavaScript_
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
-Moreover, Generative AI has evolved into multi modal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
+Moreover, Generative AI has evolved into multimodal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
 
 *Simply put, natural language interfaces are becoming the new standard interface for many apps—and your users expect to use them.*
 
@@ -84,7 +84,7 @@ Just as you step closer, a blinding flash erupts, and he vanishes.
 
 Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.  
 
-It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From it's back, a small antenna extends, pulsing with energy. 
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From its back, a small antenna extends, pulsing with energy. 
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you. 
 
@@ -110,7 +110,7 @@ Am I stuck in the past? Do I dare press that button again? Before you can decide
 
 ### Meeting Dinocrates
 
-An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
+An elderly gentleman wearing a toga waves at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
 <div>
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
@@ -142,7 +142,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
-**You:** You're right, George is a good name, it was my fathers name in fact.
+**You:** You're right, George is a good name, it was my father's name in fact.
 
 <div>
    <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
@@ -238,9 +238,9 @@ Here's a step-by-step summary of what the function does:
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
 
-**You:** Tell me more about light houses, you say to your device.
+**You:** Tell me more about lighthouses, you say to your device.
 
-**Time beetle:** A lighthouse is a tower equipped with a bright light at the top, located near the shore to guide ships at sea. The light serves as a navigational aid, helping sailors avoid dangerous rocks and reefs and safely reach the harbor.
+**Time Beetle:** A lighthouse is a tower equipped with a bright light at the top, located near the shore to guide ships at sea. The light serves as a navigational aid, helping sailors avoid dangerous rocks and reefs and safely reach the harbor.
 
 Dinocrates overhears your conversation and adds:
 
@@ -250,9 +250,9 @@ Dinocrates overhears your conversation and adds:
 
 **You:** Lighthouses sound like an interesting area for sure, what else can Generative AI do for me and my apps? 
 
-**Time beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
+**Time Beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
 
-- **Chat bot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience.
+- **Chatbot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience.
 
 - **Assistants and Agents** Assistants and agents can carry out more advanced instructions like leveraging tools to call APIs, run code, generate images and more. Advanced agents can carry out goals and carry out tasks autonomously.
 
@@ -272,7 +272,7 @@ Here's an example of a "chatbot application" in action:
 
 ### Generative AI and the JavaScript ecosystem
 
-**Time beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
+**Time Beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
 
 | What | Description | 
 |---|---| 
@@ -282,17 +282,17 @@ Here's an example of a "chatbot application" in action:
 
 **You:** Interesting, I've heard of programming I think, didn't Ada Lovelace experiment with that and Charles Babbage?
 
-**Time beetle:** Yes, Ada Lovelace was the first computer programmer, and Charles Babbage was the inventor of the difference engine, a mechanical computer. They were pioneers in the field of computing, laying the foundation for the digital age.
+**Time Beetle:** Yes, Ada Lovelace was the first computer programmer, and Charles Babbage was the inventor of the difference engine, a mechanical computer. They were pioneers in the field of computing, laying the foundation for the digital age.
 
 **You:** Were? What do you mean were? I just got a letter from Charles Babbage.
 
-**Time beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
+**Time Beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
 
 ### JavaScript ecosystem
 
 **You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems? 
 
-**Time beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here's a few reasons why it's so popular:
+**Time Beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here's a few reasons why it's so popular:
 
 | What | Description |
 |-|-|
@@ -304,13 +304,13 @@ Here's an example of a "chatbot application" in action:
 
 **You:** That's a lot of reasons, sounds like I should bet on JavaScript for my future projects.
 
-**Time beetle:** Indeed, JavaScript is a versatile language, also Python is a popular language for AI development.
+**Time Beetle:** Indeed, JavaScript is a versatile language, also Python is a popular language for AI development.
 
 **You:** Python, what do snakes have to do with programming?
 
-**Time beetle:** Let's save that for another time, shall we?
+**Time Beetle:** Let's save that for another time, shall we?
 
-**Time beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for AI scenarios, many developers are using JavaScript and Typescript.
+**Time Beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for AI scenarios, many developers are using JavaScript and Typescript.
 
 > **Did you know?**  
 > [62.5% of developers say they're using JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) with many preferring [TypeScript](https://www.typescriptlang.org) for new projects.
@@ -319,19 +319,19 @@ Here's an example of a "chatbot application" in action:
 
 To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented. 
 
-**Time beetle:** Let's get started, let's use a LLM to research how you can build a lighthouse to help Dinocrates.
+**Time Beetle:** Let's get started, let's use a LLM to research how you can build a lighthouse to help Dinocrates.
 
-**Time beetle:**: You’ll need to provide context to the LLM (i.e "me") how to build, with what tools and resources should be available in the times of Alexandria.
+**Time Beetle:**: You’ll need to provide context to the LLM (i.e "me") how to build, with what tools and resources should be available in the times of Alexandria.
 
 **You:** Ok, tell me more about LLMs?
 
-**Time beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
+**Time Beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
 
-**Time beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
+**Time Beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
 
 **You:** Got it, add more context to the prompt and then ask you.  
 
-**Time beetle:** Yes, I'm waiting...
+**Time Beetle:** Yes, I'm waiting...
 
 Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), or another online chatbot tool to generate a plan for building the lighthouse in Alexandria.
  
@@ -343,13 +343,13 @@ Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chat
 
 ### Knowledge check
 
-Q: Which of the following statements about Generative AI and JavaScript are true?
+**Question:** Which of the following statements about Generative AI and JavaScript are true?
 
-A1: JavaScript powered Generative AI apps can only generate text.  
-A2: JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
-A3: Python is the only language used for AI development.  
+A. JavaScript powered Generative AI apps can only generate text.  
+B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
+C. Python is the only language used for AI development.  
 
-[Solution quiz](./solution/solution-quiz.md)
+[Quiz solution](./solution/solution-quiz.md)
 
 ## Self-Study resources
 

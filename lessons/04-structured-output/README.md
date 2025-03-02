@@ -1,10 +1,10 @@
 # Lesson 4: Structured output
 
-In this chapter, you will learn the following:
+In this chapter you will learn:
 
-- **Structured output**, what it is and how to leverage it effectively. 
-- **Extract information from prompts** and incorporate it into the output. 
-- **Present different types of output** like JSON and other types of formats for easy consumption by services.
+- What _structured output_ is and how to leverage it effectively. 
+- How to extract information from prompts and incorporate it into the output. 
+- Generate different types of output formats, such as JSON, for easy consumption by services.
 
 ## Setup
 
@@ -12,11 +12,11 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-It's worth rewatching the video on prompt engineering as it lays the foundations of what you're about to learn in this chapter, that is how to have the AI deliver more structured outputs.
+It's worth rewatching the video on prompt engineering as it lays the foundation for what you're about to learn in this chapter.
 
 [![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
 
-_This video gives you an introduction to how to "prompt" better to provide better instructions to the AI for better outcomes_
+_This video offers an introduction to improving your "prompting" skills, teaching you how to give clearer and more effective instructions to the AI to achieve better results._
 
 *🎥 Click on the image above to watch a short video about prompt engineering*
 
@@ -25,9 +25,9 @@ _This video gives you an introduction to how to "prompt" better to provide bette
 ## Narrative - Out of the frying pan and into the fire
 
 > [!NOTE]
-> _Our story so far: You, a mechanically trained engineer from 1860, have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land safely, if possible_.
+> _Our story so far: You, a mechanically trained engineer from 1860 and have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land the aeriel screw safely_.
 >
-> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE]
 > While we recommend going through the story (it's fun!), [click here](#talk-to-montezuma) if you'd prefer to jump straight to the technical content.
@@ -44,11 +44,13 @@ The wind whips around you as you and Leonardo da Vinci ascend in his aerial scre
 
 The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
 
-The aerial screw, rests awkwardly on a large, intricately carved stone, with markings making you think it might be used as a calendar
+The aerial screw, rests awkwardly on a large, intricately carved stone, with markings that look like a calendar
 
 <div>
-  <img alt="Aztec calendar, Wikipedia" src="./assets/aztec.png" alt="Aztec calendar" width="300" />
+  <img alt="Aztec calendar, Wikipedia" src="./assets/aztec.png" width="300" />
 </div>
+
+_Aztec calendar, Wikipedia_
  
 Leonardo da Vinci steps forward, his eyes wide with wonder.
 
@@ -60,7 +62,7 @@ Before you can react, a group of Aztec soldiers approaches.
   <img src="./assets/meeting.png" alt="Meeting with Aztecs" width="300" />
 </div> 
 
-**Soldier leader** "Who are you, and what have you done?" he demands in Nahuatl. 
+**Soldier leader:** "Who are you, and what have you done?" he demands in Nahuatl. 
 
 You take a deep breath, trying to steady your nerves.
 
@@ -72,7 +74,7 @@ The warrior's eyes widen in surprise, but he remains cautious.
 
 Upon reaching the top of the pyramid, you are led into a grand chamber where Montezuma, the ruler of the Aztec Empire, sits on a throne adorned with gold and feathers.
 
-**Montezuma** "You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
+**Montezuma:** "You claim to be travelers from a distant land," Montezuma says, his voice calm but authoritative. "And you have damaged our sacred calendar. How do you intend to make amends?"
 
 ## Let’s play a game
 
@@ -90,52 +92,37 @@ Montezuma wins the first game, his skill and experience evident. Leonardo, studi
 
 The second game is a close contest, but Leonardo manages to secure a victory, evening the score. 
 
-**Leonardo:** "One more game," he whispers, George (Time beetle), we need to win this one, give me the right moves.
+**Leonardo:** "One more game," he whispers, George (Time Beetle), we need to win this one, give me the right moves.
 
-**Time beetle:** Very well, calculating... Here you go...
+**Time Beetle:** Very well, calculating... Here you go...
 
 With a final, decisive move, Leonardo wins the game. The room erupts in cheers and applause, the Aztecs clearly impressed by his skill and composure. Montezuma, though disappointed, nods in respect. 
 
 **Montezuma:** "You have won fairly," Montezuma says, his voice carrying a note of admiration. "You are free to go, and you may keep your device. But know that you are always welcome here, should you wish to return." 
 
-**Time beetle:** I won't say anything if you don't Leonardo ;)
-
-**Leonardo:** _smirks_
+**Time Beetle:** I won't say anything if you don't Leonardo ;)
 
 ### Patolli
 
 > [!NOTE]
-> Patolli is one of the oldest known games in the Americas, played by various pre-Columbian Mesoamerican cultures, including the Aztecs. 
-> 
-> It is a game of strategy and luck, often associated with gambling. 
+> Patolli is one of the oldest known games in the Americas, played by pre-Columbian Mesoamerican cultures like the Aztecs. It’s a mix of strategy and luck.
 >
-> How Patolli is Played: 
+> **How Patolli is Played**: 
+> - **Board and Pieces**: Played on an X-shaped board with a center block and four arms. Players use five black beans as dice, marked on one side.
+> - **Setup**: Each player picks six markers (beads) of their color and places them off the board, plus point beads for scoring.
+> - **Gameplay**: Roll the beans to move markers around the board and back to the start. A roll of five moves ten spaces. Landing on certain spaces can gain turns, lose points, or capture markers.
 >
-> Board and Pieces: The game is played on an X-shaped board with a center block and four arms. Players use five black beans as dice, each marked on one side 
-> 
-> Setup: Each player selects six markers (beads) of their color and places them off the board. Players also have point beads for scoring 
-> 
-> Starting the Game: Players roll the beans to move their markers around the board. The goal is to move all markers around the board and back to the starting point 
-> 
-> Movement: Players roll the beans to determine how many spaces to move. A roll of five allows a marker to move ten spaces 
-> 
-> Capturing and Scoring: Landing on specific spaces can result in gaining extra turns, losing point beads, or capturing opponent's markers 
-> 
-> Aztec Involvement: 
-> 
-> The Aztecs, including nobles and commoners, widely played Patolli. It was a popular pastime at the court of Montezuma, who enjoyed watching his nobles play 
-> 
-> The game was not just for entertainment but also involved high-stakes gambling, with players betting items like blankets, precious stones, and even their homes or freedom 
+> **Aztec Involvement**: Widely played by nobles and commoners, it was a favorite at Montezuma’s court. Beyond fun, it involved high-stakes gambling with bets like blankets, precious stones, or even freedom.
 
 <div>
-  <img width=300 src="./assets/patolli.png" alt="Patolli board" />
+  <img width="300" src="./assets/patolli.png" alt="Patolli board" />
 </div>
 
-*Patolli - Wikipedia*
+_Patolli - Wikipedia_
 
 ## Talk to Montezuma
 
-If you want to talk to Montezuma, run the app [Characters](/app/README.md) app. 
+If you want to talk to Montezuma, run the [Characters](/app/README.md) app. 
 
 <div>
   <img src="./assets/montezuma.jpeg" alt="Montezuma" width="300" />
@@ -156,11 +143,11 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 ## Structured Output
 
-**Time beetle:** Hey folks, want to know how I beat Montezuma?
+**Time Beetle:** Want to know how I beat Montezuma?
 
 **You:** Sshh, not so loud, we're still in the Aztec Empire.
 
-**Time beetle:** Oh right, sorry, yea so structured output is how. You asked for the right moves and I gave them to you in a structured way.
+**Time Beetle:** Oh right, sorry, yea so structured output is how. You asked for the right moves and I gave them to you in a structured way.
 
 Structured output uses specific data formats to organize information clearly. Common formats like JSON, XML, and CSV make it easier for services to process and use the data
 
@@ -168,19 +155,19 @@ Generative AI models can output data in various formats. However, output of unst
 
 **You:** Well, aren't you clever ;)
 
-**Time beetle:** I try my best ☺️
+**Time Beetle:** I try my best. :-)
 
 Another benefit, even for human readers, is that structured data is easier to read and understand when it follows a familiar format.
 
-Let's look at a few examples of input and asking for specific output formats can help in extracting information that at least makes it easier to understand and consume.
+Let's look at a few examples of input and see how asking for specific output formats can help in extracting information that makes it easier to understand and consume.
 
 **You:** Ok, it's not like we got any other plans, let's hear it.
 
 ## Shaping the output
 
-**Time beetle:** Let's start with a simple example. Imagine you're Leonardo da Vinci and you're trying to come up with ideas for inventions using 15th-century technology. You want to know what resources you need and how much effort it would take to build each invention. Here's how you can ask for this information:
+**Time Beetle:** Let's start with a simple example. Imagine you're Leonardo da Vinci and you're trying to come up with ideas for inventions using 15th-century technology. You want to know what resources you need and how much effort it would take to build each invention. Here's how you can ask for this information:
 
-**Leonardo:** Oh I like this game, everyone pretend you're me ☺️
+**Leonardo:** Oh I like this game, everyone pretend you're me!
 
 > Prompt: Generate ideas for inventions I can build using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to build it.
 
@@ -219,19 +206,17 @@ Sure! Here are some detailed ideas for inventions you can build using 15th-centu
 This is an OK looking response, every idea is structured in the same way, and it's easy to understand. What if you wanted it some other way though? For that, you can instruct how you want it in the text itself or even present an output template. Let's show each technique.
 ```
 
-**Leonardo:** Yep totally stealing that water-powered mill idea, I can see it now, a mill by the river, grinding grain into flour, it's perfect! I like this gizmo. What else am I thinking little Gizmo? This will make me less reliant on people like Sforza.
+**Leonardo:** Yep totally stealing that water-powered mill idea, I can see it now, a mill by the river, grinding grain into flour, it's perfect! I like this gizmo. What else am I thinking little gizmo? This will make me less reliant on people like Sforza.
 
-**Time beetle:** Sure, if you could ever finish a project, Leonardo.
+**Time Beetle:** Sure, if you could ever finish a project, Leonardo. :-)
 
 **Leonardo:** Hey, I'm working on it!
 
-**Time beetle:** Sure you are, Leonardo, sure you are, that and a hundred other projects.
-
-**Time beetle:** Let's look at how you can instruct the model to present the output in a more structured way.
+**Time Beetle:** Let's look at how you can instruct the model to present the output in a more structured way.
 
 ### Structuring Your Prompts for Better Output
 
-**Time beetle:** You can improve your prompt by instructing the model on how you want the output to be structured. For example, you can ask for a table format with columns that you need. Here's how you can modify the prompt:
+**Time Beetle:** You can improve your prompt by telling the model how you want the output to be structured. For example, you can ask for a table format with columns that you need. Here's how you can modify the prompt:
 
 > Prompt: Generate ideas for inventions that can be built using 15th-century technology. For each invention, provide the required resources and estimate the effort needed to construct it. Present the information in a table with the following columns: Title, Description, Resources Needed, and Effort.
 
@@ -249,11 +234,11 @@ This time we end up with a table that is easier to read and understand.
 
 **Leonardo:** I like this, will save me a lot of time for sure.
 
-**You:** Yea, me too.
+**You:** Me too.
 
 ### Presenting an output template
 
-Another way of getting structured output is to present an output template, here it can be any format, from columns to JSON, XML, CSV to markdown.
+Another way of getting structured output is to present an output template. It can be any format, from columns to JSON, XML, CSV or markdown.
 
 > Prompt: Generate ideas for inventions that can be built using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to construct it. Present the information using the following format (use markdown as output format):
 > 
@@ -261,7 +246,7 @@ Another way of getting structured output is to present an output template, here 
 > Description: [Brief Explanation]
 > Resources Needed: [List of Required Materials]
 > Effort: [Estimated Difficulty or Labor Required]
-Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with the following output template: 
+Generate ideas for inventions I can build given 15th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with the following output template: 
 
 ```text
 
@@ -308,27 +293,23 @@ Generate ideas for inventions I can build given 1500th century technology, pleas
 
 **Leonardo:** This is great, but who is Jason?
 
-**Time beetle:** JSON, Leonardo, JSON. It's a structured format that is easy to consume by services or applications.
+**Time Beetle:** JSON, Leonardo, JSON. It's a structured format that is easy to consume by services or applications.
 
 **Leonardo:** That's what I said, Jason.
 
-**Time beetle:** _Sigh_.
+**Time Beetle:** _Sigh_.
 
 As you can see, the output is structured according to the specifications in the output template. This makes it easier to read and understand and it also creates repeatable output that can be easily consumed by other services or applications.
 
 Of course a service benefits from even more structured output, like JSON, XML, or CSV so let's look at how you can ask for that.
 
-**Time beetle:** But wait, there's more!
-
-**You:** There always is with you, George. _sigh_
-
 ### Using structured output with formats like JSON, XML, or CSV
 
-**Time beetle:** So far, you've seen how you can control the output structure by instructing the model in the prompt. You have even provided an output template. Let's take that idea a step further and see how it can be applied to more structured output formats like JSON and other types of formats.
+**Time Beetle:** So far, you've seen how you can control the output structure by instructing the model in the prompt. You have even provided an output template. Let's take that idea a step further and see how it can be applied to more structured output formats like JSON and others.
 
 Modify the prompt accordingly to ask for JSON output:
 
-> **Prompt**: Generate ideas for inventions I can build given 1500th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present in json format, include properties for title, description, resources, needed, effort
+> **Prompt**: Generate ideas for inventions I can build given 15th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present in json format, include properties for title, description, resources, needed, effort
 > 
 > Example of the JSON output:
 > [
@@ -409,19 +390,19 @@ Sure! Here are some ideas for inventions you can build using 15th-century techno
 ]
 ```
 
-This is great, this output is something you can send to another service or application that can consume JSON data.
-
-**You:** If you say so.
-
-**Time beetle:** I do, I do.
+**Time Beetle:** This type of structured output can be sent to another service or application that can consume JSON data.
 
 ## Extracting data from prompts
 
-**Time beetle:** Imagine you're building a chatbot that helps users find information about trips to book. You want to extract key details from the user's input to provide relevant responses. Let's say you have a description like so: Type where you would like to go, when you want to travel, and your budget.
+**Time Beetle:** Imagine you're building a chatbot that helps users find information about trips to book. You want to extract key details from the user's input to provide relevant responses. Let's say you have a description like the following: 
 
-Hopefully the user reads said instruction, what does a prompt look like that extracts the information? 
+> Type where you would like to go, when you want to travel, and your budget.
 
-> Prompt: Extract the following information from a users prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: I want to go to Greece in June, my budget is 800 euro.
+What does a prompt look like that extracts the information? 
+
+> Prompt: Extract the following information from a user's prompt: location, when, budget, currency, respond with the extracted data in JSON format.
+>
+> User prompt: I want to go to Greece in June, my budget is 800 euro.
 
 
 > Response:
@@ -435,11 +416,11 @@ Hopefully the user reads said instruction, what does a prompt look like that ext
 }
 ```
 
-**Leonardo:** He doesn't stop talking does he?
+**Leonardo:** George (Time Beetle) doesn't stop talking does he?
 
 **You:** Let's see if I can find the off switch.
 
-**Time beetle:** Let's try this with a similar prompt, let's vary the user input a bit so we can be sure the model is doing the right thing.
+**Time Beetle:** Let's try this with a similar prompt, let's vary the user input a bit so we can be sure the model is doing the right thing.
 
 > Prompt: Extract the following information from a users prompt: location, when, budget, currency. Respond with the extracted data in JSON format. User prompt: Going to US, max 1200 dollars, January maybe.
 >
@@ -454,7 +435,7 @@ Hopefully the user reads said instruction, what does a prompt look like that ext
 }
 ```
 
-What you can do as a developer is then create a template like so:
+What you can do as a developer is create a template:
 
 ```text
 Extract the following information from a users prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: {user_input}.
@@ -462,13 +443,13 @@ Extract the following information from a users prompt: location, when, budget, c
 
 **You:** Found it, take that George!
 
-**Time beetle:** _Powering down_
+**Time Beetle:** _Powering down_.
 
-**Leonardo:** Peace and quite at last.
+**Leonardo:** Peace and quiet at last.
 
-**Time beetle:** _Initiating emergency startup_ Where was I again? Oh yes.
+**Time Beetle:** _Initiating emergency startup_. Where was I again? Oh yes.
 
-**Time beetle:** For chat bots, this is a very powerful feature as it allows you to extract information from the user's input. What if the user might ask for all sorts of things? You can create a template where you describe skills, things that your chatbot can do and what parameters it needs, here's how you can do that:
+**Time Beetle:** For chatbots, this is a very powerful feature as it allows you to extract information from the user's input. What if the user asks for all sorts of things? You can create a template where you describe skills, things that your chatbot can do and what parameters it needs. Here's how you can do that:
 
 ```text
 Here are some skills you have:
@@ -487,7 +468,7 @@ Figure out which skill to use based on a user's prompt and extract the necessary
 {user_input}
 ```
 
-Assuming that {user_input} contains the previous skills, let's try out the following user inputs:
+Let's try out the following user inputs:
 
 > Prompt: Going to US, max 1200 dollars, January maybe.
 > Result:
@@ -523,29 +504,31 @@ Assuming that {user_input} contains the previous skills, let's try out the follo
 
 This combination of presenting skills and parameters and extracting data from prompts is also known as _tool calling_ or _function calling_. A response like this from your model makes it easy for you as a developer to understand what the user wants and how to call a corresponding function to fulfill the user's request.
 
-**You:** Well that lasted for a full 20 seconds. Actually, what you said there, George, that was pretty good.
+**You:** Very useful information, George!
 
 ## Assignment - Repair the aerial screw
 
-**Time beetle:** I need both of your attention, we have a problem. The aerial screw took some damage during the escape from the Roman soldiers and the landing in the Aztec Empire. Leonardo da Vinci's machine is quite sensitive and it requires very specific input to repair it. You need to provide the necessary information to your time beetle (AI Assistant) to help you repair the aerial screw.
+**Time Beetle:** I need both of your attention, we have a problem. The aerial screw took some damage during the escape from the Roman soldiers and the landing in the Aztec Empire. Leonardo da Vinci's machine is quite sensitive and it requires very specific input to repair it. You need to provide the necessary information to your Time Beetle (AI Assistant) to help you repair the aerial screw.
 
-**Leonardo:** So I managed to fix the damage to the aerial screw but now it needs a boot sequence: left left up right:
-You: sounds easy enough, just that text?
+**Leonardo:** So I managed to fix the damage to the aerial screw but now it needs a boot sequence: left, left, up, right.
 
-**Leonardo:** Yes, but it' special, it needs to be mirrored, that's how I write all my text. And of course I use a Caesar cipher with a shift of 3 because I'm Italian. ☺️
+**You:** Sounds easy enough, just that text?
+
+**Leonardo:** Yes, but it's special, it needs to be mirrored, that's how I write all my text. And of course I use a Caesar cipher with a shift of 3 because I'm Italian. :-)
 
 **You:** Yes, could you just type it in then?
 
-**Leonardo:** I could, but I'm intrigued to see if you and the time beetle can do it.
+**Leonardo:** I could, but I'm intrigued to see if you and the Time Beetle can do it.
 
-**You:** Really? Fine.
+**You:** Fine.
 
-Instruction: Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
+**Instruction:** Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
 
 See the [sample app](./sample-app) for code to get started with. It contains a Node.js project with all the dependencies you need.
 
 > NOTE: If you haven't created a Codespace, please do so now as you will need it to get the AI communication in the sample app to work.
-> See start of this lesson for instructions on creating a codespace.
+>
+> See the _Option 1 : Creating a GitHub Codespace*_*_ section of the [Setup your environment](/docs/setup/README.md) document.
 
 ## Solution
 
@@ -553,31 +536,31 @@ See the [sample app](./sample-app) for code to get started with. It contains a N
 
 ## Challenge
 
-Adopt the example of trip booking and providing skills and extracting parameters to a domain of your choice. Write a prompt that asks for a user input and then extracts the necessary information to fulfill the user's request. Respond with the extracted data in JSON format with columns skill, parameters, extracted_data.
+Adopt the example of trip booking, providing skills, and extracting parameters to a domain of your choice. Write a prompt that asks for a user input and then extract the necessary information to fulfill the user's request. Respond with the extracted data in JSON format with columns skill, parameters, and extracted_data.
 
 Also determine the skill based on the user's input.
 
 ## Summary
 
-In this chapter, we discussed structured output and how it can be used to present information in a structured manner.
+In this chapter, you learned about structured output and how it can be used to present information in a structured manner.
 
-We explored different ways to shape the output, including instructing the model in the text, presenting an output template, and using formats like JSON, XML, or CSV.
+You explored different ways to shape the output, including instructing the model in the prompt, presenting an output template, and using formats like JSON, XML, or CSV.
 
-Additionally, we learned how to extract data from prompts and present it in a structured format.
+Additionally, you learned how to extract data from prompts and present it in a structured format.
 
-By leveraging structured output effectively, you can make it easier to understand and consume information generated by generative AI models.
+By leveraging structured output effectively, you can make it easier to understand and consume information generated by Generative AI models.
 
 ## Knowledge Check
 
-Q: What is structured output used for?
+**Question**: What is structured output used for? Select all that apply.
 
-A1: Presenting information in a structured manner.
+A. Presenting information in a structured manner.
 
-A2: Extracting data from prompts.
+B. Extracting data from prompts.
 
-A3: Generating unstructured text.
+C. Generating unstructured text.
 
-[Solution quiz](./solution/solution-quiz.md)
+[Quiz solution](./solution/solution-quiz.md)
 
 ## Self-Study resources
 
