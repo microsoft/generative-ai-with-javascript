@@ -552,7 +552,7 @@ By leveraging structured output effectively, you can make it easier to understan
 
 ## Knowledge Check
 
-**Question**: What is structured output used for?
+**Question**: What is structured output used for? Select all that apply.
 
 A. Presenting information in a structured manner.
 

@@ -119,7 +119,7 @@ If you want to talk to Sforza, run the [Characters](/app/README.md) app.
 **Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _/app/README.md_
+2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Sforza.

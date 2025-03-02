@@ -1,1 +1,1 @@
-<!-- Answer: C  -->
+Answer: C 

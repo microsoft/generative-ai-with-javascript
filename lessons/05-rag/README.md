@@ -1,10 +1,10 @@
 # Lesson 5: Talk to your data with Retrieval-Augmented Generation (RAG)
 
-In this lesson, you will learn:
+In this chapter you will learn:
 
 - The basics of Retrieval-Augmented Generation (RAG) and how it can be used to enhance the responses of generative AI models.
 - How to integrate external data sources into your AI application.
-- To leverage your data to improve the relevance and accuracy of the AI-generated content.
+- How to leverage your data to improve the relevance and accuracy of the AI-generated content.
 
 ## Setup
 
@@ -14,7 +14,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
 
-_This video covers Retrieval Augmented Generation, RAG, a technique for "grounding" to take make the AI consider your content additionally to the content it's been trained on for better results_
+_This video explains Retrieval Augmented Generation (RAG), a method that helps the AI use your content alongside its training data for improved results._
 
 *🎥 Click on the image above to watch a short video about retrieval augmented generation, RAG*
 
@@ -23,9 +23,9 @@ _This video covers Retrieval Augmented Generation, RAG, a technique for "groundi
 ## Narrative - Genesis
 
 > [!NOTE] 
-> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Alexandria, Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues.._
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
 >
-> See [lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#talk-to-ada-lovelace) if you'd prefer to jump straight to the technical content.
@@ -34,7 +34,7 @@ _This video covers Retrieval Augmented Generation, RAG, a technique for "groundi
 
 **Leonardo:** "Genesis? Che cosa significa?" Leonardo asked, confused. Before you could respond, the world dissolved into a blur of colors and sounds, the temple fading away as you were pulled through time
 
-You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you. Leonardo looks around, his eyes wide with wonder. "Mio Dio", my god.
+You land in garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you. Leonardo looks around, his eyes wide with wonder.
 
 <div>
   <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
@@ -42,21 +42,21 @@ You land in garden, it's late at night with a thick fog and eerie lights are fli
 
 ### Running from the Dogs
 
-The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
+You hear barking and the sound of dogs running towards you. You turn to Leonardo, "We need to get inside, now!"
 
 <div>
   <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
 </div>
 
-You just reached the mansion's door, it swung open, and a pair of servants rushes out. After looking you up and down, they gesture for you to follow them.
+As you reach the mansion's door it swings open and a pair of attendants hurry out. After sizing you up, they motion for you to follow them.
 
-The servants stopped in front of a heavy wooden door and the door creaks open, revealing Ada Lovelace, her eyes sparkling with curiosity. 
+You come face to face with Ada Lovelace, her eyes gleaming with curiosity.
 
 ### Meeting Ada and Charles
 
 **Ada:** "Ah, it's about time you arrived," she said warmly. "We need you to run an errand."
 
-**You:** "About time", you keep saying that, Dinocrates said the same, but I'm not sure what you mean?
+**You:** "About time", you keep saying that. Dinocrates said the same, but I'm not sure what you mean?
 
 **Ada:** Hush, no time for that now, we need to talk about the device you're holding. Charles, fill them in..
 
@@ -66,13 +66,13 @@ The servants stopped in front of a heavy wooden door and the door creaks open, r
   <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
 </div>
 
-Charles Babbage steps forward, examining the time beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
+Charles Babbage steps forward, examining the Time Beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
 
 Leonardo nodded, "Sì, it has been acting strangely."
 
-**Ada:** the device isn't quite ready, we need to give it more capabilities. We need to make it smarter, more aware of the world around it. The idea is for it to be able to retrieve information from different time periods and use it to generate responses that are accurate and relevant. Can you help with that?
+**Ada:** The device isn't quite ready, we need to give it more capabilities. We need to make it smarter, more aware of the world around it. The idea is for it to be able to retrieve information from different time periods and use it to generate responses that are accurate and relevant. Can you help with that?
 
-**You:** of course, sounds like we need to _augment_ the responses of the device with data, makes sense.
+**You:** Of course, sounds like we need to _augment_ the responses of the device with data, makes sense.
 
 **Ada:** Let's talk about a concept I'd like to call RAG, or Retrieval-Augmented Generation.
 
@@ -99,9 +99,9 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 ## Known challenges with large language models, LLMs
 
-**Ada**, to get us started, we need to talk more about the artificial intelligence we're going to use to power the device. We'll use so called AI models that when paired with a retrieval mechanism to data can improve the quality of the AI's responses.
+**Ada:** Let’s start by discussing the AI we’ll use to power the device. We’ll rely on “AI models” paired with a data retrieval system to boost response quality.
 
-However, there are some challenges we need to discuss before we talk about the specifics of RAG. Let's take a moment to discuss some of the known challenges. These models are trained on huge amounts of text data and can generate responses that are contextually relevant and grammatically correct. But, just like any data that you can find out there, the information generated by LLMs can sometimes be inaccurate, incomplete, or misleading, because of multiple factors:
+First, we need to address some challenges before diving into RAG details. These models, trained on vast text data, can produce relevant and correct responses. But, like any data source, their output can be inaccurate, incomplete, or misleading due to various factors.
 
 - **Out of date sources:** The data used to train the model may be outdated and no longer accurate.
 - **Wrong or inaccurate information:** The sources used to train the model may contain incorrect or misleading information, like fake news or biased opinions.
@@ -167,11 +167,11 @@ If you're using a database, you also want to think how you want to *search your 
 
 ## Augmenting the prompt
 
-**Ada:** Are you still with me? Good, let's move on to the next step, let's try improve the prompt our input to the AI model.
+**Ada:** Are you still with me? Good, let's move on to the next step, let's try to improve the prompt sent to the AI model.
 
-**Ada:** After you've implemented a way to retrieve information from your data sources, you can use this information to *augment the prompt* that you provide to the AI model. This can be done by adding the retrieved information to the input text that you pass to the model, along with additional context or instructions to help guide the generation process.
+**Ada:** Once you’ve set up a way to pull info from your data, you can add it to the AI model’s prompt. Just mix the retrieved info into the input text with some extra context or guidance to steer the AI’s response.
 
-For example, if you're building an app to answer questions about cars, you could have a prompt like this:
+For example, if you're building an app to answer questions about cars, you could have a prompt like the following:
 
 ```text
 
@@ -192,11 +192,11 @@ By providing the AI model with additional context and information, you can help 
 > [!TIP]
 > Note this part of the prompt: `If there's not enough data in provided sources, say that you don't know.`. This is important to avoid the AI generating incorrect information when there's not enough data to provide a reliable answer. This technique is called an *escape hatch* and is a good practice to ensure the quality of the generated content.
 
-With this part it's becoming more obvious how RAG can also be considered as an advanced form of *prompt engineering*.
+RAG can be considered as an advanced form of *prompt engineering*.
 
 ### Code example
 
-**Ada:** Practice makes perfect, let's put our knowledge into work with an example. Let's now put this knowledge into practice by integrating a simple retrieval mechanism into a JavaScript application. We'll use a [CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) file containing data about hybrid cars, and a simple search algorithm to find relevant information based on a user question.
+**Ada:** Practice makes perfect, so let’s apply what we’ve learned with an example. We’ll build a simple retrieval system into a JavaScript app using a [CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) file of hybrid car data and a basic search algorithm to pull relevant info based on a user’s question.
 
 ```javascript
 // This example demonstrates how to use the Retrieval Augmented Generation (RAG)
@@ -280,7 +280,7 @@ for await (const chunk of chunks) {
 }
 ```
 
-You can find this code in the `example/rag-cars.js` file along with the `hybrid.csv` file containing the data used for the retrieval.
+You can find this code in the [`example/rag-cars.js`](./example/rag-cars.js) file along with the [`hybrid.csv`](./example/hybrid.csv) file containing the data used for the retrieval.
 
 **Ada:** Once you run this code, you should see the data found in the CSV file by the retriever, formatted as a markdown table, followed by the AI-generated response to the question. Try changing the question to see how the retrieved data and response changes. You can also try asking questions about unrelated topics to see how the AI model handles them.
 
@@ -294,27 +294,23 @@ Found 1 matches:
 | Isaac Newton | 17th century | English mathematician and physicist who formulated the laws of motion and universal gravitation. |
 ```
 
-**You:** This is great, I can see how this can be useful for when using the device, or rather how it has been already or will be, time travel is confusing *sigh*.
+**You:** This is great, I can see how this can be useful when using the device, or rather how it has been already or will be, time travel is confusing *sigh*.
 
 **Ada:** There there, you're doing great. Let's move on to the next step.
 
-## Assignment - helping Ada and Charles
+## Assignment - Helping Ada and Charles
 
 Having learned about RAG, you're now ready to help Ada and Charles with their device. However, upon closer inspection the device is looking familiar. 
 
-**You:** time beetle, do you know what this is?
+**You:** Time Beetle, do you know what this is?
 
-**Beetle:** of course, it's me, or well it will be. Im missing a few parts though. Come to think of it, I'm missing a lot of parts, I don't even have a shell yet.
+**Time Beetle:** Of course, it's me, or it will be. I'm missing a few parts though. Come to think of it, I'm missing a lot of parts, I don't even have a shell yet.
 
-**Ada:** The time beetle is a device that allows you to travel through time and space, that is once we get it to work properly. As I was saying, we need to add a new feature to it, a retrieval-augmented generation (RAG) module. This will help us retrieve information and needed context from different time periods as you're traveling. We want to make sure we refer to all sorts of sources, Wikipedia is a good start.
+**Ada:** The Time Beetle is a device that allows you to travel through time and space, that is once we get it to work properly. As I was saying, we need to add a new feature to it, a retrieval-augmented generation (RAG) module. This will help us retrieve information and needed context from different time periods as you're traveling. We want to make sure we refer to all sorts of sources, Wikipedia is a good start.
 
-**Marty** where's the flux capacitor?
+**You:** What do you need me to do?
 
-**Ada:** Who said that? I'm hearing things now...
-
-**You:** Ok, fine I'll help, or it seems I've already helped as I'm here using a functioning version of the device. What do you need me to do?
-
-**Ada:** Here's an example code that retrieves text information about Tim Berners-Lee from Wikipedia, Tim will be very important one day.
+**Ada:** Here's example code that retrieves text information about Tim Berners-Lee from Wikipedia, Tim will be very important one day.
 
 ```javascript
 const response = await fetch('https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&redirects=true&explaintext&titles=Tim%20Berners-Lee');
@@ -334,11 +330,13 @@ const text = Object.values(data.query.pages)[0]?.extract;
 
 **Question**: What is the role of the retriever in a RAG system?
 
-- [ ] A. The retriever generates responses based on the input data.
-- [ ] B. The retriever generates relevant information based on the model's training data.
-- [ ] C. The retriever finds relevant information from external data sources.
+A. The retriever generates responses based on the input data.
 
-[](./solution/solution-quiz.md)
+B. The retriever generates relevant information based on the model's training data.
+
+C. The retriever finds relevant information from external data sources.
+
+[Quiz solution](./solution/solution-quiz.md)
 
 ## Self-Study resources
 
