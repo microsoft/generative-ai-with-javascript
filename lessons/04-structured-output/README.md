@@ -1,10 +1,10 @@
 # Structured output
 
-In this chapter, you will learn the following:
+In this chapter you will learn:
 
-- **Structured output**, what it is and how to leverage it effectively. 
-- **Extract information from prompts** and incorporate it into the output. 
-- **Present different types of output** like JSON and other types of formats for easy consumption by services.
+- What _structured output_ is and how to leverage it effectively. 
+- How to extract information from prompts and incorporate it into the output. 
+- Generate different types of output formats, such as JSON, for easy consumption by services.
 
 ## Setup
 

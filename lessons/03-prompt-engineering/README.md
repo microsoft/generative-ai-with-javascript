@@ -2,9 +2,9 @@
 
 In this chapter you will learn:
 
-- **Prompt engineering**. What prompt engineering is and how knowing the basics can help you get better results. 
-- **Prompt engineering techniques and strategies**. You'll learn different prompt engineering techniques and how they can help provide better results for different scenarios. 
-- **Meta prompts**. What meta prompts are and how they will help restrict the output, ensure its accessible, and provide a better user experience. 
+- What prompt engineering is and how knowing the basics can help you get better results. 
+- Different prompt engineering techniques and how they can help provide better results for different scenarios. 
+- What meta prompts are and how they will help restrict the output, ensure its accessible, and provide a better user experience. 
 
 ## Setup
 

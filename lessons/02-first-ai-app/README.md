@@ -1,6 +1,6 @@
 # Lesson 2: Writing Your First AI App
 
-In this lesson, you will learn to:
+In this chapter you will learn:
 
 - Set up your development environment.
 - Write a basic app.
