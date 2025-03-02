@@ -493,7 +493,7 @@ B. The context window is the number of previous messages that the AI uses to gen
 
 C. The context window determines how creative the AI's responses are.
 
-[Solution quiz](./solution/solution-quiz.md)
+[Quiz solution](./solution/solution-quiz.md)
 
 ## Self-Study resources
 

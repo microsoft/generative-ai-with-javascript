@@ -569,15 +569,15 @@ By leveraging structured output effectively, you can make it easier to understan
 
 ## Knowledge Check
 
-Q: What is structured output used for?
+**Question**: What is structured output used for?
 
-A1: Presenting information in a structured manner.
+A. Presenting information in a structured manner.
 
-A2: Extracting data from prompts.
+B. Extracting data from prompts.
 
-A3: Generating unstructured text.
+C. Generating unstructured text.
 
-[Solution quiz](./solution/solution-quiz.md)
+[Quiz solution](./solution/solution-quiz.md)
 
 ## Self-Study resources
 
