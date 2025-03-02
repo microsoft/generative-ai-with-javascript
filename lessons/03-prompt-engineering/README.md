@@ -1,4 +1,4 @@
-# Lesson 3 Prompt Engineering
+# Lesson 3: Prompt engineering
 
 In this chapter you will learn:
 
@@ -126,7 +126,8 @@ If you want to talk to Sforza, run the [Characters](/app/README.md) app.
 
 For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
 
-If you also want to hear some background music of what it could have sounded like, you can listen to the background music below:
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 ## What is prompt engineering?
 
@@ -329,7 +330,7 @@ C. Prompt engineering is about training a model to recognize patterns in data.
 
 [Quiz solution](./solution/solution-quiz.md)
 
-## Self-Study Resources
+## Self-Study resources
 
 - [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 - [Prompt engineering fundamentals](https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md?WT.mc_id=academic-105485-koreyst)

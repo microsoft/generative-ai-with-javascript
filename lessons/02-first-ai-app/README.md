@@ -1,4 +1,4 @@
-# Lesson 2: Writing Your First AI App
+# Lesson 2: Writing your first AI app
 
 In this chapter you will learn:
 
@@ -134,9 +134,10 @@ If you want to talk to Leonardo, run the [Characters](/app/README.md) app.
 
 For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#talk-to-dinocrates).
 
-If you also want to hear some background music of what it could have sounded like in Florence, you can listen to the background music below:
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
-## Development Environment Setup 
+## Development environment setup 
 
 Before you can assist Leonardo with his project, you should first think about the essential "tools of the trade" required to begin helping him effectively.
 
@@ -156,7 +157,7 @@ Before you can assist Leonardo with his project, you should first think about th
 
 **Time Beetle:** Yes, I already have those it says and projects a keyboard and screen on the wall in front of you.
 
-## Writing a Basic App 
+## Writing a basic app 
 
 **You:** Tell me more about the actual writing of the app, how do I get started?
 
@@ -235,7 +236,7 @@ Let's explain what's happening here:
 
 **You:** Oh good, I don't know who to pay anyways and I doubt they accept my currency here. :) 
 
-## Chat
+## Chat apps
 
 **Time Beetle:** Generative AI models can also be used to generate text based on a conversation. You can simulate a conversation with the AI by providing a list of messages as context like the conversation has already happened.
 
@@ -349,7 +350,7 @@ const message = {
 
 **Time Beetle:** A system message for me could be something like _"I'm the Time Beetle, here to help you navigate through time and space. I should be helpful in providing you with information and guidance about the time era you're in along with the tools you need to get back to your own time."_
 
-### Temperature
+### Creating varied responses with the temperature setting
 
 **You:** Anything else I should know about chat conversations?
 
@@ -436,7 +437,7 @@ const completion = await openai.chat.completions.create({
 
 > TIP: Experiment with different context window sizes to see how it affects the AI's responses.
 
-## Assignment - building an engineering assistant
+## Assignment - Building an engineering assistant
 
 Leonardo suddenly asked to inspect the Time Beetle closer, he looked at it from all sides, even shook it.
 
@@ -494,7 +495,7 @@ C. The context window determines how creative the AI's responses are.
 
 [Solution quiz](./solution/solution-quiz.md)
 
-## Self-Study Resources
+## Self-Study resources
 
 - [Text generation](https://platform.openai.com/docs/guides/text-generation)
 - [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 

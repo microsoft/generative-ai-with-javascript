@@ -2,7 +2,7 @@
 
 <img src="./docs/images/logo.png" alt="" align="center" height="128" />
 
-# Generative AI for Beginners with JavaScript
+# Generative AI for beginners with JavaScript
 
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/blob/main/LICENSE)
 [![Watch the video series](https://img.shields.io/badge/Videos-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
@@ -25,7 +25,7 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
  
 ![Character App Sneak Peek](./docs/images/background.png)
  
-## Step Into History with AI Magic! 
+## Step into history with AI magic! 
  
 Dive into an immersive learning experience powered by Generative AI:  
 - **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
@@ -41,7 +41,7 @@ Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, 
  
 > “It’s like a comic book with code!” — Happy User
  
-## Getting Started
+## Getting started
  
 Throughout this course you'll find many code examples and exercises, so we encourage you to run and experiment with the code in your own copy of this repository:
  
@@ -81,7 +81,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 New lessons will be added to the course over time, so stay tuned!
 
-## Keep Learning  
+## Keep learning  
 
 🙌 After completing this course, you can continue learning by exploring our additional resources.
 

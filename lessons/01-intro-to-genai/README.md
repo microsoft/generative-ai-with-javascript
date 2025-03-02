@@ -26,7 +26,7 @@ Moreover, Generative AI has evolved into multimodal capabilities, allowing you t
 
 *Simply put, natural language interfaces are becoming the new standard interface for many apps—and your users expect to use them.*
 
-## Narrative: A Journey Through Time
+## Narrative: A journey through time
 
 > [!NOTE] 
 > Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications._
@@ -36,7 +36,7 @@ Moreover, Generative AI has evolved into multimodal capabilities, allowing you t
 
 Your journey begins in 1860s London, where you assume the role of a skilled mechanic. Through a series of gripping adventures, you'll refine your AI skills and unlock solutions that transcend time.
 
-### Into the Maelstrom - London 1860
+### Into the maelstrom - London 1860
 
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
 
@@ -126,7 +126,7 @@ An elderly gentleman wearing a toga waves at you from the steps of the grand tem
 
 **You:** "I'm a mechanic. I build automatons. Let me see what I can do."
 
-### The Time Beetle
+### The "Time Beetle"
 
 A thought strikes you. Can the device understand me if I speak to it?
 
@@ -173,7 +173,10 @@ If you want to talk to Dinocrates, run the [Characters](/app/README.md) app.
 4. Once it appears, select the "Open in Browser" button. 
 5. Chat with Dinocrates.
 
-### Code Sneak Peek
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+
+### Code sneak peek
 
 While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
 
@@ -228,7 +231,7 @@ Here's a step-by-step summary of what the function does:
 
 > **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
 
-### What Can Generative AI Do for Me and My Apps?
+### What can Generative AI do for me and my Apps?
 
 > [!NOTE]
 > You've probably figured out by now that the time beetle works like an AI assistant that you can interact with using natural language, written or spoken.
@@ -243,7 +246,7 @@ Dinocrates overhears your conversation and adds:
 
 **Dinocrates:** We need a lighthouse to guide our ships safely into the harbor. The seas can be treacherous, and many ships have been lost to the rocks. We need a beacon of light to guide them home.
 
-#### Generative AI Application Areas
+#### Generative AI application areas
 
 **You:** Lighthouses sound like an interesting area for sure, what else can Generative AI do for me and my apps? 
 
@@ -267,7 +270,7 @@ Here's an example of a "chatbot application" in action:
 
 **You:** Fascinating, I'll make a note of going to the 21st century to see how these tools are used.
 
-### Generative AI and the JavaScript Ecosystem
+### Generative AI and the JavaScript ecosystem
 
 **Time Beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
 
@@ -285,7 +288,7 @@ Here's an example of a "chatbot application" in action:
 
 **Time Beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
 
-### JavaScript Ecosystem
+### JavaScript ecosystem
 
 **You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems? 
 
@@ -338,7 +341,7 @@ Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chat
 
 [Solution](./solution/solution.md)
 
-### Knowledge Check
+### Knowledge check
 
 **Question:** Which of the following statements about Generative AI and JavaScript are true?
 
@@ -348,6 +351,6 @@ C. Python is the only language used for AI development.
 
 [Quiz solution](./solution/solution-quiz.md)
 
-## Self-Study Resources
+## Self-Study resources
 
 - [Generative Ai JavaScript video series](https://genai-js)
