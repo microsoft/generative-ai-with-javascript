@@ -178,7 +178,7 @@ If you want to talk to Dinocrates, run the [Characters](/app/README.md) app.
 
 ### Code sneak peek
 
-While we still have a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
+While there is still a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
 
 Inside of `/app/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
 

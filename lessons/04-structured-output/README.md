@@ -229,7 +229,7 @@ Result:
 | Astrolabe            | An astronomical instrument for solving problems related to time and star positions. | Brass or other metals, engraving tools, mathematical knowledge | Medium |
 | Printing Press       | A press for reproducing texts more efficiently than hand-copying. | Wood, metal for movable type, ink, paper | High |
 
-This time we end up with a table that is easier to read and understand.
+This time you end up with a table that is easier to read and understand.
 ```
 
 **Leonardo:** I like this, will save me a lot of time for sure.
