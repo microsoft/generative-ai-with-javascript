@@ -110,7 +110,7 @@ Am I stuck in the past? Do I dare press that button again? Before you can decide
 
 ### Meeting Dinocrates
 
-An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
+An elderly gentleman wearing a toga waves at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
 <div>
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
@@ -237,7 +237,7 @@ As your adventure in Alexandria unfolds, you begin to see the possibilities of c
 
 **You:** Tell me more about light houses, you say to your device.
 
-**Time beetle:** A lighthouse is a tower equipped with a bright light at the top, located near the shore to guide ships at sea. The light serves as a navigational aid, helping sailors avoid dangerous rocks and reefs and safely reach the harbor.
+**Time Beetle:** A lighthouse is a tower equipped with a bright light at the top, located near the shore to guide ships at sea. The light serves as a navigational aid, helping sailors avoid dangerous rocks and reefs and safely reach the harbor.
 
 Dinocrates overhears your conversation and adds:
 
@@ -247,9 +247,9 @@ Dinocrates overhears your conversation and adds:
 
 **You:** Lighthouses sound like an interesting area for sure, what else can Generative AI do for me and my apps? 
 
-**Time beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
+**Time Beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
 
-- **Chat bot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience.
+- **Chatbot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience.
 
 - **Assistants and Agents** Assistants and agents can carry out more advanced instructions like leveraging tools to call APIs, run code, generate images and more. Advanced agents can carry out goals and carry out tasks autonomously.
 
@@ -269,7 +269,7 @@ Here's an example of a "chatbot application" in action:
 
 ### Generative AI and the JavaScript Ecosystem
 
-**Time beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
+**Time Beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
 
 | What | Description | 
 |---|---| 
@@ -279,17 +279,17 @@ Here's an example of a "chatbot application" in action:
 
 **You:** Interesting, I've heard of programming I think, didn't Ada Lovelace experiment with that and Charles Babbage?
 
-**Time beetle:** Yes, Ada Lovelace was the first computer programmer, and Charles Babbage was the inventor of the difference engine, a mechanical computer. They were pioneers in the field of computing, laying the foundation for the digital age.
+**Time Beetle:** Yes, Ada Lovelace was the first computer programmer, and Charles Babbage was the inventor of the difference engine, a mechanical computer. They were pioneers in the field of computing, laying the foundation for the digital age.
 
 **You:** Were? What do you mean were? I just got a letter from Charles Babbage.
 
-**Time beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
+**Time Beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
 
 ### JavaScript Ecosystem
 
 **You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems? 
 
-**Time beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here's a few reasons why it's so popular:
+**Time Beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here's a few reasons why it's so popular:
 
 | What | Description |
 |-|-|
@@ -301,13 +301,13 @@ Here's an example of a "chatbot application" in action:
 
 **You:** That's a lot of reasons, sounds like I should bet on JavaScript for my future projects.
 
-**Time beetle:** Indeed, JavaScript is a versatile language, also Python is a popular language for AI development.
+**Time Beetle:** Indeed, JavaScript is a versatile language, also Python is a popular language for AI development.
 
 **You:** Python, what do snakes have to do with programming?
 
-**Time beetle:** Let's save that for another time, shall we?
+**Time Beetle:** Let's save that for another time, shall we?
 
-**Time beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for AI scenarios, many developers are using JavaScript and Typescript.
+**Time Beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for AI scenarios, many developers are using JavaScript and Typescript.
 
 > **Did you know?**  
 > [62.5% of developers say they're using JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) with many preferring [TypeScript](https://www.typescriptlang.org) for new projects.
@@ -316,19 +316,19 @@ Here's an example of a "chatbot application" in action:
 
 To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented. 
 
-**Time beetle:** Let's get started, let's use a LLM to research how you can build a lighthouse to help Dinocrates.
+**Time Beetle:** Let's get started, let's use a LLM to research how you can build a lighthouse to help Dinocrates.
 
-**Time beetle:**: You’ll need to provide context to the LLM (i.e "me") how to build, with what tools and resources should be available in the times of Alexandria.
+**Time Beetle:**: You’ll need to provide context to the LLM (i.e "me") how to build, with what tools and resources should be available in the times of Alexandria.
 
 **You:** Ok, tell me more about LLMs?
 
-**Time beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
+**Time Beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
 
-**Time beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
+**Time Beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
 
 **You:** Got it, add more context to the prompt and then ask you.  
 
-**Time beetle:** Yes, I'm waiting...
+**Time Beetle:** Yes, I'm waiting...
 
 Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), or another online chatbot tool to generate a plan for building the lighthouse in Alexandria.
  
