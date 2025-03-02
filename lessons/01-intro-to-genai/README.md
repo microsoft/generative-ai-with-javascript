@@ -12,7 +12,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-[![Watch a short video about introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
+[![Watch a short video about an Introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
 
 _This video gives you an introduction to Generative AI with JavaScript_
 
@@ -22,7 +22,7 @@ _This video gives you an introduction to Generative AI with JavaScript_
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
-Moreover, Generative AI has evolved into multi modal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
+Moreover, Generative AI has evolved into multimodal capabilities, allowing you to provide an image or video as input and receive a variety of outputs. This advancement has significantly enhanced many people's workflows—not only by generating text but also by summarizing, translating, and more.
 
 *Simply put, natural language interfaces are becoming the new standard interface for many apps—and your users expect to use them.*
 
@@ -84,7 +84,7 @@ Just as you step closer, a blinding flash erupts, and he vanishes.
 
 Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.  
 
-It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From it's back, a small antenna extends, pulsing with energy. 
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From its back, a small antenna extends, pulsing with energy. 
 
 Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you. 
 
@@ -110,7 +110,7 @@ Am I stuck in the past? Do I dare press that button again? Before you can decide
 
 ### Meeting Dinocrates
 
-An elderly gentleman wearing a toga wave at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
+An elderly gentleman wearing a toga waves at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
 <div>
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
@@ -142,7 +142,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
-**You:** You're right, George is a good name, it was my fathers name in fact.
+**You:** You're right, George is a good name, it was my father's name in fact.
 
 <div>
    <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
@@ -238,7 +238,7 @@ Here's a step-by-step summary of what the function does:
 
 As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
 
-**You:** Tell me more about light houses, you say to your device.
+**You:** Tell me more about lighthouses, you say to your device.
 
 **Time beetle:** A lighthouse is a tower equipped with a bright light at the top, located near the shore to guide ships at sea. The light serves as a navigational aid, helping sailors avoid dangerous rocks and reefs and safely reach the harbor.
 
