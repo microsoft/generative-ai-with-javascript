@@ -30,5 +30,5 @@ jobs:
     - name: Run LanguageTool
       run: |
         for file in ${{ steps.find_files.outputs.files }}; do
-          java -jar LanguageTool-6.5/languagetool-commandline.jar -l en-US "$file"
+          java -jar LanguageTool/LanguageTool-6.5/languagetool-commandline.jar -l en-US "$file"
         done
