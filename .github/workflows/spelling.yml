@@ -20,6 +20,7 @@ jobs:
       run: |
         wget https://languagetool.org/download/LanguageTool-stable.zip
         unzip LanguageTool-stable.zip -d LanguageTool
+        ls -l LanguageTool
 
     - name: Find Markdown files
       id: find_files
@@ -29,5 +30,5 @@ jobs:
     - name: Run LanguageTool
       run: |
         for file in ${{ steps.find_files.outputs.files }}; do
-          java -jar LanguageTool/languagetool-commandline.jar -l en-US "$file"
+          java -jar LanguageTool/LanguageTool-5.9/languagetool-commandline.jar -l en-US "$file"
         done
