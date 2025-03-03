@@ -27,8 +27,28 @@ jobs:
       run: |
         echo "::set-output name=files::$(find . -name '*.md' -print | tr '\n' ' ')"
 
-    - name: Run LanguageTool
+    - name: Pre-process Markdown files
       run: |
         for file in ${{ steps.find_files.outputs.files }}; do
-          java -jar LanguageTool/LanguageTool-6.5/languagetool-commandline.jar -l en-US "$file"
+          sed '/^```/,/^```/d' "$file" > "processed_$file"
         done
+
+    - name: Run LanguageTool
+      id: run_languagetool
+      run: |
+        for file in ${{ steps.find_files.outputs.files }}; do
+          java -jar LanguageTool/LanguageTool-6.5/languagetool-commandline.jar -l en-US "processed_$file" >> languagetool_output.txt
+        done
+
+    - name: Create GitHub Issue
+      if: always()
+      uses: JasonEtco/create-an-issue@v2
+      with:
+        title: "LanguageTool Spellcheck Report"
+        body: |
+          The following issues were found during the spellcheck:
+          ```
+          ${{ steps.run_languagetool.outputs.languagetool_output }}
+          ```
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
