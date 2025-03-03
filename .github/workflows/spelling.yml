@@ -11,7 +11,7 @@ jobs:
     - uses: rojopolis/spellcheck-github-actions@0.47.0
       name: Spellcheck
       with:
-        source_files: README.md
+        source_files: "**/*.md"
         task_name: Markdown
         output_file: spellcheck-output.txt
     - uses: actions/upload-artifact@v4
