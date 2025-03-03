@@ -1,57 +1,21 @@
-name: Spellcheck
-
-on: workflow_dispatch
+name: Spellcheck Action
+on: push
 
 jobs:
-  spellcheck:
+  build:
+    name: Spellcheck
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up JDK 11
-      uses: actions/setup-java@v2
+    # The checkout step
+    - uses: actions/checkout@v3
+    - uses: rojopolis/spellcheck-github-actions@0.47.0
+      name: Spellcheck
       with:
-        distribution: 'adopt'
-        java-version: '11'
-
-    - name: Install LanguageTool
-      run: |
-        wget https://languagetool.org/download/LanguageTool-stable.zip
-        unzip LanguageTool-stable.zip -d LanguageTool
-        ls -l LanguageTool
-
-    - name: Find Markdown files
-      id: find_files
-      run: |
-        echo "files=$(find . -name '*.md' -print | tr '\n' ' ')" >> $GITHUB_ENV
-
-    - name: Pre-process Markdown files
-      run: |
-        for file in $files; do
-          sed '/^```/,/^```/d' "$file" > "processed_$file"
-        done
-      env:
-        files: ${{ env.files }}
-
-    - name: Run LanguageTool
-      run: |
-        for file in $files; do
-          java -jar LanguageTool/LanguageTool-6.5/languagetool-commandline.jar -l en-US "processed_$file" >> languagetool_output.txt
-        done
-      env:
-        files: ${{ env.files }}
-
-    - name: Create GitHub Issue
-      if: always()
-      uses: JasonEtco/create-an-issue@v2
+        source_files: README.md
+        task_name: Markdown
+        output_file: spellcheck-output.txt
+    - uses: actions/upload-artifact@v3
+      if: '!cancelled()' # Do not upload artifact if job was cancelled
       with:
-        title: "LanguageTool Spellcheck Report"
-        body: |
-          The following issues were found during the spellcheck:
-          ```
-          ${{ steps.run_languagetool.outputs.languagetool_output }}
-          ```
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: Spellcheck Output
+        path: spellcheck-output.txt
