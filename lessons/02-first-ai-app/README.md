@@ -223,16 +223,16 @@ Let's explain what's happening here:
 - Creating the augmented prompt, which contains the input text and some additional instructions what to do, i.e translate. Note how we're using string interpolation to include the input text in the prompt and how that instruction is to translate the text to Italian.
 - Creating the client with properties:
   - `model`, what model to use. 
-  - `messages`, the prompt to send to the model. Also note how you set the role to "user" to indicate that the input text is from the user. Had it been from the AI, you would set the role to "system".
+  - `messages`, the prompt to send to the model. Also note how you set the role to "user" to indicate that the input text is from the user. Had it been from the AI, you would have set the role to "system".
 - Extracting the generated text from the response and printing it to the console.
 
 **You:** I think I get it. So if I change the value of the `question` variable to something else, the app will generate a different Italian translation?
 
-**Time Beetle:** Exactly, you can change the input text to anything you want. Also note how GitHub models is being used as the base URL for the API together with a GitHub token as the API key.
+**Time Beetle:** Exactly, you can change the input text to anything you want. Also note how GitHub models are being used as the base URL for the API together with a GitHub token as the API key.
 
 **You:** Why is that important?
 
-**Time Beetle:** It's important to use a base URL and API key that are specific to the model you're using. GitHub Models is a platform that hosts a variety of models, all with different capabilities and features, it' also free to use.
+**Time Beetle:** It's important to use a base URL and API key that are specific to the model you're using. GitHub Models is a platform that hosts a variety of models, all with different capabilities and features, it's also free to use.
 
 **You:** Oh good, I don't know who to pay anyways and I doubt they accept my currency here. :) 
 
@@ -356,7 +356,7 @@ const message = {
 
 **Time Beetle:** Yes, you can adjust the "temperature" of the AI's responses. The temperature is a variable with a value normally set between 0 and 1 that determines how creative the AI's responses are. A temperature of 0 will result in more predictable responses, while a temperature of 1 will result in more creative and varied responses. You can adjust the temperature based on the context of your conversation and the type of responses you want from the AI. Note, it's possible to set a value higher than 1 but that leads to more randomness and less coherence in the responses.
 
-**You:** So if set the temperature to 0, the AI will provide more predictable responses, and if I set it to 1, the AI will provide more creative responses? What temperature do you have?
+**You:** So if I set the temperature to 0, the AI will provide more predictable responses, and if I set it to 1, the AI will provide more creative responses? What temperature do you have?
 
 **Time Beetle:** I have a temperature of 0.7 and yes, you're correct, the AI will provide more creative responses with a higher temperature. Let's see how you can set the temperature in your app:
 
