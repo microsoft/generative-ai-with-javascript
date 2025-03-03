@@ -1,6 +1,6 @@
 # Lesson 4: Structured output
 
-In this chapter you will learn:
+In this chapter you will learn: 
 
 - What _structured output_ is and how to leverage it effectively. 
 - How to extract information from prompts and incorporate it into the output. 
