@@ -292,7 +292,7 @@ Here's an example of a "chatbot application" in action:
 
 **You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems? 
 
-**Time Beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here's a few reasons why it's so popular:
+**Time Beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here are a few reasons why it's so popular:
 
 | What | Description |
 |-|-|
@@ -319,11 +319,11 @@ Here's an example of a "chatbot application" in action:
 
 To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented. 
 
-**Time Beetle:** Let's get started, let's use a LLM to research how you can build a lighthouse to help Dinocrates.
+**Time Beetle:** Let's get started, let's use an LLM to research how you can build a lighthouse to help Dinocrates.
 
 **Time Beetle:**: You’ll need to provide context to the LLM (i.e "me") how to build, with what tools and resources should be available in the times of Alexandria.
 
-**You:** Ok, tell me more about LLMs?
+**You:** Ok, tell me more about LLMs.
 
 **Time Beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
 
@@ -353,4 +353,4 @@ C. Python is the only language used for AI development.
 
 ## Self-Study resources
 
-- [Generative Ai JavaScript video series](https://genai-js)
+- [Generative AI JavaScript video series](https://genai-js)
