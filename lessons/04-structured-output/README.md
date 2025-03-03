@@ -238,7 +238,7 @@ This time you end up with a table that is easier to read and understand.
 
 ### Presenting an output template
 
-Another way of getting structured output is to present an output template. It can be any format, from columns to JSON, XML, CSV or markdown.
+Another way of getting structured output is to present an output template. It can be in any format, from columns to JSON, XML, CSV or markdown.
 
 > Prompt: Generate ideas for inventions that can be built using 15th-century technology. For each invention, specify the required resources and estimate the effort needed to construct it. Present the information using the following format (use markdown as output format):
 > 
@@ -438,7 +438,7 @@ What does a prompt look like that extracts the information?
 What you can do as a developer is create a template:
 
 ```text
-Extract the following information from a users prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: {user_input}.
+Extract the following information from a user's prompt: location, when, budget, currency, respond with the extracted data in JSON format, user prompt: {user_input}.
 ```
 
 **You:** Found it, take that George!
