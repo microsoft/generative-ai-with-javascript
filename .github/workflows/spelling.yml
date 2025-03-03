@@ -38,7 +38,7 @@ jobs:
     - name: Run LanguageTool
       run: |
         for file in $files; do
-          java -jar LanguageTool/LanguageTool-5.9/languagetool-commandline.jar -l en-US "processed_$file" >> languagetool_output.txt
+          java -jar LanguageTool/LanguageTool-6.5/languagetool-commandline.jar -l en-US "processed_$file" >> languagetool_output.txt
         done
       env:
         files: ${{ env.files }}
