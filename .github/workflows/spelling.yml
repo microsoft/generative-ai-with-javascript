@@ -19,16 +19,4 @@ jobs:
       with:
         name: Spellcheck Output
         path: spellcheck-output.txt
-    # Create GitHub Issue step
-    - name: Create GitHub Issue
-      if: always()
-      uses: JasonEtco/create-an-issue@v2
-      with:
-        title: "Spellcheck Report"
-        body: |
-          The following issues were found during the spellcheck:
-          ```
-          ${{ steps.build.outputs.spellcheck-output }}
-          ```
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ 
