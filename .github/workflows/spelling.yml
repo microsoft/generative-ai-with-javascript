@@ -14,7 +14,7 @@ jobs:
         source_files: README.md
         task_name: Markdown
         output_file: spellcheck-output.txt
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       if: '!cancelled()' # Do not upload artifact if job was cancelled
       with:
         name: Spellcheck Output
