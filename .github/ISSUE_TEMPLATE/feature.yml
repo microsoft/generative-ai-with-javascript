@@ -1,0 +1,67 @@
+name: 💡 Request a Feature
+description: Suggest an idea to help us improve
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: input
+    id: description
+    attributes:
+      label: Is your feature requested related to a problem?
+      description: If so, please describe clearly and concisely what the problem is.
+      placeholder: e.g., "I'm always frusted when..."
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like.
+      placeholder: A clear and concise description of what you want to happen.
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What alternatives have you considered?
+      placeholder: A clear and concise description of any alternative solutions or features you've considered.
+      value:
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: Add any other context or screenshots about the feature request here.
+      value:
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: What is your current role?
+      multiple: false
+      options:
+        - Student Ambassador
+        - Student
+        - Professional
+        - Educator
+  - type: dropdown
+    id: tech-topic
+    attributes:
+      label: What technical topic is this feature related to?
+      multiple: true
+      options:
+        - AI/Data Science/Machine Learning
+        - Application Development
+        - Developer Tools
+        - Low Code/Fusion Development
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
