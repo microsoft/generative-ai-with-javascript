@@ -33,8 +33,10 @@ Dive into an immersive learning experience powered by Generative AI:
 - **Epic Time-Travel Stories**.
 Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
  
-- **Companion App**. Interact with historical figures (Powered by generative AI [See Responsible AI disclaimer](#responsible-ai-disclaimer)
-  ![Interact with History through conversation](./docs/images/character-chat.png)  
+- **Companion App**. Interact with historical figures using Generative AI technologies ([see our Responsible AI disclaimer](#responsible-ai-disclaimer)).
+
+  ![Interact with History through conversation](./docs/images/character-chat.png) 
+
   Check the [_app_](./app/) directory to run the [app locally](./docs/setup/README.md#option-2--running-the-app-locally) or use [GitHub Codespaces](./docs/setup/README.md) to run it online.
 
 - **Accessibility FTW**. Read it, hear it—audio tags bring it to life.

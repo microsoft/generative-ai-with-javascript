@@ -2,24 +2,24 @@ This app allows you to speak to all character features in the curriculum.
 
 ## Installation
 
-1. Start a GitHub Codespaces
-1. Run `npm install`
-1. Run `npm start`
-1. Open `http://localhost:3000`
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _/app_ in the repo root.
+3. Locate the console and run `npm install` followed by `npm start`. 
+4. Once it appears, select the "Open in Browser" button. 
 
 You should see something like:
 
 ![Chat app](../docs/images/character-chat.png)
 
-## Speak to a character
+## Interact with a character
 
-You're faced with a text input field. Type your message and see the response from the character you are speaking to.
+You're faced with a text input field. Type your message and see the response from the character you are chatting with.
 
-## Change character
+## Change the character
 
-Select the dropdown to change the character you are speaking to.
+Select the character image to change the character you are speaking to.
 
-## Change the character behavior
+## Change the character's behavior
 
 In `characters.json`, there's a `description` property that will be used as a system message. If you change this, the characters personality will change.
 
