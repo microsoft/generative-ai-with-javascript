@@ -21,7 +21,7 @@ Select the dropdown to change the character you are speaking to.
 
 ## Change the character behavior
 
-In `characters.json`, there's a `description` property that will be used as a system message. If you change this, the characters personality will change.
+In `characters.json`, there's a `description` property that will be used as a system message. If you change this, the character's personality will change.
 
 ## Please read
 
@@ -31,7 +31,7 @@ In `characters.json`, there's a `description` property that will be used as a sy
 ## Optional Task: Adding audio
 
 - **Adding background audio**, download the music (make sure it's royalty free). Place it in the `public/audio` folder and name it according to the `name` field in `characters.json`, for example "davinci.mp3". 
-- Locate the `TODO` comment in `index.html` and uncomment the rows regarding playing background audio, should look something like so:
+- Locate the `TODO` comment in `index.html` and uncomment the rows regarding playing background audio, should look something like this:
 
    ```javascript
    /*
