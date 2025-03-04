@@ -69,7 +69,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 ## Lessons  
 
-🗃️ Table of content
+🗃️ Table of contents
 
 | # | Lesson Link  | Description |
 | ---- | ----------- | ----------- |
@@ -92,7 +92,7 @@ New lessons will be added to the course over time, so stay tuned!
 | # | Session | Description | Slides | Demo | Script | Video |
 |---|---------|-------------|--------|------|--------|-------|
 | 0 | Series introduction | Introduces the series and its content. | [pptx](/videos/slides/00-intro.pptx) / [pdf](/videos/slides/pdf/00-intro.pdf) | - | [Script](/videos/sessions/00-intro.md) | [📺](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1) |
-| 1 | What you need to know about LLMs | Explores what are LLMs, how they're trained, how they work and their limits. | [pptx](/videos/slides/01-llms.pptx) / [pdf](/videos/slides/pdf/01-llms.pdf) | [Demo](/videos/demos/01-llms/) | [Script](/videos/sessions/01-llms.md) | [📺](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)  |
+| 1 | What you need to know about LLMs | Explores what LLMs are, how they're trained, how they work and their limits. | [pptx](/videos/slides/01-llms.pptx) / [pdf](/videos/slides/pdf/01-llms.pdf) | [Demo](/videos/demos/01-llms/) | [Script](/videos/sessions/01-llms.md) | [📺](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)  |
 | 2 | Essential prompt engineering techniques | Practical prompt engineering techniques to get the best out of AI models. | [pptx](/videos/slides/02-prompt-engineering.pptx) / [pdf](/videos/slides/pdf/02-prompt-engineering.pdf) | [Demo](/videos/demos/02-prompt-engineering/) | [Script](/videos/sessions/02-prompt-engineering.md) | [📺](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)  |
 | 3 | Improve AI accuracy and reliability with RAG | Introduces Retrieval-Augmented Generation, to use AI with your own data. | [pptx](/videos/slides/03-rag.pptx) / [pdf](/videos/slides/pdf/03-rag.pdf) | [Demo](/videos/demos/03-rag/) | [Script](/videos/sessions/03-rag.md) | [📺](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4) |
 | 4 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [pptx](/videos/slides/04-langchainjs.pptx) / [pdf](/videos/slides/pdf/04-langchainjs.pdf) | [Demo](/videos/demos/04-langchainjs/) | [Script](/videos/sessions/04-langchainjs.md) | [📺](https://www.youtube.com/watch?v=02IDU8eCX8o&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=5) |
@@ -103,7 +103,7 @@ New lessons will be added to the course over time, so stay tuned!
 | 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](/videos/slides/09-azure-tools.pptx) / [pdf](/videos/slides/pdf/09-azure-tools.pdf) | - | [Script](/videos/sessions/09-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
 | 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](/videos/slides/10-chat-protocol.pptx) / [pdf](/videos/slides/pdf/10-chat-protocol.pdf) | [Demo](/videos/demos/10-chat-protocol/) | [Script](/videos/sessions/10-chat-protocol.md) | [📺](https://www.youtube.com/watch?v=fzDCW-6hMtU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=11) |
 
-To see the full page of resources, go this [video overview page](/videos/README.md).
+To see the full page of resources, go to this [video overview page](/videos/README.md).
 
 </details>
 
