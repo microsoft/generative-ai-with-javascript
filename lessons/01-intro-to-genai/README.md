@@ -38,7 +38,7 @@ Your journey begins in 1860s London, where you assume the role of a skilled mech
 
 ### Into the maelstrom - London 1860
 
-In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects. 
+In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects.
 
 Your workbench, the heart of your workshop, is an organized mess.
 
@@ -68,7 +68,7 @@ Charles Babbage, the great mathematician and inventor of the difference engine, 
 
 After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
-It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls. 
+It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls.
 
 **You:** "Hello? Mr. Babbage?"
 
@@ -82,11 +82,11 @@ As your eyes adjust to the dim light, you notice a figure in the distance, wavin
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
-Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.  
+Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.
 
-It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From its back, a small antenna extends, pulsing with energy. 
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From its back, a small antenna extends, pulsing with energy.
 
-Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you. 
+Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you.
 
 Then, blackness, and a sense of falling.
 
@@ -96,7 +96,7 @@ Then, blackness, and a sense of falling.
 
 ### Alexandria 300 BC
 
-You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive. 
+You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive.
 
 People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
@@ -169,12 +169,12 @@ If you want to interact with Dinocrates, run the [Characters](/app/README.md) ap
    <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
 </div>
 
-**Steps**: 
+**Steps**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
-4. Once it appears, select the "Open in Browser" button. 
+4. Once it appears, select the "Open in Browser" button.
 5. Chat with Dinocrates.
 
 > [!NOTE]
@@ -260,13 +260,13 @@ Dinocrates overhears your conversation and adds:
 
 - **Assistants and Agents** Assistants and agents can carry out more advanced instructions like leveraging tools to call APIs, run code, generate images and more. Advanced agents can carry out goals and carry out tasks autonomously.
 
-- **A content creation tool**:. A tool to generate blog posts and social media posts. Imagine creating campaigns in minutes instead of hours when an e-commerce site has a black Friday sale. 
+- **A content creation tool**:. A tool to generate blog posts and social media posts. Imagine creating campaigns in minutes instead of hours when an e-commerce site has a black Friday sale.
 
-- **Code completion**: A code completion tool that can generate code snippets based on user input. This can be a huge time saver for developers, especially when working on repetitive tasks. 
+- **Code completion**: A code completion tool that can generate code snippets based on user input. This can be a huge time saver for developers, especially when working on repetitive tasks.
 
 - **Translation** – Translate text between languages with high accuracy.
 
-As you can see, these improvements can both help the front office and the back office of your app and company. 
+As you can see, these improvements can both help the front office and the back office of your app and company.
 
 Here's an example of a "chatbot application" in action:
 
@@ -294,7 +294,7 @@ Here's an example of a "chatbot application" in action:
 
 ### JavaScript ecosystem
 
-**You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems? 
+**You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems?
 
 **Time Beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here are a few reasons why it's so popular:
 
@@ -321,7 +321,7 @@ Here's an example of a "chatbot application" in action:
 
 ## Assignment – Helping Dinocrates 
 
-To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented. 
+To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented.
 
 **Time Beetle:** Let's get started, let's use an LLM to research how you can build a lighthouse to help Dinocrates.
 
@@ -333,7 +333,7 @@ To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that 
 
 **Time Beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
 
-**You:** Got it, add more context to the prompt and then ask you.  
+**You:** Got it, add more context to the prompt and then ask you.
 
 **Time Beetle:** Yes, I'm waiting...
 
@@ -349,9 +349,9 @@ Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chat
 
 **Question:** Which of the following statements about Generative AI and JavaScript are true?
 
-A. JavaScript powered Generative AI apps can only generate text.  
-B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.  
-C. Python is the only language used for AI development.  
+A. JavaScript powered Generative AI apps can only generate text.
+B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.
+C. Python is the only language used for AI development.
 
 [Quiz solution](./solution/solution-quiz.md)
 

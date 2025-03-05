@@ -2,8 +2,8 @@
 
 In this chapter you will learn: 
 
-- What _structured output_ is and how to leverage it effectively. 
-- How to extract information from prompts and incorporate it into the output. 
+- What _structured output_ is and how to leverage it effectively.
+- How to extract information from prompts and incorporate it into the output.
 - Generate different types of output formats, such as JSON, for easy consumption by services.
 
 ## Setup
@@ -32,7 +32,7 @@ _This video offers an introduction to improving your "prompting" skills, teachin
 > [!NOTE]
 > While we recommend going through the story (it's fun!), [click here](#interact-with-montezuma) if you'd prefer to jump straight to the technical content.
 
-The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain. 
+The wind whips around you as you and Leonardo da Vinci ascend in his aerial screw, the wooden frame creaking under the strain.
 
 **You:** "Leonardo, we need to find a way out of this!" you shout over the roar of the wind.
 
@@ -42,7 +42,7 @@ The wind whips around you as you and Leonardo da Vinci ascend in his aerial scre
 
 ### The Aztec Empire
 
-The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire. 
+The bright light from the Time Beetle fades, and you find yourself standing at the base of a massive stone pyramid. As you look around, you realize that you've landed in the heart of the Aztec Empire.
 
 The aerial screw, rests awkwardly on a large, intricately carved stone, with markings that look like a calendar
 
@@ -62,13 +62,13 @@ Before you can react, a group of Aztec soldiers approaches.
   <img src="./assets/meeting.png" alt="Meeting with Aztecs" width="300" />
 </div> 
 
-**Soldier leader:** "Who are you, and what have you done?" he demands in Nahuatl. 
+**Soldier leader:** "Who are you, and what have you done?" he demands in Nahuatl.
 
 You take a deep breath, trying to steady your nerves.
 
 **You:** "We are travelers from a distant land," you begin, hoping your knowledge of ancient languages will serve you well. "This is a flying machine, a gift from the gods to help us reach you.
 
-The warrior's eyes widen in surprise, but he remains cautious. 
+The warrior's eyes widen in surprise, but he remains cautious.
 
 **Soldier leader:** "You will come with us to meet the ruler Montezuma. He will decide your fate.
 
@@ -90,13 +90,13 @@ The game begins, and the room falls silent, save for the sound of beans being ro
 
 Montezuma wins the first game, his skill and experience evident. Leonardo, studies the board carefully, his mind working through the strategies and probabilities.
 
-The second game is a close contest, but Leonardo manages to secure a victory, evening the score. 
+The second game is a close contest, but Leonardo manages to secure a victory, evening the score.
 
 **Leonardo:** "One more game," he whispers, George (Time Beetle), we need to win this one, give me the right moves.
 
 **Time Beetle:** Very well, calculating... Here you go...
 
-With a final, decisive move, Leonardo wins the game. The room erupts in cheers and applause, the Aztecs clearly impressed by his skill and composure. Montezuma, though disappointed, nods in respect. 
+With a final, decisive move, Leonardo wins the game. The room erupts in cheers and applause, the Aztecs clearly impressed by his skill and composure. Montezuma, though disappointed, nods in respect.
 
 **Montezuma:** "You have won fairly," Montezuma says, his voice carrying a note of admiration. "You are free to go, and you may keep your device. But know that you are always welcome here, should you wish to return." 
 
@@ -153,7 +153,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 **Time Beetle:** Oh right, sorry, yea so structured output is how. You asked for the right moves and I gave them to you in a structured way.
 
-Structured output uses specific data formats to organize information clearly. Common formats like JSON, XML, and CSV make it easier for services to process and use the data
+Structured output uses specific data formats to organize information clearly. Common formats like JSON, XML, and CSV make it easier for services to process and use the data.
 
 Generative AI models can output data in various formats. However, output of unstructured text can make it difficult to extract information and hand it over to other services. Structured output can help in this regard.
 
@@ -250,7 +250,7 @@ Another way of getting structured output is to present an output template. It ca
 > Description: [Brief Explanation]
 > Resources Needed: [List of Required Materials]
 > Effort: [Estimated Difficulty or Labor Required]
-Generate ideas for inventions I can build given 15th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with the following output template: 
+Generate ideas for inventions I can build given 15th century technology, please let me know for each what resources I need and how much effort there would be to build each invention, for each idea present it with the following output template:
 
 ```text
 
