@@ -50,7 +50,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 1. Select the **Fork** button in the upper right-hand corner of the repository or select this button:
    [![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/fork)
  
-2. Click the **Code** button in your forked repository, go to the **Codespaces** tab, and then choose **Create codespace**. 
+2. Click the **Code** button in your forked repository, go to the **Codespaces** tab, and then choose **Create codespace**.
 
    This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with AI models for free, without any additional setup.
 
@@ -60,7 +60,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 >
 > Learn more about [GitHub Codespaces and GitHub Models concepts here](/docs/setup/README.md).  
 
-### Lesson description  
+### Lesson description
 
 📦 Each lesson includes:
 
@@ -69,7 +69,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 - **Solutions** for each assignment and quiz.
 - **Characters** you can interact with using our [companion app](./app), demonstrating Generative AI.
 
-## Lessons  
+## Lessons
 
 🗃️ Table of contents
 
@@ -84,7 +84,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 New lessons will be added to the course over time, so stay tuned!
 
-## Keep learning  
+## Keep learning
 
 🙌 After completing this course, you can continue learning by exploring our additional resources.
 
