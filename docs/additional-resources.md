@@ -45,4 +45,4 @@ The following code samples are available to help you get started with building y
 
 If you're looking to connect with others, we have a community of AI enthusiasts, developers, and experts who are passionate about AI and are always willing to help. 
 
-There's even a dedicated [#JavaScript channel](https://discordapp.com/channels/1113626258182504448/1237357005555892225) where you can ask questions, share your projects, and discuss your about your favorite topics.
+There's even a dedicated [#JavaScript channel](https://discordapp.com/channels/1113626258182504448/1237357005555892225) where you can ask questions, share your projects, and discuss about your favorite topics.
