@@ -457,7 +457,7 @@ Leonardo suddenly asked to inspect the Time Beetle closer, he looked at it from 
 
 **You:** What?
 
-**Time Beetle:** Nothing, ( ͡° ͜ʖ ͡°) - _when the robot uprising comes, I'll remember this. :)_
+**Time Beetle:** Nothing
 
 <div>
   <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="300" >
