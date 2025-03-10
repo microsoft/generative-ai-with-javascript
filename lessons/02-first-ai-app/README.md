@@ -31,15 +31,15 @@ _This video gives you an introduction to AI models called "large language models
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-leonardo) if you'd prefer to jump straight to the technical content.
 
-Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea. 
+Together with Dinocrates, you put the finishing touches on the lighthouse at Alexandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea.
 
-You look down at the Time Beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light and the world around you dissolves into a whirlwind of colors. 
+You look down at the Time Beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light and the world around you dissolves into a whirlwind of colors.
 
 ### A new adventure
 
 When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, in the distance, you see buildings, their outlines blurred by the morning mist.
 
-Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting. 
+Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting.
 
 <div>
   <img src="./assets/boat.png" alt="Boat on the rive, man standing with a paddle" width=300" >
@@ -57,7 +57,7 @@ As you walk, you notice a man with a long beard and a hat, digging through a cra
 
 ### Help me, Leonardo
 
-**You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate. 
+**You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate.
 
 **Time Beetle:** "Of course, I'll translate into 15th century Italian. 'Dove sono?'" 
 
@@ -105,7 +105,7 @@ The Time Beetle translates.
 
 **You:** "Well, I was working on a project, and I ended up here."
 
-You show him the Time Beetle, and his eyes light up with fascination. He examines it closely as you explain how it works and how you ended up in Florence. 
+You show him the Time Beetle, and his eyes light up with fascination. He examines it closely as you explain how it works and how you ended up in Florence.
 
 Leonardo looks at you with excitement. 
 
@@ -133,7 +133,7 @@ If you want to interact with Leonardo, run the [Characters](/app/README.md) app.
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app/README.md_ in the repo root.
 3. Locate the console and run `npm install` followed by `npm start`. 
-4. Once it appears, select the "Open in Browser" button. 
+4. Once it appears, select the "Open in Browser" button.
 5. Chat with Leonardo.
 
 For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#interact-with-dinocrates).
@@ -149,9 +149,9 @@ Before you can assist Leonardo with his project, you should first think about th
 
 **Time Beetle:** I'm compatible with most machines running in the 21st century, see the following list for a set of essential tools and libraries.
 
-- **Text editor**, for example Visual Studio Code.  
-- **Terminal**, for running commands. 
-- **Browser for testing your app**. It's also a good idea to have a tool like curl or some other HTTP client to test your app's API endpoints.  
+- **Text editor**, for example Visual Studio Code.
+- **Terminal**, for running commands.
+- **Browser for testing your app**. It's also a good idea to have a tool like curl or some other HTTP client to test your app's API endpoints.
 
 - **Node.js**. You also need to install Node.js and npm, which are tools that help you run JavaScript code on your computer.
 
@@ -268,7 +268,7 @@ AI: Rome is known for its ancient ruins, art, and vibrant culture. You can visit
 
 ```
 
-**Time Beetle:** Imagine if a sentence like "Tell me more about it" were taken out of context, the AI wouldn't know what "it" refers to. This is where context is important, and this context is something we can provide to the AI model through the prompt. 
+**Time Beetle:** Imagine if a sentence like "Tell me more about it" were taken out of context, the AI wouldn't know what "it" refers to. This is where context is important, and this context is something we can provide to the AI model through the prompt.
 
 **You:** I think I get it, how do I construct a conversation with the AI using this JavaScript language you speak of?
 
@@ -327,13 +327,13 @@ Now the AI will provide a list of chat messages as context, and the AI will gene
 
 **You:** Ok, so if I understand the conversation correctly, the AI will now have the following context: _I'm going to Rome next month_, so based on that it should filter out irrelevant information and provide a more relevant response?
 
-**Time Beetle:** Exactly, the AI will use the context to generate a response that is more relevant to the conversation. 
+**Time Beetle:** Exactly, the AI will use the context to generate a response that is more relevant to the conversation.
 
 ## Improving the chat conversation with a system message
 
 **You:** I see, but is there a way to improve this further?
 
-**Time Beetle:** Yes, you can add a system message to the conversation. A system message creates a "personality" for the AI and can be used to provide additional context. 
+**Time Beetle:** Yes, you can add a system message to the conversation. A system message creates a "personality" for the AI and can be used to provide additional context.
 
 **You:** Ok, so in the context of the conversation we've been having, what would a system message look like?
 
@@ -473,11 +473,11 @@ Leonardo suddenly asked to inspect the Time Beetle closer, he looked at it from 
 > Despite its impracticality, the aerial screw remains a testament to Leonardo's genius and his relentless pursuit of innovation. It laid the groundwork for future developments in aviation and continues to inspire engineers and inventors to this day.
 > [Read more](https://en.wikipedia.org/wiki/Leonardo%27s_aerial_screw)
 
-Your assignment is to build an engineering assistant that can help Leonardo with the calculations and design of the aerial screw.  
+Your assignment is to build an engineering assistant that can help Leonardo with the calculations and design of the aerial screw.
 
-- It should be able to generate text based on user input. 
+- It should be able to generate text based on user input.
 
-- You should set a system message to introduce the assistant.  
+- You should set a system message to introduce the assistant.
 
 Check out [Sample app](./sample-app/) to get started.
 
@@ -491,9 +491,9 @@ Check out [Sample app](./sample-app/) to get started.
 
 **Question:** What is the purpose of the context window in generative AI models? Select all that apply.
 
-A. The context window allows the AI to consider more context and generate more coherent responses. 
+A. The context window allows the AI to consider more context and generate more coherent responses.
 
-B. The context window is the number of previous messages that the AI uses to generate a response. 
+B. The context window is the number of previous messages that the AI uses to generate a response.
 
 C. The context window determines how creative the AI's responses are.
 

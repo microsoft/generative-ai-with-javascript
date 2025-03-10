@@ -2,9 +2,9 @@
 
 In this chapter you will learn:
 
-- What prompt engineering is and how knowing the basics can help you get better results. 
-- Different prompt engineering techniques and how they can help provide better results for different scenarios. 
-- What meta prompts are and how they will help restrict the output, ensure it's accessible, and provide a better user experience. 
+- What prompt engineering is and how knowing the basics can help you get better results.
+- Different prompt engineering techniques and how they can help provide better results for different scenarios.
+- What meta prompts are and how they will help restrict the output, ensure it's accessible, and provide a better user experience.
 
 ## Setup
 
@@ -124,7 +124,7 @@ If you want to interact with Sforza, run the [Characters](/app/README.md) app.
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`. 
+3. Locate the console and run `npm install` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Sforza.
 
@@ -139,7 +139,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 **You:** We do? What's that?
 
-**Time Beetle:** Prompt engineering despite its name is not about building bridges or roads, but rather about crafting the right "prompts" to get the desired output from a Generative AI language model.  
+**Time Beetle:** Prompt engineering despite its name is not about building bridges or roads, but rather about crafting the right "prompts" to get the desired output from a Generative AI language model.
 
 **You:** Ok, but why is it important that I know this?
 
@@ -147,7 +147,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 **You:** Yes, preferably in one piece. :-)
 
-**Time Beetle:** I thought so, now listen up! Prompt engineering is about crafting the right prompts to get the desired output from a language model. 
+**Time Beetle:** I thought so, now listen up! Prompt engineering is about crafting the right prompts to get the desired output from a language model.
 
 **Time Beetle** Large language models have what's called _emergent properties_, which means these are features that aren't explicitly programmed into the model but arise from the way it's trained on vast amounts of text data. By studying these emergent properties, you can draw conclusions and discover patterns that can help you get better results from the model.
 
@@ -165,9 +165,9 @@ For a more detailed explanation of the app, see [Detailed app explanation](../01
 
 Looking at it from the perspective of a developer, you can use prompt engineering to:
 
-- **Get more accurate results** from your language model and ultimately improve the user experience of your application. 
+- **Get more accurate results** from your language model and ultimately improve the user experience of your application.
 
-- **Control the output** of the model to ensure it's relevant and appropriate for your users. This is especially important when dealing with sensitive topics and also to protect your brand reputation. 
+- **Control the output** of the model to ensure it's relevant and appropriate for your users. This is especially important when dealing with sensitive topics and also to protect your brand reputation.
 
 - **Format the output** in a way that's easy to understand and consume. We will look more into this aspect in the next chapter.
 
@@ -203,106 +203,106 @@ Few-shot prompting gives an AI model a few examples to guide its output. Imagine
 
 ### Chain-of-Thought Prompting: Show step-by-step reasoning
 
-**Time Beetle:** This technique guides the AI by showing it step-by-step reasoning to solve a problem. Imagine landing the aerial screw. You could break it down like this:  
-- You’re 100 meters up.  
-- Gravity pulls at 9.8 m/s².  
-- Formula: height = ½ * g * t².  
-- Solve: t ≈ 4.5 seconds to land.  
+**Time Beetle:** This technique guides the AI by showing it step-by-step reasoning to solve a problem. Imagine landing the aerial screw. You could break it down like this:
+- You’re 100 meters up.
+- Gravity pulls at 9.8 m/s².
+- Formula: height = ½ * g * t².
+- Solve: t ≈ 4.5 seconds to land.
 
-Your prompt becomes:  
+Your prompt becomes:
 > - 100 meters above ground  
 > - Gravity: 9.8 m/s²  
 > - How many seconds to land?  
 
-**Answer: 4.5 seconds**  
+**Answer: 4.5 seconds**
 
-**You:** That’s quick—hope the numbers work out!  
+**You:** That’s quick—hope the numbers work out!
 
-**Time Beetle:** It teaches the AI to think step-by-step.  
+**Time Beetle:** It teaches the AI to think step-by-step.
 
-**You:** So it’s about breaking problems down for accurate answers?  
+**You:** So it’s about breaking problems down for accurate answers?
 
 **Time Beetle:** Yep, perfect for complex tasks like a math tutor app!
 
 ### Maieutic Prompting: Question the output to verify accuracy
 
-**Time Beetle:** This technique uses questions to check the AI’s output for accuracy. You ask about each step to ensure consistent reasoning.  
+**Time Beetle:** This technique uses questions to check the AI’s output for accuracy. You ask about each step to ensure consistent reasoning.
 
 **You:** So, question everything it says? Sounds fun. ;)  
 
-**Time Beetle:** Let’s test our aerial screw landing:  
-- 100 meters up  
-- Gravity: 9.8 m/s²  
-- How many seconds to land? (Answer: 4.5s)  
+**Time Beetle:** Let’s test our aerial screw landing:
+- 100 meters up
+- Gravity: 9.8 m/s²
+- How many seconds to land? (Answer: 4.5s)
 
-Ask: “Why 4.5 seconds?”  
+Ask: “Why 4.5 seconds?”
 
-> **Response:**  
-> - Height = 100m, initial vertical speed = 0 m/s, gravity = 9.8 m/s².  
-> - Use: height = ½ * g * t².  
+> **Response:**
+> - Height = 100m, initial vertical speed = 0 m/s, gravity = 9.8 m/s². 
+> - Use: height = ½ * g * t².
 > - Solve: 100 = ½ * 9.8 * t² → t ≈ 4.5s.
 
-**Time Beetle:** It’s about verifying AI answers with follow-up questions.  
+**Time Beetle:** It’s about verifying AI answers with follow-up questions.
 
 **You:** So, don’t trust it—probe it with questions instead?
 
-**Time Beetle:** Exactly! Ensures solid reasoning.  
+**Time Beetle:** Exactly! Ensures solid reasoning.
 
 ## Meta Prompts: Add extra instructions for precision
 
-**Time Beetle:** Next up, meta prompts.  
+**Time Beetle:** Next up, meta prompts.
 
-**You:** Ugh, tea first?  
+**You:** Ugh, tea first?
 
-**Time Beetle:** _Sigh_. They add guidance to prompts for better output—great for sensitive, customer-facing apps.  
+**Time Beetle:** _Sigh_. They add guidance to prompts for better output—great for sensitive, customer-facing apps.
 
-Here’s an example:  
-> **Meta Prompt:** Use only Contoso Inc. products (basketballs, soccer balls, tennis rackets). Keep it accurate and user-friendly.  
-> **Prompt:** Best sports products for beginners?  
-> **Response:** Basketballs, soccer balls, and tennis rackets—perfect for coordination and agility.  
+Here’s an example:
+> **Meta Prompt:** Use only Contoso Inc. products (basketballs, soccer balls, tennis rackets). Keep it accurate and user-friendly.
+> **Prompt:** Best sports products for beginners?
+> **Response:** Basketballs, soccer balls, and tennis rackets—perfect for coordination and agility.
 
-It ensures accuracy and sticks to Contoso’s products. Without it:  
-> **Prompt:** Best sports products for beginners?  
-> **Response:** Basketballs, soccer balls, tennis rackets, plus footballs—_not all Contoso items_.  
+It ensures accuracy and sticks to Contoso’s products. Without it:
+> **Prompt:** Best sports products for beginners?
+> **Response:** Basketballs, soccer balls, tennis rackets, plus footballs—_not all Contoso items_.
 
 **You:** Handy! Keeps responses on track, like laws for my automaton.
 
-**Time Beetle:** You’d know, _"Frankenstein"_—er, nothing!  
+**Time Beetle:** You’d know, _"Frankenstein"_—er, nothing!
 
-**You:** What?  
+**You:** What?
 
-**Time Beetle:** Never mind.  
+**Time Beetle:** Never mind.
 
-> Mary Shelley’s *Frankenstein*—1818, 42 years before your time travels. [Read more](https://en.wikipedia.org/wiki/Mary_Shelley)  
+> Mary Shelley’s *Frankenstein*—1818, 42 years before your time travels. [Read more](https://en.wikipedia.org/wiki/Mary_Shelley)
 
-**You:** So, no meta prompt means chaos?  
+**You:** So, no meta prompt means chaos?
 
-**Time Beetle:** Yep, you’d get off-brand answers.  
+**Time Beetle:** Yep, you’d get off-brand answers.
 
-**You:** Got it, precision matters!  
+**You:** Got it, precision matters!
 
-## Assignment - Let's help our heroes land the aerial screw 
+## Assignment - Let's help our heroes land the aerial screw
 
 **You:** This is the part where you show me how to land the aerial screw, right?
 
-**Time Beetle:** Yes, let's get to it. The hill is roughly 100 meters away from our current position. Here's how we can set up the prompt: 
+**Time Beetle:** Yes, let's get to it. The hill is roughly 100 meters away from our current position. Here's how we can set up the prompt:
 
-- Current height above the ground: 100 meters 
-- Moving forward at: 10 meters per second 
-- Gravity: 9.8 meters per second squared 
-- Wind upwards at: 0.7 meters per second 
+- Current height above the ground: 100 meters
+- Moving forward at: 10 meters per second
+- Gravity: 9.8 meters per second squared
+- Wind upwards at: 0.7 meters per second
 
-**Leonardo:** Can your AI gizmo help in calculating to see if we will make it or if we need to make another time jump?  
+**Leonardo:** Can your AI gizmo help in calculating to see if we will make it or if we need to make another time jump?
 
 **Time Beetle:** I can yes, my name is George though, I prefer that over Gizmo. I'm actually going to leave it to the two of you to figure out how to set up the prompt. ☺️
 
-Build an app that asks for: 
+Build an app that asks for:
 
-- Height 
-- Forward speed 
-- Gravity 
+- Height
+- Forward speed
+- Gravity
 - Upward wind
-- Distance to hill 
+- Distance to hill
 
 Use the chain-of-though technique to arrive at a response.
 
@@ -318,7 +318,7 @@ Build an app in JavaScript that asks for the following inputs:
 - Upward wind in meters per second 
 - Distance to the hill 
 
-Then use the LLM to incorporate these inputs and leverage the chain of thought prompting technique to guide the model to the right answer. 
+Then use the LLM to incorporate these inputs and leverage the chain of thought prompting technique to guide the model to the right answer.
 
 [Solution](./solution/solution.md) 
 
@@ -326,11 +326,11 @@ Then use the LLM to incorporate these inputs and leverage the chain of thought p
 
 **Question:** What is prompt engineering? Select all that apply.
 
-A. Prompt engineering is about building bridges and roads. 
+A. Prompt engineering is about building bridges and roads.
 
-B. Prompt engineering is about crafting the right prompts to get the desired output from a language model. 
+B. Prompt engineering is about crafting the right prompts to get the desired output from a language model.
 
-C. Prompt engineering is about training a model to recognize patterns in data. 
+C. Prompt engineering is about training a model to recognize patterns in data.
 
 [Quiz solution](./solution/solution-quiz.md)
 
