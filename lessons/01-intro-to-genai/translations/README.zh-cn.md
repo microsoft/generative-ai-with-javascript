@@ -43,7 +43,7 @@ _这个视频为你介绍了 JavaScript 中的生成式 AI_
 你的工作台，工作室的核心，是一个有序的混乱。
 
 <div>
-   <img src="./assets/london.png" alt="伦敦工作室" width=300 >
+   <img src="../assets/london.png" alt="伦敦工作室" width=300 >
 </div>
 
 _工作台中央放着一个机器人的躯干——一个耗费了数月努力的工程奇迹。它的木制框架精心雕刻，每个关节都经过精心设计以实现流畅的运动。_
@@ -75,7 +75,7 @@ _查尔斯·巴贝奇。"_
 当你的眼睛适应了昏暗的光线，你注意到远处有一个人影在向你挥手。你朝他走去，脚步声在木地板上回响。人影变得清晰，你从报纸照片中认出了他，是查尔斯·巴贝奇。
 
 <div>
-   <img src="./assets/library.png" alt="布满灰尘的图书馆" width="300">
+   <img src="../assets/library.png" alt="布满灰尘的图书馆" width="300">
 </div>
 
 ### 这是什么设备？
@@ -91,7 +91,7 @@ _查尔斯·巴贝奇。"_
 然后，一片黑暗，和坠落的感觉。
 
 <div>
-   <img src="./assets/vortex.png" alt="时空漩涡" width="300">
+   <img src="../assets/vortex.png" alt="时空漩涡" width="300">
 </div>
 
 ### 公元前 300 年的亚历山大
@@ -101,7 +101,7 @@ _查尔斯·巴贝奇。"_
 身穿托加长袍的人们在街道上穿行，他们的声音融合成古老方言的交响乐，空气中充满异国香料的气味和远处商人叫卖的声音。
 
 <div>
-   <img src="./assets/alexandria.png" alt="公元前 300 年的亚历山大" width="300">
+   <img src="../assets/alexandria.png" alt="公元前 300 年的亚历山大" width="300">
 </div>
 
 **你：** 我一定是撞到了头，你想着，闭上眼睛又睁开，场景依然不变。
@@ -113,7 +113,7 @@ _查尔斯·巴贝奇。"_
 一位身穿托加长袍的老者从大庙的台阶上向你挥手。他的白发和胡须在阳光下闪耀，给他一种几乎是超凡的光芒。
 
 <div>
-   <img src="./assets/迪诺克拉底.png" alt="身穿托加长袍的迪诺克拉底" width="300">
+   <img src="../assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">
 </div>
 
 **迪诺克拉底：** "欢迎，旅行者，"他温和地说。"我是迪诺克拉底，这座伟大城市的建筑师。你的到来早有预言。"
@@ -145,7 +145,7 @@ _查尔斯·巴贝奇。"_
 **你：** 你说得对，乔治确实是个好名字，事实上这是我父亲的名字。
 
 <div>
-   <img src="./assets/time-beetle.png" alt="像金属甲虫的时间旅行设备" width="300">
+   <img src="../assets/time-beetle.png" alt="像金属甲虫的时间旅行设备" width="300">
 </div>
 
 _时间设备，"乔治"金属甲虫_
@@ -166,7 +166,7 @@ _时间设备，"乔治"金属甲虫_
 > [负责任的 AI 免责声明](../../README.md#responsible-ai-disclaimer)
 
 <div>
-   <img src="./assets/迪诺克拉底.png" alt="身穿托加长袍的迪诺克拉底" width="300">
+   <img src="../assets/迪诺克拉底.png" alt="身穿托加长袍的迪诺克拉底" width="300">
 </div>
 
 **步骤**：
