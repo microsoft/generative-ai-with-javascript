@@ -166,7 +166,7 @@ _时间设备，"乔治"金属甲虫_
 > [负责任的 AI 免责声明](../../README.md#responsible-ai-disclaimer)
 
 <div>
-   <img src="../assets/迪诺克拉底.png" alt="身穿托加长袍的迪诺克拉底" width="300">
+   <img src="../assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">
 </div>
 
 **步骤**：
