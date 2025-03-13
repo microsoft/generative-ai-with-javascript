@@ -343,7 +343,7 @@ app.post('/send', async (req, res) => {
 
 ## 解决方案
 
-[解决方案](./solution/solution.md)
+[解决方案](../solution/solution.md)
 
 ### 知识检查
 
@@ -353,7 +353,7 @@ A. 基于 JavaScript 的生成式 AI 应用只能生成文本。
 B. JavaScript 可以用于构建 AI 驱动的应用程序，包括聊天机器人、文本生成工具等。
 C. Python 是唯一用于 AI 开发的语言。
 
-[测验解决方案](./solution/solution-quiz.md)
+[测验解决方案](../solution/solution-quiz.md)
 
 ## 自学资源
 
