@@ -124,6 +124,7 @@ _এই ভিডিওটি আপনাকে **"প্রম্পটিং"
 <div>
   <img src="/lessons/03-prompt-engineering/assets/airborne.png" alt="উড়ন্ত অবস্থায়, নিচে শহর দেখা যাচ্ছে" width="300">
 </div>  
+
 ## **স্পোর্জার সাথে যোগাযোগ করুন**  
 
 যদি আপনি **স্পোর্জার (Sforza) সাথে কথোপকথন** করতে চান, তাহলে [Characters](/app/README.md) অ্যাপ চালান।  
