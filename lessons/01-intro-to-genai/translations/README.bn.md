@@ -276,7 +276,7 @@ app.post('/send', async (req, res) => {
 > [Microsoft Copilot](https://copilot.microsoft.com) বা [ChatGPT](https://chatgpt.com/) ব্যবহার করে একটি ধাপে ধাপে পরিকল্পনা তৈরি করুন।  
 
 **সমাধান:**  
-[Solution](/01-intro-to-genai/solution/solution.md)  
+[Solution](/lessons/01-intro-to-genai/solution/solution.md)  
 ### **জ্ঞান যাচাই (Knowledge Check)**  
 
 **প্রশ্ন:** নিম্নলিখিত কোন বিবৃতিগুলো জেনারেটিভ এআই এবং জাভাস্ক্রিপ্ট সম্পর্কে সত্য?  
@@ -285,7 +285,7 @@ A. জাভাস্ক্রিপ্ট চালিত জেনারেট
 B. জাভাস্ক্রিপ্ট ব্যবহার করে এআই-চালিত অ্যাপ্লিকেশন তৈরি করা যায়, যার মধ্যে চ্যাটবট, টেক্সট জেনারেশন টুল এবং আরও অনেক কিছু অন্তর্ভুক্ত।  
 C. পাইথনই একমাত্র ভাষা যা এআই ডেভেলপমেন্টের জন্য ব্যবহৃত হয়।  
 
-[কুইজের সমাধান](/01-intro-to-genai/solution/solution-quiz.md)  
+[কুইজের সমাধান](/lessons/01-intro-to-genai/solution/solution-quiz.md)  
 
 ---
 
