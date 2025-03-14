@@ -448,7 +448,7 @@ const completion = await openai.chat.completions.create({
 I want you to generate recipes for me.
 ```
 
-![টোকেনাইজার ডেমো](./assets/tokenizer.png)
+![টোকেনাইজার ডেমো](/lessons/02-first-ai-app/assets/tokenizer.png)
 
 উপরের বাক্যে **`tokenizer`** চালালে **৯টি টোকেন** পাওয়া যায়।
 
@@ -522,7 +522,7 @@ const completion = await openai.chat.completions.create({
 ✅ **সহকারীটি ব্যবহারকারীর ইনপুটের উপর ভিত্তি করে পাঠ্য তৈরি করতে পারবে।**  
 ✅ **আপনাকে একটি "system message" সেট করতে হবে, যা সহকারীকে পরিচয় করিয়ে দেবে।**  
 
-শুরু করতে **[Sample app](./sample-app/)** দেখুন।  
+শুরু করতে **[Sample app](/lessons/02-first-ai-app/sample-app/)** দেখুন।  
 
 > **পরামর্শ:** **System message** কেমন হওয়া উচিত এবং ব্যবহারকারীর কী ধরনের ইনপুট প্রদান করা উচিত তা বিবেচনা করুন।
 ## **সমাধান**  
