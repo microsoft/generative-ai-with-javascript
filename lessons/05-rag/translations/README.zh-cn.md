@@ -63,7 +63,7 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 **您**：但是...
 
 <div>
-  <img src="./assets/ada.jpeg" alt="艾达·洛夫莱斯和查尔斯·巴贝奇正在研究一个设备" width="300">
+  <img src="../assets/ada.jpeg" alt="艾达·洛夫莱斯和查尔斯·巴贝奇正在研究一个设备" width="300">
 </div>
 
 查尔斯·巴贝奇走上前来，检查您手中的时间甲虫。"这个设备非常了不起，但它有点故障，不是吗？我想你已经注意到了。"
@@ -85,7 +85,7 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 > [负责任的AI免责声明](../../README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/ada-2.jpeg" alt="艾达·洛夫莱斯" width="300">
+  <img src="../assets/ada-2.jpeg" alt="艾达·洛夫莱斯" width="300">
 </div>
 
 **步骤**：
@@ -96,10 +96,10 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 4. 出现后，选择"在浏览器中打开"按钮。
 5. 与艾达聊天。
 
-有关应用程序的更详细说明，请参见[详细应用程序说明](../01-intro-to-genai/README.md#interact-with-dinocrates)。
+有关应用程序的更详细说明，请参见[详细应用程序说明](../../01-intro-to-genai/README.md#interact-with-dinocrates)。
 
 > [!NOTE]
- > 如果您在本地机器上运行项目，请查看快速入门指南，设置[GitHub个人访问令牌](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)并在代码中替换密钥。
+ > 如果您在本地机器上运行项目，请查看快速入门指南，设置[GitHub个人访问令牌](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)并在代码中替换密钥。
 
 ## 大型语言模型（LLM）的已知挑战
 

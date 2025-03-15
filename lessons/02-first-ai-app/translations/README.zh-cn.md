@@ -42,7 +42,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 环顾船内，你发现一根长桨靠在船边。抓起桨，你开始向远处的建筑物划去。当你靠近时，建筑物变得更加清晰，它们很古老，建筑风格让人联想到文艺复兴时期的画作。
 
 <div>
-  <img src="./assets/boat.png" alt="河上的船，一个人拿着桨站立" width=300" >
+  <img src="../assets/boat.png" alt="河上的船，一个人拿着桨站立" width=300" >
 </div>
 
 现在的问题是，这次你身在何时何地？
@@ -52,7 +52,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 在行走过程中，你注意到一个留着长胡子戴着帽子的人，正在翻找一个看起来像机械零件的箱子。他的手灵活地移动，熟练地分拣齿轮和弹簧。
 
 <div >
-  <img src="./assets/leonardo.png" alt="莱昂纳多·达·芬奇站在港口的箱子旁边" width="300" >
+  <img src="../assets/leonardo.png" alt="莱昂纳多·达·芬奇站在港口的箱子旁边" width="300" >
 </div>
 
 ### 帮帮我，莱昂纳多
@@ -82,7 +82,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 ### 在工作坊
 
 <div>
-  <img src="./assets/leonardo-workshop.png" alt="莱昂纳多的工作坊" width="300" >
+  <img src="../assets/leonardo-workshop.png" alt="莱昂纳多的工作坊" width="300" >
 </div>
 
 老人领你来到一扇大木门前，迎接你的是一个工作坊，里面充满了各种机械装置。
@@ -124,7 +124,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 > [负责任的 AI 免责声明](../../README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/leonardo-talk.jpeg" width=300>
+  <img src="../assets/leonardo-talk.jpeg" width=300>
 </div>
 
 **步骤**：
@@ -135,10 +135,10 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 4. 当它出现时，选择"在浏览器中打开"按钮。
 5. 与莱昂纳多聊天。
 
-有关应用程序的更详细解释，请参见[详细应用程序说明](../01-intro-to-genai/README.md#interact-with-dinocrates)。
+有关应用程序的更详细解释，请参见[详细应用程序说明](../../01-intro-to-genai/README.md#interact-with-dinocrates)。
 
 > [!NOTE]
- > 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
+ > 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
 
 ## 开发环境设置
 
@@ -459,7 +459,7 @@ const completion = await openai.chat.completions.create({
 **时间甲虫：**没什么
 
 <div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="空气螺旋，莱昂纳多·达·芬奇" width="300" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="../assets/helicopter.jpg" alt="空气螺旋，莱昂纳多·达·芬奇" width="300" >
 </div>
 
 > [!NOTE]

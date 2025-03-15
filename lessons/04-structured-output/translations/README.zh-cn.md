@@ -20,14 +20,14 @@ _这个视频介绍了如何提高您的"提示"技能，教您如何向AI提供
 
 *🎥 点击上方图片观看关于提示工程的短视频*
 
-💼 幻灯片：[提示工程](../../videos/slides/02-prompt-engineering.pptx)
+💼 幻灯片：[提示工程](../../../videos/slides/02-prompt-engineering.pptx)
 
 ## 故事情节 - 跳出油锅，掉进火坑
 
 > [!NOTE]
 > _我们的故事到目前为止：您是一位来自1860年的机械工程师，正与达芬奇一起穿越时空。您已经逃脱了罗马士兵的追捕——或者说，您正在逃脱——并且正在拼命寻找一种安全降落空中螺旋机的方法_。
 >
-> 如果您想从头开始了解故事，请参阅[第1课](../01-intro-to-genai/README.md)。
+> 如果您想从头开始了解故事，请参阅[第1课](../../01-intro-to-genai/README.md)。
 
 > [!NOTE]
 > 虽然我们建议您阅读故事（很有趣！），但如果您想直接跳到技术内容，[请点击这里](#interact-with-montezuma)。
@@ -47,7 +47,7 @@ _这个视频介绍了如何提高您的"提示"技能，教您如何向AI提供
 空中螺旋机尴尬地停在一块雕刻精美的大石头上，上面有看起来像日历的标记
 
 <div>
-  <img alt="阿兹特克日历，维基百科" src="./assets/aztec.png" width="300" />
+  <img alt="阿兹特克日历，维基百科" src="../assets/aztec.png" width="300" />
 </div>
 
 _阿兹特克日历，维基百科_
@@ -59,7 +59,7 @@ _阿兹特克日历，维基百科_
 在您做出反应之前，一群阿兹特克士兵走了过来。
 
 <div>
-  <img src="./assets/meeting.png" alt="与阿兹特克人会面" width="300" />
+  <img src="../assets/meeting.png" alt="与阿兹特克人会面" width="300" />
 </div> 
 
 **士兵领袖：**"你们是谁，做了什么？"他用纳瓦特尔语质问道。
@@ -83,7 +83,7 @@ _阿兹特克日历，维基百科_
 **蒙特祖马：**"很好。我提议玩一场[帕托利](#patolli)游戏。如果我赢得三局中的大多数，你们将把你们的设备给我并告诉我它是如何工作的。如果你们赢了，你们可以自由离开。"
 
 <div>
-  <img src="./assets/game.png" alt="玩帕托利游戏" width="300" />
+  <img src="../assets/game.png" alt="玩帕托利游戏" width="300" />
 </div>
 
 游戏开始了，房间里一片寂静，只有豆子滚动和棋子在棋盘上移动的声音。
@@ -115,7 +115,7 @@ _阿兹特克日历，维基百科_
 > **阿兹特克人的参与**：贵族和平民广泛玩这个游戏，它是蒙特祖马宫廷的最爱。除了娱乐外，它还涉及高风险赌博，赌注如毯子、宝石甚至自由。
 
 <div>
-  <img width="300" src="./assets/patolli.png" alt="帕托利棋盘" />
+  <img width="300" src="../assets/patolli.png" alt="帕托利棋盘" />
 </div>
 
 _帕托利 - 维基百科_
@@ -126,10 +126,10 @@ _帕托利 - 维基百科_
 
 > [!IMPORTANT]
 > 这完全是虚构的；响应由AI生成。
-> [负责任的AI免责声明](../../README.md#responsible-ai-disclaimer)
+> [负责任的AI免责声明](../../../README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/montezuma.jpeg" alt="蒙特祖马" width="300" />
+  <img src="../assets/montezuma.jpeg" alt="蒙特祖马" width="300" />
 </div>
 
 **步骤**：
@@ -140,10 +140,10 @@ _帕托利 - 维基百科_
 4. 出现后，选择"在浏览器中打开"按钮。
 5. 与蒙特祖马聊天。
 
-有关应用的更详细解释，请参阅[详细应用解释](../01-intro-to-genai/README.md#interact-with-dinocrates)。
+有关应用的更详细解释，请参阅[详细应用解释](../../01-intro-to-genai/README.md#interact-with-dinocrates)。
 
 > [!NOTE]
-> 如果您在本地机器上运行项目，请查看快速入门指南，设置[GitHub个人访问令牌](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)并替换代码中的密钥。
+> 如果您在本地机器上运行项目，请查看快速入门指南，设置[GitHub个人访问令牌](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)并替换代码中的密钥。
 
 ## 结构化输出
 

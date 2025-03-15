@@ -35,7 +35,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 在你按下按钮之前，工作坊的门突然猛烈撞开，发出雷鸣般的巨响。一个人站在门口，宽肩膀，穿着昂贵的衣服，他在空中挥舞着一张纸，大喊：
 
 <div>
-  <img src="./assets/ludovico.png" alt="愤怒的卢多维科·斯福尔扎冲破门而入" width="300">
+  <img src="../assets/ludovico.png" alt="愤怒的卢多维科·斯福尔扎冲破门而入" width="300">
 </div>
 
 *卢多维科·斯福尔扎（Ludovico Sforza）*
@@ -65,7 +65,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 色彩的旋涡褪去，你发现自己在马车里，现在正沿着罗马的阿皮亚大道（Via Appia）飞驰，令你惊讶的是，你正处于一场赛马比赛的中间。战车轰隆作响地驶过，车轮卷起阵阵尘土。
 
 <div>
-  <img src="./assets/escape.png" alt="从罗马逃脱" width="300">
+  <img src="../assets/escape.png" alt="从罗马逃脱" width="300">
 </div>
 
 **你：**莱昂纳多，我们在哪里？
@@ -105,7 +105,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 你俯瞰这座城市；古老的建筑在你们下方延伸开来。
 
 <div>
-  <img src="./assets/airborne.png" alt="空中飞行，脚悬空俯瞰城市" width="300">
+  <img src="../assets/airborne.png" alt="空中飞行，脚悬空俯瞰城市" width="300">
 </div>
 
 ## 与斯福尔扎互动
@@ -117,7 +117,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 > [负责任的 AI 免责声明](../../../README.md#responsible-ai-disclaimer)
 
 <div >
-  <img  src="./assets/ludovico.png" alt="卢多维科·斯福尔扎" width="300" >
+  <img  src="../assets/ludovico.png" alt="卢多维科·斯福尔扎" width="300" >
 </div>
 
 **步骤**：
