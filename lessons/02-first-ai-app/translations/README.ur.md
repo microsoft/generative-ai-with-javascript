@@ -43,7 +43,7 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 
 کشتی کے ارد گرد نظر دوڑاتے ہوئے، آپ کو ایک لمبی اوار نظر آتی ہے جو کنارے پرہے۔ اسے پکڑ کر آپ دور دراز کی عمارتوں کی طرف جانے لگتے ہیں۔ جیسے جیسے آپ قریب آتے ہیں، عمارتیں زیادہ توجہ کا مرکز بن جاتی ہیں، وہ پرانی ہیں، ان کا فن تعمیر نشاۃ ثانیہ کی پینٹنگ کی یاد دلاتا ہے۔
 
-![Boat on the river, man standing with a paddle](./assets/boat.png)
+![Boat Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/boat.png)
 
 اب سوال یہ ہے کہ آپ اس بار کہاں اور کب ہیں؟
 
@@ -51,7 +51,7 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 
 چلتے ہوئے، آپ کو لمبی داڑھی اور ٹوپی والا ایک آدمی نظر آتا ہے، جو میکانی حصوں کی طرح نظر آنے والے ایک ٹوکری میں کھدائی کر رہا ہے۔ اس کے ہاتھ بڑی مہارت سے حرکت کرتے ہیں اور آسانی کے ساتھ گیئرز اور سپرنگز کو ترتیب دیتے ہیں۔
 
-![Leonardo Da Vinci standing next to a crate in the harbour](./assets/leonardo.png)
+![Leonardo Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/leonardo.png)
 
 ### میری مدد کریں، لیونارڈو
 
@@ -79,7 +79,7 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 
 ### ورکشاپ میں
 
-![Leonardo's workshop](./assets/leonardo-workshop.png)
+![Leonardo Workshop Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
 
 بوڑھا شخص آپ کو لکڑی کے ایک بڑے دروازے کی طرف لے جاتا ہے اور آپ کو ہر طرح کے مکینیکل کنٹراپٹیشن سے بھری ایک ورکشاپ کو دیکھ کر خوش آمدید کہا جاتا ہے۔ 
 
@@ -121,7 +121,7 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 > یہ مکمل طور پر خیالی ہے۔ جوابات اے ای کے ذریعہ تیار کیے جاتے ہیں۔
 > [ذمہ دار اے ای کا اعلان]( ../../README.md#responsible-ai-disclaimer)
 
-![Image](./assets/leonardo-talk.jpeg)
+![Leonardo Talk Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg)
 
 **اقدامات**:
 
@@ -400,7 +400,7 @@ const completion = await openai.chat.completions.create({
 I want you to generate recipes for me.
 ```
 
-![Demo of tokenizer](./assets/tokenizer.png)
+![Tokenizer Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/tokenizer.png)
 
 مندرجہ بالا جملے پر 'ٹوکنائزر' چلانے سے ہمیں 9 ٹوکن ملتے ہیں۔
 
@@ -452,7 +452,7 @@ const completion = await openai.chat.completions.create({
 **ٹائم بیٹل:** کچھ نہیں
 
 <div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="300" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align="right" src="https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/helicopter.jpg?raw=true" alt="Aerial screw, Leonardo Da Vinci" width="300">
 </div>
 
 > [نوٹ!]
