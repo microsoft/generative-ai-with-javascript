@@ -348,7 +348,8 @@ const message = {
 };
 ```
 
-> Note: This used to be called "system". This is a recent change and "developer" is the new term for it. For some models this is still called "system", so if you have any issues use "system".
+> [!NOTE] 
+> This used to be called "system". This is a recent change and "developer" is the new term for it. For some models this is still called "system", so if you have any issues use "system".
 
 **You:** Ok, great, I'll make sure to include a system message in my chat conversations. Out of curiosity, what does a system message look like for you?
 
@@ -439,7 +440,8 @@ const completion = await openai.chat.completions.create({
 
 ```
 
-> TIP: Experiment with different context window sizes to see how it affects the AI's responses.
+> [!TIP] 
+> Experiment with different context window sizes to see how it affects the AI's responses.
 
 ## Assignment - Building an engineering assistant
 
@@ -481,7 +483,8 @@ Your assignment is to build an engineering assistant that can help Leonardo with
 
 Check out [Sample app](./sample-app/) to get started.
 
-> TIP: Consider what the system message should be and what input you should provide.
+> [!TIP] 
+> Consider what the system message should be and what input you should provide.
 
 ## Solution
 

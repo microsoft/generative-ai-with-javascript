@@ -339,7 +339,8 @@ To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that 
 
 Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), or another online chatbot tool to generate a plan for building the lighthouse in Alexandria.
  
-> TIP: Try to have the LLM generate a plan that includes step-by-step instructions for building the lighthouse. Need help? Check out the solution for guidance.
+> [!TIP] 
+> Try to have the LLM generate a plan that includes step-by-step instructions for building the lighthouse. Need help? Check out the solution for guidance.
 
 ## Solution
 
