@@ -578,7 +578,8 @@ parameters: cuisine, delivery_address, payment_method
 ### **রেফারেন্স:**  
 [**নমুনা অ্যাপ**](/lessons/04-structured-output/sample-app) দেখো যেখানে একটি **Node.js প্রকল্প** রয়েছে, যাতে প্রয়োজনীয় সমস্ত ডিপেন্ডেন্সি আছে।  
 
-> **NOTE:** যদি তুমি এখনও **Codespace তৈরি না করে থাকো**, তাহলে এখনই করো, কারণ এটি **AI-এর সাথে যোগাযোগের জন্য প্রয়োজনীয়**।  
+> [!NOTE] 
+> যদি তুমি এখনও **Codespace তৈরি না করে থাকো**, তাহলে এখনই করো, কারণ এটি **AI-এর সাথে যোগাযোগের জন্য প্রয়োজনীয়**।  
 >  
 > বিস্তারিত জানতে, **[Setup your environment](/docs/setup/README.md)** ডকুমেন্টের **"Option 1: Creating a GitHub Codespace"** বিভাগটি দেখো।  
 
