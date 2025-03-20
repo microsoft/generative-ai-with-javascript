@@ -18,14 +18,14 @@ _Este vídeo explica a Geração Aumentada por Recuperação (RAG), um método q
 
 *🎥 Clique na imagem acima para assistir a um vídeo curto sobre geração aumentada por recuperação, RAG*
 
-💼 Slides: [Geração aumentada por recuperação, RAG](../../videos/slides/03-rag.pptx)
+💼 Slides: [Geração aumentada por recuperação, RAG](/videos/slides/03-rag.pptx)
 
 ## Narrativa - Gênesis
 
 > [!NOTE] 
 > _Nossa história até agora. Você é um mecânico da Londres dos anos 1860. Você estava trabalhando em seu autômato e recebeu uma carta de Charles Babbage que acabou levando você a uma biblioteca onde você pegou um dispositivo de viagem no tempo. Durante suas viagens no tempo, você acabou em Florença, onde conheceu Leonardo Da Vinci. Você também foi ao império Asteca e é aqui que a história continua._
 >
-> Veja a [Lição 1](../01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
+> Veja a [Lição 1](/lessons/01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
 
 > [!NOTE] 
 > Embora recomendemos seguir a história (é divertido!), [clique aqui](#interaja-com-ada-lovelace) se preferir ir direto para o conteúdo técnico.
@@ -37,7 +37,7 @@ _Este vídeo explica a Geração Aumentada por Recuperação (RAG), um método q
 Vocês pousam no jardim, é tarde da noite com uma névoa espessa e luzes sinistras piscando à distância. A mansão se ergue diante de vocês. Leonardo olha ao redor, seus olhos arregalados de admiração.
 
 <div>
-  <img src="./assets/mansion.jpeg" alt="Antiga mansão mostrada em uma névoa densa" width="300">
+  <img src="../assets/mansion.jpeg" alt="Antiga mansão mostrada em uma névoa densa" width="300">
 </div>
 
 ### Fugindo dos Cães
@@ -45,7 +45,7 @@ Vocês pousam no jardim, é tarde da noite com uma névoa espessa e luzes sinist
 Você ouve latidos e o som de cães correndo em sua direção. Você se vira para Leonardo: "Precisamos entrar, agora!"
 
 <div>
-  <img src="./assets/dogs.jpeg" alt="Fugindo dos cães" width="300">
+  <img src="../assets/dogs.jpeg" alt="Fugindo dos cães" width="300">
 </div>
 
 Quando você chega à porta da mansão, ela se abre e um par de atendentes sai apressadamente. Depois de avaliá-los, eles fazem sinal para que vocês os sigam.
@@ -63,7 +63,7 @@ Você se encontra cara a cara com Ada Lovelace, seus olhos brilhando de curiosid
 **Você:** Mas...
 
 <div>
-  <img src="./assets/ada.jpeg" alt="Ada Lovelace e Charles Babbage trabalhando em um dispositivo" width="300">
+  <img src="../assets/ada.jpeg" alt="Ada Lovelace e Charles Babbage trabalhando em um dispositivo" width="300">
 </div>
 
 Charles Babbage se aproxima, examinando o Besouro do Tempo em sua mão. "Este dispositivo é notável, mas está um pouco defeituoso, não está? Você deve ter notado, tenho certeza."
@@ -82,10 +82,10 @@ Se você quiser interagir com Ada, execute o aplicativo [Characters](/app/README
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
+  <img src="../assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
 </div>
 
 **Passos**:
@@ -96,10 +96,10 @@ Se você quiser interagir com Ada, execute o aplicativo [Characters](/app/README
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Ada.
 
-Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](../01-intro-to-genai/README.md#interact-with-dinocrates).
+Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+ > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
 
 ## Desafios conhecidos com grandes modelos de linguagem, LLMs
 
@@ -131,7 +131,7 @@ Em sua essência, o RAG envolve dois componentes principais: um **recuperador** 
 
 Aqui está um esquema ilustrando como um sistema RAG funciona:
 
-![Esquema de um sistema RAG](assets/rag.png)
+![Esquema de um sistema RAG](../assets/rag.png)
 
 1. **Entrada do usuário:** O usuário faz uma pergunta.
 2. **Recuperador:** O componente recuperador busca informações relevantes usando uma ou mais bases de conhecimento.
@@ -284,7 +284,7 @@ for await (const chunk of chunks) {
 }
 ```
 
-Você pode encontrar este código no arquivo [`example/rag-cars.js`](./example/rag-cars.js) junto com o arquivo [`hybrid.csv`](./example/hybrid.csv) contendo os dados usados para a recuperação.
+Você pode encontrar este código no arquivo [`example/rag-cars.js`](../example/rag-cars.js) junto com o arquivo [`hybrid.csv`](../example/hybrid.csv) contendo os dados usados para a recuperação.
 
 **Ada:** Uma vez que você execute este código, você deve ver os dados encontrados no arquivo CSV pelo recuperador, formatados como uma tabela markdown, seguidos pela resposta gerada pela IA para a pergunta. Tente mudar a pergunta para ver como os dados recuperados e a resposta mudam. Você também pode tentar fazer perguntas sobre tópicos não relacionados para ver como o modelo de IA lida com eles.
 
@@ -328,7 +328,7 @@ const text = Object.values(data.query.pages)[0]?.extract;
 
 ## Solução
 
-[Solução](./solution/rag-www.js)
+[Solução](../solution/rag-www.js)
 
 ## Verificação de conhecimento
 
@@ -340,7 +340,7 @@ B. O recuperador gera informações relevantes com base nos dados de treinamento
 
 C. O recuperador encontra informações relevantes de fontes de dados externas.
 
-[Solução do quiz](./solution/solution-quiz.md)
+[Solução do quiz](../solution/solution-quiz.md)
 
 ## Recursos para auto-estudo
 

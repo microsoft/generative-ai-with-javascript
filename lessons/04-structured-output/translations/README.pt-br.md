@@ -20,14 +20,14 @@ _Este vídeo oferece uma introdução para melhorar suas habilidades de "prompti
 
 *🎥 Clique na imagem acima para assistir a um vídeo curto sobre engenharia de prompts*
 
-💼 Slides: [Engenharia de prompts](../../videos/slides/02-prompt-engineering.pptx)
+💼 Slides: [Engenharia de prompts](/videos/slides/02-prompt-engineering.pptx)
 
 ## Narrativa - Da frigideira para o fogo
 
 > [!NOTE]
 > _Nossa história até agora: Você, um engenheiro treinado em mecânica de 1860, tem estado em uma jornada através do tempo com Leonardo da Vinci. Você escapou dos soldados romanos — ou melhor, está em processo de escapar deles — e está desesperadamente procurando uma maneira de pousar o parafuso aéreo com segurança_.
 >
-> Veja a [Lição 1](../01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
+> Veja a [Lição 1](/lessons/01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
 
 > [!NOTE]
 > Embora recomendemos seguir a história (é divertido!), [clique aqui](#interaja-com-montezuma) se preferir ir direto para o conteúdo técnico.
@@ -47,7 +47,7 @@ A luz brilhante do Besouro do Tempo desaparece, e você se vê parado na base de
 O parafuso aéreo repousa desajeitadamente sobre uma grande pedra intrincadamente esculpida, com marcações que parecem um calendário
 
 <div>
-  <img alt="Calendário asteca, Wikipedia" src="./assets/aztec.png" width="300" />
+  <img alt="Calendário asteca, Wikipedia" src="../assets/aztec.png" width="300" />
 </div>
 
 _Calendário asteca, Wikipedia_
@@ -59,7 +59,7 @@ Leonardo da Vinci avança, seus olhos arregalados de admiração.
 Antes que você possa reagir, um grupo de soldados astecas se aproxima.
 
 <div>
-  <img src="./assets/meeting.png" alt="Encontro com astecas" width="300" />
+  <img src="../assets/meeting.png" alt="Encontro com astecas" width="300" />
 </div> 
 
 **Líder dos soldados:** "Quem são vocês e o que fizeram?" ele exige em Nahuatl.
@@ -83,7 +83,7 @@ Ao chegar ao topo da pirâmide, você é conduzido a uma grande câmara onde Mon
 **Montezuma:** "Muito bem. Proponho um jogo de [Patolli](#patolli). Se eu vencer a melhor de três partidas, vocês me darão seu dispositivo e me dirão como ele funciona. Se vocês vencerem, estarão livres para ir."
 
 <div>
-  <img src="./assets/game.png" alt="Jogando uma partida de Patolli" width="300" />
+  <img src="../assets/game.png" alt="Jogando uma partida de Patolli" width="300" />
 </div>
 
 O jogo começa, e a sala fica em silêncio, exceto pelo som de feijões sendo rolados e peças se movendo pelo tabuleiro.
@@ -115,7 +115,7 @@ Com um movimento final e decisivo, Leonardo vence o jogo. A sala explode em viva
 > **Envolvimento Asteca**: Amplamente jogado por nobres e plebeus, era um favorito na corte de Montezuma. Além de diversão, envolvia apostas de alto risco com apostas como cobertores, pedras preciosas ou até mesmo a liberdade.
 
 <div>
-  <img width="300" src="./assets/patolli.png" alt="Tabuleiro de Patolli" />
+  <img width="300" src="../assets/patolli.png" alt="Tabuleiro de Patolli" />
 </div>
 
 _Patolli - Wikipedia_
@@ -126,10 +126,10 @@ Se você quiser interagir com Montezuma, execute o aplicativo [Characters](/app/
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/montezuma.jpeg" alt="Montezuma" width="300" />
+  <img src="../assets/montezuma.jpeg" alt="Montezuma" width="300" />
 </div>
 
 **Passos**:
@@ -140,10 +140,10 @@ Se você quiser interagir com Montezuma, execute o aplicativo [Characters](/app/
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Montezuma.
 
-Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](../01-intro-to-genai/README.md#talk-to-dinocrates).
+Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+ > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
 
 ## Saída Estruturada
 
@@ -528,7 +528,7 @@ Esta combinação de apresentar habilidades e parâmetros e extrair dados de pro
 
 **Instrução:** Escreva um prompt que solicite a sequência de inicialização para o parafuso aéreo, o texto deve ser espelhado e codificado com uma cifra de César com um deslocamento de 3. Responda com o texto codificado.
 
-Veja o [aplicativo de exemplo](./sample-app) para começar com o código. Ele contém um projeto Node.js com todas as dependências necessárias.
+Veja o [aplicativo de exemplo](/app/README.md) para começar com o código. Ele contém um projeto Node.js com todas as dependências necessárias.
 
 > NOTA: Se você ainda não criou um Codespace, faça isso agora, pois precisará dele para que a comunicação com IA no aplicativo de exemplo funcione.
 >
@@ -536,7 +536,7 @@ Veja o [aplicativo de exemplo](./sample-app) para começar com o código. Ele co
 
 ## Solução
 
-[Solução](./solution/solution.md)
+[Solução](../solution/solution.md)
 
 ## Desafio
 
@@ -564,7 +564,7 @@ B. Extrair dados de prompts.
 
 C. Gerar texto não estruturado.
 
-[Solução do quiz](./solution/solution-quiz.md)
+[Solução do quiz](../solution/solution-quiz.md)
 
 ## Recursos para auto-estudo
 

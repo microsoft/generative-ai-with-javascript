@@ -18,14 +18,14 @@ _Este vídeo oferece uma introdução para melhorar suas habilidades de "prompti
 
 *🎥 Clique na imagem acima para assistir a um vídeo curto sobre engenharia de prompts*
 
-💼 Slides: [Engenharia de prompts](../../videos/slides/02-prompt-engineering.pptx)
+💼 Slides: [Engenharia de prompts](/videos/slides/02-prompt-engineering.pptx)
 
 ## Narrativa: Passagem para aventura
 
 > [!NOTE] 
 > Até agora, você esteve em uma jornada através do tempo com Leonardo da Vinci, explorando as maravilhas do Renascimento. Você encontrou o Besouro do Tempo, um dispositivo misterioso que permite viajar através do tempo e do espaço.
 >
-> Veja a [Lição 1](../01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
+> Veja a [Lição 1](/lessons/01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
 
 > [!NOTE] 
 > Embora recomendemos seguir a história (é divertido!), [clique aqui](#interaja-com-sforza) se preferir ir direto para o conteúdo técnico.
@@ -35,7 +35,7 @@ _Este vídeo oferece uma introdução para melhorar suas habilidades de "prompti
 Antes que você consiga pressionar o botão, as portas da oficina se abrem com um estrondo. Um homem está na entrada, de ombros largos e vestido com roupas caras, ele agita um pedaço de papel no ar, gritando:
 
 <div>
-  <img src="./assets/ludovico.png" alt="Um Ludovico Sforza furioso irrompendo pela porta" width="300">
+  <img src="../assets/ludovico.png" alt="Um Ludovico Sforza furioso irrompendo pela porta" width="300">
 </div>
 
 *Ludovico Sforza* 
@@ -65,7 +65,7 @@ Um turbilhão de cores envolve a carruagem, o mundo ao seu redor se dissolve em 
 O turbilhão de cores desaparece, e você se encontra na carruagem, agora correndo pela Via Appia em Roma e, para seu espanto, está no meio de uma corrida de cavalos. Bigas trovejam passando, suas rodas levantando nuvens de poeira. 
 
 <div>
-  <img src="./assets/escape.png" alt="Fuga de Roma" width="300">
+  <img src="../assets/escape.png" alt="Fuga de Roma" width="300">
 </div>
 
 **Você:** Leonardo, onde estamos? 
@@ -105,7 +105,7 @@ Com um impulso final, o parafuso aéreo começa a girar. As lâminas pegam o ar,
 Você olha para a cidade; os edifícios antigos se estendem abaixo de você.
 
 <div>
-  <img src="./assets/airborne.png" alt="No ar, olhando para a cidade com os pés pendurados" width="300">
+  <img src="../assets/airborne.png" alt="No ar, olhando para a cidade com os pés pendurados" width="300">
 </div>
 
 ## Interaja com Sforza
@@ -114,10 +114,10 @@ Se você quiser interagir com Sforza, execute o aplicativo [Characters](/app/REA
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div >
-  <img  src="./assets/ludovico.png" alt="Ludovico Sforza" width="300" >
+  <img  src="../assets/ludovico.png" alt="Ludovico Sforza" width="300" >
 </div>
 
 **Passos**:
@@ -128,10 +128,10 @@ Se você quiser interagir com Sforza, execute o aplicativo [Characters](/app/REA
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Sforza.
 
-Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](../01-intro-to-genai/README.md#talk-to-dinocrates).
+Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+ > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
 
 ## O que é engenharia de prompts?
 
@@ -306,7 +306,7 @@ Construa um aplicativo que pergunte por:
 
 Use a técnica de cadeia de pensamento para chegar a uma resposta.
 
-Aqui está um projeto inicial [Projeto inicial](./sample-app/).
+Aqui está um projeto inicial [Projeto inicial](/app/README.md).
 
 ## Solução
 
@@ -320,7 +320,7 @@ Construa um aplicativo em JavaScript que peça as seguintes entradas:
 
 Em seguida, use o LLM para incorporar essas entradas e aproveitar a técnica de prompting de cadeia de pensamento para guiar o modelo até a resposta correta.
 
-[Solução](./solution/solution.md) 
+[Solução](../solution/solution.md) 
 
 ## Verificação de conhecimento 
 
@@ -332,7 +332,7 @@ B. Engenharia de prompts é sobre elaborar os prompts certos para obter a saída
 
 C. Engenharia de prompts é sobre treinar um modelo para reconhecer padrões em dados.
 
-[Solução do quiz](./solution/solution-quiz.md)
+[Solução do quiz](../solution/solution-quiz.md)
 
 ## Recursos para auto-estudo
 

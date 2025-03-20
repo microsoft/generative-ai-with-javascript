@@ -358,4 +358,4 @@ C. Python is the only language used for AI development.
 
 ## Self-Study resources
 
-- [Generative AI JavaScript video series](https://genai-js)
+- [Generative AI JavaScript video series](https://aka.ms/genai-js)
