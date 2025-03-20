@@ -43,7 +43,7 @@ No coração da Londres de 1860, você é reconhecido como um dos mecânicos mai
 Sua bancada de trabalho, o coração da sua oficina, é uma bagunça organizada.
 
 <div>
-   <img src="./assets/london.png" alt="Oficina em Londres" width=300 >
+   <img src="../assets/london.png" alt="Oficina em Londres" width=300 >
 </div>
 
 _No centro da bancada está o torso de um robô—uma maravilha da engenharia que consumiu meses de esforço. Sua estrutura de madeira é intrincadamente esculpida, cada articulação meticulosamente projetada para movimentos suaves._
