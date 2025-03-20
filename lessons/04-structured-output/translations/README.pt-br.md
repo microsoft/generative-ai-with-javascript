@@ -126,7 +126,7 @@ Se você quiser interagir com Montezuma, execute o aplicativo [Characters](/app/
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
   <img src="../assets/montezuma.jpeg" alt="Montezuma" width="300" />

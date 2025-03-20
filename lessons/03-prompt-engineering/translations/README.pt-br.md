@@ -25,7 +25,7 @@ _Este vídeo oferece uma introdução para melhorar suas habilidades de "prompti
 > [!NOTE] 
 > Até agora, você esteve em uma jornada através do tempo com Leonardo da Vinci, explorando as maravilhas do Renascimento. Você encontrou o Besouro do Tempo, um dispositivo misterioso que permite viajar através do tempo e do espaço.
 >
-> Veja a [Lição 1](../01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
+> Veja a [Lição 1](/lessons/01-intro-to-genai/README.md) se quiser acompanhar a história desde o início. 
 
 > [!NOTE] 
 > Embora recomendemos seguir a história (é divertido!), [clique aqui](#interaja-com-sforza) se preferir ir direto para o conteúdo técnico.
@@ -114,7 +114,7 @@ Se você quiser interagir com Sforza, execute o aplicativo [Characters](/app/REA
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div >
   <img  src="../assets/ludovico.png" alt="Ludovico Sforza" width="300" >
@@ -131,7 +131,7 @@ Se você quiser interagir com Sforza, execute o aplicativo [Characters](/app/REA
 Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+ > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
 
 ## O que é engenharia de prompts?
 

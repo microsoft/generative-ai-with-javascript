@@ -358,4 +358,4 @@ C. Python é a única linguagem usada para desenvolvimento de IA.
 
 ## Recursos para auto-estudo
 
-- [Série de vídeos sobre JavaScript para IA Generativa](https://genai-js)
+- [Série de vídeos sobre JavaScript para IA Generativa](https://aka.ms/genai-js)

@@ -528,7 +528,7 @@ This combination of presenting skills and parameters and extracting data from pr
 
 **Instruction:** Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
 
-See the [sample app](./app/README.md) for code to get started with. It contains a Node.js project with all the dependencies you need.
+See the [sample app](/app/README.md) for code to get started with. It contains a Node.js project with all the dependencies you need.
 
 > NOTE: If you haven't created a Codespace, please do so now as you will need it to get the AI communication in the sample app to work.
 >
