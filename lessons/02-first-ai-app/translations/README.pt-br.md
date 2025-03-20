@@ -18,7 +18,7 @@ _Este vídeo apresenta uma introdução aos modelos de IA chamados "grandes mode
 
 *🎥 Clique na imagem acima para assistir a um vídeo curto sobre grandes modelos de linguagem*
 
-💼 Slides: [Introdução aos grandes modelos de linguagem, LLMs](../../videos/slides/01-llms.pptx)
+💼 Slides: [Introdução aos grandes modelos de linguagem, LLMs](/videos/slides/01-llms.pptx)
 
 ## Narrativa: Imagine-se em um barco num rio
 
@@ -26,7 +26,7 @@ _Este vídeo apresenta uma introdução aos modelos de IA chamados "grandes mode
 > [!NOTE] 
 > _Nossa história até agora: Você é um criador de coisas, um artesão da Londres dos anos 1860 que viajou através do tempo usando um dispositivo misterioso chamado Besouro do Tempo. Você viajou pelos anais da história, testemunhando a criação do farol de Alexandria, uma maravilha da engenharia antiga que você ajudou a criar com uma pequena ajuda de Dinócrates e do Besouro do Tempo._
 >
-> Veja a [Lição 1](../01-intro-to-genai/README.md) se quiser acompanhar a história desde o início e começar com IA Generativa. 
+> Veja a [Lição 1](/lessons/01-intro-to-genai/README.md) se quiser acompanhar a história desde o início e começar com IA Generativa. 
 
 > [!NOTE] 
 > Embora recomendemos seguir a história (é divertido!), [clique aqui](#interaja-com-leonardo) se preferir ir direto para o conteúdo técnico.
@@ -42,7 +42,7 @@ Quando você abre os olhos, o mundo mudou. Ao conseguir se levantar, você perce
 Observando o barco, você encontra um remo longo apoiado na lateral. Segurando-o, você começa a remar em direção aos edifícios distantes. À medida que se aproxima, os edifícios ficam mais nítidos, são antigos, sua arquitetura lembrando uma pintura renascentista.
 
 <div>
-  <img src="./assets/boat.png" alt="Barco no rio, homem em pé com um remo" width=300" >
+  <img src="../assets/boat.png" alt="Barco no rio, homem em pé com um remo" width=300" >
 </div>
 
 A questão agora é: onde e quando você está desta vez?
@@ -52,7 +52,7 @@ Você consegue atracar o barco no cais e começa a caminhar ao longo das tábuas
 Enquanto caminha, você nota um homem com uma longa barba e um chapéu, remexendo em uma caixa do que parecem ser peças mecânicas. Suas mãos se movem com destreza, separando engrenagens e molas com facilidade experiente.
 
 <div >
-  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci em pé ao lado de uma caixa no porto" width="300" >
+  <img src="../assets/leonardo.png" alt="Leonardo Da Vinci em pé ao lado de uma caixa no porto" width="300" >
 </div>
 
 ### Ajude-me, Leonardo
@@ -82,7 +82,7 @@ Enquanto caminha, você nota um homem com uma longa barba e um chapéu, remexend
 ### Na oficina
 
 <div>
-  <img src="./assets/leonardo-workshop.png" alt="Oficina de Leonardo" width="300" >
+  <img src="../assets/leonardo-workshop.png" alt="Oficina de Leonardo" width="300" >
 </div>
 
 O velho o leva até uma grande porta de madeira e você é recebido pela visão de uma oficina cheia de todo tipo de engenhocas mecânicas. 
@@ -122,10 +122,10 @@ Se você quiser interagir com Leonardo, execute o aplicativo [Characters](/app/R
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/leonardo-talk.jpeg" width=300>
+  <img src="../assets/leonardo-talk.jpeg" width=300>
 </div>
 
 **Passos**:
@@ -136,10 +136,10 @@ Se você quiser interagir com Leonardo, execute o aplicativo [Characters](/app/R
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Leonardo.
 
-Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](../01-intro-to-genai/README.md#interaja-com-dinocrates).
+Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interaja-com-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+ > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
 
 ## Configuração do ambiente de desenvolvimento 
 
@@ -409,7 +409,7 @@ Isso significa que a maioria dos tokens pode ser gasta nos tokens de entrada, ou
 Quero que você gere receitas para mim.
 ```
 
-![Demonstração do tokenizer](./assets/tokenizer.png)
+![Demonstração do tokenizer](../assets/tokenizer.png)
 
 Executar o `tokenizer` na frase acima nos dá 9 tokens.
 
@@ -462,7 +462,7 @@ Leonardo de repente pediu para inspecionar o Besouro do Tempo mais de perto, olh
 **Besouro do Tempo:** Nada
 
 <div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Parafuso aéreo, Leonardo Da Vinci" width="300" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="../assets/helicopter.jpg" alt="Parafuso aéreo, Leonardo Da Vinci" width="300" >
 </div>
 
 > [!NOTE]
@@ -481,14 +481,14 @@ Sua tarefa é construir um assistente de engenharia que possa ajudar Leonardo co
 
 - Você deve definir uma mensagem de sistema para apresentar o assistente.
 
-Confira o [Aplicativo de exemplo](./sample-app/) para começar.
+Confira o [Aplicativo de exemplo](/app/README.md) para começar.
 
 > [!TIP] 
 > Considere qual deve ser a mensagem do sistema e qual entrada você deve fornecer.
 
 ## Solução
 
-[Solução](./solution/solution.md)
+[Solução](../solution/solution.md)
 
 ## Verificação de conhecimento
 
@@ -500,7 +500,7 @@ B. A janela de contexto é o número de mensagens anteriores que a IA usa para g
 
 C. A janela de contexto determina quão criativas são as respostas da IA.
 
-[Solução do quiz](./solution/solution-quiz.md)
+[Solução do quiz](../solution/solution-quiz.md)
 
 ## Recursos para auto-estudo
 

@@ -16,7 +16,7 @@ Se você ainda não configurou seu ambiente de desenvolvimento, veja como fazer:
 
 _Este vídeo apresenta uma introdução à IA Generativa com JavaScript_
 
-💼 Slides: [Introdução à IA Generativa](../../videos/slides/00-intro.pptx)
+💼 Slides: [Introdução à IA Generativa](/videos/slides/00-intro.pptx)
 
 ## IA Generativa
 
@@ -75,7 +75,7 @@ Está escuro e sombrio lá dentro, a única luz filtrando através das janelas e
 Conforme seus olhos se adaptam à luz fraca, você nota uma figura à distância, acenando para você. Você caminha em sua direção, seus passos ecoando no piso de madeira. A figura fica mais clara, e você a reconhece das fotos de jornal, é Charles Babbage.
 
 <div>
-   <img src="./assets/library.png" alt="Biblioteca Empoeirada" width="300">
+   <img src="../assets/library.png" alt="Biblioteca Empoeirada" width="300">
 </div>
 
 ### O que é este dispositivo?
@@ -91,7 +91,7 @@ Impulsionado pela curiosidade, seus dedos deslizam em direção ao botão vermel
 Então, escuridão, e uma sensação de queda.
 
 <div>
-   <img src="./assets/vortex.png" alt="Vórtice do Tempo" width="300">
+   <img src="../assets/vortex.png" alt="Vórtice do Tempo" width="300">
 </div>
 
 ### Alexandria 300 a.C.
@@ -101,7 +101,7 @@ Você acorda, desorientado. À medida que sua visão se clareia, uma cidade anti
 Pessoas em togas movimentam-se pelas ruas, suas vozes se mesclando em uma sinfonia de dialetos antigos, o ar preenchido com o aroma de especiarias exóticas e o som distante de mercadores anunciando suas mercadorias.
 
 <div>
-   <img src="./assets/alexandria.png" alt="Alexandria 300 a.C." width="300">
+   <img src="../assets/alexandria.png" alt="Alexandria 300 a.C." width="300">
 </div>
 
 **Você:** Certamente, devo ter batido a cabeça, você pensa, fechando os olhos e abrindo-os novamente, a cena permanece inalterada.
@@ -113,7 +113,7 @@ Estou preso no passado? Devo pressionar aquele botão novamente? Antes que você
 Um senhor idoso vestindo uma toga acena para você dos degraus do grande templo. Seu cabelo branco e barba capturam a luz do sol, dando-lhe um brilho quase etéreo.
 
 <div>
-   <img src="./assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
+   <img src="../assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
 </div>
 
 **Dinócrates:** "Bem-vindo, viajante," ele diz calorosamente. "Eu sou Dinócrates, arquiteto desta grande cidade. Sua chegada foi prevista."
@@ -145,7 +145,7 @@ Um pensamento lhe ocorre. O dispositivo pode me entender se eu falar com ele?
 **Você:** Você está certo, George é um bom nome, era o nome do meu pai, na verdade.
 
 <div>
-   <img src="./assets/time-beetle.png" alt="Dispositivo de viagem no tempo semelhante a um besouro metálico" width="300">
+   <img src="../assets/time-beetle.png" alt="Dispositivo de viagem no tempo semelhante a um besouro metálico" width="300">
 </div>
 
 _Dispositivo de tempo, "George" o besouro metálico_
@@ -163,10 +163,10 @@ Se você quiser interagir com Dinócrates, execute o aplicativo [Characters](/ap
 
 > [!IMPORTANT]
 > Isso é inteiramente fictício; as respostas são geradas por IA.
-> [Aviso sobre IA Responsável](../../README.md#responsible-ai-disclaimer)
+> [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-   <img src="./assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
+   <img src="../assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
 </div>
 
 **Passos**:
@@ -178,7 +178,7 @@ Se você quiser interagir com Dinócrates, execute o aplicativo [Characters](/ap
 5. Converse com Dinócrates.
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+ > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
 
 ### Uma prévia do código
 
@@ -344,7 +344,7 @@ Visite [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://cha
 
 ## Solução
 
-[Solução](./solution/solution.md)
+[Solução](../solution/solution.md)
 
 ### Verificação de conhecimento
 
@@ -354,7 +354,7 @@ A. Aplicativos de IA Generativa com JavaScript só podem gerar texto.
 B. JavaScript pode ser usado para construir aplicações alimentadas por IA, incluindo chatbots, ferramentas de geração de texto e muito mais.
 C. Python é a única linguagem usada para desenvolvimento de IA.
 
-[Solução do quiz](./solution/solution-quiz.md)
+[Solução do quiz](../solution/solution-quiz.md)
 
 ## Recursos para auto-estudo
 
