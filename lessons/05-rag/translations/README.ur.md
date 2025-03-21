@@ -126,7 +126,7 @@ _یہ ویڈیو ریٹریول اگمنٹڈ جنریشن (آر اے جی) کی 
 
 آر اے جی سسٹم کس طرح کام کرتا ہے اس کی وضاحت کرنے والا ایک اسکیما یہ ہے:
 
-![Schema of a RAG system](./assets/rag.png)
+![RAG Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/05-rag/assets/rag.png)
 
 1. **صارف ان پٹ:** صارف ایک سوال پوچھتا ہے.
 2. **ریٹریور:** ریٹریور جزو ایک یا ایک سے زیادہ علم کی بنیادوں کا استعمال کرتے ہوئے متعلقہ معلومات کی تلاش کرتا ہے.
@@ -292,7 +292,6 @@ Found 1 matches:
 | Leonardo Da Vinci | 15th century | Italian polymath known for his art and inventions. |
 | Isaac Newton | 17th century | English mathematician and physicist who formulated the laws of motion and universal gravitation. |
 ```
-
 
 **آپ:** یہ بہت اچھا ہے، میں دیکھ سکتا ہوں کہ آلہ استعمال کرتے وقت یہ کس طرح مفید ہوسکتا ہے، یا بلکہ یہ پہلے سے ہی کیا ہے یا ہوگا، وقت کا سفر الجھن ہے.
 
