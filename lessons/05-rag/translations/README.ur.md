@@ -74,12 +74,12 @@ _یہ ویڈیو ریٹریول اگمنٹڈ جنریشن (آر اے جی) کی 
 
 ## ایڈا لولیس کے ساتھ بات چیت کریں
 
-اگر آپ ایڈا کے ساتھ بات چیت کرنا چاہتے ہیں تو، [حروف]( /app/README.md) ایپ چلائیں۔ 
+اگر آپ ایڈا کے ساتھ بات چیت کرنا چاہتے ہیں تو، [حروف](/app/README.md) ایپ چلائیں۔ 
 
 > [اہم!]
 
 > یہ مکمل طور پر خیالی ہے۔ جوابات  اے ائی کے ذریعہ تیار کیے جاتے ہیں۔
-> [ذمہ دار اے ائی کا اعلان]( ../../README.md#responsible-ai-disclaimer)
+> [ذمہ دار اے ائی کا اعلان](/README.md#responsible-ai-disclaimer)
 
 ![Ada 2 Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/05-rag/assets/ada-2.jpeg)
 
