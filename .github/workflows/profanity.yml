@@ -1,0 +1,31 @@
+# The name of the workflow
+name: Profanity filter
+
+# Trigger on issue or pull requests, that are opened, edited, or reopened
+on:
+  pull_request:
+    types: [opened, edited, reopened]
+
+# Required permissions
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  # Name the job whatever you'd like
+  apply-filter:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # Name the step anything that makes sense to you
+    - name: Scan issue or pull request for profanity
+      # Conditionally run the step if the actor isn't a bot
+      if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'github-actions[bot]' }}
+      uses: IEvangelist/profanity-filter@main
+      id: profanity-filter
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        # See https://bit.ly/potty-mouth-replacement-strategies
+        replacement-strategy: Emoji # See Replacement strategy

@@ -136,7 +136,7 @@ If you want to interact with Leonardo, run the [Characters](/app/README.md) app.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Leonardo.
 
-For a more detailed explanation of the app, see [Detailed app explanation](../01-intro-to-genai/README.md#interact-with-dinocrates).
+For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
  > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
@@ -348,7 +348,8 @@ const message = {
 };
 ```
 
-> Note: This used to be called "system". This is a recent change and "developer" is the new term for it. For some models this is still called "system", so if you have any issues use "system".
+> [!NOTE] 
+> This used to be called "system". This is a recent change and "developer" is the new term for it. For some models this is still called "system", so if you have any issues use "system".
 
 **You:** Ok, great, I'll make sure to include a system message in my chat conversations. Out of curiosity, what does a system message look like for you?
 
@@ -439,7 +440,8 @@ const completion = await openai.chat.completions.create({
 
 ```
 
-> TIP: Experiment with different context window sizes to see how it affects the AI's responses.
+> [!TIP] 
+> Experiment with different context window sizes to see how it affects the AI's responses.
 
 ## Assignment - Building an engineering assistant
 
@@ -479,9 +481,10 @@ Your assignment is to build an engineering assistant that can help Leonardo with
 
 - You should set a system message to introduce the assistant.
 
-Check out [Sample app](./sample-app/) to get started.
+Check out [Sample app](/app/README.md) to get started.
 
-> TIP: Consider what the system message should be and what input you should provide.
+> [!TIP] 
+> Consider what the system message should be and what input you should provide.
 
 ## Solution
 
