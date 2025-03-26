@@ -45,7 +45,9 @@ _یہ ویڈیو آپ کو جاوا اسکرپٹ کے ساتھ جنریٹیو ا
 
 آپ کا ورک بنچ، آپ کی ورکشاپ کا دل، ایک منظم گڑبڑ ہے۔
 
-![Image](https://github.com/user-attachments/assets/1438deb0-9dc5-4698-9985-c537a9e37413)
+<div>
+   <img src="https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/01-intro-to-genai/assets/london.png" alt="London Workshop" width="300">
+</div>
 
 _بینچ کے مرکز میں ایک روبوٹ کا دھڑ ہے - ایک انجینئرنگ کا معجزہ جس نے مہینوں کی محنت لی ہے۔ اس کا لکڑی کا فریم پیچیدہ طور پر تراشا گیا ہے، ہر جوڑ کو ہموار نقل و حرکت کے لئے احتیاط سے ڈیزائن کیا گیا ہے۔_
 
@@ -75,7 +77,9 @@ _چارلس بیبیج."_
 
 جیسے ہی آپ کی آنکھیں مدھم روشنی میں ایڈجسٹ ہوتی ہیں، آپ کو دور سے ایک تصویر نظر آتی ہے، جو آپ کی طرف ہاتھ ہلا رہی ہے۔ آپ اس کی طرف چلتے ہیں، آپ کے قدم لکڑی کے فرش پر گونج رہے ہیں۔ تصویر واضح ہو جاتی ہے، اور آپ اسے اخبار کی تصاویر سے پہچانتے ہیں، یہ چارلس بیبیج ہے.
 
-![Image](https://github.com/user-attachments/assets/31c98b4a-36b8-405f-bd98-700e11258208)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png" alt="Library Workshop" width="300">
+</div>
 
 ### یہ آلہ کیا ہے؟
 
@@ -89,7 +93,9 @@ _چارلس بیبیج."_
 
 پھر، سیاہی، اور گرنے کا احساس.
 
-![Image](https://github.com/user-attachments/assets/d1e28ea1-05c6-47f9-b1aa-ec848249e32a)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png" alt="Vortex Image" width="300">
+</div>
 
 ### اسکندریہ 300 قبل مسیح
 
@@ -97,7 +103,9 @@ _چارلس بیبیج."_
 
 ٹوگا پہنے لوگ گلیوں میں گھومتے پھرتے ہیں، ان کی آوازیں قدیم بولیوں کی سمفنی میں گھل مل جاتی ہیں، غیر ملکی مصالحوں کی خوشبو سے بھری ہوا اور تاجروں کی دور دراز کی آوازیں اپنے سامانوں کو چرا رہی ہیں۔
 
-![Image](https://github.com/user-attachments/assets/dcab58f3-1638-45ae-bd1c-0d9dd180419e)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png" alt="Alexandria Image" width="300">
+</div>
 
 **آپ:** یقینا، میں نے اپنے سر کو مارا ہوگا، آپ سوچتے ہیں، اپنی آنکھیں بند کرکے انہیں دوبارہ کھولتے ہوئے، منظر میں کوئی تبدیلی نہیں آئی ہے.
 
@@ -107,7 +115,9 @@ _چارلس بیبیج."_
 
 عظیم الشان مندر کی سیڑھیوں سے ٹوگا پہنے ہوئے ایک بزرگ صاحب آپ کی طرف دیکھ رہے تھے۔ اس کے سفید بال اور داڑھی سورج کی روشنی کو پکڑتے ہیں، جس سے اسے تقریبا حقیقی چمک ملتی ہے۔
 
-![Image](https://github.com/user-attachments/assets/b203f48e-ad01-4259-b40c-f437de13137b)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png" alt="Dinocrates Image" width="300">
+</div>
 
 **ڈائنوکریٹس:** "خوش آمدید، مسافر،" وہ گرم جوشی سے کہتا ہے. "میں اس عظیم شہر کا معمار ہوں۔ آپ کی آمد کی پیش گوئی کی گئی تھی۔"
 
@@ -137,7 +147,9 @@ _چارلس بیبیج."_
 
 **آپ:** آپ صحیح کہہ رہے ہیں، جارج ایک اچھا نام ہے، یہ درحقیقت میرے والد کا نام تھا.
 
-![Image](https://github.com/user-attachments/assets/d1ede3b2-3b5c-4535-b8fa-93faee54d7bf) 
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png" alt="Time Beetle Image" width="300">
+</div>
 
 _وقت کا آلہ ، "جارج" دھاتی بیٹل_
 
@@ -157,7 +169,9 @@ _وقت کا آلہ ، "جارج" دھاتی بیٹل_
 
 > یہ مکمل طور پر خیالی ہے۔ جوابات اے آئی کے ذریعہ تیار کیے جاتے ہیں۔
 > [ذمہ دار اے آئی کا اعلان](../../README.md#responsible-ai-disclaimer)
-![Image](https://github.com/user-attachments/assets/f549e050-1f73-4604-836f-0aadbf02ee46) 
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png" alt="Dinocrates Image" width="300">
+</div>
 
 **اقدامات**:
 
