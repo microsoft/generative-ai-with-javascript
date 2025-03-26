@@ -48,7 +48,9 @@ _یہ ویڈیو آپ کی " پرامپٹنگ" کی مہارت کو بہتر ب�
 
 ہوائی سکرو، عجیب طریقے سے ایک بڑے، پیچیدہ طور پر تراشے گئے پتھر پر پڑا ہے، جس پر نشانات ہیں جو کیلنڈر کی طرح نظر آتے ہیں۔
 
-![Aztec Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/04-structured-output/assets/aztec.png)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/aztec.png" alt="Aztec Image" width="300">
+</div>
 
 _ایزٹیک کیلنڈر، وکیپیڈیا_
  
@@ -58,7 +60,9 @@ _ایزٹیک کیلنڈر، وکیپیڈیا_
 
 اس سے پہلے کہ آپ رد عمل ظاہر کرسکیں ، ایزٹیک فوجیوں کا ایک گروپ قریب آتا ہے۔
 
-![Meeting Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/04-structured-output/assets/meeting.png)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/meeting.png" alt="Meeting Image" width="300">
+</div>
 
 **فوجی رہنما:** "آپ کون ہیں، اور آپ نے کیا کیا ہے؟" وہ ناہواتل میں مطالبہ کرتے ہیں.
 
@@ -80,7 +84,9 @@ _ایزٹیک کیلنڈر، وکیپیڈیا_
 
 **مونٹیزوما:** "بہت اچھا. میں [پٹولی](patolli#) کا ایک کھیل تجویز کرتا ہوں۔ اگر میں تین کھیلوں میں سے بہترین جیتتا ہوں تو ، آپ مجھے اپنا آلہ دیں گے اور مجھے بتائیں گے کہ یہ کیسے کام کرتا ہے۔ اگر آپ جیت جاتے ہیں، تو آپ جانے کے لئے آزاد ہیں."
 
-![Game Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/04-structured-output/assets/game.png)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/game.png" alt="Game Image" width="300">
+</div>
 کھیل شروع ہوتا ہے، اور سب خاموش ہو جاتے ہیں، سوائے بین کے گھمانے اور ٹکڑوں کے بورڈ میں گھومنے کی آواز کے۔
 
 مونٹیزوما نے پہلا گیم جیتا، اس کی مہارت اور تجربہ واضح ہے۔ لیونارڈو، بورڈ کا بغور مطالعہ کرتا ہے، اس کا دماغ حکمت عملی اور امکانات کے ذریعے کام کرتا ہے.
@@ -110,7 +116,9 @@ _ایزٹیک کیلنڈر، وکیپیڈیا_
 >
 > **ازٹیک شمولیت**: امراء اور عام لوگوں کی طرف سے بڑے پیمانے پر کھیلا جاتا ہے، یہ مونٹیزوما کے دربار میں پسندیدہ تھا. تفریح کے علاوہ، اس میں کمبل، قیمتی پتھر، یا یہاں تک کہ آزادی جیسے شرطوں کے ساتھ اعلی معیار کا جوا شامل تھا.
 
-![Patolli Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/04-structured-output/assets/patolli.png)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/patolli.png" alt="Patolli Image" width="300">
+</div>
 
 _پتولی ، وکیپیڈیا_
 
@@ -123,7 +131,9 @@ _پتولی ، وکیپیڈیا_
 > یہ مکمل طور پر خیالی ہے۔ جوابات  اے ائی کے ذریعہ تیار کیے جاتے ہیں۔
 > [ذمہ دار اے ائی کا اعلان](/README.md#responsible-ai-disclaimer)
 
-![Montezuma Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/04-structured-output/assets/montezuma.jpeg)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/montezuma.jpeg" alt="Montezuma Image" width="300">
+</div>
 
 **اقدامات**:
 
