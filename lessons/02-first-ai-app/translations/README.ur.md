@@ -43,7 +43,9 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 
 کشتی کے ارد گرد نظر دوڑاتے ہوئے، آپ کو ایک لمبی اوار نظر آتی ہے جو کنارے پرہے۔ اسے پکڑ کر آپ دور دراز کی عمارتوں کی طرف جانے لگتے ہیں۔ جیسے جیسے آپ قریب آتے ہیں، عمارتیں زیادہ توجہ کا مرکز بن جاتی ہیں، وہ پرانی ہیں، ان کا فن تعمیر نشاۃ ثانیہ کی پینٹنگ کی یاد دلاتا ہے۔
 
-![Boat Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/boat.png)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png" alt="Boat Image" width="300">
+</div>
 
 اب سوال یہ ہے کہ آپ اس بار کہاں اور کب ہیں؟
 
@@ -51,8 +53,9 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 
 چلتے ہوئے، آپ کو لمبی داڑھی اور ٹوپی والا ایک آدمی نظر آتا ہے، جو میکانی حصوں کی طرح نظر آنے والے ایک ٹوکری میں کھدائی کر رہا ہے۔ اس کے ہاتھ بڑی مہارت سے حرکت کرتے ہیں اور آسانی کے ساتھ گیئرز اور سپرنگز کو ترتیب دیتے ہیں۔
 
-![Leonardo Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/leonardo.png)
-
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png" alt="Leonardo Image" width="300">
+</div>
 ### میری مدد کریں، لیونارڈو
 
 **آپ:** "معاف کیجئے گا جناب، میں کہاں ہوں؟" وہ آپ کی طرف دیکھتا ہے، اس کی آنکھوں میں الجھن واضح ہے. یہ محسوس کرتے ہوئے کہ آپ انگریزی میں بول رہے ہیں ، آپ جلدی سے اپنے ہاتھ میں موجود آلہ استعمال کرتے ہیں اور اسے ترجمہ کرنے کے لئے کہتے ہیں۔
@@ -79,7 +82,9 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 
 ### ورکشاپ میں
 
-![Leonardo Workshop Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png" alt="Leonardo Workshop Image" width="300">
+</div>
 
 بوڑھا شخص آپ کو لکڑی کے ایک بڑے دروازے کی طرف لے جاتا ہے اور آپ کو ہر طرح کے مکینیکل کنٹراپٹیشن سے بھری ایک ورکشاپ کو دیکھ کر خوش آمدید کہا جاتا ہے۔ 
 
@@ -121,7 +126,9 @@ _یہ ویڈیو آپ کو " لارج لینگوج ماڈل"، ایل ایل ا�
 > یہ مکمل طور پر خیالی ہے۔ جوابات اے ای کے ذریعہ تیار کیے جاتے ہیں۔
 > [ذمہ دار اے ای کا اعلان](../../README.md#responsible-ai-disclaimer)
 
-![Leonardo Talk Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg" alt="Leonardo Talk Image" width="300">
+</div>
 
 **اقدامات**:
 
