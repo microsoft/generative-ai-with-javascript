@@ -38,13 +38,16 @@ _یہ ویڈیو ریٹریول اگمنٹڈ جنریشن (آر اے جی) کی 
 
 آپ باغ میں اترتے ہیں، رات ہو چکی ہے اور گہری دھند ہے اور دور سے خوفناک روشنیاں چمک رہی ہیں۔ حویلی آپ کے سامنے منڈلا رہی ہے۔ لیونارڈو نے چاروں طرف دیکھا، حیرت سے اس کی آنکھیں کھلی ہوئی تھیں۔
 
-![Mansion Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/05-rag/assets/mansion.jpeg)
-
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/mansion.jpeg" alt="Mansion Image" width="300">
+</div>
 ### کتوں سے بھاگنا
 
 آپ کو بھونکنے اور کتوں کی آواز یں سنائی دیتی ہیں جو آپ کی طرف دوڑ رہے ہیں۔ آپ لیونارڈو کی طرف مڑتے ہیں، "ہمیں ابھی اندر جانے کی ضرورت ہے!"
 
-![Dogs Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/05-rag/assets/dogs.jpeg)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/dogs.jpeg" alt="Dogs Image" width="300">
+</div>
 
 جیسے ہی آپ حویلی کے دروازے تک پہنچتے ہیں تو یہ کھل جاتا ہے اور خدمت گاروں کا ایک جوڑا جلدی سے باہر نکل جاتا ہے۔ آپ کو پریشان کرنے کے بعد، وہ آپ کو ان کی پیروی کرنے کی ترغیب دیتے ہیں.
 
@@ -60,7 +63,9 @@ _یہ ویڈیو ریٹریول اگمنٹڈ جنریشن (آر اے جی) کی 
 
 **آپ:** لیکن ..
 
-![Ada Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/05-rag/assets/ada.jpeg)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada.jpeg" alt="Ada Image" width="300">
+</div>
 
 چارلس بیبیج آپ کے ہاتھ میں موجود ٹائم بیٹل کی جانچ پڑتال کرتے ہوئے آگے بڑھتا ہے۔ "یہ آلہ قابل ذکر ہے، لیکن یہ تھوڑا سا ناقص ہے، ہے نا؟ آپ نے نوٹ کیا ہے، مجھے یقین ہے. "
 
@@ -81,7 +86,9 @@ _یہ ویڈیو ریٹریول اگمنٹڈ جنریشن (آر اے جی) کی 
 > یہ مکمل طور پر خیالی ہے۔ جوابات  اے ائی کے ذریعہ تیار کیے جاتے ہیں۔
 > [ذمہ دار اے ائی کا اعلان](/README.md#responsible-ai-disclaimer)
 
-![Ada 2 Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/05-rag/assets/ada-2.jpeg)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada-2.jpeg" alt="Ada 2 Image" width="300">
+</div>
 
 **اقدامات**:
 
