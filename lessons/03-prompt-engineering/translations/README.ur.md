@@ -35,7 +35,9 @@ _یہ ویڈیو آپ کی " پرامٹنگ" کی مہارت کو بہتر بن�
 
 اس سے پہلے کہ آپ بٹن دباتے، ورکشاپ کے دروازے زور دار دھماکے کے ساتھ کھل جاتے ہیں۔ دروازے پر ایک آدمی کھڑا ہے، جس کے کندھے چوڑے ہیں اور مہنگے کپڑے پہنے ہوئے ہیں، وہ کاغذ کا ایک ٹکڑا ہوا میں لہراتے ہوئے چیخ رہا ہے:
 
-![Ludovico Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/03-prompt-engineering/assets/ludovico.png?raw=true)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png" alt="Ludovico Image" width="300">
+</div>
 
 
 *لوڈوویکو سفورزا* 
@@ -64,7 +66,9 @@ _یہ ویڈیو آپ کی " پرامٹنگ" کی مہارت کو بہتر بن�
 
 رنگوں کا جھونکا ماند پڑ جاتا ہے، اور آپ خود کو گاڑی میں پاتے ہیں  اب روم میں ویا اپیا کے نیچے دوڑ رہے ہیں اور آپ کو حیرت ہوتی ہے کہ آپ گھوڑوں کی دوڑ کے درمیان میں ہیں۔ رتھ گرجتے ہوئے گزر رہے ہیں، ان کے پہیے دھول کے بادلوں کو چھو رہے ہیں۔ 
 
-![Escape Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/03-prompt-engineering/assets/escape.png?raw=true)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/escape.png" alt="Escape Image" width="300">
+</div>
 
 
 **آپ:** لیونارڈو، ہم کہاں ہیں؟ 
@@ -103,7 +107,9 @@ _یہ ویڈیو آپ کی " پرامٹنگ" کی مہارت کو بہتر بن�
 
 آپ شہر کو دیکھتے ہیں۔ قدیم عمارتیں آپ کے نیچے پھیلی ہوئی ہیں۔
 
-![Airborne, looks down at the city with feet dangling](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/03-prompt-engineering/assets/airborne.png?raw=true)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/airborne.png" alt="Airborne Image" width="300">
+</div>
 
 
 
@@ -116,7 +122,9 @@ _یہ ویڈیو آپ کی " پرامٹنگ" کی مہارت کو بہتر بن�
 > یہ مکمل طور پر خیالی ہے۔ جوابات اے ائ کے ذریعہ تیار کیے جاتے ہیں۔
 > [ذمہ دار اے ائ کا اعلان](/README.md#responsible-ai-disclaimer)
 
-![Ludovico Image](https://github.com/microsoft/generative-ai-with-javascript/blob/main/lessons/03-prompt-engineering/assets/ludovico.png?raw=true)
+<div>
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png" alt="Ludovico Image" width="300">
+</div>
 
 **اقدامات**:
 
