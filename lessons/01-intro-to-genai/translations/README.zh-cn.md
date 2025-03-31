@@ -1,4 +1,4 @@
-# 第一课：面向 JavaScript 开发者的生成式 AI 和 LLM 入门
+# 第一课：面向 JavaScript 开发者的生成式 AI 和 LLM 入门 
 
 在本章中，你将学习：
 
