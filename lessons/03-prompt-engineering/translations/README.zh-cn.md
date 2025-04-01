@@ -306,7 +306,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 
 使用思维链技术得出回应。
 
-这里有一个入门项目 [入门项目](../../sample-app/)。
+这里有一个入门项目 [入门项目](/app/README.md)。
 
 ## 解决方案
 
@@ -320,7 +320,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 
 然后使用 LLM 整合这些输入，并利用思维链提示技术引导模型得出正确答案。
 
-[解决方案](../../solution/solution.md) 
+[解决方案](/lessons/01-intro-to-genai/solution/solution.md) 
 
 ## 知识检验
 
@@ -332,7 +332,7 @@ B. 提示工程是关于精心制作正确的提示，以便从语言模型中�
 
 C. 提示工程是关于训练模型识别数据中的模式。
 
-[测验解答](../../solution/solution-quiz.md)
+[测验解答](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
 ## 自学资源
 
