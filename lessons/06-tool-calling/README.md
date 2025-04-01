@@ -1,0 +1,303 @@
+# Lesson 6: Tool calling
+
+In this chapter, you will learn:
+
+- How to build a tool.
+- Integrate a tool with the AI model.
+- Call the tool from the AI model.
+
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
+
+## Related resources
+
+[![Integrating with function calling](./assets/11-lesson-banner.png?WT.mc_id=academic-105485-koreyst)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
+
+_This video explains Tool calling, a method that helps the AI call your functions and thereby expand what it can do_
+
+*🎥 Click on the image above to watch a short video about Tool calling*
+
+TODO
+💼 Slides: [Retrieval augmented generation, RAG](/videos/slides/11-function-calling.pptx)
+
+## Narrative: Amelia
+
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You've now met up with Ada Lovelace in her mansion accompanied by Charles Babbage. They're in the process of constructing the time travel device_
+>
+> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#interact-with-amelia-earhart) if you'd prefer to jump straight to the technical content.
+
+**Ada Lovelace**: "I need you to go meet a friend of mine, there's simply few people to match her expertise in mechanics and problem solving. Might be hard to catch her though, she's always on the move :)"
+
+**You**: "Who are we talking about and where to find her?"
+
+**Ada Lovelace**: "Why Amelia Earhart of course! She's a pilot and adventurer, and she's currently flying around the world. It's totally my fault she's disappeared, I gave her the time travel device, well an early prototype of it. Luckily, the device you have is able to locate other devices, so you can find her. All you need to do is to click here and here and then twist this knob."
+
+**You**: "Hey wait, what's our mission exactly?"
+
+**Ada**: "Oh, right! Ask the device, it has all the details just ask it about Amelia and it should initiate the correct tool for you."
+
+The world around you starts to blur and everything fades to black. You come to and you find yourself in a cockpit of a plane. You're airborne and you can see the ocean below you. There's someone sitting in front, you only see the back of their neck.
+
+![Amelia piloting a plane](./assets/amelia.jpeg)
+
+**You**: "Amelia, is that you?"
+
+**Amelia Earhart**: "Who are you? Let me guess, Ada sent you right?"
+
+**You**: "Yes, correct. I'm here to help you I think. Ada wasn't big on specifics."
+
+**Amelia Earhart**: "Well good thing you're here, I'm in a bit of a pickle. I'm trying to find a place to land and I'm running out of fuel. I need to find a place to land, can you help me?"
+
+**You**: "Device, can you tell me more about Amelia?"
+
+**Time beetle**: "Calling tool: `mission-amelia`. Tool initiated. Amelia Earhart is a pilot and adventurer. She's known for her record-breaking flights and her disappearance in 1937. She was last seen flying over the Pacific Ocean. She's currently flying around the world in her plane, the Electra. She's running out of fuel and needs to find a place to land."
+
+**You**: "Device, can you help me find a place for Amelia to land?"
+
+**Time beetle**: "Calling tool: `find-landing-spot`. Tool initiated. Searching for a suitable landing spot for Amelia Earhart. Please wait. Found a suitable landing spot. Coordinates: 7.5°N, 134.5°E. Amelia, I have found a suitable landing spot for you. Please head to the coordinates 7.5°N, 134.5°E."
+
+**Amelia Earhart**: "Thank you! I wish my device had that feature. I'll head there now."
+
+## Tool calling
+
+**You**: "Device, what just happened?"
+
+**Time beetle**: "You just called a tool. A tool is a function that can be called by the AI model to perform a specific task. The tool can be used to perform a wide range of tasks, from simple calculations to complex operations. In this case, you called the `find-landing-spot` tool to help Amelia Earhart find a suitable landing spot."
+
+**You**: "How do I create a tool?"
+
+**Time beetle**: "To create a tool, you need to define a function that performs the desired task. The function should take the necessary inputs and return the output. You can then call the function from the AI model to perform the task. Here's what the `find-landing-spot` tool looks like:
+
+```javascript
+function findLandingSpot(lat, long) {
+    // Perform the task of finding a suitable landing spot
+    // Return the coordinates of the landing spot
+    return { lat: 7.5, long: 134.5 };
+}
+```
+
+**You**: "Ok, how does the AI model know that this tool exists?"
+
+**Time beetle**: "You need to register the tool with the AI model. This tells the model that the tool is available to be called. Let's cover that in the next section."
+
+### Registering a tool
+
+**You**: "You said I need to register the tool with the AI model. How do I do that?"
+
+**Time beetle**: "To register a tool with the AI model, you need to define a metadata representation of the tool. This metadata should include the name of the tool, the input parameters, and the output format. You can then register the tool with the AI model by providing the metadata. Here's an example of the metadata for the `find-landing-spot` tool:
+
+```json
+{
+    "name": "find-landing-spot",
+    "description": "Finds a suitable landing spot",
+    "inputs": [
+        { "name": "lat", "type": "number" },
+        { "name": "long", "type": "number" }
+    ],
+    "output": { "type": "object", "properties": { "lat": "number", "long": "number" } }
+}
+```
+
+**You**: "Ok, so there's a piece of JSON that describes the tool, now what?"
+
+**Time beetle**: "Now, you need to provide that to your client chat completion call like so:
+
+```javascript
+
+function findLandingSpot(lat, long) {
+    // Perform the task of finding a suitable landing spot
+    // Return the coordinates of the landing spot
+    return { lat: 7.5, long: 134.5 };
+}
+
+function getBackgroundOnCharacter(character) {
+    // Perform the task of getting background information on a character
+    // Return the background information
+    return `Background information on ${character}`;
+}
+
+const getBackgroundOnCharacter = {
+    name: "get-background-on-character",
+    description: "Get background information on a character",
+    inputs: [
+        { name: "character", type: "string" }
+    ],
+    output: { type: "string" }
+};
+
+const findLandingSpot = {
+    name: "find-landing-spot",
+    description: "Finds a suitable landing spot",
+    inputs: [
+        { name: "lat", type: "number" },
+        { name: "long", type: "number" }
+    ],
+    output: { type: "object", properties: { lat: "number", long: "number" } }
+};
+
+const messages = [{ 
+    role: "user", 
+    content: `Tell me about Amelia Earhart`,
+}];
+
+const completion = await openai.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages: messages,
+    functions: [getBackgroundOnCharacter, findLandingSpot]
+  });
+```
+
+**Time beetle**: "In the preceding code snippet we:" 
+
+- Define the metadata for the `find-landing-spot` tool and the `get-background-on-character` tool. 
+- Provide this metadata to the `client.getChatCompletions` call as part of the `functions` parameter. This tells the AI model that these tools are available to be called."
+
+**You**: "Got it, so the AI model will then call the right tool providing I provide a prompt that's similar to the tool's description?"
+
+**Time beetle**: "Almost, it will tell you what tool it thinks you should call and it will provide you with the parsed input parameters, but you need to call the tool yourself, let me me show you how."
+
+### Calling a tool
+
+**Time beetle**: "As I was saying, the AI model will tell you what tool it thinks you should call and it will provide you with the parsed input parameters. You then need to call the tool yourself."
+
+**You**: "Can you show me an example of the whole workflow?"
+
+**Time beetle**: "Sure, here's a user promt that triggers the `find-landing-spot` tool:
+
+```javascript
+function findLandingSpot(lat, long) {
+    // Perform the task of finding a suitable landing spot
+    // Return the coordinates of the landing spot
+    return { lat: 7.5, long: 134.5 };
+}
+
+function getBackgroundOnCharacter(character) {
+    // Perform the task of getting background information on a character
+    // Return the background information
+    return `Background information on ${character}`;
+}
+
+const getBackgroundOnCharacter = {
+    name: "get-background-on-character",
+    description: "Get background information on a character",
+    inputs: [
+        { name: "character", type: "string" }
+    ],
+    output: { type: "string" }
+};
+
+const findLandingSpot = {
+    name: "find-landing-spot",
+    description: "Finds a suitable landing spot",
+    inputs: [
+        { name: "lat", type: "number" },
+        { name: "long", type: "number" }
+    ],
+    output: { type: "object", properties: { lat: "number", long: "number" } }
+};
+
+const tools = {
+    "find-landing-spot": findLandingSpot,
+    "get-background-on-character": getBackgroundOnCharacter
+};
+
+const messages = [{ 
+    role: "user", 
+    content: `Find a landing spot for Amelia Earhart`,
+}];
+
+const completion = await openai.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages: messages,
+    functions: [getBackgroundOnCharacter, findLandingSpot]
+  });
+
+
+for (const choice of result.choices) {
+    console.log(choice.message?.functionCall);
+
+    if (choice.message?.functionCall) {
+      const { arguments: argumentsJson } = choice.message.functionCall;
+      const toolResponse = tools[choice.message.functionCall.functionName](JSON.parse(argumentsJson));  
+      console.log("Result from Tool calling: ", toolResponse);
+    }
+}
+```
+
+In the preceding code we've:
+
+- Defined the `find-landing-spot` and `get-background-on-character` tools.
+- Created a `tools` object that maps tool names to tool metadata.
+- Provided the `tools` object to the `client.getChatCompletions` call.
+
+   ```javascript
+   if (choice.message?.functionCall) {
+      const { arguments: argumentsJson } = choice.message.functionCall;
+      const toolResponse = tools[choice.message.functionCall.functionName](JSON.parse(argumentsJson));  
+      console.log("Result from Tool calling: ", toolResponse);
+     
+   }
+   ```
+
+- Called the tool based on the function call provided by the AI model.
+- Printed the result of the tool call.
+
+## Assignment - upgrade Amelia's time travel device
+
+**Ada Lovelace**: "We're coming down hot, thank God you found us a landing spot. Hold on tight!"
+
+Amelia ends up expertly landing the plane on a small island. You and Ada step out of the plane, whereby Amelia hands you a small device. 
+
+**Amelia Earhart**: "Here's my device, not as fancy as yours but it's got some cool features. I've been using it to let's say do some time traveling of my own. Can you please upgrade it for me?"
+
+**You**: "Time beetle, can you help me upgrade Amelia's device?"
+
+**Time beetle**: "Of course! To upgrade Amelia's device, let's add the following tools to it:
+
+- A tool that can calculate the distance between two points on a map.
+- A tool that can figure out the GPS position of where Amelia is currently located."
+- A tool calling an external API to get the weather forecast for a given location."  
+
+Here are the functions, all you need to do is to register them and test them out:
+
+```javascript
+function calculateDistance(lat1, long1, lat2, long2) {
+    // Perform the task of calculating the distance between two points
+    // Return the distance between the points
+    return Math.sqrt((lat2 - lat1) ** 2 + (long2 - long1) ** 2);
+}
+
+function getGpsPosition() {
+    // Perform the task of getting the GPS position of the current location
+    // Return the GPS position
+    return { lat: 7.5, long: 134.5 };
+}
+
+function getWeatherForecast(lat, long) {
+    // Perform the task of getting the weather forecast for a given location
+    // Return the weather forecast
+    return "Sunny";
+}
+```
+
+**You**: "Time beetle, are you sure these functions are going to work, looks like they're just returning some random values?"
+
+**Time beetle**: "That's correct, I can do the rest internally. All you need to do is to register them and test them out, make sure the AI model can call them."
+
+> Task: Register the `calculateDistance`, `getGpsPosition`, and `getWeatherForecast` tools with the AI model. Test the tools by calling them from the AI model. Use the code supplied in the previous sections as a reference.
+
+## Solution
+
+[Solution](./solution/solution.js)
+
+## Knowledge check
+
+[Solution quiz](./solution/solution-quiz.md)
+
+## Self-Study resources
+
+TBC
