@@ -1,4 +1,4 @@
-# 第一课：面向 JavaScript 开发者的生成式 AI 和 LLM 入门
+# 第一课：面向 JavaScript 开发者的生成式 AI 和 LLM 入门 
 
 在本章中，你将学习：
 
@@ -16,7 +16,7 @@
 
 _这个视频为你介绍了 JavaScript 中的生成式 AI_
 
-💼 幻灯片：[生成式 AI 介绍](../../videos/slides/00-intro.pptx)
+💼 幻灯片：[生成式 AI 介绍](/videos/slides/00-intro.pptx)
 
 ## 生成式 AI
 
@@ -178,7 +178,7 @@ _时间设备，"乔治"金属甲虫_
 5. 与迪诺克拉底聊天。
 
 > [!NOTE]
-> 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
+> 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
 
 ### 代码预览
 
@@ -343,7 +343,7 @@ app.post('/send', async (req, res) => {
 
 ## 解决方案
 
-[解决方案](../solution/solution.md)
+[解决方案](/lessons/01-intro-to-genai/solution/solution.md)
 
 ### 知识检查
 
@@ -353,8 +353,8 @@ A. 基于 JavaScript 的生成式 AI 应用只能生成文本。
 B. JavaScript 可以用于构建 AI 驱动的应用程序，包括聊天机器人、文本生成工具等。
 C. Python 是唯一用于 AI 开发的语言。
 
-[测验解决方案](../solution/solution-quiz.md)
+[测验解决方案](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
 ## 自学资源
 
-- [生成式 AI JavaScript 视频系列](https://genai-js)
+- [生成式 AI JavaScript 视频系列](https://aka.ms/genai-js)
