@@ -229,10 +229,10 @@ const completion = await openai.chat.completions.create({
 1. Wire up the tool call
 First, you need to wire up the tool call in your code. This involves creating the function and a metadata representation of the tool, and then providing the metadata to the AI model.
 
-1. User makes a request via a prompt
-  o Program makes a chat completion request to the AI model with the user prompt and tools metadata provided.
-  o Program receives a response from the AI model with the tool call and parsed input parameters if it thinks a tool should be called.
-  o If so, the developer interprets the response and calls the tool based on the function call provided by the AI model.
+1. User makes a request via a prompt:
+   o Program makes a chat completion request to the AI model with the user prompt and tools metadata provided.
+   o Program receives a response from the AI model with the tool call and parsed input parameters if it thinks a tool should be called.
+   o If so, the developer interprets the response and calls the tool based on the function call provided by the AI model.
 
 **You**: "Great, now that I understand high level what's going on, can you show me some code?"
 
