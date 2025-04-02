@@ -1,5 +1,7 @@
 # Lesson 6: Tool calling
 
+Tool calling, or function calling that it's also known as is about providing capabilities to your AI model it didn't have before. The idea is to provide it with meta descriptions of your actual functions and make the AI model point out when such a tool should be called given a user's prompt.
+
 In this chapter, you will learn:
 
 - How to build a tool.
@@ -20,24 +22,24 @@ _This video explains Tool calling, a method that helps the AI call your function
 
 ## Narrative: Amelia
 
-> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You've now met up with Ada Lovelace in her mansion accompanied by Charles Babbage. They're in the process of constructing the time travel device_
+> _You are a mechanic from 1860s London. While working on your automaton, you received a letter from Charles Babbage that led you to a library, where you picked up a time travel device. Throughout your travels in time, you ended up in Florence, where you met Leonardo da Vinci. You have now met up with Ada Lovelace in her mansion, accompanied by Charles Babbage. They are in the process of constructing the time travel device._
 >
-> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning.
+> See [Lesson 1](/lessons/01-intro-to-genai/README.md) if you want to catch up with the story from the beginning.
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-amelia-earhart) if you'd prefer to jump straight to the technical content.
 
-**Ada Lovelace**: "I need you to go meet a friend of mine, there's simply few people to match her expertise in mechanics and problem solving. Might be hard to catch her though, she's always on the move :)"
+**Ada Lovelace**: "I need you to go meet a friend of mine. There are few people who can match her expertise in mechanics and problem-solving. It might be hard to catch her, though; she's always on the move :)"
 
-**You**: "Who are we talking about and where to find her?"
+You: "Who are we talking about and where can I find her?"
 
-**Ada Lovelace**: "Why Amelia Earhart of course! She's a pilot and adventurer, and she's currently flying around the world. It's totally my fault she's disappeared, I gave her the time travel device, well an early prototype of it. Luckily, the device you have is able to locate other devices, so you can find her. All you need to do is to click here and here and then twist this knob."
+**Ada Lovelace**: "Why, Amelia Earhart, of course! She's a pilot and adventurer, currently flying around the world. It's totally my fault she's disappeared—I gave her the time travel device, well, an early prototype of it. Luckily, the device you have can locate other devices, so you can find her. All you need to do is click here and here, and then twist this knob."
 
-**You**: "Hey wait, what's our mission exactly?"
+**You**: "Hey, wait, what's our mission exactly?"
 
-**Ada**: "Oh, right! Ask the device, it has all the details just ask it about Amelia and it should initiate the correct tool for you."
+**Ada**: "Oh, right! Ask the device; it has all the details. Just ask it about Amelia, and it should initiate the correct tool for you."
 
-The world around you starts to blur and everything fades to black. You come to and you find yourself in a cockpit of a plane. You're airborne and you can see the ocean below you. There's someone sitting in front, you only see the back of their neck.
+The world around you starts to blur, and everything fades to black. You come to and find yourself in the cockpit of a plane. You're airborne, and you can see the ocean below you. There's someone sitting in front; you can only see the back of their neck.
 
 <div>
     <img src="./assets/amelia.jpeg" alt="Amelia piloting a plane" width="300">
@@ -45,19 +47,19 @@ The world around you starts to blur and everything fades to black. You come to a
 
 **You**: "Amelia, is that you?"
 
-**Amelia Earhart**: "Who are you? Let me guess, Ada sent you right?"
+**Amelia Earhart**: "Who are you? Let me guess, Ada sent you, right?"
 
-**You**: "Yes, correct. I'm here to help you I think. Ada wasn't big on specifics."
+**You**: "Yes, correct. I'm here to help you, I think. Ada wasn't big on specifics."
 
-**Amelia Earhart**: "Well good thing you're here, I'm in a bit of a pickle. I'm trying to find a place to land and I'm running out of fuel. I need to find a place to land, can you help me?"
+**Amelia Earhart**: "Well, good thing you're here. I'm in a bit of a pickle. I'm trying to find a place to land, and I'm running out of fuel. Can you help me?"
 
 **You**: "Device, can you tell me more about Amelia?"
 
-**Time beetle**: "Calling tool: `mission-amelia`. Tool initiated. Amelia Earhart is a pilot and adventurer. She's known for her record-breaking flights and her disappearance in 1937. She was last seen flying over the Pacific Ocean. She's currently flying around the world in her plane, the Electra. She's running out of fuel and needs to find a place to land."
+**Time Beetle**: "Calling tool: mission-amelia. Tool initiated. Amelia Earhart is a pilot and adventurer. She's known for her record-breaking flights and her disappearance in 1937. She was last seen flying over the Pacific Ocean. She's currently flying around the world in her plane, the Electra. She's running out of fuel and needs to find a place to land."
 
 **You**: "Device, can you help me find a place for Amelia to land?"
 
-**Time beetle**: "Calling tool: `find-landing-spot`. Tool initiated. Searching for a suitable landing spot for Amelia Earhart. Please wait. Found a suitable landing spot. Coordinates: 7.5°N, 134.5°E. Amelia, I have found a suitable landing spot for you. Please head to the coordinates 7.5°N, 134.5°E."
+**Time Beetle**: "Calling tool: find-landing-spot. Tool initiated. Searching for a suitable landing spot for Amelia Earhart. Please wait. Found a suitable landing spot. Coordinates: 7.5°N, 134.5°E. Amelia, I have found a suitable landing spot for you. Please head to the coordinates 7.5°N, 134.5°E."
 
 **Amelia Earhart**: "Thank you! I wish my device had that feature. I'll head there now."
 
