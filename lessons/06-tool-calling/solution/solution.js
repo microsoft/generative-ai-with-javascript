@@ -1,3 +1,5 @@
+import { OpenAI } from 'openai';
+
 // 1: Define the functions
 
 function calculateDistance(lat1, long1, lat2, long2) {
@@ -96,7 +98,7 @@ const tools = {
 
 // 4: create an OpenAI instance with the tools
 const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com", 
+    baseURL: "https://models.inference.ai.azure.com",
     apiKey: process.env.GITHUB_TOKEN,
 });
 
@@ -107,24 +109,28 @@ const messages = [
     role: "user",
     content: `We need to know where to land, here's the coordinates: 7.5, 134.5. `,
   },
-//   {
-//     role: "user",
-//     content: `What is the distance between the points 7.5, 134.5 and 8.5, 135.5?`,
-//   },
-//   {
-//     role: "user",
-//     content: `What is the weather forecast for the location 7.5, 134.5?`,
-//   },
-]; 
+  // {
+  //   role: "user",
+  //   content: `What is the distance between the points 7.5, 134.5 and 8.5, 135.5?`,
+  // },
+  // {
+  //   role: "user",
+  //   content: `What is the weather forecast for the location 7.5, 134.5?`,
+  // },
+];
 
 // 6: make a chat completion
 async function main(){
-    const result = await openai.chat({ messages, tools });
+  const result = await openai.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages: messages,
+    functions: [calculateDistanceJson, getGpsPositionJson, getWeatherForecastJson]
+  });
 
     // 7: interpret the result
     for (const choice of result.choices) {
         // console.log("Result", choice.message);
-  
+
         let functionCall = choice.message?.function_call;
         let functionName = functionCall?.name;
         let args = JSON.parse(functionCall?.arguments);
@@ -138,3 +144,5 @@ async function main(){
         }
     }
 }
+
+main();

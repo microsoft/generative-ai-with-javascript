@@ -1,5 +1,4 @@
 import { OpenAI } from 'openai';
-import { maybeCoerceInteger } from 'openai/core.mjs';
 
 function findLandingSpot(lat, long) {
   console.log("[Function] Finding landing spot with coordinates: ", lat, long);

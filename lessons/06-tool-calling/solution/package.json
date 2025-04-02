@@ -2,6 +2,7 @@
     "name": "solution",
     "version": "1.0.0",
     "main": "solution.js",
+    "type": "module",
     "scripts": {
       "start": "node solution.js",
       "test": "echo \"Error: no test specified\" && exit 1"
