@@ -218,16 +218,17 @@ const completion = await openai.chat.completions.create({
 - Define the metadata for the `find-landing-spot` tool and the `get-background-on-character` tool. 
 - Provide this metadata to the `client.getChatCompletions` call as part of the `functions` parameter. This tells the AI model that these tools are available to be called."
 
-**You**: "Got it, so the AI model will then call the right tool providing I provide a prompt that's similar to the tool's description?"
+**You**: "Got it, so the AI model will call the appropriate if I provide a prompt that matches to the tool's description?"
 
-**Time beetle**: "Almost, it will tell you what tool it thinks you should call and it will provide you with the parsed input parameters, but you need to call the tool yourself, let me me show you how."
+**Time beetle**: "Almost, it will tell you what tool it thinks you should call and it will provide you with the parsed input parameters, but you need to call the tool yourself, let me show you how."
 
 ### Calling a tool
 
 **Time beetle**: "As I was saying, the AI model will tell you what tool it thinks you should call and it will provide you with the parsed input parameters. You then need to call the tool yourself. Here's what the workflow will look like step by step:
 
 1. Wire up the tool call
-First, you need to wire up the tool call in your code. This involves creating the function and a metadata representation of the tool, and then providing the metadata to the AI model.
+
+   First, you need to wire up the tool call in your code. This involves creating the function and a metadata representation of the tool, and then providing the metadata to the AI model.
 
 1. User makes a request via a prompt:
    - Program makes a chat completion request to the AI model with the user prompt and tools metadata provided.
@@ -324,7 +325,7 @@ main();
 
 In the preceding code we've:
 
-- Create a function called `findLandingSpot` that takes latitude and longitude as input and returns the coordinates of a suitable landing spot.
+- Created a function called `findLandingSpot` that takes latitude and longitude as input and returns the coordinates of a suitable landing spot.
 - Defined the metadata for the `find-landing-spot` tool.
 - Created a `tools` object that maps tool names to tool metadata.
 - Provided the `tools` object to the `client.getChatCompletions` call.
