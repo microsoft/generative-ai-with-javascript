@@ -1,6 +1,6 @@
 # Lesson 6: Tool calling
 
-Tool calling, or function calling that it's also known as is about providing capabilities to your AI model it didn't have before. The idea is to provide it with meta descriptions of your actual functions and make the AI model point out when such a tool should be called given a user's prompt.
+Tool calling, also known as function calling, refers to enhancing your AI model by adding capabilities it previously lacked. The concept involves supplying meta descriptions of your functions, allowing the AI model to determine when a particular tool should be called based on a user's prompt. The idea is to provide it with meta descriptions of your actual functions and make the AI model point out when such a tool should be called given a user's prompt.
 
 In this chapter, you will learn:
 
@@ -92,9 +92,9 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 
 **You**: "Device, what just happened?"
 
-**Time beetle**: "You just called a tool. A tool is a function that can be called by the AI model to perform a specific task. The tool can be used to perform a wide range of tasks, from simple calculations to complex operations. In this case, you called the `find-landing-spot` tool to help Amelia Earhart find a suitable landing spot."
+**Time Beetle**: "You just called a tool. A tool is a function that can be called by the AI model to perform a specific task. The tool can be used to perform a wide range of tasks, from simple calculations to complex operations. In this case, you called the `find-landing-spot` tool to help Amelia Earhart find a suitable landing spot."
 
-**Time beetle**: "Here's an image to illustrate the process of tool calling:"
+**Time Beetle**: "Here's an image to illustrate the process of tool calling:"
 
 <div>
     <img src="./assets/tool_call_langchain.png" alt="Tool calling process illustration" width="600">
@@ -102,9 +102,25 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 
 _Image credit Langchain <https://python.langchain.com/docs/concepts/tool_calling/>_
 
+**You**: Can we handle errors if something goes wrong, like if the tool can’t find a landing spot?
+
+**Time Beetle**: Great question! Yes, you can add error handling to manage such situations. For example, if the tool fails to find a landing spot, you can use a try-catch block or check the result before proceeding. Here's an example of handling errors when calling the find-landing-spot tool:
+
+```javascript
+try {
+  const landingSpot = findLandingSpot(7.5, 134.5);
+  if (!landingSpot) {
+    throw new Error("No suitable landing spot found");
+  }
+  console.log(Landing spot found at coordinates: ${landingSpot.lat}, ${landingSpot.long});
+} catch (error) {
+  console.log(Error: ${error.message});
+}
+```
+
 **You**: "How do I create a tool?"
 
-**Time beetle**: "To create a tool, you need to define a function that performs the desired task. The function should take the necessary inputs and return the output. You can then call the function from the AI model to perform the task. Here's what the `find-landing-spot` tool looks like:
+**Time Beetle**: "To create a tool, you need to define a function that performs the desired task. The function should take the necessary inputs and return the output. You can then call the function from the AI model to perform the task. Here's what the `find-landing-spot` tool looks like:
 
 ```javascript
 function findLandingSpot(lat, long) {
@@ -116,13 +132,13 @@ function findLandingSpot(lat, long) {
 
 **You**: "Ok, how does the AI model know that this tool exists?"
 
-**Time beetle**: "You need to register the tool with the AI model. This tells the model that the tool is available to be called. Let's cover that in the next section."
+**Time Beetle**: "You need to register the tool with the AI model. This tells the model that the tool is available to be called. Let's cover that in the next section."
 
 ### Registering a tool
 
 **You**: "You said I need to register the tool with the AI model. How do I do that?"
 
-**Time beetle**: "To register a tool with the AI model, you need to define a metadata representation of the tool. This metadata should include the name of the tool, the input parameters, and the output format. You can then register the tool with the AI model by providing the metadata. Here's an example of the metadata for the `find-landing-spot` tool:
+**Time Beetle**: "To register a tool with the AI model, you need to define a metadata representation of the tool. This metadata should include the name of the tool, the input parameters, and the output format. You can then register the tool with the AI model by providing the metadata. Here's an example of the metadata for the `find-landing-spot` tool:
 
 ```json
 {
@@ -148,7 +164,7 @@ function findLandingSpot(lat, long) {
 
 **You**: "Ok, so there's a piece of JSON that describes the tool, now what?"
 
-**Time beetle**: "Now, you need to provide that to your client chat completion call like so:
+**Time Beetle**: "Now, you need to provide that to your client chat completion call like so:
 
 ```javascript
 
@@ -213,18 +229,18 @@ const completion = await openai.chat.completions.create({
   });
 ```
 
-**Time beetle**: "In the preceding code snippet we:" 
+**Time Beetle**: "In the preceding code snippet we:" 
 
 - Define the metadata for the `find-landing-spot` tool and the `get-background-on-character` tool. 
 - Provide this metadata to the `client.getChatCompletions` call as part of the `functions` parameter. This tells the AI model that these tools are available to be called."
 
 **You**: "Got it, so the AI model will call the appropriate if I provide a prompt that matches to the tool's description?"
 
-**Time beetle**: "Almost, it will tell you what tool it thinks you should call and it will provide you with the parsed input parameters, but you need to call the tool yourself, let me show you how."
+**Time Beetle**: "Almost, it will tell you what tool it thinks you should call and it will provide you with the parsed input parameters, but you need to call the tool yourself, let me show you how."
 
 ### Calling a tool
 
-**Time beetle**: "As I was saying, the AI model will tell you what tool it thinks you should call and it will provide you with the parsed input parameters. You then need to call the tool yourself. Here's what the workflow will look like step by step:
+**Time Beetle**: "As I was saying, the AI model will tell you what tool it thinks you should call and it will provide you with the parsed input parameters. You then need to call the tool yourself. Here's what the workflow will look like step by step:
 
 1. Wire up the tool call
 
@@ -233,11 +249,11 @@ const completion = await openai.chat.completions.create({
 1. User makes a request via a prompt:
    - Program makes a chat completion request to the AI model with the user prompt and tools metadata provided.
    - Program receives a response from the AI model with the tool call and parsed input parameters if it thinks a tool should be called.
-   - If so, the developer interprets the response and calls the tool based on the function call provided by the AI model.
+   - If so, the developer interprets the response and invokes the tool based on the function call suggestion provided by the AI model.
 
 **You**: "Great, now that I understand high level what's going on, can you show me some code?"
 
-**Time beetle**: "Sure, here's the code wire up the tool call, making a chat completion request and interpreting the response:
+**Time Beetle**: "Sure, here's the code wire up the tool call, making a chat completion request and interpreting the response:
 
 ```javascript
 import { OpenAI } from 'openai';
@@ -344,19 +360,19 @@ In the preceding code we've:
 
 **You**: "I think I get it. I define a function, create a metadata representation of the tool, provide the metadata to the AI model, and then call the tool based on the function call provided by the AI model."
 
-**Time beetle**: "Exactly! You're ready to start building your own tools and integrating them with the AI model."
+**Time Beetle**: "Exactly! You're ready to start building your own tools and integrating them with the AI model."
 
-## Assignment - upgrade Amelia's time travel device
+## Assignment - Upgrade Amelia's time travel device
 
 **Amelia Earhart**: "We're coming down hot, thank God you found us a landing spot. Hold on tight!"
 
-Amelia ends up expertly landing the plane on a small island. You and Amelia step out of the plane, whereby Amelia hands you a small device.
+Amelia expertly lands the plane on a small island. You and Amelia step out of the plane, whereby Amelia hands you a small device.
 
 **Amelia Earhart**: "Here's my device, not as fancy as yours but it's got some nifty features. I've been using it to let's say do some time traveling of my own. Can you please upgrade it for me?"
 
-**You**: "Time beetle, can you help me upgrade Amelia's device?"
+**You**: "Time Beetle, can you help me upgrade Amelia's device?"
 
-**Time beetle**: "Of course! To upgrade Amelia's device, let's add the following tools to it:
+**Time Beetle**: "Of course! To upgrade Amelia's device, let's add the following tools to it:
 
 - **A tool than can**: Calculate the distance between two points on a map.
 - **A tool than can**: Figure out the GPS position of where Amelia is currently located.
@@ -384,9 +400,9 @@ function getWeatherForecast(lat, long) {
 }
 ```
 
-**You**: "Time beetle, are you sure these functions are going to work, looks like they're just returning some random values?"
+**You**: "Time Beetle, are you sure these functions are going to work, looks like they're just returning some random values?"
 
-**Time beetle**: "That's correct, I can do the rest internally. All you need to do is to register them and test them out, make sure the AI model can call them."
+**Time Beetle**: "That's correct, I can do the rest internally. All you need to do is to register them and test them out, make sure the AI model can call them."
 
 > Task: Register the `calculateDistance`, `getGpsPosition`, and `getWeatherForecast` tools with the AI model. Test the tools by calling them from the AI model. Use the code supplied in the previous sections as a reference.
 
@@ -411,7 +427,7 @@ B. It provides the AI model with the tool's implementation details.
 C. It ensures the tool is executed automatically by the AI model.
 
 **Question:**  
-Why do tool calling?
+Why use tool calling?
 
 A. To enable the AI model to perform tasks beyond its built-in capabilities by leveraging external functions.  
 B. To replace the need for human intervention in AI model development.  
@@ -422,5 +438,5 @@ C. To allow the AI model to execute tools without requiring metadata.
 ## Self-Study resources
 
 - Explains the [process of tool calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/function-calling/?pivots=programming-language-csharp)
-- Tool calling in the [framework Langchain](https://js.langchain.com/docs/how_to/tool_calling/)
+- Tool calling in the [Langchain.js framework](https://js.langchain.com/docs/how_to/tool_calling/)
 - Function calling as demonstrated in the [openai library](https://github.com/openai/openai-node/blob/master/examples/function-call.ts)
