@@ -4,13 +4,15 @@
       "sample-server": "./build/index.js"
     },
     "scripts": {
-      "build": "tsc && build/index.js"
+      "build": "tsc && node build/index.js",
+      "client": "node build/client.js"
     },
     "files": [
       "build"
     ],
     "dependencies": {
-        "@modelcontextprotocol/sdk": "^1.8.0"
+        "@modelcontextprotocol/sdk": "^1.8.0",
+        "openai": "^4.91.1"
     },
     "devDependencies": {
         "@types/node": "^22.13.17",

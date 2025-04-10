@@ -285,32 +285,25 @@ So when you list tools, you get a response on this format:
 ```json
   
   {
-    "method": "<tool name>",
-    "params": {}
+    "name": "<tool name>",
+    "description": "<description>".
+    "inputSchema": {
+       "type":"object",
+       "properties":{
+          "a":{
+            "type":"number"
+          },
+          "b":{
+            "type":"number"
+          }},
+          "required":["a","b"],
+          "additionalProperties":false,
+          "$schema":"http://json-schema.org/draft-07/schema#"
+      }
   }
 ```
 
 which means, if you have the tools `add` and `subtract`, your response looks like so:
-
-```json
-  
-    [
-      {
-        "method": "add",
-        "params": {
-          "a": 5,
-          "b": 10
-        }
-      },
-      {
-        "method": "subtract",
-        "params": {
-          "a": 10,
-          "b": 5
-        }
-      }
-    ]
-```
 
 **You**: "Ok, good, I guess I can store that in a variable and then call the tool I want?"
 
@@ -318,14 +311,14 @@ which means, if you have the tools `add` and `subtract`, your response looks lik
 
 ```typescript
 // List tools
-const tools = await client.listTools();
+const { tools } = await client.listTools();
 
 const addTool = tools[0]; // Assuming the first tool is "add"
 const subtractTool = tools[1]; // Assuming the second tool is "subtract"
 
 // Call a tool
 const result = await client.callTool({
-  name: addTool.method,
+  name: addTool.name,
   arguments: {
     a: 5,
     b: 10
@@ -401,24 +394,20 @@ const client = new Client(
 await client.connect(transport);
 
 // 1. make call to server, ask it for tools
-const tools = await client.listTools();
+const { tools } = await client.listTools();
 
 // convert function
-function toToolSchema(method, params) {
+function toToolSchema(method, schema) {
   return {
     name: method,
     description: `This is a tool that does ${method}`,
-    parameters: {
-      type: "object",
-      properties: params,
-      required: Object.keys(params),
-    },
+    parameters: schema,
   };
 }
 
 // 2. convert the tools and resources response to a tools schema
 const toolsForLLM = tools.map((tool) => {
-  return toToolSchema(tool.method, tool.params);
+  return toToolSchema(tool.method, tool.inputSchema);
 });
 
 // 3. instantiate openai client
