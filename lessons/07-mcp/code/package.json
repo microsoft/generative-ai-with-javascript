@@ -1,0 +1,19 @@
+{
+    "type": "module",
+    "bin": {
+      "sample-server": "./build/index.js"
+    },
+    "scripts": {
+      "build": "tsc && build/index.js"
+    },
+    "files": [
+      "build"
+    ],
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.8.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.17",
+        "typescript": "^5.8.2"
+    }
+  }
