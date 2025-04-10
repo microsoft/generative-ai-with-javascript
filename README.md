@@ -25,6 +25,10 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
  
 ![Character App Sneak Peek](./docs/images/background.png)
  
+## NEW - tool calling lesson just added
+
+Learn [Tool calling/Function calling](./lessons/06-tool-calling) with Amelia Earhart. Want to help translate it also? Check out the next section below on translation.
+
 
 ## Call for help - help us translate !
 
