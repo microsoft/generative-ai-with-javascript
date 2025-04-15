@@ -25,6 +25,10 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
  
 ![Character App Sneak Peek](./docs/images/background.png)
  
+## NEW - tool calling lesson just added
+
+Learn [Tool calling/Function calling](./lessons/06-tool-calling) with Amelia Earhart. Want to help translate it also? Check out the next section below on translation.
+
 
 ## Call for help - help us translate !
 
@@ -86,7 +90,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 | 3 | [Prompt engineering](./lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
 | 4 | [Structured output](./lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
 | 5 | [Retrieval augmented generation (RAG)](./lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
-| 6 | Additional chapters are coming soon! | ... |
+| 6 | [Tool calling/Function calling](./lessons/06-tool-calling) | Learn how to give your LLM extra capbilities, bring your own functions  |
 
 New lessons will be added to the course over time, so stay tuned!
 
