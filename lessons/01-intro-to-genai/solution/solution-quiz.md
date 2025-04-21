@@ -1,6 +1,28 @@
+## Quiz Solutions
 
-1) **Incorrect**: Generative AI can generate text, images, and even code. 
+---
 
-2) **Correct**: JavaScript can be used for both front-end and back-end development. 
+**Q1: What can Generative AI generate?**
 
-3) **Incorrect**: Python is not the only language that can be used for AI development. It can be argued that Python is the most popular language for AI development, but other languages/frameworks like JavaScript, Java and Python are also a very popular choices for AI development. 
+<details>
+<summary>Click to reveal the answer</summary>
+Generative AI can generate text, images, and even code.
+</details>
+
+---
+
+**Q2: What is JavaScript used for?**
+
+<details>
+<summary>Click to reveal the answer</summary>
+JavaScript can be used for both front-end and back-end development.
+</details>
+
+---
+
+**Q3: Is Python the only language used for AI development?**
+
+<details>
+<summary>Click to reveal the answer</summary>
+Python is not the only language used for AI development. Other languages like JavaScript and Java are also popular choices.
+</details>
