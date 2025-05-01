@@ -28,13 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.locals.delimiters = '{{ }}';
 
 function getCharacterByName(name) {
-  for(let i=0; i< json.length; i++) {
-    if(json[i].name == name) {
-      return json[i];
-
-    }
-  }
-  return null;
+  return json.find(character => character.name === name) || null;
 }
 
 // Route to send the prompt
@@ -74,8 +68,8 @@ app.post('/send', async (req, res) => {
       answer: completion.choices[0]?.message?.content
     });
   } catch (error) {
-    console.log(`Error: ${error}`);
-    res.status(500).json({ error: error });
+    console.error(`Error: ${error.message}`); // Log the error message for debugging
+    res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' }); // Send a generic error message
   }
 });
 
