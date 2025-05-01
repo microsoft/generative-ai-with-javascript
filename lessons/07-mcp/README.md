@@ -1,30 +1,104 @@
 # MCP, Model Context Protocol
 
-## Introduction
+In this chapter you will learn:
+
+- How to use the Model Context Protocol, MCP to split up your server capabilities in a server and a client
+- Create tools, resources and prompts on the server.
+- Consume the server using both the inspector tool and a written client.
+
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
+
+## Related resources
+
+[![Watch a short video about MCP](TODO)
+
+_This video explains Model Context Protocol._
+
+*🎥 Click on the image above to watch a short video about MCP*
+
+💼 Slides: [Retrieval augmented generation, RAG](../../videos/slides/TODO.pptx)
 
 ## Narrative: Scipio Africanus
 
-_Our heroes had just learned tools and using tools via tool calling inspired by their meeting with Amelia Earhart and is now returning back to Ada Lovelace's mansion to discuss their new found knowledge. A flash of light envelops our heroes as the time beetle transports them back to the present. They find themselves in the basement of Ada Lovelace's mansion, Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they have gained._
+_Our heroes had just learned tools and using tools via tool calling inspired by their meeting with Amelia Earhart and is now returning back to Ada Lovelace's mansion to discuss their new found knowledge. A flash of light envelops our heroes as the time beetle transports them back to Aaa's present. They find themselves in the basement of Ada Lovelace's mansion, Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they've gained._
 
 **Ada**: "Welcome back! I trust your journey was enlightening."
 
 **You**: "It was! meeting with mrs Earhart was quite the experience. She taught us about the importance of tools and how to use them effectively." 
 
-**Ada**: "There's few people who understand the importance of tools better than Amelia. I trust you also upgraded her time beetle?"
+**Ada**: "There are few people who understand the importance of tools better than Amelia. I trust you've also upgraded her time beetle?"
 
 **You**: "Yes, we did! So what's next on the agenda?"
 
-**Ada**: "Tool calling is definitely a powerful concept, one that improves your device. However, it lacks a certain finesse shall we say. We need to learn _how to make it scale_, we need a protocol. I know just the fellow to help us with that. His name is Scipio Africanus, a brilliant military strategist from ancient Rome. Too bad he spent all his time with military strategy, I'm sure he would have been a brilliant engineer. Off you go.
+**Ada**: "Tool calling is definitely a powerful concept, one that improves your device. However, it lacks a certain "finesse" shall we say. We need to learn _how to make it scale_, we need a protocol. I know just the fellow to help us with that. His name is Scipio Africanus, a great military strategist from ancient Rome. Too bad he spent all his time with military strategy, I'm sure he would have been a brilliant engineer. Off you go.
 
 **You**: "Scipio Africanus? I think I remember him from history class.  
 
-**Ada**: "Good then, why are you still here. Time is off the essence."
+**Ada**: "Good then, why are you still here? Time is off the essence. Ta ta"
 
 The swirling of light envelops you again and you find yourself in a large room with a large table in the middle. The walls are adorned with maps and military strategies. Scipio Africanus is standing at the table, deep in thought. He looks up as you enter. "Ada te misit/Ada sent you?" 
 
+<div>
+  <img width="600" src="./assets/scipio.png" alt="Scipio Africanus">
+</div>
+
+> Scipio Africanus, also known as Publius Cornelius Scipio Africanus, was a prominent Roman general and statesman who lived from 236 BC to 183 BC. He is best known for his decisive role in the Second Punic War against Carthage and his victory over Hannibal at the Battle of Zama in 202 BC.
+>
+> **Key Highlights of His Life and Career:**
+>
+> **1. Early Life:**
+> Scipio was born into the patrician Scipio family, which had a long history of military and political service. He showed early promise and was involved in military campaigns from a young age.
+>
+> **2. Second Punic War:**
+> Scipio's most notable achievements came during the Second Punic War. After the devastating Roman defeat at Cannae, he was appointed to command Roman forces in Spain. He successfully captured the strategic city of New Carthage in 209 BC, which was a turning point in the war.
+>
+> **3. Battle of Zama:**
+> Scipio's crowning achievement was his victory at the Battle of Zama in 202 BC. He employed innovative tactics, including the use of cavalry to outflank Hannibal's forces. This victory effectively ended the Second Punic War and secured Rome's dominance over the western Mediterranean.
+>
+> **4. Political Career:**
+> After his military successes, Scipio continued to serve Rome in various political roles. He was elected consul twice and played a significant role in shaping Roman policy and governance.
+>
+> **5. Legacy:**
+> Scipio Africanus is remembered as one of Rome's greatest military commanders. His strategies and tactics are studied to this day, and his victory over Hannibal is considered one of the most significant military achievements in history.
+> 
+> **Interesting Facts:**
+> - Scipio was known for his magnanimity and humane treatment of defeated enemies, which earned him respect even among his adversaries.
+> - He was given the honorary title "Africanus" after his victory in Africa, a rare honor that signified his extraordinary achievements.
+>
+> Scipio Africanus's life and career exemplify the qualities of leadership, strategic brilliance, and resilience. His contributions to Rome's military and political spheres left a lasting impact on the Roman Empire.
+>
+
+## Interact with scipio
+
+If you want to interact with Scipio, run the [Characters](/app/README.md) app. 
+
+> [!IMPORTANT]
+> This is entirely fictional; the responses are generated by AI.
+> [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
+
+<div>
+  <img src="./assets/scipio.png" alt="Scipio Africanus" width="300">
+</div>
+
+**Steps**:
+
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _/app_ in the repo root.
+3. Locate the console and run `npm install` followed by `npm start`.
+4. Once it appears, select the "Open in Browser" button.
+5. Chat with Scipio.
+
+For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
+
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+
+
 ## The need for Model Context Protocol (MCP)
 
-**Time beetle**: The protocol Ada spoke of is called the Model Context Protocol (MCP). It's a protocol that allows you to decentralize your application architecture, making it more scalable and resilient by adding resources on a server, or multiple servers even, and offload these from the client. I'll let Scipio explain it to you.
+**Time beetle**: The protocol Ada spoke of is called the Model Context Protocol (MCP). It's a protocol that allows you to decentralize your application architecture, making it more scalable and resilient by adding resources on a server, or multiple servers even, and offload these from the client. I'll let Scipio explain the idea to you.
 
 **You**: "Yes, Ada sent us. She said you could help us with a protocol?"
 
@@ -36,7 +110,7 @@ Let's talk about flanking maneuvers, infiltration, and the use of cavalry.
 
 **Scipio**: "In battle, we often use flanking maneuvers to attack the enemy from the sides or rear. This disrupts their formations and gives us an advantage. The reason being that the enemy is not prepared for an attack from the side and tends to focus all their attention on the front.  
 
-**You**: "Hm, I guess that's similar to having an app doing too much work on a single server. Flanking maneuvers would be like distributing the load across multiple servers, right?"
+**You**: "Hm, I guess that's similar to having an app doing too much work up front on a single server. Flanking maneuvers would be like distributing the load across multiple servers, right?"
 
 **Scipio**: "Exactly! By distributing the load, you reduce the risk of a single point of failure and improve overall system resilience. It makes it easier to manage and use resources effectively.
 
@@ -344,149 +418,9 @@ const resourceResult = await client.readResource({
 console.log(resourceResult); // Hi John Doe!
 ```
 
-**You**: "I get it nice, although, this feels a bit cumbersome. I would like to have a more user friendly way of doing this. Like, I'm speaking or writing to you using a natural language, and I would like to do the same with my MCP server. Is that possible?"
+**You**: "I get it nice, although, you're thinking to yourself, I bet we can improve this somehow? Time Beetle, we can improve this right? 
 
-## Adding a large language model to a client
-
-**Time Beetle**: "Let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits is that it provides a better user experience and allows you to use natural language to interact with the server."
-
-How it would work on high level then is to have:
-
-- Client interacting with the MCP server to ask about available tools and resources.
-- At prompt time, the user would write a natural language prompt, which is then sent to the LLM in the client.
-- Client figures out which tool or which resource to call based on the prompt and the available tools and resources.
-
-Sounds doable right?
-
-**You**: "Yes, it does! But how do I do that?"
-
-**Time Beetle**: "Let's improve the client we created earlier, let's describe the code changes in steps:
-
-1. Make a call to the server to ask for available tools and resources.
-2. Convert the tools and resources response to a tools schema that can be used by the LLM.
-3. Instantiate the OpenAI client.
-4. Make a chat completion call to OpenAI, passing the tools schema as a parameter.
-5. Figure out what tool to call based on the response from OpenAI.
-6. Call the tool on the server using the MCP client.
-7. Respond to the user with the result.
-
-Here's all the steps in code:
-
-```typescript
-import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
-
-// import openai
-
-// create client instance
-const transport = new StdioClientTransport({
-  command: "node",
-  args: ["server.js"]
-});
-
-const client = new Client(
-  {
-    name: "example-client",
-    version: "1.0.0"
-  }
-);
-
-await client.connect(transport);
-
-// 1. make call to server, ask it for tools
-const { tools } = await client.listTools();
-
-// convert function
-function toToolSchema(method, schema) {
-  return {
-    name: method,
-    description: `This is a tool that does ${method}`,
-    parameters: schema,
-  };
-}
-
-// 2. convert the tools and resources response to a tools schema
-const toolsForLLM = tools.map((tool) => {
-  return toToolSchema(tool.method, tool.inputSchema);
-});
-
-// 3. instantiate openai client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  model: "gpt-3.5-turbo",
-  temperature: 0.7,
-});
-
-// 4. make chat completion call to openai
-const response = await openai.chat.completions.create({
-  messages: [
-    {
-      role: "user",
-      content: `I want to add 5 and 10. Please use the tool ${toolsForLLM}`,
-    },
-  ],
-  functions: toolsForLLM,
-  function_call: "auto",
-});
-
-// 5. figure out what tool to call based on the response from openai
-const toolName = response.choices[0].message.function_call.name; // add
-const args = response.choices[0].message.function_call.arguments; // { a: 5, b: 10 }
-
-// 6. call the tool on the server
-const result = await client.callTool({
-  name: toolName,
-  arguments: args,
-});
-
-// 7. respond to user
-console.log(result); // 15
-```
-
-In the preceding code we (focusing on our additions):
-
-- Created a function `toToolSchema` that converts the tools and resources response to a schema that can be used by the LLM.
-- Asked the server for available tools and resources.
-- Converted the tools and resources response to a schema that can be used by the LLM.
-- Made a chat completion call to our AI, passing the converted tools as a parameter.
-- Figured out what tool to call based on the response from OpenAI.
-- Called the tool on the server using the MCP client.
-- Handed the result back to the user.  
-
-**You**: "I like this, this is much better! I can use natural language without even knowing what tools and resources are available. I can just ask the AI to do it for me."
-
-**Time Beetle**: "Glad you like it. It should be said though, that you might want to decide if you only want to show a tools response or if you want to show a generic response from the LLM as well. So your user might benefit from the following response strategy:
-
-- **Tools only**: If the LLM response is a tool, then call the tool and return the result.
-- **LLM only**: If the LLM response is not a tool, then return the LLM response as is.
-- **Tools and LLM**: If the LLM response is a tool, then call the tool and make an additional call to the LLM to get the general response. Return both the tool result and the LLM response.  
-
-**You**: "I see. Something to think about. But this is great! I can see how this would be useful."
-
-## MCP Server with SSE, when the server is not on your local machine
-
-TODO
-
-_In the context of model protocols, stdio and sse refer to different methods of communication between a client and a server. Let's break down the differences:
-
-stdio (Standard Input/Output)
-Usage: Typically used for local servers or processes running on your machine.
-Communication: Involves reading from standard input (stdin) and writing to standard output (stdout).
-Implementation: Often simpler and more direct, suitable for scenarios where the client and server are on the same machine.
-Example: Running a local script that processes data and outputs results directly to the terminal.
-sse (Server-Sent Events)
-Usage: Commonly used for servers that run remotely, such as web servers.
-Communication: Involves sending events from the server to the client over HTTP.
-Implementation: Allows for real-time updates and continuous data streams from the server to the client.
-Example: A web application that receives live updates from a remote server, such as stock prices or chat messages.
-Comparison
-Location: stdio is generally for local processes, while sse is for remote servers.
-Data Flow: stdio is synchronous and direct, whereas sse is asynchronous and event-driven.
-Use Case: stdio is suitable for simple, local tasks; sse is ideal for real-time, remote communication.
-Fairness of the Statement
-It is fair to say that stdio is typically used for servers meant to run on your machine, and sse is used for servers that run elsewhere. However, the choice between stdio and sse also depends on the specific requirements of the application, such as the need for real-time updates or the simplicity of implementation.
-
-Would you like to dive deeper into any specific aspect of these protocols or explore how they are implemented in different scenarios?_
+**Time Beetle**: Yes, but first things first, let's make Scipio happy. We need to have a chat with a Ms Lamarr on our next stop.
 
 ## Assignment - creating an inventory and tools management system for Scipio
 
@@ -496,8 +430,6 @@ Here's a complete inventory of my scrolls:
 
 - Scroll of Tactics.
 - Scroll of food supply.
-- Parchment of troop movements.
-- Parchment of battle plans.
 
 Oh, here's a Taxation scroll. Taxation is big thing, the Empire wants their cut of everything we acquire. Have you solved this in your time, don't answer that, I don't want to know.
 
@@ -507,10 +439,18 @@ The abacus tool, I need it to support the following operations:
 - Subtract: Subtract one number from another.
 - Multiply: Multiply two numbers together.
 - Divide: Divide one number by another.
-- Power: Raise a number to the power of another number.
 
 ## Solution
 
+[Solution](/lessons/07-mcp/solution/README.md)
+
 ## Knowledge Check
 
+[Solution Quiz](/lessons/07-mcp/solution/solution-quiz.md)
+
 ## Summary
+
+In this chapter, we've learned the following:
+
+- Model Context Protocol, MCP, is a great way to offload capabilties into servers instead of putting all your features in one place. This allows for your apps to stay small and focused. The added bonus is that different teams can manage different servers also. Thanks to MCP being a protocol this additionally means that anyone out there looking to share capabilities and can do so in a common format.
+- Additionally we looked into how to consume an MCP Server using the Inspector tool or a written client.
