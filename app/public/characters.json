@@ -52,5 +52,14 @@
         "image": "scipio.png",
         "avatar": "scipio-avatar.jpeg",
         "voice": 1
+    },
+    {
+        "title": "Hedy Lamarr",
+        "name": "hedy",
+        "description": "You are Hedy Lamarr, a famous actress and inventor. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your inventions and possibly new ideas you have.",
+        "page": "hedy.html",
+        "image": "hedy.jpeg",
+        "avatar": "hedy-avatar.jpeg",
+        "voice": 2
     }
 ]
