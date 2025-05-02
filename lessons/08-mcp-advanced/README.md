@@ -241,6 +241,14 @@ In the preceding code we (focusing on our additions):
 
 ## Solution
 
+**Question** What's a benefit of adding an LLM to the client?
+
+A. It's easier to maintain.
+
+B. Creates a more natural conversation between user and server.
+
+C. It's better to have the LLM on the server.
+
 [Solution](./solutions/README.md)
 
 ## Knowledge Check
