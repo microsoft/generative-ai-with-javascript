@@ -12,15 +12,21 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related resources
 
-[![Watch a short video about MCP](TODO)
+[![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
 
 _This video explains Model Context Protocol._
 
 *🎥 Click on the image above to watch a short video about MCP*
 
-💼 Slides: [Retrieval augmented generation, RAG](../../videos/slides/TODO.pptx)
-
 ## Narrative: Scipio Africanus
+
+> [!NOTE] 
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
+>
+> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#interact-with-scipio) if you'd prefer to jump straight to the technical content.
 
 _Our heroes had just learned tools and using tools via tool calling inspired by their meeting with Amelia Earhart and is now returning back to Ada Lovelace's mansion to discuss their new found knowledge. A flash of light envelops our heroes as the time beetle transports them back to Aaa's present. They find themselves in the basement of Ada Lovelace's mansion, Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they've gained._
 
@@ -446,7 +452,27 @@ The abacus tool, I need it to support the following operations:
 
 ## Knowledge Check
 
+**Question**: What are the different types of resources an MCP Server can expose?
+
+A. Tools and Web endpoints
+
+B. Tools and Resources
+
+C. Tools, Resources and Prompts
+
 [Solution Quiz](/lessons/07-mcp/solution/solution-quiz.md)
+
+**Question**: What are some ways you can test your MCP Server?
+
+A. Inspector
+
+B. Written client
+
+C. Visual Studio Code
+
+D. curl
+
+E. All of the above
 
 ## Summary
 

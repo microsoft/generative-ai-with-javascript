@@ -168,4 +168,14 @@ npm run build
     npm run client
     ```
 
+    It runs the following code in the client to read the resource:
+
+    ```typescript
+    let resource = await client.readResource({
+      uri: "scrolls://tactics.txt",
+    });
+
+    console.log("Resource contents:", resource.contents);
+    ```
+
     You should see the content from `scrolls/tactics.txt` in the terminal response.

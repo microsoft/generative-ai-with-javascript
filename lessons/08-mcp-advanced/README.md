@@ -1,12 +1,114 @@
 # MCP part II
 
-In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from it's cabilities. We say how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by both an inspector tool or a written client. We've only scratched the surface of what MCP can do and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
+In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from it's cabilities. We saw how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by both an inspector tool or a written client. We've only scratched the surface of what MCP can do, and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
 
-## Narrative: Heddy Lamarr
+In this chapter you will learn to:
+
+- Augment your client with an LLM.
+- Use your improved client to convert an MCP Server response to a tool.
+- Leverage your improved client to create a more natural user interaction.
+
+## Setup
+
+If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
+
+## Related resources
+
+[![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
+
+_This video explains Model Context Protocol LLM usage._
+
+*🎥 Click on the image above to watch a short video about MCP*
+
+
+## Narrative: Hedwig "Hedy" Lamarr
+
+> [!NOTE] 
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
+>
+> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+
+> [!NOTE] 
+> While we recommend going through the story (it's fun!), [click here](#interact-with-hedy-lamarr) if you'd prefer to jump straight to the technical content.
+
+You once again travelled back to Ada's mansion. This time Ada was meeting you at the main gates.
+
+**Ada**: Well, how did it go?
+
+**You**: Good I think, we managed to get this app working. You showing the progress to Ada.
+
+**Ada**: She takes the device up, tries it out and fiddles it and to herself murmurs, mm hm, ah I see, yea, yea no good. It won't do I'm afaid she states a bit louder, lacks a certain finesse.
+
+**You**: I was thinking that too, we need to be able to type or speak to it right?
+
+**Ada**: Right, I know just the person to help us. In fact, I'll come with you for this one, been too long since we met. Time Beetle, Hollywood please 1940, residence of Hedy Lamarr.
+
+Everything went dark, colors swirling, moments later your eyes start to make out a scene, a man sitting by a piano next to a woman with dark brown and curly hair both speaking in an excited way gesticulating. 
+
+<div>
+  <img src="./assets/heddy-invention.jpeg" alt="Heddy Lamarr" width="600" />
+</div>
+
+The woman turned around to face Ada standing next to you to exclaim "Ada it is you, it's been far too long".
+
+**Ada**: Hedwig dearest, working on your latest invention I assume?
+
+**Hedy**: Yes, in fact George and I think we're on to something "frequency hopping" I probably shouldn't say anymore, who knows who's listening.
+
+**Ada**: Oh you mean him, pointing at me, he's on his own adventure.
+
+**Hedy**: I see, what can do you for?
+
+**Ada**: Actually, we need this device to work a bit better, ideas?
+
+**Hedy**: She picked up the device, locked at it from different angles, and you say you've already separated the features from the communication part?
+
+**Ada**: Yes, yes we did.
+
+**Hedy**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had a with a naval cadette as I was trying to sell war bonds. Minsky was his name I think. What does Human intelligence look like in a machine was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
+
+**Ada**: Right, well you heard Ms Lamarr, get to it.
+
+**You**: Time Beetle, how do we do this?
+
+**Time Beetle**: You can improve the client you've created before with a large language model, LLM.
+
+> Hedy Lamarr was an extraordinary figure, known both for her Hollywood stardom and her remarkable contributions to technology. Born in Vienna, Austria, in 1914, she became a famous actress in the 1930s and 1940s, often referred to as the "most beautiful woman in the world".
+>
+> However, beyond her acting career, Lamarr was also a brilliant inventor. During World War II, she co-invented a radio guidance system for Allied torpedoes with composer George Antheil. This system used spread spectrum and frequency hopping technology to prevent the Axis powers from jamming the signals. Although it wasn't used during the war, this technology later became the foundation for modern wireless communication, including Wi-Fi, Bluetooth, and GPS.
+>
+> Lamarr's contributions to technology were not fully recognized during her lifetime, but today she is celebrated as a pioneer in the field. Her story is a fascinating blend of glamour and genius, showing that true innovation can come from the most unexpected places
+> Read more here about [Hedy Lamarr](https://en.wikipedia.org/wiki/Hedy_Lamarr) and here [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky)
+
+## Interact with Hedy Lamarr
+
+If you want to interact with Hedy, run the [Characters](/app/README.md) app. 
+
+> [!IMPORTANT]
+> This is entirely fictional; the responses are generated by AI.
+> [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
+
+<div>
+  <img src="./assets/heddylamarr.jpeg" alt="Hedy Lamarr" width="300">
+</div>
+
+**Steps**:
+
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _/app_ in the repo root.
+3. Locate the console and run `npm install` followed by `npm start`.
+4. Once it appears, select the "Open in Browser" button.
+5. Chat with Hedy.
+
+For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
+
+> [!NOTE]
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+
 
 ## Adding a large language model to a client
 
-**Time Beetle**: "Let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits is that it provides a better user experience and allows you to use natural language to interact with the server."
+**Time Beetle**: "As I was saying, let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits is that it provides a better user experience and allows you to use natural language to interact with the server."
 
 How it would work on high level then is to have:
 
@@ -121,27 +223,34 @@ In the preceding code we (focusing on our additions):
 
 **You**: "I see. Something to think about. But this is great! I can see how this would be useful."
 
-## MCP Server with SSE, when the server is not on your local machine
+## Assignment
 
-TODO
+**Ada** looks like you've made a fine improvement there. To make this really useful, I need you to create a server and a client with the following specs:
 
-_In the context of model protocols, stdio and sse refer to different methods of communication between a client and a server. Let's break down the differences:
+- Server should have the following tools:
 
-stdio (Standard Input/Output)
-Usage: Typically used for local servers or processes running on your machine.
-Communication: Involves reading from standard input (stdin) and writing to standard output (stdout).
-Implementation: Often simpler and more direct, suitable for scenarios where the client and server are on the same machine.
-Example: Running a local script that processes data and outputs results directly to the terminal.
-sse (Server-Sent Events)
-Usage: Commonly used for servers that run remotely, such as web servers.
-Communication: Involves sending events from the server to the client over HTTP.
-Implementation: Allows for real-time updates and continuous data streams from the server to the client.
-Example: A web application that receives live updates from a remote server, such as stock prices or chat messages.
-Comparison
-Location: stdio is generally for local processes, while sse is for remote servers.
-Data Flow: stdio is synchronous and direct, whereas sse is asynchronous and event-driven.
-Use Case: stdio is suitable for simple, local tasks; sse is ideal for real-time, remote communication.
-Fairness of the Statement
-It is fair to say that stdio is typically used for servers meant to run on your machine, and sse is used for servers that run elsewhere. However, the choice between stdio and sse also depends on the specific requirements of the application, such as the need for real-time updates or the simplicity of implementation.
+  o `characterDetails` with arg `name`
+  o `place` with arg `name`
 
-Would you like to dive deeper into any specific aspect of these protocols or explore how they are implemented in different scenarios?_
+- Client should use an LLM
+
+> [!TIP]
+> You can for example give the server the capability to talk to an external Web API for information retrieval, e.g Wikipedia 
+> `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(topic)}`
+  
+
+## Solution
+
+[Solution](./solutions/README.md)
+
+## Knowledge Check
+
+[Solution quiz](./solutions/solution-quiz.md)
+
+## Summary
+
+In this chapter, we've learned the following:
+
+- Clients augmented with an LLM provides a better user experience.
+- Responses from a server needs to be converted to a format the LLM can understand as a tool.
+
