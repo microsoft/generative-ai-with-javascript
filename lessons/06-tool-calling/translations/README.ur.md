@@ -14,7 +14,9 @@
 
 ## متعلقہ وسائل
 
-[![فنکشن کالنگ کے ساتھ انضمام](./assets/11-lesson-banner.png?WT.mc_id=academic-105485-koreyst)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
+[![Integrating with function calling](https://github.com/hamna-khalil/generative-ai-with-javascript/blob/Urdu-Pakistan/lessons/06-tool-calling/assets/11-lesson-banner.png?raw=true)](https://learn.microsoft.com/en-us/shows/generative-ai-for-beginners/integrating-external-applications-with-function-calling-generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+
 
 _یہ ویڈیو ٹول کالنگ کی وضاحت کرتا ہے ، ایک ایسا طریقہ جو اے آئی کو آپ کے فنکشنز کو کال کرنے میں مدد کرتا ہے_
 
@@ -43,7 +45,7 @@ _یہ ویڈیو ٹول کالنگ کی وضاحت کرتا ہے ، ایک ای�
 آپ کے ارد گرد کی دنیا دھندلی ہونے لگتی ہے ، اور سب کچھ سیاہ ہو جاتا ہے۔ آپ آتے ہیں اور اپنے آپ کو ہوائی جہاز کے کاک پٹ میں پاتے ہیں۔ آپ ہوا میں ہیں، اور آپ اپنے نیچے سمندر دیکھ سکتے ہیں. سامنے کوئی بیٹھا ہے۔ آپ صرف ان کی گردن کے پچھلے حصے کو دیکھ سکتے ہیں.
 
 <div>
-    <img src="./assets/amelia.jpeg" alt="Amelia piloting a plane" width="300">
+    <img src="https://github.com/hamna-khalil/generative-ai-with-javascript/blob/Urdu-Pakistan/lessons/06-tool-calling/assets/amelia.jpeg?raw=true" alt="Amelia piloting a plane" width="300">
 </div>
 
 **آپ**: "امیلیا، کیا یہ تم ہو؟"
@@ -74,8 +76,9 @@ _یہ ویڈیو ٹول کالنگ کی وضاحت کرتا ہے ، ایک ای�
 > [ذمہ دار اے آئی ڈسکلیمر](/README.md#responsible-ai-disclaime)
 
 <div>
-  <img src="./assets/amelia-front.jpeg" alt="Ada Lovelace" width="300">
+    <img src="https://github.com/hamna-khalil/generative-ai-with-javascript/blob/Urdu-Pakistan/lessons/06-tool-calling/assets/amelia-front.jpeg?raw=true" alt="Amelia front view" width="300">
 </div>
+
 
 **اقدامات**:
 
@@ -100,8 +103,9 @@ _یہ ویڈیو ٹول کالنگ کی وضاحت کرتا ہے ، ایک ای�
 **ٹائم بیٹل**: "ٹول کالنگ کے عمل کی وضاحت کرنے کے لئے یہاں ایک تصویر ہے:"
 
 <div>
-    <img src="./assets/tool_call_langchain.png" alt="Tool calling process illustration" width="600">
+    <img src="https://github.com/hamna-khalil/generative-ai-with-javascript/blob/Urdu-Pakistan/lessons/06-tool-calling/assets/tool_call_langchain.png?raw=true" alt="Tool calling process illustration" width="600">
 </div>
+
 
 
 _ایمج کریڈٹ لینگ چین <https://python.langchain.com/docs/concepts/tool_calling/>_
@@ -133,7 +137,6 @@ function findLandingSpot(lat, long) {
     return { lat: 7.5, long: 134.5 };
 }
 ```
-
 **آپ**: "ٹھیک ہے، اے آئی ماڈل کو کیسے پتہ چلتا ہے کہ یہ آلہ موجود ہے؟"
 
 **ٹائم بیٹل**: "آپ کو آلے کو اے آئی ماڈل کے ساتھ رجسٹر کرنے کی ضرورت ہے. یہ ماڈل کو بتاتا ہے کہ ٹول بلانے کے لئے دستیاب ہے۔ آئیے اگلے حصے میں اس کا احاطہ کرتے ہیں۔"
@@ -232,7 +235,6 @@ const completion = await openai.chat.completions.create({
     functions: [getBackgroundOnCharacterJson, findLandingSpotJson]
   });
 ```
-
 **ٹائم بیٹل**: "پچھلے کوڈ کے ٹکڑے میں ہم:" 
 
 - 'فائنڈ لینڈنگ اسپاٹ' ٹول اور 'گیٹ بیک گراؤنڈ آن کریکٹر' ٹول کے لیے میٹا ڈیٹا کی وضاحت کریں۔ 
