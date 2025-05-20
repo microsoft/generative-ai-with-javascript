@@ -1,4 +1,4 @@
-# Lesson 5: Talk to your data with Retrieval-Augmented Generation (RAG)
+# Lesson 5: Talk to Your Data with Retrieval-Augmented Generation (RAG)
 
 In this chapter you will learn:
 
@@ -10,7 +10,7 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 [![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
 
@@ -330,7 +330,7 @@ const text = Object.values(data.query.pages)[0]?.extract;
 
 [Solution](./solution/rag-www.js)
 
-## Knowledge check
+## Knowledge Check
 
 **Question**: What is the role of the retriever in a RAG system?
 
@@ -342,7 +342,7 @@ C. The retriever finds relevant information from external data sources.
 
 [Quiz solution](./solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - [Retrieval-Augmented Generation and Indexes](https://learn.microsoft.com/azure/ai-studio/concepts/retrieval-augmented-generation)
 - **Sample apps**:

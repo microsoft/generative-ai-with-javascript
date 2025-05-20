@@ -1,4 +1,4 @@
-# Lesson 3: Prompt engineering
+# Lesson 3: Prompt Engineering
 
 In this chapter you will learn:
 
@@ -10,7 +10,7 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 [![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
 
@@ -322,7 +322,7 @@ Then use the LLM to incorporate these inputs and leverage the chain of thought p
 
 [Solution](./solution/solution.md) 
 
-## Knowledge check 
+## Knowledge Check
 
 **Question:** What is prompt engineering? Select all that apply.
 
@@ -334,7 +334,7 @@ C. Prompt engineering is about training a model to recognize patterns in data.
 
 [Quiz solution](./solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 - [Prompt engineering fundamentals](https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md?WT.mc_id=academic-105485-koreyst)
