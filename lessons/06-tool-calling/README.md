@@ -1,4 +1,4 @@
-# Lesson 6: Tool calling
+# Lesson 6: Tool Calling
 
 Tool calling, also known as function calling, refers to enhancing your AI model by adding capabilities it previously lacked. The concept involves supplying meta descriptions of your functions, allowing the AI model to determine when a particular tool should be called based on a user's prompt. The idea is to provide it with meta descriptions of your actual functions and make the AI model point out when such a tool should be called given a user's prompt.
 
@@ -12,9 +12,9 @@ In this chapter, you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
-[![Integrating with function calling](./assets/11-lesson-banner.png?WT.mc_id=academic-105485-koreyst)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
+[![Integrating with function calling](./assets/11-lesson-banner.png)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
 
 _This video explains Tool calling, a method that helps the AI call your functions and thereby expand what it can do_
 
@@ -410,7 +410,7 @@ function getWeatherForecast(lat, long) {
 
 [Solution](./solution/solution.js)
 
-## Knowledge check
+## Knowledge Check
 
 **Question:**  
 What is the purpose of registering a tool with the AI model?
@@ -435,7 +435,7 @@ C. To allow the AI model to execute tools without requiring metadata.
 
 [Solution quiz](./solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - Explains the [process of tool calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/function-calling/?pivots=programming-language-csharp)
 - Tool calling in the [Langchain.js framework](https://js.langchain.com/docs/how_to/tool_calling/)

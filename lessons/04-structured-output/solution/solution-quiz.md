@@ -1,4 +1,4 @@
-### ❓ Question:
+### ❓ Question
 
 ### What is structured output used for ?
 
