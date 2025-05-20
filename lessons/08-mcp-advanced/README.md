@@ -37,7 +37,7 @@ You once again travelled back to Ada's mansion. This time Ada was meeting you at
 
 **You**: Good I think, we managed to get this app working. You showing the progress to Ada.
 
-**Ada**: She takes the device up, tries it out and fiddles it and to herself murmurs, mm hm, ah I see, yea, yea no good. It won't do I'm afaid she states a bit louder, lacks a certain finesse.
+**Ada**: She takes the device up, tries it out and fiddles it and to herself murmurs, mm hm, ah I see, yea, yea no good. It won't do I'm afraid she states a bit louder, lacks a certain finesse.
 
 **You**: I was thinking that too, we need to be able to type or speak to it right?
 
@@ -61,11 +61,11 @@ The woman turned around to face Ada standing next to you to exclaim "Ada it is y
 
 **Ada**: Actually, we need this device to work a bit better, ideas?
 
-**Hedy**: She picked up the device, locked at it from different angles, and you say you've already separated the features from the communication part?
+**Hedy**: She picked up the device, looked at it from different angles, and you say you've already separated the features from the communication part?
 
 **Ada**: Yes, yes we did.
 
-**Hedy**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had a with a naval cadette as I was trying to sell war bonds. Minsky was his name I think. What does Human intelligence look like in a machine was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
+**Hedy**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had with a naval cadet as I was trying to sell war bonds. Minsky was his name I think. What does Human intelligence look like in a machine was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
 
 **Ada**: Right, well you heard Ms Lamarr, get to it.
 
@@ -108,7 +108,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 
 ## Adding a large language model to a client
 
-**Time Beetle**: "As I was saying, let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits is that it provides a better user experience and allows you to use natural language to interact with the server."
+**Time Beetle**: "As I was saying, let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits are that it provides a better user experience and allows you to use natural language to interact with the server."
 
 How it would work on high level then is to have:
 
