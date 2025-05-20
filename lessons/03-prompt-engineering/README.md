@@ -58,7 +58,7 @@ Leonardo grabs the reins and you both leap into the carriage. With a sharp crack
 
 **You:** No, not Rome, home... home...
 
-A swirl of colours envelops the carriage, the world around you dissolving into a kaleidoscope of light.
+A swirl of colors envelops the carriage, the world around you dissolving into a kaleidoscope of light.
 
 ## Escape 
 
