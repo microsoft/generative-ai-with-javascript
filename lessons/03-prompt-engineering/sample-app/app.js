@@ -1,6 +1,7 @@
 import { OpenAI } from "openai";
 import readline from "readline";
 
+// User input 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -14,48 +15,38 @@ const question = (query) => {
   });
 };
 
-const height = await question("Enter the current height above the ground in meters:");
+async function main() {
+  const userPrompt = await question("Enter your prompt: ");
 
-const speed = await question("Enter the speed at which you're moving forward in meters per second:");
+  const messages = [
+    {
+      role: "user",
+      content: userPrompt
+    }
+  ];
 
-const gravity = await question("Enter the gravity in meters per second squared:");
+  // OpenAI API setup
+  const openai = new OpenAI({
+    baseURL: "https://models.inference.ai.azure.com",
+    apiKey: process.env.GITHUB_TOKEN,
+  });
 
-const wind = await question("Enter the wind speed upwards in meters per second:");
-
-// Distance to the hill
-const distance = 100;
-
-// Create prompt including inputs should include chain of thought
-
-const prompt = "TODO";
-
-// Call the language model with the prompt
-
-const messages = [
-{
-    "role": "user",
-    "content": prompt
-}];
-
-// 2. Create client
-// -----------------------------------
-
-const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
-});
-
-// 3. Send the request
-// -----------------------------------
-
-const completion = await openai.chat.completions.create({
+  const completion = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
     messages: messages,
-});
+  });
 
-console.log(`Answer for "${prompt}":`);
+  const answer = completion.choices[0]?.message?.content;
 
-// 4. Print the answer
-// -----------------------------------
+  console.log(`\nAI Response:\n`);
+  console.log(answer);
 
-console.log(completion.choices[0]?.message?.content);
+  // Easter Egg Check
+  if (userPrompt.toLowerCase().includes("time-traveling javascript developer") && answer) {
+    console.log("\n Easter Egg Unlocked! You discovered the hidden poem! ");
+  }
+
+  rl.close();
+}
+
+main();
