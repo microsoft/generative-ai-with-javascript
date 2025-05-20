@@ -1,4 +1,4 @@
-# Lesson 2: Writing your first AI app
+# Lesson 2: Writing Your First AI App
 
 In this chapter you will learn:
 
@@ -10,7 +10,7 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 [![Watch a short video about large language models](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
 
@@ -490,7 +490,7 @@ Check out [Sample app](/app/README.md) to get started.
 
 [Solution](./solution/solution.md)
 
-## Knowledge check
+## Knowledge Check
 
 **Question:** What is the purpose of the context window in generative AI models? Select all that apply.
 
@@ -502,7 +502,7 @@ C. The context window determines how creative the AI's responses are.
 
 [Quiz solution](./solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - [Text generation](https://platform.openai.com/docs/guides/text-generation)
 - [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 

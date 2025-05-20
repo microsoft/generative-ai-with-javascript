@@ -1,11 +1,11 @@
 # Setting Up the Development Environment for Azure OpenAI
 
-Azure AI Foundry is a service that allows you to deploy and manage AI models in the cloud. You can things like create a project, deploy a model, interact with the model, and more.
+Azure AI Foundry is a service that allows you to deploy and manage AI models in the cloud. You can do things like create a project, deploy a model, interact with the model, and more.
 
 > [!NOTE]
 > If you want to use Azure AI Foundry models for your .NET AI apps in this course, follow the steps in this guide.
 
-👉 [To use GitHub Models this is the guide for you](./README.md)
+👉 [If you want to use GitHub models, follow this guide instruction.](./README.md)
 
 ## Create the Azure AI Foundry resources
 
@@ -15,7 +15,7 @@ To use Azure AI Foundry models, you need to take the following steps:
 1. Deploy a model to your project.
 1. Add the Azure AI library code + API key and other credentials to your code.
 
-### -1- Create a Hub and Project in Azure AI Foundry
+### Step 1: Create a Hub and Project in Azure AI Foundry
 
 1. Go to the [Azure AI Foundry Portal](https://ai.azure.com/).
 1. Sign in with your Azure account.
@@ -36,7 +36,7 @@ To use Azure AI Foundry models, you need to take the following steps:
 
 Before you can interact with the model, you need to deploy it to your project, so let's do that next.
 
-### -2- Deploy a Language Model in Azure AI Foundry
+### Step 2 : Deploy a Language Model in Azure AI Foundry
 
 Now, let’s deploy a **gpt-4o-mini** model to your project:
 

@@ -1,4 +1,4 @@
-# Lesson 4: Structured output
+# Lesson 4: Structured Output
 
 In this chapter you will learn: 
 
@@ -10,7 +10,7 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 It's worth rewatching the video on prompt engineering as it lays the foundation for what you're about to learn in this chapter.
 
@@ -566,6 +566,6 @@ C. Generating unstructured text.
 
 [Quiz solution](./solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - [Generative AI with JavaScript video series](https://aka.ms/genai-js)
