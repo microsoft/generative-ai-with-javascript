@@ -1,8 +1,8 @@
-# MCP, Model Context Protocol
+# Lesson 7: MCP, Model Context Protocol
 
 In this chapter you will learn:
 
-- How to use the Model Context Protocol, MCP to split up your server capabilities in a server and a client
+- How to use the Model Context Protocol, MCP to split up your server capabilities into a server and a client
 - Create tools, resources and prompts on the server.
 - Consume the server using both the inspector tool and a written client.
 
@@ -18,7 +18,7 @@ _This video explains Model Context Protocol._
 
 *🎥 Click on the image above to watch a short video about MCP*
 
-## Narrative: Scipio Africanus
+## Narrative - Scipio Africanus
 
 > [!NOTE] 
 > _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
@@ -28,13 +28,13 @@ _This video explains Model Context Protocol._
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-scipio) if you'd prefer to jump straight to the technical content.
 
-_Our heroes had just learned tools and using tools via tool calling inspired by their meeting with Amelia Earhart and is now returning back to Ada Lovelace's mansion to discuss their new found knowledge. A flash of light envelops our heroes as the time beetle transports them back to Aaa's present. They find themselves in the basement of Ada Lovelace's mansion, Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they've gained._
+_Our heroes having just learned about tools and "tool calling" during their meeting with Amelia Earhart, our heroes are now returning back to Ada Lovelace's mansion to discuss their new found knowledge. A flash of light envelops our heroes as the time beetle transports them back to Aaa's present. They find themselves in the basement of Ada Lovelace's mansion, Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they've gained._
 
 **Ada**: "Welcome back! I trust your journey was enlightening."
 
-**You**: "It was! meeting with mrs Earhart was quite the experience. She taught us about the importance of tools and how to use them effectively." 
+**You**: "It was! meeting with Mrs. Earhart was quite the experience. She taught us about the importance of tools and how to use them effectively." 
 
-**Ada**: "There are few people who understand the importance of tools better than Amelia. I trust you've also upgraded her time beetle?"
+**Ada**: "There are few people who understand the importance of tools better than Amelia. I trust you've also upgraded her Time Beetle?"
 
 **You**: "Yes, we did! So what's next on the agenda?"
 
@@ -42,7 +42,7 @@ _Our heroes had just learned tools and using tools via tool calling inspired by 
 
 **You**: "Scipio Africanus? I think I remember him from history class.  
 
-**Ada**: "Good then, why are you still here? Time is off the essence. Ta ta"
+**Ada**: "Good then, why are you still here? Time is of the essence. Ta ta"
 
 The swirling of light envelops you again and you find yourself in a large room with a large table in the middle. The walls are adorned with maps and military strategies. Scipio Africanus is standing at the table, deep in thought. He looks up as you enter. "Ada te misit/Ada sent you?" 
 
@@ -76,7 +76,7 @@ The swirling of light envelops you again and you find yourself in a large room w
 > Scipio Africanus's life and career exemplify the qualities of leadership, strategic brilliance, and resilience. His contributions to Rome's military and political spheres left a lasting impact on the Roman Empire.
 >
 
-## Interact with scipio
+## Interact with Scipio
 
 If you want to interact with Scipio, run the [Characters](/app/README.md) app. 
 
@@ -104,7 +104,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 
 ## The need for Model Context Protocol (MCP)
 
-**Time beetle**: The protocol Ada spoke of is called the Model Context Protocol (MCP). It's a protocol that allows you to decentralize your application architecture, making it more scalable and resilient by adding resources on a server, or multiple servers even, and offload these from the client. I'll let Scipio explain the idea to you.
+**Time Beetle**: The protocol Ada spoke of is called the Model Context Protocol (MCP). It's a protocol that allows you to decentralize your application architecture, making it more scalable and resilient by adding resources on a server, or multiple servers even, and offload these from the client. I'll let Scipio explain the idea to you.
 
 **You**: "Yes, Ada sent us. She said you could help us with a protocol?"
 
@@ -124,8 +124,8 @@ Let's talk about flanking maneuvers, infiltration, and the use of cavalry.
 
 **Time beetle**: "To add to Scipio's point, the Model Context Protocol (MCP) is a way to decentralize your application architecture. It allows you to break down your application into smaller, more manageable components that can operate independently. Here are some important concepts to keep in mind:
 
-- **MCP Hosts**: Programs like IDEs or AI tools that want to access data through MCP.
-- **MCP Clients**: Protocol clients that maintain 1:1 connections with servers.
+- **MCP Hosts**: Programs like IDEs, for example GitHub Copilot in Visual Studio Code or Claude Desktop that initiates a connection to the server or servers.
+- **MCP Clients**: Protocol clients that maintain 1:1 connections with MCP servers.
 - **MCP Servers**: Lightweight programs that expose specific capabilities through MCP.
 - **Local Data Sources**: Files, databases, and services on your computer that MCP servers can securely access.
 - **Remote Services**: External systems available over the internet (e.g., APIs) that MCP servers can connect to.
@@ -144,20 +144,20 @@ and here's a quick overview of the MCP architecture:
 
 To sum things up, I should:
 
-- **Use flanking maneuvers**, or in my case break down by app functionality into several MCP servers so that I can distribute them after area of usage and thereby make it easier to scale and manage the app. Such servers can even be updated independently of each other.
+- **Use flanking maneuvers**, or in my case break down features by app functionality into several different MCP servers so that I can distribute servers after area of usage.  Thereby, it's easier to scale and manage the app. Such servers can even be updated independently of each other.
 - **Use infiltration**, or in my case, figure out what these servers are doing, in terms of tools and resources. This way I can make sure I'm interacting with the right server and using the right tools for the job.
 
-**You**: "Time beetle, am I understanding things correctly?"
+**You**: "Time Beetle, am I understanding things correctly?"
 
-**Time beetle**: "Yes, you are. Scipio's strategies can be applied to your application architecture. If you want, I can teach you the specifics of the Model Context Protocol (MCP) and how to implement it in your application?
+**Time Beetle**: "Yes, you are. Scipio's strategies can be applied to your application architecture. If you want, I can teach you the specifics of the Model Context Protocol (MCP) and how to implement it in your application?
 
 **You**: "Yes, please!"
 
-**Time beetle**: "Good, let's start with creating a server"
+**Time Beetle**: "Good, let's start with creating a server"
 
 ## Creating an MCP Server
 
-**Time beetle**: "To create your first MCP server, you need two libraries `@modelcontextprotocol/sdk` and `zod`:
+**Time Beetle**: "To create your first MCP server, you need two libraries `@modelcontextprotocol/sdk` and `zod`:
 
 - The `@modelcontextprotocol/sdk` library provides the necessary tools to create and manage MCP servers.
 - `zod` is a TypeScript-first schema declaration and validation library that helps you define and validate the data structures used in your MCP server. 
@@ -166,7 +166,7 @@ To sum things up, I should:
 npm install @modelcontextprotocol/sdk zod
 ```
 
-Here's a simple example on how to create an MCP server using these libraries:
+Here's a simple example of how to create an MCP server using these libraries:
 
 ```typescript
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -200,7 +200,7 @@ server.tool("add",
 
 In the preceding code, we:
 
-- Defined a tool called "add" that takes two numbers as input and returns their sum as output.
+- Defined a tool named "add" that takes two numbers as input and returns their sum as output.
 - Described the input parameters and its validation using zod. The `z.number()` function is used to validate the input data, ensuring that both `a` and `b` are numbers.
 - The `async` function is used to perform the addition and return the result in a specific format.
 
@@ -223,11 +223,11 @@ server.resource(
 
 In this code, we:
 
-- Defined a resource called "greeting" that takes a name as input and returns a greeting message.
-- Used a resource template to define how to call the resource `greeting//{name}`. This schema is used to define the resource's URI format, which includes a placeholder for the name.
+- Defined a resource named "greeting" that takes a name as input and returns a greeting message.
+- Used a resource template to define how to call the resource `greeting://{name}`. This schema is used to define the resource's URI format, which includes a placeholder for the name.
 - The `async` function is used to generate the greeting message based on the provided name.
 
-**You**: "So the resource is like a data source, this could be a database, file or even an API? If this was a for a file I would use a file:// URI?" like so:
+**You**: "So, the resource is like a data source, this could be a database, file or even an API? If this was a for a file I would use a file:// URI?" like so:
 
 ```typescript
 server.resource(
@@ -255,7 +255,7 @@ await server.connect(transport);
 
 In this code, we:
 
-- Created a transport layer using the `StdioServerTransport` class, which allows the server to communicate with clients through standard input and output.
+- Created a transport layer using the `StdioServerTransport` class, which allows the server to communicate with clients through standard input and output and runs on your local machine. There are also other transports like SSE and streaming HTTP which allows you to run remotely on a server, more on that later.
 - Called the `connect` method to establish the connection between the server and the transport layer.
 
 **You**: "Ok, so now we have a server, how do we run and test it?"
@@ -284,7 +284,7 @@ Above, we are using the `@modelcontextprotocol/inspector` package to run the MCP
 
 ### -1- Connect to the server
 
-**Time beetle**: Select to "Connect" and you should see the window below:
+**Time Beetle**: Select to "Connect" and you should see the window below:
 
 ![Connecting to server](https://softchris.github.io/mcp-workshop/assets/images/connected-7c3570d5d0a8659e27740d2950031cb3.png)
 
@@ -306,7 +306,7 @@ Now you should see the "add" tool listed. You can also list the resources by sel
 
 **Scipio**: "Interesting, I wish I could test my strategies like this. Seems very useful."
 
-**You**: "Right, it really does**! I can see how this would be useful for testing and debugging."
+**You**: "Right, it really does! I can see how this would be useful for testing and debugging."
 
 ## Creating a client
 
@@ -343,7 +343,7 @@ In the preceding code, we:
 
 ### Listing and calling tools and resources
 
-**Time Beetle**: "There's generally two scenarios you want to cover, listing tools and resources, and calling them. Here's how to do that:
+**Time Beetle**: "There are generally two scenarios you want to cover, listing tools and resources, and calling them. Here's how to do that:
 
 ```typescript
 // List prompts
@@ -358,9 +358,9 @@ const tools = await client.listTools();
 
 **You**: This is great, then I know what capabilities the server has. But how do I call them?
 
-**Time Beetle**: "Right, let me dive into a specific example, tools first. So you start by asking for what tools you have, then you can store that response and then call the tool you want. Here's an example:
+**Time Beetle**: "Right, let me dive into a specific example, tools first. So you start by asking what tools you have, then you can store that response and then call the tool you want. Here's an example:
 
-So when you list tools, you get a response on this format:
+So when you list tools, you get a response on the following format:
 
 ```json
   
@@ -387,7 +387,7 @@ which means, if you have the tools `add` and `subtract`, your response looks lik
 
 **You**: "Ok, good, I guess I can store that in a variable and then call the tool I want?"
 
-**Time Beetle**: "Exactly! Let's show calling a tool next:"
+**Time Beetle**: "Exactly! Let's look at how a tool can be called next:"
 
 ```typescript
 // List tools
@@ -426,7 +426,7 @@ console.log(resourceResult); // Hi John Doe!
 
 **You**: "I get it nice, although, you're thinking to yourself, I bet we can improve this somehow? Time Beetle, we can improve this right? 
 
-**Time Beetle**: Yes, but first things first, let's make Scipio happy. We need to have a chat with a Ms Lamarr on our next stop.
+**Time Beetle**: Yes, but first things first, let's make Scipio happy. We need to have a chat with a Ms. Lamarr on our next stop.
 
 ## Assignment - creating an inventory and tools management system for Scipio
 
@@ -466,7 +466,7 @@ C. Tools, Resources and Prompts
 
 A. Inspector
 
-B. Written client
+B. A custom MCP client
 
 C. Visual Studio Code
 
