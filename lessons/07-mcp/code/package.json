@@ -1,0 +1,21 @@
+{
+    "type": "module",
+    "bin": {
+      "sample-server": "./build/index.js"
+    },
+    "scripts": {
+      "build": "tsc && node build/index.js",
+      "client": "node build/client.js"
+    },
+    "files": [
+      "build"
+    ],
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.8.0",
+        "openai": "^4.91.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.17",
+        "typescript": "^5.8.2"
+    }
+  }
