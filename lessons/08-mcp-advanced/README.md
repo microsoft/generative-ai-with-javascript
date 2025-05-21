@@ -65,7 +65,7 @@ The woman turned around to face Ada standing next to you to exclaim "Ada it is y
 
 **Ada**: Yes, yes we did.
 
-**Hedy**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had with a naval cadet as I was trying to sell war bonds. Minsky was his name I think. What does Human intelligence look like in a machine was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
+**Hedy**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had with a naval cadet as I was trying to sell war bonds. Minsky was his name I think. "What does Human intelligence look like in a machine" was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
 
 **Ada**: Right, well you heard Ms Lamarr, get to it.
 
