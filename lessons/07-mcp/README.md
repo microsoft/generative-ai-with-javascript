@@ -10,7 +10,7 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 [![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
 
@@ -51,32 +51,9 @@ The swirling of light envelops you again and you find yourself in a large room w
 </div>
 
 > Scipio Africanus, also known as Publius Cornelius Scipio Africanus, was a prominent Roman general and statesman who lived from 236 BC to 183 BC. He is best known for his decisive role in the Second Punic War against Carthage and his victory over Hannibal at the Battle of Zama in 202 BC.
->
-> **Key Highlights of His Life and Career:**
->
-> **1. Early Life:**
-> Scipio was born into the patrician Scipio family, which had a long history of military and political service. He showed early promise and was involved in military campaigns from a young age.
->
-> **2. Second Punic War:**
-> Scipio's most notable achievements came during the Second Punic War. After the devastating Roman defeat at Cannae, he was appointed to command Roman forces in Spain. He successfully captured the strategic city of New Carthage in 209 BC, which was a turning point in the war.
->
-> **3. Battle of Zama:**
-> Scipio's crowning achievement was his victory at the Battle of Zama in 202 BC. He employed innovative tactics, including the use of cavalry to outflank Hannibal's forces. This victory effectively ended the Second Punic War and secured Rome's dominance over the western Mediterranean.
->
-> **4. Political Career:**
-> After his military successes, Scipio continued to serve Rome in various political roles. He was elected consul twice and played a significant role in shaping Roman policy and governance.
->
-> **5. Legacy:**
-> Scipio Africanus is remembered as one of Rome's greatest military commanders. His strategies and tactics are studied to this day, and his victory over Hannibal is considered one of the most significant military achievements in history.
-> 
-> **Interesting Facts:**
-> - Scipio was known for his magnanimity and humane treatment of defeated enemies, which earned him respect even among his adversaries.
-> - He was given the honorary title "Africanus" after his victory in Africa, a rare honor that signified his extraordinary achievements.
->
-> Scipio Africanus's life and career exemplify the qualities of leadership, strategic brilliance, and resilience. His contributions to Rome's military and political spheres left a lasting impact on the Roman Empire.
->
+> His life and career exemplify the qualities of leadership, strategic brilliance, and resilience. His contributions to Rome's military and political spheres left a lasting impact on the Roman Empire.
 
-## Interact with Scipio
+## Interact With Scipio
 
 If you want to interact with Scipio, run the [Characters](/app/README.md) app. 
 
@@ -134,18 +111,28 @@ and here's a quick overview of the MCP architecture:
 
 ![Architecture of MCP](https://softchris.github.io/mcp-workshop/assets/images/diagram-791787b0cac57bc331c20e72b645d4f7.png)
 
-### Discovering tools and resources
+## MCP Building Blocks
+
+To build a server, you need to know about the core building blocks, those are:
+
+- **Tools**: Tools are things that compute something for you, they take an input, perform a computation and produces and output. Typically this is a calculation or placing an order or similar action.
+
+- **Resources**: A resource is static data, usually that means application settings, database schemas or some other static file on a server for example.
+
+- **Prompts**. Prompts, or prompt templates, are like a recipe that you can reuse. The idea is by using such a recipe, you could then send it parameters and feed that into an LLM and accomplish something like for example generating a product description for example.
+
+### Discovering Tools, Resources and Prompts
 
 **You**: "And what about infiltration?"
 
 **Scipio**: "Infiltration is about using small units to infiltrate enemy lines, that way you find out more about the enemy and cause confusion. 
 
-**You**: "Sounds to me like we can use this way of thinking to find out more about our servers, what tools and resources they have.
+**You**: "Sounds to me like we can use this way of thinking to find out more about our servers, what tools, prompts and resources they have.
 
 To sum things up, I should:
 
 - **Use flanking maneuvers**, or in my case break down features by app functionality into several different MCP servers so that I can distribute servers after area of usage.  Thereby, it's easier to scale and manage the app. Such servers can even be updated independently of each other.
-- **Use infiltration**, or in my case, figure out what these servers are doing, in terms of tools and resources. This way I can make sure I'm interacting with the right server and using the right tools for the job.
+- **Use infiltration**, or in my case, figure out what these servers are doing, in terms of tools, prompts and resources. This way I can make sure I'm interacting with the right server and using the right tools for the job.
 
 **You**: "Time Beetle, am I understanding things correctly?"
 
@@ -282,7 +269,7 @@ Above, we are using the `@modelcontextprotocol/inspector` package to run the MCP
 
 ![Inspector user interface](https://softchris.github.io/mcp-workshop/assets/images/connect-7703c67645f368d51c7b24a5d635d6a0.png)
 
-### -1- Connect to the server
+### -1- Connect to the Server
 
 **Time Beetle**: Select to "Connect" and you should see the window below:
 
@@ -290,7 +277,7 @@ Above, we are using the `@modelcontextprotocol/inspector` package to run the MCP
 
 It should say you're connected. Now you can interact with tools or resources next.
 
-### -2- List tools and resources
+### -2- List Tools and Resources
 
 **Time beetle**: "Next, we want to list the tools and resources available on the server. You can do this by selecting "List tools", to see what tools are available:
 
@@ -298,7 +285,7 @@ It should say you're connected. Now you can interact with tools or resources nex
 
 Now you should see the "add" tool listed. You can also list the resources by selecting the "Resources" tab.
 
-### -3- Run the tool
+### -3- Run the Tool
 
 **Time beetle**: "To run the tool, select the "add" tool from the list. Fill in the parameters in the dialog that appears on the right side of the screen. For example, you can enter `a=5` and `b=10` to add these two numbers together. Click "Run Tool" to execute the tool. You should see the result in the output area below. The result should be `15`."
 
@@ -308,7 +295,7 @@ Now you should see the "add" tool listed. You can also list the resources by sel
 
 **You**: "Right, it really does! I can see how this would be useful for testing and debugging."
 
-## Creating a client
+## Creating a Client
 
 **Time Beetle**: "You can also create a client that connects to the MCP server and interacts with it. Here's an example of how to create a simple MCP client using the `@modelcontextprotocol/sdk` library:
 
@@ -341,7 +328,7 @@ In the preceding code, we:
 
 **Time Beetle**: Yes, let's talk about that next. The MCP client can be used to interact with the server, call tools, and access resources. 
 
-### Listing and calling tools and resources
+### Listing and Calling Tools and Resources
 
 **Time Beetle**: "There are generally two scenarios you want to cover, listing tools and resources, and calling them. Here's how to do that:
 
@@ -383,7 +370,27 @@ So when you list tools, you get a response on the following format:
   }
 ```
 
-which means, if you have the tools `add` and `subtract`, your response looks like so:
+which means, if you have a tool `add`, your response, listing tools, looks like so:
+
+```json
+{
+    "name": "add",
+    "description": "Adding two numbers".
+    "inputSchema": {
+       "type":"object",
+       "properties":{
+          "a":{
+            "type":"number"
+          },
+          "b":{
+            "type":"number"
+          }},
+          "required":["a","b"],
+          "additionalProperties":false,
+          "$schema":"http://json-schema.org/draft-07/schema#"
+      }
+}
+```
 
 **You**: "Ok, good, I guess I can store that in a variable and then call the tool I want?"
 
@@ -428,7 +435,7 @@ console.log(resourceResult); // Hi John Doe!
 
 **Time Beetle**: Yes, but first things first, let's make Scipio happy. We need to have a chat with a Ms. Lamarr on our next stop.
 
-## Assignment - creating an inventory and tools management system for Scipio
+## Assignment - Creating an Inventory and Tools Management System for Scipio
 
 **Scipio**: "You know, I have so many parchments and scrolls lying around. I could really use a tool to help me organize them. I also have this abacus that I use for calculations. Can you help me create a tool to manage my inventory?"
 
@@ -460,7 +467,6 @@ B. Tools and Resources
 
 C. Tools, Resources and Prompts
 
-[Solution Quiz](/lessons/07-mcp/solution/solution-quiz.md)
 
 **Question**: What are some ways you can test your MCP Server?
 
@@ -474,9 +480,15 @@ D. curl
 
 E. All of the above
 
+[Solution Quiz](/lessons/07-mcp/solution/solution-quiz.md)
+
 ## Summary
 
 In this chapter, we've learned the following:
 
 - Model Context Protocol, MCP, is a great way to offload capabilties into servers instead of putting all your features in one place. This allows for your apps to stay small and focused. The added bonus is that different teams can manage different servers also. Thanks to MCP being a protocol this additionally means that anyone out there looking to share capabilities and can do so in a common format.
 - Additionally we looked into how to consume an MCP Server using the Inspector tool or a written client.
+
+## Self-Study Resources
+
+- [Building MCP Servers](https://github.com/microsoft/mcp-for-beginners/tree/main/03-GettingStarted/01-first-server)

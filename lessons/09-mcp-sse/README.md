@@ -67,7 +67,6 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 TODO, explain SSE, talk about conceptually how it's different from stdio
 
 
-
 ## Assignment
 
 ## Solution
@@ -75,3 +74,5 @@ TODO, explain SSE, talk about conceptually how it's different from stdio
 ## Knowledge Check
 
 ## Summary
+
+## Self-Study Resources

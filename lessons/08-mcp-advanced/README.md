@@ -1,6 +1,6 @@
-# MCP part II
+# Lesson 8: MCP Part II
 
-In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from it's cabilities. We saw how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by both an inspector tool or a written client. We've only scratched the surface of what MCP can do, and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
+In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from its cabilities. We saw how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by either an inspector tool or a written client. We've only scratched the surface of what MCP can do, and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
 
 In this chapter you will learn to:
 
@@ -12,7 +12,7 @@ In this chapter you will learn to:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 [![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
 
@@ -106,7 +106,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
  > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 
-## Adding a large language model to a client
+## Adding a Large Language Model to a Client
 
 **Time Beetle**: "As I was saying, let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits are that it provides a better user experience and allows you to use natural language to interact with the server."
 
@@ -225,35 +225,32 @@ In the preceding code we (focusing on our additions):
 
 ## Assignment
 
-**Ada** looks like you've made a fine improvement there. To make this really useful, I need you to create a server and a client with the following specs:
+**Ada**: Looks like you've made a fine improvement there. To make this truly useful, I need you to create a server and a client with the following specifications:
 
-- Server should have the following tools:
-
-  o `characterDetails` with arg `name`
-  o `place` with arg `name`
-
-- Client should use an LLM
+- The server should provide the following tools:
+  - `characterDetails` with the argument `name`
+  - `place` with the argument `name`
+- The client should use an LLM.
 
 > [!TIP]
-> You can for example give the server the capability to talk to an external Web API for information retrieval, e.g Wikipedia 
+> For example, you can give the server the capability to retrieve information from an external web API, such as Wikipedia:  
 > `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(topic)}`
   
-
 ## Solution
 
-**Question** What's a benefit of adding an LLM to the client?
-
-A. It's easier to maintain.
-
-B. Creates a more natural conversation between user and server.
-
-C. It's better to have the LLM on the server.
-
-[Solution](./solutions/README.md)
+[Solution](./solution/README.md)
 
 ## Knowledge Check
 
-[Solution quiz](./solutions/solution-quiz.md)
+**Question:** What is a benefit of adding an LLM to the client?
+
+A. It's easier to maintain.
+
+B. It creates a more natural conversation between the user and the server.
+
+C. It's better to have the LLM on the server.
+
+[Solution quiz](./solution/solution-quiz.md)
 
 ## Summary
 
@@ -262,3 +259,8 @@ In this chapter, we've learned the following:
 - Clients augmented with an LLM provides a better user experience.
 - Responses from a server needs to be converted to a format the LLM can understand as a tool.
 
+## Self-Study Resources
+
+- [Building MCP Servers](https://github.com/microsoft/mcp-for-beginners/tree/main/03-GettingStarted/01-first-server/README.md)
+- [Building a Client](https://github.com/microsoft/mcp-for-beginners/tree/main/03-GettingStarted/02-client/README.md)
+- [Building a Client with an LLM](https://github.com/microsoft/mcp-for-beginners/blob/main/03-GettingStarted/03-llm-client/README.md)
