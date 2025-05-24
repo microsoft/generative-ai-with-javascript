@@ -30,26 +30,26 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
 Learn [Tool calling/Function calling](./lessons/06-tool-calling) with Amelia Earhart. Want to help translate it also? Check out the next section below on translation.
 
 
-## Call for help - help us translate !
+## Call for help - us translate !
 
 Help us translate this course. Each lesson in `lessons/` folder has a `translations/` directory. Add your translation file like so `README.<language code>.md`, for example *README.es.md*.  - Thank You.
 
 
-## Step into history with AI magic! 
+## Step into history with AI magic!
  
 Dive into an immersive learning experience powered by Generative AI:  
-- **Learn about Generative AI technologies**. If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
+- **Learn about Generative AI technologies :** If you've wanted to understand Generative AI and the potential for your applications, you're in the right place!
  
-- **Epic Time-Travel Stories**.
+- **Epic Time-Travel Stories :**
 Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, or Montezuma in every lesson.
  
-- **Companion App**. Interact with historical figures using Generative AI technologies ([see our Responsible AI disclaimer](#responsible-ai-disclaimer)).
+- **Companion App :** Interact with historical figures using Generative AI technologies ([see our Responsible AI disclaimer](#responsible-ai-disclaimer)).
 
   ![Interact with History through conversation](./docs/images/character-chat.png) 
 
   Check the [_app_](./app/) directory to run the [app locally](./docs/setup/README.md#option-2--running-the-app-locally) or use [GitHub Codespaces](./docs/setup/README.md) to run it online.
 
-- **Accessibility FTW**. Read it, hear it—audio tags bring it to life.
+- **Accessibility FTW :** Read it, hear it—audio tags bring it to life.
  
 > “It’s like a comic book with code!” — Happy User
  
