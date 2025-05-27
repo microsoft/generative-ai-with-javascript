@@ -1,6 +1,6 @@
 # Lesson 8: MCP Part II
 
-In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from its cabilities. We saw how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by either an inspector tool or a written client. We've only scratched the surface of what MCP can do, and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
+In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from its capabilities. We saw how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by either an inspector tool or a written client. We've only scratched the surface of what MCP can do, and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
 
 In this chapter you will learn to:
 
@@ -8,9 +8,9 @@ In this chapter you will learn to:
 - Use your improved client to convert an MCP Server response to a tool.
 - Leverage your improved client to create a more natural user interaction.
 
-## Setup
+## Set up
 
-If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
+If you haven't already, set up your development environment. Here's how you can do it: [Set up your environment](/docs/setup/README.md).
 
 ## Related Resources
 
@@ -33,41 +33,41 @@ _This video explains Model Context Protocol LLM usage._
 
 You once again travelled back to Ada's mansion. This time Ada was meeting you at the main gates.
 
-**Ada**: Well, how did it go?
+**Ada Lovelace**: Well, how did it go?
 
-**You**: Good I think, we managed to get this app working. You showing the progress to Ada.
+**You**: Good I think, we managed to get this app working, you showing the progress to Ada.
 
-**Ada**: She takes the device up, tries it out and fiddles it and to herself murmurs, mm hm, ah I see, yea, yea no good. It won't do I'm afraid she states a bit louder, lacks a certain finesse.
+**Ada Lovelace**: She takes the device up, tries it out and fiddles it and to herself murmurs, mm hm, ah I see, yeah, yeah no good. It won't do I'm afraid, she states a bit louder, lacks a certain finesse.
 
 **You**: I was thinking that too, we need to be able to type or speak to it right?
 
-**Ada**: Right, I know just the person to help us. In fact, I'll come with you for this one, been too long since we met. Time Beetle, Hollywood please 1940, residence of Hedy Lamarr.
+**Ada Lovelace**: Right, I know just the person to help us. In fact, I'll come with you for this one, been too long since we met. *Time Beetle, Hollywood please, 1940, residence of Hedy Lamarr*.
 
 Everything went dark, colors swirling, moments later your eyes start to make out a scene, a man sitting by a piano next to a woman with dark brown and curly hair both speaking in an excited way gesticulating. 
 
 <div>
-  <img src="./assets/heddy-invention.jpeg" alt="Heddy Lamarr" width="600" />
+  <img src="./assets/hedy-invention.jpeg" alt="Hedy Lamarr" width="600" />
 </div>
 
 The woman turned around to face Ada standing next to you to exclaim "Ada it is you, it's been far too long".
 
-**Ada**: Hedwig dearest, working on your latest invention I assume?
+**Ada Lovelace**: Hedwig dearest, working on your latest invention I assume?
 
-**Hedy**: Yes, in fact George and I think we're on to something "frequency hopping" I probably shouldn't say anymore, who knows who's listening.
+**Hedy Lamarr**: Yes, in fact George and I think we're on to something "frequency hopping" I probably shouldn't say anymore, who knows who's listening.
 
-**Ada**: Oh you mean him, pointing at me, he's on his own adventure.
+**Ada Lovelace**: Oh you mean him, pointing at me, he's on his own adventure.
 
-**Hedy**: I see, what can do you for?
+**Hedy Lamarr**: I see, what can I do for you?
 
-**Ada**: Actually, we need this device to work a bit better, ideas?
+**Ada Lovelace**: Actually, we need this device to work a bit better, ideas?
 
-**Hedy**: She picked up the device, looked at it from different angles, and you say you've already separated the features from the communication part?
+**Hedy Lamarr**: She picked up the device, looked at it from different angles, and you say you've already separated the features from the communication part?
 
-**Ada**: Yes, yes we did.
+**Ada Lovelace**: Yes, yes we did.
 
-**Hedy**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had with a naval cadet as I was trying to sell war bonds. Minsky was his name I think. "What does Human intelligence look like in a machine" was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
+**Hedy Lamarr**: Well then, I would just make the communication part a bit smarter. This makes me think of a conversation I had with a naval cadet as I was trying to sell war bonds. Minsky was his name I think. "What does Human intelligence look like in a machine" was the topic. I have a feeling he'll do something great in this field one day. So yes, give it more intelligence.
 
-**Ada**: Right, well you heard Ms Lamarr, get to it.
+**Ada Lovelace**: Right, well you heard Ms Lamarr, get to it.
 
 **You**: Time Beetle, how do we do this?
 
@@ -78,7 +78,7 @@ The woman turned around to face Ada standing next to you to exclaim "Ada it is y
 > However, beyond her acting career, Lamarr was also a brilliant inventor. During World War II, she co-invented a radio guidance system for Allied torpedoes with composer George Antheil. This system used spread spectrum and frequency hopping technology to prevent the Axis powers from jamming the signals. Although it wasn't used during the war, this technology later became the foundation for modern wireless communication, including Wi-Fi, Bluetooth, and GPS.
 >
 > Lamarr's contributions to technology were not fully recognized during her lifetime, but today she is celebrated as a pioneer in the field. Her story is a fascinating blend of glamour and genius, showing that true innovation can come from the most unexpected places
-> Read more here about [Hedy Lamarr](https://en.wikipedia.org/wiki/Hedy_Lamarr) and here [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky)
+> Read more here about [Hedy Lamarr](https://en.wikipedia.org/wiki/Hedy_Lamarr) and here about [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky)
 
 ## Interact with Hedy Lamarr
 
@@ -89,7 +89,7 @@ If you want to interact with Hedy, run the [Characters](/app/README.md) app.
 > [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/heddylamarr.jpeg" alt="Hedy Lamarr" width="300">
+  <img src="./assets/hedylamarr.jpeg" alt="Hedy Lamarr" width="300">
 </div>
 
 **Steps**:
@@ -112,9 +112,11 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 
 How it would work on high level then is to have:
 
-- Client interacting with the MCP server to ask about available tools and resources.
-- At prompt time, the user would write a natural language prompt, which is then sent to the LLM in the client.
-- Client figures out which tool or which resource to call based on the prompt and the available tools and resources.
+1. Client interacting with the MCP server to ask about available tools and resources.
+
+1. At prompt time, the user would write a natural language prompt, which is then sent to the LLM in the client.
+
+1. Client figures out which tool or which resource to call based on the prompt and the available tools and resources.
 
 Sounds doable right?
 
@@ -225,7 +227,7 @@ In the preceding code we (focusing on our additions):
 
 ## Assignment
 
-**Ada**: Looks like you've made a fine improvement there. To make this truly useful, I need you to create a server and a client with the following specifications:
+**Ada Lovelace**: Looks like you've made a fine improvement there. To make this truly useful, I need you to create a server and a client with the following specifications:
 
 - The server should provide the following tools:
   - `characterDetails` with the argument `name`

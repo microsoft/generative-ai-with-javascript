@@ -90,7 +90,33 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 TODO, explain SSE, talk about conceptually how it's different from stdio
 TODO: you will learn that all Time Beetles need to be connected, for that to be possible, you need to add the capability of talking to them remotely using SSE
 
+TODO: what SSE is and can be used for, remote servers but also streaming with LLM streaming responses as example
+
+TODO: explain it's a separate transport than stdio
+
+## How it works
+
+TODO: how it works, explain /sse and /message what goes on in each route and that you need to host it as a web server as it's accessible remotely
+
+### Testing
+
+TODO: explain how CLI and VS Code consumption differs
+
+## Adding SSE
+
+TODO: show step by step how it's added, 
+new import
+set up routes
+business as usual adding tools and resources
+
 ## Assignment
+
+TODO: needs to be focused on enhancing a Time Beetle, so you need to create an SSE server with the following features:
+
+- character: talks to an LLM
+- places: talks to an LLM
+- translate: translate from one language to another
+- list-beetles, just need to stub this out, the Time Beetle will do the rest
 
 ## Solution
 
