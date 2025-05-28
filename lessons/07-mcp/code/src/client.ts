@@ -1,7 +1,8 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { CallToolRequestSchema, CallToolResultSchema } from "@modelcontextprotocol/sdk/types.js";
+import { CallToolRequest, CallToolResultSchema } from "@modelcontextprotocol/sdk/types.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 import { OpenAI } from 'openai';
+import { z } from "zod";
 
 type ChatCompletionMessageParam = {
   role: "system" | "user" | "assistant";
@@ -92,14 +93,83 @@ for (const choice of result.choices) {
     console.log("Function call: ", functionName);
     let args = functionCall?.arguments;
 
-    await client.callTool({
-        name: functionName?? "",
-        arguments: typeof args === "string" ? JSON.parse(args) : args ?? {}
-    }, CallToolResultSchema ).then((result) => {
-        console.log("Result from tool: ", result);
-        // TODO: figure out how to cast result to the correct type, i.e { content: [ { type: 'string', text: 'string' } ] }
-        // Result from tool:  { content: [ { type: 'text', text: '15' } ] };
+
+    // ALT1
+    // 1. create a request
+    const request: CallToolRequest = {
+        method: "tools/call",
+        params: {
+            name: functionName ?? "",
+            arguments: args
+        }
+    };
+
+    function createRequest(name: string, args: any): CallToolRequest {
+        return {
+            method: "tools/call",
+            params: {
+                name,
+                arguments: args
+            }
+        };
+    }
+
+    function callTool<T extends z.ZodType<any, any>>(name: string, args: any,  schema: T): Promise<z.infer<T>> {
+      let request = createRequest(name ?? "", args);
+
+      return client.request(
+        request,
+        schema
+      );
+    }
+
+    callTool("add", args, CallToolResultSchema).then((result) => {
+        console.log("Result from tool: ", result.content[0].text);
+        return result; // Ensure the callback returns the result
     });
+
+    // 2. make the request and cast the result to the correct type
+    client.request(request, CallToolResultSchema).then((result) => {
+        console.log("Result from tool: ", result.content[0].text);
+    }); 
+
+    // ALT2
+    await client.callTool({
+        name: functionName ?? "",
+        arguments: typeof args === "string" ? JSON.parse(args) : args ?? {}
+    }).then((result) => {
+        const toolResult = result as z.infer<typeof CallToolResultSchema>;
+
+        console.log("Converted Result from tool: ", toolResult.content[0].text);
+  })
+
+
+
+
+
+  const AddRequest = {
+    name: "add",
+    arguments: {
+      a: 1,
+      b: 2
+    }
+  };
+
+  // Alt 3, request schema AND reply schema
+  await client.callTool(AddRequest, CallToolResultSchema)
+  .then((result) => {
+      console.log("Result from tool: ", result.content[0].text);
+  });
+
+
+    // await client.callTool({
+    //     name: functionName?? "",
+    //     arguments: typeof args === "string" ? JSON.parse(args) : args ?? {}
+    // }, CallToolResultSchema ).then((result) => {
+    //     console.log("Result from tool: ", result);
+    //     // TODO: figure out how to cast result to the correct type, i.e { content: [ { type: 'string', text: 'string' } ] }
+    //     // Result from tool:  { content: [ { type: 'text', text: '15' } ] };
+    // });
 }
 
 
