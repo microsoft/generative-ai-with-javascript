@@ -28,21 +28,21 @@ _This video explains Model Context Protocol._
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-scipio) if you'd prefer to jump straight to the technical content.
 
-_Our heroes having just learned about tools and "tool calling" during their meeting with Amelia Earhart, our heroes are now returning back to Ada Lovelace's mansion to discuss their new found knowledge. A flash of light envelops our heroes as the time beetle transports them back to Aaa's present. They find themselves in the basement of Ada Lovelace's mansion, Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they've gained._
+_Our heroes, having just learned about tools and "tool-calling" during their meeting with Amelia Earhart, are now returning to Ada Lovelace's mansion to discuss their newfound knowledge. A flash of light envelops our heroes as the time beetle transports them back to Ada's present. They find themselves in the basement of Ada Lovelace's mansion. Charles Babbage is not present, but Ada is there waiting for them. She is excited to hear about their journey and the knowledge they've gained._
 
-**Ada**: "Welcome back! I trust your journey was enlightening."
+**Ada Lovelace**: "Welcome back! I trust your journey was enlightening."
 
-**You**: "It was! meeting with Mrs. Earhart was quite the experience. She taught us about the importance of tools and how to use them effectively." 
+**You**: "It was! Meeting with Mrs. Earhart was quite the experience. She taught us about the importance of tools and how to use them effectively." 
 
-**Ada**: "There are few people who understand the importance of tools better than Amelia. I trust you've also upgraded her Time Beetle?"
+**Ada Lovelace**: "There are few people who understand the importance of tools better than Amelia. I trust you've also upgraded her Time Beetle?"
 
 **You**: "Yes, we did! So what's next on the agenda?"
 
-**Ada**: "Tool calling is definitely a powerful concept, one that improves your device. However, it lacks a certain "finesse" shall we say. We need to learn _how to make it scale_, we need a protocol. I know just the fellow to help us with that. His name is Scipio Africanus, a great military strategist from ancient Rome. Too bad he spent all his time with military strategy, I'm sure he would have been a brilliant engineer. Off you go.
+**Ada Lovelace**: "Tool calling is definitely a powerful concept, one that improves your device. However, it lacks a certain "finesse" shall we say. We need to learn _how to make it scale_, we need a protocol. I know just the fellow to help us with that. His name is Scipio Africanus, a great military strategist from ancient Rome. Too bad he spent all his time with military strategy, I'm sure he would have been a brilliant engineer. Off you go.
 
 **You**: "Scipio Africanus? I think I remember him from history class.  
 
-**Ada**: "Good then, why are you still here? Time is of the essence. Ta ta"
+**Ada Lovelace**: "Good then, why are you still here? Time is of the essence. Ta ta"
 
 The swirling of light envelops you again and you find yourself in a large room with a large table in the middle. The walls are adorned with maps and military strategies. Scipio Africanus is standing at the table, deep in thought. He looks up as you enter. "Ada te misit/Ada sent you?" 
 
@@ -99,7 +99,7 @@ Let's talk about flanking maneuvers, infiltration, and the use of cavalry.
 
 ## Model Context Protocol (MCP)
 
-**Time beetle**: "To add to Scipio's point, the Model Context Protocol (MCP) is a way to decentralize your application architecture. It allows you to break down your application into smaller, more manageable components that can operate independently. Here are some important concepts to keep in mind:
+**Time Beetle**: "To add to Scipio's point, the Model Context Protocol (MCP) is a way to decentralize your application architecture. It allows you to break down your application into smaller, more manageable components that can operate independently. Here are some important concepts to keep in mind:
 
 - **MCP Hosts**: Programs like IDEs, for example GitHub Copilot in Visual Studio Code or Claude Desktop that initiates a connection to the server or servers.
 - **MCP Clients**: Protocol clients that maintain 1:1 connections with MCP servers.
@@ -174,7 +174,7 @@ The preceding code does the following:
 
 **You**: "This doesn't do much right?"
 
-**Time beetle**: "No, not yet. But we can add resources and tools to it. A tool is something that can be used to perform a specific task, while a resource is something that can be used to provide data or functionality to the tool. Let's add some below:
+**Time Beetle**: "No, not yet. But we can add resources and tools to it. A tool is something that can be used to perform a specific task, while a resource is something that can be used to provide data or functionality to the tool. Let's add some below:
 
 ```typescript
 server.tool("add",
@@ -193,7 +193,7 @@ In the preceding code, we:
 
 **You**: "Interesting, so the tool is like a function that can be called by the MCP client?"
 
-**Time beetle**: "Exactly! The MCP client can call this tool and pass the required parameters. Let's add a resource to the server as well:
+**Time Beetle**: "Exactly! The MCP client can call this tool and pass the required parameters. Let's add a resource to the server as well:
 
 ```typescript
 server.resource(
@@ -230,7 +230,7 @@ server.resource(
  );
 ```
 
-**Time beetle**: "Yes, exactly! The resource can be anything that provides data or functionality to the MCP server. You can define resources for files, databases, APIs, or any other data source you want to use."
+**Time Beetle**: "Yes, exactly! The resource can be anything that provides data or functionality to the MCP server. You can define resources for files, databases, APIs, or any other data source you want to use."
 
 Now, let's add a transport layer to the server so it can communicate with clients."
 
@@ -255,7 +255,7 @@ In this code, we:
 
 **You**: "So how do I test my MCP server?"
 
-**Time beetle**: "You can test your MCP server by running it in a terminal by running the inspector like so:
+**Time Beetle**: "You can test your MCP server by running it in a terminal by running the inspector like so:
 
 ```bash
 npx @modelcontextprotocol/inspector node build/index.js
@@ -265,7 +265,7 @@ Above, we are using the `@modelcontextprotocol/inspector` package to run the MCP
 
 **You**: "And how do I interact with it?"
 
-**Time beetle**: "This starts a web server on port 6274. You can access the inspector by opening your web browser and navigating to `http://localhost:6274`. The inspector provides a user-friendly interface for interacting with your MCP server, allowing you to test the tools and resources you've defined."
+**Time Beetle**: "This starts a web server on port 6274. You can access the inspector by opening your web browser and navigating to `http://localhost:6274`. The inspector provides a user-friendly interface for interacting with your MCP server, allowing you to test the tools and resources you've defined."
 
 ![Inspector user interface](https://softchris.github.io/mcp-workshop/assets/images/connect-7703c67645f368d51c7b24a5d635d6a0.png)
 
@@ -279,7 +279,7 @@ It should say you're connected. Now you can interact with tools or resources nex
 
 ### -2- List Tools and Resources
 
-**Time beetle**: "Next, we want to list the tools and resources available on the server. You can do this by selecting "List tools", to see what tools are available:
+**Time Beetle**: "Next, we want to list the tools and resources available on the server. You can do this by selecting "List tools", to see what tools are available:
 
 ![Listing tools](https://softchris.github.io/mcp-workshop/assets/images/tools-listed-630aa49c9d7e4347108419fb83c409f6.png)
 
@@ -287,7 +287,7 @@ Now you should see the "add" tool listed. You can also list the resources by sel
 
 ### -3- Run the Tool
 
-**Time beetle**: "To run the tool, select the "add" tool from the list. Fill in the parameters in the dialog that appears on the right side of the screen. For example, you can enter `a=5` and `b=10` to add these two numbers together. Click "Run Tool" to execute the tool. You should see the result in the output area below. The result should be `15`."
+**Time Beetle**: "To run the tool, select the "add" tool from the list. Fill in the parameters in the dialog that appears on the right side of the screen. For example, you can enter `a=5` and `b=10` to add these two numbers together. Click "Run Tool" to execute the tool. You should see the result in the output area below. The result should be `15`."
 
 ![Run the tool](https://softchris.github.io/mcp-workshop/assets/images/ran-tool-271ecd5f84a457462e59789b579ee9d4.png)
 
