@@ -25,9 +25,10 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
  
 ![Character App Sneak Peek](./docs/images/background.png)
  
-## NEW - tool calling lesson just added
+## NEW - MCP lessons just added
 
-Learn [Tool calling/Function calling](./lessons/06-tool-calling) with Amelia Earhart. Want to help translate it also? Check out the next section below on translation.
+- [Learn how to build and test out your first server](/lessons/07-mcp/README.md)
+- Improve your MCP client by [integrating an LLM](/lessons/08-mcp-advanced/README.md)
 
 
 ## Call for help - help us translate !
