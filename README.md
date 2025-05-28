@@ -27,7 +27,7 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
  
 ## NEW - MCP lessons just added
 
-- [Learn how to build and test out your first server](/lessons/07-mcp/README.md)
+- Learn how to [build and test out your first server](/lessons/07-mcp/README.md)
 - Improve your MCP client by [integrating an LLM](/lessons/08-mcp-advanced/README.md)
 
 
