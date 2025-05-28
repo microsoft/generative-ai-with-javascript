@@ -1,6 +1,6 @@
-# Lesson 8: MCP Part II
+# Lesson 8: Enhancing MCP Clients with Large Language Models
 
-In our previous lesson, we learned how to create an MCP Server and how this is a good way to separate an AI app from its capabilities. We saw how we could add capabilities like tools and resources. Additionally, we showed how the server could be consumed by either an inspector tool or a written client. We've only scratched the surface of what MCP can do, and in this chapter we'll add an LLM to the client so you can see how this creates a better user experience.
+In the previous lesson, you built an MCP Server and explored how it helps decouple an AI application's logic from its capabilities. We demonstrated how to add tools and resources as capabilities, and how the server could be accessed by either an inspector tool or a custom client. That was just the beginning. In this chapter, you’ll take things a step further by integrating a large language model (LLM) into the client—unlocking a more powerful and intuitive user experience.
 
 In this chapter you will learn to:
 
@@ -24,44 +24,44 @@ _This video explains Model Context Protocol LLM usage._
 ## Narrative: Hedwig "Hedy" Lamarr
 
 > [!NOTE] 
-> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
+> _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in many places in history. You're now working closer with Ada Lovelace with her mansion as the base of operations, and this is where the story continues._
 >
 > See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-hedy-lamarr) if you'd prefer to jump straight to the technical content.
 
-You once again travelled back to Ada's mansion. This time Ada was meeting you at the main gates.
+You once again traveled back to Ada's mansion. This time Ada was meeting you at the main gates.
 
 **Ada Lovelace**: Well, how did it go?
 
-**You**: Good I think, we managed to get this app working, you showing the progress to Ada.
+**You**: Good I think, we managed to get this app working, "Here, see for yourself" you say and hands the device over to Ada.
 
-**Ada Lovelace**: She takes the device up, tries it out and fiddles it and to herself murmurs, mm hm, ah I see, yeah, yeah no good. It won't do I'm afraid, she states a bit louder, lacks a certain finesse.
+**Ada Lovelace**: She picks up the device, examines it closely, and mutters to herself. "Mmm hm, ah I see, yeah, yeah no, this won't do. It lacks a certain finesse".
 
 **You**: I was thinking that too, we need to be able to type or speak to it right?
 
 **Ada Lovelace**: Right, I know just the person to help us. In fact, I'll come with you for this one, been too long since we met. *Time Beetle, Hollywood please, 1940, residence of Hedy Lamarr*.
 
-Everything went dark, colors swirling, moments later your eyes start to make out a scene, a man sitting by a piano next to a woman with dark brown and curly hair both speaking in an excited way gesticulating. 
+Everything fades to black. Swirling colors rush past, and moments later, your vision begins to focus. You see a man sitting by a piano, animatedly talking with a woman who has dark brown and curly hair. Both are gesticulating excitedly as they speak. 
 
 <div>
   <img src="./assets/hedy-invention.jpeg" alt="Hedy Lamarr" width="600" />
 </div>
 
-The woman turned around to face Ada standing next to you to exclaim "Ada it is you, it's been far too long".
+The woman turned around to face Ada standing next to you to exclaim "Ada it's you, it's been far too long".
 
 **Ada Lovelace**: Hedwig dearest, working on your latest invention I assume?
 
-**Hedy Lamarr**: Yes, in fact George and I think we're on to something "frequency hopping" I probably shouldn't say anymore, who knows who's listening.
+**Hedy Lamarr**: Yes, in fact George and I think we're on to something - "frequency hopping" I probably shouldn't say anymore, who knows who's listening.
 
 **Ada Lovelace**: Oh you mean him, pointing at me, he's on his own adventure.
 
 **Hedy Lamarr**: I see, what can I do for you?
 
-**Ada Lovelace**: Actually, we need this device to work a bit better, ideas?
+**Ada Lovelace**: Actually, we need this device to work a bit better. Any ideas?
 
-**Hedy Lamarr**: She picked up the device, looked at it from different angles, and you say you've already separated the features from the communication part?
+**Hedy Lamarr**: She picked up the device and looked at it from different angles. "You say you've already separated the features from the communication part?
 
 **Ada Lovelace**: Yes, yes we did.
 
@@ -71,13 +71,13 @@ The woman turned around to face Ada standing next to you to exclaim "Ada it is y
 
 **You**: Time Beetle, how do we do this?
 
-**Time Beetle**: You can improve the client you've created before with a large language model, LLM.
+**Time Beetle**: You can enhance the client you created earlier by integrating a large language model, or LLM.
 
-> Hedy Lamarr was an extraordinary figure, known both for her Hollywood stardom and her remarkable contributions to technology. Born in Vienna, Austria, in 1914, she became a famous actress in the 1930s and 1940s, often referred to as the "most beautiful woman in the world".
+> Hedy Lamarr was an extraordinary figure, known both for her Hollywood stardom and her remarkable contributions to technology. 
 >
 > However, beyond her acting career, Lamarr was also a brilliant inventor. During World War II, she co-invented a radio guidance system for Allied torpedoes with composer George Antheil. This system used spread spectrum and frequency hopping technology to prevent the Axis powers from jamming the signals. Although it wasn't used during the war, this technology later became the foundation for modern wireless communication, including Wi-Fi, Bluetooth, and GPS.
 >
-> Lamarr's contributions to technology were not fully recognized during her lifetime, but today she is celebrated as a pioneer in the field. Her story is a fascinating blend of glamour and genius, showing that true innovation can come from the most unexpected places
+> Lamarr's contributions to technology were not fully recognized during her lifetime, but today she is celebrated as a pioneer in the field. Her story is a fascinating blend of glamour and genius, showing that true innovation can come from the most unexpected places.
 > Read more here about [Hedy Lamarr](https://en.wikipedia.org/wiki/Hedy_Lamarr) and here about [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky)
 
 ## Interact with Hedy Lamarr
@@ -108,11 +108,11 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 
 ## Adding a Large Language Model to a Client
 
-**Time Beetle**: "As I was saying, let's talk about how we can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits are that it provides a better user experience and allows you to use natural language to interact with the server."
+**Time Beetle**: "As I was saying, let's talk about how you can create a client that uses a large language model (LLM) to interact with the MCP server. The benefits are that it provides a better user experience and allows you to use natural language to interact with the server."
 
-How it would work on high level then is to have:
+Here's how it would work at a high level:
 
-1. Client interacting with the MCP server to ask about available tools and resources.
+1. Client interacts with the MCP server to ask about available tools and resources.
 
 1. At prompt time, the user would write a natural language prompt, which is then sent to the LLM in the client.
 
@@ -122,7 +122,7 @@ Sounds doable right?
 
 **You**: "Yes, it does! But how do I do that?"
 
-**Time Beetle**: "Let's improve the client we created earlier, let's describe the code changes in steps:
+**Time Beetle**: "Let's improve the client you created earlier, let's describe the code changes in steps:
 
 1. Make a call to the server to ask for available tools and resources.
 2. Convert the tools and resources response to a tools schema that can be used by the LLM.
@@ -138,7 +138,6 @@ Here's all the steps in code:
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 
-// import openai
 
 // create client instance
 const transport = new StdioClientTransport({
@@ -220,7 +219,7 @@ In the preceding code we (focusing on our additions):
 **Time Beetle**: "Glad you like it. It should be said though, that you might want to decide if you only want to show a tools response or if you want to show a generic response from the LLM as well. So your user might benefit from the following response strategy:
 
 - **Tools only**: If the LLM response is a tool, then call the tool and return the result.
-- **LLM only**: If the LLM response is not a tool, then return the LLM response as is.
+- **LLM only**: If the LLM response is not a tool, then return the LLM response "as is".
 - **Tools and LLM**: If the LLM response is a tool, then call the tool and make an additional call to the LLM to get the general response. Return both the tool result and the LLM response.  
 
 **You**: "I see. Something to think about. But this is great! I can see how this would be useful."
@@ -236,7 +235,7 @@ In the preceding code we (focusing on our additions):
 
 > [!TIP]
 > For example, you can give the server the capability to retrieve information from an external web API, such as Wikipedia:  
-> `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(topic)}`
+> `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`
   
 ## Solution
 
@@ -256,10 +255,10 @@ C. It's better to have the LLM on the server.
 
 ## Summary
 
-In this chapter, we've learned the following:
+In this chapter, you've learned the following:
 
-- Clients augmented with an LLM provides a better user experience.
-- Responses from a server needs to be converted to a format the LLM can understand as a tool.
+- Clients augmented with an LLM provide a better user experience.
+- Responses from a server need to be converted to a format the LLM can understand as a tool.
 
 ## Self-Study Resources
 
