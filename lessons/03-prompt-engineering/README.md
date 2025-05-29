@@ -25,7 +25,7 @@ _This video offers an introduction to improving your "prompting" skills, teachin
 > [!NOTE] 
 > So far, you've been on a journey through time with Leonardo da Vinci, exploring the wonders of the Renaissance. You've encountered the Time Beetle, a mysterious device that allows you to travel through time and space.
 >
-> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](/lessons/01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-sforza) if you'd prefer to jump straight to the technical content.
@@ -35,7 +35,7 @@ _This video offers an introduction to improving your "prompting" skills, teachin
 Before you manage to press the button, the workshop doors slam open with a thunderous bang. A man stands in the doorway, broad-shouldered and dressed in expensive clothes, he waves a piece of paper in the air, yelling:
 
 <div>
-  <img src="./assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="300">
+  <img src="/lessons/03-prompt-engineering/assets/ludovico.png" alt="An angry Ludovico Sforza busting in through the door" width="300">
 </div>
 
 *Ludovico Sforza* 
@@ -65,7 +65,7 @@ A swirl of colors envelops the carriage, the world around you dissolving into a 
 The swirl of colors fades, and you find yourself in the carriage, now racing down the Via Appia in Rome and to your astonishment, you're in the middle of a horse race. Chariots thunder past, their wheels kicking up clouds of dust. 
 
 <div>
-  <img src="./assets/escape.png" alt="Escape from Rome" width="300">
+  <img src="/lessons/03-prompt-engineering/assets/escape.png" alt="Escape from Rome" width="300">
 </div>
 
 **You:** Leonardo, where are we? 
@@ -105,7 +105,7 @@ With a final push, the aerial screw begins to spin. The blades catch the air, an
 You look out over the city; the ancient buildings stretch out below you.
 
 <div>
-  <img src="./assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="300">
+  <img src="/lessons/03-prompt-engineering/assets/airborne.png" alt="Airborne, looks down at the city with feet dangling" width="300">
 </div>
 
 ## Interact with Sforza
@@ -117,7 +117,7 @@ If you want to interact with Sforza, run the [Characters](/app/README.md) app.
 > [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
 <div >
-  <img  src="./assets/ludovico.png" alt="Ludovico Sforza" width="300" >
+  <img  src="/lessons/03-prompt-engineering/assets/ludovico.png" alt="Ludovico Sforza" width="300" >
 </div>
 
 **Steps**:
@@ -320,7 +320,7 @@ Build an app in JavaScript that asks for the following inputs:
 
 Then use the LLM to incorporate these inputs and leverage the chain of thought prompting technique to guide the model to the right answer.
 
-[Solution](./solution/solution.md) 
+[Solution](/lessons/03-prompt-engineering/solution/solution.md) 
 
 ## Knowledge Check
 
@@ -332,7 +332,7 @@ B. Prompt engineering is about crafting the right prompts to get the desired out
 
 C. Prompt engineering is about training a model to recognize patterns in data.
 
-[Quiz solution](./solution/solution-quiz.md)
+[Quiz solution](/lessons/03-prompt-engineering/solution/solution-quiz.md)
 
 ## Self-Study Resources
 

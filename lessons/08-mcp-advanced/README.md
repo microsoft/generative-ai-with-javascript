@@ -26,7 +26,7 @@ _This video explains Model Context Protocol LLM usage._
 > [!NOTE] 
 > _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in many places in history. You're now working closer with Ada Lovelace with her mansion as the base of operations, and this is where the story continues._
 >
-> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](/lessons/01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-hedy-lamarr) if you'd prefer to jump straight to the technical content.
@@ -46,7 +46,7 @@ You once again traveled back to Ada's mansion. This time Ada was meeting you at 
 Everything fades to black. Swirling colors rush past, and moments later, your vision begins to focus. You see a man sitting by a piano, animatedly talking with a woman who has dark brown and curly hair. Both are gesticulating excitedly as they speak. 
 
 <div>
-  <img src="./assets/hedy-invention.jpeg" alt="Hedy Lamarr" width="600" />
+  <img src="/lessons/08-mcp-advanced/assets/hedy-invention.jpeg" alt="Hedy Lamarr" width="600" />
 </div>
 
 The woman turned around to face Ada standing next to you to exclaim "Ada it's you, it's been far too long".
@@ -89,7 +89,7 @@ If you want to interact with Hedy, run the [Characters](/app/README.md) app.
 > [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/hedylamarr.jpeg" alt="Hedy Lamarr" width="300">
+  <img src="/lessons/08-mcp-advanced/assets/hedylamarr.jpeg" alt="Hedy Lamarr" width="300">
 </div>
 
 **Steps**:
@@ -103,7 +103,7 @@ If you want to interact with Hedy, run the [Characters](/app/README.md) app.
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 
 ## Adding a Large Language Model to a Client
@@ -239,7 +239,7 @@ In the preceding code we (focusing on our additions):
   
 ## Solution
 
-[Solution](./solution/README.md)
+[Solution](/lessons/08-mcp-advanced/solution/README.md)
 
 ## Knowledge Check
 
@@ -251,7 +251,7 @@ B. It creates a more natural conversation between the user and the server.
 
 C. It's better to have the LLM on the server.
 
-[Solution quiz](./solution/solution-quiz.md)
+[Solution quiz](/lessons/08-mcp-advanced/solution/solution-quiz.md)
 
 ## Summary
 

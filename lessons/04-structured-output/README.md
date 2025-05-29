@@ -20,14 +20,14 @@ _This video offers an introduction to improving your "prompting" skills, teachin
 
 *🎥 Click on the image above to watch a short video about prompt engineering*
 
-💼 Slides: [Prompt engineering](../../videos/slides/02-prompt-engineering.pptx)
+💼 Slides: [Prompt engineering](/videos/slides/02-prompt-engineering.pptx)
 
 ## Narrative - Out of the frying pan and into the fire
 
 > [!NOTE]
 > _Our story so far: You, a mechanically trained engineer from 1860 and have been on a journey through time with Leonardo da Vinci. You've escaped Roman soldiers — or rather, you're in the process of escaping them— and you're desperately searching for a way to land the aeriel screw safely_.
 >
-> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](/lessons/01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE]
 > While we recommend going through the story (it's fun!), [click here](#interact-with-montezuma) if you'd prefer to jump straight to the technical content.
@@ -47,7 +47,7 @@ The bright light from the Time Beetle fades, and you find yourself standing at t
 The aerial screw, rests awkwardly on a large, intricately carved stone, with markings that look like a calendar
 
 <div>
-  <img alt="Aztec calendar, Wikipedia" src="./assets/aztec.png" width="300" />
+  <img alt="Aztec calendar, Wikipedia" src="/lessons/04-structured-output/assets/aztec.png" width="300" />
 </div>
 
 _Aztec calendar, Wikipedia_
@@ -59,7 +59,7 @@ Leonardo da Vinci steps forward, his eyes wide with wonder.
 Before you can react, a group of Aztec soldiers approaches.
 
 <div>
-  <img src="./assets/meeting.png" alt="Meeting with Aztecs" width="300" />
+  <img src="/lessons/04-structured-output/assets/meeting.png" alt="Meeting with Aztecs" width="300" />
 </div> 
 
 **Soldier leader:** "Who are you, and what have you done?" he demands in Nahuatl.
@@ -83,7 +83,7 @@ Upon reaching the top of the pyramid, you are led into a grand chamber where Mon
 **Montezuma:** "Very well. I propose a game of [Patolli](#patolli). If I win the best of three games, you will give me your device and tell me how it works. If you win, you are free to go."
 
 <div>
-  <img src="./assets/game.png" alt="Playing a game of Patolli" width="300" />
+  <img src="/lessons/04-structured-output/assets/game.png" alt="Playing a game of Patolli" width="300" />
 </div>
 
 The game begins, and the room falls silent, save for the sound of beans being rolled and pieces moving across the board.
@@ -115,7 +115,7 @@ With a final, decisive move, Leonardo wins the game. The room erupts in cheers a
 > **Aztec Involvement**: Widely played by nobles and commoners, it was a favorite at Montezuma’s court. Beyond fun, it involved high-stakes gambling with bets like blankets, precious stones, or even freedom.
 
 <div>
-  <img width="300" src="./assets/patolli.png" alt="Patolli board" />
+  <img width="300" src="/lessons/04-structured-output/assets/patolli.png" alt="Patolli board" />
 </div>
 
 _Patolli - Wikipedia_
@@ -536,7 +536,7 @@ See the [sample app](/app/README.md) for code to get started with. It contains a
 
 ## Solution
 
-[Solution](./solution/solution.md)
+[Solution](/lessons/04-structured-output/solution/solution.md)
 
 ## Challenge
 
@@ -564,7 +564,7 @@ B. Extracting data from prompts.
 
 C. Generating unstructured text.
 
-[Quiz solution](./solution/solution-quiz.md)
+[Quiz solution](/lessons/04-structured-output/solution/solution-quiz.md)
 
 ## Self-Study Resources
 

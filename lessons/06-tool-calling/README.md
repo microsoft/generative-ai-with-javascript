@@ -14,7 +14,7 @@ If you haven't already, set up your development environment. Here's how you can 
 
 ## Related Resources
 
-[![Integrating with function calling](./assets/11-lesson-banner.png)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
+[![Integrating with function calling](/lessons/06-tool-calling/assets/11-lesson-banner.png)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
 
 _This video explains Tool calling, a method that helps the AI call your functions and thereby expand what it can do_
 
@@ -42,7 +42,7 @@ You: "Who are we talking about and where can I find her?"
 The world around you starts to blur, and everything fades to black. You come to and find yourself in the cockpit of a plane. You're airborne, and you can see the ocean below you. There's someone sitting in front; you can only see the back of their neck.
 
 <div>
-    <img src="./assets/amelia.jpeg" alt="Amelia piloting a plane" width="300">
+    <img src="/lessons/06-tool-calling/assets/amelia.jpeg" alt="Amelia piloting a plane" width="300">
 </div>
 
 **You**: "Amelia, is that you?"
@@ -72,7 +72,7 @@ If you want to interact with Ada, run the [Characters](/app/README.md) app.
 > [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/amelia-front.jpeg" alt="Ada Lovelace" width="300">
+  <img src="/lessons/06-tool-calling/assets/amelia-front.jpeg" alt="Ada Lovelace" width="300">
 </div>
 
 **Steps**:
@@ -97,7 +97,7 @@ For a more detailed explanation of the app, see [Detailed app explanation](/less
 **Time Beetle**: "Here's an image to illustrate the process of tool calling:"
 
 <div>
-    <img src="./assets/tool_call_langchain.png" alt="Tool calling process illustration" width="600">
+    <img src="/lessons/06-tool-calling/assets/tool_call_langchain.png" alt="Tool calling process illustration" width="600">
 </div>
 
 _Image credit Langchain <https://python.langchain.com/docs/concepts/tool_calling/>_
@@ -408,7 +408,7 @@ function getWeatherForecast(lat, long) {
 
 ## Solution
 
-[Solution](./solution/solution.js)
+[Solution](/lessons/06-tool-calling/solution/solution.js)
 
 ## Knowledge Check
 
@@ -433,7 +433,7 @@ A. To enable the AI model to perform tasks beyond its built-in capabilities by l
 B. To replace the need for human intervention in AI model development.  
 C. To allow the AI model to execute tools without requiring metadata.
 
-[Solution quiz](./solution/solution-quiz.md)
+[Solution quiz](/lessons/06-tool-calling/solution/solution-quiz.md)
 
 ## Self-Study Resources
 
