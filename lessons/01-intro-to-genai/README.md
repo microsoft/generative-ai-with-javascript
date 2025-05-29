@@ -75,7 +75,7 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
 <div>
-   <img src="/lessons/01-intro-to-genai/assets/library.png" alt="Dusty Library" width="300">
+   <img src="./assets/library.png" alt="Dusty Library" width="300">
 </div>
 
 ### What's This Device?
