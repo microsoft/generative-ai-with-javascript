@@ -86,13 +86,13 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 | # | Lesson Link  | Description |
 | ---- | ----------- | ----------- |
-| 1 | [Introduction to Generative AI and LLMs for JavaScript Developers](/lessons/01-intro-to-genai) | Understand Generative AI and LLM fundamentals, their applications and limits in JavaScript, and how to use AI to enhance user experiences. |
-| 2 | [Build your first AI app](/lessons/02-first-ai-app) | Set up your development environment, write a basic app, and understand system prompts. |
-| 3 | [Prompt engineering](/lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
-| 4 | [Structured output](/lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
-| 5 | [Retrieval augmented generation (RAG)](/lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
-| 6 | [Tool calling/Function calling](/lessons/06-tool-calling) | Learn how to give your LLM extra capbilities, bring your own functions  |
-| 7 | [MCP, Model Context Protocol ](/lessons/07-mcp/) | Teaches how to get started with MCP to standardize how to expose prompts, resources and tools  |
+| 1 | [Introduction to Generative AI and LLMs for JavaScript Developers](/lessons/01-intro-to-genai/README.md) | Understand Generative AI and LLM fundamentals, their applications and limits in JavaScript, and how to use AI to enhance user experiences. |
+| 2 | [Build your first AI app](/lessons/02-first-ai-app/README.md) | Set up your development environment, write a basic app, and understand system prompts. |
+| 3 | [Prompt engineering](/lessons/03-prompt-engineering/README.md) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
+| 4 | [Structured output](/lessons/04-structured-output/README.md) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
+| 5 | [Retrieval augmented generation (RAG)](/lessons/05-rag/README.md) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
+| 6 | [Tool calling/Function calling](/lessons/06-tool-calling/README.md) | Learn how to give your LLM extra capbilities, bring your own functions  |
+| 7 | [MCP, Model Context Protocol ](/lessons/07-mcp/README.md) | Teaches how to get started with MCP to standardize how to expose prompts, resources and tools  |
 | 8 | [Enhancing MCP Clients with Large Language Models](/lessons/08-mcp-advanced/README.md) | Learn how to improve your MCP app by improving clients with LLM and more  |
 
 New lessons will be added to the course over time, so stay tuned!
