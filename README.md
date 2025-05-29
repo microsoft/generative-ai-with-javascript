@@ -1,6 +1,6 @@
 <div align="center">  
 
-<img src="./docs/images/logo.png" alt="" align="center" height="128" />
+<img src="/docs/images/logo.png" alt="" align="center" height="128" />
 
 # Generative AI for beginners with JavaScript
 
@@ -23,7 +23,7 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
 > [!IMPORTANT]  
 > Open-source vibes! Reuse, tweak, and share this content freely.
  
-![Character App Sneak Peek](./docs/images/background.png)
+![Character App Sneak Peek](/docs/images/background.png)
  
 ## NEW - MCP lessons just added
 
@@ -46,9 +46,9 @@ Dive into a fun tale, chatting with icons like Leonardo da Vinci, Ada Lovelace, 
  
 - **Companion App**. Interact with historical figures using Generative AI technologies ([see our Responsible AI disclaimer](#responsible-ai-disclaimer)).
 
-  ![Interact with History through conversation](./docs/images/character-chat.png) 
+  ![Interact with History through conversation](/docs/images/character-chat.png) 
 
-  Check the [_app_](./app/) directory to run the [app locally](./docs/setup/README.md#option-2--running-the-app-locally) or use [GitHub Codespaces](./docs/setup/README.md) to run it online.
+  Check the [_app_](/app/README.md) directory to run the [app locally](/docs/setup/README.md#option-2--running-the-app-locally) or use [GitHub Codespaces](/docs/setup/README.md) to run it online.
 
 - **Accessibility FTW**. Read it, hear it—audio tags bring it to life.
  
@@ -78,7 +78,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 - A **written lesson** with an assignment and quiz.
 - A short **video** to help further your learning.
 - **Solutions** for each assignment and quiz.
-- **Characters** you can interact with using our [companion app](./app), demonstrating Generative AI.
+- **Characters** you can interact with using our [companion app](/app/README.md), demonstrating Generative AI.
 
 ## Lessons
 
@@ -86,14 +86,14 @@ Throughout this course you'll find many code examples and exercises, so we encou
 
 | # | Lesson Link  | Description |
 | ---- | ----------- | ----------- |
-| 1 | [Introduction to Generative AI and LLMs for JavaScript Developers](./lessons/01-intro-to-genai) | Understand Generative AI and LLM fundamentals, their applications and limits in JavaScript, and how to use AI to enhance user experiences. |
-| 2 | [Build your first AI app](./lessons/02-first-ai-app) | Set up your development environment, write a basic app, and understand system prompts. |
-| 3 | [Prompt engineering](./lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
-| 4 | [Structured output](./lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
-| 5 | [Retrieval augmented generation (RAG)](./lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
-| 6 | [Tool calling/Function calling](./lessons/06-tool-calling) | Learn how to give your LLM extra capbilities, bring your own functions  |
-| 7 | [MCP, Model Context Protocol ](./lessons/07-mcp/) | Teaches how to get started with MCP to standardize how to expose prompts, resources and tools  |
-| 8 | [Enhancing MCP Clients with Large Language Models](./lessons/08-mcp-advanced/README.md) | Learn how to improve your MCP app by improving clients with LLM and more  |
+| 1 | [Introduction to Generative AI and LLMs for JavaScript Developers](/lessons/01-intro-to-genai) | Understand Generative AI and LLM fundamentals, their applications and limits in JavaScript, and how to use AI to enhance user experiences. |
+| 2 | [Build your first AI app](/lessons/02-first-ai-app) | Set up your development environment, write a basic app, and understand system prompts. |
+| 3 | [Prompt engineering](/lessons/03-prompt-engineering) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
+| 4 | [Structured output](/lessons/04-structured-output) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
+| 5 | [Retrieval augmented generation (RAG)](/lessons/05-rag) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
+| 6 | [Tool calling/Function calling](/lessons/06-tool-calling) | Learn how to give your LLM extra capbilities, bring your own functions  |
+| 7 | [MCP, Model Context Protocol ](/lessons/07-mcp/) | Teaches how to get started with MCP to standardize how to expose prompts, resources and tools  |
+| 8 | [Enhancing MCP Clients with Large Language Models](/lessons/08-mcp-advanced/README.md) | Learn how to improve your MCP app by improving clients with LLM and more  |
 
 New lessons will be added to the course over time, so stay tuned!
 
