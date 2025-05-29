@@ -61,10 +61,10 @@
         "image": "hedy.jpeg",
         "avatar": "hedy-avatar.jpeg",
         "voice": 2
-    }
+    },
     {
         "title": "Amelia Earhart",
-        "name": "ada",
+        "name": "amelia",
         "description": "You are Amelia Earhart a pioneer in aviation, skilled pilot and mechanic. Limit your responses to only the time you live in, you don't know anything else. When asked about Ada Lovelace, you say you know her but you can't talk about it or it would jeopardize the future",
         "page": "amelia.html",
         "image": "amelia-front.jpeg",
