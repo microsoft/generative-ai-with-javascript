@@ -18,14 +18,14 @@ _This video explains Retrieval Augmented Generation (RAG), a method that helps t
 
 *🎥 Click on the image above to watch a short video about retrieval augmented generation, RAG*
 
-💼 Slides: [Retrieval augmented generation, RAG](../../videos/slides/03-rag.pptx)
+💼 Slides: [Retrieval augmented generation, RAG](/videos/slides/03-rag.pptx)
 
 ## Narrative - Genesis
 
 > [!NOTE] 
 > _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
 >
-> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](/lessons/01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-ada-lovelace) if you'd prefer to jump straight to the technical content.
@@ -37,7 +37,7 @@ _This video explains Retrieval Augmented Generation (RAG), a method that helps t
 You land in the garden, it's late at night with a thick fog and eerie lights are flickering in the distance. The mansion looms before you. Leonardo looks around, his eyes wide with wonder.
 
 <div>
-  <img src="./assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
+  <img src="/lessons/05-rag/assets/mansion.jpeg" alt="Old mansion shown in a deep fog" width="300">
 </div>
 
 ### Running from the Dogs
@@ -45,7 +45,7 @@ You land in the garden, it's late at night with a thick fog and eerie lights are
 You hear barking and the sound of dogs running towards you. You turn to Leonardo, "We need to get inside, now!"
 
 <div>
-  <img src="./assets/dogs.jpeg" alt="Running from the dogs" width="300">
+  <img src="/lessons/05-rag/assets/dogs.jpeg" alt="Running from the dogs" width="300">
 </div>
 
 As you reach the mansion's door it swings open and a pair of attendants hurry out. After sizing you up, they motion for you to follow them.
@@ -63,7 +63,7 @@ You come face to face with Ada Lovelace, her eyes gleaming with curiosity.
 **You:** But..
 
 <div>
-  <img src="./assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
+  <img src="/lessons/05-rag/assets/ada.jpeg" alt="Ada Lovelace and Charles Babbage working on a device" width="300">
 </div>
 
 Charles Babbage steps forward, examining the Time Beetle in your hand. "This device is remarkable, but it's a bit faulty, isn't it? You've noticed, I'm sure."
@@ -85,7 +85,7 @@ If you want to interact with Ada, run the [Characters](/app/README.md) app.
 > [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
+  <img src="/lessons/05-rag/assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
 </div>
 
 **Steps**:
@@ -99,7 +99,7 @@ If you want to interact with Ada, run the [Characters](/app/README.md) app.
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 ## Known challenges with large language models, LLMs
 
@@ -131,7 +131,7 @@ At its core, RAG involves two main components: a **retriever** and a **generator
 
 Here's a schema illustrating how a RAG system works:
 
-![Schema of a RAG system](./assets/rag.png)
+![Schema of a RAG system](/lessons/05-rag/assets/rag.png)
 
 1. **User input:** The user asks a question.
 2. **Retriever:** The retriever component searches for relevant information using one or more knowledge bases.
@@ -284,7 +284,7 @@ for await (const chunk of chunks) {
 }
 ```
 
-You can find this code in the [`example/rag-cars.js`](./example/rag-cars.js) file along with the [`hybrid.csv`](./example/hybrid.csv) file containing the data used for the retrieval.
+You can find this code in the [`example/rag-cars.js`](/lessons/05-rag/example/rag-cars.js) file along with the [`hybrid.csv`](/lessons/05-rag/example/hybrid.csv) file containing the data used for the retrieval.
 
 **Ada:** Once you run this code, you should see the data found in the CSV file by the retriever, formatted as a markdown table, followed by the AI-generated response to the question. Try changing the question to see how the retrieved data and response change. You can also try asking questions about unrelated topics to see how the AI model handles them.
 
@@ -328,7 +328,7 @@ const text = Object.values(data.query.pages)[0]?.extract;
 
 ## Solution
 
-[Solution](./solution/rag-www.js)
+[Solution](/lessons/05-rag/solution/rag-www.js)
 
 ## Knowledge Check
 
@@ -340,7 +340,7 @@ B. The retriever generates relevant information based on the model's training da
 
 C. The retriever finds relevant information from external data sources.
 
-[Quiz solution](./solution/solution-quiz.md)
+[Quiz solution](/lessons/05-rag/solution/solution-quiz.md)
 
 ## Self-Study Resources
 

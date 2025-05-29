@@ -23,7 +23,7 @@ _This video explains Model Context Protocol._
 > [!NOTE] 
 > _Our story so far. You are a mechanic from 1860s London. You were working on your automaton and received a letter from Charles Babbage that ended up taking you to a library where you picked up a time travel device. Throughout your travels in time you've ended up in Florence, where you met Leonardo Da Vinci. You also went to the Aztec empire and this is where the story continues._
 >
-> See [Lesson 1](../01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
+> See [Lesson 1](/lessons/01-intro-to-genai/README.md) if you want to catch up with the story from the beginning. 
 
 > [!NOTE] 
 > While we recommend going through the story (it's fun!), [click here](#interact-with-scipio) if you'd prefer to jump straight to the technical content.
@@ -47,7 +47,7 @@ _Our heroes, having just learned about tools and "tool-calling" during their mee
 The swirling of light envelops you again and you find yourself in a large room with a large table in the middle. The walls are adorned with maps and military strategies. Scipio Africanus is standing at the table, deep in thought. He looks up as you enter. "Ada te misit/Ada sent you?" 
 
 <div>
-  <img width="600" src="./assets/scipio.png" alt="Scipio Africanus">
+  <img width="600" src="/lessons/07-mcp/assets/scipio.png" alt="Scipio Africanus">
 </div>
 
 > Scipio Africanus, also known as Publius Cornelius Scipio Africanus, was a prominent Roman general and statesman who lived from 236 BC to 183 BC. He is best known for his decisive role in the Second Punic War against Carthage and his victory over Hannibal at the Battle of Zama in 202 BC.
@@ -62,7 +62,7 @@ If you want to interact with Scipio, run the [Characters](/app/README.md) app.
 > [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="./assets/scipio.png" alt="Scipio Africanus" width="300">
+  <img src="/lessons/07-mcp/assets/scipio.png" alt="Scipio Africanus" width="300">
 </div>
 
 **Steps**:
@@ -76,7 +76,7 @@ If you want to interact with Scipio, run the [Characters](/app/README.md) app.
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 
 ## The need for Model Context Protocol (MCP)
