@@ -43,7 +43,7 @@ In the heart of 1860s London, you are recognized as one of the most skilled mech
 Your workbench, the heart of your workshop, is an organized mess.
 
 <div>
-   <img src="./assets/london.png" alt="London Workshop"width=300 >
+   <img src="/lessons/01-intro-to-genai/assets/london.png" alt="London Workshop"width=300 >
 </div>
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
@@ -75,7 +75,7 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
 <div>
-   <img src="./assets/library.png" alt="Dusty Library" width="300">
+   <img src="/lessons/01-intro-to-genai/assets/library.png" alt="Dusty Library" width="300">
 </div>
 
 ### What's This Device?
