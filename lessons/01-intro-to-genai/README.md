@@ -1,4 +1,4 @@
-# Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers
+# Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers 
 
 In this chapter you will learn:
 
