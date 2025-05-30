@@ -79,7 +79,7 @@ As you walk, you notice a man with a long beard and a hat, digging through a cra
 
 ### At the workshop
 
-![Leonardos workshop]("/lessons/02-first-ai-app/assets/leonardo-workshop.png)
+![Leonardos workshop](/lessons/02-first-ai-app/assets/leonardo-workshop.png)
 
 The old man leads you to a large wooden door and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
 

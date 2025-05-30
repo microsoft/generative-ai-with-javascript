@@ -42,7 +42,7 @@ In the heart of 1860s London, you are recognized as one of the most skilled mech
 
 Your workbench, the heart of your workshop, is an organized mess.
 
-![London Workshop]("/lessons/01-intro-to-genai/assets/london.png)
+![London Workshop](/lessons/01-intro-to-genai/assets/london.png)
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
