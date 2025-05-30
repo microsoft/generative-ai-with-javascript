@@ -42,7 +42,7 @@ In the heart of 1860s London, you are recognized as one of the most skilled mech
 
 Your workbench, the heart of your workshop, is an organized mess.
 
-<div>
+<div> 
   <img width=600 src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/london.png" alt="London Workshop" />
 </div>
 
