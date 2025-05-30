@@ -34,7 +34,7 @@ _This video offers an introduction to improving your "prompting" skills, teachin
 
 Before you manage to press the button, the workshop doors slam open with a thunderous bang. A man stands in the doorway, broad-shouldered and dressed in expensive clothes, he waves a piece of paper in the air, yelling:
 
-!["An angry Ludovico Sforza busting in through the door](/lessons/03-prompt-engineering/assets/ludovico.png)
+!["An angry Ludovico Sforza busting in through the door](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png)
 
 *Ludovico Sforza* 
 

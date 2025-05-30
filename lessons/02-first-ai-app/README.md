@@ -42,7 +42,7 @@ When you open your eyes, the world has shifted. As you manage to get up, you rea
 Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting.
 
 
-!["Boat on the river, man standing with a paddle](/lessons/02-first-ai-app/assets/boat.png)
+!["Boat on the river, man standing with a paddle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png)
 
 The question now is, where and when are you this time?
 
