@@ -109,7 +109,7 @@ An elderly gentleman wearing a toga waves at you from the steps of the grand tem
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
-**You:** It was? I mean, of course, it was. I'm here to help, I think.
+**You:** It was? I mean, of course, it was. I'm here to help, I think. 
 
 **Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
 
