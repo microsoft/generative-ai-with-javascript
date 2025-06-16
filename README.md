@@ -10,6 +10,8 @@
 
 [![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
 
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
+
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
 [Getting Started](#getting-started) • [Lessons](#lessons) • [Keep Learning](#keep-learning)
