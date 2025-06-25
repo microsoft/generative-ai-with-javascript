@@ -8,7 +8,7 @@ Generative AI can generate text, images, and even code.
 
 ❌ **Incorrect.**
 
-🔍 **Explanation:** While the statement is factually true, it's not incorrect in a quiz context. However, to improve clarity and precision:
+🔍 **Explanation:** While the statement is factually true, it's incorrect in a quiz context. However, to improve clarity and precision:
 
 ✅ **Better Version:**  
 Generative AI is capable of generating a variety of content such as text, images, and even code, depending on the model and its training data.
