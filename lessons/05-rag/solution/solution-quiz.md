@@ -1,4 +1,4 @@
-### ❓ Question:
+### ❓ Question
 
 ### What is the role of the retriever in a RAG system?
 

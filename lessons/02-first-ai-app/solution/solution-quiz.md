@@ -1,4 +1,4 @@
-### ❓ Question:
+### ❓ Question
 
 ### What is the purpose of the context window in generative AI models?
 

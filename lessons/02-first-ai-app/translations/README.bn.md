@@ -448,7 +448,7 @@ const completion = await openai.chat.completions.create({
 I want you to generate recipes for me.
 ```
 
-![টোকেনাইজার ডেমো](/lessons/02-first-ai-app/assets/tokenizer.png)
+![টোকেনাইজার ডেমো](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/tokenizer.png)
 
 উপরের বাক্যে **`tokenizer`** চালালে **৯টি টোকেন** পাওয়া যায়।
 

@@ -1,4 +1,4 @@
-### ❓ Question 1:
+### ❓ Question 1
 
 ### What is the purpose of registering a tool with the AI model?
 
@@ -11,7 +11,7 @@
 
 ---
 
-### ❓ Question 2:
+### ❓ Question 2
 
 ###  What is the role of tool metadata in tool calling?
 
@@ -26,7 +26,7 @@
 
 ---
 
-### ❓ Question 3:
+### ❓ Question 3
 
 ### Why use tool calling?
 
