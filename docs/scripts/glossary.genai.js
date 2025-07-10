@@ -9,6 +9,7 @@ script({
       default: false,
     },
   },
+  temperature: 0.1,
 });
 
 // Find all markdown files under lessons, excluding translations
@@ -66,11 +67,15 @@ ${allContent}
 
 2. For each term, provide a concise one-line definition (maximum 20 words)
 
-3. Focus on terms that would be valuable for developers learning about AI and JavaScript
+3. Focus on terms that would be valuable for developers learning about AI and JavaScript. Avoid terms that are too basic or not relevant to the context of AI and JavaScript development
 
 4. Exclude common programming terms that most developers would know (like "function", "variable", "array") and historical terms that are only there for the storytelling aspect of the lessons.
 
-5. Format each entry as: **Term**: Definition
+5. Exclude terms that are too similar to existing terms. For example, "Chain of Thought" and "Chain of Thought Prompting" are too similar and should not both be included.
+
+6. Format each entry as: **Term**: Definition
+
+7. It's OK to not output anything if no new terms are found. In that case, just return an empty string.
 
 ${
   existingTerms.size > 0
@@ -85,6 +90,7 @@ Provide only the glossary entries, one per line, sorted alphabetically. Do not i
 
 // Combine existing and new terms
 let finalGlossary = "";
+let glossarySize, previousSize = 0;
 
 if (existingGlossary && !env.vars.force) {
   // Parse existing glossary and add new terms
@@ -132,6 +138,8 @@ if (existingGlossary && !env.vars.force) {
     finalGlossary += `- **${entry.term}**: ${entry.definition}\n`;
   }
 
+  previousSize = existingEntries.length;
+  glossarySize = allEntries.length;
   console.log(`Added ${newEntries.length} new terms to existing glossary`);
 } else {
   // Create completely new glossary
@@ -153,9 +161,14 @@ if (existingGlossary && !env.vars.force) {
     finalGlossary += `- **${entry.term}**: ${entry.definition}\n`;
   }
 
+  glossarySize = entries.length;
   console.log(`Created new glossary with ${entries.length} terms`);
 }
 
 // Write the glossary file
 await workspace.writeText(glossaryPath, finalGlossary);
 console.log(`Glossary saved to ${glossaryPath}`);
+
+env.output.appendContent(`Glossary generated with ${glossarySize} terms (previously ${previousSize} terms).\n\n`);
+env.output.appendContent(`Glossary saved to \`${glossaryPath}\``);
+
