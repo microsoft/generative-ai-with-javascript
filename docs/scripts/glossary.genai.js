@@ -9,7 +9,6 @@ script({
       default: false,
     },
   },
-  temperature: 0.1,
 });
 
 // Find all markdown files under lessons, excluding translations
@@ -76,7 +75,9 @@ ${allContent}
 
 5. Format each entry as: **Term**: Definition
 
-6. It's OK to not output anything if no new terms are found. In that case, just return an empty string.
+6. When the term is an acronym, provide the full form in parentheses after the acronym. For example: **API (Application Programming Interface)**: A set of rules for building software applications. Always put the acronym first, followed by the full form in parentheses.
+
+7. It's OK to not output anything if no new terms are found. In that case, just return an empty string.
 
 ${
   existingTerms.size > 0
