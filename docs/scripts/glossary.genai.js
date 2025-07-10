@@ -49,7 +49,7 @@ for (const file of files) {
 }
 
 // Create the prompt for extracting technical terms
-$`
+const { text: newTermsResponse } = await prompt`
 You are tasked with creating a comprehensive glossary of technical terms from the provided content.
 
 ## Content to analyze:
@@ -82,9 +82,6 @@ ${Array.from(existingTerms).join(", ")}`
 ## Output format:
 Provide only the glossary entries, one per line, sorted alphabetically. Do not include any headers, explanations, or other text.
 `;
-
-// Get the AI response with new terms
-const newTermsResponse = env.vars.response || "";
 
 // Combine existing and new terms
 let finalGlossary = "";
