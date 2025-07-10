@@ -2,7 +2,7 @@
 
 A comprehensive list of technical terms used throughout the lessons.
 
-- **API**: A set of rules enabling software applications to communicate with each other, commonly used in generative AI integration.
+- **API (Application Programming Interface)**: A set of rules enabling software applications to communicate with each other, commonly used in generative AI integration.
 - **API key**: A private key used to authenticate requests to an application programming interface.
 - **Augmented Prompt**: A prompt enhanced with additional context or information to improve the relevance of AI-generated responses.
 - **Azure AI Studio**: A platform to build, evaluate, and deploy AI models using Microsoft Azure.
@@ -12,7 +12,7 @@ A comprehensive list of technical terms used throughout the lessons.
 - **Chatbot**: An application designed to simulate conversation with human users, often using natural language processing.
 - **Completions API**: API to generate text or code based on inputs, used for predictive or generative tasks in AI models.
 - **Context Window**: The amount of past input that a language model can consider when generating responses, measured in tokens.
-- **CSV**: A data format consisting of values separated by commas, often used for structured data retrieval and modification.
+- **CSV (Comma-Separated Values)**: A data format consisting of values separated by commas, often used for structured data retrieval and modification.
 - **Embedding**: Numeric vector representation of data, often used for semantic search or clustering in machine learning.
 - **Escape Hatch**: A technique instructing AI to admit lack of knowledge when data is insufficient to ensure accurate responses.
 - **Few-Shot Prompting**: A method of providing minimal examples to the model to influence its output with specific context or format.
@@ -22,7 +22,7 @@ A comprehensive list of technical terms used throughout the lessons.
 - **GitHub Models**: A platform hosting pre-trained AI models for use and integration with GitHub development workflows.
 - **GitHub Token**: An authentication method to access GitHub-hosted APIs or services securely.
 - **Interactive Development Environments (IDEs)**: Software providing coding, debugging, and testing tools for developers.
-- **JSON**: A lightweight data-interchange format used for structured information exchange between systems, including generative AI responses.
+- **JSON (JavaScript Object Notation)**: A lightweight data-interchange format used for structured information exchange between systems, including generative AI responses.
 - **Knowledge Bases**: Data repositories used to enhance AI applications by providing reliable, domain-specific information.
 - **LangChain**: A framework for building AI applications that focus on chaining multiple models and functionalities together.
 - **Large Language Model (LLM)**: AI models trained on large text datasets to generate human-like responses for diverse applications.
@@ -41,4 +41,4 @@ A comprehensive list of technical terms used throughout the lessons.
 - **TensorFlow.js**: A JavaScript-based machine learning library enabling browser and Node.js-based AI/ML applications and training.
 - **Tokenizer**: A tool used to convert text into tokens, providing structure for how data is inputted or analyzed by models.
 - **Vector Search**: Retrieval technique comparing encoded vectors to find semantically similar information in AI applications.
-- **XML**: A markup language formatting structured data for information storage, exchange, or generative model input/output.
+- **XML (eXtensible Markup Language)**: A markup language formatting structured data for information storage, exchange, or generative model input/output.
