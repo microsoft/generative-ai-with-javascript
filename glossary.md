@@ -21,14 +21,15 @@ A comprehensive list of technical terms used throughout the lessons.
 - **GitHub Codespaces**: A cloud-based environment for coding, testing, and running applications directly from GitHub repositories.
 - **GitHub Models**: A platform hosting pre-trained AI models for use and integration with GitHub development workflows.
 - **GitHub Token**: An authentication method to access GitHub-hosted APIs or services securely.
-- **Interactive Development Environments (IDEs)**: Software providing coding, debugging, and testing tools for developers.
+- **IDE (Interactive Development Environment)**: Software providing coding, debugging, and testing tools for developers.
 - **JSON (JavaScript Object Notation)**: A lightweight data-interchange format used for structured information exchange between systems, including generative AI responses.
 - **Knowledge Bases**: Data repositories used to enhance AI applications by providing reliable, domain-specific information.
 - **LangChain**: A framework for building AI applications that focus on chaining multiple models and functionalities together.
-- **Large Language Model (LLM)**: AI models trained on large text datasets to generate human-like responses for diverse applications.
+- **LLM (Large Language Model)**: AI models trained on large text datasets to generate human-like responses for diverse applications.
 - **Maieutic Prompting**: A technique involving follow-up queries to challenge or validate AI-generated responses for accuracy and reasoning.
 - **Managed Identity**: A secure cloud mechanism that provides applications with automatic authentication to access resources without managing passwords.
 - **Markdown**: A lightweight markup language for formatting plain text into structured layouts, like tables or lists.
+- **MCP (Model Context Protocol)**: A protocol to decentralize applications by separating server capabilities and connection protocols.
 - **Meta Prompts**: Instructions added before a user's prompt to refine or restrict the AI's behavior and output format.
 - **Multimodal Capabilities**: AI functionality to process various formats like text, image, or video input and deliver diverse outputs.
 - **Node.js**: A runtime environment allowing developers to execute JavaScript code server-side for building scalable applications.
