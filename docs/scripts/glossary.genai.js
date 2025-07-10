@@ -1,6 +1,6 @@
 // GenAIScript to create a shared glossary from markdown files in lessons
 script({
-  title: "Generate Glossary from Lessons",
+  title: "Generate glossary from lessons",
   description: "Process all markdown files under /lessons/** to create a shared glossary.md file",
   parameters: {
     force: {
@@ -57,7 +57,7 @@ You are tasked with creating a comprehensive glossary of technical terms from th
 ${allContent}
 
 ## Instructions:
-1. Extract technical terms related to:
+1. Extract technical terms from the content to analyze related to:
    - Generative AI and Machine Learning concepts
    - Programming and development terms
    - Web development technologies
@@ -69,13 +69,14 @@ ${allContent}
 
 3. Focus on terms that would be valuable for developers learning about AI and JavaScript. Avoid terms that are too basic or not relevant to the context of AI and JavaScript development
 
-4. Exclude common programming terms that most developers would know (like "function", "variable", "array") and historical terms that are only there for the storytelling aspect of the lessons.
+4. Exclude thise terms and concepts:
+   - Common programming terms that most developers would know (like "function", "variable", "array")
+   - Historical terms or concepts that are only there for the storytelling aspect of the lessons
+   - Terms that are too similar to existing terms. For example, "Chain of Thought" and "Chain of Thought Prompting" are too similar and should not both be included.
 
-5. Exclude terms that are too similar to existing terms. For example, "Chain of Thought" and "Chain of Thought Prompting" are too similar and should not both be included.
+5. Format each entry as: **Term**: Definition
 
-6. Format each entry as: **Term**: Definition
-
-7. It's OK to not output anything if no new terms are found. In that case, just return an empty string.
+6. It's OK to not output anything if no new terms are found. In that case, just return an empty string.
 
 ${
   existingTerms.size > 0
@@ -170,5 +171,5 @@ await workspace.writeText(glossaryPath, finalGlossary);
 console.log(`Glossary saved to ${glossaryPath}`);
 
 env.output.appendContent(`Glossary generated with ${glossarySize} terms (previously ${previousSize} terms).\n\n`);
-env.output.appendContent(`Glossary saved to \`${glossaryPath}\``);
-
+env.output.appendContent(`Glossary saved to \`${glossaryPath}\`.\n`);
+env.output.appendContent(`Make sure to perform a manual review before committing the changes to ensure accuracy and relevance of the terms.\n\n`);
