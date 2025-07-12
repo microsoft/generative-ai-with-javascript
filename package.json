@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "tsx": "^4.19.3"
+  },
+  "scripts": {
+    "genai:translate": "npx genaiscript@latest run translator lessons/01-intro-to-genai/README.md --remote https://github.com/pelikhan/action-continuous-translation --remote-install -x glossaryFile=glossary.md -x lang=fr"
   }
 }
