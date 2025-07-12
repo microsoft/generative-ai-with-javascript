@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-      - pelikhan/translations
     paths:
       - "README.md"
+      - lessons/*/README.md
 permissions:
   contents: write
   models: read
