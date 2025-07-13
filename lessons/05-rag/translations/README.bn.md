@@ -176,7 +176,7 @@ _এই ভিডিওটি **Retrieval-Augmented Generation (RAG)** ব্য
 
 ### **একটি RAG সিস্টেম কীভাবে কাজ করে?**  
 
-![RAG সিস্টেমের চিত্র](/lessons/05-rag/assets/rag.png)  
+![RAG সিস্টেমের চিত্র](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/rag.png)  
 
 **ধাপে ধাপে কাজ করার পদ্ধতি:**  
 

@@ -1,0 +1,26 @@
+{
+   "type": "module",
+   "bin": {
+      "weather": "./build/index.js"
+   },
+   "scripts": {
+      "client": "tsc && node ./build/client.js",
+      "build": "tsc && node ./build/index.js",
+      "inspect": "npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/list",
+      "tool": "npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/call --tool-name characterDetails --tool-arg name=Ada"
+   },
+   "files": [
+      "build"
+   ],
+   "dependencies": {
+      "@modelcontextprotocol/sdk": "^1.8.0",
+      "express": "^5.0.1",
+      "openai": "^4.96.2",
+      "type": "^2.7.3",
+      "zod": "^3.24.2"
+   },
+   "devDependencies": {
+      "@types/node": "^22.13.17",
+      "typescript": "^5.8.2"
+   }
+}

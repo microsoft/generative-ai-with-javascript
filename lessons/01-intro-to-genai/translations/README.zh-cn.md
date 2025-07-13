@@ -163,7 +163,7 @@ _时间设备，"乔治"金属甲虫_
 
 > [!IMPORTANT]
 > 这完全是虚构的；这些回应是由 AI 生成的。
-> [负责任的 AI 免责声明](../../README.md#responsible-ai-disclaimer)
+> [负责任的 AI 免责声明](../../../README.md#responsible-ai-disclaimer)
 
 <div>
    <img src="../assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">

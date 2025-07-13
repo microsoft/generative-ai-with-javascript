@@ -1,4 +1,4 @@
-# Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers
+# Lesson 1: Introduction to Generative AI and LLMs for JavaScript Developers 
 
 In this chapter you will learn:
 
@@ -10,13 +10,13 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related resources
+## Related Resources
 
 [![Watch a short video about an Introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
 
 _This video gives you an introduction to Generative AI with JavaScript_
 
-💼 Slides: [Introduction to Generative AI](../../videos/slides/00-intro.pptx)
+💼 Slides: [Introduction to Generative AI](/videos/slides/00-intro.pptx)
 
 ## Generative AI
 
@@ -26,7 +26,7 @@ Moreover, Generative AI has evolved into multimodal capabilities, allowing you t
 
 *Simply put, natural language interfaces are becoming the new standard interface for many apps—and your users expect to use them.*
 
-## Narrative: A journey through time
+## Narrative: A Journey Through Time
 
 > [!NOTE] 
 > Let’s begin with an overview of the story—one that bridges the past and future! As you progress through this curriculum, you'll embark on a thrilling adventure, traveling back in time to collaborate with some of history's greatest minds. Together, you'll tackle challenges and explore how Generative AI can revolutionize your JavaScript applications._
@@ -36,19 +36,19 @@ Moreover, Generative AI has evolved into multimodal capabilities, allowing you t
 
 Your journey begins in 1860s London, where you assume the role of a skilled mechanic. Through a series of gripping adventures, you'll refine your AI skills and unlock solutions that transcend time.
 
-### Into the maelstrom - London 1860
+### Into the Maelstrom - London 1860
 
 In the heart of 1860s London, you are recognized as one of the most skilled mechanics of your time. Your workshop is tucked away in a narrow alley. The walls are lined with shelves overflowing with mechanical parts, blueprints, and half-finished projects.
 
 Your workbench, the heart of your workshop, is an organized mess.
 
 <div>
-   <img src="./assets/london.png" alt="London Workshop"width=300 >
+  <img width=600 src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/london.png" alt="London Workshop" />
 </div>
 
 _At the center of the bench lies the torso of a robot—an engineering marvel that has consumed months of effort. Its wooden frame is intricately carved, each joint meticulously designed for smooth movement._
 
-### A letter, for you?
+### A Letter, For You?
 
 Suddenly, a knock at the door disrupts your thoughts. Visitors at this hour are rare. Wiping your hands on a rag, you approach the door, curiosity piqued. 
 
@@ -62,7 +62,7 @@ _Yours,_
 
 _Charles Babbage."_
 
-### Off to the library
+### Off to the Library
 
 Charles Babbage, the great mathematician and inventor of the difference engine, wants to meet you. Quickly, you grab your coat and head out the door.
 
@@ -74,11 +74,9 @@ It's dark and gloomy inside, the only light filtering through the grimy windows,
 
 As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
-<div>
-   <img src="./assets/library.png" alt="Dusty Library" width="300">
-</div>
+![Dusty Library](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png)
 
-### What's this device?
+### What's This Device?
 
 Just as you step closer, a blinding flash erupts, and he vanishes.
 
@@ -90,9 +88,7 @@ Compelled by curiosity, your fingers drift toward the red button. The moment you
 
 Then, blackness, and a sense of falling.
 
-<div>
-   <img src="./assets/vortex.png" alt="Time Vortex" width="300">
-</div>
+![Time Vortex](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png)
 
 ### Alexandria 300 BC
 
@@ -100,9 +96,7 @@ You awaken, disoriented. As your vision clears, an ancient city unfolds before y
 
 People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
-<div>
-   <img src="./assets/alexandria.png" alt="Alexandria 300 BC" width="300">
-</div>
+![Alexandria 300 BC](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png)
 
 **You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
 
@@ -112,13 +106,11 @@ Am I stuck in the past? Do I dare press that button again? Before you can decide
 
 An elderly gentleman wearing a toga waves at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
-<div>
-   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
-</div>
+![Dinocrates wearing a toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
 **Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
-**You:** It was? I mean, of course, it was. I'm here to help, I think.
+**You:** It was? I mean, of course, it was. I'm here to help, I think. 
 
 **Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
 
@@ -144,9 +136,7 @@ A thought strikes you. Can the device understand me if I speak to it?
 
 **You:** You're right, George is a good name, it was my father's name in fact.
 
-<div>
-   <img src="./assets/time-beetle.png" alt="Time travel device resembling a metallic beetle" width="300">
-</div>
+![Time Beetle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png)
 
 _Time device, “George” the metallic beetle_
 
@@ -165,9 +155,7 @@ If you want to interact with Dinocrates, run the [Characters](/app/README.md) ap
 > This is entirely fictional; the responses are generated by AI.
 > [Responsible AI disclaimer](../../README.md#responsible-ai-disclaimer)
 
-<div>
-   <img src="./assets/dinocrates.png" alt="Dinocrates wearing a toga" width="300">
-</div>
+![Dinocrates wearing a toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
 **Steps**:
 
@@ -178,9 +166,9 @@ If you want to interact with Dinocrates, run the [Characters](/app/README.md) ap
 5. Chat with Dinocrates.
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
-### Code sneak peek
+### Code Sneak Peek
 
 While there is still a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
 
@@ -235,7 +223,7 @@ Here's a step-by-step summary of what the function does:
 
 > **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
 
-### What can Generative AI do for me and my Apps?
+### What Can Generative AI Do for Me and My Apps?
 
 > [!NOTE]
 > You've probably figured out by now that the time beetle works like an AI assistant that you can interact with using natural language, written or spoken.
@@ -292,7 +280,7 @@ Here's an example of a "chatbot application" in action:
 
 **Time Beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
 
-### JavaScript ecosystem
+### JavaScript Ecosystem
 
 **You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems?
 
@@ -344,9 +332,9 @@ Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chat
 
 ## Solution
 
-[Solution](./solution/solution.md)
+[Solution](/lessons/01-intro-to-genai/solution/solution.md)
 
-### Knowledge check
+### Knowledge Check
 
 **Question:** Which of the following statements about Generative AI and JavaScript are true?
 
@@ -354,8 +342,8 @@ A. JavaScript powered Generative AI apps can only generate text.
 B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.
 C. Python is the only language used for AI development.
 
-[Quiz solution](./solution/solution-quiz.md)
+[Quiz solution](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - [Generative AI JavaScript video series](https://aka.ms/genai-js)
