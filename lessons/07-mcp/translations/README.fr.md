@@ -20,12 +20,12 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Narratif - Scipion l'Africain
 
-> \[!NOTE]
+> [!NOTE]
 > *Notre histoire jusqu'à présent. Vous êtes un mécanicien de Londres des années 1860. Vous travailliez sur votre automate et avez reçu une lettre de Charles Babbage qui vous a finalement conduit dans une bibliothèque où vous avez pris un appareil de voyage dans le temps. À travers vos voyages dans le temps, vous vous êtes retrouvé à Florence, où vous avez rencontré Léonard de Vinci. Vous êtes également allé dans l'empire aztèque, et c'est là que l'histoire continue.*
 >
 > Reportez-vous à [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début.
 
-> \[!NOTE]
+> [!NOTE]
 > Bien que nous vous recommandions de suivre l'histoire (c'est amusant !), [cliquez ici](#interact-with-scipio) si vous préférez passer directement au contenu technique.
 
 *Nos héros, ayant tout juste appris l'importance des outils et de l'« appel d'outils » lors de leur rencontre avec Amelia Earhart, retournent maintenant au manoir d'Ada Lovelace pour discuter de leurs nouvelles connaissances. Un éclair de lumière enveloppe nos héros alors que le scarabée temporel les transporte dans le présent d'Ada. Ils se retrouvent dans le sous-sol du manoir d'Ada Lovelace. Charles Babbage n'est pas présent, mais Ada les attend. Elle est enthousiaste à l'idée d'entendre parler de leur voyage et des connaissances qu'ils ont acquises.*
@@ -55,7 +55,7 @@ La lumière tourbillonnante vous transporte à nouveau, et vous vous retrouvez d
 
 Si vous souhaitez interagir avec Scipion, exécutez l'application [Characters](/app/README.md).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -71,7 +71,7 @@ Si vous souhaitez interagir avec Scipion, exécutez l'application [Characters](/
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Le besoin du Protocole de Contexte Modèle (MCP)

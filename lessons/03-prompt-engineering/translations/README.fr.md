@@ -22,12 +22,12 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Narrative: Ticket to ride
 
-> \[!NOTE]
+> [!NOTE]
 > Jusqu'à présent, vous avez voyagé dans le temps avec Léonard de Vinci, explorant les merveilles de la Renaissance. Vous avez rencontré le Scarabée temporel, un dispositif mystérieux qui vous permet de voyager dans le temps et l'espace.
 >
 > Reportez-vous à [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début.
 
-> \[!NOTE]
+> [!NOTE]
 > Bien que nous recommandions de suivre l'histoire (c'est amusant !), [cliquez ici](#interact-with-sforza) si vous préférez passer directement au contenu technique.
 
 **Vous :** Voyons si je peux réussir à rentrer chez moi.
@@ -106,7 +106,7 @@ Vous regardez la ville en contrebas ; les bâtiments antiques s'étendent sous v
 
 Si vous souhaitez interagir avec Sforza, exécutez l'application [Personnages](/app/README.md).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -122,7 +122,7 @@ Si vous souhaitez interagir avec Sforza, exécutez l'application [Personnages](/
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Qu'est-ce que l'ingénierie des prompts ?

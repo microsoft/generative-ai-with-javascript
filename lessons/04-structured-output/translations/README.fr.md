@@ -24,13 +24,13 @@ Cela vaut la peine de revoir la vidéo sur l'ingénierie des prompts, car elle p
 
 ## Récit - De Charybde en Scylla
 
-> > [!NOTE]
-> > *Notre histoire jusqu'à présent : Vous, un ingénieur formé mécaniquement depuis 1860, êtes en voyage dans le temps avec Léonard de Vinci. Vous avez échappé aux soldats romains — ou plutôt, vous êtes en train de leur échapper — et vous cherchez désespérément un moyen de poser en toute sécurité la vis aérienne.*
+> [!NOTE]
+> *Notre histoire jusqu'à présent : Vous, un ingénieur formé mécaniquement depuis 1860, êtes en voyage dans le temps avec Léonard de Vinci. Vous avez échappé aux soldats romains — ou plutôt, vous êtes en train de leur échapper — et vous cherchez désespérément un moyen de poser en toute sécurité la vis aérienne.*
 >
 > Reportez-vous à [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début.
 
-> > [!NOTE]
-> > Bien que nous vous recommandions de suivre l'histoire (elle est amusante !), [cliquez ici](#interact-with-montezuma) si vous préférez passer directement au contenu technique.
+> [!NOTE]
+> Bien que nous vous recommandions de suivre l'histoire (elle est amusante !), [cliquez ici](#interact-with-montezuma) si vous préférez passer directement au contenu technique.
 
 Le vent souffle violemment autour de vous alors que vous et Léonard de Vinci montez dans sa vis aérienne, dont le cadre en bois grince sous la pression.
 
@@ -98,7 +98,7 @@ Avec un dernier coup décisif, Léonard gagne la partie. La pièce explose en ac
 
 ### Patolli
 
-> \[!NOTE]
+> [!NOTE]
 > Le Patolli est l'un des jeux les plus anciens connus des Amériques, joué par les cultures mésoaméricaines précolombiennes comme les Aztèques. C'est un mélange de stratégie et de hasard.
 >
 > **Comment le Patolli est joué** :
@@ -117,7 +117,7 @@ Avec un dernier coup décisif, Léonard gagne la partie. La pièce explose en ac
 
 Si vous voulez interagir avec Montezuma, exécutez l'application [Characters](/app/README.md).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -133,7 +133,7 @@ Si vous voulez interagir avec Montezuma, exécutez l'application [Characters](/a
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Sorties structurées

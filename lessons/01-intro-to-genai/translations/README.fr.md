@@ -28,11 +28,10 @@ De plus, l'IA générative a évolué vers des capacités multimodales, vous per
 
 ## Narrative: A Journey Through Time
 
-> \[!NOTE]
+> [!NOTE]
 > Commençons par une vue d'ensemble de l'histoire—une histoire qui fait le lien entre le passé et le futur ! Au fur et à mesure que vous progressez dans ce programme, vous embarquerez pour une aventure palpitante, voyageant dans le temps pour collaborer avec certains des plus grands esprits de l'histoire. Ensemble, vous relèverez des défis et explorerez comment l'IA générative peut révolutionner vos applications JavaScript.
 
-> \[!NOTE]
-> Bien que nous recommandons de suivre l'histoire (c'est amusant !), [cliquez ici](#interagir-avec-dinocrates) si vous préférez passer directement au contenu technique.
+> [!NOTE]Bien que nous recommandons de suivre l'histoire (c'est amusant !), [cliquez ici](#interagir-avec-dinocrates) si vous préférez passer directement au contenu technique.
 
 Votre voyage commence dans le Londres des années 1860, où vous incarnez un mécanicien talentueux. À travers une série d'aventures captivantes, vous affinerez vos compétences en IA et débloquerez des solutions qui transcendent le temps.
 
@@ -140,7 +139,7 @@ Une pensée vous traverse. L'appareil peut-il me comprendre si je lui parle ?
 
 *Appareil temporel, "George" le scarabée métallique*
 
-> \[!NOTE]
+> [!NOTE]
 > En 300 avant J.-C., Alexandrie était une ville florissante fondée par Alexandre le Grand en 331 avant J.-C. Elle est rapidement devenue l'une des plus grandes cités du monde hellénistique. Conçue par l'architecte en chef d'Alexandre, Dinocrates, Alexandrie est devenue un port majeur et un centre culturel.
 >
 > Alexandrie était connue pour ses structures impressionnantes, dont le Pharos (phare), l'une des Sept Merveilles du monde, et la légendaire Bibliothèque d'Alexandrie. L'emplacement stratégique de la cité en faisait un centre clé pour le commerce et l'échange de connaissances.
@@ -151,6 +150,7 @@ Une pensée vous traverse. L'appareil peut-il me comprendre si je lui parle ?
 
 Si vous souhaitez interagir avec Dinocrates, exécutez l'application [Characters](/app/README.md).
 
+> [!IMPORTANT]
 > \[!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité AI responsable](../../README.md#responsible-ai-disclaimer)
@@ -165,7 +165,7 @@ Si vous souhaitez interagir avec Dinocrates, exécutez l'application [Characters
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Dinocrates.
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ### Aperçu du code
@@ -225,7 +225,7 @@ Voici un résumé étape par étape de ce que fait la fonction :
 
 ### Que peut faire l'IA générative pour moi et mes applications ?
 
-> \[!NOTE]
+> [!NOTE]
 > Vous avez sans doute compris maintenant que le scarabée temporel fonctionne comme un assistant IA avec lequel vous pouvez interagir en utilisant un langage naturel, écrit ou parlé.
 
 À mesure que votre aventure à Alexandrie se déroule, vous commencez à entrevoir les possibilités de combiner créativité, ingéniosité et outils de pointe pour résoudre des défis et transformer le monde autour de vous.
@@ -327,8 +327,8 @@ Pour utiliser un modèle de langage de grande taille (LLM) afin d'aider Dinocrat
 
 Visitez [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), ou un autre outil en ligne de chatbot pour générer un plan pour construire le phare à Alexandrie.
 
-> \[!CONSEIL]
-> Essayez de faire générer par le LLM un plan comprenant des instructions étape par étape pour construire le phare. Besoin d'aide ? Consultez la solution pour des conseils.
+> [!TIP]
+> Essayez de demander au LLM de générer un plan comprenant des instructions étape par étape pour construire le phare. Besoin d'aide ? Consultez la solution pour des conseils.
 
 ## Solution
 

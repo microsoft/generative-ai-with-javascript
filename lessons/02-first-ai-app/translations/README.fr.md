@@ -22,12 +22,12 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Narrative: Picture yourself in a boat on a river
 
-> \[!NOTE]
+> [!NOTE]
 > *Notre histoire jusqu'à présent : Vous êtes un créateur d'objets, un artisan du Londres des années 1860 qui a voyagé dans le temps grâce à un mystérieux appareil appelé le Scarabée du Temps. Vous avez traversé les annales de l'histoire, assistant à la création du phare d'Alexandrie, une merveille de l'ingénierie ancienne que vous avez contribué à construire avec un peu d'aide de Dinocrates et du Scarabée du Temps.*
 >
 > Voir [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début et vous initier à l'intelligence artificielle générative.
 
-> \[!NOTE]
+> [!NOTE]
 > Bien que nous recommandions de suivre l'histoire (c'est amusant !), [cliquez ici](#interact-with-leonardo) si vous préférez passer directement au contenu technique.
 
 Ensemble avec Dinocrates, vous mettez la touche finale au phare d'Alexandrie. L'imposante structure brille sous le soleil, sa pierre polie reflétant la mer Méditerranée.
@@ -112,7 +112,7 @@ Leonardo da Vinci vous demande de l’aider dans un projet — vous pouvez à p
 
 Si vous voulez interagir avec Léonard, exécutez l'application [Personnages](/app/README.md).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -128,7 +128,7 @@ Si vous voulez interagir avec Léonard, exécutez l'application [Personnages](/a
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Configuration de l'environnement de développement
@@ -340,7 +340,7 @@ const message = {
 };
 ```
 
-> \[!NOTE]
+> [!NOTE]
 > Cela s'appelait autrefois « system ». C’est un changement récent et « developer » est le nouveau terme. Pour certains modèles, cela s'appelle encore « system », donc si vous avez des problèmes, utilisez « system ».
 
 **Vous :** Ok, super, je veillerai à inclure un message système dans mes conversations de chat. Par curiosité, à quoi ressemble un message système pour toi ?
@@ -432,8 +432,8 @@ const completion = await openai.chat.completions.create({
 
 ```
 
-> \[!ASTUCE]
-> Expérimentez avec différentes tailles de fenêtres de contexte pour voir comment cela affecte les réponses de l'IA.
+> [!TIP]
+> Expérimentez avec différentes tailles de fenêtres contextuelles pour voir comment cela affecte les réponses de l'IA.
 
 ## Devoir - Construire un assistant en ingénierie
 
@@ -455,7 +455,7 @@ Leonardo vous a soudainement demandé d'examiner de plus près le Time Beetle, i
 
 ![Aerial screw, Leonardo Da Vinci](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg)
 
-> \[!NOTE]
+> [!NOTE]
 > La vis aérienne, également connue sous le nom de vis hélicoïdale, était destinée à décoller du sol en comprimant l'air. La conception de Léonard comportait un grand rotor en spirale en lin, rigidifié avec de l'amidon, et monté sur une plate-forme en bois. L'idée était qu'une équipe d'hommes ferait tourner des manivelles autour de la plate-forme, en la faisant tourner suffisamment vite pour obtenir une portance.
 >
 > Bien que Leonardo n’ait jamais réalisé une version grandeur nature de la vis aérienne, ses esquisses et notes fournissent des perspectives détaillées sur la manière dont il l'envisageait.
@@ -473,8 +473,8 @@ Votre mission est de construire un assistant en ingénierie capable d’aider Le
 
 Consultez l'[application d'exemple](/app/README.md) pour commencer.
 
-> \[!ASTUCE]
-> Réfléchissez au message système à définir et aux entrées à fournir.
+> [!TIP]
+> Réfléchissez à ce que devrait être le message système et à quel type d'entrée vous devriez fournir.
 
 ## Solution
 

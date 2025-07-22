@@ -22,10 +22,12 @@ Si ce n'est pas déjà fait, configurez votre environnement de développement. V
 
 ## Narrative: Hedwig "Hedy" Lamarr
 
+> [!NOTE]
 > *Notre histoire jusqu'à présent. Vous êtes un mécanicien du Londres des années 1860. Vous travailliez sur votre automate et avez reçu une lettre de Charles Babbage qui vous a finalement conduit dans une bibliothèque où vous avez récupéré un dispositif de voyage dans le temps. Au cours de vos voyages dans le temps, vous vous êtes retrouvé à divers moments de l'histoire. Vous travaillez désormais en étroite collaboration avec Ada Lovelace depuis son manoir en tant que base d'opérations, et c'est là que l'histoire continue.*
 >
 > Reportez-vous à [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début.
 
+> [!NOTE]
 > Bien que nous vous recommandions de suivre l'histoire (c'est amusant !), [cliquez ici](#interact-with-hedy-lamarr) si vous préférez passer directement au contenu technique.
 
 Vous êtes une nouvelle fois retourné au manoir d’Ada. Cette fois-ci, Ada vous rencontrait à la porte principale.
@@ -79,7 +81,7 @@ La femme se retourne vers Ada, debout à côté de vous, et s’exclame : « Ada
 
 Si vous souhaitez interagir avec Hedy, exécutez l'application [Characters](/app/README.md).
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -95,7 +97,7 @@ Si vous souhaitez interagir avec Hedy, exécutez l'application [Characters](/app
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Ajouter un modèle de langage à grande échelle à un client
@@ -225,8 +227,9 @@ Dans le code précédent, nous avons (en nous concentrant sur nos ajouts) :
   * `place` avec l'argument `name`
 * Le client doit utiliser un LLM.
 
-> > Par exemple, vous pouvez donner au serveur la capacité de récupérer des informations d’une API Web externe, comme Wikipédia :\
-> > `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`
+> [!TIP]
+> Par exemple, vous pouvez donner au serveur la capacité de récupérer des informations d'une API web externe, comme Wikipedia :\
+> `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`
 
 ## Solution
 

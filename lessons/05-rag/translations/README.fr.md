@@ -22,12 +22,12 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Narration - Genèse
 
-> \[!NOTE]
+> [!NOTE]
 > *Notre histoire jusqu'à présent. Vous êtes un mécanicien de Londres des années 1860. Vous travailliez sur votre automate et avez reçu une lettre de Charles Babbage qui vous a finalement conduit dans une bibliothèque où vous avez pris un appareil de voyage dans le temps. À travers vos voyages dans le temps, vous vous êtes retrouvé à Florence, où vous avez rencontré Léonard de Vinci. Vous êtes également allé dans l'empire aztèque, et c'est là que l'histoire continue.*
 >
 > Reportez-vous à [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début.
 
-> \[!NOTE]
+> [!NOTE]
 > Bien que nous recommandions de suivre l'histoire (c'est amusant !), [cliquez ici](#interact-with-ada-lovelace) si vous préférez aller directement au contenu technique.
 
 **Vous** : « Leonardo, il est temps de partir », avez-vous dit en appuyant sur le bouton. L'appareil s'est mis à bourdonner et une voix mécanique a résonné : « Il est temps de rentrer à la maison, il est temps pour la 'genèse'. »
@@ -74,7 +74,7 @@ Leonardo hocha la tête, "Sì, il agit de manière étrange."
 
 If you want to interact with Ada, run the [Characters](/app/README.md) app.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -90,7 +90,7 @@ If you want to interact with Ada, run the [Characters](/app/README.md) app.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Défis connus avec les modèles de langage à grande échelle (LLMs)
@@ -150,7 +150,7 @@ L'intégration de sources de données externes dans votre application d'IA peut 
 
 Une fois que vous avez choisi une méthode pour intégrer des sources de données externes, vous devrez peut-être également envisager comment prétraiter et formater les données afin qu'elles puissent être facilement utilisées par le modèle d'IA. Cela peut impliquer de nettoyer les données, de les convertir dans un format approprié (comme du texte brut ou Markdown) ou de les diviser en segments plus petits pour une récupération plus facile.
 
-> \[!NOTE]
+> [!NOTE]
 > Lorsque vous intégrez des sources de données externes dans votre application d'IA, il est important de prendre en compte les implications en termes de confidentialité et de sécurité liées à l'accès et au stockage des données. Assurez-vous de disposer des autorisations et des protections nécessaires pour protéger les données et de respecter les réglementations en vigueur.
 
 Si vous utilisez une base de données, vous devez également réfléchir à la manière dont vous souhaitez *rechercher vos données* pour récupérer les informations les plus pertinentes. Cela peut se faire via une recherche par mot-clé, une recherche en texte intégral ou via des techniques plus avancées comme la recherche sémantique ou vectorielle qui peuvent nécessiter un indexage spécifique. Nous aborderons les techniques de recherche avancées dans une leçon ultérieure.
@@ -185,8 +185,8 @@ Be brief and straight to the point.
 
 En fournissant au modèle d'IA un contexte supplémentaire et des informations, vous pouvez aider à orienter le processus de génération et à garantir que les réponses soient précises et pertinentes par rapport au sujet abordé.
 
-> \[!TIP]
-> Notez cette partie du prompt : `S'il n'y a pas assez de données dans les sources fournies, dites que vous ne savez pas.`. Ceci est important pour éviter que l'IA ne génère des informations incorrectes lorsqu'il n'y a pas suffisamment de données pour fournir une réponse fiable. Cette technique est appelée un *échappatoire* et est une bonne pratique pour garantir la qualité du contenu généré.
+> [!TIP]
+> Notez cette partie du prompt : `If there's not enough data in provided sources, say that you don't know.`. Cela est important pour éviter que l'IA génère des informations incorrectes lorsqu'il n'y a pas suffisamment de données pour fournir une réponse fiable. Cette technique est appelée une *échappatoire* et constitue une bonne pratique pour garantir la qualité du contenu généré.
 
 La RAG peut être considérée comme une forme avancée de *conception de prompt*.
 
