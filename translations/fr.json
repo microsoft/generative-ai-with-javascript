@@ -844,7 +844,6 @@
   "A. Presenting information in a structured manner.": "A. Présenter les informations de manière structurée.",
   "B. Extracting data from prompts.": "B. Extraire des données des prompts.",
   "C. Generating unstructured text.": "C. Générer du texte non structuré.",
-  "Generative AI with JavaScript video series": "* [Série de vidéos sur l'intelligence artificielle générative avec JavaScript](https://aka.ms/genai-js)",
   "Building MCP Servers": "Construire des serveurs MCP",
   "Building a Client": "Construire un client",
   "Building a Client with an LLM": "Construire un client avec un LLM",
@@ -1083,5 +1082,6 @@
   "[!TIP]\nExperiment with different context window sizes to see how it affects the .824F9106C1C873E8E136": "Expérimentez avec différentes tailles de fenêtres contextuelles pour voir comment cela affecte les réponses de l'IA.",
   "[!TIP]\nConsider what the system message should be and what input you should prov.DF2588FD52FAEF8AD227": "Réfléchissez à ce que devrait être le message système et à quel type d'entrée vous devriez fournir.",
   "[!TIP]\nNote this part of the prompt: `If there's not enough data in provided sou.3122A095CE2BF1CF89D2": "Notez cette partie du prompt : `If there's not enough data in provided sources, say that you don't know.`. Cela est important pour éviter que l'IA génère des informations incorrectes lorsqu'il n'y a pas suffisamment de données pour fournir une réponse fiable. Cette technique est appelée une *échappatoire* et constitue une bonne pratique pour garantir la qualité du contenu généré.",
-  "[!TIP]\nTry to have the LLM generate a plan that includes step-by-step instructio.EB95597D412F5CEF60A1": "Essayez de demander au LLM de générer un plan comprenant des instructions étape par étape pour construire le phare. Besoin d'aide ? Consultez la solution pour des conseils."
+  "[!TIP]\nTry to have the LLM generate a plan that includes step-by-step instructio.EB95597D412F5CEF60A1": "Essayez de demander au LLM de générer un plan comprenant des instructions étape par étape pour construire le phare. Besoin d'aide ? Consultez la solution pour des conseils.",
+  "Generative AI with JavaScript video series": "Série vidéo sur l'IA générative avec JavaScript"
 }

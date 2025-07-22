@@ -151,7 +151,6 @@ Une pensée vous traverse. L'appareil peut-il me comprendre si je lui parle ?
 Si vous souhaitez interagir avec Dinocrates, exécutez l'application [Characters](/app/README.md).
 
 > [!IMPORTANT]
-> \[!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité AI responsable](../../README.md#responsible-ai-disclaimer)
 
