@@ -26,7 +26,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 >
 > Reportez-vous à [Leçon 1](/lessons/01-intro-to-genai/README.md) si vous souhaitez reprendre l'histoire depuis le début.
 
-> \[!NOTE]
+> [!NOTE]
 > While we recommend going through the story (it's fun!), [click here](#interact-with-amelia-earhart) if you'd prefer to jump straight to the technical content.
 
 **Ada Lovelace**: "J'ai besoin que vous rencontriez une amie à moi. Peu de personnes peuvent égaler son expertise en mécanique et en résolution de problèmes. Il pourrait être difficile de la trouver, cependant ; elle est toujours en déplacement :)"
@@ -65,7 +65,7 @@ Le monde autour de vous commence à se brouiller, et tout devient noir. Vous rev
 
 If you want to interact with Ada, run the [Characters](/app/README.md) app.
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
@@ -81,7 +81,7 @@ If you want to interact with Ada, run the [Characters](/app/README.md) app.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
-> \[!NOTE]
+> [!NOTE]
 > Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
 
 ## Appels d'outils

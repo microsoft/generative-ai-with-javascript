@@ -558,4 +558,4 @@ C. Générer du texte non structuré.
 
 ## Ressources d'auto-apprentissage
 
-* [\* \[Série de vidéos sur l'intelligence artificielle générative avec JavaScript\](https://aka.ms/genai-js)](https://aka.ms/genai-js)
+* [Série vidéo sur l'IA générative avec JavaScript](https://aka.ms/genai-js)
