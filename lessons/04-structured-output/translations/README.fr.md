@@ -14,7 +14,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 Cela vaut la peine de revoir la vidéo sur l'ingénierie des prompts, car elle pose les bases de ce que vous allez apprendre dans ce chapitre.
 
-[![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=3)
+[![Regardez une courte vidéo sur l'ingénierie des prompts](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=3)
 
 *Cette vidéo propose une introduction à l'amélioration de vos compétences en matière de "prompt", en vous apprenant à donner des instructions plus claires et plus efficaces à l'IA pour obtenir de meilleurs résultats.*
 
@@ -46,7 +46,7 @@ La lumière brillante émise par le Scarabée temporel s'estompe, et vous vous r
 
 La vis aérienne repose maladroitement sur une grande pierre finement sculptée, marquée de gravures qui ressemblent à un calendrier.
 
-![Aztec calendar, Wikipedia](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/aztec.png)
+![Calendrier aztèque, Wikipedia](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/aztec.png)
 
 *Calendrier aztèque, Wikipedia*
 
@@ -56,7 +56,7 @@ Léonard de Vinci s'avance et ses yeux s'ouvrent en grand de fascination.
 
 Avant que vous puissiez réagir, un groupe de soldats aztèques s'approche.
 
-![Meeting with Aztecs](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/meeting.png)
+![Rencontre avec les Aztèques](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/meeting.png)
 
 **Chef des soldats :** "Qui êtes-vous et qu'avez-vous fait ?" demande-t-il en nahuatl.
 
@@ -78,7 +78,7 @@ Une fois au sommet de la pyramide, vous êtes conduit dans une grande chambre o�
 
 **Montezuma :** "D'accord. Je vous propose une partie de [Patolli](#patolli). Si je gagne deux manches sur trois, vous me donnerez votre machine et m'expliquerez son fonctionnement. Si vous gagnez, vous serez libres de partir."
 
-![Playing a game of Patolli](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/game.png)
+![Partie de Patolli](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/game.png)
 
 Le jeu commence, et la pièce plonge dans le silence, interrompu seulement par le son des haricots roulés et des pièces déplacées sur le plateau.
 
@@ -109,7 +109,7 @@ Avec un dernier coup décisif, Léonard gagne la partie. La pièce explose en ac
 >
 > **Implication aztèque** : Largement pratiqué par les nobles et les gens du peuple, c'était un jeu favori à la cour de Montezuma. Au-delà du plaisir, il impliquait des paris à forts enjeux comme des couvertures, des pierres précieuses, voire la liberté.
 
-![Patolli board](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/patolli.png)
+![Plateau de Patolli](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/patolli.png)
 
 *Patolli - Wikipedia*
 

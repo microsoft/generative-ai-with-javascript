@@ -14,7 +14,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Integrating with function calling](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/11-lesson-banner.png)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
+[![Intégration avec les appels de fonction](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/11-lesson-banner.png)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
 
 *Cette vidéo explique l'appel d'outils, une méthode qui aide l'IA à appeler vos fonctions et à élargir ainsi ses capacités.*
 
@@ -41,7 +41,7 @@ You: "Who are we talking about and where can I find her?"
 
 Le monde autour de vous commence à se brouiller, et tout devient noir. Vous revenez à vous et vous trouvez dans le cockpit d’un avion. Vous êtes en vol, et vous pouvez voir l’océan sous vous. Il y a quelqu’un devant vous ; vous ne pouvez voir que l’arrière de leur cou.
 
-![Amelia piloting a plane](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/amelia.jpeg)
+![Amelia pilotant un avion](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/amelia.jpeg)
 
 **Vous**: "Amelia, c'est toi ?"
 
@@ -92,7 +92,7 @@ Pour une explication plus détaillée de l'application, voir [Explication détai
 
 **Time Beetle**: "Voici une illustration pour montrer le processus d'appel d'outil :"
 
-![Tool calling process illustration](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/tool_call_langchain.png)
+![Illustration du processus d'appel d'outil](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/tool_call_langchain.png)
 
 *Crédit image Langchain <https://python.langchain.com/docs/concepts/tool_calling/>*
 

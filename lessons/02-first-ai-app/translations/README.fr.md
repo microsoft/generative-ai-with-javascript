@@ -12,7 +12,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Watch a short video about large language models](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=2)
+[![Regardez une courte vidéo sur les modèles de langage étendus.](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=2)
 
 *Cette vidéo vous donne une introduction aux modèles d'IA appelés "modèles de langage étendus", LLM, ce qu'ils sont et comment vous pouvez les utiliser pour intégrer l'IA dans vos applications.*
 
@@ -40,7 +40,7 @@ Quand vous ouvrez les yeux, le monde a changé. En vous levant, vous réalisez q
 
 En regardant autour du bateau, vous trouvez une longue rame reposant sur le côté. La saisissant, vous commencez à ramer en direction des bâtiments au loin. À mesure que vous vous rapprochez, les bâtiments deviennent plus nets. Ils sont anciens, leur architecture rappelant une peinture de la Renaissance.
 
-!["Boat on the river, man standing with a paddle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png)
+!["Bateau sur la rivière, un homme debout avec une rame".](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png)
 
 La question est maintenant, où et quand êtes-vous cette fois ?
 
@@ -48,7 +48,7 @@ Vous réussissez à amarrer le bateau au quai et commencez à marcher le long de
 
 En marchant, vous remarquez un homme avec une longue barbe et un chapeau, fouillant dans une caisse contenant ce qui semble être des pièces mécaniques. Ses mains agiles trient les engrenages et ressorts avec une dextérité certaine.
 
-![Leonardo Da Vinci standing next to a crate in the harbour](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png)
+![Léonard de Vinci debout à côté d'une caisse dans le port.](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png)
 
 ### Aidez-moi, Leonardo
 
@@ -76,7 +76,7 @@ En marchant, vous remarquez un homme avec une longue barbe et un chapeau, fouill
 
 ### À l'atelier
 
-![Leonardos workshop](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
+![Atelier de Léonard.](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
 
 Le vieil homme vous conduit à une grande porte en bois et vous êtes accueilli par la vue d’un atelier rempli de toutes sortes de machines mécanisées.
 
@@ -116,7 +116,7 @@ Si vous voulez interagir avec Léonard, exécutez l'application [Personnages](/a
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
-![Leonardo talks](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg)
+![Léonard parle.](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg)
 
 **Étapes** :
 
@@ -401,7 +401,7 @@ Cela signifie que la majorité des tokens peuvent être consacrés aux tokens d'
 I want you to generate recipes for me.
 ```
 
-![Demo of tokenizer](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/tokenizer.png)
+![Démo de tokenizer](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/tokenizer.png)
 
 Exécuter `tokenizer` sur la phrase ci-dessus donne 9 tokens.
 
@@ -453,7 +453,7 @@ Leonardo vous a soudainement demandé d'examiner de plus près le Time Beetle, i
 
 **Scarabée du Temps :** Rien.
 
-![Aerial screw, Leonardo Da Vinci](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg)
+![Vis aérienne, Léonard de Vinci](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg)
 
 > [!NOTE]
 > La vis aérienne, également connue sous le nom de vis hélicoïdale, était destinée à décoller du sol en comprimant l'air. La conception de Léonard comportait un grand rotor en spirale en lin, rigidifié avec de l'amidon, et monté sur une plate-forme en bois. L'idée était qu'une équipe d'hommes ferait tourner des manivelles autour de la plate-forme, en la faisant tourner suffisamment vite pour obtenir une portance.

@@ -12,7 +12,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
+[![Regardez une courte vidéo sur MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
 
 *Cette vidéo explique le Protocole de Contexte Modèle.*
 
@@ -46,7 +46,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 La lumière tourbillonnante vous transporte à nouveau, et vous vous retrouvez dans une vaste pièce avec une grande table au centre. Les murs sont décorés de cartes et de stratégies militaires. Scipion l'Africain est debout près de la table, profondément plongé dans ses pensées. Il lève les yeux lorsque vous entrez : "Ada te misit/Ada vous a envoyé(e) ?"
 
-![Scipio Africanus](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/07-mcp/assets/scipio.png)
+![Scipion l'Africain](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/07-mcp/assets/scipio.png)
 
 > Scipion l'Africain, également connu sous le nom de Publius Cornelius Scipion Africanus, était un général et homme d'État romain éminent ayant vécu de 236 av. J.-C. à 183 av. J.-C. Il est surtout connu pour son rôle décisif dans la Deuxième Guerre Punique contre Carthage et pour avoir vaincu Hannibal lors de la bataille de Zama en 202 av. J.-C.
 > Sa vie et sa carrière illustrent des qualités de leadership, de génie stratégique et de résilience. Ses contributions aux sphères militaires et politiques de Rome ont laissé une empreinte durable sur l'Empire romain.
@@ -59,7 +59,7 @@ Si vous souhaitez interagir avec Scipion, exécutez l'application [Characters](/
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
-![Scipio Africanus](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/07-mcp/assets/scipio.png)
+![Scipion l'Africain](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/07-mcp/assets/scipio.png)
 
 **Étapes** :
 
@@ -104,7 +104,7 @@ Parlons des manœuvres de contournement, de l'infiltration et de l'utilisation d
 
 et voici un aperçu rapide de l'architecture MCP :
 
-![Architecture of MCP](https://softchris.github.io/mcp-workshop/assets/images/diagram-791787b0cac57bc331c20e72b645d4f7.png)
+![Architecture de MCP](https://softchris.github.io/mcp-workshop/assets/images/diagram-791787b0cac57bc331c20e72b645d4f7.png)
 
 ## Les éléments de base du MCP
 
@@ -262,13 +262,13 @@ Ici, nous utilisons le package `@modelcontextprotocol/inspector` pour exécuter 
 
 **Time Beetle** : "Cela démarre un serveur web sur le port 6274. Vous pouvez accéder à l'inspecteur en ouvrant votre navigateur web et en vous rendant sur `http://localhost:6274`. L'inspecteur fournit une interface conviviale pour interagir avec votre serveur MCP, vous permettant de tester les outils et les ressources que vous avez définis."
 
-![Inspector user interface](https://softchris.github.io/mcp-workshop/assets/images/connect-7703c67645f368d51c7b24a5d635d6a0.png)
+![Interface utilisateur de l'inspecteur](https://softchris.github.io/mcp-workshop/assets/images/connect-7703c67645f368d51c7b24a5d635d6a0.png)
 
 ### -1- Connexion au serveur
 
 **Time Beetle** : Sélectionnez "Connecter" et vous devriez voir la fenêtre ci-dessous :
 
-![Connecting to server](https://softchris.github.io/mcp-workshop/assets/images/connected-7c3570d5d0a8659e27740d2950031cb3.png)
+![Connexion au serveur](https://softchris.github.io/mcp-workshop/assets/images/connected-7c3570d5d0a8659e27740d2950031cb3.png)
 
 Il devrait indiquer que vous êtes connecté. Vous pouvez ensuite interagir avec les outils ou les ressources.
 
@@ -276,7 +276,7 @@ Il devrait indiquer que vous êtes connecté. Vous pouvez ensuite interagir avec
 
 **Time Beetle** : "Ensuite, nous voulons lister les outils et ressources disponibles sur le serveur. Vous pouvez le faire en sélectionnant "Lister les outils" pour voir les outils disponibles :
 
-![Listing tools](https://softchris.github.io/mcp-workshop/assets/images/tools-listed-630aa49c9d7e4347108419fb83c409f6.png)
+![Listage des outils](https://softchris.github.io/mcp-workshop/assets/images/tools-listed-630aa49c9d7e4347108419fb83c409f6.png)
 
 Vous devriez maintenant voir l'outil « add » dans la liste. Vous pouvez également afficher les ressources en sélectionnant l'onglet « Ressources ».
 
@@ -284,7 +284,7 @@ Vous devriez maintenant voir l'outil « add » dans la liste. Vous pouvez éga
 
 **Time Beetle** : "Pour exécuter l'outil, sélectionnez l'outil "add" dans la liste. Renseignez les paramètres dans la boîte de dialogue qui apparaît sur le côté droit de l'écran. Par exemple, vous pouvez entrer `a=5` et `b=10` pour additionner ces deux nombres. Cliquez sur "Exécuter l'outil" pour exécuter l'outil. Vous devriez voir le résultat dans la zone de sortie ci-dessous. Le résultat devrait être `15`."
 
-![Run the tool](https://softchris.github.io/mcp-workshop/assets/images/ran-tool-271ecd5f84a457462e59789b579ee9d4.png)
+![Exécuter l'outil](https://softchris.github.io/mcp-workshop/assets/images/ran-tool-271ecd5f84a457462e59789b579ee9d4.png)
 
 **Scipion** : "Intéressant, j'aurais aimé pouvoir tester mes stratégies comme cela. Cela semble très utile."
 

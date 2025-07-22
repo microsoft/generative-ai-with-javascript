@@ -14,7 +14,7 @@ Si ce n'est pas déjà fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
+[![Regardez une courte vidéo sur MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
 
 *Cette vidéo explique l'utilisation des LLM avec le protocole Model Context.*
 

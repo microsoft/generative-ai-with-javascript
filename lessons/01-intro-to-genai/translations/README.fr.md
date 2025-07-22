@@ -12,7 +12,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Watch a short video about an Introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=1)
+[![Regardez une courte vidéo sur l'introduction à l'IA générative](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=1)
 
 *Cette vidéo vous donne une introduction à l'IA générative avec JavaScript.*
 
@@ -73,7 +73,7 @@ Après une marche de 20 minutes le long de la Tamise, vous arrivez enfin à la b
 
 Alors que vos yeux s'adaptent à la faible lumière, vous remarquez une silhouette au loin, vous faisant signe de la main. Vous vous approchez d'elle, vos pas résonnant sur le plancher en bois. La silhouette devient plus nette, et vous le reconnaissez grâce à des photos dans les journaux, c'est Charles Babbage.
 
-![Dusty Library](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png)
+![Bibliothèque poussiéreuse](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png)
 
 ### Quel est cet appareil ?
 
@@ -87,7 +87,7 @@ Poussé par la curiosité, vos doigts se dirigent vers le bouton rouge. Au momen
 
 Puis, le noir complet et une sensation de chute.
 
-![Time Vortex](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png)
+![Vortex temporel](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png)
 
 ### Alexandrie 300 av. J.-C.
 
@@ -95,7 +95,7 @@ Vous vous réveillez, désorienté. Lorsque votre vision s'éclaircit, une cité
 
 Des gens en toges se déplacent dans les rues, leurs voix se mêlant en une symphonie de dialectes anciens, l’air embaumé des parfums d’épices exotiques et du son lointain des marchands vantant leurs marchandises.
 
-![Alexandria 300 BC](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png)
+![Alexandrie 300 av. J.-C.](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png)
 
 **Vous:** C'est sûr, je dois m'être cogné la tête, pensez-vous, en fermant les yeux et en les rouvrant, la scène reste inchangée.
 
@@ -105,7 +105,7 @@ Suis-je coincé dans le passé ? Oserai-je appuyer à nouveau sur ce bouton ? Av
 
 Un vieil homme portant une toge vous fait signe depuis les marches du grand temple. Ses cheveux blancs et sa barbe captent la lumière du soleil, lui donnant une aura presque éthérée.
 
-![Dinocrates wearing a toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
+![Dinocrates portant une toge](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
 **Dinocrates:** "Bienvenue, voyageur," dit-il chaleureusement. "Je suis Dinocrates, architecte de cette grande cité. Votre arrivée avait été prédite."
 
@@ -135,7 +135,7 @@ Une pensée vous traverse. L'appareil peut-il me comprendre si je lui parle ?
 
 **Vous:** Tu as raison, George est un bon nom, c'était en fait le prénom de mon père.
 
-![Time Beetle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png)
+![Scarabée Temporel](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png)
 
 *Appareil temporel, "George" le scarabée métallique*
 
@@ -154,7 +154,7 @@ Si vous souhaitez interagir avec Dinocrates, exécutez l'application [Characters
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité AI responsable](../../README.md#responsible-ai-disclaimer)
 
-![Dinocrates wearing a toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
+![Dinocrates portant une toge](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
 **Étapes** :
 
@@ -257,7 +257,7 @@ Comme vous pouvez le voir, ces améliorations peuvent à la fois aider le front-
 
 Voici un exemple d'une "application de chatbot" en action :
 
-![Image of chat app](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966)
+![Image de l'application de chat](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966)
 
 **Vous :** Fascinant, je vais noter l'idée de visiter le 21e siècle pour voir comment ces outils sont utilisés.
 
@@ -337,8 +337,8 @@ Visitez [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://ch
 
 **Question :** Parmi les affirmations suivantes, lesquelles sont vraies concernant l'IA générative et JavaScript ?
 
-A. Les applications JavaScript alimentées par l'IA générative peuvent seulement générer du texte.\
-B. JavaScript peut être utilisé pour développer des applications alimentées par l'IA, y compris des chatbots, des outils de génération de texte, et plus encore.\
+A. Les applications JavaScript alimentées par l'IA générative peuvent seulement générer du texte. &#x20;
+B. JavaScript peut être utilisé pour développer des applications alimentées par l'IA, y compris des chatbots, des outils de génération de texte, et plus encore. &#x20;
 C. Python est le seul langage utilisé pour le développement en IA.
 
 [Quiz solution](/lessons/01-intro-to-genai/solution/solution-quiz.md)

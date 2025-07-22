@@ -12,7 +12,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=3)
+[![Regardez une courte vidéo sur l'ingénierie des prompts](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=3)
 
 *Cette vidéo propose une introduction à l'amélioration de vos compétences en matière de "prompt", en vous apprenant à donner des instructions plus claires et plus efficaces à l'IA pour obtenir de meilleurs résultats.*
 
@@ -34,7 +34,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 Avant que vous ne puissiez appuyer sur le bouton, les portes de l'atelier s'ouvrent en claquant avec fracas. Un homme se tient dans l'encadrement, large d'épaules et vêtu de vêtements coûteux, brandissant un morceau de papier en l'air et criant :
 
-!["An angry Ludovico Sforza busting in through the door](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png)
+!["Un Ludovico Sforza en colère fait irruption par la porte."](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png)
 
 *Ludovico Sforza*
 
@@ -62,7 +62,7 @@ Un tourbillon de couleurs enveloppe la calèche, dissolvant le monde autour de v
 
 Le tourbillon de couleurs s'estompe, et vous vous retrouvez dans la calèche, désormais lancée à toute vitesse sur la Via Appia à Rome. À votre grande surprise, vous êtes en plein milieu d'une course de chars. Les roues des chars tonnent, soulevant des nuages de poussière.
 
-![Escape from Rome](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/escape.png)
+![Fuite de Rome](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/escape.png)
 
 **Vous :** Léonard, où sommes-nous ?
 
@@ -100,7 +100,7 @@ Avec une dernière poussée, l'hélice commence à tourner. Les pales attrapent 
 
 Vous regardez la ville en contrebas ; les bâtiments antiques s'étendent sous vos pieds.
 
-![Airborne, looks down at the city with feet dangling](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/airborne.png)
+![En vol, regardant la ville avec les pieds pendants](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/airborne.png)
 
 ## Interagir avec Sforza
 
@@ -204,9 +204,9 @@ Cette technique guide l'IA en lui montrant un raisonnement étape par étape pou
 
 Votre prompt devient :
 
-> * * 100 mètres au-dessus du sol
+> * \- 100 mètres au-dessus du sol
 > * Gravity: 9.8 m/s²
-> * * Combien de secondes pour atterrir ?
+> * \- Combien de secondes pour atterrir ?
 
 **Answer: 4.5 seconds**
 
@@ -296,11 +296,11 @@ Je peux oui, mais mon nom est George, je préfère cela à Gadget. Je vais en fa
 
 Créez une application qui demande :
 
-* * La hauteur
-* * La vitesse en avant
-* * La gravité
-* * Le vent ascendant
-* * La distance jusqu'à la colline
+* \- La hauteur
+* \- La vitesse en avant
+* \- La gravité
+* \- Le vent ascendant
+* \- La distance jusqu'à la colline
 
 Utilisez la technique de chaîne-de-pensée pour arriver à une réponse.
 

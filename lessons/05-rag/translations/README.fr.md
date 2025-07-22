@@ -12,7 +12,7 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Watch a short video about RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=4)
+[![Regardez une courte vidéo sur RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=4)
 
 *Cette vidéo explique la génération augmentée par récupération (RAG), une méthode qui aide l'IA à utiliser vos contenus en complément de ses données d'entraînement pour de meilleurs résultats.*
 
@@ -36,13 +36,13 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 Vous atterrissez dans le jardin, il est tard dans la nuit avec un brouillard épais, et des lumières étranges scintillent au loin. Le manoir se dresse devant vous. Leonardo regarde autour de lui, les yeux écarquillés d'émerveillement.
 
-![Old mansion shown in a deep fog](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/mansion.jpeg)
+![Vieux manoir montré dans un épais brouillard](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/mansion.jpeg)
 
 ### Fuir les chiens
 
 Vous entendez des aboiements et le bruit des chiens qui courent vers vous. Vous vous tournez vers Leonardo : "Nous devons entrer, maintenant !"
 
-![Running from the dogs](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/dogs.jpeg)
+![Fuir les chiens](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/dogs.jpeg)
 
 En atteignant la porte du manoir, elle s'ouvre brusquement, et une paire de serviteurs se précipitent dehors. Après vous avoir observés, ils vous font signe de les suivre.
 
@@ -58,7 +58,7 @@ Vous vous retrouvez face à Ada Lovelace, ses yeux brillant de curiosité.
 
 **Vous :** « Mais... »
 
-![Ada Lovelace and Charles Babbage working on a device](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada.jpeg)
+![Ada Lovelace et Charles Babbage travaillant sur un appareil](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada.jpeg)
 
 Charles Babbage s'avance et examine le Scarabée Temporel dans votre main. "Cet appareil est remarquable, mais il est un peu défectueux, n'est-ce pas ? Vous l'avez sûrement remarqué."
 
@@ -123,7 +123,7 @@ Au cœur de RAG, il y a deux composants principaux : un **récupérateur** et un
 
 Voici un schéma illustrant le fonctionnement d'un système RAG :
 
-![Schema of a RAG system](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/rag.png)
+![Schéma d'un système RAG](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/rag.png)
 
 1. **Entrée utilisateur :** L'utilisateur pose une question.
 2. **Récupérateur :** Le composant récupérateur recherche des informations pertinentes en utilisant une ou plusieurs bases de connaissances.
