@@ -22,7 +22,7 @@ Prêt à intégrer l'Intelligence Artificielle Générative dans vos application
 
 Ce cours vous emmène dans une *aventure à travers le temps*—rencontrez les légendes de l'histoire avec une touche amusante, tout en apprenant les technologies d'IA Générative ✨
 
-> \[!IMPORTANT]\
+> [!IMPORTANT]
 > Ambiance open-source ! Réutilisez, modifiez et partagez librement ce contenu.
 
 ![Character App Sneak Peek](/docs/images/background.png)
@@ -147,7 +147,7 @@ Vous trouverez également des ressources supplémentaires sous forme de [tutorie
 
 ## Clause de non-responsabilité pour l'IA Responsable
 
-> \[!IMPORTANT]\
+> [!IMPORTANT]
 > AVERTISSEMENT : Ce dépôt contient du contenu fictif généré par l'IA. Les personnages historiques représentés ici génèrent des réponses grâce à l'IA générative, basée sur des données d'entraînement. Les réponses générées par ces personnages ne représentent pas leurs véritables opinions ou citations. Ce contenu est uniquement destiné à des fins de divertissement. [Principes de l'IA Responsable de Microsoft ici](https://www.microsoft.com/fr-fr/ai/principles-and-approach/)
 
 ## Interagissez avec la communauté
