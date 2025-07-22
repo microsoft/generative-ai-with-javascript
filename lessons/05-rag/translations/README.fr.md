@@ -192,7 +192,7 @@ La RAG peut être considérée comme une forme avancée de *conception de prompt
 
 ### Exemple de code
 
-**Ada :** « La pratique rend parfait, alors appliquons ce que nous avons appris avec un exemple. Nous allons intégrer un simple système de récupération dans une application JavaScript en utilisant un fichier [CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) contenant des données sur les voitures hybrides et un algorithme de recherche basique pour extraire des informations pertinentes en fonction de la question d'un utilisateur. »
+**Ada :** La pratique rend parfait, alors appliquons ce que nous avons appris avec un exemple. Nous allons construire un système de récupération simple dans une application JavaScript en utilisant un fichier [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) contenant des données sur les voitures hybrides et un algorithme de recherche de base pour extraire des informations pertinentes en fonction de la question d'un utilisateur.
 
 ```javascript
 // This example demonstrates how to use the Retrieval Augmented Generation (RAG)
