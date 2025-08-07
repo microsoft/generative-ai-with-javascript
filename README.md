@@ -130,6 +130,7 @@ To see the full page of resources, go to this [video overview page](/videos/READ
 - [Generative AI for Beginners](https://aka.ms/genai-beginners)
 - [Generative AI for Beginners .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
 - [Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
+- [Generative AI with Java](https://github.com/microsoft/Generative-AI-for-beginners-java)
 - [AI for Beginners](https://aka.ms/ai-beginners)
 - [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners)
 - [Data Science for Beginners](https://aka.ms/datascience-beginners)
