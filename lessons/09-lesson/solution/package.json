@@ -1,0 +1,27 @@
+{
+    "type": "module",
+    "bin": {
+        "weather": "./build/index.js"
+    },
+    "scripts": {
+        "start": "node ./build/index.js",
+        "build": "tsc",
+        "inspector": "npx @modelcontextprotocol/inspector node build/index.js",
+        "tools": "npx @modelcontextprotocol/inspector --cli http://localhost:3000/sse --method tools/list"
+    },
+    "files": [
+        "build"
+    ],
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.8.0",
+        "type": "^2.7.3",
+        "uuid": "^11.1.0",
+        "zod": "^3.24.2",
+        "express": ""
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.24",
+        "@types/uuid": "^10.0.0",
+        "typescript": "^5.3.3"
+    }
+}
