@@ -7,7 +7,10 @@
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/blob/main/LICENSE)
 [![Watch the video series](https://img.shields.io/badge/Videos-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Join Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Community-blue?style=flat-square&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
+
+[![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ⭐ If you like this repo, star it on GitHub — it helps a lot!
 
