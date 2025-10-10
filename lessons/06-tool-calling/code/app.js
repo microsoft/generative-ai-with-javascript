@@ -25,7 +25,7 @@ const getBackgroundOnCharacterJson = {
         description: "The name of the character",
       }
     },
-    required: ["lat", "long"],
+    required: ["name"],
   },
   output: { type: "string" }
 };
