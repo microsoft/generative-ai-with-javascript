@@ -1,190 +1,180 @@
-# Lezione 1: Introduzione alla IA Generativa e ai LLM per sviluppatori JavaScript
+# Lezione 1: Introduzione all'IA generativa e agli LLM per sviluppatori JavaScript
 
 In questo capitolo imparerai a:
 
-- capire le basi della IA Generativa e dei Large Language Model (LLM);
-- identificare le potenziali applicazioni e limitazioni dei LLM nello sviluppo JavaScript;
-- esplorare come la IA Generativa può migliorare le esperienze degli utenti nelle applicazioni JavaScript.
+- comprendere le basi dell'IA generativa e dei Large Language Model (LLM);
+- identificare le potenziali applicazioni e limitazioni dei Large Language Model (LLM) nello sviluppo JavaScript;
+- esplorare come l'IA generativa può migliorare l'esperienza utente nelle applicazioni JavaScript.
 
 ## Configurazione
 
-Se non lo hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi fare: [Configura il tuo ambiente](/docs/setup/README.md).
+Se non l'hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi farlo: [Configura il tuo ambiente](/docs/setup/README.md).
 
 ## Risorse correlate
 
-[![Guarda un breve video su una Introduzione alla IA Generativa](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
+[![Guarda un breve video introduttivo sull'intelligenza artificiale generativa](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
 
-_Questo video ti offre un’introduzione alla IA Generativa con JavaScript_
+_Questo video offre un'introduzione all'IA generativa con JavaScript_
 
-💼 Slide: [Introduzione alla IA Generativa](../../videos/slides/00-intro.pptx)
+💼 Slide: [Introduzione all'IA generativa](/videos/slides/00-intro.pptx)
 
 ## IA Generativa
 
-Fino ad ora, probabilmente ai sentito parlare di strumenti come ChatGPT o IA Generativa. Il concetto è semplice: tu fai una richiesta e un modello (spesso chiamato Large Language Model (LLM)) genera un paragrafoo o persino una pagina intera di testo. Questo output può essere usato per scopi diversi, tra cui la scrittura creativa, la risposta a domande e il coding.
+By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
 
-Inoltre, la IA Generativa si è evoluta in capacità multimodali, permettendoti di fornire una immagine o un video come input e di ricevere una varietà di output. Questo avanzamento ha significativamente migliorato This advancement has significantly enhanced i flusso di lavoro di molte persone: non solo generando testo, ma anche riassumendo, traducendo e altro ancora.
+Probabilmente avrete già sentito parlare di strumenti come ChatGPT o AI generativa. Il concetto è semplice: si fornisce un prompt e un modello, spesso chiamato Large Language Model (LLM), genera un paragrafo o addirittura un'intera pagina di testo. Questo output può essere utilizzato per vari scopi, tra cui la scrittura creativa, rispondere a domande e il coding.
 
-*In poche parole, le interfacce in linguaggio naturale stanno diventando la nuova interfaccia standard per molte app e i tuoi utenti si aspettano di usarle.*
+Inoltre, l'IA generativa si è evoluta in capacità multimodali, consentendo di fornire un'immagine o un video come input e ricevere una varietà di output. Questo progresso ha migliorato significativamente il flusso di lavoro di molte persone, non solo generando testo, ma anche riassumendo, traducendo e altro ancora.
 
-## Storia: Un viaggio nel tempo
+*In poche parole, le interfacce in linguaggio naturale stanno diventando il nuovo standard per molte app e i tuoi utenti si aspettano di poterle usare.*
 
-> [!NOTE]
-> Iniziamo con una panoramica della storia: una storia che collega il passato e il futuro! Procedendo in questo curriculum, ti imbarcherai in un’avventura emozionante, viaggiando indietro nel tempo per collaborare con alcune delle più grandi menti della storia. Insieme, affronterete sfide ed esplorerete come l’IA Generativa può rivoluzionare le tue applicazioni JavaScript._
+## Narrazione: Un viaggio attraverso il tempo
 
-> [!NOTE]
-> Mentre consigliamo di procedere nella storia (è divertente!), [clicca qui](#interagisci-con-dinocrate) se preferisci saltare direttamente al contenuto tecnico.
+> [!NOTE] 
+> Cominciamo con una panoramica della storia, una storia che collega il passato al futuro! Man mano che procederai con questo programma di studi, ti imbarcherai in un'avventura emozionante, viaggiando indietro nel tempo per collaborare con alcune delle menti più brillanti della storia. Insieme affronterete sfide ed esplorerete come l'IA generativa possa rivoluzionare le vostre applicazioni JavaScript.
 
-Il tuo viaggio inizia nella Londra del 1860, dove assumerai il ruolo di un abile meccanico. Attraverso una serie di avvincenti avventure, affinerai le tue abilità in IA e sbloccherai soluzioni che trascendono il tempo.
+> [!NOTE]  
+> Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-dinocrate) se preferisci passare direttamente al contenuto tecnico.
+
+Il tuo viaggio inizia nella Londra degli anni '60 dell'Ottocento, dove vestirai i panni di un abile meccanico. Attraverso una serie di avventure avvincenti, affinerai le tue abilità di intelligenza artificiale e sbloccherai soluzioni che trascendono il tempo.
 
 ### Nel vortice - Londra 1860
 
-Nel cuore della Londra degli anni ’60 del 1800, sei considerato come uno dei più abili meccanici del tuo tempo. La tua officina è nascosta in uno stretto vicolo.Le pareti sono tappezzate di scaffali traboccanti di pezzi meccanici, cianografie e progetti semilavorati.
+Nel cuore della Londra degli anni '60 dell'Ottocento, sei riconosciuto come uno dei meccanici più abili della tua epoca. La tua officina è nascosta in un vicolo stretto. Le pareti sono ricoperte da scaffali traboccanti di parti meccaniche, progetti e lavori lasciati a metà.
 
 Il tuo banco da lavoro, il cuore della tua officina, è un disordine organizzato.
 
 <div>
-   <img src="./assets/london.png" alt="Officina di Londra"width=300 >
+  <img width=600 src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/london.png" alt="Officina di Londra" />
 </div>
 
-_Al centro del banco si trova il torso di un robot, una meraviglia dell’ingegneria che ha richiesto mesi di sforzi. La sua struttura in legno è intricata e ogni giuntura è stata meticolosamente progettata per garantire un movimento fluido._
+_Al centro del banco giace il torso di un robot, una meraviglia ingegneristica che ha richiesto mesi di lavoro. La sua struttura in legno è finemente intagliata e ogni giuntura è stata meticolosamente progettata per garantire movimenti fluidi._
 
 ### Una lettera, per te?
 
-Improvvisamente, un colpo alla porta interrompe i tuoi pensieri. I visitatori a quest’ora sono rari. Asciugandoti le mani su uno straccio, ti avvicini alla porta, incuriosito.
+All'improvviso, un colpo alla porta interrompe i tuoi pensieri. È raro ricevere visite a quest'ora. Ti asciughi le mani con uno straccio e ti avvicini alla porta, incuriosito.
 
-Aprendola, non trovi nessuno. Invece, i tuoi occhi sono attratti da una busta sigillata a terra. La raccogli e leggi:
+Aprendo la porta, non trovi nessuno. Invece, il tuo sguardo è attratto da una busta sigillata sul pavimento. La raccogli e leggi:
 
-_“Caro amico,_
+_"Caro amico,_
 
-_ti invio questa lettera per aiutarti nei tuoi sforzi con l’automa. È fondamentale che continui questo lavoro. In allegato c’è la chiave della biblioteca. Incontriamoci lì oggi alle 15:00._
+_Ti invio questa lettera per aiutarti nei tuoi sforzi con l'automa. È fondamentale che tu continui questo lavoro. In allegato troverai una chiave della biblioteca. Ci vediamo lì oggi alle 15:00._
 
 _Tuo,_
 
-_Charles Babbage.”_
+_Charles Babbage."_
 
-### In biblioteca
+### Andiamo in biblioteca
 
-Charles Babbage, il grande matematico e inventore della macchina differenziale, vuole conoscerti. In fretta, prendi il cappotto ed esci dalla porta.
+Charles Babbage, il grande matematico e inventore della macchina differenziale, vuole incontrarti. Prendi rapidamente il cappotto ed esci di casa.
 
-Dopo una camminata di venti minuti lungo il Tamigi, finalmente arrivi alla biblioteca dove trovi la porta leggermente aperta.
+After a 20-minute walk along the Thames, you finally arrive at the library where you find the door slightly open.
 
-L’interno è buio e tetro, l’unica luce filtra dalle finestre sudice e proietta ombre inquietanti sulle pareti.
+It's dark and gloomy inside, the only light filtering through the grimy windows, casting eerie shadows on the walls.
 
-**Tu:** «Permesso? Signor Babbage?»
+**You:** "Hello? Mr. Babbage?"
 
-Quando gli occhi si adattano alla luce fioca, noti una figura in lontananza che ti saluta. Cammini verso di lui, i tuoi passi risuonano sul pavimento di legno. La figura diventa più chiara e la riconosci dalle foto dei giornali: è Charles Babbage.
+As your eyes adjust to the dim light, you notice a figure in the distance, waving at you. You walk towards him, your footsteps echoing on the wooden floor. The figure becomes clearer, and you recognize him from newspaper photos, it's Charles Babbage.
 
-<div>
-   <img src="./assets/library.png" alt="Libreria polverosa" width="300">
-</div>
+![Dusty Library](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png)
 
-### Che cos’è questo dispositivo?
+### What's This Device?
 
-Nel momento in cui ti avvicini, scoppia un lampo accecante e lui scompare.
+Just as you step closer, a blinding flash erupts, and he vanishes.
 
-Si lascia dietro di sé un piccolo dispositivo metallico che gira sul pavimento. Lo raccogli, la sua superficie liscia e fredda ronza dolcemente. È diverso da qualsiasi cosa tu abbia mai visto eppure stranamente familiare, avverti un senso di potere che emana da esso.
+Left behind is a small metallic device spinning on the floor. You pick it up, its cool, smooth surface humming softly. It's unlike anything you've ever seen and yet strangely familiar, you feel a sense of power emanating from it.
 
-Assomiglia a un piccolo scarabeo, dal design intricato, con tre pulsanti: una freccia verso l’alto, una freccia verso il basso e un pulsante rosso incandescente. Dalla schiena si estende una piccola antenna che pulsa di energia.
+It resembles a tiny beetle, intricately designed, with three buttons: an up arrow, a down arrow, and a glowing red button. From its back, a small antenna extends, pulsing with energy.
 
-Spinto dalla curiosità, dirigi le dita verso il pulsante rosso. Nel momento in cui lo premi, il mondo intorno a te brilla e i colori turbinano violentemente tutto intorno.
+Compelled by curiosity, your fingers drift toward the red button. The moment you press it, the world around you shimmers, and colors swirl violently around you.
 
-Poi, il buio e la sensazione di cadere.
+Then, blackness, and a sense of falling.
 
-<div>
-   <img src="./assets/vortex.png" alt="Vortice temporale" width="300">
-</div>
+![Time Vortex](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png)
 
-### Alessandria, 300 a.C.
+### Alexandria 300 BC
 
-Ti svegli disorientato. Quando la vista si schiarisce, un’antica città si dispiega davanti a te: vivace, vibrante e viva.
+You awaken, disoriented. As your vision clears, an ancient city unfolds before you—bustling, vibrant, and alive.
 
-Persone in toga si muovono per le strade, le loro voci si fondono in una sinfonia di antichi dialetti, l’aria si riempie del profumo di spezie esotiche e del suono lontano dei mercanti che vendono le loro merci.
+People in togas move through the streets, their voices blending into a symphony of ancient dialects, air filled with the scent of exotic spices and the distant sound of merchants hawking their wares.
 
-<div>
-   <img src="./assets/alexandria.png" alt="Alessandria, 300 a.C." width="300">
-</div>
+![Alexandria 300 BC](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png)
 
-**Tu:** «Sicuramente avrò sbattuto la testa», pensi, chiudendo gli occhi e riaprendoli, ma la scena rimane invariata.
+**You:** Surely, I must have hit my head, you think, closing your eyes and opening them again, scene remains unchanged.
 
-«Sono forse bloccato nel passato? Avrò il coraggio di premere di nuovo quel pulsante?» Prima che tu possa decidere, una figura ti si avvicina, salutandoti.
+Am I stuck in the past? Do I dare press that button again? Before you can decide, a figure approaches you, waving.
 
-### L’incontro con Dinocrate
+### Meeting Dinocrates
 
-Un anziano signore in toga ti saluta dai gradini del grande tempio. I suoi capelli e la sua barba bianchi catturano la luce del sole, conferendogli un bagliore quasi etereo.
+An elderly gentleman wearing a toga waves at you from the steps of the grand temple. His white hair and beard catch the sunlight, giving him an almost ethereal glow.
 
-<div>
-   <img src="./assets/dinocrates.png" alt="Dinocrate che indossa una toga" width="300">
-</div>
+![Dinocrates wearing a toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
-**Dinocrate:** «Benvenuto, viaggiatore,» dice calorosamente. «Sono Dinocrate, l’architetto di questa grande città. Il tuo arrivo è stato predetto.»
+**Dinocrates:** "Welcome, traveler," he says warmly. "I am Dinocrates, architect of this great city. Your arrival was foretold."
 
-**Tu:** «Davvero? Voglio dire, certo lo è stato. Sono qui per aiutare, credo.»
+**You:** It was? I mean, of course, it was. I'm here to help, I think. 
 
-**Dinocrate:** «Sì, come dicevo, ti si aspettava da tempo. Abbiamo un compito che richiede le tue abilità uniche.»
+**Dinocrates:** Yes, as I was saying, you've been expected for some time now. We have a task that requires your unique skills.
 
-**Dinocrate:** «Le nostre navi faticano a navigare lungo la costa: dobbiamo costruire un faro. Ne sai qualcosa?»
+**Dinocrates:** "Our ships struggle to navigate the coast—we must build a lighthouse. Do you know anything about them?"
 
-**Tu:** «Sono un meccanico. Costruisco automi. Vediamo che cosa posso fare.»
+**You:** "I'm a mechanic. I build automatons. Let me see what I can do."
 
-### Lo “Scarabeo del Tempo”
+### The "Time Beetle"
 
-Un pensiero ti assale. «Il dispositivo può capirmi se gli parlo?»
+A thought strikes you. Can the device understand me if I speak to it?
 
-**Tu:** «Dispositivo, puoi capirmi?»
+**You:** "Device, can you understand me?"
 
-**Dispositivo:** «Certo. Di che cosa hai bisogno?»
+**Device:** "Of course. What do you need?"
 
-**Tu:** «Puoi aiutarmi a costruire un faro?»
+**You:** "Can you help me build a lighthouse?"
 
-**Dispositivo:** «Certamente. Non sarà un problema.»
+**Device:** "Certainly. That won’t be a problem."
 
-**Tu:** «Do you have a name?»
+**You:** "Do you have a name?"
 
-**Dispositivo:** «Io sono lo Scarabeo del Tempo. Il mio creatore mi chiama George; dice che è un bel nome per uno scarabeo.»
+**Device:** "I am the Time Beetle. My creator calls me George; he says it's a good name for a beetle."
 
-**Tu:** «Hai ragione, George è un bel nome, infatti era il nome di mio padre.»
+**You:** You're right, George is a good name, it was my father's name in fact.
 
-<div>
-   <img src="./assets/time-beetle.png" alt="Dispositivo per viaggiare nel tempo che somiglia a uno scarabeo metallico" width="300">
-</div>
+![Time Beetle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png)
 
-_Macchina del tempo, “George” lo scarabeo metallico_
+_Time device, “George” the metallic beetle_
 
 > [!NOTE]
-> Nel 300 a.C., Alessandria era una fiorente città fondata da Alessandro Magno nel 331 a.C. Divenne rapidamente una delle più grandi città del mondo ellenistico. Progettata dal capo architetto di Alessandro, Dinocrate, divenne un importante porto e centro culturale.
+> In 300 BC, Alexandria was a thriving city founded by Alexander the Great in 331 BC. It quickly became one of the greatest cities of the Hellenistic world. Designed by Alexander's chief architect, Dinocrates, it became a major port and cultural hub.
 >
-> Alessandria era nota per le sue imponenti strutture, tra cui il Pharos (faro), una delle sette meraviglie del mondo antico, e la leggendaria Biblioteca di Alessandria. La posizione strategica della città la rendeva un centro chiave per il commercio e lo scambio di conoscenze.
+> Alexandria was known for its impressive structures, including the Pharos (lighthouse), one of the Seven Wonders of the Ancient World, and the legendary Library of Alexandria. The city’s strategic location made it a key center for trade and knowledge exchange.
 >
-> Sotto il regno tolemaico, che seguì la morte di Alessandro, Alessandria divenne una delle città più prospere e influenti del suo tempo.
+> Under the Ptolemaic Kingdom, which followed Alexander’s death, Alexandria grew into one of the most prosperous and influential cities of its time.
 
 ## Interagisci con Dinocrate
 
-Se vuoi interagire con Dinocrate, esegui la app [Personaggi](/app/README.md). 
+If you want to interact with Dinocrates, run the [Characters](/app/README.md) app. 
 
 > [!IMPORTANT]
-> Questo è del tutto fittizio; le risposte sono generate dall’IA.
-> [Disclaimer AI responsabile](../../README.md#responsible-ai-disclaimer)
+> This is entirely fictional; the responses are generated by AI.
+> [Responsible AI disclaimer](../../README.md#responsible-ai-disclaimer)
 
-<div>
-   <img src="./assets/dinocrates.png" alt="Dinocrate che indossa una toga" width="300">
-</div>
+![Dinocrates wearing a toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
-**Passaggi**:
+**Steps**:
 
-1. Inizia un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Naviga in _/app_ nella root del repo.
-3. Individua la console ed esegui `npm install` seguito da `npm start`. 
-4. Appena compare, seleziona il pulsante “Open in Browser”.
-5. Chatta con Dinocrate.
+1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+2. Navigate to _/app_ in the repo root.
+3. Locate the console and run `npm install` followed by `npm start`. 
+4. Once it appears, select the "Open in Browser" button.
+5. Chat with Dinocrates.
 
 > [!NOTE]
- > Se stai eseguendo il progetto in locale sul tuo computer, consulta la guida QuickStart per ottenere un token di [accesso personale a GitHub](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e sostituire la chiave nel codice.
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
-### Codice in anteprima
+### Code Sneak Peek
 
-Anche se c’è ancora molto da dire in questo curriculum sull’IA Generativa, diamo una rapida occhiata al codice dell’IA per iniziare a imparare a usare JavaScript con l’IA.
+While there is still a lot more to cover in this Generative AI curriculum, let's take a quick peek at the AI code to begin learning about using JavaScript with AI.
 
-All’interno di `/app/app.js` troverai una funzione `app.post` che gestisce la funzionalità di IA Generativa. È mostrata di seguito:
+Inside of `/app/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
 
 ```JavaScript
 app.post('/send', async (req, res) => {
@@ -224,138 +214,138 @@ app.post('/send', async (req, res) => {
 });
 ```
 
-Ecco un riepilogo passo-passo di ciò che fa la funzione:
+Here's a step-by-step summary of what the function does:
 
-1. **Estrazione del messaggio dalla richiesta**: La funzione estrae il messaggio dal corpo della richiesta (req.body).
-2. **Creazione dell’array del prompt**: Costruisce un array di messaggi, includendo il messaggio di sistema e il messaggio del prompt dell’utente.
-3. **Inizializzazione del client di OpenAI**: Un client è inizializzato con l’URL di base e la chiave API recuperata dalle variabili d’ambiente. Un modello _gpt-4o-mini_ da [GitHub Models](https://github.com/marketplace/models) è utilizzato per processare il prompt e restituire una risposta.
-4. **Invio del prompt a OpenAI**: La funzione logga il prompt e lo invia alle API di OpenAI per generare un completamento.
-5. **Gestione della risposta**: In caso di successo, la funzione risponde con il prompt e la risposta del completamento.
-6. **Gestione dell’errore**: Se si verifica un errore, risponde con lo stato 500 e il messaggio di errore.
+1. **Extract Message from Request**: The function extracts the message from the request body (req.body).
+2. **Create Prompt Array**: It constructs an array of messages, including a system message and the user's prompt message.
+3. **Initialize OpenAI Client**: An OpenAI client is initialized with the base URL and API key from environment variables. A _gpt-4o-mini_ model from [GitHub Models](https://github.com/marketplace/models) is used to process the prompt and return a response.
+4. **Send Prompt to OpenAI**: The function logs the prompt and sends it to the OpenAI API to generate a completion.
+5. **Handle Response**: If successful, the function responds with the prompt and the completion's answer.
+6. **Error Handling**: If an error occurs, it responds with a 500 status and the error message.
 
-> **Nota**: [GitHub Copilot](https://github.com/features/copilot) è stato usato per generare questo riassunto del codice. IA Generativa in azione!
+> **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
 
-### Che cosa può fare la IA Generativa per me e le mie app?
+### What Can Generative AI Do for Me and My Apps?
 
 > [!NOTE]
-> Probabilmente avrai già capito che lo Scarabeo del Tempo funziona come un assistente IA con cui si può interagire utilizzando il linguaggio naturale, scritto o parlato.
+> You've probably figured out by now that the time beetle works like an AI assistant that you can interact with using natural language, written or spoken.
 
-Nel corso della tua avventura ad Alessandria, inizierai a vedere le possibilità di combinare creatività, ingegno e strumenti all’avanguardia per risolvere le sfide e trasformare il mondo che ti circonda.
+As your adventure in Alexandria unfolds, you begin to see the possibilities of combining creativity, ingenuity, and cutting-edge tools to solve challenges and transform the world around you.
 
-**Tu:** «Dimmi di più sui fari», dici al tuo dispositivo.
+**You:** Tell me more about lighthouses, you say to your device.
 
-**Scarabeo del Tempo:** «Un faro è una torre dotata di una luce brillante sulla sommità, situata vicino alla costa per guidare le navi in mare. La luce serve come aiuto alla navigazione, aiutando i marinai a evitare scogli e rocce pericolose e a raggiungere in sicurezza il porto.»
+**Time Beetle:** A lighthouse is a tower equipped with a bright light at the top, located near the shore to guide ships at sea. The light serves as a navigational aid, helping sailors avoid dangerous rocks and reefs and safely reach the harbor.
 
-Dinocrate ascolta la vostra conversazione e aggiunge:
+Dinocrates overhears your conversation and adds:
 
-**Dinocrate:** «Abbiamo bisogno di un faro per guidare le nostre navi al sicuro nel porto. I mari possono essere insidiosi e molte navi sono andate perse sugli scogli. Abbiamo bisogno di un faro che le guidi a casa.»
+**Dinocrates:** We need a lighthouse to guide our ships safely into the harbor. The seas can be treacherous, and many ships have been lost to the rocks. We need a beacon of light to guide them home.
 
-#### Aree di applicazione della IA Generativa
+#### Generative AI application areas
 
-**Tu:** «I fari sembrano sicuramente un’area interessante, cos’altro può fare l’IA Generativa per me e le mie app?»
+**You:** Lighthouses sound like an interesting area for sure, what else can Generative AI do for me and my apps? 
 
-**Scarabeo del Tempo:** «Nel XXI secolo, l’IA Generativa ha rivoluzionato molti settori, dalla sanità alla finanza all’intrattenimento, ecco alcuni esempi:
+**Time Beetle:**. In the 21st century, generative AI has revolutionized many industries, from healthcare to finance to entertainment, here are some examples:
 
-- **Chatbot**: Un chatbot che può generare in grado di generare risposte simili a quelle umane alle domande degli utenti. Invece di una pagina di FAQ statica, gli utenti possono interagire con un chatbot che fornisce risposte dinamiche. Questo rende l’esperienza dell’utente più coinvolgente e meno frustrante.
+- **Chatbot**: A chatbot that can generate human-like responses to user queries. Instead of a static FAQ page, users can interact with a chatbot that provides dynamic responses. This makes for a more engaging and less frustrating user experience.
 
-- **Assistenti e agenti** Gli assistenti e gli agenti possono eseguire istruzioni più avanzate, come sfruttare gli strumenti per chiamare le API, eseguire codice, generare immagini e altro ancora. Gli agenti avanzati possono raggiungere obiettivi e svolgere attività in modo autonomo.
+- **Assistants and Agents** Assistants and agents can carry out more advanced instructions like leveraging tools to call APIs, run code, generate images and more. Advanced agents can carry out goals and carry out tasks autonomously.
 
-- **Uno strumento per la creazione di contenuti**: Uno strumento per generare post per blog e social media. Immaginate di creare campagne in pochi minuti invece che in ore, quando un sito di e-commerce ha una vendita del Black Friday.
+- **A content creation tool**:. A tool to generate blog posts and social media posts. Imagine creating campaigns in minutes instead of hours when an e-commerce site has a black Friday sale.
 
-- **Completamento del codice**: Uno strumento di completamento del codice in grado di generare snippet di codice in base all’input dell’utente. Questo può essere un enorme risparmio di tempo per gli sviluppatori, soprattutto quando lavorano a compiti ripetitivi.
+- **Code completion**: A code completion tool that can generate code snippets based on user input. This can be a huge time saver for developers, especially when working on repetitive tasks.
 
-- **Traduzione** – Tradurre il testo tra le lingue con grande precisione.
+- **Translation** – Translate text between languages with high accuracy.
 
-Come puoi vedere, questi miglioramenti possono aiutare sia il front office che il back office della tua app e della tua azienda.
+As you can see, these improvements can both help the front office and the back office of your app and company.
 
-Ecco un esempio di “applicazione chatbot” in azione:.»
+Here's an example of a "chatbot application" in action:
 
-![Immagine di una app di chat](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966)
+![Image of chat app](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966) 
 
-**Tu:** «Affascinante, prenderò nota di andare nel XXI secolo per vedere come vengono utilizzati questi strumenti.»
+**You:** Fascinating, I'll make a note of going to the 21st century to see how these tools are used.
 
-### IA Generativa ed ecosistema JavaScript
+### Generative AI and the JavaScript ecosystem
 
-**Scarabeo del Tempo:** «Un modo popolare di costruire applicazioni nel XXI secolo è l’uso di JavaScript. Ogni linguaggio di programmazione è circondato da un ecosistema. Questo ecosistema comprende il linguaggio di programmazione stesso, le librerie e i framework, il supporto della comunità, gli IDE e gli strumenti. Nell’ecosistema di un linguaggio di programmazione, di solito si parla di quanto segue:»
+**Time Beetle:** A popular way to build apps in the 21st century is by using JavaScript. With every programming language, there's an ecosystem around it. This ecosystem includes the programming language itself, libraries and frameworks, community support, and IDEs and tools. In a programming language ecosystem, we're usually talking about the following:
 
-| Che cosa | Descrizione |
-| --- | --- |
-| Il linguaggio di programmazione in sé | Comprese la sua sintassi e le sue funzionalità. |
-| Librerie e framework | Librerie disponibili per interagire con i modelli di IA Generativa. |
-| Comunità che sostiene il linguaggio | La comunità è importante, soprattutto quando si cerca di imparare qualcosa di nuovo. La comunità intorno alle librerie e ai framework aiuta a decidere quali librerie usare. Inoltre, influisce sulla facilità di trovare aiuto quando si è bloccati. |
+| What | Description | 
+|---|---| 
+| The programming language itself | Including its syntax and features. |
+| Libraries and frameworks    | Available libraries to interact with the generative AI models.                                                         | 
+| Community supporting the language| Community matters, especially when trying to learn something new. The community around libraries and frameworks helps decide what libraries to use. It also affects how easy it is to find help when you're stuck. | 
 
-**Tu:** «Interessante, ho sentito parlare di programmazione, non è forse qualcosa che hanno sperimentato Ada Lovelace e Charles Babbage?»
+**You:** Interesting, I've heard of programming I think, didn't Ada Lovelace experiment with that and Charles Babbage?
 
-**Scarabeo del Tempo:** «Sì, Ada Lovelace è stata la prima programmatrice di computer e Charles Babbage è stato l’inventore del motore differenziale, un computer meccanico. Sono stati pionieri nel campo dell’informatica, gettando le basi per l’era digitale.»
+**Time Beetle:** Yes, Ada Lovelace was the first computer programmer, and Charles Babbage was the inventor of the difference engine, a mechanical computer. They were pioneers in the field of computing, laying the foundation for the digital age.
 
-**Tu:** «Sono stati? Cosa vuol dire “sono stati”? Ho appena ricevuto una lettera da Charles Babbage.»
+**You:** Were? What do you mean were? I just got a letter from Charles Babbage.
 
-**Scarabeo del Tempo:** «Diciamo che sei in una posizione unica per interagire con i personaggi storici in un modo che pochi altri possono fare.»
+**Time Beetle:** Let's just say that you're in a unique position to interact with historical figures in a way that few others can.
 
-### Ecosistema JavaScript
+### JavaScript Ecosystem
 
-**Tu:** «Quindi, ecosistemi hai detto, sto solo prendendo appunti, che cosa c’è riguardo a JavaScript e in che modo è diverso dagli altri ecosistemi?»
+**You:** So ecosystems you said, I'm just taking notes here, what about JavaScript and how is it different from other ecosystems?
 
-**Scarabeo del Tempo:** «JavaScript è uno dei linguaggi di programmazione più popolari nel mondo nel XXI secolo. Ecco alcune ragioni per cui è così popolare:»
+**Time Beetle:** JavaScript is one of the most popular programming languages in the world in the 21st century. Here are a few reasons why it's so popular:
 
-| Che cosa | Descrizione |
-| --- | --- |
-| Potenziale di sviluppo full-stack | JavaScript è uno dei pochi linguaggi che può essere utilizzato sia per lo sviluppo front-end che per quello back-end. |
-| Ricco ecosistema di librerie | JavaScript ha un vasto ecosistema di librerie, con framework come React, Angular, Vue e altri ancora. C’è NPM, il gestore di pacchetti, che è uno dei più grandi repository di pacchetti al mondo. |
-| Forte sostegno della comunità | JavaScript ha una comunità ampia e attiva, con molte risorse disponibili per l’apprendimento e lo sviluppo. Inoltre, funziona semplicemente nel browser, il che è un enorme vantaggio. |
-| IDE e strumenti | Per JavaScript sono disponibili diversi IDE, come Visual Studio Code, WebStorm e Atom. Questi IDE hanno estensioni costruite da aziende e dalla comunità che aiutano l’utente in vari aspetti dello sviluppo. |
-| IA e JavaScript | JavaScript supporta lo sviluppo dell’IA con librerie come TensorFlow.js, Brain.js, le API di OpenAI e altre che consentono agli sviluppatori di integrare l’apprendimento automatico e l’IA Generativa nelle applicazioni web e lato server. |
+| What | Description |
+|-|-|
+| Potential for full-stack development | JavaScript is one of the few languages that can be used for both front-end and back-end development. |
+| Rich library ecosystem | JavaScript has a vast library ecosystem, with frameworks like React, Angular, Vue, and more. There's NPM, the package manager, which is one of the largest package repositories in the world. |
+| Strong community support | JavaScript has a large and active community, with many resources available for learning and development. It also just works in the browser, which is a huge advantage. |
+| IDEs and tools | JavaScript has a variety of IDEs available, such as Visual Studio Code, WebStorm, and Atom. These IDEs have extensions built by companies and the community helping you with various aspects of development. |
+| AI and JavaScript | JavaScript supports AI development with libraries like TensorFlow.js, Brain.js, OpenAI’s APIs, and more enabling developers to integrate machine learning and Generative AI into web and server-side applications. |
 
-**Tu:** «Sono molte ragioni, sembra che dovrei puntare su JavaScript per i miei progetti futuri.»
+**You:** That's a lot of reasons, sounds like I should bet on JavaScript for my future projects.
 
-**Scarabeo del Tempo:** «In effetti, JavaScript è un linguaggio versatile e anche Python è un linguaggio popolare per lo sviluppo dell’intelligenza artificiale.»
+**Time Beetle:** Indeed, JavaScript is a versatile language, also Python is a popular language for AI development.
 
-**Tu:** «Python, che cosa c’entrano i serpenti con la programmazione?»
+**You:** Python, what do snakes have to do with programming?
 
-**Scarabeo del Tempo:** «Teniamo questo argomento per un’altra volta, che ne dici?»
+**Time Beetle:** Let's save that for another time, shall we?
 
-**Scarabeo del Tempo:** «In precedenza ho spiegato perché JavaScript e il suo ecosistema sono adatti in generale, ma perché in particolare per l’IA Generativa? La risposta è che si tratta di un linguaggio supportato da molti fornitori di cloud e di framework e strumenti di IA. Si ritiene inoltre che, anche se Python potrebbe essere il più utilizzato per gli scenari di IA, molti sviluppatori utilizzano JavaScript e Typescript.»
+**Time Beetle:** I've given reasons above why JavaScript and its ecosystem is a good fit in general but why specifically for Generative AI? The answer is that it's a supported language by many cloud vendors and AI frameworks and tools. We also believe that even though Python might be top of mind for AI scenarios, many developers are using JavaScript and Typescript.
 
-> **Lo sapevi?**  
-> [Il 62.5% degli sviluppatori dice di stare usando JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) con molti che preferiscono [TypeScript](https://www.typescriptlang.org) per i nuovi progetti.
+> **Did you know?**  
+> [62.5% of developers say they're using JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) with many preferring [TypeScript](https://www.typescriptlang.org) for new projects.
 
-## Compito – Aiuta Dinocrate
+## Assignment – Helping Dinocrates 
 
-Per usare un Large Language Model (LLM) per aiutare Dinocrate con il faro di cui abbiamo parlato prima nella nostra storia, useremo qualcosa chiamato prompt, una frase per descrivere ciò che si vuole. È possibile specificare sia le informazioni di cui si ha bisogno sia il modo in cui si desidera che vengano presentate.
+To use a Large Language Model (LLM) to help Dinocrates with the lighthouse that we mentioned earlier in our story, we’ll use something called prompts, a sentence to describe what you want. You can specify both the information you need and how you want it presented.
 
-**Scarabeo del Tempo:** «Cominciamo, usiamo un LLM per ricercare come costruire un faro per aiutare Dinocrate.»
+**Time Beetle:** Let's get started, let's use an LLM to research how you can build a lighthouse to help Dinocrates.
 
-**Scarabeo del Tempo:**: «Devi fornire al LLM (cioè a “me”) un contesto su come costruire, con quali strumenti e quali risorse dovrebbero essere disponibili ai tempi di Alessandria.»
+**Time Beetle:**: You’ll need to provide context to the LLM (i.e "me") how to build, with what tools and resources should be available in the times of Alexandria.
 
-**Tu:** «Ok, dimmi di più sugli LLM.»
+**You:** Ok, tell me more about LLMs.
 
-**Scarabeo del Tempo:** «Gli LLM sono un tipo di modello di intelligenza artificiale in grado di generare un testo simile a quello umano sulla base di una richiesta data. Sono addestrati su vaste quantità di dati e possono generare testi coerenti, creativi e contestualmente rilevanti.»
+**Time Beetle:** LLMs are a type of AI model that can generate human-like text based on a given prompt. They are trained on vast amounts of data and can generate text that is coherent, creative, and contextually relevant.
 
-**Scarabeo del Tempo:** «Probabilmente dovresti chiedermelo in un modo migliore, in modo che possa darti una risposta migliore, riguardo a *coff* *coff* Case luminose, Alessandria, 300 a.C., Dinocrate, Faro di Alessandria, ecc.»
+**Time Beetle:** You probably want to ask me in a better way, so I can give you a better answer, about you know *cough* *cough* Light houses, Alexandria, 300 BC, Dinocrates, Lighthouse of Alexandria, etc.
 
-**Tu:** «Capito, aggiungo un ulteriore contesto alla richiesta e poi te lo chiedo.»
+**You:** Got it, add more context to the prompt and then ask you.
 
-**Scarabeo del Tempo:** «Sì, sto aspettando…»
+**Time Beetle:** Yes, I'm waiting...
 
-Visita [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), o un altro strumento di chatbot online per generare un piano per la costruzione del faro di Alessandria.
+Visit [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/), or another online chatbot tool to generate a plan for building the lighthouse in Alexandria.
  
 > [!TIP] 
-> Cerca di far generare al LLM un piano che includa istruzioni passo-passo per la costruzione del faro. Hai bisogno di aiuto? Consulta la soluzione per avere una guida.
+> Try to have the LLM generate a plan that includes step-by-step instructions for building the lighthouse. Need help? Check out the solution for guidance.
 
-## Soluzione
+## Solution
 
-[Soluzione](./solution/solution.md)
+[Solution](/lessons/01-intro-to-genai/solution/solution.md)
 
-### Verifica delle conoscenze
+### Knowledge Check
 
-**Domanda:** Quali delle seguenti affermazioni sull’IA generativa e su JavaScript sono vere?
+**Question:** Which of the following statements about Generative AI and JavaScript are true?
 
-A. Le app di IA Generativa basate su JavaScript possono generare solo testo.
-B. JavaScript può essere utilizzato per creare applicazioni basate sull’IA, tra cui chatbot, strumenti di generazione di testo e altro ancora.
-C. Python è l’unico linguaggio utilizzato per lo sviluppo dellvIA.
+A. JavaScript powered Generative AI apps can only generate text.
+B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.
+C. Python is the only language used for AI development.
 
-[Soluzione del quiz](./solution/solution-quiz.md)
+[Quiz solution](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
-## Risorse per l’autoapprendimento
+## Self-Study Resources
 
-- [Serie di video JavaScript sull’IA Generativa](https://aka.ms/genai-js)
+- [Generative AI JavaScript video series](https://aka.ms/genai-js)
