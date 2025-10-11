@@ -118,7 +118,7 @@ Un anziano signore vestito con una toga ti saluta con la mano dai gradini del gr
 
 **Tu:** «Sono un inventore. Costruisco automi. Vediamo cosa posso fare.»
 
-### Lo "Scarabeo del tempo"
+### Lo "Scarabeo del Tempo"
 
 Ti viene in mente un pensiero. «Il dispositivo può capirmi se gli parlo?»
 
@@ -132,11 +132,11 @@ Ti viene in mente un pensiero. «Il dispositivo può capirmi se gli parlo?»
 
 **Tu:** «Hai un nome?»
 
-**Dispositivo:** «Sono lo Scarabeo del tempo. Il mio creatore mi chiama George, dice che è un bel nome per uno scarabeo.»
+**Dispositivo:** «Sono lo Scarabeo del Tempo. Il mio creatore mi chiama George, dice che è un bel nome per uno scarabeo.»
 
 **Tu:** «Hai ragione: George è proprio un bel nome, infatti è stato il nome di mio padre.»
 
-![Scarabeo del tempo](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png)
+![Scarabeo del Tempo](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png)
 
 _Dispositivo temporale, “George” lo scarabeo metallico_
 
@@ -159,7 +159,7 @@ Se vuoi interagire con Dinocrate, esegui la app [Personaggi](/app/README.md).
 
 **Passaggi**:
 
-1. Avvia un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
+1. Avvia un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Passa a _/app_ nella root del repo.
 3. Individua la console ed esegui `npm install` seguito da `npm start`.
 4. Una volta comparso, seleziona il pulsante "Open in Browser".
@@ -212,7 +212,7 @@ app.post('/send', async (req, res) => {
 });
 ```
 
-Ecco una sintesi passo-passo di ciò che fa la funzione:
+Ecco una sintesi passo dopo passo di ciò che fa la funzione:
 
 1. **Estrae il messaggio dalla richiesta**: La funzione estrae il messaggio dal corpo della richiesta (req.body).
 2. **Crea un array di prompt**: Costruisce una serie di messaggi, tra cui un messaggio di sistema e il messaggio di prompt dell'utente.
@@ -226,13 +226,13 @@ Ecco una sintesi passo-passo di ciò che fa la funzione:
 ### Cosa può fare l'IA generativa per me e per le mie app?
 
 > [!NOTE]
-> Probabilmente avrai già capito che lo Scarabeo del tempo funziona come un assistente AI con cui puoi interagire utilizzando il linguaggio naturale, scritto o parlato.
+> Probabilmente avrai già capito che lo Scarabeo del Tempo funziona come un assistente AI con cui puoi interagire utilizzando il linguaggio naturale, scritto o parlato.
 
 Man mano che la tua avventura ad Alessandria prende forma, inizi a intravedere le possibilità offerte dalla combinazione di creatività, ingegnosità e strumenti all'avanguardia per risolvere le sfide e trasformare il mondo che ti circonda.
 
 **Tu:** «Dimmi di più sui fari», dici al tuo dispositivo.
 
-**Scarabeo del tempo:** «Un faro è una torre dotata di una luce intensa nella parte superiore, situata vicino alla costa per guidare le navi in mare. La luce funge da ausilio alla navigazione, aiutando i marinai a evitare scogli e reef pericolosi e a raggiungere il porto in sicurezza.»
+**Scarabeo del Tempo:** «Un faro è una torre dotata di una luce intensa nella parte superiore, situata vicino alla costa per guidare le navi in mare. La luce funge da ausilio alla navigazione, aiutando i marinai a evitare scogli e reef pericolosi e a raggiungere il porto in sicurezza.»
 
 Dinocrate ascolta di nascosto la vostra conversazione e aggiunge:
 
@@ -242,7 +242,7 @@ Dinocrate ascolta di nascosto la vostra conversazione e aggiunge:
 
 **Tu:** «I fari sembrano sicuramente un argomento interessante, ma cos'altro può fare l'IA generativa per me e le mie app?»
 
-**Scarabeo del tempo:** «Nel XXI secolo, l'IA generativa ha rivoluzionato molti settori, dall'assistenza sanitaria alla finanza, all'intrattenimento. Ecco alcuni esempi.
+**Scarabeo del Tempo:** «Nel XXI secolo, l'IA generativa ha rivoluzionato molti settori, dall'assistenza sanitaria alla finanza, all'intrattenimento. Ecco alcuni esempi.
 
 - **Chatbot**: un chatbot in grado di generare risposte simili a quelle umane alle domande degli utenti. Anziché una pagina statica di FAQ, gli utenti possono interagire con un chatbot che fornisce risposte dinamiche. Ciò rende l'esperienza utente più coinvolgente e meno frustrante.
 
@@ -264,7 +264,7 @@ Ecco un esempio di "applicazione chatbot" in azione:
 
 ### IA generativa ed ecosistema JavaScript
 
-**Scarabeo del tempo:** «Un modo molto diffuso per sviluppare app nel XXI secolo è l'uso di JavaScript. Ogni linguaggio di programmazione è circondato da un ecosistema che comprende il linguaggio stesso, librerie e framework, supporto della comunità, IDE e strumenti. Nell'ecosistema di un linguaggio di programmazione, solitamente si parla dei seguenti elementi.»
+**Scarabeo del Tempo:** «Un modo molto diffuso per sviluppare app nel XXI secolo è l'uso di JavaScript. Ogni linguaggio di programmazione è circondato da un ecosistema che comprende il linguaggio stesso, librerie e framework, supporto della comunità, IDE e strumenti. Nell'ecosistema di un linguaggio di programmazione, solitamente si parla dei seguenti elementi.»
 
 | Elemento | Descrizione | 
 |---|---| 
@@ -274,17 +274,17 @@ Ecco un esempio di "applicazione chatbot" in azione:
 
 **Tu:** «Interessante, credo di aver sentito parlare di programmazione. Non sono stati Ada Lovelace e Charles Babbage a sperimentarla?»
 
-**Scarabeo del tempo:** «Sì, Ada Lovelace è stata la prima programmatrice di computer e Charles Babbage è stato l'inventore del motore differenziale, un computer inventore. Sono stati pionieri nel campo dell'informatica, gettando le basi per l'era digitale.»
+**Scarabeo del Tempo:** «Sì, Ada Lovelace è stata la prima programmatrice di computer e Charles Babbage è stato l'inventore del motore differenziale, un computer inventore. Sono stati pionieri nel campo dell'informatica, gettando le basi per l'era digitale.»
 
 **Tu:** «Erano? Cosa intendi con “erano”? Ho appena ricevuto una lettera da Charles Babbage.»
 
-**Scarabeo del tempo:** «Diciamo solo che ti trovi in una posizione privilegiata che ti permette di interagire con personaggi storici in un modo che pochi altri possono permettersi.»
+**Scarabeo del Tempo:** «Diciamo solo che ti trovi in una posizione privilegiata che ti permette di interagire con personaggi storici in un modo che pochi altri possono permettersi.»
 
 ### Ecosistema JavaScript
 
 **Tu:** «Quindi, hai parlato di ecosistemi, sto solo prendendo appunti, ma che mi dici di JavaScript e in che modo è diverso dagli altri ecosistemi?»
 
-**Scarabeo del tempo:** «JavaScript è uno dei linguaggi di programmazione più popolari al mondo nel XXI secolo. Ecco alcuni motivi della sua popolarità.»
+**Scarabeo del Tempo:** «JavaScript è uno dei linguaggi di programmazione più popolari al mondo nel XXI secolo. Ecco alcuni motivi della sua popolarità.»
 
 | Motivo | Descrizione |
 |-|-|
@@ -296,13 +296,13 @@ Ecco un esempio di "applicazione chatbot" in azione:
 
 **Tu:** «Sono un sacco di motivi, sembra che dovrei puntare su JavaScript per i miei progetti futuri.»
 
-**Scarabeo del tempo:** «Infatti, JavaScript è un linguaggio versatile, anche Python è un linguaggio popolare per lo sviluppo dell'IA.»
+**Scarabeo del Tempo:** «Infatti, JavaScript è un linguaggio versatile, anche Python è un linguaggio popolare per lo sviluppo dell'IA.»
 
 **Tu:** «Python? Cosa c'entrano i serpenti con la programmazione?»
 
-**Scarabeo del tempo:** «Lasciamo questo argomento per un'altra volta, va bene?»
+**Scarabeo del Tempo:** «Lasciamo questo argomento per un'altra volta, va bene?»
 
-**Scarabeo del tempo:** «Ho spiegato sopra perché JavaScript e il suo ecosistema sono generalmente adatti, ma perché lo sono in modo specifico per l'IA generativa? La risposta è che si tratta di un linguaggio supportato da molti fornitori di servizi cloud e framework e strumenti di IA. Si ritiene inoltre che, sebbene Python possa essere la prima scelta per gli scenari di IA, molti sviluppatori stanno utilizzando JavaScript e Typescript.»
+**Scarabeo del Tempo:** «Ho spiegato sopra perché JavaScript e il suo ecosistema sono generalmente adatti, ma perché lo sono in modo specifico per l'IA generativa? La risposta è che si tratta di un linguaggio supportato da molti fornitori di servizi cloud e framework e strumenti di IA. Si ritiene inoltre che, sebbene Python possa essere la prima scelta per gli scenari di IA, molti sviluppatori stanno utilizzando JavaScript e Typescript.»
 
 > **Lo sapevi?**  
 > Il [62,5% degli sviluppatori dichiara di utilizzare JavaScript](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) e molti preferiscono [TypeScript](https://www.typescriptlang.org) per i nuovi progetti.
@@ -311,24 +311,24 @@ Ecco un esempio di "applicazione chatbot" in azione:
 
 Per utilizzare un Large Language Model (LLM) per aiutare Dinocrates con il faro di cui abbiamo parlato in precedenza nella nostra storia, useremo qualcosa chiamato prompt, ovvero una frase che descrive ciò che si desidera. È possibile specificare sia le informazioni necessarie sia il modo in cui si desidera che vengano presentate.
 
-**Scarabeo del tempo:** «Cominciamo, utilizziamo un LLM per ricercare come costruire un faro per aiutare Dinocrate.»
+**Scarabeo del Tempo:** «Cominciamo, utilizziamo un LLM per ricercare come costruire un faro per aiutare Dinocrate.»
 
-**Scarabeo del tempo:**: «Dovrai fornire al LLM (cioè “me”) il contesto su come costruire, con quali strumenti e risorse dovrebbero essere disponibili ai tempi di Alessandria.»
+**Scarabeo del Tempo:**: «Dovrai fornire al LLM (cioè “me”) il contesto su come costruire, con quali strumenti e risorse dovrebbero essere disponibili ai tempi di Alessandria.»
 
 **Tu:** «Ok, dimmi qualcosa di più sugli LLM.»
 
-**Scarabeo del tempo:** «Gli LLM sono un tipo di modello di IA in grado di generare testi simili a quelli umani sulla base di un determinato prompt. Sono addestrati su enormi quantità di dati e possono generare testi coerenti, creativi e contestualmente pertinenti.»
+**Scarabeo del Tempo:** «Gli LLM sono un tipo di modello di IA in grado di generare testi simili a quelli umani sulla base di un determinato prompt. Sono addestrati su enormi quantità di dati e possono generare testi coerenti, creativi e contestualmente pertinenti.»
 
-**Scarabeo del tempo:** «Probabilmente vorrai farmi una domanda più precisa, così potrò darti una risposta più accurata, riguardo a, come dire… *coff* *coff* i fari, Alessandria, 300 a.C., Dinocrate, il Faro di Alessandria, ecc.»
+**Scarabeo del Tempo:** «Probabilmente vorrai farmi una domanda più precisa, così potrò darti una risposta più accurata, riguardo a, come dire… *coff* *coff* i fari, Alessandria, 300 a.C., Dinocrate, il Faro di Alessandria, ecc.»
 
 **Tu:** «Capito, aggiungo più contesto al prompt e poi ti chiedo.»
 
-**Scarabeo del tempo:** «Sì, sto aspettando…»
+**Scarabeo del Tempo:** «Sì, sto aspettando…»
 
 Visita [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/) o un altro strumento di chatbot online per generare un piano per la costruzione del Faro di Alessandria.
  
 > [!TIP] 
-> Prova a chiedere all'LLM di generare un piano che includa istruzioni passo-passo per la costruzione del faro. Hai bisogno di aiuto? Consulta la soluzione per ottenere assistenza.
+> Prova a chiedere all'LLM di generare un piano che includa istruzioni passo dopo passo per la costruzione del faro. Hai bisogno di aiuto? Consulta la soluzione per ottenere assistenza.
 
 ## Soluzione
 
