@@ -34,7 +34,7 @@ Inoltre, l'IA generativa si è evoluta in capacità multimodali, consentendo di 
 > [!NOTE]  
 > Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-dinocrate) se preferisci passare direttamente al contenuto tecnico.
 
-Il tuo viaggio inizia nella Londra degli anni '60 dell'Ottocento, dove vestirai i panni di un abile meccanico. Attraverso una serie di avventure avvincenti, affinerai le tue abilità di intelligenza artificiale e sbloccherai soluzioni che trascendono il tempo.
+Il tuo viaggio inizia nella Londra degli anni '60 dell'Ottocento, dove vestirai i panni di un abile inventore. Attraverso una serie di avventure avvincenti, affinerai le tue abilità di intelligenza artificiale e sbloccherai soluzioni che trascendono il tempo.
 
 ### Nel vortice - Londra 1860
 
@@ -116,7 +116,7 @@ Un anziano signore vestito con una toga ti saluta con la mano dai gradini del gr
 
 **Dinocrate:** «Le nostre navi hanno difficoltà a navigare lungo la costa: dobbiamo costruire un faro. Ne sai qualcosa?»
 
-**Tu:** «Sono un meccanico. Costruisco automi. Vediamo cosa posso fare.»
+**Tu:** «Sono un inventore. Costruisco automi. Vediamo cosa posso fare.»
 
 ### Lo "Scarabeo del tempo"
 
@@ -157,16 +157,16 @@ Se vuoi interagire con Dinocrate, esegui la app [Personaggi](/app/README.md).
 
 ![Dinocrate che indossa una toga](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
-**Step**:
+**Passaggi**:
 
 1. Avvia un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Passa a _/app_ nella root del repo.
 3. Individua la console ed esegui `npm install` seguito da `npm start`.
-4. Una volta visualizzato, seleziona il pulsante "Open in Browser".
+4. Una volta comparso, seleziona il pulsante "Open in Browser".
 5. Chatta con Dinocrate.
 
 > [!NOTE]
- > Se stai eseguendo il progetto in locale sul tuo computer, consulta la guida QuickStart per ottenere la configurazione di un token per l'[accesso personale a GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e sostituisci la chiave nel codice.
+> Se stai eseguendo il progetto in locale sul tuo computer, consulta la guida QuickStart per ottenere la configurazione di un token per l'[accesso personale a GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e sostituisci la chiave nel codice.
 
 ### Anteprima del codice
 
@@ -274,7 +274,7 @@ Ecco un esempio di "applicazione chatbot" in azione:
 
 **Tu:** «Interessante, credo di aver sentito parlare di programmazione. Non sono stati Ada Lovelace e Charles Babbage a sperimentarla?»
 
-**Scarabeo del tempo:** «Sì, Ada Lovelace è stata la prima programmatrice di computer e Charles Babbage è stato l'inventore del motore differenziale, un computer meccanico. Sono stati pionieri nel campo dell'informatica, gettando le basi per l'era digitale.»
+**Scarabeo del tempo:** «Sì, Ada Lovelace è stata la prima programmatrice di computer e Charles Babbage è stato l'inventore del motore differenziale, un computer inventore. Sono stati pionieri nel campo dell'informatica, gettando le basi per l'era digitale.»
 
 **Tu:** «Erano? Cosa intendi con “erano”? Ho appena ricevuto una lettera da Charles Babbage.»
 

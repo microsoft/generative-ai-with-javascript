@@ -23,156 +23,154 @@ _Questo video offre un'introduzione ai modelli di IA denominati "Large Language 
 ## Storia: "Immaginati su una barca su un fiume"
 
 > [!NOTE]
-> _La nostra storia finora: sei un creatore di cose, un artigiano della Londra del 1860 che ha viaggiato nel tempo usando un misterioso dispositivo chiamato Scarabeo del tempo. Hai viaggiato attraverso gli annali della storia, assistendo alla creazione del Faro di Alessandria, una meraviglia dell'ingegneria antica che hai contribuito a creare con un piccolo aiuto da Dinocrate e dallo Scarabeo del tempo._
+> _La nostra storia finora: sei un inventore, un artigiano della Londra del 1860 che ha viaggiato nel tempo usando un misterioso dispositivo chiamato Scarabeo del tempo. Hai viaggiato attraverso gli annali della storia, assistendo alla creazione del Faro di Alessandria, una meraviglia dell'ingegneria antica che hai contribuito a creare con un piccolo aiuto da Dinocrate e dallo Scarabeo del tempo._
 >
 > Vedi [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall'inizio e iniziare a usare l'IA generativa.
 
 > [!NOTE] 
 > Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-leonardo) se preferisci passare direttamente al contenuto tecnico.
 
-Insieme a Dinocrate Together with Dinocrates hai dato gli ultimi ritocchi al Faro di Alessandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea.
+Insieme a Dinocrate hai dato gli ultimi ritocchi al Faro di Alessandria. L'imponente struttura risplende alla luce del sole e la sua pietra levigata riflette il Mar Mediterraneo.
 
-You look down at the Time Beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light and the world around you dissolves into a whirlwind of colors.
+Guardi lo Scarabeo del tempo che hai in mano, la sua superficie metallica fredda contro il palmo. Stringendo il pugno, sussurri: «Portami a casa». Lo scarabeo inizia a brillare, emettendo una luce morbida e calda e il mondo intorno a te si dissolve in un turbine di colori.
 
-### A new adventure
+### Una nuova avventura
 
-When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, in the distance, you see buildings, their outlines blurred by the morning mist.
+Quando apri gli occhi, il mondo è cambiato. Mentre riesci ad alzarti, ti rendi conto di essere su una barca su un fiume. Ti guardi intorno: in lontananza vedi degli edifici i cui contorni sono sfumati dalla nebbia mattutina.
 
-Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting.
+Guardando intorno alla barca, trovi un lungo remo appoggiato al bordo. Afferrandolo, inizi a remare verso gli edifici lontani. Avvicinandoti, gli edifici diventano più nitidi: sono antichi, la loro architettura ricorda un dipinto rinascimentale.
 
+![Barca sul fiume, uomo in piedi con una pagaia](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png)
 
-!["Boat on the river, man standing with a paddle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png)
+La domanda è: dove e quando ti trovi questa volta?
 
-The question now is, where and when are you this time?
+Riesci ad ormeggiare la barca al molo e inizi a camminare lungo le assi di legno, il suono dei tuoi passi echeggia dolcemente.
 
-You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly.
+Mentre cammini, noti un uomo con una lunga barba e un cappello che fruga in una cassa contenente quelli che sembrano componenti meccanici. Le sue mani si muovono abilmente, sistemando ingranaggi e molle con esperta facilità.
 
-As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
+![Leonardo Da Vinci in piedi accanto a una cassa nel porto](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png)
 
+### Aiutami, Leonardo
 
-![Leonardo Da Vinci standing next to a crate in the harbour](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png)
+**Tu:** «Mi scusi, signore, dove mi trovo?» Ti guarda, la confusione è evidente nei suoi occhi. Rendendoti conto che stavi parlando in inglese, usi rapidamente il dispositivo che hai in mano e gli chiedi di tradurre.
 
-### Help me, Leonardo
+**Scarabeo del tempo:** «Certo, lo tradurrò nell'italiano del XV secolo. "Dove sono?"»
 
-**You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate.
+**Anziano:** L'anziano risponde: «Siete a Firenze, signore. E chi siete voi?»
 
-**Time Beetle:** "Of course, I'll translate into 15th century Italian. 'Dove sono?'" 
+**Scarabeo del tempo:** Lo Scarabeo del tempo traduce: «Ha detto che ti trovi a Firenze e chiede chi sei.» 
 
-**Old man:** The old man replies, "Siete a Firenze, signore. E chi siete voi?" 
+**Tu:** «Digli che sono un inventore e che sto cercando un posto di lavoro.»
 
-**Time Beetle:** The Time Beetle translates, "He says you're in Florence, and asks who you are." 
+**Anziano:** «Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci?»
 
-**You:** "Tell him I'm a maker of things, and I'm looking for a place to work."
+**Scarabeo del tempo:** Lo Scarabeo del tempo traduce: «Chiede se hai mai sentito parlare di Leonardo da Vinci.»
 
-**Old man:** Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci? 
+**Tu:** «Certo», rispondi. «Digli che ne ho sentito parlare e che mi piacerebbe conoscerlo.»
 
-**Time Beetle:** The Time Beetle translates, "He asks if you've heard of Leonardo da Vinci." 
+**Anziano:** L'anziano sorride: «Allora seguitemi, vi porterò da lui.»
 
-**You:** "Of course," you say. "Tell him I have and I would like to meet him." 
+**Tu:** Chiedi: «Che cosa ha detto?»
 
-**Old man:** The old man smiles, "Allora, seguitemi, vi porterò da lui."
+**Scarabeo del tempo:** Lo Scarabeo del tempo risponde: «Ha detto che ti porterà da Leonardo.»
 
-**You:** You ask, "What did he say?"
+### In officina
 
-**Time Beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
+![Officina di Leonardo](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
 
-### At the workshop
+Chiedi allo Scarabeo del tempo di informarsi su dove si trovi Leonardo.
 
-![Leonardos workshop](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
+**Tu:** «Dove è Leonardo?»
 
-The old man leads you to a large wooden door and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
+**Anziano:** L'anziano si gira verso di te con un sorriso: «Sono io Leonardo da Vinci. Chi siete voi?»
 
-You ask the Time Beetle to inquire about Leonardo's whereabouts. 
+Provi un brivido di riconoscimento.
 
-**You:** "Dove è Leonardo?" 
+**Tu:** «Lo immaginavo. Sono un inventore, fuori dallo spazio e fuori dal tempo.»
 
-**Old man:** The old man turns to you with a smile, "Sono io (that’s me), Leonardo da Vinci. Chi siete voi?", who are you?
+**Leonardo:** Gli occhi di Leonardo brillano di curiosità. «Interessante, cosa vi porta qui?»
 
-You feel a thrill of recognition. 
+Lo Scarabeo del tempo traduce.
 
-**You:** I thought so. I'm a fellow maker, out of place and time."
+**Scarabeo del tempo:**  «Chiede che cosa ti porti qui.»
 
-**Leonardo:** Leonardo's eyes sparkle with curiosity. "Interessante, cosa vi porta qui?"
+**Tu:** «Beh, stavo lavorando a un progetto e sono finito qui.»
 
-The Time Beetle translates.
+Gli mostri lo Scarabeo del tempo e i suoi occhi si illuminano di fascino. Lo esamina attentamente, mentre gli spieghi come funziona e come sei finito a Firenze.
 
-**Time Beetle:**  "He asks what brings you here."
-
-**You:** "Well, I was working on a project, and I ended up here."
-
-You show him the Time Beetle, and his eyes light up with fascination. He examines it closely as you explain how it works and how you ended up in Florence.
-
-Leonardo looks at you with excitement. 
+Leonardo ti guarda con entusiasmo.
 
 **Leonardo:** You're a maker of things. I have a project that might interest you. I've been working on a machine that can generate text based on verbal input. Would you like to help me with it?
 
 Leonardo da Vinci, asking you to help him with a project—you can hardly believe it. You nod eagerly and say: 
 
 **You:** I would be honored to help you with your project,
-"Sarebbe un onore aiutarti con il tuo progetto." 
+"Sarebbe un onore aiutarti con il tuo progetto."
 
-## Interact with Leonardo
+**Leonardo:** «Sei un inventore. Ho un progetto che potrebbe interessarti: sto lavorando a una macchina in grado di generare testo in base a input verbali. Ti piacerebbe aiutarmi?»
 
-If you want to interact with Leonardo, run the [Characters](/app/README.md) app. 
+Leonardo da Vinci che ti chiede di aiutarlo con un progetto… stenti a crederci. Annuisci con entusiasmo e dici:
+
+**Tu:** «Sarebbe un onore aiutarti con il tuo progetto.»
+
+## Interagisci con Leonardo
+
+Se vuoi interagire con Leonardo, esegui la app [Personaggi](/app/README.md).
 
 > [!IMPORTANT]
-> This is entirely fictional; the responses are generated by AI.
-> [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
+> Questo è interamente frutto di fantasia: le risposte sono generate dall'intelligenza artificiale.
+> [Dichiarazione di responsabilità sull'IA](../../README.md#responsible-ai-disclaimer)
 
 ![Leonardo talks](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg)
 
-**Steps**:
+**Passaggi**:
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
-2. Navigate to _/app/README.md_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`. 
-4. Once it appears, select the "Open in Browser" button.
-5. Chat with Leonardo.
+2. Passa a _/app_ nella root del repo.
+3. Individua la console ed esegui `npm install` seguito da `npm start`.
+4. Una volta comparso, seleziona il pulsante "Open in Browser".
+5. Chatta con Leonardo.
 
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Se stai eseguendo il progetto in locale sul tuo computer, consulta la guida QuickStart per ottenere la configurazione di un token per l'[accesso personale a GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e sostituisci la chiave nel codice.
 
-## Development environment setup 
+## Configurazione dell'ambiente di sviluppo
 
-Before you can assist Leonardo with his project, you should first think about the essential "tools of the trade" required to begin helping him effectively.
+Prima di poter aiutare Leonardo nel suo progetto, dovresti innanzitutto pensare agli "strumenti del mestiere" essenziali necessari per iniziare ad aiutarlo in modo efficace.
 
-**You:** "Time Beetle, what do I need to get started with this project?" Suggest tools and libraries that I need that can help me build an AI app that you're able to run.
+**Tu:** «Scarabeo del tempo, di che cosa ho bisogno per iniziare questo progetto? Suggeriscimi gli strumenti e le librerie di cui ho bisogno che possono aiutarmi a creare un'app di IA che tu possa eseguire.»
 
-**Time Beetle:** I'm compatible with most machines running in the 21st century, see the following list for a set of essential tools and libraries.
+**Scarabeo del tempo:** «Sono compatibile con la maggior parte delle macchine in funzione nel 21° secolo; consulta l'elenco seguente per un set di strumenti e librerie essenziali.»
 
-- **Text editor**, for example Visual Studio Code.
-- **Terminal**, for running commands.
-- **Browser for testing your app**. It's also a good idea to have a tool like curl or some other HTTP client to test your app's API endpoints.
+- **Editor di testo**, per esempio Visual Studio Code.
+- **Terminale**, per eseguire i comandi.
+- **Browser per testare la tua app**. È anche una buona idea avere uno strumento come cURL o un altro client HTTP per testare gli endpoint API della tua app.
+- **Node.js**. Devi anche installare Node.js e npm, strumenti che ti aiutano a eseguire codice JavaScript sul tuo computer.
+- **Chiave API**. Avrai bisogno di una chiave API per accedere al modello di IA generativa. Puoi ottenerla dal fornitore del modello, ad esempio OpenAI o Azure OpenAI.
 
-- **Node.js**. You also need to install Node.js and npm, which are tools that help you run JavaScript code on your computer.
+**Tu:** «Grazie, Scarabeo del tempo, Immagino che andrai a prenderli in qualche modo da quel web di cui hai parlato?»
 
-- **API key**. You'll need an API key to access the generative AI model. You can get this from the model provider, for example OpenAI or Azure OpenAI.
+**Time Beetle:** «Sì, li ho già presi» dice e proietta una tastiera e uno schermo sul muro di fronte a te.
 
-**You:** Thank you, Time Beetle, I guess you'll go get those somehow from that Web you spoke about?
+## Scrivere una app di base
 
-**Time Beetle:** Yes, I already have those it says and projects a keyboard and screen on the wall in front of you.
+**Tu:** «Dimmi di più sulla scrittura vera e propria della app: come posso iniziare?»
 
-## Writing a basic app 
+**Scarabeo del tempo:** «Certo! Per scrivere un'app, nella sua forma più semplice, si tratta di inviare una richiesta a un'API e visualizzarne la risposta. Analizziamolo nel dettaglio.»
 
-**You:** Tell me more about the actual writing of the app, how do I get started?
+- **Input**: In un'app di generazione di testo di base, l'input si riferisce al testo iniziale da cui si desidera espandere o sviluppare la app. Questo input può essere fornito dall'utente durante l'esecuzione o preimpostato (hardcoded) all'interno dell'app stessa. Per ora, inizieremo utilizzando il testo hardcoded come input.
+- **Richiesta API**: È necessario inviare una richiesta all'API del modello di IA generativa con il testo di input. Questa operazione viene eseguita utilizzando la funzione fetch in JavaScript (Node.js). In questa richiesta dovrebbe essere inclusa anche la chiave API. Per motivi di sicurezza, si consiglia di non inserire la chiave API hardcoded nell'app, ma di utilizzare variabili di ambiente. Inoltre, se si utilizza un provider come Azure, si consiglia di valutare l'identità gestita, poiché è considerata un modo più sicuro per accedere alle risorse. Con l'identità gestita è possibile assegnare autorizzazioni più granulari alla propria app. Il vantaggio principale è che il provider cloud si occupa dell'autenticazione per conto dell'utente.
+- **Risposta**: L'API restituirà una risposta con il testo generato. È necessario estrarre questo testo dalla risposta e mostrarlo all'utente.
 
-**Time Beetle:** Of course, to write an app, at its simplest it's about sending a request to an API and displaying the response. Let's break it down: 
+**Tu:** «Sembra abbastanza semplice, puoi illustrarmi uno scenario che avrebbe senso data la situazione in cui ci troviamo?»
 
-- **Input**: In a basic text generation app, the input refers to the initial text that you want the app to expand or build upon. This input can either be provided by the user during runtime or pre-set (hardcoded) within the app itself. For now, we’ll begin by using hardcoded text as the input.
+**Scarabeo del tempo:** «Certo, vediamo come possiamo creare una semplice app che generi testo in italiano partendo da un input in inglese.»
 
-- **API request**: You need to send a request to the generative AI model API with the input text. This is done using the fetch function in JavaScript (Node.js). Included in this request should also be your API key. It's recommended as you consider security to not hardcode the API key in your app but rather use environment variables. Additionally, consider looking into managed identity if you're using a provider like Azure as it's considered a more secure way to access resources. With managed identity you can assign more granular permissions to your app. The best part is that the cloud provider takes care of the authentication for you. 
+## La tua prima app: insegnami l'italiano
 
-- **Response**: The API will return a response with the generated text. You need to extract this text from the response and display it to the user.
-
-**You:** That sounds simple enough, can you take me through a scenario that would make sense given the situation we're in?
-
-**Time Beetle:** Sure, let's see how we can build a simple app that generates Italian text based on English input.
-
-## Your first app - teach me Italian
-
-**Time Beetle:** Generative AI models can be used for many things, for example, language translation. In fact, it accepts input in one language and can generate text in another language. Let's start with a simple app that takes English input and generates Italian text.
+**Scarabeo del tempo:** «I modelli di IA generativa possono essere utilizzati per molti scopi, ad esempio per la traduzione. Infatti, accettano input in una lingua e possono generare testo in un'altra. Iniziamo con una semplice app che accetta input in inglese e genera testo in italiano.»
 
 ```javascript 
 
@@ -214,32 +212,32 @@ console.log(`Answer for "${question}":`);
 console.log(completion.choices[0]?.message?.content);
 ```
 
-Let's explain what's happening here:
+«Spieghiamo cosa sta succedendo qui.»
 
-- Creating the question as 'Hello, how are you?'. This is the text you want to translate to Italian.
-- Creating the augmented prompt, which contains the input text and some additional instructions what to do, i.e translate. Note how we're using string interpolation to include the input text in the prompt and how that instruction is to translate the text to Italian.
-- Creating the client with properties:
-  - `model`, what model to use. 
-  - `messages`, the prompt to send to the model. Also note how you set the role to "user" to indicate that the input text is from the user. Had it been from the AI, you would have set the role to "system".
-- Extracting the generated text from the response and printing it to the console.
+- Creazione della domanda "Hello, how are you?". Questo è il testo che vuoi tradurre in italiano.
+- Creazione del prompt aumentato, che contiene il testo di input e alcune istruzioni aggiuntive su cosa fare, ovvero tradurre. Nota come utilizziamo l'interpolazione di stringhe per includere il testo di input nel prompt e come tale istruzione traduca il testo in italiano.
+- Creazione del client con le proprietà:
+  - `model`, quale modello utilizzare.
+  - `messages`, il prompt da inviare al modello. Nota anche come imposti il ​​ruolo su "user" per indicare che il testo di input proviene dall'utente. Se provenisse dall'IA, avresti impostato il ruolo su "system".
+- Estrazione del testo generato dalla risposta e stampa sulla console.
 
-**You:** I think I get it. So if I change the value of the `question` variable to something else, the app will generate a different Italian translation?
+**Tu:** «Penso di aver capito. Quindi se io cambio il valore della variabile `question` con qualcos'altro, la app genererà una diversa traduzione in italiano?»
 
-**Time Beetle:** Exactly, you can change the input text to anything you want. Also note how GitHub models are being used as the base URL for the API together with a GitHub token as the API key.
+**Scarabeo del tempo:** «Esatto, puoi modificare il testo di input come preferisci. Nota anche come i modelli GitHub vengano utilizzati come URL di base per l'API, insieme a un token GitHub come chiave API.»
 
-**You:** Why is that important?
+**Tu:** «Perché è importante?»
 
-**Time Beetle:** It's important to use a base URL and API key that are specific to the model you're using. GitHub Models is a platform that hosts a variety of models, all with different capabilities and features, it's also free to use.
+**Scarabeo del tempo:** «È importante utilizzare un URL di base e una chiave API specifici per il modello che si sta utilizzando. GitHub Models è una piattaforma che ospita una varietà di modelli, tutti con funzionalità e caratteristiche diverse, ed è gratuita.»
 
-**You:** Oh good, I don't know who to pay anyways and I doubt they accept my currency here. :) 
+**Tu:** «Oh cielo, comunque non so chi pagare e dubito che accettino la mia valuta qui. :)»
 
-## Chat apps
+## App di chat
 
-**Time Beetle:** Generative AI models can also be used to generate text based on a conversation. You can simulate a conversation with the AI by providing a list of messages as context like the conversation has already happened.
+**Scarabeo del tempo:** «I modelli di IA generativa possono essere utilizzati anche per generare testo basato su una conversazione. È possibile simulare una conversazione con l'intelligenza artificiale fornendo un elenco di messaggi come contesto, come se la conversazione fosse già avvenuta.»
 
-**You:** That sounds interesting, but why is that useful?
+**You:** «Sembra interessante, ma perché è utile?»
 
-**Time Beetle:** It's useful because it allows the AI to provide a better response based on more context than just a single prompt. Let's look at a conversation below to illustrate this: 
+**Scarabeo del tempo:** «È utile perché permette alla IA di fornire una risposta migliore basata su più contesto, anziché un singolo prompt. Per illustrare questo concetto, prendiamo in esame la conversazione qui sotto:»
 
 ```text
 
@@ -261,11 +259,11 @@ AI: Rome is known for its ancient ruins, art, and vibrant culture. You can visit
 
 ```
 
-**Time Beetle:** Imagine if a sentence like "Tell me more about it" were taken out of context, the AI wouldn't know what "it" refers to. This is where context is important, and this context is something we can provide to the AI model through the prompt.
+**Scarabeo del tempo:** «Immagina se una frase come "Tell me more about this" fosse decontestualizzata: l'IA non saprebbe a cosa si riferisce "this". È qui che il contesto è importante e questo contesto è qualcosa che possiamo fornire al modello di IA tramite il prompt.»
 
-**You:** I think I get it, how do I construct a conversation with the AI using this JavaScript language you speak of?
+**Tu:** «Credo di aver capito, come faccio a costruire una conversazione con l'intelligenza artificiale usando questo linguaggio JavaScript di cui parli?»
 
-**Time Beetle:** Below is how we can construct a conversation with the AI: 
+**Time Beetle:** «Qui di seguito è illustrato come possiamo costruire una conversazione con l'IA.»
 
 ```javascript 
 
@@ -316,23 +314,23 @@ console.log(completion.choices[0]?.message?.content);
 
 ```
 
-Now the AI will provide a list of chat messages as context, and the AI will generate a response based on that context. This is a more interactive way to use generative AI models and can be used in chatbots, customer service applications, and more.
+Ora l'IA fornirà un elenco di messaggi di chat come contesto e genererà una risposta basata su tale contesto. Questo è un modo più interattivo di utilizzare modelli di IA generativa e può essere utilizzato in chatbot, applicazioni di assistenza clienti e altro ancora.
 
-**You:** Ok, so if I understand the conversation correctly, the AI will now have the following context: _I'm going to Rome next month_, so based on that it should filter out irrelevant information and provide a more relevant response?
+**Tu:** «Ok, quindi se ho capito bene la conversazione, l'IA avrà ora il seguente contesto: _I'm going to Rome next month_, quindi in base a questo dovrebbe filtrare le informazioni irrilevanti e fornire una risposta più pertinente?»
 
-**Time Beetle:** Exactly, the AI will use the context to generate a response that is more relevant to the conversation.
+**Scarabeo del tempo:** «Esatto, l'IA utilizzerà il contesto per generare una risposta più pertinente alla conversazione.»
 
-## Improving the chat conversation with a system message
+## Migliorare la conversazione in chat con un messaggio di sistema
 
-**You:** I see, but is there a way to improve this further?
+**Tu:** «Capisco, ma c'è un modo per migliorare ulteriormente la situazione?»
 
-**Time Beetle:** Yes, you can add a system message to the conversation. A system message creates a "personality" for the AI and can be used to provide additional context.
+**Scarabeo del tempo:** «Sì, puoi aggiungere un messaggio di sistema alla conversazione. Un messaggio di sistema crea una "personalità" per l'IA e può essere utilizzato per fornire ulteriore contesto.»
 
-**You:** Ok, so in the context of the conversation we've been having, what would a system message look like?
+**Tu:** «Ok, quindi nel contesto della conversazione che abbiamo avuto, come apparirebbe un messaggio di sistema?»
 
-**Time Beetle:** A system message for this conversation could be something like _"I'm an AI travel assistant, here to help you plan your trip to Italy."_ This message sets the tone for the conversation and helps the AI understand its role in the interaction.
+**Scarabeo del tempo:** «Un messaggio di sistema per questa conversazione potrebbe essere qualcosa del tipo _"I'm an AI travel assistant, here to help you plan your trip to Italy."_ Questo messaggio stabilisce il tono della conversazione e aiuta l'IA a comprendere il suo ruolo nell'interazione.»
 
-To create such a message, ensure it has the type "developer" like so:
+Per creare un messaggio di questo tipo, assicurati che abbia il tipo "developer" in questo modo:
 
 ```javascript
 const message = {
@@ -342,21 +340,21 @@ const message = {
 ```
 
 > [!NOTE] 
-> This used to be called "system". This is a recent change and "developer" is the new term for it. For some models this is still called "system", so if you have any issues use "system".
+> In passato si chiamava "system". Si tratta di una modifica recente e il nuovo termine è "developer". Per alcuni modelli si chiama ancora "system", quindi in caso di problemi usa "system".
 
-**You:** Ok, great, I'll make sure to include a system message in my chat conversations. Out of curiosity, what does a system message look like for you?
+**Tu:** «Ok, perfetto, mi assicurerò di includere un messaggio di sistema nelle mie conversazioni in chat. Per curiosità, come si presenta un messaggio di sistema per te?»
 
-**Time Beetle:** A system message for me could be something like _"I'm the Time Beetle, here to help you navigate through time and space. I should be helpful in providing you with information and guidance about the time era you're in along with the tools you need to get back to your own time."_
+**Scarabeo del tempo:** «Un messaggio di sistema per me potrebbe essere qualcosa del tipo _"I'm the Time Beetle, here to help you navigate through time and space. I should be helpful in providing you with information and guidance about the time era you're in along with the tools you need to get back to your own time."»_
 
-### Creating varied responses with the temperature setting
+### Creazione di risposte diverse con l'impostazione della temperatura
 
-**You:** Anything else I should know about chat conversations?
+**Tu:** «C'è qualcos'altro che dovrei sapere sulle conversazioni in chat?»
 
-**Time Beetle:** Yes, you can adjust the "temperature" of the AI's responses. The temperature is a variable with a value normally set between 0 and 1 that determines how creative the AI's responses are. A temperature of 0 will result in more predictable responses, while a temperature of 1 will result in more creative and varied responses. You can adjust the temperature based on the context of your conversation and the type of responses you want from the AI. Note, it's possible to set a value higher than 1 but that leads to more randomness and less coherence in the responses.
+**Scarabeo del tempo:** «Sì, puoi regolare la "temperatura" delle risposte dell'IA. La temperatura è una variabile con un valore normalmente impostato tra 0 e 1 che determina il livello di creatività delle risposte dell'IA. Una temperatura pari a 0 si tradurrà in risposte più prevedibili, mentre una temperatura pari a 1 si tradurrà in risposte più creative e varie. Puoi regolare la temperatura in base al contesto della conversazione e al tipo di risposte che desideri dall'IA. Nota: è possibile impostare un valore superiore a 1, ma ciò comporta una maggiore casualità e una minore coerenza nelle risposte.»
 
-**You:** So if I set the temperature to 0, the AI will provide more predictable responses, and if I set it to 1, the AI will provide more creative responses? What temperature do you have?
+**Tu:** «Quindi se imposto la temperatura a 0, l'IA fornirà risposte più prevedibili, mentre se la imposto a 1, l'IA fornirà risposte più creative? Che temperatura hai tu?»
 
-**Time Beetle:** I have a temperature of 0.7 and yes, you're correct, the AI will provide more creative responses with a higher temperature. Let's see how you can set the temperature in your app:
+**Scarabeo del tempo:** «Ho una temperatura di 0,7 e sì, hai ragione, l'IA fornirà risposte più creative con una temperatura più alta. Vediamo come puoi impostare la temperatura nella tua app:»
 
 ```javascript
 
@@ -379,36 +377,36 @@ const completion = await openai.chat.completions.create({
 }); 
 ```
 
-As you can see, you can adjust the temperature based on the context of your conversation and the type of responses you want from the AI. This is a powerful feature that allows you to customize the level of creativity in the AI's responses.
+Come puoi vedere, puoi regolare la temperatura in base al contesto della conversazione e al tipo di risposte che desideri dall'IA. Questa è una funzionalità potente che ti permette di personalizzare il livello di creatività nelle risposte dell'IA.
 
-## Context window
+## Finestra di contesto
 
-**You:** There's more right?
+**Tu:** «C'è dell'altro, giusto?»
 
-**Time Beetle:** Yes, another important concept in generative AI models is the context window. The context window is the number of previous messages that the AI uses to generate a response. A larger context window allows the AI to consider more context and generate more coherent responses.
+**Scarabeo del tempo:** «Sì, un altro concetto importante nei modelli di intelligenza artificiale generativa è la finestra di contesto. La finestra di contesto è il numero di messaggi precedenti che l'intelligenza artificiale utilizza per generare una risposta. Una finestra di contesto più ampia consente all'intelligenza artificiale di considerare più contesto e generare risposte più coerenti.»
 
-**Time Beetle:** Different models have different limits to output tokens. Take the following model as example `gpt-4o-2024-08-06` it has the following specifications:
+**Scarabeo del tempo:** «Modelli diversi hanno limiti diversi per i token in uscita. Prendiamo come esempio il modello `gpt-4o-2024-08-06`, che ha le seguenti specifiche.»
 
-- Maximum output tokens: roughly 16k tokens.
-- Maximum context window size: 128k.
+- Numero massimo di token in uscita: circa 16k.
+- Dimensione massima della finestra di contesto: 128k.
 
-This means the majority of tokens can be spent on the input tokens, i.e 128k - 16k = 112k tokens.
+«Ciò significa che la maggior parte dei token può essere spesa sui token di input, ovvero 128k - 16k = 112k token.»
 
-**You:** Got it, context window, tokens, how much is a token though?
+**Tu:** «Capito: finestra di contesto, token… quanto costa un token?»
 
-**Time Beetle:** A token is a word or a part of a word and differs slightly by language. There's a tool you can use to measure that's recommended by OpenAI, it's called [tokenizer](https://platform.openai.com/tokenizer). Let's try a sentence and see how many tokens it is:
+**Scarabeo del tempo:** «Un token è una parola o una parte di parola e varia leggermente a seconda della lingua. Esiste uno strumento di misurazione consigliato da OpenAI, chiamato [tokenizer](https://platform.openai.com/tokenizer). Proviamo a scrivere una frase e vediamo quanti token contiene.»
 
 ```text
 I want you to generate recipes for me.
 ```
 
-![Demo of tokenizer](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/tokenizer.png)
+![Demo di tokenizer](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/tokenizer.png)
 
-Running `tokenizer` on the sentence above gives us 9 tokens.
+Eseguendo `tokenizer` sulla frase qui sopra abbiamo generato 9 token.
 
-**You:** That wasn't much, sounds like I can have a lot of tokens in my context window then?
+**Tu:** «Non è molto, quindi sembra che potrei avere molti token nella mia finestra di contesto?»
 
-**Time Beetle:** Yes, you can experiment with different context window sizes to see how it affects the AI's responses. In fact, if you set a context window size of 100, you will limit the AI and how much it considers for input and output. Here's how you can set the context window in your app:
+**Time Beetle:** «Sì, puoi sperimentare diverse dimensioni della finestra di contesto per vedere come influiscono sulle risposte dell'IA. Infatti, impostando una dimensione della finestra di contesto pari a 100, limiterai l'IA e la quantità di dati che considera per input e output. Ecco come puoi impostare la finestra di contesto nella tua app.»
 
 ```javascript
 
@@ -434,66 +432,63 @@ const completion = await openai.chat.completions.create({
 ```
 
 > [!TIP] 
-> Experiment with different context window sizes to see how it affects the AI's responses.
+> Sperimenta diverse finestre di contesto per vedere come cambiano le risposte dell'IA.
 
-## Assignment - Building an engineering assistant
+## Compito - Costruire un assistente tecnico
 
-Leonardo suddenly asked to inspect the Time Beetle closer, he looked at it from all sides, even shook it.
+Leonardo chiede improvvisamente di poter esaminare più da vicino lo Scarabeo del Tempo, lo guarda da tutti i lati, lo scuote perfino.
 
-**Leonardo:** I need an assistant that can help me with the calculations and design of the aerial screw. Can you build me an assistant that can do that?
+**Leonardo:** «Ho bisogno di un assistente che mi aiuti con i calcoli e la progettazione della vite aerea. Puoi costruirmi un assistente che possa farlo?»
 
-**You:** Of course, I can build that for you. Time Beetle, we can help with that right?
+**Tu:** «Certo, posso costruirtelo. Scarabeo del tempo, possiamo aiutarlo, vero?»
 
-**Time Beetle:** Yes, not a problem, in fact the aerial screw is one of Leonardo's most fascinating and visionary inventions. Designed in the late 1480s...
+**Scarabeo del tempo:** «Sì, nessun problema, anzi, la vite aerea è una delle invenzioni più affascinanti e visionarie di Leonardo. Progettata alla fine degli anni '80 del Quattrocento…»
 
-**You:** All I needed was a yes, let's save the lecture for later.
+**Tu:** «Tutto ciò di cui avevo bisogno era un sì, teniamo la lezione per dopo.»
 
-**Time Beetle:** Rude..
+**Scarabeo del tempo:** «Maleducato…»
 
-**You:** What?
+**Tu:** «Cosa?»
 
-**Time Beetle:** Nothing
+**Scarabeo del tempo:** «Niente»
 
-![Aerial screw, Leonardo Da Vinci](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg)
+![Vite aerea, Leonardo da Vinci](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg)
 
 > [!NOTE]
->  The aerial screw, also known as the helical air screw, was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
+> La vite aerea, nota anche come vite elicoidale, era progettata per sollevare da terra comprimendo l'aria. Il progetto di Leonardo prevedeva un grande rotore a spirale in lino, irrigidito con amido e montato su una piattaforma di legno. L'idea era che un gruppo di uomini corresse intorno alla piattaforma, azionando delle manovelle per far ruotare la vite abbastanza rapidamente da ottenere la portanza.
 >
-> Although Leonardo never built a full-scale version of the aerial screw, his sketches and notes provide detailed insights into how he envisioned it working. He believed that if the screw was turned quickly enough, it would push against the air and lift the entire structure off the ground. 
+> Sebbene Leonardo non abbia mai costruito una versione a grandezza naturale della vite aerea, i suoi schizzi e appunti forniscono informazioni dettagliate su come ne immaginava il funzionamento. Credeva che se la vite fosse stata ruotata abbastanza velocemente, avrebbe spinto contro l'aria e sollevato l'intera struttura da terra.
 >
-> However, modern scientists agree that the materials available in Leonardo's time were not strong or light enough to make this possible 
+> Tuttavia, gli scienziati moderni concordano sul fatto che i materiali disponibili all'epoca di Leonardo non fossero sufficientemente resistenti o leggeri per rendere ciò possibile.
 >
-> Despite its impracticality, the aerial screw remains a testament to Leonardo's genius and his relentless pursuit of innovation. It laid the groundwork for future developments in aviation and continues to inspire engineers and inventors to this day.
-> [Read more](https://en.wikipedia.org/wiki/Leonardo%27s_aerial_screw)
+> Nonostante la sua impraticabilità, la vite aerea rimane una testimonianza del genio di Leonardo e della sua instancabile ricerca dell'innovazione. Ha gettato le basi per i futuri sviluppi dell'aviazione e continua a ispirare ingegneri e inventori ancora oggi.
+> [Leggi tutto](https://en.wikipedia.org/wiki/Leonardo%27s_aerial_screw)
 
-Your assignment is to build an engineering assistant that can help Leonardo with the calculations and design of the aerial screw.
+Il tuo compito è creare un assistente tecnico che possa aiutare Leonardo nei calcoli e nella progettazione della vite aerea.
 
-- It should be able to generate text based on user input.
+- Dovrebbe essere in grado di generare testo in base all'input dell'utente.
+- Dovresti impostare un messaggio di sistema per introdurre l'assistente.
 
-- You should set a system message to introduce the assistant.
+Dai un'occhiata alla [App di esempio](/app/README.md) per iniziare.
 
-Check out [Sample app](/app/README.md) to get started.
+> [!TIP]
+> Considera quale dovrebbe essere il messaggio di sistema e quale input dovresti fornire.
 
-> [!TIP] 
-> Consider what the system message should be and what input you should provide.
+## Soluzione
 
-## Solution
+[Soluzione](/lessons/02-first-ai-app/solution/solution.md)
 
-[Solution](/lessons/02-first-ai-app/solution/solution.md)
+## Verifica delle conoscenze
 
-## Knowledge Check
+**Domanda:** Qual è lo scopo della finestra di contesto nei modelli di IA generativa? Seleziona tutte le risposte pertinenti.
 
-**Question:** What is the purpose of the context window in generative AI models? Select all that apply.
+A. La finestra di contesto consente all'IA di considerare più contesto e generare risposte più coerenti.
+B. La finestra di contesto è il numero di messaggi precedenti che l'IA utilizza per generare una risposta.
+C. La finestra di contesto determina il livello di creatività delle risposte dell'IA.
 
-A. The context window allows the AI to consider more context and generate more coherent responses.
+[Soluzione del quiz](/lessons/02-first-ai-app/solution/solution-quiz.md)
 
-B. The context window is the number of previous messages that the AI uses to generate a response.
-
-C. The context window determines how creative the AI's responses are.
-
-[Quiz solution](/lessons/02-first-ai-app/solution/solution-quiz.md)
-
-## Self-Study Resources
+## Risorse per lo studio autonomo
 
 - [Text generation](https://platform.openai.com/docs/guides/text-generation)
 - [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 
