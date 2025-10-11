@@ -325,7 +325,7 @@ Per utilizzare un Large Language Model (LLM) per aiutare Dinocrates con il faro 
 
 **Scarabeo del tempo:** «Sì, sto aspettando…»
 
-Visita [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/) o un altro strumento di chatbot online per generare un piano per la costruzione del faro di Alessandria.
+Visita [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://chatgpt.com/) o un altro strumento di chatbot online per generare un piano per la costruzione del Faro di Alessandria.
  
 > [!TIP] 
 > Prova a chiedere all'LLM di generare un piano che includa istruzioni passo-passo per la costruzione del faro. Hai bisogno di aiuto? Consulta la soluzione per ottenere assistenza.
@@ -337,10 +337,6 @@ Visita [Microsoft Copilot](https://copilot.microsoft.com), [ChatGPT](https://cha
 ### Verifica delle conoscenze
 
 **Domanda:** Quali delle seguenti affermazioni relative all'IA generativa e a JavaScript sono vere?
-
-A. JavaScript powered Generative AI apps can only generate text.
-B. JavaScript can be used to build AI-powered applications, including chatbots, text generation tools, and more.
-C. Python is the only language used for AI development.
 
 A. Le app di IA generativa basate su JavaScript possono generare solo testo.
 B. JavaScript può essere utilizzato per creare applicazioni basate sull'IA, tra cui chatbot, strumenti di generazione di testo e altro ancora.

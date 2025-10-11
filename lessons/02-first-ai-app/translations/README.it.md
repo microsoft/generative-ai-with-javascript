@@ -1,89 +1,84 @@
-# Lezione 2: Scrivi la tua prima app IA
+# Lezione 2: Scrivere la tua prima app AI
 
 In questo capitolo imparerai a:
 
 - configurare il tuo ambiente di sviluppo;
-- scrivere una app di base;
-- capire i prompt di sistema.
+- scrivere un'app di base;
+- comprendere i prompt di sistema.
 
 ## Configurazione
 
-Se non lo hai già fatto, configura il tuo ambiente di sviluppo. Ecco come puoi fare: [Configura il tuo ambiente](/docs/setup/README.md).
+Se non l'hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi farlo: [Configura il tuo ambiente](/docs/setup/README.md).
 
 ## Risorse correlate
 
-[![Guarda un breve video sui Large Language Model](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
+[![Guarda un breve video sui large language model](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
 
-_Questo video ti offre un’introduzione ai modelli IA chiamati “Large Language Model” (LLM), che cosa sono e come puoi usarli per integrare la IA nelle tue app._
+_Questo video offre un'introduzione ai modelli di IA denominati "Large Language Model" (LLM), spiegando che cosa sono e come è possibile utilizzarli per integrare l'IA nelle proprie app._
 
-*🎥 Clicca sull’immagine sopra per guardare un breve video riguardo i Large Language Model*
+*🎥 Clicca sull'immagine qui sopra per guardare un breve video sui large language model*
 
-💼 Slide: [Introduzione ai Large Language Model (LLM)](../../videos/slides/01-llms.pptx)
+💼 Slide: [Introduzione ai Large Language Model (LLM)](/videos/slides/01-llms.pptx)
 
-## Storia: Immaginati in una barca su un fiume
+## Storia: "Immaginati su una barca su un fiume"
 
-
-> [!NOTE] 
-> _La nostra storia finora: Sei un costruttore di oggetti, un artigiano della Londra del 1860 che ha viaggiato nel tempo utilizzando un misterioso dispositivo chiamato Scarabeo del Tempo. Hai viaggiato attraverso gli annali della storia, assistendo alla creazione del faro di Alessandria, una meraviglia dell’ingegneria antica che avete contribuito a creare con un piccolo aiuto da parte di Dinocrate e dello Scarabeo del Tempo._
+> [!NOTE]
+> _La nostra storia finora: sei un creatore di cose, un artigiano della Londra del 1860 che ha viaggiato nel tempo usando un misterioso dispositivo chiamato Scarabeo del tempo. Hai viaggiato attraverso gli annali della storia, assistendo alla creazione del Faro di Alessandria, una meraviglia dell'ingegneria antica che hai contribuito a creare con un piccolo aiuto da Dinocrate e dallo Scarabeo del tempo._
 >
-> Guarda la [Lezione 1](../01-intro-to-genai/README.it.md) se vuoi seguire la storia dall’inizio e iniziare a conoscere l’IA Generativa.
+> Vedi [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall'inizio e iniziare a usare l'IA generativa.
 
 > [!NOTE] 
-> Mentre consigliamo di procedere nella storia (è divertente!), [clicca qui](#interagisci-con-leonardo) se preferisci saltare direttamente al contenuto tecnico.
+> Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-leonardo) se preferisci passare direttamente al contenuto tecnico.
 
-Insieme a Dinocrate, hai dato gli ultimi ritocchi al faro di Alessandria. L’imponente struttura brilla alla luce del sole, la sua pietra levigata riflette il Mar Mediterraneo.
+Insieme a Dinocrate Together with Dinocrates hai dato gli ultimi ritocchi al Faro di Alessandria. The towering structure gleams in the sunlight, its polished stone reflecting the Mediterranean Sea.
 
-Abbassi lo sguardo sullo Scarabeo del Tempo nella tua mano, la cui superficie metallica è fredda contro il tuo palmo. Stringendo il pugno intorno ad esso, sussurri, «Portami a casa.» Lo scarabeo inizia a brillare, emettendo una soffusa, calda luce e il mondo attorno a te si dissolve in un turbinio di colori.
+You look down at the Time Beetle in your hand, its metallic surface cool against your palm. Clenching your fist around it, you whisper, "Take me home." The beetle begins to glow, emitting a soft, warm light and the world around you dissolves into a whirlwind of colors.
 
-### Una nuova avventura
+### A new adventure
 
-Quando apri gli occhi, il mondo è cambiato. Quando riesci ad alzarti, ti rendi conto di essere in una barca su un fiume. Ti guardi intorno, in lontananza vedi degli edifici, i cui contorni sono offuscati dalla nebbia del mattino.
+When you open your eyes, the world has shifted. As you manage to get up, you realize you're in a boat on a river. You look around, in the distance, you see buildings, their outlines blurred by the morning mist.
 
-Guardando intorno alla barca, trovi un lungo remo appoggiato alla fiancata. Afferrandolo, inizi a remare verso gli edifici lontani. Man mano che ti avvicini, gli edifici vengono messi a fuoco: sono antichi, la loro architettura ricorda un dipinto rinascimentale.
+Looking around the boat, you find a long oar resting against the side. Grasping it, you begin to row towards the distant buildings. As you get closer, the buildings come into sharper focus, they are old, their architecture reminiscent of a Renaissance painting.
 
-<div>
-  <img src="./assets/boat.png" alt="Barca sul fiume, uomo in piedi con la pagaia" width="300" >
-</div>
 
-La domanda ora è, dove e quando sei questa volta?
+!["Boat on the river, man standing with a paddle](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png)
 
-Riesci a fissare la barca al molo e inizi a camminare lungo le assi di legno: il suono dei tuoi passi riecheggia dolcemente.
+The question now is, where and when are you this time?
 
-Mentre cammini, noti un uomo con una lunga barba e un cappello che scava in una cassa di quelli che sembrano pezzi meccanici. Le sue mani si muovono abilmente, selezionando ingranaggi e molle con una disinvoltura da esperto.
+You manage to secure the boat at the dock and start walking along the wooden planks, the sound of your footsteps echoing softly.
 
-<div >
-  <img src="./assets/leonardo.png" alt="Leonardo Da Vinci in piedi accanto a una cassa nel porto" width="300" >
-</div>
+As you walk, you notice a man with a long beard and a hat, digging through a crate of what looks like mechanical parts. His hands move deftly, sorting through gears and springs with practiced ease.
 
-### Aiutami, Leonardo
 
-**Tu:** «Mi scusi, signore, dove mi trovo?» Alza lo sguardo verso di te, con un’evidente confusione negli occhi. Realizzando di stargli parlando in inglese, usi subito il dispositivo che hai in mano e gli chiedi di tradurre per te.
+![Leonardo Da Vinci standing next to a crate in the harbour](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png)
 
-**Scarabeo del Tempo:** «Certamente, lo tradurrò nell’italiano del XV secolo. “Dove sono?”»
+### Help me, Leonardo
 
-**Uomo anziano:** L’uomo anziano risponde, «Siete a Firenze, signore. E chi siete voi?»
+**You:** "Excuse me, sir, where am I?" He looks up at you, confusion evident in his eyes. Realizing you've been speaking in English, you quickly use the device in your hand and ask it to translate.
 
-**Scarabeo del Tempo:** Lo Scarabeo del Tempo traduce, «Dice che ti trovi a Firenze e chiede chi sei.»
+**Time Beetle:** "Of course, I'll translate into 15th century Italian. 'Dove sono?'" 
 
-**Tu:** «Digli che sono un artigiano e che sto cercando un lavoro.»
+**Old man:** The old man replies, "Siete a Firenze, signore. E chi siete voi?" 
 
-**Uomo anziano:** «Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci?»
+**Time Beetle:** The Time Beetle translates, "He says you're in Florence, and asks who you are." 
 
-**Scarabeo del Tempo:** Lo Scarabeo del Tempo traduce, «Chiede se avete sentito parlare di Leonardo da Vinci.»
+**You:** "Tell him I'm a maker of things, and I'm looking for a place to work."
 
-**Tu:** «Certo,» rispondi. «Digli che ne ho sentito parlare e che mi piacerebbe conoscerlo.»
+**Old man:** Un artigiano, eh? Avete mai sentito parlare di Leonardo da Vinci? 
 
-**Uomo anziano:** L’uomo anziano sorride, «Allora, seguitemi, vi porterò da lui.»
+**Time Beetle:** The Time Beetle translates, "He asks if you've heard of Leonardo da Vinci." 
 
-**Tu:** Chiedi, «Che cosa ha detto?»
+**You:** "Of course," you say. "Tell him I have and I would like to meet him." 
 
-**Scarabeo del Tempo:** Lo Scarabeo del Tempo risponde, «Dice che ti porterà da Leonardo.»
+**Old man:** The old man smiles, "Allora, seguitemi, vi porterò da lui."
+
+**You:** You ask, "What did he say?"
+
+**Time Beetle:** The Time Beetle responds, "He said he'll take you to Leonardo."
 
 ### At the workshop
 
-<div>
-  <img src="./assets/leonardo-workshop.png" alt="Lenoardos workshop" width="300" >
-</div>
+![Leonardos workshop](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png)
 
 The old man leads you to a large wooden door and you are greeted by the sight of a workshop filled with all sorts of mechanical contraptions. 
 
@@ -122,11 +117,9 @@ If you want to interact with Leonardo, run the [Characters](/app/README.md) app.
 
 > [!IMPORTANT]
 > This is entirely fictional; the responses are generated by AI.
-> [Responsible AI disclaimer](../../README.md#responsible-ai-disclaimer)
+> [Responsible AI disclaimer](/README.md#responsible-ai-disclaimer)
 
-<div>
-  <img src="./assets/leonardo-talk.jpeg" width=300>
-</div>
+![Leonardo talks](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg)
 
 **Steps**:
 
@@ -139,7 +132,7 @@ If you want to interact with Leonardo, run the [Characters](/app/README.md) app.
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+ > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
 
 ## Development environment setup 
 
@@ -409,7 +402,7 @@ This means the majority of tokens can be spent on the input tokens, i.e 128k - 1
 I want you to generate recipes for me.
 ```
 
-![Demo of tokenizer](./assets/tokenizer.png)
+![Demo of tokenizer](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/tokenizer.png)
 
 Running `tokenizer` on the sentence above gives us 9 tokens.
 
@@ -461,9 +454,7 @@ Leonardo suddenly asked to inspect the Time Beetle closer, he looked at it from 
 
 **Time Beetle:** Nothing
 
-<div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="./assets/helicopter.jpg" alt="Aerial screw, Leonardo Da Vinci" width="300" >
-</div>
+![Aerial screw, Leonardo Da Vinci](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg)
 
 > [!NOTE]
 >  The aerial screw, also known as the helical air screw, was intended to lift off the ground by compressing air. Leonardo's design featured a large, spiral-shaped rotor made of linen, stiffened with starch, and mounted on a wooden platform. The idea was that a crew of men would run around the platform, turning cranks to rotate the screw rapidly enough to achieve lift 
@@ -488,9 +479,9 @@ Check out [Sample app](/app/README.md) to get started.
 
 ## Solution
 
-[Solution](./solution/solution.md)
+[Solution](/lessons/02-first-ai-app/solution/solution.md)
 
-## Knowledge check
+## Knowledge Check
 
 **Question:** What is the purpose of the context window in generative AI models? Select all that apply.
 
@@ -500,9 +491,9 @@ B. The context window is the number of previous messages that the AI uses to gen
 
 C. The context window determines how creative the AI's responses are.
 
-[Quiz solution](./solution/solution-quiz.md)
+[Quiz solution](/lessons/02-first-ai-app/solution/solution-quiz.md)
 
-## Self-Study resources
+## Self-Study Resources
 
 - [Text generation](https://platform.openai.com/docs/guides/text-generation)
 - [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 
