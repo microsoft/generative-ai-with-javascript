@@ -24,7 +24,7 @@ _Questo video offre un’introduzione per migliorare le tue abilità di “promp
 ## Storia: “Dalla padella alla brace”
 
 > [!NOTE]
-> La nostra storia finora: tu, un ingegnere meccanico del 1860, hai intrapreso un viaggio nel tempo con Leonardo da Vinci. Sei sfuggito ai soldati romani, o meglio, stai per sfuggirgli, e stai cercando disperatamente un modo per far atterrare la vite aerea in sicurezza.
+> _La nostra storia finora: tu, un ingegnere meccanico del 1860, hai intrapreso un viaggio nel tempo con Leonardo da Vinci. Sei sfuggito ai soldati romani, o meglio, stai per sfuggirgli, e stai cercando disperatamente un modo per far atterrare la vite aerea in sicurezza._
 >
 > Vedi [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall’inizio e iniziare a usare l’IA generativa.
 
@@ -543,7 +543,7 @@ Inoltre, hai imparato come estrarre dati dai prompt e presentarli in un formato 
 
 Sfruttando efficacemente l’output strutturato, puoi semplificare la comprensione e l’utilizzo delle informazioni generate dai modelli di IA generativa.
 
-## Verifica delle competenze
+## Verifica delle conoscenze
 
 **Domanda**: A cosa serve l’output strutturato? Seleziona tutte le risposte pertinenti.
 
