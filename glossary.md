@@ -43,3 +43,9 @@ A comprehensive list of technical terms used throughout the lessons.
 - **Tokenizer**: A tool used to convert text into tokens, providing structure for how data is inputted or analyzed by models.
 - **Vector Search**: Retrieval technique comparing encoded vectors to find semantically similar information in AI applications.
 - **XML (eXtensible Markup Language)**: A markup language formatting structured data for information storage, exchange, or generative model input/output.
+
+## Technical Terms
+
+The following terms should NOT be translated:
+
+- prompt

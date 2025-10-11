@@ -193,7 +193,7 @@ RAG can be considered as an advanced form of *prompt engineering*.
 
 ### Code example
 
-**Ada:** Practice makes perfect, so let’s apply what we’ve learned with an example. We’ll build a simple retrieval system into a JavaScript app using a [CSV](https://fr.wikipedia.org/wiki/Comma-separated_values) file of hybrid car data and a basic search algorithm to pull relevant info based on a user’s question.
+**Ada:** Practice makes perfect, so let’s apply what we’ve learned with an example. We’ll build a simple retrieval system into a JavaScript app using a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file of hybrid car data and a basic search algorithm to pull relevant info based on a user’s question.
 
 ```javascript
 // This example demonstrates how to use the Retrieval Augmented Generation (RAG)

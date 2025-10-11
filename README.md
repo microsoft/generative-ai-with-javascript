@@ -93,7 +93,7 @@ Throughout this course you'll find many code examples and exercises, so we encou
 | 3 | [Prompt engineering](/lessons/03-prompt-engineering/README.md) | Learn Prompt engineering fundamentals, techniques, and meta-prompts for better AI outcomes. |
 | 4 | [Structured output](/lessons/04-structured-output/README.md) | Learn structured output, how to extract data from prompts, and present it in various formats, such as JSON, for easier consumption. |
 | 5 | [Retrieval augmented generation (RAG)](/lessons/05-rag/README.md) | Learn the basics of RAG, how to integrate external data, and how to leverage it for more relevant, accurate AI responses. |
-| 6 | [Tool calling/Function calling](/lessons/06-tool-calling/README.md) | Learn how to give your LLM extra capbilities, bring your own functions  |
+| 6 | [Tool calling/Function calling](/lessons/06-tool-calling/README.md) | Learn how to give your LLM extra capabilities, bring your own functions  |
 | 7 | [MCP, Model Context Protocol ](/lessons/07-mcp/README.md) | Teaches how to get started with MCP to standardize how to expose prompts, resources and tools  |
 | 8 | [Enhancing MCP Clients with Large Language Models](/lessons/08-mcp-advanced/README.md) | Learn how to improve your MCP app by improving clients with LLM and more  |
 
