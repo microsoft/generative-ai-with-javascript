@@ -1,34 +1,33 @@
-# Lezione 3: Prompt Engineering
+# Lezione 3: Prompt engineering
 
 In questo capitolo imparerai:
-
-- che cos'è il prompt engineering e come conoscerne le basi può aiutarti a ottenere risultati migliori;
+- che cos’è il prompt engineering e come conoscerne le basi può aiutarti a ottenere risultati migliori;
 - diverse tecniche di prompt engineering e come forniscono risultati migliori a seconda dello scenario;
-- che cosa sono i meta prompt e come aiutano a restringere l'output, ad assicurare che sia accessibile e a fornire una migliore user experience.
+- che cosa sono i meta prompt e come aiutano a restringere l’output, ad assicurare che sia accessibile e a fornire una migliore user experience.
 
 ## Configurazione
 
-Se non l'hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi farlo: [Configura il tuo ambiente](/docs/setup/README.md).
+Se non l’hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi fare: [Configura il tuo ambiente](/docs/setup/README.md).
 
 ## Risorse correlate
 
 [![Guarda un breve video sul prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
 
-_Questo video offre un'introduzione per migliorare le tue capacità di "prompting", insegnandoti come dare all'IA istruzioni più chiare ed effettive per ottenere risultati migliori._
+_Questo video offre un’introduzione per migliorare le tue abilità di “prompting”, insegnandoti come dare all’IA istruzioni più chiare ed effettive per ottenere risultati migliori._
 
-*🎥 Clicca sull'immagine qui sopra per guardare un breve video sul engineering*
+*🎥 Clicca sull’immagine qui sopra per guardare un breve video sul prompt engineering*
 
 💼 Slide: [Prompt engineering](/videos/slides/02-prompt-engineering.pptx)
 
-## Storia: "Biglietto di viaggio"
+## Storia: “Biglietto di viaggio”
 
 > [!NOTE] 
 > La nostra storia finora: hai intrapreso un viaggio nel tempo con Leonardo da Vinci, esplorando le meraviglie del Rinascimento. Hai incontrato lo Scarabeo del Tempo, un misterioso dispositivo che ti permette di viaggiare nel tempo e nello spazio.
 >
-> Vedi [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall'inizio e iniziare a usare l'IA generativa.
+> Vedi [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall’inizio e iniziare a usare l’IA generativa.
 
 > [!NOTE] 
-> Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-sforza) se preferisci passare direttamente al contenuto tecnico.
+> Anche se consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-sforza) se preferisci passare direttamente al contenuto tecnico.
 
 **Tu:** «Vediamo se riesco a tornare a casa.»
 
@@ -107,8 +106,8 @@ Ammiri la città, gli antichi edifici si estendono sotto di voi.
 Se vuoi interagire con Sfroza, esegui la app [Personaggi](/app/README.md).
 
 > [!IMPORTANT]
-> Questo è interamente frutto di fantasia: le risposte sono generate dall'intelligenza artificiale.
-> [Dichiarazione di responsabilità sull'IA](../../README.md#responsible-ai-disclaimer)
+> Questo è interamente frutto di fantasia: le risposte sono generate dall’intelligenza artificiale.
+> [Dichiarazione di responsabilità sull’IA](../../README.md#responsible-ai-disclaimer)
 
 ![Ludovico Sforza](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png)
 
@@ -120,7 +119,7 @@ Se vuoi interagire con Sfroza, esegui la app [Personaggi](/app/README.md).
 4. Una volta comparso, seleziona il pulsante "Open in Browser".
 5. Chatta con Sforza.
 
-Per una spiegazione più dettagliata della app, vedi [Spiegazione dettagliata della app](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
+Per una spiegazione più dettagliata della app, vedi [Spiegazione dettagliata della app](/lessons/01-intro-to-genai/translations/README.it.md#interagisci-con-dinocrate).
 
 > [!NOTE]
 > Se stai eseguendo il progetto in locale sul tuo computer, consulta la guida QuickStart per ottenere la configurazione di un token per l'[accesso personale a GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e sostituisci la chiave nel codice.
@@ -159,7 +158,7 @@ Guardandolo dalla prospettiva di uno sviluppatore, puoi usare il prompt engineer
 
 - **Ottenere risultati più accurati** dal tuo modello linguistico e in definitiva migliorare la user experience della tua applicazione.
 - **Controllare l'output** del modello per assicurare che sia rilevante e appropriato per i tuoi utenti. Questo è particolarmente importante quando si ha a che fare con argomenti sensibili e anche per proteggere la tua brand reputation.
-- **Formattare l'output** in un modo che sia facile da capire e consumare. Approfondiremo questo aspetto nel prossimo capitolo.
+- **Formattare l'output** in un modo che sia facile da capire e utilizzare. Approfondiremo questo aspetto nel prossimo capitolo.
 
 **Scarabeo del Tempo:** «Esploriamo le diverse tecniche e strategie che puoi utilizzare per creare prompt efficaci per il tuo modello linguistico.»
 

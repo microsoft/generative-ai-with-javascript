@@ -1,14 +1,13 @@
 # Lezione 2: Scrivere la tua prima app AI
 
 In questo capitolo imparerai a:
-
 - configurare il tuo ambiente di sviluppo;
-- scrivere un'app di base;
+- scrivere un’app di base;
 - comprendere i prompt di sistema.
 
 ## Configurazione
 
-Se non l'hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi farlo: [Configura il tuo ambiente](/docs/setup/README.md).
+Se non l’hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi fare: [Configura il tuo ambiente](/docs/setup/README.md).
 
 ## Risorse correlate
 
@@ -20,7 +19,7 @@ _Questo video offre un'introduzione ai modelli di IA denominati "Large Language 
 
 💼 Slide: [Introduzione ai Large Language Model (LLM)](/videos/slides/01-llms.pptx)
 
-## Storia: "Immaginati su una barca su un fiume"
+## Storia: “Immaginati su una barca sul fiume”
 
 > [!NOTE]
 > _La nostra storia finora: sei un inventore, un artigiano della Londra del 1860 che ha viaggiato nel tempo usando un misterioso dispositivo chiamato Scarabeo del Tempo. Hai viaggiato attraverso gli annali della storia, assistendo alla creazione del Faro di Alessandria, una meraviglia dell'ingegneria antica che hai contribuito a creare con un piccolo aiuto da Dinocrate e dallo Scarabeo del Tempo._
@@ -28,7 +27,7 @@ _Questo video offre un'introduzione ai modelli di IA denominati "Large Language 
 > Vedi [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall'inizio e iniziare a usare l'IA generativa.
 
 > [!NOTE] 
-> Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-leonardo) se preferisci passare direttamente al contenuto tecnico.
+> Anche se consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-leonardo) se preferisci passare direttamente al contenuto tecnico.
 
 Insieme a Dinocrate hai dato gli ultimi ritocchi al Faro di Alessandria. L'imponente struttura risplende alla luce del sole e la sua pietra levigata riflette il Mar Mediterraneo.
 
@@ -131,7 +130,7 @@ Se vuoi interagire con Leonardo, esegui la app [Personaggi](/app/README.md).
 4. Una volta comparso, seleziona il pulsante "Open in Browser".
 5. Chatta con Leonardo.
 
-Per una spiegazione più dettagliata della app, vedi [Spiegazione dettagliata della app](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
+Per una spiegazione più dettagliata della app, vedi [Spiegazione dettagliata della app](/lessons/01-intro-to-genai/translations/README.it.md#interagisci-con-dinocrate).
 
 > [!NOTE]
 > Se stai eseguendo il progetto in locale sul tuo computer, consulta la guida QuickStart per ottenere la configurazione di un token per l'[accesso personale a GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e sostituisci la chiave nel codice.

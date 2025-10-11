@@ -1,14 +1,13 @@
 # Lezione 1: Introduzione all'IA generativa e agli LLM per sviluppatori JavaScript
 
 In questo capitolo imparerai a:
-
-- comprendere le basi dell'IA generativa e dei Large Language Model (LLM);
+- comprendere le basi dell’IA generativa e dei Large Language Model (LLM);
 - identificare le potenziali applicazioni e limitazioni dei Large Language Model (LLM) nello sviluppo JavaScript;
-- esplorare come l'IA generativa può migliorare l'esperienza utente nelle applicazioni JavaScript.
+- esplorare come l’IA generativa può migliorare l’esperienza utente nelle applicazioni JavaScript.
 
 ## Configurazione
 
-Se non l'hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi farlo: [Configura il tuo ambiente](/docs/setup/README.md).
+Se non l’hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come puoi fare: [Configura il tuo ambiente](/docs/setup/README.md).
 
 ## Risorse correlate
 
@@ -26,13 +25,13 @@ Inoltre, l'IA generativa si è evoluta in capacità multimodali, consentendo di 
 
 *In poche parole, le interfacce in linguaggio naturale stanno diventando il nuovo standard per molte app e i tuoi utenti si aspettano di poterle usare.*
 
-## Storia: "Un viaggio attraverso il tempo"
+## Storia: “Un viaggio nel tempo”
 
 > [!NOTE] 
 > Cominciamo con una panoramica della storia, una storia che collega il passato al futuro! Man mano che procederai con questo programma di studi, ti imbarcherai in un'avventura emozionante, viaggiando indietro nel tempo per collaborare con alcune delle menti più brillanti della storia. Insieme affronterete sfide ed esplorerete come l'IA generativa possa rivoluzionare le vostre applicazioni JavaScript.
 
 > [!NOTE]  
-> Sebbene consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-dinocrate) se preferisci passare direttamente al contenuto tecnico.
+> Anche se consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-dinocrate) se preferisci passare direttamente al contenuto tecnico.
 
 Il tuo viaggio inizia nella Londra degli anni '60 dell'Ottocento, dove vestirai i panni di un abile inventore. Attraverso una serie di avventure avvincenti, affinerai le tue abilità di intelligenza artificiale e sbloccherai soluzioni che trascendono il tempo.
 
