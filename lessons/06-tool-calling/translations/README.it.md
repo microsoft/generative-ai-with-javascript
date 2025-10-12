@@ -3,9 +3,9 @@
 La tool calling, nota anche come function calling, si riferisce al miglioramento del modello di IA aggiungendo funzionalità precedentemente mancanti. Il concetto prevede la fornitura di meta-descrizioni delle function, consentendo al modello di IA di determinare quando un particolare tool dev’essere chiamato in base alla richiesta dell’utente. L’idea è quella di fornire meta-descrizioni delle function effettive e di far sì che il modello di IA indichi quando tale tool deve essere chiamato in base alla richiesta dell’utente.
 
 In questo capitolo imparerai a:
-- creare un tool;
-- integrare un tool con un modello di IA;
-- chiamare il tool dal modello di IA.
+  - creare un tool;
+  - integrare un tool con un modello di IA;
+  - chiamare il tool dal modello di IA.
 
 ## Configurazione
 
@@ -15,7 +15,7 @@ Se non l’hai ancora fatto, configura il tuo ambiente di sviluppo. Ecco come pu
 
 [![Integrating External Applications with Function Calling](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/11-lesson-banner.png)](https://aka.ms/gen-ai-lesson11-gh?WT.mc_id=academic-105485-koreyst)
 
-_Questo video spiega la tool calling, un metodo che aiuta l’IA a chiamare le tue function, ampliando così ciò che può fare_
+_Questo video illustra la tool calling, un metodo che aiuta l’IA a chiamare le tue function, ampliando così ciò che può fare_
 
 *🎥 Clicca sull’immagine qui sopra per guardare un breve video sulla tool calling*
 
@@ -26,7 +26,7 @@ _Questo video spiega la tool calling, un metodo che aiuta l’IA a chiamare le t
 > Torna alla [Lezione 1](/lessons/translations/01-intro-to-genai/README.it.md) se vuoi ripercorrere la storia dall’inizio e iniziare a usare l’IA generativa.
 
 > [!NOTE]
-> Anche se ti consigliamo di leggere la storia (è divertente!), [clicca qui](#interact-with-amelia-earhart) se preferisci passare direttamente al contenuto tecnico.
+> Anche se ti consigliamo di leggere la storia (è divertente!), [clicca qui](#interagisci-con-amelia-earhart) se preferisci passare direttamente al contenuto tecnico.
 
 **Ada Lovelace**: «Ho bisogno che tu vada a trovare una mia amica. Sono poche le persone che possono eguagliare la sua competenza in meccanica e risoluzione dei problemi. Potrebbe essere difficile raggiungerla, però: è sempre in movimento.» 😀
 
