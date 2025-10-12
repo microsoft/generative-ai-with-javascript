@@ -86,7 +86,7 @@ Se vuoi interagire con Ada, esegui la app [Personaggi](/app/README.md).
 2. Passa a _/app_ nella root del repo.
 3. Individua la console ed esegui `npm install` seguito da `npm start`.
 4. Una volta comparso, seleziona il pulsante "Open in Browser".
-5. Chatta con Montezuma.
+5. Chatta con Ada.
 
 Per una spiegazione più dettagliata della app, vedi [Spiegazione dettagliata della app](/lessons/01-intro-to-genai/translations/README.it.md#interagisci-con-dinocrate).
 
