@@ -1,18 +1,18 @@
-import express from 'express';
-import { OpenAI } from 'openai';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+import express from "express";
+import { OpenAI } from "openai";
+import path from "path";
+import { fileURLToPath } from "url";
 
-import json from './public/characters.json' with { type: "json" };
+dotenv.config();
+
+import json from "./public/characters.json" with { type: "json" };
 
 let systemMessage = json[4].description;
 let page = json[4].page;
 
-console.log("SERVER systemMessage: ", systemMessage);
-console.log("SERVER page: ", page);
-
-dotenv.config();
+// console.log("SERVER systemMessage: ", systemMessage);
+// console.log("SERVER page: ", page);
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -23,16 +23,16 @@ const __dirname = path.dirname(__filename);
 app.use(express.json());
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.locals.delimiters = '{{ }}';
+app.locals.delimiters = "{{ }}";
 
 function getCharacterByName(name) {
-  return json.find(character => character.name === name) || null;
+  return json.find((character) => character.name === name) || null;
 }
 
 // Route to send the prompt
-app.post('/send', async (req, res) => {
+app.post("/send", async (req, res) => {
   const { message, character } = req.body;
 
   systemMessage = character.description;
@@ -41,13 +41,13 @@ app.post('/send', async (req, res) => {
 
   const messages = [
     {
-      "role": "system",
-      "content": systemMessage,
+      role: "system",
+      content: systemMessage,
     },
     {
-      "role": "user",
-      "content": prompt
-    }
+      role: "user",
+      content: prompt,
+    },
   ];
 
   const openai = new OpenAI({
@@ -56,20 +56,18 @@ app.post('/send', async (req, res) => {
   });
 
   try {
-    console.log(`SERVER sending prompt ${prompt}`)
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: "gpt-4o-mini",
       messages: messages,
     });
 
-    console.log(`SERVER: ${completion.choices[0]?.message?.content}`);
     res.json({
       prompt: prompt,
-      answer: completion.choices[0]?.message?.content
+      answer: completion.choices[0]?.message?.content,
     });
   } catch (error) {
     console.error(`Error: ${error.message}`); // Log the error message for debugging
-    res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' }); // Send a generic error message
+    res.status(500).json({ message: "An unexpected error occurred. Please try again later." }); // Send a generic error message
   }
 });
 
