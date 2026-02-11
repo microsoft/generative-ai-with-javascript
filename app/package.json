@@ -4,16 +4,19 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "start:sdk": "node app-sdk.js"
     },
     "keywords": [],
     "author": "Microsoft Corporation",
     "license": "MIT",
     "description": "",
     "dependencies": {
+        "@github/copilot-sdk": "^0.1.23",
         "dotenv": "^16.4.7",
         "ejs": "^3.1.10",
         "express": "^4.21.2",
-        "openai": "^4.85.0"
+        "openai": "^4.85.0",
+        "tsx": "^4.21.0"
     }
 }

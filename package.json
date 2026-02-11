@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@github/copilot-sdk": "^0.1.23",
     "openai": "^4.78.1"
   },
   "devDependencies": {
-    "tsx": "^4.19.3"
+    "tsx": "^4.21.0"
   },
   "scripts": {
     "genai:translate": "npx genaiscript@latest run translator \"./lessons/*/README.md\" --no-run-trace --remote https://github.com/pelikhan/action-continuous-translation --remote-install -x glossaryFile=glossary.md -x lang=fr -x \"filenameTemplate={{dirname}}/translations/{{basename}}.{{lang}}{{extname}}\""

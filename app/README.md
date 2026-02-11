@@ -1,15 +1,36 @@
 This app allows you to speak to all character features in the curriculum. 
 
+There are two ways to interact with AI:
+
+- GitHub Models [Use GitHub Models](https://github.com/marketplace/models)
+- Copilot SDK [Copilot SDK](https://github.com/github/copilot-sdk/blob/main/docs/getting-started.md). This one uses your GitHub Copilot.
+
 ## Installation
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`. 
+3. Locate the console and run `npm install`.
 4. Once it appears, select the "Open in Browser" button. 
 
 You should see something like:
 
 ![Chat app](../docs/images/character-chat.png)
+
+## Run
+
+Run the app by either:
+
+**GitHub Models**
+
+```
+npm start
+```
+
+**Copilot SDK**
+
+```
+npm run start:sdk
+```
 
 ## Interact with a character
 
