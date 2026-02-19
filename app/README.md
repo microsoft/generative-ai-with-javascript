@@ -1,4 +1,4 @@
-This app allows you to speak to all character features in the curriculum. 
+This app allows you to speak to all character features in the curriculum.  
 
 There are two ways to interact with AI:
 
