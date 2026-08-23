@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # The checkout step
-    - uses: actions/checkout@v3
-    - uses: rojopolis/spellcheck-github-actions@0.47.0
+    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
+    - uses: rojopolis/spellcheck-github-actions@ed0756273a1658136c36d26e3d0353de35b98c8b # 0.47.0
       name: Spellcheck
       with:
         source_files: README.md /lessons/01-intro-to-genai/README.md
         task_name: Markdown
         output_file: spellcheck-output.txt
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       if: '!cancelled()' # Do not upload artifact if job was cancelled
       with:
         name: Spellcheck Output
