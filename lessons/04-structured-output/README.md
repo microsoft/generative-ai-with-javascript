@@ -186,7 +186,7 @@ Sure! Here are some detailed ideas for inventions you can build using 15th-centu
  - Mathematical knowledge for accurate measurements
 
  **Effort**:
- - **Medium**: Involves precise metalworking and engraving. Requires knowledge of > astronomy and mathematics to ensure accuracy.
+ - **Medium**: Involves precise metalworking and engraving. Requires knowledge of astronomy and mathematics to ensure accuracy.
  
  ### 3. Printing Press
  **Resources Needed**:
@@ -195,7 +195,7 @@ Sure! Here are some detailed ideas for inventions you can build using 15th-centu
  - Ink and paper
 
  **Effort**:
- - **High**: Building the press and creating movable type requires advanced carpentry > and metalworking skills. Setting up the type and printing also involves meticulous > work.
+ - **High**: Building the press and creating movable type requires advanced carpentry and metalworking skills. Setting up the type and printing also involves meticulous work.
 
 This is an OK looking response, every idea is structured in the same way, and it's easy to understand. What if you wanted it some other way though? For that, you can instruct how you want it in the text itself or even present an output template. Let's show each technique.
 ```
@@ -315,7 +315,6 @@ Modify the prompt accordingly to ask for JSON output:
 >   }
 > ]
 
-```text
 > Response:
 Sure! Here are some ideas for inventions you can build using 15th-century technology, presented in JSON format:
 
