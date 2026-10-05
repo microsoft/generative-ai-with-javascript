@@ -32,11 +32,6 @@ This course throws you into a *time-traveling adventure*—meet history’s lege
 - Improve your MCP client by [integrating an LLM](/lessons/08-mcp-advanced/README.md)
 
 
-## Call for help - help us translate !
-
-Help us translate this course. Each lesson in `lessons/` folder has a `translations/` directory. Add your translation file like so `README.<language code>.md`, for example *README.es.md*.  - Thank You.
-
-
 ## Step into history with AI magic! 
  
 Dive into an immersive learning experience powered by Generative AI:  

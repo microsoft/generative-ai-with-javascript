@@ -7,7 +7,7 @@ export async function buildDocs(root = repositoryRoot) {
   const output = path.join(root, "dist");
   await rm(output, { recursive: true, force: true });
   await mkdir(output, { recursive: true });
-  for (const entry of ["index.html", "_sidebar.md", "README.md", "README.fr.md", "LICENSE", "docs", "lessons", "app"]) {
+  for (const entry of ["index.html", "_sidebar.md", "README.md", "LICENSE", "docs", "lessons", "app"]) {
     await cp(path.join(root, entry), path.join(output, entry), {
       recursive: true,
       filter(source) {

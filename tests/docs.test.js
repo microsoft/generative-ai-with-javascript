@@ -19,18 +19,6 @@ function docsify(pathname) {
   });
 }
 
-test("translated lesson routes resolve while the root French README stays at the root", async () => {
-  const config = await docsify("/");
-  let root = "/README.fr.md";
-  let lesson = "/lessons/01-intro-to-genai/README.fr.md";
-  for (const [pattern, target] of Object.entries(config.alias)) {
-    root = root.replace(new RegExp(pattern), target);
-    lesson = lesson.replace(new RegExp(pattern), target);
-  }
-  assert.equal(root, "/README.fr.md");
-  assert.equal(lesson, "/lessons/01-intro-to-genai/translations/README.fr.md");
-});
-
 test("course images work below a GitHub Pages repository path", async () => {
   const config = await docsify("/generative-ai-with-javascript/");
   let render;
@@ -63,7 +51,7 @@ test("GitHub markdown alerts render as styled callouts", async () => {
 test("the documentation build includes assets and excludes credentials and installed packages", async t => {
   const root = await mkdtemp(path.join(tmpdir(), "course-docs-"));
   t.after(() => rm(root, { recursive: true, force: true }));
-  for (const file of ["index.html", "_sidebar.md", "README.md", "README.fr.md", "LICENSE",
+  for (const file of ["index.html", "_sidebar.md", "README.md", "LICENSE",
     "docs/images/logo.png", "lessons/04/sample.js", "app/public/images/avatar.png",
     "app/.env", "lessons/private.env", "app/.env.example", "app/node_modules/package/file.js", "app/test/test.js"]) {
     const target = path.join(root, file);

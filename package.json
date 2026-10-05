@@ -15,7 +15,6 @@
     "build:samples": "npm run build --prefix lessons/07-mcp/code && npm run build --prefix lessons/07-mcp/solution && npm run build --prefix lessons/08-mcp-advanced/solutions",
     "test:samples": "npm run build:samples && node --test tests/samples.test.js",
     "test:docs": "node --test tests/docs.test.js",
-    "test": "npm test --prefix app && npm run test:samples && npm run test:docs",
-    "genai:translate": "npx genaiscript@latest run translator \"./lessons/*/README.md\" --no-run-trace --remote https://github.com/pelikhan/action-continuous-translation --remote-install -x glossaryFile=glossary.md -x lang=fr -x \"filenameTemplate={{dirname}}/translations/{{basename}}.{{lang}}{{extname}}\""
+    "test": "npm test --prefix app && npm run test:samples && npm run test:docs"
   }
 }

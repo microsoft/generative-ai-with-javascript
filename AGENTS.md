@@ -110,7 +110,6 @@ Each lesson follows a consistent structure:
 - `README.md` - Main lesson content with narrative and technical instructions
 - `sample-app/` or `code/` - Starting code for exercises
 - `solution/` - Complete solution code
-- `translations/` - Lesson translations in various languages
 
 **To work on a lesson:**
 
@@ -393,7 +392,6 @@ This repository contains fictional AI-generated content. Historical characters g
 
 - See `.github/CONTRIBUTING.md` for contribution guidelines
 - Follow existing code patterns and structure
-- Add translations in `lessons/<lesson>/translations/`
 - Use issue templates in `.github/ISSUE_TEMPLATE/`
 
 **Community Resources:**
