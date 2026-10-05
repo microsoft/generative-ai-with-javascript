@@ -1,4 +1,11 @@
 import { OpenAI } from "openai";
+
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
 // 1. Define the prompt
 // -----------------------------------
 
@@ -18,8 +25,9 @@ const messages = [
 // -----------------------------------
 
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
+  timeout: 60000,
 });
 
 
@@ -27,7 +35,7 @@ const openai = new OpenAI({
 // -----------------------------------
 
 const completion = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model,
     messages: messages,
 });
 
@@ -36,4 +44,6 @@ console.log(`Answer for "${question}":`);
 // 4. Print the answer
 // -----------------------------------
 
-console.log(completion.choices[0]?.message?.content);
+const answer = completion.choices[0]?.message?.content;
+if (!answer?.trim()) throw new Error("The model did not return an answer.");
+console.log(answer);

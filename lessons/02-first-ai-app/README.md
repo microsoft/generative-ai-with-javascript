@@ -10,16 +10,6 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related Resources
-
-[![Watch a short video about large language models](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
-
-_This video gives you an introduction to AI models called "large language models", LLMs, what they are and how you can use them to integrate AI into your apps._
-
-*🎥 Click on the image above to watch a short video about large language models*
-
-💼 Slides: [Introduction to large language models, LLMs](/videos/slides/01-llms.pptx)
-
 ## Narrative: Picture yourself in a boat on a river
 
 
@@ -126,14 +116,14 @@ If you want to interact with Leonardo, run the [Characters](/app/README.md) app.
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app/README.md_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`. 
+3. Locate the console and run `npm ci` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Leonardo.
 
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` for both local development and Codespaces. See the [setup guide](/docs/setup/README.md#configure-environment-variables).
 
 ## Development environment setup 
 
@@ -175,7 +165,7 @@ Before you can assist Leonardo with his project, you should first think about th
 
 **Time Beetle:** Generative AI models can be used for many things, for example, language translation. In fact, it accepts input in one language and can generate text in another language. Let's start with a simple app that takes English input and generates Italian text.
 
-```javascript 
+```javascript
 
 import { OpenAI } from "openai";
 
@@ -194,9 +184,16 @@ ${question}
 // 2. Create client
 // -----------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -226,13 +223,13 @@ Let's explain what's happening here:
 
 **You:** I think I get it. So if I change the value of the `question` variable to something else, the app will generate a different Italian translation?
 
-**Time Beetle:** Exactly, you can change the input text to anything you want. Also note how GitHub models are being used as the base URL for the API together with a GitHub token as the API key.
+**Time Beetle:** The endpoint, API key, and deployment name come from your Microsoft Foundry resource. The code reads them from `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL`.
 
 **You:** Why is that important?
 
-**Time Beetle:** It's important to use a base URL and API key that are specific to the model you're using. GitHub Models is a platform that hosts a variety of models, all with different capabilities and features, it's also free to use.
+**Time Beetle:** Microsoft Foundry hosts the model deployment. Use an API key from the same resource as the endpoint, and set `AI_MODEL` to the deployment name. Model usage can incur Azure charges; check pricing and quota.
 
-**You:** Oh good, I don't know who to pay anyways and I doubt they accept my currency here. :) 
+**You:** Then I'll use a small deployment and check the costs before experimenting.
 
 ## Chat apps
 
@@ -268,7 +265,7 @@ AI: Rome is known for its ancient ruins, art, and vibrant culture. You can visit
 
 **Time Beetle:** Below is how we can construct a conversation with the AI: 
 
-```javascript 
+```javascript
 
 // Define the context 
 
@@ -295,9 +292,16 @@ const messages = [
  } 
 ]; 
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -499,5 +503,5 @@ C. The context window determines how creative the AI's responses are.
 - [Text generation](https://platform.openai.com/docs/guides/text-generation)
 - [JavaScript library for OpenAI](https://github.com/openai/openai-node/tree/master/examples) 
 - [Tokenizer](https://platform.openai.com/tokenizer)
-- [Completion API](https://platform.openai.com/docs/api-reference/completions)
-- [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models) 
+- [Completion API](https://github.com/openai/openai-node#usage)
+- [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models)

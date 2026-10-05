@@ -10,17 +10,6 @@
 
 যদি আপনি এখনও আপনার ডেভেলপমেন্ট এনভায়রনমেন্ট সেটআপ না করে থাকেন, তাহলে এটি করুন। কিভাবে সেটআপ করবেন তা জানতে এখানে যান: [আপনার এনভায়রনমেন্ট সেটআপ করুন](/docs/setup/README.md)।  
 
-## সম্পর্কিত রিসোর্স  
-
-**প্রম্পট ইঞ্জিনিয়ারিং** সংক্রান্ত ভিডিওটি পুনরায় দেখা উপকারী হতে পারে, কারণ এটি এই অধ্যায়ের শিক্ষার ভিত্তি গড়ে তোলে।  
-
-[![প্রম্পট ইঞ্জিনিয়ারিং সম্পর্কিত সংক্ষিপ্ত ভিডিও দেখুন](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)  
-
-_এই ভিডিওটি আপনাকে "প্রম্পটিং" দক্ষতা উন্নত করতে সহায়তা করবে, যাতে আপনি AI-কে আরও পরিষ্কার এবং কার্যকর নির্দেশ দিতে পারেন এবং ভালো ফলাফল পেতে পারেন।_  
-
-🎥 *উপরের ছবিতে ক্লিক করে প্রম্পট ইঞ্জিনিয়ারিং সম্পর্কিত সংক্ষিপ্ত ভিডিও দেখুন*  
-
-💼 **স্লাইড:** [প্রম্পট ইঞ্জিনিয়ারিং](/videos/slides/02-prompt-engineering.pptx)  
 ## বর্ণনা - আগুন থেকে বাঁচতে গিয়ে আগুনে পড়া  
 
 > [!NOTE]  
@@ -57,7 +46,6 @@ _অ্যাজটেক ক্যালেন্ডার, উইকিপি�
 আপনি প্রতিক্রিয়া জানানোর আগেই, অ্যাজটেক সৈন্যদের একটি দল এগিয়ে আসে।  
 
 <div>  
-  <img src="/lessons/04-structured-output/assets/meeting.png" alt="অ্যাজটেকদের সঙ্গে সাক্ষাৎ" width="300" />  
 </div>    
 
 **সৈন্য নেতা:** "তোমরা কারা, এবং এখানে কী করেছ?" তিনি নাহুয়াতল ভাষায় কঠোর স্বরে জিজ্ঞাসা করেন।  
@@ -131,14 +119,14 @@ _পাটোলি - উইকিপিডিয়া_
 
 1. [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript) এ ক্লিক করে একটি GitHub Codespace শুরু করুন।  
 2. রিপোজিটরির মূল ফোল্ডারে যান এবং _/app_ ডিরেক্টরিতে প্রবেশ করুন।  
-3. কনসোলে `npm install` চালান, তারপর `npm start` চালান।  
+3. কনসোলে `npm ci` চালান, তারপর `npm start` চালান।
 4. যখন অ্যাপ চালু হবে, "Open in Browser" বোতামটি নির্বাচন করুন।  
 5. এখন আপনি মন্টেজুমার সাথে চ্যাট করতে পারবেন।  
 
 আরও বিস্তারিত জানতে, দেখুন [অ্যাপের বিশদ ব্যাখ্যা](/lessons/01-intro-to-genai/translations/README.bn.md#ডিনোক্রেটিসের-সাথে-সাক্ষাৎ)।  
 
 > [!NOTE]  
-> আপনি যদি স্থানীয়ভাবে (লোকাল মেশিনে) প্রকল্পটি চালাচ্ছেন, তাহলে **QuickStart গাইড** অনুসরণ করে [GitHub ব্যক্তিগত অ্যাক্সেস টোকেন](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) সেটআপ করুন এবং কোডের মধ্যে টোকেনটি প্রতিস্থাপন করুন।
+> রিপোজিটরির মূল ফোল্ডারের `.env` ফাইলে `AI_ENDPOINT`, `AI_API_KEY` এবং `AI_MODEL` সেট করুন। লোকাল পরিবেশ এবং Codespaces উভয়ের জন্য এই সেটিংস প্রয়োজন। [সেটআপ নির্দেশিকা](/docs/setup/README.md#configure-environment-variables) দেখুন।
 ## কাঠামোগত আউটপুট  
 
 **টাইম বিটল:** জানতে চাও কীভাবে আমি মন্টেজুমাকে হারালাম?  
@@ -630,6 +618,16 @@ C. অসংগঠিত (unstructured) টেক্সট তৈরি কর�
 
 ## **স্বশিক্ষা সংস্থান (Self-Study Resources)**  
 
-- 🎥 **[Generative AI with JavaScript ভিডিও সিরিজ](https://aka.ms/genai-js)**  ## **চ্যালেঞ্জ**  
 
+## বর্তমান SDK দিয়ে JSON যাচাই
 
+রিপোজিটরির মূল ফোল্ডার থেকে JSON Schema উদাহরণটি চালান:
+
+```bash
+npm ci --prefix lessons/04-structured-output/sample-app
+npm --prefix lessons/04-structured-output/sample-app run structured
+```
+
+উদাহরণটি `chat.completions.parse`, `zodResponseFormat` এবং Zod দিয়ে `skill`, `parameters` ও `extracted_data` যাচাই করে। ফলাফল না থাকলে বা মডেল অনুরোধ প্রত্যাখ্যান করলে ত্রুটি দেখায়।
+
+[structured-json.js](/lessons/04-structured-output/sample-app/structured-json.js)

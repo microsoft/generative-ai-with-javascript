@@ -9,6 +9,13 @@ import process from "node:process";
 import fs from "node:fs";
 import { OpenAI } from "openai";
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 // Change the current working directory to the directory of the script
 const __dirname = dirname(fileURLToPath(import.meta.url));
 process.chdir(__dirname);
@@ -62,18 +69,26 @@ ${question}
 // ---------------------------------------------------------------------
 
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
+  timeout: 60000,
 });
 
 const chunks = await openai.chat.completions.create({
-  model: "gpt-4o-mini",
+  model,
   messages: [{ role: "user", content: augmentedPrompt }],
   stream: true,
 });
 
 console.log(`Answer for "${question}":`);
 
+let receivedText = false;
 for await (const chunk of chunks) {
-  process.stdout.write(chunk.choices[0].delta.content ?? "");
+  const text = chunk.choices[0]?.delta.content;
+  if (text) {
+    receivedText = true;
+    process.stdout.write(text);
+  }
 }
+if (!receivedText) throw new Error("The model did not return an answer.");
+process.stdout.write("\n");

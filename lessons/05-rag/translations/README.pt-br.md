@@ -10,16 +10,6 @@ Neste capítulo você vai aprender:
 
 Se você ainda não configurou seu ambiente de desenvolvimento, veja como fazer: [Configure seu ambiente](/docs/setup/README.md).
 
-## Recursos relacionados
-
-[![Assista a um vídeo curto sobre RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
-
-_Este vídeo explica a Geração Aumentada por Recuperação (RAG), um método que ajuda a IA a usar seu conteúdo junto com seus dados de treinamento para obter melhores resultados._
-
-*🎥 Clique na imagem acima para assistir a um vídeo curto sobre geração aumentada por recuperação, RAG*
-
-💼 Slides: [Geração aumentada por recuperação, RAG](/videos/slides/03-rag.pptx)
-
 ## Narrativa - Gênesis
 
 > [!NOTE] 
@@ -37,7 +27,7 @@ _Este vídeo explica a Geração Aumentada por Recuperação (RAG), um método q
 Vocês pousam no jardim, é tarde da noite com uma névoa espessa e luzes sinistras piscando à distância. A mansão se ergue diante de vocês. Leonardo olha ao redor, seus olhos arregalados de admiração.
 
 <div>
-  <img src="../assets/mansion.jpeg" alt="Antiga mansão mostrada em uma névoa densa" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/mansion.jpeg" alt="Antiga mansão mostrada em uma névoa densa" width="300">
 </div>
 
 ### Fugindo dos Cães
@@ -45,7 +35,7 @@ Vocês pousam no jardim, é tarde da noite com uma névoa espessa e luzes sinist
 Você ouve latidos e o som de cães correndo em sua direção. Você se vira para Leonardo: "Precisamos entrar, agora!"
 
 <div>
-  <img src="../assets/dogs.jpeg" alt="Fugindo dos cães" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/dogs.jpeg" alt="Fugindo dos cães" width="300">
 </div>
 
 Quando você chega à porta da mansão, ela se abre e um par de atendentes sai apressadamente. Depois de avaliá-los, eles fazem sinal para que vocês os sigam.
@@ -63,7 +53,7 @@ Você se encontra cara a cara com Ada Lovelace, seus olhos brilhando de curiosid
 **Você:** Mas...
 
 <div>
-  <img src="../assets/ada.jpeg" alt="Ada Lovelace e Charles Babbage trabalhando em um dispositivo" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada.jpeg" alt="Ada Lovelace e Charles Babbage trabalhando em um dispositivo" width="300">
 </div>
 
 Charles Babbage se aproxima, examinando o Besouro do Tempo em sua mão. "Este dispositivo é notável, mas está um pouco defeituoso, não está? Você deve ter notado, tenho certeza."
@@ -85,21 +75,21 @@ Se você quiser interagir com Ada, execute o aplicativo [Characters](/app/README
 > [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="../assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada-2.jpeg" alt="Ada Lovelace" width="300">
 </div>
 
 **Passos**:
 
 1. Inicie um [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navegue até _/app_ na raiz do repositório.
-3. Localize o console e execute `npm install` seguido de `npm start`.
+3. Localize o console e execute `npm ci` seguido de `npm start`.
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Ada.
 
 Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+> Configure `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL` no arquivo `.env` na raiz do repositório, tanto localmente quanto no Codespaces. Consulte o [guia de configuração](/docs/setup/README.md#configure-environment-variables).
 
 ## Desafios conhecidos com grandes modelos de linguagem, LLMs
 
@@ -266,13 +256,20 @@ ${question}
 // 4. Componente gerador: usa os resultados da pesquisa para gerar uma resposta
 // ---------------------------------------------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 const chunks = await openai.chat.completions.create({
-  model: "gpt-4o-mini",
+  model,
   messages: [{ role: "user", content: augmentedPrompt }],
   stream: true,
 });
@@ -280,7 +277,7 @@ const chunks = await openai.chat.completions.create({
 console.log(`Resposta para "${question}":`);
 
 for await (const chunk of chunks) {
-  process.stdout.write(chunk.choices[0].delta.content ?? "");
+  process.stdout.write(chunk.choices[0]?.delta.content ?? "");
 }
 ```
 
@@ -348,4 +345,4 @@ C. O recuperador encontra informações relevantes de fontes de dados externas.
 - **Aplicativos de exemplo**:
   * [Chat de IA Serverless com RAG](https://github.com/Azure-Samples/serverless-chat-langchainjs/)
   * [Ask Youtube: Uma API de perguntas e respostas do Youtube baseada em RAG](https://github.com/Azure-Samples/langchainjs-quickstart-demo)
-- [Workshop completo: Crie seu próprio ChatGPT com RAG](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md)
+- [Workshop completo: Crie seu próprio ChatGPT com RAG](https://github.com/Azure-Samples/azure-openai-rag-workshop)

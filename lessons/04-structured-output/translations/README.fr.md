@@ -14,13 +14,11 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 Cela vaut la peine de revoir la vidéo sur l'ingénierie des prompts, car elle pose les bases de ce que vous allez apprendre dans ce chapitre.
 
-[![Regardez une courte vidéo sur l'ingénierie des prompts](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=3)
 
 *Cette vidéo propose une introduction à l'amélioration de vos compétences en matière de "prompt", en vous apprenant à donner des instructions plus claires et plus efficaces à l'IA pour obtenir de meilleurs résultats.*
 
 *🎥 Cliquez sur l'image ci-dessus pour regarder une courte vidéo sur l'ingénierie des prompts*
 
-💼 Présentation : [Ingénierie des prompts](/videos/slides/02-prompt-engineering.pptx)
 
 ## Récit - De Charybde en Scylla
 
@@ -55,8 +53,6 @@ Léonard de Vinci s'avance et ses yeux s'ouvrent en grand de fascination.
 **Léonard :** "Incroyable", murmure-t-il en passant ses doigts sur les sculptures. "Mais j'espère que cela n'était pas d'importance sacrée."
 
 Avant que vous puissiez réagir, un groupe de soldats aztèques s'approche.
-
-![Rencontre avec les Aztèques](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/meeting.png)
 
 **Chef des soldats :** "Qui êtes-vous et qu'avez-vous fait ?" demande-t-il en nahuatl.
 
@@ -127,14 +123,14 @@ Si vous voulez interagir avec Montezuma, exécutez l'application [Characters](/a
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Naviguez vers */app* à la racine du dépôt.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Montezuma.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ## Sorties structurées
 
@@ -316,7 +312,6 @@ Modifiez le prompt en conséquence pour demander une sortie JSON :
 > &#x20; }
 > ]
 
-````text
 > Response:
 Sure! Here are some ideas for inventions you can build using 15th-century technology, presented in JSON format:
 
@@ -383,7 +378,7 @@ Sure! Here are some ideas for inventions you can build using 15th-century techno
     "effort": "Very High - Building an aqueduct involves extensive construction work and engineering. Ensuring a consistent gradient for water flow requires precise planning and execution."
   }
 ]
-````
+```
 
 **Scarabée temporel :** Ce type de sortie structurée peut être transmis à un autre service ou une autre application qui peut lire les données JSON.
 
@@ -558,4 +553,16 @@ C. Générer du texte non structuré.
 
 ## Ressources d'auto-apprentissage
 
-* [Série vidéo sur l'IA générative avec JavaScript](https://aka.ms/genai-js)
+
+## JSON validé avec le SDK actuel
+
+Exécutez l'exemple JSON Schema depuis la racine du dépôt :
+
+```bash
+npm ci --prefix lessons/04-structured-output/sample-app
+npm --prefix lessons/04-structured-output/sample-app run structured
+```
+
+L'exemple utilise `chat.completions.parse`, `zodResponseFormat` et Zod pour valider `skill`, `parameters` et `extracted_data`. Les réponses manquantes et les refus du modèle produisent des erreurs.
+
+[structured-json.js](/lessons/04-structured-output/sample-app/structured-json.js)

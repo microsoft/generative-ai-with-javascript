@@ -12,13 +12,11 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Regardez une courte vidéo sur l'ingénierie des prompts](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=3)
 
 *Cette vidéo propose une introduction à l'amélioration de vos compétences en matière de "prompt", en vous apprenant à donner des instructions plus claires et plus efficaces à l'IA pour obtenir de meilleurs résultats.*
 
 *🎥 Cliquez sur l'image ci-dessus pour regarder une courte vidéo sur l'ingénierie des prompts*
 
-💼 Présentation : [Ingénierie des prompts](/videos/slides/02-prompt-engineering.pptx)
 
 ## Narrative: Ticket to ride
 
@@ -116,14 +114,14 @@ Si vous souhaitez interagir avec Sforza, exécutez l'application [Personnages](/
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Naviguez vers */app* à la racine du dépôt.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Sforza.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ## Qu'est-ce que l'ingénierie des prompts ?
 

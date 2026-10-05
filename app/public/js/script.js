@@ -12,6 +12,7 @@ let currentCharacter = currentUrl.searchParams.get('character') || "";
 let currentVoice = "<%= voice  %>";
 
 const maxVolume = 0.5
+let sending = false;
 
 backgroundEl.volume = maxVolume;
 
@@ -78,15 +79,24 @@ buttonChange.addEventListener("click", () => {
 
 button.addEventListener('click', () => {
   const message = chatWindow.value;
+  if (!message || sending) return;
+  sending = true;
+  button.disabled = true;
   responseWindow.value = `You: ${message}`;
   fetch('/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ message })
+    body: JSON.stringify({ message, character: { name: listEl.value } })
   })
-    .then(response => response.json())
+    .then(async response => {
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message || 'The request failed.');
+      }
+      return data;
+    })
     .then(data => {
       responseWindow.value += `\n<%= title %>: ${data.answer}`;
       console.log("speak enabled", speakEl.checked);
@@ -97,7 +107,12 @@ button.addEventListener('click', () => {
 
     })
     .catch(error => {
-      console.error('Error:', error.error);
+      console.error('Error:', error.message);
+      responseWindow.value += `\n${error.message}`;
+    })
+    .finally(() => {
+      sending = false;
+      button.disabled = false;
     });
   chatWindow.value = '';
 });

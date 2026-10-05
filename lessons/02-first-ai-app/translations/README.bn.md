@@ -10,16 +10,6 @@
 
 যদি আপনি এখনো সেটআপ না করে থাকেন, তাহলে আপনার ডেভেলপমেন্ট এনভায়রনমেন্ট সেট আপ করুন। এটি করার জন্য এই লিঙ্কটি অনুসরণ করুন: [আপনার এনভায়রনমেন্ট সেটআপ করুন](/docs/setup/README.md)।
 
-## সম্পর্কিত রিসোর্সসমূহ
-
-[![বড় ভাষা মডেল সম্পর্কে একটি ছোট ভিডিও দেখুন](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
-
-_এই ভিডিওটি AI মডেল, বিশেষ করে "বড় ভাষা মডেল" (LLMs) কী এবং কীভাবে এগুলো ব্যবহার করে আপনার অ্যাপে AI সংযুক্ত করা যায় তা পরিচয় করিয়ে দেয়।_
-
-*🎥 উপরের ছবিতে ক্লিক করে বড় ভাষা মডেল সম্পর্কে একটি ছোট ভিডিও দেখুন*
-
-💼 স্লাইড: [বড় ভাষা মডেল, LLMs-এর পরিচিতি](/videos/slides/01-llms.pptx)
-
 ## গল্প: নিজেকে একটি নদীতে একটি নৌকায় কল্পনা করুন
 
 > [!NOTE]  
@@ -132,14 +122,14 @@ _এই ভিডিওটি AI মডেল, বিশেষ করে "বড
 
 1. শুরু করুন [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)  
 2. রিপোজিটরির মূল ফোল্ডারে _/app/README.md_ এ যান।  
-3. কনসোলে `npm install` চালান, তারপর `npm start` কমান্ড দিন।  
+3. কনসোলে `npm ci` চালান, তারপর `npm start` কমান্ড দিন।
 4. যখন অ্যাপটি চালু হবে, তখন "Open in Browser" বোতামটি নির্বাচন করুন।  
 5. এখন আপনি লিওনার্দোর সাথে চ্যাট করতে পারেন।  
 
 আরও বিস্তারিত জানতে, দেখুন [বিস্তারিত অ্যাপ ব্যাখ্যা](/lessons/01-intro-to-genai/translations/README.bn.md#ডিনোক্রেটিসের-সাথে-সাক্ষাৎ)।  
 
 > [!NOTE]  
-> আপনি যদি প্রকল্পটি আপনার স্থানীয় কম্পিউটারে চালান, তাহলে দয়া করে **QuickStart গাইড** অনুসরণ করে [GitHub ব্যক্তিগত অ্যাক্সেস টোকেন (PAT)](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) সেটআপ করুন এবং কোডে টোকেনটি প্রতিস্থাপন করুন।
+> রিপোজিটরির মূল ফোল্ডারের `.env` ফাইলে `AI_ENDPOINT`, `AI_API_KEY` এবং `AI_MODEL` সেট করুন। লোকাল পরিবেশ এবং Codespaces উভয়ের জন্য এই সেটিংস প্রয়োজন। [সেটআপ নির্দেশিকা](/docs/setup/README.md#configure-environment-variables) দেখুন।
 > ## ডেভেলপমেন্ট এনভায়রনমেন্ট সেটআপ  
 
 লিওনার্দোকে তার প্রকল্পে সাহায্য করার আগে, প্রথমেই আপনার **"কারিগরি সরঞ্জাম"** সম্পর্কে চিন্তা করা উচিত, যা আপনাকে কার্যকরভাবে সহায়তা করতে সাহায্য করবে।  
@@ -199,9 +189,16 @@ ${question}
 // 2. ক্লায়েন্ট তৈরি করুন
 // -----------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,  // পরিবেশ পরিবর্তনশীল ব্যবহার করুন
+  baseURL: endpoint,
+  apiKey,  // পরিবেশ পরিবর্তনশীল ব্যবহার করুন
 });
 
 // 3. অনুরোধ পাঠান
@@ -223,7 +220,7 @@ console.log(completion.choices[0]?.message?.content);
 
 ### **আপনার অ্যাপ চালানোর জন্য করণীয়:**  
 1. **Node.js এবং npm ইনস্টল করুন**  
-2. **আপনার API কী (GITHUB_TOKEN) সেট করুন** পরিবেশ পরিবর্তনশীল হিসাবে  
+2. **`AI_ENDPOINT`, `AI_API_KEY`, এবং `AI_MODEL` সেট করুন** পরিবেশ পরিবর্তনশীল হিসাবে
 3. **এই স্ক্রিপ্টটি চালান:**  
    ```bash
    node your_script.js
@@ -244,13 +241,13 @@ console.log(completion.choices[0]?.message?.content);
 
 **আপনি:** "আমি মনে করি আমি বুঝতে পেরেছি। তাহলে যদি আমি `question` ভেরিয়েবলের মান পরিবর্তন করি, তাহলে অ্যাপটি ভিন্ন ইতালীয় অনুবাদ তৈরি করবে?"  
 
-**টাইম বিটল:** "একদম ঠিক! আপনি ইনপুট পাঠ্য যেকোনো কিছুতে পরিবর্তন করতে পারেন। লক্ষ্য করুন, **GitHub মডেল** API-এর বেস URL হিসাবে ব্যবহার করা হচ্ছে এবং **GitHub টোকেন** API কী হিসেবে ব্যবহার করা হয়েছে।"  
+**টাইম বিটল:** এন্ডপয়েন্ট, API কী এবং ডেপ্লয়মেন্টের নাম আপনার Microsoft Foundry রিসোর্স থেকে আসে। কোডে `AI_ENDPOINT`, `AI_API_KEY` এবং `AI_MODEL` ব্যবহার করা হয়।
 
 **আপনি:** "এটি গুরুত্বপূর্ণ কেন?"  
 
-**টাইম বিটল:** "এটি গুরুত্বপূর্ণ কারণ আপনি যে মডেলটি ব্যবহার করছেন, সেটির জন্য নির্দিষ্ট **বেস URL এবং API কী** ব্যবহার করা প্রয়োজন। **GitHub Models** একটি প্ল্যাটফর্ম যেখানে বিভিন্ন ক্ষমতা ও বৈশিষ্ট্যের মডেল হোস্ট করা হয়, এবং এটি বিনামূল্যে ব্যবহারের জন্য উপলব্ধ।"  
+**টাইম বিটল:** Microsoft Foundry মডেল ডেপ্লয়মেন্ট হোস্ট করে। একই রিসোর্সের এন্ডপয়েন্ট ও API কী ব্যবহার করুন এবং `AI_MODEL`-এ ডেপ্লয়মেন্টের নাম দিন। Azure-এর মূল্য এবং কোটা পরীক্ষা করুন।
 
-**আপনি:** "ওহ দারুণ, যাক! আমি জানি না কাকে টাকা দিতে হবে, আর আমি সন্দেহ করি যে তারা আমার মুদ্রা গ্রহণ করবে কিনা। 😄"
+**আপনি:** "তাহলে ছোট একটি ডেপ্লয়মেন্ট ব্যবহার করব এবং পরীক্ষা করার আগে খরচ দেখে নেব।"
 ## চ্যাট অ্যাপস  
 
 **টাইম বিটল:** "Generative AI মডেলগুলোকে কথোপকথনের উপর ভিত্তি করে **পাঠ্য তৈরি করতেও ব্যবহার করা যায়**। আপনি AI-এর সাথে **একটি কথোপকথন অনুকরণ করতে পারেন** একটি **বার্তার তালিকা (messages list)** প্রদান করে, যা মনে হবে যেন কথোপকথন ইতিমধ্যেই ঘটেছে।"  
@@ -313,9 +310,16 @@ const messages = [
  } 
 ]; 
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,  // API কী সংযুক্ত করুন
+  baseURL: endpoint,
+  apiKey,  // API কী সংযুক্ত করুন
 });
 
 // অনুরোধ পাঠান
@@ -550,5 +554,5 @@ C. **প্রসঙ্গ উইন্ডো নির্ধারণ করে
 - [টেক্সট জেনারেশন](https://platform.openai.com/docs/guides/text-generation)  
 - [OpenAI-এর জন্য JavaScript লাইব্রেরি](https://github.com/openai/openai-node/tree/master/examples)  
 - [Tokenizer](https://platform.openai.com/tokenizer)  
-- [Completion API](https://platform.openai.com/docs/api-reference/completions)  
-- [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models)  
+- [Completion API](https://github.com/openai/openai-node#usage)
+- [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models)

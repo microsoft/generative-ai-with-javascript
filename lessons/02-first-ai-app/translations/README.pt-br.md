@@ -10,16 +10,6 @@ Neste capítulo você vai aprender:
 
 Se você ainda não configurou seu ambiente de desenvolvimento, veja como fazer: [Configure seu ambiente](/docs/setup/README.md).
 
-## Recursos relacionados
-
-[![Assista a um vídeo curto sobre grandes modelos de linguagem](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
-
-_Este vídeo apresenta uma introdução aos modelos de IA chamados "grandes modelos de linguagem", LLMs, o que são e como você pode usá-los para integrar IA em seus aplicativos._
-
-*🎥 Clique na imagem acima para assistir a um vídeo curto sobre grandes modelos de linguagem*
-
-💼 Slides: [Introdução aos grandes modelos de linguagem, LLMs](/videos/slides/01-llms.pptx)
-
 ## Narrativa: Imagine-se em um barco num rio
 
 
@@ -42,7 +32,7 @@ Quando você abre os olhos, o mundo mudou. Ao conseguir se levantar, você perce
 Observando o barco, você encontra um remo longo apoiado na lateral. Segurando-o, você começa a remar em direção aos edifícios distantes. À medida que se aproxima, os edifícios ficam mais nítidos, são antigos, sua arquitetura lembrando uma pintura renascentista.
 
 <div>
-  <img src="../assets/boat.png" alt="Barco no rio, homem em pé com um remo" width=300" >
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png" alt="Barco no rio, homem em pé com um remo" width="300" >
 </div>
 
 A questão agora é: onde e quando você está desta vez?
@@ -52,7 +42,7 @@ Você consegue atracar o barco no cais e começa a caminhar ao longo das tábuas
 Enquanto caminha, você nota um homem com uma longa barba e um chapéu, remexendo em uma caixa do que parecem ser peças mecânicas. Suas mãos se movem com destreza, separando engrenagens e molas com facilidade experiente.
 
 <div >
-  <img src="../assets/leonardo.png" alt="Leonardo Da Vinci em pé ao lado de uma caixa no porto" width="300" >
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png" alt="Leonardo Da Vinci em pé ao lado de uma caixa no porto" width="300" >
 </div>
 
 ### Ajude-me, Leonardo
@@ -82,7 +72,7 @@ Enquanto caminha, você nota um homem com uma longa barba e um chapéu, remexend
 ### Na oficina
 
 <div>
-  <img src="../assets/leonardo-workshop.png" alt="Oficina de Leonardo" width="300" >
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png" alt="Oficina de Leonardo" width="300" >
 </div>
 
 O velho o leva até uma grande porta de madeira e você é recebido pela visão de uma oficina cheia de todo tipo de engenhocas mecânicas. 
@@ -125,21 +115,21 @@ Se você quiser interagir com Leonardo, execute o aplicativo [Characters](/app/R
 > [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="../assets/leonardo-talk.jpeg" width=300>
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg" width=300>
 </div>
 
 **Passos**:
 
 1. Inicie um [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navegue até _/app/README.md_ na raiz do repositório.
-3. Localize o console e execute `npm install` seguido de `npm start`. 
+3. Localize o console e execute `npm ci` seguido de `npm start`.
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Leonardo.
 
 Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interaja-com-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+> Configure `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL` no arquivo `.env` na raiz do repositório, tanto localmente quanto no Codespaces. Consulte o [guia de configuração](/docs/setup/README.md#configure-environment-variables).
 
 ## Configuração do ambiente de desenvolvimento 
 
@@ -181,7 +171,7 @@ Antes de poder ajudar Leonardo com seu projeto, você deve primeiro pensar nas "
 
 **Besouro do Tempo:** Modelos de IA generativa podem ser usados para muitas coisas, por exemplo, tradução de idiomas. Na verdade, ele aceita entrada em um idioma e pode gerar texto em outro idioma. Vamos começar com um aplicativo simples que recebe entrada em inglês e gera texto em italiano.
 
-```javascript 
+```javascript
 
 import { OpenAI } from "openai";
 
@@ -200,9 +190,16 @@ ${question}
 // 2. Crie o cliente
 // -----------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -232,13 +229,13 @@ Vamos explicar o que está acontecendo aqui:
 
 **Você:** Acho que entendi. Então, se eu mudar o valor da variável `question` para outra coisa, o aplicativo gerará uma tradução italiana diferente?
 
-**Besouro do Tempo:** Exatamente, você pode alterar o texto de entrada para qualquer coisa que desejar. Observe também como os modelos do GitHub estão sendo usados como a URL base para a API junto com um token do GitHub como a chave da API.
+**Besouro do Tempo:** O endpoint, a chave de API e o nome da implantação vêm do seu recurso Microsoft Foundry. O código usa `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL`.
 
 **Você:** Por que isso é importante?
 
-**Besouro do Tempo:** É importante usar uma URL base e uma chave de API específicas para o modelo que você está usando. GitHub Models é uma plataforma que hospeda uma variedade de modelos, todos com diferentes capacidades e recursos, e também é gratuito para usar.
+**Besouro do Tempo:** O Microsoft Foundry hospeda a implantação. Use uma chave da mesma origem do endpoint e defina o nome da implantação em `AI_MODEL`. Verifique os preços e as cotas do Azure.
 
-**Você:** Ah, que bom, eu não sei quem pagar de qualquer forma e duvido que eles aceitem minha moeda aqui. :) 
+**Você:** Então vou usar uma implantação pequena e verificar os custos antes de experimentar.
 
 ## Aplicativos de chat
 
@@ -274,7 +271,7 @@ IA: Roma é conhecida por suas ruínas antigas, arte e cultura vibrante. Você p
 
 **Besouro do Tempo:** Abaixo está como podemos construir uma conversa com a IA: 
 
-```javascript 
+```javascript
 
 // Defina o contexto 
 
@@ -301,9 +298,16 @@ const messages = [
  } 
 ]; 
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -462,7 +466,7 @@ Leonardo de repente pediu para inspecionar o Besouro do Tempo mais de perto, olh
 **Besouro do Tempo:** Nada
 
 <div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="../assets/helicopter.jpg" alt="Parafuso aéreo, Leonardo Da Vinci" width="300" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg" alt="Parafuso aéreo, Leonardo Da Vinci" width="300" >
 </div>
 
 > [!NOTE]
@@ -507,5 +511,5 @@ C. A janela de contexto determina quão criativas são as respostas da IA.
 - [Geração de texto](https://platform.openai.com/docs/guides/text-generation)
 - [Biblioteca JavaScript para OpenAI](https://github.com/openai/openai-node/tree/master/examples) 
 - [Tokenizer](https://platform.openai.com/tokenizer)
-- [API de Completions](https://platform.openai.com/docs/api-reference/completions)
+- [API de Completions](https://github.com/openai/openai-node#usage)
 - [Chat completions](https://platform.openai.com/docs/guides/text-generation#text-generation-models)

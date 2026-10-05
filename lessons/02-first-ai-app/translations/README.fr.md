@@ -12,13 +12,11 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Regardez une courte vidéo sur les modèles de langage étendus.](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=2)
 
 *Cette vidéo vous donne une introduction aux modèles d'IA appelés "modèles de langage étendus", LLM, ce qu'ils sont et comment vous pouvez les utiliser pour intégrer l'IA dans vos applications.*
 
 *🎥 Cliquez sur l’image ci-dessus pour regarder une courte vidéo sur les modèles de langage étendus*
 
-💼 Diapositives : [Introduction aux modèles de langage étendus, LLMs](/videos/slides/01-llms.pptx)
 
 ## Narrative: Picture yourself in a boat on a river
 
@@ -122,14 +120,14 @@ Si vous voulez interagir avec Léonard, exécutez l'application [Personnages](/a
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Accédez à */app/README.md* à la racine du référentiel.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Leonardo.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ## Configuration de l'environnement de développement
 
@@ -192,9 +190,16 @@ ${question}
 // 2. Create client
 // -----------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -224,13 +229,13 @@ Expliquons ce qui se passe ici :
 
 **Vous :** Je pense que je comprends. Donc, si je change la valeur de la variable `question` par autre chose, l'application générera une traduction italienne différente ?
 
-**Scarabée du Temps :** Exactement, vous pouvez changer le texte d'entrée comme vous le souhaitez. Notez également comment les modèles GitHub sont utilisés comme URL de base pour l'API avec un token GitHub comme clé API.
+**Scarabée du Temps :** Le point de terminaison, la clé API et le nom du déploiement proviennent de votre ressource Microsoft Foundry. Le code utilise `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL`.
 
 **Vous :** Pourquoi est-ce important ?
 
-**Scarabée du Temps :** Il est important d'utiliser une URL de base et une clé API spécifiques au modèle que vous utilisez. GitHub Models est une plateforme qui héberge une variété de modèles, chacun ayant des capacités et des fonctionnalités différentes. De plus, c’est gratuit à utiliser.
+**Scarabée du Temps :** Microsoft Foundry héberge le déploiement. Utilisez une clé API de la même ressource que le point de terminaison et son nom de déploiement dans `AI_MODEL`. Vérifiez les tarifs et les quotas Azure.
 
-**Vous :** Ah, tant mieux, je ne sais pas qui payer de toute façon, et je doute qu’ils acceptent ma monnaie ici. :)
+**Vous :** Je vais donc utiliser un petit déploiement et vérifier les coûts avant de faire des essais.
 
 ## Applications de chat
 
@@ -293,9 +298,16 @@ const messages = [
  } 
 ]; 
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -497,5 +509,5 @@ C. La fenêtre de contexte détermine à quel point les réponses de l’IA sont
 * [Génération de texte](https://platform.openai.com/docs/guides/text-generation)
 * [Bibliothèque JavaScript pour OpenAI](https://github.com/openai/openai-node/tree/master/examples)
 * [Tokeniseur](https://platform.openai.com/tokenizer)
-* [API de complétion](https://platform.openai.com/docs/api-reference/completions)
+* [API de complétion](https://github.com/openai/openai-node#usage)
 * [Complétions de chat](https://platform.openai.com/docs/guides/text-generation#text-generation-models)

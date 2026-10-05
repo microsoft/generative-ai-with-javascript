@@ -10,18 +10,6 @@ Neste capítulo você vai aprender:
 
 Se você ainda não configurou seu ambiente de desenvolvimento, veja como fazer: [Configure seu ambiente](/docs/setup/README.md).
 
-## Recursos relacionados
-
-Vale a pena reassistir ao vídeo sobre engenharia de prompts, pois ele estabelece a base para o que você está prestes a aprender neste capítulo.
-
-[![Assista a um vídeo curto sobre engenharia de prompts](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
-
-_Este vídeo oferece uma introdução para melhorar suas habilidades de "prompting", ensinando como dar instruções mais claras e eficazes à IA para obter melhores resultados._
-
-*🎥 Clique na imagem acima para assistir a um vídeo curto sobre engenharia de prompts*
-
-💼 Slides: [Engenharia de prompts](/videos/slides/02-prompt-engineering.pptx)
-
 ## Narrativa - Da frigideira para o fogo
 
 > [!NOTE]
@@ -47,7 +35,7 @@ A luz brilhante do Besouro do Tempo desaparece, e você se vê parado na base de
 O parafuso aéreo repousa desajeitadamente sobre uma grande pedra intrincadamente esculpida, com marcações que parecem um calendário
 
 <div>
-  <img alt="Calendário asteca, Wikipedia" src="../assets/aztec.png" width="300" />
+  <img alt="Calendário asteca, Wikipedia" src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/aztec.png" width="300" />
 </div>
 
 _Calendário asteca, Wikipedia_
@@ -59,7 +47,6 @@ Leonardo da Vinci avança, seus olhos arregalados de admiração.
 Antes que você possa reagir, um grupo de soldados astecas se aproxima.
 
 <div>
-  <img src="../assets/meeting.png" alt="Encontro com astecas" width="300" />
 </div> 
 
 **Líder dos soldados:** "Quem são vocês e o que fizeram?" ele exige em Nahuatl.
@@ -83,7 +70,7 @@ Ao chegar ao topo da pirâmide, você é conduzido a uma grande câmara onde Mon
 **Montezuma:** "Muito bem. Proponho um jogo de [Patolli](#patolli). Se eu vencer a melhor de três partidas, vocês me darão seu dispositivo e me dirão como ele funciona. Se vocês vencerem, estarão livres para ir."
 
 <div>
-  <img src="../assets/game.png" alt="Jogando uma partida de Patolli" width="300" />
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/game.png" alt="Jogando uma partida de Patolli" width="300" />
 </div>
 
 O jogo começa, e a sala fica em silêncio, exceto pelo som de feijões sendo rolados e peças se movendo pelo tabuleiro.
@@ -115,7 +102,7 @@ Com um movimento final e decisivo, Leonardo vence o jogo. A sala explode em viva
 > **Envolvimento Asteca**: Amplamente jogado por nobres e plebeus, era um favorito na corte de Montezuma. Além de diversão, envolvia apostas de alto risco com apostas como cobertores, pedras preciosas ou até mesmo a liberdade.
 
 <div>
-  <img width="300" src="../assets/patolli.png" alt="Tabuleiro de Patolli" />
+  <img width="300" src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/patolli.png" alt="Tabuleiro de Patolli" />
 </div>
 
 _Patolli - Wikipedia_
@@ -129,21 +116,21 @@ Se você quiser interagir com Montezuma, execute o aplicativo [Characters](/app/
 > [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="../assets/montezuma.jpeg" alt="Montezuma" width="300" />
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/montezuma.jpeg" alt="Montezuma" width="300" />
 </div>
 
 **Passos**:
 
 1. Inicie um [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navegue até _/app_ na raiz do repositório.
-3. Localize o console e execute `npm install` seguido de `npm start`.
+3. Localize o console e execute `npm ci` seguido de `npm start`.
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Montezuma.
 
 Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+> Configure `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL` no arquivo `.env` na raiz do repositório, tanto localmente quanto no Codespaces. Consulte o [guia de configuração](/docs/setup/README.md#configure-environment-variables).
 
 ## Saída Estruturada
 
@@ -568,4 +555,16 @@ C. Gerar texto não estruturado.
 
 ## Recursos para auto-estudo
 
-- [Série de vídeos sobre IA Generativa com JavaScript](https://aka.ms/genai-js)
+
+## JSON validado com o SDK atual
+
+Execute o exemplo de JSON Schema na raiz do repositório:
+
+```bash
+npm ci --prefix lessons/04-structured-output/sample-app
+npm --prefix lessons/04-structured-output/sample-app run structured
+```
+
+O exemplo usa `chat.completions.parse`, `zodResponseFormat` e Zod para validar `skill`, `parameters` e `extracted_data`. Respostas ausentes e recusas do modelo geram erros.
+
+[structured-json.js](/lessons/04-structured-output/sample-app/structured-json.js)

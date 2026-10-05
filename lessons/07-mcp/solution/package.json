@@ -1,24 +1,25 @@
 {
    "type": "module",
    "bin": {
-     "weather": "./build/index.js"
+      "weather": "./build/index.js"
    },
    "scripts": {
-     "client": "tsc && node ./build/client.js",
-     "build": "tsc && node ./build/index.js",
-     "inspect": "npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/list"
+      "client": "npm run build && node ./build/client.js",
+      "build": "tsc",
+      "start": "node build/index.js",
+      "inspect": "npm run build && mcp-inspector --cli node build/index.js --method tools/list",
+      "inspect:web": "npm run build && mcp-inspector --web node build/index.js"
    },
    "files": [
-     "build"
+      "build"
    ],
    "dependencies": {
-        "@modelcontextprotocol/sdk": "^1.8.0",
-        "express": "^5.0.1",
-        "type": "^2.7.3",
-        "zod": "^3.24.2"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.17",
-    "typescript": "^5.8.2"
-  }
+      "@modelcontextprotocol/sdk": "^1.32.1",
+      "zod": "^4.6.5"
+   },
+   "devDependencies": {
+      "@modelcontextprotocol/inspector": "^2.9.0",
+      "@types/node": "^24.19.1",
+      "typescript": "^7.0.2"
+   }
 }

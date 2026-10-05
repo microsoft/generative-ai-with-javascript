@@ -12,13 +12,11 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Regardez une courte vidéo sur RAG](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=4)
 
 *Cette vidéo explique la génération augmentée par récupération (RAG), une méthode qui aide l'IA à utiliser vos contenus en complément de ses données d'entraînement pour de meilleurs résultats.*
 
 *🎥 Cliquez sur l'image ci-dessus pour regarder une courte vidéo sur la génération augmentée par récupération, RAG.*
 
-💼 Diapositives : [Génération augmentée par récupération, RAG](/videos/slides/03-rag.pptx)
 
 ## Narration - Genèse
 
@@ -84,14 +82,14 @@ If you want to interact with Ada, run the [Characters](/app/README.md) app.
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Naviguez vers */app* à la racine du dépôt.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Ada.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ## Défis connus avec les modèles de langage à grande échelle (LLMs)
 
@@ -258,13 +256,20 @@ ${question}
 // 4. Generator component: use the search results to generate a response
 // ---------------------------------------------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 const chunks = await openai.chat.completions.create({
-  model: "gpt-4o-mini",
+  model,
   messages: [{ role: "user", content: augmentedPrompt }],
   stream: true,
 });
@@ -272,7 +277,7 @@ const chunks = await openai.chat.completions.create({
 console.log(`Answer for "${question}":`);
 
 for await (const chunk of chunks) {
-  process.stdout.write(chunk.choices[0].delta.content ?? "");
+  process.stdout.write(chunk.choices[0]?.delta.content ?? "");
 }
 ```
 
@@ -340,4 +345,4 @@ C. Le récupérateur trouve des informations pertinentes à partir de sources de
 * **Exemples d'applications** :
   * [Chat IA sans serveur avec RAG](https://github.com/Azure-Samples/serverless-chat-langchainjs/)
   * [Demandez à Youtube : Une API de questions-réponses basée sur RAG pour Youtube](https://github.com/Azure-Samples/langchainjs-quickstart-demo)
-* [Atelier complet : Créez votre propre ChatGPT avec RAG](https://moaw.dev/workshop/gh\:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md)
+* [Atelier complet : Créez votre propre ChatGPT avec RAG](https://github.com/Azure-Samples/azure-openai-rag-workshop)

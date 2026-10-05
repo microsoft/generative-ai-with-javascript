@@ -1,11 +1,11 @@
 # Solution for Lesson 6: Tool Calling
 
-This solution demonstrates how to call a tool from the AI model. It uses GitHub Models and openai library for calling the tool.
+The endpoint, API key, and deployment name come from your Microsoft Foundry resource. The code reads them from `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL`.
 
 ## Installation
 
 ```bash
-npm install
+npm ci
 ```
 
 ## Usage
@@ -13,4 +13,3 @@ npm install
 ```bash
 npm start
 ```
-

@@ -1,84 +1,49 @@
+# Run the Advanced MCP Solution
 
-# Running the solution
-
-In this chapter you will learn:
-
-- How to use the Model Context Protocol, MCP to split up your server capabilities in a server and a client
-- Create tools, resources and prompts on the server.
-- Consume the server using both the inspector tool and a written client.
+This sample exposes `characterDetails` and `place` tools that retrieve Wikipedia summaries. The client converts MCP tool schemas to OpenAI function tools, awaits each call, sends the results back to the model, and prints its final answer.
 
 ## Setup
 
-If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
+Use Node.js LTS. Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` as described in the [course setup guide](/docs/setup/README.md).
 
-## Related resources
+From `lessons/08-mcp-advanced/solutions`:
 
-[![Watch a short video about MCP](https://img.youtube.com/vi/YRfOiB0Im64/0.jpg)](https://www.youtube.com/watch?v=YRfOiB0Im64)
-
-_This video explains Model Context Protocol._
-
-*🎥 Click on the image above to watch a short video about MCP*
-
-## Install
-
-```sh
-npm i
+```bash
+npm ci
+npm run build
 ```
 
-## Run the sample
+`build` only compiles the TypeScript. To run the server by itself, use `npm start`. It communicates over stdin/stdout; diagnostic messages must go to stderr.
 
-1. Build the server
+## Inspect the Tools
 
-  ```sh
-  npm run build
-  ```
+```bash
+npm run inspect
+npm run tool
+```
 
-  This compiles and runs the server, once you see the text "MCPServer started on stdin/stdout" you can type Ctrl-C to take it down.
+The first command lists the tools. The second calls `characterDetails` for Ada Lovelace. Both commands build the server first. Wikipedia must be reachable.
 
-## Test the sample
+For the web inspector:
 
-It's a good idea to check if your features are working as intended. Try below command to quickly check your server responds.
+```bash
+npm run inspect:web
+```
 
-  1. List all tools on the server like so:
+Open the local address printed by the inspector and keep its ports private.
 
-    ```sh
-    npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/call --tool-name characterDetails --tool-arg name=Ada
-    ```
+## Run the Model Client
 
-    You should see response similar to:
+```bash
+npm run client
+```
 
-    ```json
-    {
-      "content": [
-        {
-          "type": "text",
-          "text": "Character: ...response from API"
-        }
-      ]
-    }
-    ```
+The script builds the client and loads the root `.env` when available. It prints the available tools, the Wikipedia result, and a final model response about Ada Lovelace. It closes the transport when finished.
 
-    Let's proceed to running the client.
+For another environment file, build first and use Node's file option:
 
-## Running the client
+```bash
+node --env-file="$HOME/.env" build/client.js
+```
 
-1. Run the client
-
-  ```sh
-  npm run client
-  ```
-
-  You should see the following tool response:
-
-  ```text
-  Tool result:  {
-    content: [
-      {
-        type: 'text',
-        text: "Character: Augusta Ada King, Countess of Lovelace, also known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation."
-      }
-    ]
-  }
-  ```
-
-  Great, it all works as intended.
+The sample only dispatches tools advertised by its own MCP server. Invalid arguments, tool failures, and missing model responses produce explicit errors.

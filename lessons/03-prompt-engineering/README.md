@@ -10,16 +10,6 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related Resources
-
-[![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
-
-_This video offers an introduction to improving your "prompting" skills, teaching you how to give clearer and more effective instructions to the AI to achieve better results._
-
-*🎥 Click on the image above to watch a short video about prompt engineering*
-
-💼 Slides: [Prompt engineering](/videos/slides/02-prompt-engineering.pptx)
-
 ## Narrative: Ticket to ride
 
 > [!NOTE] 
@@ -116,14 +106,14 @@ If you want to interact with Sforza, run the [Characters](/app/README.md) app.
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`.
+3. Locate the console and run `npm ci` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Sforza.
 
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` for both local development and Codespaces. See the [setup guide](/docs/setup/README.md#configure-environment-variables).
 
 ## What is prompt engineering?
 
@@ -330,6 +320,4 @@ C. Prompt engineering is about training a model to recognize patterns in data.
 
 - [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 - [Prompt engineering fundamentals](https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md?WT.mc_id=academic-105485-koreyst)
-- [Advanced prompt engineering](https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts) 
-
- 
+- [Advanced prompt engineering](https://github.com/microsoft/generative-ai-for-beginners/tree/main/05-advanced-prompts)

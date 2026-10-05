@@ -10,18 +10,6 @@
 
 如果您尚未设置开发环境，请按照以下方法进行设置：[设置您的环境](/docs/setup/README.md)。
 
-## 相关资源
-
-值得重新观看关于提示工程的视频，因为它为您即将在本章学习的内容奠定了基础。
-
-[![观看关于提示工程的短视频](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
-
-_这个视频介绍了如何提高您的"提示"技能，教您如何向AI提供更清晰、更有效的指令以获得更好的结果。_
-
-*🎥 点击上方图片观看关于提示工程的短视频*
-
-💼 幻灯片：[提示工程](../../../videos/slides/02-prompt-engineering.pptx)
-
 ## 故事情节 - 跳出油锅，掉进火坑
 
 > [!NOTE]
@@ -47,7 +35,7 @@ _这个视频介绍了如何提高您的"提示"技能，教您如何向AI提供
 空中螺旋机尴尬地停在一块雕刻精美的大石头上，上面有看起来像日历的标记
 
 <div>
-  <img alt="阿兹特克日历，维基百科" src="../assets/aztec.png" width="300" />
+  <img alt="阿兹特克日历，维基百科" src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/aztec.png" width="300" />
 </div>
 
 _阿兹特克日历，维基百科_
@@ -59,7 +47,6 @@ _阿兹特克日历，维基百科_
 在您做出反应之前，一群阿兹特克士兵走了过来。
 
 <div>
-  <img src="../assets/meeting.png" alt="与阿兹特克人会面" width="300" />
 </div> 
 
 **士兵领袖**："你们是谁，做了什么？"他用纳瓦特尔语质问道。
@@ -83,7 +70,7 @@ _阿兹特克日历，维基百科_
 **蒙特祖马**："很好。我提议玩一场[帕托利](#patolli)游戏。如果我赢得三局中的大多数，你们将把你们的设备给我并告诉我它是如何工作的。如果你们赢了，你们可以自由离开。"
 
 <div>
-  <img src="../assets/game.png" alt="玩帕托利游戏" width="300" />
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/game.png" alt="玩帕托利游戏" width="300" />
 </div>
 
 游戏开始了，房间里一片寂静，只有豆子滚动和棋子在棋盘上移动的声音。
@@ -115,7 +102,7 @@ _阿兹特克日历，维基百科_
 > **阿兹特克人的参与**：贵族和平民广泛玩这个游戏，它是蒙特祖马宫廷的最爱。除了娱乐外，它还涉及高风险赌博，赌注如毯子、宝石甚至自由。
 
 <div>
-  <img width="300" src="../assets/patolli.png" alt="帕托利棋盘" />
+  <img width="300" src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/patolli.png" alt="帕托利棋盘" />
 </div>
 
 _帕托利 - 维基百科_
@@ -129,21 +116,21 @@ _帕托利 - 维基百科_
 > [负责任的AI免责声明](../../../README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="../assets/montezuma.jpeg" alt="蒙特祖马" width="300" />
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/montezuma.jpeg" alt="蒙特祖马" width="300" />
 </div>
 
 **步骤**：
 
 1. 启动一个[![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. 导航到仓库根目录中的_/app_。
-3. 找到控制台并运行`npm install`，然后运行`npm start`。
+3. 找到控制台并运行`npm ci`，然后运行`npm start`。
 4. 出现后，选择"在浏览器中打开"按钮。
 5. 与蒙特祖马聊天。
 
 有关应用的更详细解释，请参阅[详细应用解释](../../01-intro-to-genai/README.md#interact-with-dinocrates)。
 
 > [!NOTE]
-> 如果您在本地机器上运行项目，请查看快速入门指南，设置[GitHub个人访问令牌](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)并替换代码中的密钥。
+> 在存储库根目录的 `.env` 中配置 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。本地开发和 Codespaces 都需要这些设置。请参阅[配置指南](/docs/setup/README.md#configure-environment-variables)。
 
 ## 结构化输出
 
@@ -562,4 +549,15 @@ C. 生成非结构化文本。
 
 ## 自学资源
 
-- [使用JavaScript的生成式AI视频系列](https://aka.ms/genai-js)
+## 使用当前 SDK 验证 JSON
+
+在存储库根目录运行 JSON Schema 示例：
+
+```bash
+npm ci --prefix lessons/04-structured-output/sample-app
+npm --prefix lessons/04-structured-output/sample-app run structured
+```
+
+示例使用 `chat.completions.parse`、`zodResponseFormat` 和 Zod 验证 `skill`、`parameters` 和 `extracted_data`。缺少结果或模型拒绝请求时会报告错误。
+
+[structured-json.js](/lessons/04-structured-output/sample-app/structured-json.js)

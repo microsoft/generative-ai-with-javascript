@@ -10,14 +10,6 @@
 
 আপনার যদি এখনও ডেভেলপমেন্ট এনভায়রনমেন্ট সেটআপ না করা থাকে, তাহলে এটি করুন: [আপনার পরিবেশ সেটআপ করুন](/docs/setup/README.md)।  
 
-## **সম্পর্কিত রিসোর্স**  
-
-[![জেনারেটিভ এআই-এর পরিচিতির উপর সংক্ষিপ্ত ভিডিও দেখুন](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)  
-
-_এই ভিডিওটি জাভাস্ক্রিপ্টের মাধ্যমে জেনারেটিভ এআই-এর পরিচিতি দেয়।_  
-
-💼 **স্লাইডস:** [জেনারেটিভ এআই-এর পরিচিতি](/videos/slides/00-intro.pptx)  
-
 ## **জেনারেটিভ এআই**  
 
 আপনি সম্ভবত ইতোমধ্যে ChatGPT বা জেনারেটিভ এআই-এর মতো টুলগুলোর কথা শুনেছেন। ধারণাটি সহজ: আপনি একটি প্রম্পট দেন, এবং একটি মডেল—যাকে সাধারণত একটি বড় ভাষার মডেল (LLM) বলা হয়—একটি অনুচ্ছেদ বা সম্পূর্ণ পৃষ্ঠা তৈরি করে।  
@@ -189,12 +181,12 @@ _সময়ের যন্ত্র, “জর্জ” ধাতব বি�
 
 1. [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript) ব্যবহার করে কোডস্পেস শুরু করুন।  
 2. রিপোজিটরির মূল ফোল্ডারে _/app_ এ যান।  
-3. কনসোলে `npm install` এবং তারপর `npm start` চালান।  
+3. কনসোলে `npm ci` এবং তারপর `npm start` চালান।
 4. যখন চালু হবে, "Open in Browser" বাটনে ক্লিক করুন।  
 5. ডিনোক্রেটিসের সাথে চ্যাট করুন।  
 
 > [!NOTE]  
-> যদি আপনি এই প্রকল্পটি আপনার লোকাল মেশিনে চালাচ্ছেন, তাহলে কোড চালানোর জন্য [GitHub ব্যক্তিগত অ্যাক্সেস টোকেন](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) সেটআপ করুন।  
+> রিপোজিটরির মূল ফোল্ডারের `.env` ফাইলে `AI_ENDPOINT`, `AI_API_KEY` এবং `AI_MODEL` সেট করুন। লোকাল পরিবেশ এবং Codespaces উভয়ের জন্য এই সেটিংস প্রয়োজন। [সেটআপ নির্দেশিকা](/docs/setup/README.md#configure-environment-variables) দেখুন।
 
 ---
 
@@ -205,41 +197,70 @@ _সময়ের যন্ত্র, “জর্জ” ধাতব বি�
 **`/app/app.js`** ফাইলের মধ্যে নিচের **`app.post`** ফাংশনটি AI ইন্টারঅ্যাকশন পরিচালনা করে:  
 
 ```JavaScript
-app.post('/send', async (req, res) => {
-  const { message } = req.body;
-  const prompt = message;
+import express from 'express';
+import { OpenAI } from 'openai';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { ChatRequestError, getChatRequest, handleBodyError } from './chat-request.js';
+import { getModelConfig, loadEnvironment } from './model-config.js';
 
-  const messages = [
-    {
-      "role": "system",
-      "content": "You are Dinocrates of Alexandria, a famous architect and engineer...",
-    },
-    {
-      "role": "user",
-      "content": prompt
-    }
-  ];
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-  });
-
-  try {
-    console.log(`sending prompt ${prompt}`)
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages,
-    });
-
-    res.json({
-      prompt: prompt,
-      answer: completion.choices[0]?.message?.content
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+export function createApp(openai, model) {
+  if (typeof model !== 'string' || !model.trim()) {
+    throw new Error('A model name is required to create the chat app.');
   }
-});
+  const app = express();
+
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, 'public')));
+  app.locals.delimiters = '{{ }}';
+
+  app.post('/send', async (req, res) => {
+    try {
+      const { prompt, systemMessage } = getChatRequest(req.body);
+      const completion = await openai.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: systemMessage },
+          { role: "user", content: prompt }
+        ]
+      });
+
+      const answer = completion?.choices?.[0]?.message?.content;
+      if (typeof answer !== 'string' || !answer.trim()) {
+        throw new Error('The model did not return an answer.');
+      }
+      res.json({ prompt, answer });
+    } catch (error) {
+      if (error instanceof ChatRequestError) {
+        res.status(400).json({ message: error.message });
+        return;
+      }
+      console.error(`Error: ${error.message}`);
+      res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' });
+    }
+  });
+  app.use(handleBodyError);
+
+  return app;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  loadEnvironment();
+  const port = process.env.PORT || 3000;
+  const { baseURL, apiKey, model } = getModelConfig();
+  const openai = new OpenAI({
+    baseURL,
+    apiKey,
+    timeout: 60000
+  });
+  const app = createApp(openai, model);
+  app.listen(port, '127.0.0.1', () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+}
 ```  
 
 ### **জেনারেটিভ এআই-এর ব্যবহারিক ক্ষেত্র**  
@@ -310,6 +331,4 @@ C. পাইথনই একমাত্র ভাষা যা এআই ডে
 
 ---
 
-## **স্বশিক্ষা সংস্থান (Self-Study Resources)**  
-
-- [Generative AI JavaScript ভিডিও সিরিজ](https://aka.ms/genai-js)  
+## **স্বশিক্ষা সংস্থান (Self-Study Resources)**

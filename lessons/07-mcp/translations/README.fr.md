@@ -65,14 +65,14 @@ Si vous souhaitez interagir avec Scipion, exécutez l'application [Characters](/
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Naviguez vers */app* à la racine du dépôt.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discuter avec Scipion.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ## Le besoin du Protocole de Contexte Modèle (MCP)
 
@@ -172,8 +172,8 @@ Le code précédent effectue les actions suivantes :
 **Time Beetle** : "Non, pas encore. Mais nous pouvons y ajouter des ressources et des outils. Un outil est quelque chose qui peut être utilisé pour accomplir une tâche spécifique, tandis qu'une ressource est quelque chose qui peut fournir des données ou une fonctionnalité à l'outil. Ajoutons-en quelques exemples ci-dessous :
 
 ```typescript
-server.tool("add",
-   { a: z.number(), b: z.number() },
+server.registerTool("add",
+   { description: "Add two numbers", inputSchema: { a: z.number(), b: z.number() } },
    async ({ a, b }) => ({
      content: [{ type: "text", text: String(a + b) }]
    })
@@ -191,9 +191,10 @@ Dans le code précédent, nous :
 **Time Beetle** : "Exactement ! Le client MCP peut appeler cet outil et fournir les paramètres requis. Ajoutons également une ressource au serveur :
 
 ```typescript
-server.resource(
+server.registerResource(
    "greeting",
    new ResourceTemplate("greeting://{name}", { list: undefined }),
+   { mimeType: "text/plain" },
    async (uri, { name }) => ({
      contents: [{
        uri: uri.href,
@@ -212,9 +213,10 @@ Dans ce code, nous :
 **Vous** : "Donc, la ressource est comme une source de données, cela pourrait être une base de données, un fichier ou même une API ? Si c'était pour un fichier, j'utiliserais un URI file:// ? Comme ceci :
 
 ```typescript
-server.resource(
+server.registerResource(
    "file",
    new ResourceTemplate("file://{path}", { list: undefined }),
+   { mimeType: "text/plain" },
    async (uri, { path }) => ({
      // do something with the file at path, e.g., read its contents
      contents: [{
@@ -253,14 +255,14 @@ Dans ce code, nous :
 **Time Beetle** : "Vous pouvez tester votre serveur MCP en l'exécutant dans un terminal via l'inspecteur comme suit :
 
 ```bash
-npx @modelcontextprotocol/inspector node build/index.js
+npm run inspect:web
 ```
 
 Ici, nous utilisons le package `@modelcontextprotocol/inspector` pour exécuter le serveur MCP. Nous fournissons l'argument `node build/index.js` pour spécifier le point d'entrée du serveur. Cela démarrera le serveur MCP et vous permettra d'interagir avec lui via l'inspecteur.
 
 **Vous** : "Et comment puis-je interagir avec le serveur ?"
 
-**Time Beetle** : "Cela démarre un serveur web sur le port 6274. Vous pouvez accéder à l'inspecteur en ouvrant votre navigateur web et en vous rendant sur `http://localhost:6274`. L'inspecteur fournit une interface conviviale pour interagir avec votre serveur MCP, vous permettant de tester les outils et les ressources que vous avez définis."
+**Time Beetle** : "Exécutez cette commande dans le dossier du package de la leçon. Elle compile le serveur et lance l'inspecteur web actuel. Ouvrez l'adresse locale affichée dans le terminal. L'interface peut différer des anciennes images ci-dessous. Gardez les ports de l'inspecteur privés."
 
 ![Interface utilisateur de l'inspecteur](https://softchris.github.io/mcp-workshop/assets/images/connect-7703c67645f368d51c7b24a5d635d6a0.png)
 
@@ -348,7 +350,7 @@ Ainsi, lorsque vous listez les outils, vous obtenez une réponse au format suiva
   
   {
     "name": "<tool name>",
-    "description": "<description>".
+    "description": "<description>",
     "inputSchema": {
        "type":"object",
        "properties":{
@@ -370,7 +372,7 @@ ce qui signifie que, si vous avez un outil `add`, votre réponse, en listant les
 ```json
 {
     "name": "add",
-    "description": "Adding two numbers".
+    "description": "Adding two numbers",
     "inputSchema": {
        "type":"object",
        "properties":{
@@ -395,8 +397,8 @@ ce qui signifie que, si vous avez un outil `add`, votre réponse, en listant les
 // List tools
 const { tools } = await client.listTools();
 
-const addTool = tools[0]; // Assuming the first tool is "add"
-const subtractTool = tools[1]; // Assuming the second tool is "subtract"
+const addTool = tools.find(tool => tool.name === "add");
+if (!addTool) throw new Error("The server did not advertise the add tool.");
 
 // Call a tool
 const result = await client.callTool({
@@ -413,14 +415,10 @@ const result = await client.callTool({
 **Time Beetle** : "Les ressources sont similaires, mais vous devez fournir l'URI de la ressource et les paramètres qu'elle nécessite. Voici un exemple :
 
 ```typescript
-let resourceUri = "greeting://John"; // Replace with the actual resource URI
-
-// call resource
-// Read a resource
-const name = "John Doe"; // Replace with the actual name
+const name = "John Doe";
 
 const resourceResult = await client.readResource({
-  uri: `greeting:///${name}`,
+  uri: `greeting://${encodeURIComponent(name)}`,
 });
 
 console.log(resourceResult); // Hi John Doe!

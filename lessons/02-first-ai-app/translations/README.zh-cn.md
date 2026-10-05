@@ -10,16 +10,6 @@
 
 如果你还没有设置开发环境，以下是设置方法：[设置你的环境](/docs/setup/README.md)。
 
-## 相关资源
-
-[![观看关于大语言模型的短视频](https://img.youtube.com/vi/GQ_2OjNZ9aA/0.jpg)](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)
-
-_这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，它们是什么以及如何使用它们将 AI 集成到你的应用程序中。_
-
-*🎥 点击上方图片观看关于大语言模型的短视频*
-
-💼 幻灯片：[大语言模型（LLM）介绍](/videos/slides/01-llms.pptx)
-
 ## 故事叙述：想象自己在河上的一条船里
 
 
@@ -42,7 +32,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 环顾船内，你发现一根长桨靠在船边。抓起桨，你开始向远处的建筑物划去。当你靠近时，建筑物变得更加清晰，它们很古老，建筑风格让人联想到文艺复兴时期的画作。
 
 <div>
-  <img src="../assets/boat.png" alt="河上的船，一个人拿着桨站立" width=300" >
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/boat.png" alt="河上的船，一个人拿着桨站立" width="300" >
 </div>
 
 现在的问题是，这次你身在何时何地？
@@ -52,7 +42,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 在行走过程中，你注意到一个留着长胡子戴着帽子的人，正在翻找一个看起来像机械零件的箱子。他的手灵活地移动，熟练地分拣齿轮和弹簧。
 
 <div >
-  <img src="../assets/leonardo.png" alt="莱昂纳多·达·芬奇站在港口的箱子旁边" width="300" >
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo.png" alt="莱昂纳多·达·芬奇站在港口的箱子旁边" width="300" >
 </div>
 
 ### 帮帮我，莱昂纳多
@@ -82,7 +72,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 ### 在工作坊
 
 <div>
-  <img src="../assets/leonardo-workshop.png" alt="莱昂纳多的工作坊" width="300" >
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-workshop.png" alt="莱昂纳多的工作坊" width="300" >
 </div>
 
 老人领你来到一扇大木门前，迎接你的是一个工作坊，里面充满了各种机械装置。
@@ -124,21 +114,21 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 > [负责任的 AI 免责声明](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="../assets/leonardo-talk.jpeg" width=300>
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/leonardo-talk.jpeg" width=300>
 </div>
 
 **步骤**：
 
 1. 启动一个 [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. 导航到仓库根目录中的 _/app/README.md_。
-3. 在控制台中运行 `npm install` 然后运行 `npm start`。
+3. 在控制台中运行 `npm ci` 然后运行 `npm start`。
 4. 当它出现时，选择"在浏览器中打开"按钮。
 5. 与莱昂纳多聊天。
 
 有关应用程序的更详细解释，请参见[详细应用程序说明](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates)。
 
 > [!NOTE]
- > 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
+> 在存储库根目录的 `.env` 中配置 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。本地开发和 Codespaces 都需要这些设置。请参阅[配置指南](/docs/setup/README.md#configure-environment-variables)。
 
 ## 开发环境设置
 
@@ -180,7 +170,7 @@ _这个视频向你介绍了被称为"大语言模型"（LLM）的 AI 模型，�
 
 **时间甲虫**：生成式 AI 模型可以用于很多事情，例如语言翻译。事实上，它接受一种语言的输入并可以生成另一种语言的文本。让我们从一个简单的应用程序开始，它接收英语输入并生成意大利语文本。
 
-```javascript 
+```javascript
 
 import { OpenAI } from "openai";
 
@@ -199,9 +189,16 @@ ${question}
 // 2. 创建客户端
 // -----------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -231,13 +228,13 @@ console.log(completion.choices[0]?.message?.content);
 
 **你**：我想我明白了。所以如果我改变 `question` 变量的值为别的内容，应用程序就会生成不同的意大利语翻译？
 
-**时间甲虫**：没错，你可以将输入文本更改为任何你想要的内容。还要注意 GitHub 模型如何作为 API 的基础 URL 与环境变量中的 GitHub 令牌一起作为 API 密钥使用。
+**时间甲虫**：终结点、API 密钥和部署名称来自你的 Microsoft Foundry 资源。代码使用 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。
 
 **你**：为什么这很重要？
 
-**时间甲虫**：使用特定于你所使用的模型的基础 URL 和 API 密钥很重要。GitHub Models 是一个托管各种模型的平台，所有这些模型都具有不同的功能和特性，而且使用是免费的。
+**时间甲虫**：Microsoft Foundry 托管模型部署。使用同一资源的终结点和 API 密钥，并将 `AI_MODEL` 设置为部署名称。模型使用可能产生 Azure 费用，请检查价格和配额。
 
-**你**：哦，太好了，反正我不知道该付钱给谁，而且我怀疑他们是否接受我的货币。:)
+**你**：那我会使用较小的部署，并在实验前检查费用。
 
 ## 聊天应用程序
 
@@ -273,7 +270,7 @@ AI: Rome is known for its ancient ruins, art, and vibrant culture. You can visit
 
 **时间甲虫**：以下是我们如何构建与 AI 的对话：
 
-```javascript 
+```javascript
 
 // 定义上下文
 
@@ -300,9 +297,16 @@ const messages = [
  } 
 ]; 
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -459,7 +463,7 @@ const completion = await openai.chat.completions.create({
 **时间甲虫**：没什么
 
 <div>
-  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="../assets/helicopter.jpg" alt="空气螺旋，莱昂纳多·达·芬奇" width="300" >
+  <img style="margin-top: 52px; margin-left: 15px; margin-right: 10px" align=right src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/02-first-ai-app/assets/helicopter.jpg" alt="空气螺旋，莱昂纳多·达·芬奇" width="300" >
 </div>
 
 > [!NOTE]
@@ -503,5 +507,5 @@ C. 上下文窗口决定了 AI 响应的创造性程度。
 - [文本生成](https://platform.openai.com/docs/guides/text-generation)
 - [OpenAI 的 JavaScript 库](https://github.com/openai/openai-node/tree/master/examples)
 - [Tokenizer](https://platform.openai.com/tokenizer)
-- [Completion API](https://platform.openai.com/docs/api-reference/completions)
+- [Completion API](https://github.com/openai/openai-node#usage)
 - [聊天完成](https://platform.openai.com/docs/guides/text-generation#text-generation-models)

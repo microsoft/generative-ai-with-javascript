@@ -10,16 +10,6 @@
 
 如果您尚未设置开发环境，请按照以下方法进行设置：[设置您的环境](/docs/setup/README.md)。
 
-## 相关资源
-
-[![观看关于RAG的短视频](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)
-
-_这个视频解释了检索增强生成（RAG），这是一种帮助AI在其训练数据之外使用您的内容以获得改进结果的方法。_
-
-*🎥 点击上方图片观看关于检索增强生成（RAG）的短视频*
-
-💼 幻灯片：[检索增强生成，RAG](../../../videos/slides/03-rag.pptx)
-
 ## 故事情节 - 起源
 
 > [!NOTE] 
@@ -37,7 +27,7 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 您降落在花园里，现在是深夜，浓雾弥漫，远处闪烁着诡异的灯光。豪宅耸立在您面前。达芬奇环顾四周，眼中充满惊奇。
 
 <div>
-  <img src="../assets/mansion.jpeg" alt="在浓雾中显示的古老豪宅" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/mansion.jpeg" alt="在浓雾中显示的古老豪宅" width="300">
 </div>
 
 ### 逃离猎犬
@@ -45,7 +35,7 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 您听到吠叫声和狗向您奔来的声音。您转向达芬奇，"我们需要进去，现在！"
 
 <div>
-  <img src="../assets/dogs.jpeg" alt="逃离猎犬" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/dogs.jpeg" alt="逃离猎犬" width="300">
 </div>
 
 当您到达豪宅的门口时，门突然打开，一对侍者匆忙走出来。在打量了您之后，他们示意您跟随他们。
@@ -63,7 +53,7 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 **您**：但是...
 
 <div>
-  <img src="../assets/ada.jpeg" alt="艾达·洛夫莱斯和查尔斯·巴贝奇正在研究一个设备" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada.jpeg" alt="艾达·洛夫莱斯和查尔斯·巴贝奇正在研究一个设备" width="300">
 </div>
 
 查尔斯·巴贝奇走上前来，检查您手中的时间甲虫。"这个设备非常了不起，但它有点故障，不是吗？我想你已经注意到了。"
@@ -85,21 +75,21 @@ _这个视频解释了检索增强生成（RAG），这是一种帮助AI在其�
 > [负责任的AI免责声明](/README.md#responsible-ai-disclaimer)
 
 <div>
-  <img src="../assets/ada-2.jpeg" alt="艾达·洛夫莱斯" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/05-rag/assets/ada-2.jpeg" alt="艾达·洛夫莱斯" width="300">
 </div>
 
 **步骤**：
 
 1. 启动一个[![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. 导航到仓库根目录中的_/app_。
-3. 找到控制台并运行`npm install`，然后运行`npm start`。
+3. 找到控制台并运行`npm ci`，然后运行`npm start`。
 4. 出现后，选择"在浏览器中打开"按钮。
 5. 与艾达聊天。
 
 有关应用程序的更详细说明，请参见[详细应用程序说明](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates)。
 
 > [!NOTE]
- > 如果您在本地机器上运行项目，请查看快速入门指南，设置[GitHub个人访问令牌](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)并在代码中替换密钥。
+> 在存储库根目录的 `.env` 中配置 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。本地开发和 Codespaces 都需要这些设置。请参阅[配置指南](/docs/setup/README.md#configure-environment-variables)。
 
 ## 大型语言模型（LLM）的已知挑战
 
@@ -266,13 +256,20 @@ ${question}
 // 4. 生成器组件：使用搜索结果生成响应
 // ---------------------------------------------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 const chunks = await openai.chat.completions.create({
-  model: "gpt-4o-mini",
+  model,
   messages: [{ role: "user", content: augmentedPrompt }],
   stream: true,
 });
@@ -280,7 +277,7 @@ const chunks = await openai.chat.completions.create({
 console.log(`"${question}"的答案:`);
 
 for await (const chunk of chunks) {
-  process.stdout.write(chunk.choices[0].delta.content ?? "");
+  process.stdout.write(chunk.choices[0]?.delta.content ?? "");
 }
 ```
 
@@ -348,6 +345,6 @@ C. 检索器从外部数据源中查找相关信息。
 - **示例应用**：
   * [使用RAG的无服务器AI聊天](https://github.com/Azure-Samples/serverless-chat-langchainjs/)
   * [Ask Youtube：基于RAG的Youtube问答API](https://github.com/Azure-Samples/langchainjs-quickstart-demo)
-- [完整工作坊：使用RAG创建您自己的ChatGPT](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md)
+- [完整工作坊：使用RAG创建您自己的ChatGPT](https://github.com/Azure-Samples/azure-openai-rag-workshop)
 
 **艾达**：让我们先讨论我们将用来驱动设备的AI。我们将依靠"AI模型

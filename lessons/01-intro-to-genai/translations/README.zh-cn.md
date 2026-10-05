@@ -10,14 +10,6 @@
 
 如果你还没有设置开发环境，以下是设置方法：[设置你的环境](/docs/setup/README.md)。
 
-## 相关资源
-
-[![观看关于生成式 AI 介绍的短视频](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
-
-_这个视频为你介绍了 JavaScript 中的生成式 AI_
-
-💼 幻灯片：[生成式 AI 介绍](/videos/slides/00-intro.pptx)
-
 ## 生成式 AI
 
 到目前为止，你可能已经听说过 ChatGPT 或生成式 AI。这个概念很简单：你提供一个提示，然后一个模型——通常被称为大语言模型（LLM）——会生成一段或甚至一整页的文本。这个输出可以用于各种目的，包括创意写作、回答问题和编程。
@@ -43,7 +35,7 @@ _这个视频为你介绍了 JavaScript 中的生成式 AI_
 你的工作台，工作室的核心，是一个有序的混乱。
 
 <div>
-   <img src="../assets/london.png" alt="伦敦工作室" width=300 >
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/london.png" alt="伦敦工作室" width=300 >
 </div>
 
 _工作台中央放着一个机器人的躯干——一个耗费了数月努力的工程奇迹。它的木制框架精心雕刻，每个关节都经过精心设计以实现流畅的运动。_
@@ -75,7 +67,7 @@ _查尔斯·巴贝奇。"_
 当你的眼睛适应了昏暗的光线，你注意到远处有一个人影在向你挥手。你朝他走去，脚步声在木地板上回响。人影变得清晰，你从报纸照片中认出了他，是查尔斯·巴贝奇。
 
 <div>
-   <img src="../assets/library.png" alt="布满灰尘的图书馆" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png" alt="布满灰尘的图书馆" width="300">
 </div>
 
 ### 这是什么设备？
@@ -91,7 +83,7 @@ _查尔斯·巴贝奇。"_
 然后，一片黑暗，和坠落的感觉。
 
 <div>
-   <img src="../assets/vortex.png" alt="时空漩涡" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png" alt="时空漩涡" width="300">
 </div>
 
 ### 公元前 300 年的亚历山大
@@ -101,7 +93,7 @@ _查尔斯·巴贝奇。"_
 身穿托加长袍的人们在街道上穿行，他们的声音融合成古老方言的交响乐，空气中充满异国香料的气味和远处商人叫卖的声音。
 
 <div>
-   <img src="../assets/alexandria.png" alt="公元前 300 年的亚历山大" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png" alt="公元前 300 年的亚历山大" width="300">
 </div>
 
 **你**： 我一定是撞到了头，你想着，闭上眼睛又睁开，场景依然不变。
@@ -113,7 +105,7 @@ _查尔斯·巴贝奇。"_
 一位身穿托加长袍的老者从大庙的台阶上向你挥手。他的白发和胡须在阳光下闪耀，给他一种几乎是超凡的光芒。
 
 <div>
-   <img src="../assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">
 </div>
 
 **迪诺克拉底**： "欢迎，旅行者，"他温和地说。"我是迪诺克拉底，这座伟大城市的建筑师。你的到来早有预言。"
@@ -145,7 +137,7 @@ _查尔斯·巴贝奇。"_
 **你**： 你说得对，乔治确实是个好名字，事实上这是我父亲的名字。
 
 <div>
-   <img src="../assets/time-beetle.png" alt="像金属甲虫的时间旅行设备" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png" alt="像金属甲虫的时间旅行设备" width="300">
 </div>
 
 _时间设备，"乔治"金属甲虫_
@@ -166,19 +158,19 @@ _时间设备，"乔治"金属甲虫_
 > [负责任的 AI 免责声明](../../../README.md#responsible-ai-disclaimer)
 
 <div>
-   <img src="../assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png" alt="身穿托加长袍的迪诺克拉底" width="300">
 </div>
 
 **步骤**：
 
 1. 启动一个 [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. 导航到仓库根目录中的 _/app_。
-3. 在控制台中运行 `npm install` 然后运行 `npm start`。
+3. 在控制台中运行 `npm ci` 然后运行 `npm start`。
 4. 当它出现时，选择"在浏览器中打开"。
 5. 与迪诺克拉底聊天。
 
 > [!NOTE]
-> 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
+> 在存储库根目录的 `.env` 中配置 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。本地开发和 Codespaces 都需要这些设置。请参阅[配置指南](/docs/setup/README.md#configure-environment-variables)。
 
 ### 代码预览
 
@@ -187,48 +179,77 @@ _时间设备，"乔治"金属甲虫_
 在 `/app/app.js` 中，你会找到一个处理生成式 AI 功能的 `app.post` 函数。代码如下：
 
 ```JavaScript
-app.post('/send', async (req, res) => {
-  const { message } = req.body;
-  const prompt = message;
+import express from 'express';
+import { OpenAI } from 'openai';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { ChatRequestError, getChatRequest, handleBodyError } from './chat-request.js';
+import { getModelConfig, loadEnvironment } from './model-config.js';
 
-  const messages = [
-    {
-      "role": "system",
-      "content": "You are 迪诺克拉底 of Alexandria, a famous architect and engineer. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your architecture and engineering projects, and possibly new ideas you have.",
-    },
-    {
-      "role": "user",
-      "content": prompt
-    }
-  ];
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-  });
-
-  try {
-    console.log(`sending prompt ${prompt}`)
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages,
-    });
-
-    res.json({
-      prompt: prompt,
-      answer: completion.choices[0]?.message?.content
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+export function createApp(openai, model) {
+  if (typeof model !== 'string' || !model.trim()) {
+    throw new Error('A model name is required to create the chat app.');
   }
-});
+  const app = express();
+
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, 'public')));
+  app.locals.delimiters = '{{ }}';
+
+  app.post('/send', async (req, res) => {
+    try {
+      const { prompt, systemMessage } = getChatRequest(req.body);
+      const completion = await openai.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: systemMessage },
+          { role: "user", content: prompt }
+        ]
+      });
+
+      const answer = completion?.choices?.[0]?.message?.content;
+      if (typeof answer !== 'string' || !answer.trim()) {
+        throw new Error('The model did not return an answer.');
+      }
+      res.json({ prompt, answer });
+    } catch (error) {
+      if (error instanceof ChatRequestError) {
+        res.status(400).json({ message: error.message });
+        return;
+      }
+      console.error(`Error: ${error.message}`);
+      res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' });
+    }
+  });
+  app.use(handleBodyError);
+
+  return app;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  loadEnvironment();
+  const port = process.env.PORT || 3000;
+  const { baseURL, apiKey, model } = getModelConfig();
+  const openai = new OpenAI({
+    baseURL,
+    apiKey,
+    timeout: 60000
+  });
+  const app = createApp(openai, model);
+  app.listen(port, '127.0.0.1', () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+}
 ```
 
 以下是该函数的逐步说明：
 
 1. **从请求中提取消息**：该函数从请求体（req.body）中提取消息。
 2. **创建提示数组**：它构建一个消息数组，包括系统消息和用户的提示消息。
-3. **初始化 OpenAI 客户端**：使用基础 URL 和环境变量中的 API 密钥初始化 OpenAI 客户端。使用来自 [GitHub Models](https://github.com/marketplace/models) 的 _gpt-4o-mini_ 模型来处理提示并返回响应。
+3. **初始化 OpenAI 客户端**：终结点、API 密钥和部署名称来自你的 Microsoft Foundry 资源。代码使用 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。
 4. **向 OpenAI 发送提示**：该函数记录提示并将其发送到 OpenAI API 以生成完成。
 5. **处理响应**：如果成功，该函数返回提示和完成的答案。
 6. **错误处理**：如果发生错误，它返回 500 状态和错误消息。
@@ -270,7 +291,7 @@ app.post('/send', async (req, res) => {
 
 这是一个"聊天机器人应用"的实际示例：
 
-![聊天应用图片](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966)
+![课程配套聊天应用](/docs/images/character-chat.png)
 
 **你**： 有趣，我要记下来去 21 世纪看看这些工具是如何使用的。
 
@@ -356,5 +377,3 @@ C. Python 是唯一用于 AI 开发的语言。
 [测验解决方案](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
 ## 自学资源
-
-- [生成式 AI JavaScript 视频系列](https://aka.ms/genai-js)

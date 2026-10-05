@@ -10,16 +10,6 @@
 
 如果你还没有设置开发环境，以下是设置方法：[设置你的环境](/docs/setup/README.md)。
 
-## 相关资源
-
-[![观看关于提示工程的短视频](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
-
-_这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提供更清晰、更有效的指令，以获得更好的结果。_
-
-*🎥 点击上方图片观看关于提示工程的短视频*
-
-💼 幻灯片：[提示工程](../../../videos/slides/02-prompt-engineering.pptx)
-
 ## 故事叙述：乘车票
 
 > [!NOTE] 
@@ -35,7 +25,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 在你按下按钮之前，工作坊的门突然猛烈撞开，发出雷鸣般的巨响。一个人站在门口，宽肩膀，穿着昂贵的衣服，他在空中挥舞着一张纸，大喊：
 
 <div>
-  <img src="../assets/ludovico.png" alt="愤怒的卢多维科·斯福尔扎冲破门而入" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png" alt="愤怒的卢多维科·斯福尔扎冲破门而入" width="300">
 </div>
 
 *卢多维科·斯福尔扎（Ludovico Sforza）*
@@ -65,7 +55,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 色彩的旋涡褪去，你发现自己在马车里，现在正沿着罗马的阿皮亚大道（Via Appia）飞驰，令你惊讶的是，你正处于一场赛马比赛的中间。战车轰隆作响地驶过，车轮卷起阵阵尘土。
 
 <div>
-  <img src="../assets/escape.png" alt="从罗马逃脱" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/escape.png" alt="从罗马逃脱" width="300">
 </div>
 
 **你**：莱昂纳多，我们在哪里？
@@ -105,7 +95,7 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 你俯瞰这座城市；古老的建筑在你们下方延伸开来。
 
 <div>
-  <img src="../assets/airborne.png" alt="空中飞行，脚悬空俯瞰城市" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/airborne.png" alt="空中飞行，脚悬空俯瞰城市" width="300">
 </div>
 
 ## 与斯福尔扎互动
@@ -117,21 +107,21 @@ _这个视频介绍了如何提高你的"提示"技巧，教你如何向 AI 提�
 > [负责任的 AI 免责声明](../../../README.md#responsible-ai-disclaimer)
 
 <div >
-  <img  src="../assets/ludovico.png" alt="卢多维科·斯福尔扎" width="300" >
+  <img  src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png" alt="卢多维科·斯福尔扎" width="300" >
 </div>
 
 **步骤**：
 
 1. 启动一个 [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. 导航到仓库根目录中的 _/app_。
-3. 在控制台中运行 `npm install` 然后运行 `npm start`。
+3. 在控制台中运行 `npm ci` 然后运行 `npm start`。
 4. 当它出现时，选择"在浏览器中打开"按钮。
 5. 与斯福尔扎聊天。
 
 有关应用程序的更详细解释，请参见[详细应用程序说明](../../01-intro-to-genai/README.md#talk-to-dinocrates)。
 
 > [!NOTE]
- > 如果你在本地机器上运行项目，请查看快速入门指南以设置 [GitHub personal access](../../../docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token 并在代码中替换密钥。
+> 在存储库根目录的 `.env` 中配置 `AI_ENDPOINT`、`AI_API_KEY` 和 `AI_MODEL`。本地开发和 Codespaces 都需要这些设置。请参阅[配置指南](/docs/setup/README.md#configure-environment-variables)。
 
 ## 什么是提示工程？
 

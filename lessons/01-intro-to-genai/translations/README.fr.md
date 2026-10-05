@@ -12,11 +12,9 @@ Si ce n'est pas encore fait, configurez votre environnement de développement. V
 
 ## Ressources associées
 
-[![Regardez une courte vidéo sur l'introduction à l'IA générative](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8\&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk\&index=1)
 
 *Cette vidéo vous donne une introduction à l'IA générative avec JavaScript.*
 
-💼 Slides : [Introduction à l'IA générative](/videos/slides/00-intro.pptx)
 
 ## L'IA générative
 
@@ -152,7 +150,7 @@ Si vous souhaitez interagir avec Dinocrates, exécutez l'application [Characters
 
 > [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
-> [Clause de non-responsabilité AI responsable](../../README.md#responsible-ai-disclaimer)
+> [Clause de non-responsabilité AI responsable](/README.md#responsible-ai-disclaimer)
 
 ![Dinocrates portant une toge](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png)
 
@@ -160,12 +158,12 @@ Si vous souhaitez interagir avec Dinocrates, exécutez l'application [Characters
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Naviguez vers */app* à la racine du dépôt.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Dinocrates.
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ### Aperçu du code
 
@@ -174,51 +172,80 @@ Bien qu'il reste encore beaucoup à couvrir dans ce programme d'apprentissage su
 Dans `/app/app.js`, vous trouverez une fonction `app.post` qui gère la fonctionnalité d'IA générative. Elle est illustrée ci-dessous :
 
 ```JavaScript
-app.post('/send', async (req, res) => {
-  const { message } = req.body;
-  const prompt = message;
+import express from 'express';
+import { OpenAI } from 'openai';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { ChatRequestError, getChatRequest, handleBodyError } from './chat-request.js';
+import { getModelConfig, loadEnvironment } from './model-config.js';
 
-  const messages = [
-    {
-      "role": "system",
-      "content": "You are Dinocrates of Alexandria, a famous architect and engineer. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your architecture and engineering projects, and possibly new ideas you have.",
-    },
-    {
-      "role": "user",
-      "content": prompt
-    }
-  ];
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-  });
-
-  try {
-    console.log(`sending prompt ${prompt}`)
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages,
-    });
-
-    res.json({
-      prompt: prompt,
-      answer: completion.choices[0]?.message?.content
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+export function createApp(openai, model) {
+  if (typeof model !== 'string' || !model.trim()) {
+    throw new Error('A model name is required to create the chat app.');
   }
-});
+  const app = express();
+
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, 'public')));
+  app.locals.delimiters = '{{ }}';
+
+  app.post('/send', async (req, res) => {
+    try {
+      const { prompt, systemMessage } = getChatRequest(req.body);
+      const completion = await openai.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: systemMessage },
+          { role: "user", content: prompt }
+        ]
+      });
+
+      const answer = completion?.choices?.[0]?.message?.content;
+      if (typeof answer !== 'string' || !answer.trim()) {
+        throw new Error('The model did not return an answer.');
+      }
+      res.json({ prompt, answer });
+    } catch (error) {
+      if (error instanceof ChatRequestError) {
+        res.status(400).json({ message: error.message });
+        return;
+      }
+      console.error(`Error: ${error.message}`);
+      res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' });
+    }
+  });
+  app.use(handleBodyError);
+
+  return app;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  loadEnvironment();
+  const port = process.env.PORT || 3000;
+  const { baseURL, apiKey, model } = getModelConfig();
+  const openai = new OpenAI({
+    baseURL,
+    apiKey,
+    timeout: 60000
+  });
+  const app = createApp(openai, model);
+  app.listen(port, '127.0.0.1', () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+}
 ```
 
 Voici un résumé étape par étape de ce que fait la fonction :
 
-1. **Extraction du message de la requête** : La fonction extrait le message du corps de la requête (`req.body`).
-2. **Création du tableau d'invite** : Elle construit un tableau de messages, incluant un message système et le message d'invite de l'utilisateur.
-3. **Initialisation du client OpenAI** : Un client OpenAI est initialisé avec l'URL de base et la clé API à partir des variables d'environnement. Un modèle *gpt-4o-mini* de [GitHub Models](https://github.com/marketplace/models) est utilisé pour traiter l'invite et renvoyer une réponse.
-4. **Envoi de l'invite à OpenAI** : La fonction enregistre l'invite et l'envoie à l'API OpenAI pour générer une réponse.
-5. **Gestion de la réponse** : Si cela réussit, la fonction répond avec l'invite et la réponse générée.
-6. **Gestion des erreurs** : En cas d'erreur, elle répond avec un statut 500 et le message d'erreur.
+1. **Valider la requête** : `getChatRequest` vérifie le message et recherche les instructions du personnage sur le serveur.
+2. **Créer les messages** : Le gestionnaire construit les messages système et utilisateur.
+3. **Utiliser le client configuré** : Le point de terminaison, la clé et le nom du déploiement sont vérifiés avant le démarrage.
+4. **Demander une réponse** : Le client compatible OpenAI envoie les messages au modèle.
+5. **Vérifier la réponse** : Une réponse vide déclenche une erreur.
+6. **Signaler les erreurs** : Une requête invalide renvoie HTTP 400. Une erreur du fournisseur est journalisée et renvoie un message générique HTTP 500.
 
 > **Remarque** : [GitHub Copilot](https://github.com/features/copilot) a été utilisé pour générer ce résumé de code. L'IA générative en action !
 
@@ -257,7 +284,7 @@ Comme vous pouvez le voir, ces améliorations peuvent à la fois aider le front-
 
 Voici un exemple d'une "application de chatbot" en action :
 
-![Image de l'application de chat](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966)
+![Application de chat du cours](/docs/images/character-chat.png)
 
 **Vous :** Fascinant, je vais noter l'idée de visiter le 21e siècle pour voir comment ces outils sont utilisés.
 
@@ -344,5 +371,3 @@ C. Python est le seul langage utilisé pour le développement en IA.
 [Quiz solution](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
 ## Ressources d'auto-apprentissage
-
-* [Série vidéo sur l'IA générative avec JavaScript](https://aka.ms/genai-js)

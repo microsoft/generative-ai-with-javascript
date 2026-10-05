@@ -4,13 +4,13 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node --env-file-if-exists=../../../.env app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "openai": "^4.84.1"
+    "openai": "^7.28.0"
   }
 }

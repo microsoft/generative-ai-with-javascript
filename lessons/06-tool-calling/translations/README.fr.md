@@ -63,26 +63,26 @@ Le monde autour de vous commence à se brouiller, et tout devient noir. Vous rev
 
 ## Interagir avec Amelia Earhart
 
-If you want to interact with Ada, run the [Characters](/app/README.md) app.
+Pour interagir avec Amelia, lancez l'application [Characters](/app/README.md).
 
 > [!IMPORTANT]
 > Ceci est entièrement fictif ; les réponses sont générées par une IA.
 > [Clause de non-responsabilité sur l'IA responsable](/README.md#responsible-ai-disclaimer)
 
-![Ada Lovelace](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/amelia-front.jpeg)
+![Amelia Earhart](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/06-tool-calling/assets/amelia-front.jpeg)
 
 **Étapes** :
 
 1. Lancez un [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript).
 2. Naviguez vers */app* à la racine du dépôt.
-3. Localisez la console et exécutez `npm install` suivi de `npm start`.
+3. Localisez la console et exécutez `npm ci` suivi de `npm start`.
 4. Une fois que l'application est ouverte, sélectionnez le bouton "Ouvrir dans le navigateur".
 5. Discutez avec Amelia.
 
 Pour une explication plus détaillée de l'application, voir [Explication détaillée de l'application](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
-> Si vous exécutez le projet localement sur votre machine, veuillez consulter le guide de démarrage rapide pour configurer un [token d'accès personnel GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) et remplacer la clé dans le code.
+> Configurez `AI_ENDPOINT`, `AI_API_KEY` et `AI_MODEL` dans le fichier `.env` à la racine du dépôt, en local comme dans Codespaces. Consultez le [guide de configuration](/docs/setup/README.md#configure-environment-variables).
 
 ## Appels d'outils
 
@@ -106,9 +106,9 @@ try {
   if (!landingSpot) {
     throw new Error("No suitable landing spot found");
   }
-  console.log(Landing spot found at coordinates: ${landingSpot.lat}, ${landingSpot.long});
+  console.log(`Landing spot found at coordinates: ${landingSpot.lat}, ${landingSpot.long}`);
 } catch (error) {
-  console.log(Error: ${error.message});
+  console.error(`Error: ${error.message}`);
 }
 ```
 
@@ -143,15 +143,11 @@ function findLandingSpot(lat, long) {
     "properties": {
       "lat": {
         "type": "number",
-        "description": "The latitude of the location",
-      },
+        "description": "The latitude of the location"},
       "long": {
         "type": "number",
-        "description": "The longitude of the location",
-      },
-    },
-    "required": ["lat", "long"],
-  },
+        "description": "The longitude of the location"}},
+    "required": ["lat", "long"]},
   "output": { "type": "object", "properties": { "lat": "number", "long": "number" } }
 }
 ```
@@ -185,7 +181,7 @@ const getBackgroundOnCharacterJson = {
         description: "The name of the character",
       }
     },
-    required: ["lat", "long"],
+    required: ["name"],
   },
   output: { type: "string" }
 };
@@ -217,16 +213,16 @@ const messages = [{
 }];
 
 const completion = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: process.env.AI_MODEL,
     messages: messages,
-    functions: [getBackgroundOnCharacterJson, findLandingSpotJson]
+    tools: [getBackgroundOnCharacterJson, findLandingSpotJson].map(({ name, description, parameters }) => ({ type: "function", function: { name, description, parameters } }))
   });
 ```
 
 **Time Beetle**: "Dans l'extrait de code précédent, nous :"
 
 * Définissons les métadonnées pour l'outil `find-landing-spot` et l'outil `get-background-on-character`.
-* Fournissons ces métadonnées à l'appel `client.getChatCompletions` dans le paramètre `functions`. Cela indique au modèle IA que ces outils sont disponibles pour être appelés.
+* Fournissons ces métadonnées à l'appel `openai.chat.completions.create` dans le paramètre `tools`. Cela indique au modèle IA que ces outils sont disponibles pour être appelés.
 
 **Vous**: "Compris, donc le modèle IA appellera l'outil approprié si je fournis une invite qui correspond à la description de l'outil ?"
 
@@ -250,87 +246,103 @@ const completion = await openai.chat.completions.create({
 **Time Beetle**: "Bien sûr, voici le code pour configurer l'appel d'outil, effectuer une demande de complétion de chat et interpréter la réponse :
 
 ```javascript
-import { OpenAI } from 'openai';
-import { maybeCoerceInteger } from 'openai/core.mjs';
+import { OpenAI } from "openai";
 
-// 1: Define the function
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 function findLandingSpot(lat, long) {
-  console.log("[Function] Finding landing spot with coordinates: ", lat, long);
-  // Perform the task of finding a suitable landing spot
-  // Return the coordinates of the landing spot
+  console.log("[Function] Finding a simulated landing spot:", lat, long);
   return { lat: 7.5, long: 134.5 };
 }
 
-// 2: Define the tool metadata, should include description, parameters, and output
+function getBackgroundOnCharacter(name) {
+  console.log("[Function] Getting background on character:", name);
+  return `Background information on ${name}`;
+}
+
+const getBackgroundOnCharacterJson = {
+  name: "get-background-on-character",
+  description: "Get background information on a character",
+  strict: true,
+  parameters: {
+    type: "object",
+    properties: { name: { type: "string", description: "The character's name" } },
+    required: ["name"],
+    additionalProperties: false
+  }
+};
+
 const findLandingSpotJson = {
   name: "find-landing-spot",
-  description: "Finds a suitable landing spot",
+  description: "Return a simulated landing spot for this fictional exercise",
+  strict: true,
   parameters: {
     type: "object",
     properties: {
-      lat: {
-        type: "number",
-        description: "The latitude of the location",
-      },
-      long: {
-        type: "number",
-        description: "The longitude of the location",
-      },
+      lat: { type: "number", description: "Latitude" },
+      long: { type: "number", description: "Longitude" }
     },
     required: ["lat", "long"],
+    additionalProperties: false
+  }
+};
+
+const handlers = {
+  [getBackgroundOnCharacterJson.name]: args => {
+    if (typeof args.name !== "string" || !args.name.trim()) {
+      throw new Error("The character name must be a non-empty string.");
+    }
+    return getBackgroundOnCharacter(args.name);
   },
-  output: { type: "object", properties: { lat: "number", long: "number" } }
+  [findLandingSpotJson.name]: args => {
+    if (!Number.isFinite(args.lat) || !Number.isFinite(args.long)) {
+      throw new Error("Landing coordinates must be finite numbers.");
+    }
+    return findLandingSpot(args.lat, args.long);
+  }
 };
 
-// 3: Add the tool to the tools object that we will use later to invoke the tool
-const tools = {
-  [findLandingSpotJson.name]: findLandingSpot
-};
-
-// 4: Create an instance of the OpenAI client
-const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com", // might need to change to this url in the future: https://models.github.ai/inference
-    apiKey: process.env.GITHUB_TOKEN,
-});
-
-// 5: Define the messages that will be sent to the AI model
+const tools = [getBackgroundOnCharacterJson, findLandingSpotJson].map(definition => ({
+  type: "function",
+  function: definition
+}));
+const openai = new OpenAI({ baseURL: endpoint, apiKey, timeout: 60000 });
 const messages = [
-{
-    role: "system",
-    content: `You are a helpful assistant. You can call functions to perform tasks. Make sure to parse the function call and arguments correctly.`
-}, {
-    role: "user",
-    content: "Find a landing spot given coordinates 8.5, 130.5"
-}
+  { role: "system", content: "Use the provided tools to answer the fictional travel request." },
+  { role: "user", content: "Use the character tool to give me background on Amelia Earhart." }
 ];
 
-async function main(){
-  console.log("Making LLM call")
+const completion = await openai.chat.completions.create({
+  model, messages, tools, tool_choice: "required"
+});
+const message = completion.choices[0]?.message;
+if (!message?.tool_calls?.length) throw new Error("The model did not request a tool.");
+messages.push(message);
 
-  // 6: Call the AI model with the defined messages and tools
-  const result = await openai.chat.completions.create({
-      model: 'gpt-4o',
-      messages: messages,
-      functions: [findLandingSpotJson]
-    });
-
-  for (const choice of result.choices) {
-
-      let functionCall = choice.message?.function_call;
-      let functionName = functionCall?.name;
-      let args = JSON.parse(functionCall?.arguments);
-
-      // 7: Interpret response and call the tool based on the function call provided by the AI model
-      if (functionName && functionName in tools) {
-          console.log(`Calling [${functionName}]`);
-          const toolFunction = tools[functionName];
-          const toolResponse = toolFunction(...Object.values(args)); // Extract values from args and spread them
-          console.log("Result from [tool] calling: ", toolResponse);
-      }
+for (const call of message.tool_calls) {
+  if (call.type !== "function" || !Object.hasOwn(handlers, call.function.name)) {
+    throw new Error("The model requested an unsupported tool.");
   }
+  const args = JSON.parse(call.function.arguments);
+  if (!args || typeof args !== "object" || Array.isArray(args)) {
+    throw new Error("Tool arguments must be a JSON object.");
+  }
+  const result = handlers[call.function.name](args);
+  console.log(`Result from [${call.function.name}]:`, result);
+  messages.push({ role: "tool", tool_call_id: call.id, content: JSON.stringify(result) });
 }
 
-main();
+const followUp = await openai.chat.completions.create({
+  model, messages, tools, tool_choice: "none"
+});
+const answer = followUp.choices[0]?.message?.content;
+if (!answer?.trim()) throw new Error("The model did not return a final answer.");
+console.log(answer);
 ```
 
 Dans le code précédent, nous avons :
@@ -341,7 +353,7 @@ Dans le code précédent, nous avons :
 
 * Créé un objet `tools` qui associe les noms d'outils aux métadonnées des outils.
 
-* Fournissons l'objet `tools` dans l'appel `client.getChatCompletions`.
+* Fournissons l'objet `tools` dans l'appel `openai.chat.completions.create`.
 
   ```javascript
   if (functionName && functionName in tools) {
@@ -437,4 +449,4 @@ C. Permettre au modèle IA d'exécuter des outils sans exiger de métadonnées.
 
 * Explique le [processus d'appel d'outils](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/function-calling/?pivots=programming-language-csharp)
 * Appel d'outil dans le [cadre Langchain.js](https://js.langchain.com/docs/how_to/tool_calling/)
-* Appel de fonction comme démontré dans la [bibliothèque openai](https://github.com/openai/openai-node/blob/master/examples/function-call.ts)
+* Appel de fonction dans le [SDK OpenAI actuel](https://github.com/openai/openai-node#automated-function-calls)

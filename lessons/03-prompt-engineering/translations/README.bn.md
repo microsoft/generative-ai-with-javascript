@@ -15,15 +15,6 @@
 
 ---
 
-## **সম্পর্কিত রিসোর্সসমূহ**  
-
-[![প্রম্পট ইঞ্জিনিয়ারিং সম্পর্কে একটি ছোট ভিডিও দেখুন](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)  
-
-_এই ভিডিওটি আপনাকে **"প্রম্পটিং" দক্ষতা উন্নত করার প্রাথমিক ধারণা প্রদান করবে**, যা আপনাকে **AI-কে আরও স্পষ্ট এবং কার্যকর নির্দেশনা দিতে সাহায্য করবে**, ফলে আপনি আরও ভালো ফলাফল পেতে পারেন।_  
-
-🎥 *উপরের ছবিতে ক্লিক করে প্রম্পট ইঞ্জিনিয়ারিং সম্পর্কে একটি ছোট ভিডিও দেখুন*  
-
-💼 **স্লাইড:** [প্রম্পট ইঞ্জিনিয়ারিং](/videos/slides/02-prompt-engineering.pptx)  
 ## **গল্প: টিকিট টু রাইড**  
 
 > [!NOTE]  
@@ -141,14 +132,14 @@ _এই ভিডিওটি আপনাকে **"প্রম্পটিং"
 
 1. **শুরু করুন** [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)  
 2. **রিপোজিটরির মূল ফোল্ডারে** _/app_ এ যান।  
-3. **কনসোল খুঁজে বের করুন** এবং **`npm install`** কমান্ড চালান, তারপর **`npm start`** লিখে রান করুন।  
+3. **কনসোল খুঁজে বের করুন** এবং **`npm ci`** কমান্ড চালান, তারপর **`npm start`** লিখে রান করুন।
 4. **অ্যাপ চালু হলে**, "Open in Browser" বোতাম নির্বাচন করুন।  
 5. **স্পোর্জার সাথে চ্যাট করুন।**  
 
 আরও বিস্তারিত জানতে, দেখুন **[বিস্তারিত অ্যাপ ব্যাখ্যা](/lessons/01-intro-to-genai/translations/README.bn.md#talk-to-dinocrates)**।  
 
 > [!NOTE]  
-> আপনি যদি **প্রকল্পটি স্থানীয়ভাবে (locally) চালান**, তাহলে দয়া করে **QuickStart গাইড** পর্যালোচনা করুন এবং **[GitHub ব্যক্তিগত অ্যাক্সেস টোকেন (PAT)](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access)** সেটআপ করুন, তারপর **কোডে টোকেনটি প্রতিস্থাপন করুন**।
+> রিপোজিটরির মূল ফোল্ডারের `.env` ফাইলে `AI_ENDPOINT`, `AI_API_KEY` এবং `AI_MODEL` সেট করুন। লোকাল পরিবেশ এবং Codespaces উভয়ের জন্য এই সেটিংস প্রয়োজন। [সেটআপ নির্দেশিকা](/docs/setup/README.md#configure-environment-variables) দেখুন।
 ## **প্রম্পট ইঞ্জিনিয়ারিং কী?**  
 
 **টাইম বিটল:** "আমাদের **প্রম্পট ইঞ্জিনিয়ারিং** সম্পর্কে কথা বলা দরকার।"  
@@ -373,4 +364,4 @@ C. **প্রম্পট ইঞ্জিনিয়ারিং হলো এ
 ---
 
 ### **প্রারম্ভিক প্রকল্প:**  
-শুরু করতে এই **[Starter project](/app/README.md)** ব্যবহার করো! 
+শুরু করতে এই **[Starter project](/app/README.md)** ব্যবহার করো!

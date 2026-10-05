@@ -10,14 +10,6 @@ Neste capítulo você vai aprender:
 
 Se você ainda não configurou seu ambiente de desenvolvimento, veja como fazer: [Configure seu ambiente](/docs/setup/README.md).
 
-## Recursos relacionados
-
-[![Assista a um vídeo curto sobre Introdução à IA Generativa](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
-
-_Este vídeo apresenta uma introdução à IA Generativa com JavaScript_
-
-💼 Slides: [Introdução à IA Generativa](/videos/slides/00-intro.pptx)
-
 ## IA Generativa
 
 Provavelmente você já ouviu falar de ferramentas como ChatGPT ou IA Generativa. O conceito é simples: você fornece um prompt, e um modelo—frequentemente chamado de Grande Modelo de Linguagem (LLM)—gera um parágrafo ou até mesmo uma página inteira de texto. Esta saída pode ser usada para diversos propósitos, incluindo escrita criativa, respostas a perguntas e codificação.
@@ -43,7 +35,7 @@ No coração da Londres de 1860, você é reconhecido como um dos mecânicos mai
 Sua bancada de trabalho, o coração da sua oficina, é uma bagunça organizada.
 
 <div>
-   <img src="../assets/london.png" alt="Oficina em Londres" width=300 >
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/london.png" alt="Oficina em Londres" width=300 >
 </div>
 
 _No centro da bancada está o torso de um robô—uma maravilha da engenharia que consumiu meses de esforço. Sua estrutura de madeira é intrincadamente esculpida, cada articulação meticulosamente projetada para movimentos suaves._
@@ -75,7 +67,7 @@ Está escuro e sombrio lá dentro, a única luz filtrando através das janelas e
 Conforme seus olhos se adaptam à luz fraca, você nota uma figura à distância, acenando para você. Você caminha em sua direção, seus passos ecoando no piso de madeira. A figura fica mais clara, e você a reconhece das fotos de jornal, é Charles Babbage.
 
 <div>
-   <img src="../assets/library.png" alt="Biblioteca Empoeirada" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/library.png" alt="Biblioteca Empoeirada" width="300">
 </div>
 
 ### O que é este dispositivo?
@@ -91,7 +83,7 @@ Impulsionado pela curiosidade, seus dedos deslizam em direção ao botão vermel
 Então, escuridão, e uma sensação de queda.
 
 <div>
-   <img src="../assets/vortex.png" alt="Vórtice do Tempo" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/vortex.png" alt="Vórtice do Tempo" width="300">
 </div>
 
 ### Alexandria 300 a.C.
@@ -101,7 +93,7 @@ Você acorda, desorientado. À medida que sua visão se clareia, uma cidade anti
 Pessoas em togas movimentam-se pelas ruas, suas vozes se mesclando em uma sinfonia de dialetos antigos, o ar preenchido com o aroma de especiarias exóticas e o som distante de mercadores anunciando suas mercadorias.
 
 <div>
-   <img src="../assets/alexandria.png" alt="Alexandria 300 a.C." width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/alexandria.png" alt="Alexandria 300 a.C." width="300">
 </div>
 
 **Você:** Certamente, devo ter batido a cabeça, você pensa, fechando os olhos e abrindo-os novamente, a cena permanece inalterada.
@@ -113,7 +105,7 @@ Estou preso no passado? Devo pressionar aquele botão novamente? Antes que você
 Um senhor idoso vestindo uma toga acena para você dos degraus do grande templo. Seu cabelo branco e barba capturam a luz do sol, dando-lhe um brilho quase etéreo.
 
 <div>
-   <img src="../assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
 </div>
 
 **Dinócrates:** "Bem-vindo, viajante," ele diz calorosamente. "Eu sou Dinócrates, arquiteto desta grande cidade. Sua chegada foi prevista."
@@ -145,7 +137,7 @@ Um pensamento lhe ocorre. O dispositivo pode me entender se eu falar com ele?
 **Você:** Você está certo, George é um bom nome, era o nome do meu pai, na verdade.
 
 <div>
-   <img src="../assets/time-beetle.png" alt="Dispositivo de viagem no tempo semelhante a um besouro metálico" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/time-beetle.png" alt="Dispositivo de viagem no tempo semelhante a um besouro metálico" width="300">
 </div>
 
 _Dispositivo de tempo, "George" o besouro metálico_
@@ -166,19 +158,19 @@ Se você quiser interagir com Dinócrates, execute o aplicativo [Characters](/ap
 > [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div>
-   <img src="../assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
+   <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/01-intro-to-genai/assets/dinocrates.png" alt="Dinócrates vestindo uma toga" width="300">
 </div>
 
 **Passos**:
 
 1. Inicie um [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navegue até _/app_ na raiz do repositório.
-3. Localize o console e execute `npm install` seguido de `npm start`. 
+3. Localize o console e execute `npm ci` seguido de `npm start`.
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Dinócrates.
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+> Configure `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL` no arquivo `.env` na raiz do repositório, tanto localmente quanto no Codespaces. Consulte o [guia de configuração](/docs/setup/README.md#configure-environment-variables).
 
 ### Uma prévia do código
 
@@ -187,48 +179,77 @@ Embora ainda haja muito mais para abordar neste currículo de IA Generativa, vam
 Dentro de `/app/app.js` você encontrará uma função `app.post` que gerencia a funcionalidade de IA Generativa. Ela é mostrada a seguir:
 
 ```JavaScript
-app.post('/send', async (req, res) => {
-  const { message } = req.body;
-  const prompt = message;
+import express from 'express';
+import { OpenAI } from 'openai';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { ChatRequestError, getChatRequest, handleBodyError } from './chat-request.js';
+import { getModelConfig, loadEnvironment } from './model-config.js';
 
-  const messages = [
-    {
-      "role": "system",
-      "content": "You are Dinocrates of Alexandria, a famous architect and engineer. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your architecture and engineering projects, and possibly new ideas you have.",
-    },
-    {
-      "role": "user",
-      "content": prompt
-    }
-  ];
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-  });
-
-  try {
-    console.log(`sending prompt ${prompt}`)
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages,
-    });
-
-    res.json({
-      prompt: prompt,
-      answer: completion.choices[0]?.message?.content
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+export function createApp(openai, model) {
+  if (typeof model !== 'string' || !model.trim()) {
+    throw new Error('A model name is required to create the chat app.');
   }
-});
+  const app = express();
+
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, 'public')));
+  app.locals.delimiters = '{{ }}';
+
+  app.post('/send', async (req, res) => {
+    try {
+      const { prompt, systemMessage } = getChatRequest(req.body);
+      const completion = await openai.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: systemMessage },
+          { role: "user", content: prompt }
+        ]
+      });
+
+      const answer = completion?.choices?.[0]?.message?.content;
+      if (typeof answer !== 'string' || !answer.trim()) {
+        throw new Error('The model did not return an answer.');
+      }
+      res.json({ prompt, answer });
+    } catch (error) {
+      if (error instanceof ChatRequestError) {
+        res.status(400).json({ message: error.message });
+        return;
+      }
+      console.error(`Error: ${error.message}`);
+      res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' });
+    }
+  });
+  app.use(handleBodyError);
+
+  return app;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  loadEnvironment();
+  const port = process.env.PORT || 3000;
+  const { baseURL, apiKey, model } = getModelConfig();
+  const openai = new OpenAI({
+    baseURL,
+    apiKey,
+    timeout: 60000
+  });
+  const app = createApp(openai, model);
+  app.listen(port, '127.0.0.1', () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+}
 ```
 
 Aqui está um resumo passo a passo do que a função faz:
 
 1. **Extrai a Mensagem da Requisição**: A função extrai a mensagem do corpo da requisição (req.body).
 2. **Cria um Array de Prompt**: Constrói um array de mensagens, incluindo uma mensagem do sistema e a mensagem de prompt do usuário.
-3. **Inicializa o Cliente OpenAI**: Um cliente OpenAI é inicializado com a URL base e chave de API das variáveis de ambiente. Um modelo _gpt-4o-mini_ do [GitHub Models](https://github.com/marketplace/models) é usado para processar o prompt e retornar uma resposta.
+3. **Inicializa o Cliente OpenAI**: O endpoint, a chave de API e o nome da implantação vêm do seu recurso Microsoft Foundry. O código usa `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL`.
 4. **Envia o Prompt para a OpenAI**: A função registra o prompt e o envia para a API OpenAI para gerar uma conclusão.
 5. **Trata a Resposta**: Se bem-sucedido, a função responde com o prompt e a resposta da conclusão.
 6. **Tratamento de Erros**: Se ocorrer um erro, responde com um status 500 e a mensagem de erro.
@@ -270,7 +291,7 @@ Como você pode ver, essas melhorias podem ajudar tanto o front office quanto o 
 
 Aqui está um exemplo de um "aplicativo de chatbot" em ação:
 
-![Imagem de aplicativo de chat](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966) 
+![Aplicativo de chat do curso](/docs/images/character-chat.png)
 
 **Você:** Fascinante, vou anotar para visitar o século 21 para ver como essas ferramentas são usadas.
 
@@ -357,5 +378,3 @@ C. Python é a única linguagem usada para desenvolvimento de IA.
 [Solução do quiz](../solution/solution-quiz.md)
 
 ## Recursos para auto-estudo
-
-- [Série de vídeos sobre JavaScript para IA Generativa](https://aka.ms/genai-js)

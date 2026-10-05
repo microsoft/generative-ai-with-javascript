@@ -5,7 +5,6 @@
 # Generative AI for beginners with JavaScript
 
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://github.com/microsoft/generative-ai-with-javascript/blob/main/LICENSE)
-[![Watch the video series](https://img.shields.io/badge/Videos-d95652.svg?style=flat-square&logo=youtube)](https://aka.ms/genai-js)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 [![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
@@ -65,20 +64,22 @@ Throughout this course you'll find many code examples and exercises, so we encou
  
 2. Click the **Code** button in your forked repository, go to the **Codespaces** tab, and then choose **Create codespace**.
 
-   This will create a preconfigured online environment for you. You'll then be able to use [GitHub Models](https://github.com/marketplace/models) to run the code examples and interact with AI models for free, without any additional setup.
+   This creates an online environment for the code examples. Continue with the [course setup guide](/docs/setup/README.md) to create a Microsoft Foundry project, deploy a chat model, and configure your endpoint and API key.
 
 > [!NOTE]
 >
 > While GitHub Codespaces provides a quick and easy starting point you can also run the code samples [locally](/docs/setup/README.md#option-2--running-the-app-locally).
 >
-> Learn more about [GitHub Codespaces and GitHub Models concepts here](/docs/setup/README.md).  
+> Both local development and Codespaces require model configuration. The [course setup guide](/docs/setup/README.md) covers Microsoft Foundry, the repository-root `.env`, and a live companion app check.
+
+The packages in the repository root and the [companion app](/app/README.md) require Node.js LTS. Each lesson package has its own requirements.
 
 ### Lesson description
 
 📦 Each lesson includes:
 
 - A **written lesson** with an assignment and quiz.
-- A short **video** to help further your learning.
+
 - **Solutions** for each assignment and quiz.
 - **Characters** you can interact with using our [companion app](/app/README.md), demonstrating Generative AI.
 
@@ -102,27 +103,6 @@ New lessons will be added to the course over time, so stay tuned!
 ## Keep learning
 
 🙌 After completing this course, you can continue learning by exploring our additional resources.
-
-<details>
-<summary>🎬Video Series</summary>
-
-| # | Session | Description | Slides | Demo | Script | Video |
-|---|---------|-------------|--------|------|--------|-------|
-| 0 | Series introduction | Introduces the series and its content. | [pptx](/videos/slides/00-intro.pptx) / [pdf](/videos/slides/pdf/00-intro.pdf) | - | [Script](/videos/sessions/00-intro.md) | [📺](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1) |
-| 1 | What you need to know about LLMs | Explores what LLMs are, how they're trained, how they work and their limits. | [pptx](/videos/slides/01-llms.pptx) / [pdf](/videos/slides/pdf/01-llms.pdf) | [Demo](/videos/demos/01-llms/) | [Script](/videos/sessions/01-llms.md) | [📺](https://www.youtube.com/watch?v=GQ_2OjNZ9aA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=2)  |
-| 2 | Essential prompt engineering techniques | Practical prompt engineering techniques to get the best out of AI models. | [pptx](/videos/slides/02-prompt-engineering.pptx) / [pdf](/videos/slides/pdf/02-prompt-engineering.pdf) | [Demo](/videos/demos/02-prompt-engineering/) | [Script](/videos/sessions/02-prompt-engineering.md) | [📺](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)  |
-| 3 | Improve AI accuracy and reliability with RAG | Introduces Retrieval-Augmented Generation, to use AI with your own data. | [pptx](/videos/slides/03-rag.pptx) / [pdf](/videos/slides/pdf/03-rag.pdf) | [Demo](/videos/demos/03-rag/) | [Script](/videos/sessions/03-rag.md) | [📺](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4) |
-| 4 | Speed up your AI development with LangChain.js | Covers LangChain.js framework core concepts, and how to use it to accelerate AI developments. | [pptx](/videos/slides/04-langchainjs.pptx) / [pdf](/videos/slides/pdf/04-langchainjs.pdf) | [Demo](/videos/demos/04-langchainjs/) | [Script](/videos/sessions/04-langchainjs.md) | [📺](https://www.youtube.com/watch?v=02IDU8eCX8o&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=5) |
-| 5 | Run AI models on your local machine with Ollama | Shows how to integrate local AI models into your development workflow. | [pptx](/videos/slides/05-local-models.pptx) / [pdf](/videos/slides/pdf/05-local-models.pdf) | [Demo](/videos/demos/05-local-models/) | [Script](/videos/sessions/05-local-models.md) | [📺](https://www.youtube.com/watch?v=dLfNnoPv4AQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=6) |
-| 6 | Get started with AI for free using Phi-3 | Experiments with Ollama and Phi-3 model directly from your browser. | [pptx](/videos/slides/06-playground.pptx) / [pdf](/videos/slides/pdf/06-playground.pdf) | [Demo](/videos/demos/06-playground/) | [Script](/videos/sessions/06-playground.md) | [📺](https://www.youtube.com/watch?v=Ds32MS9SHzU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=7) |
-| 7 | Introduction to Azure AI Foundry | Kickstart your journey with Azure AI Foundry. | [pptx](/videos/slides/07-ai-foundry.pptx) / [pdf](/videos/slides/pdf/07-ai-foundry.pdf) | [Demo](/videos/demos/07-ai-foundry/) | [Script](/videos/sessions/07-ai-foundry.md) | [📺](https://www.youtube.com/watch?v=9Mo-VOGk8ng&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=8) |
-| 8 | Building Generative AI Apps with Azure Cosmos DB | Build generative AI apps with Azure Cosmos DB and vector search. | [pptx](/videos/slides/08-cosmos-db.pptx) / [pdf](/videos/slides/pdf/08-cosmos-db.pdf) | [Demo](/videos/demos/08-cosmos-db/) | [Script](/videos/sessions/08-cosmos-db.md) | [📺](https://www.youtube.com/watch?v=-GQyaLbeqxQ&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=9)  |
-| 9 | Azure tools & services for hosting and storing AI apps | Build, deploy, and scale AI applications using Azure tools. | [pptx](/videos/slides/09-azure-tools.pptx) / [pdf](/videos/slides/pdf/09-azure-tools.pdf) | - | [Script](/videos/sessions/09-azure-tools.md) | [📺](https://www.youtube.com/watch?v=WB6Fpzhwyug&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=10) |
-| 10 | Streaming Generative AI output with the AI Chat Protocol | Integrate streaming easily into your apps with the AI Chat Protocol. | [pptx](/videos/slides/10-chat-protocol.pptx) / [pdf](/videos/slides/pdf/10-chat-protocol.pdf) | [Demo](/videos/demos/10-chat-protocol/) | [Script](/videos/sessions/10-chat-protocol.md) | [📺](https://www.youtube.com/watch?v=fzDCW-6hMtU&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=11) |
-
-To see the full page of resources, go to this [video overview page](/videos/README.md).
-
-</details>
 
 
 You'll also find additional resources in the form of [tutorials, code samples and more](/docs/additional-resources.md).

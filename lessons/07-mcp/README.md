@@ -65,14 +65,14 @@ If you want to interact with Scipio, run the [Characters](/app/README.md) app.
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`.
+3. Locate the console and run `npm ci` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Scipio.
 
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` for both local development and Codespaces. See the [setup guide](/docs/setup/README.md#configure-environment-variables).
 
 
 ## The need for Model Context Protocol (MCP)
@@ -173,8 +173,8 @@ The preceding code does the following:
 **Time Beetle**: "No, not yet. But we can add resources and tools to it. A tool is something that can be used to perform a specific task, while a resource is something that can be used to provide data or functionality to the tool. Let's add some below:
 
 ```typescript
-server.tool("add",
-   { a: z.number(), b: z.number() },
+server.registerTool("add",
+   { description: "Add two numbers", inputSchema: { a: z.number(), b: z.number() } },
    async ({ a, b }) => ({
      content: [{ type: "text", text: String(a + b) }]
    })
@@ -192,9 +192,10 @@ In the preceding code, we:
 **Time Beetle**: "Exactly! The MCP client can call this tool and pass the required parameters. Let's add a resource to the server as well:
 
 ```typescript
-server.resource(
+server.registerResource(
    "greeting",
    new ResourceTemplate("greeting://{name}", { list: undefined }),
+   { mimeType: "text/plain" },
    async (uri, { name }) => ({
      contents: [{
        uri: uri.href,
@@ -213,9 +214,10 @@ In this code, we:
 **You**: "So, the resource is like a data source, this could be a database, file or even an API? If this was a for a file I would use a file:// URI?" like so:
 
 ```typescript
-server.resource(
+server.registerResource(
    "file",
    new ResourceTemplate("file://{path}", { list: undefined }),
+   { mimeType: "text/plain" },
    async (uri, { path }) => ({
      // do something with the file at path, e.g., read its contents
      contents: [{
@@ -254,14 +256,14 @@ In this code, we:
 **Time Beetle**: "You can test your MCP server by running it in a terminal by running the inspector like so:
 
 ```bash
-npx @modelcontextprotocol/inspector node build/index.js
+npm run inspect:web
 ```
 
 Above, we are using the `@modelcontextprotocol/inspector` package to run the MCP server. We provide the argument `node build/index.js` to specify the entry point of the server. This will start the MCP server and allow you to interact with it through the inspector.
 
 **You**: "And how do I interact with it?"
 
-**Time Beetle**: "This starts a web server on port 6274. You can access the inspector by opening your web browser and navigating to `http://localhost:6274`. The inspector provides a user-friendly interface for interacting with your MCP server, allowing you to test the tools and resources you've defined."
+**Time Beetle**: "Run this command in the lesson package directory. It builds the server and starts the current web inspector. Open the local address printed in the terminal. The interface can differ from the older images below. Keep inspector ports private."
 
 ![Inspector user interface](https://softchris.github.io/mcp-workshop/assets/images/connect-7703c67645f368d51c7b24a5d635d6a0.png)
 
@@ -349,7 +351,7 @@ So when you list tools, you get a response on the following format:
   
   {
     "name": "<tool name>",
-    "description": "<description>".
+    "description": "<description>",
     "inputSchema": {
        "type":"object",
        "properties":{
@@ -371,7 +373,7 @@ which means, if you have a tool `add`, your response, listing tools, looks like 
 ```json
 {
     "name": "add",
-    "description": "Adding two numbers".
+    "description": "Adding two numbers",
     "inputSchema": {
        "type":"object",
        "properties":{
@@ -396,8 +398,8 @@ which means, if you have a tool `add`, your response, listing tools, looks like 
 // List tools
 const { tools } = await client.listTools();
 
-const addTool = tools[0]; // Assuming the first tool is "add"
-const subtractTool = tools[1]; // Assuming the second tool is "subtract"
+const addTool = tools.find(tool => tool.name === "add");
+if (!addTool) throw new Error("The server did not advertise the add tool.");
 
 // Call a tool
 const result = await client.callTool({
@@ -414,14 +416,10 @@ const result = await client.callTool({
 **Time Beetle**: "Resources are similar, but you need to provide the resource URI and any parameters it requires. Here's an example:
 
 ```typescript
-let resourceUri = "greeting://John"; // Replace with the actual resource URI
-
-// call resource
-// Read a resource
-const name = "John Doe"; // Replace with the actual name
+const name = "John Doe";
 
 const resourceResult = await client.readResource({
-  uri: `greeting:///${name}`,
+  uri: `greeting://${encodeURIComponent(name)}`,
 });
 
 console.log(resourceResult); // Hi John Doe!

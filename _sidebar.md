@@ -1,3 +1,4 @@
+- [Course setup](/docs/setup/README.md)
 - Lessons
   - [01 - Intro to Gen AI](/lessons/01-intro-to-genai/README.md)
   - [02 - First AI App](/lessons/02-first-ai-app/README.md)

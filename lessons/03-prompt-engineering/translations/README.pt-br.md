@@ -10,16 +10,6 @@ Neste capítulo você vai aprender:
 
 Se você ainda não configurou seu ambiente de desenvolvimento, veja como fazer: [Configure seu ambiente](/docs/setup/README.md).
 
-## Recursos relacionados
-
-[![Assista a um vídeo curto sobre engenharia de prompts](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
-
-_Este vídeo oferece uma introdução para melhorar suas habilidades de "prompting", ensinando como dar instruções mais claras e eficazes à IA para obter melhores resultados._
-
-*🎥 Clique na imagem acima para assistir a um vídeo curto sobre engenharia de prompts*
-
-💼 Slides: [Engenharia de prompts](/videos/slides/02-prompt-engineering.pptx)
-
 ## Narrativa: Passagem para aventura
 
 > [!NOTE] 
@@ -35,7 +25,7 @@ _Este vídeo oferece uma introdução para melhorar suas habilidades de "prompti
 Antes que você consiga pressionar o botão, as portas da oficina se abrem com um estrondo. Um homem está na entrada, de ombros largos e vestido com roupas caras, ele agita um pedaço de papel no ar, gritando:
 
 <div>
-  <img src="../assets/ludovico.png" alt="Um Ludovico Sforza furioso irrompendo pela porta" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png" alt="Um Ludovico Sforza furioso irrompendo pela porta" width="300">
 </div>
 
 *Ludovico Sforza* 
@@ -65,7 +55,7 @@ Um turbilhão de cores envolve a carruagem, o mundo ao seu redor se dissolve em 
 O turbilhão de cores desaparece, e você se encontra na carruagem, agora correndo pela Via Appia em Roma e, para seu espanto, está no meio de uma corrida de cavalos. Bigas trovejam passando, suas rodas levantando nuvens de poeira. 
 
 <div>
-  <img src="../assets/escape.png" alt="Fuga de Roma" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/escape.png" alt="Fuga de Roma" width="300">
 </div>
 
 **Você:** Leonardo, onde estamos? 
@@ -105,7 +95,7 @@ Com um impulso final, o parafuso aéreo começa a girar. As lâminas pegam o ar,
 Você olha para a cidade; os edifícios antigos se estendem abaixo de você.
 
 <div>
-  <img src="../assets/airborne.png" alt="No ar, olhando para a cidade com os pés pendurados" width="300">
+  <img src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/airborne.png" alt="No ar, olhando para a cidade com os pés pendurados" width="300">
 </div>
 
 ## Interaja com Sforza
@@ -117,21 +107,21 @@ Se você quiser interagir com Sforza, execute o aplicativo [Characters](/app/REA
 > [Aviso sobre IA Responsável](/README.md#responsible-ai-disclaimer)
 
 <div >
-  <img  src="../assets/ludovico.png" alt="Ludovico Sforza" width="300" >
+  <img  src="https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/03-prompt-engineering/assets/ludovico.png" alt="Ludovico Sforza" width="300" >
 </div>
 
 **Passos**:
 
 1. Inicie um [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navegue até _/app_ na raiz do repositório.
-3. Localize o console e execute `npm install` seguido de `npm start`.
+3. Localize o console e execute `npm ci` seguido de `npm start`.
 4. Quando aparecer, selecione o botão "Open in Browser".
 5. Converse com Sforza.
 
 Para uma explicação mais detalhada do aplicativo, consulte [Explicação detalhada do aplicativo](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > Se você estiver executando o projeto localmente em sua máquina, por favor revise o guia de Início Rápido para configurar um [token de acesso pessoal do GitHub](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) e substitua a chave no código.
+> Configure `AI_ENDPOINT`, `AI_API_KEY` e `AI_MODEL` no arquivo `.env` na raiz do repositório, tanto localmente quanto no Codespaces. Consulte o [guia de configuração](/docs/setup/README.md#configure-environment-variables).
 
 ## O que é engenharia de prompts?
 

@@ -10,14 +10,6 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related Resources
-
-[![Watch a short video about an Introduction to Generative AI](https://img.youtube.com/vi/vLYtDgs_zx8/0.jpg)](https://www.youtube.com/watch?v=vLYtDgs_zx8&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=1)
-
-_This video gives you an introduction to Generative AI with JavaScript_
-
-💼 Slides: [Introduction to Generative AI](/videos/slides/00-intro.pptx)
-
 ## Generative AI
 
 By now, you've likely heard of tools like ChatGPT or Generative AI. The concept is simple: you provide a prompt, and a model—often called a Large Language Model (LLM)—generates a paragraph or even an entire page of text. This output can be used for various purposes, including creative writing, answering questions, and coding.
@@ -161,12 +153,12 @@ If you want to interact with Dinocrates, run the [Characters](/app/README.md) ap
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`. 
+3. Locate the console and run `npm ci` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Dinocrates.
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` for both local development and Codespaces. See the [setup guide](/docs/setup/README.md#configure-environment-variables).
 
 ### Code Sneak Peek
 
@@ -175,51 +167,80 @@ While there is still a lot more to cover in this Generative AI curriculum, let's
 Inside of `/app/app.js` you'll find an `app.post`function that handles the Generative AI functionality. It's shown next:
 
 ```JavaScript
-app.post('/send', async (req, res) => {
-  const { message } = req.body;
-  const prompt = message;
+import express from 'express';
+import { OpenAI } from 'openai';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { ChatRequestError, getChatRequest, handleBodyError } from './chat-request.js';
+import { getModelConfig, loadEnvironment } from './model-config.js';
 
-  const messages = [
-    {
-      "role": "system",
-      "content": "You are Dinocrates of Alexandria, a famous architect and engineer. Limit your responses to only the time you live in, you don't know anything else. You only want to talk about your architecture and engineering projects, and possibly new ideas you have.",
-    },
-    {
-      "role": "user",
-      "content": prompt
-    }
-  ];
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-  });
-
-  try {
-    console.log(`sending prompt ${prompt}`)
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: messages,
-    });
-
-    res.json({
-      prompt: prompt,
-      answer: completion.choices[0]?.message?.content
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+export function createApp(openai, model) {
+  if (typeof model !== 'string' || !model.trim()) {
+    throw new Error('A model name is required to create the chat app.');
   }
-});
+  const app = express();
+
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, 'public')));
+  app.locals.delimiters = '{{ }}';
+
+  app.post('/send', async (req, res) => {
+    try {
+      const { prompt, systemMessage } = getChatRequest(req.body);
+      const completion = await openai.chat.completions.create({
+        model,
+        messages: [
+          { role: "system", content: systemMessage },
+          { role: "user", content: prompt }
+        ]
+      });
+
+      const answer = completion?.choices?.[0]?.message?.content;
+      if (typeof answer !== 'string' || !answer.trim()) {
+        throw new Error('The model did not return an answer.');
+      }
+      res.json({ prompt, answer });
+    } catch (error) {
+      if (error instanceof ChatRequestError) {
+        res.status(400).json({ message: error.message });
+        return;
+      }
+      console.error(`Error: ${error.message}`);
+      res.status(500).json({ message: 'An unexpected error occurred. Please try again later.' });
+    }
+  });
+  app.use(handleBodyError);
+
+  return app;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  loadEnvironment();
+  const port = process.env.PORT || 3000;
+  const { baseURL, apiKey, model } = getModelConfig();
+  const openai = new OpenAI({
+    baseURL,
+    apiKey,
+    timeout: 60000
+  });
+  const app = createApp(openai, model);
+  app.listen(port, '127.0.0.1', () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+}
 ```
 
 Here's a step-by-step summary of what the function does:
 
-1. **Extract Message from Request**: The function extracts the message from the request body (req.body).
-2. **Create Prompt Array**: It constructs an array of messages, including a system message and the user's prompt message.
-3. **Initialize OpenAI Client**: An OpenAI client is initialized with the base URL and API key from environment variables. A _gpt-4o-mini_ model from [GitHub Models](https://github.com/marketplace/models) is used to process the prompt and return a response.
-4. **Send Prompt to OpenAI**: The function logs the prompt and sends it to the OpenAI API to generate a completion.
-5. **Handle Response**: If successful, the function responds with the prompt and the completion's answer.
-6. **Error Handling**: If an error occurs, it responds with a 500 status and the error message.
+1. **Validate the Request**: `getChatRequest` checks the message and resolves the character name to server-owned instructions.
+2. **Create Messages**: The handler builds system and user messages for the configured model.
+3. **Use the Configured Client**: The endpoint, key, and deployment name are loaded and checked before the server starts.
+4. **Request an Answer**: The OpenAI-compatible client sends the messages to the model.
+5. **Check the Answer**: A missing or empty answer produces an error; a valid answer is returned with the prompt.
+6. **Report Errors**: Invalid requests return HTTP 400. Provider failures are logged and return a generic HTTP 500 message.
 
 > **Note**: [GitHub Copilot](https://github.com/features/copilot) was used to generate this code summary. Generative AI in action!
 
@@ -258,7 +279,7 @@ As you can see, these improvements can both help the front office and the back o
 
 Here's an example of a "chatbot application" in action:
 
-![Image of chat app](https://camo.githubusercontent.com/76f2ad7cd754a2de2b9957d2070448e130e5ba228084b9b4b128e3af9c9f5239/68747470733a2f2f6c6561726e2e6d6963726f736f66742e636f6d2f656e2d75732f73656d616e7469632d6b65726e656c2f6d656469612f636861742d636f70696c6f742d696e2d616374696f6e2e676966) 
+![Course companion chat app](/docs/images/character-chat.png)
 
 **You:** Fascinating, I'll make a note of going to the 21st century to see how these tools are used.
 
@@ -345,5 +366,3 @@ C. Python is the only language used for AI development.
 [Quiz solution](/lessons/01-intro-to-genai/solution/solution-quiz.md)
 
 ## Self-Study Resources
-
-- [Generative AI JavaScript video series](https://aka.ms/genai-js)

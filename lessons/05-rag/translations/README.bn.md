@@ -14,15 +14,6 @@
 
 ---
 
-## **সম্পর্কিত রিসোর্স**  
-
-[![RAG সম্পর্কে সংক্ষিপ্ত ভিডিও দেখুন](https://img.youtube.com/vi/xkFOmx5yxIA/0.jpg)](https://www.youtube.com/watch?v=xkFOmx5yxIA&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=4)  
-
-_এই ভিডিওটি **Retrieval-Augmented Generation (RAG)** ব্যাখ্যা করে, যা AI-কে তার ট্রেনিং ডেটার পাশাপাশি **তোমার নিজের কনটেন্ট ব্যবহার করতে সাহায্য করে, যাতে আরও উন্নত ফলাফল পাওয়া যায়**।_  
-
-🎥 *উপরের ছবিতে ক্লিক করে RAG সম্পর্কে সংক্ষিপ্ত ভিডিও দেখো।*  
-
-💼 **স্লাইডস:** [**Retrieval-Augmented Generation, RAG**](/videos/slides/03-rag.pptx)  
 ## **বর্ণনা - জেনেসিস**  
 
 > [!NOTE]  
@@ -119,14 +110,14 @@ _এই ভিডিওটি **Retrieval-Augmented Generation (RAG)** ব্য
 
 1. [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript) এ ক্লিক করে **GitHub Codespace শুরু করুন**।  
 2. রিপোজিটরির মূল ফোল্ডারে গিয়ে **_/app_** ডিরেক্টরিতে প্রবেশ করুন।  
-3. কনসোলে **`npm install`** চালান, তারপর **`npm start`** চালান।  
+3. কনসোলে **`npm ci`** চালান, তারপর **`npm start`** চালান।
 4. যখন অ্যাপ চালু হবে, **"Open in Browser"** বোতামটি নির্বাচন করুন।  
 5. এখন আপনি **এডা লাভলেসের সাথে চ্যাট করতে পারবেন।**  
 
 আরও বিস্তারিত জানতে, দেখুন **[অ্যাপের বিশদ ব্যাখ্যা](/lessons/01-intro-to-genai/translations/README.bn.md#ডিনোক্রেটিসের-সাথে-সাক্ষাৎ)**।  
 
 > [!NOTE]  
-> আপনি যদি **লোকাল মেশিনে প্রকল্প চালান**, তাহলে **QuickStart গাইড অনুসরণ করুন** এবং [GitHub ব্যক্তিগত অ্যাক্সেস টোকেন](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) সেটআপ করে **কোডের মধ্যে টোকেন প্রতিস্থাপন করুন**।
+> রিপোজিটরির মূল ফোল্ডারের `.env` ফাইলে `AI_ENDPOINT`, `AI_API_KEY` এবং `AI_MODEL` সেট করুন। লোকাল পরিবেশ এবং Codespaces উভয়ের জন্য এই সেটিংস প্রয়োজন। [সেটআপ নির্দেশিকা](/docs/setup/README.md#configure-environment-variables) দেখুন।
 > ## **বৃহৎ ভাষা মডেল (LLMs) সম্পর্কিত পরিচিত চ্যালেঞ্জ**  
 **এডা:** চল, প্রথমে আমরা **AI মডেল** সম্পর্কে আলোচনা করি, যা আমাদের যন্ত্রটি চালিত করবে। আমরা **একটি ডেটা রিট্রিভাল সিস্টেমের সাথে AI মডেল জোড়া লাগাবো**, যাতে প্রতিক্রিয়ার গুণগত মান আরও উন্নত হয়।  
 
@@ -380,13 +371,20 @@ ${question}
 // 4. জেনারেটর কম্পোনেন্ট: অনুসন্ধান ফলাফল ব্যবহার করে উত্তর তৈরি করা
 // ----------------------------------------------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 const chunks = await openai.chat.completions.create({
-  model: "gpt-4o-mini",
+  model,
   messages: [{ role: "user", content: augmentedPrompt }],
   stream: true,
 });
@@ -394,7 +392,7 @@ const chunks = await openai.chat.completions.create({
 console.log(`Answer for "${question}":`);
 
 for await (const chunk of chunks) {
-  process.stdout.write(chunk.choices[0].delta.content ?? "");
+  process.stdout.write(chunk.choices[0]?.delta.content ?? "");
 }
 ```
 ---
@@ -467,4 +465,4 @@ C. **Retriever বাহ্যিক তথ্যসূত্র থেকে �
 - [Serverless AI Chat with RAG](https://github.com/Azure-Samples/serverless-chat-langchainjs/)  
 - [Ask Youtube: একটি RAG-ভিত্তিক YouTube Q&A API](https://github.com/Azure-Samples/langchainjs-quickstart-demo)  
 🎯 **ওয়ার্কশপ:**  
-- [Create your own ChatGPT with RAG](https://moaw.dev/workshop/gh:azure-samples/azure-openai-rag-workshop/docs/workshop-qdrant.md)  
+- [Create your own ChatGPT with RAG](https://github.com/Azure-Samples/azure-openai-rag-workshop)
