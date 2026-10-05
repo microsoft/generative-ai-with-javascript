@@ -9,6 +9,7 @@ on:
       - lessons/*/README.md
 permissions:
   contents: write
+  models: read
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -23,22 +24,9 @@ jobs:
           key: continuous-translation-${{ github.run_id }}
           restore-keys: |
             continuous-translation-
-      - name: Validate Microsoft Foundry configuration
-        env:
-          AI_API_KEY: ${{ secrets.AI_API_KEY }}
-          AI_ENDPOINT: ${{ vars.AI_ENDPOINT }}
-          AI_MODEL: ${{ vars.AI_MODEL }}
-        run: |
-          test -n "$AI_API_KEY" || { echo "::error::Set the AI_API_KEY repository secret."; exit 1; }
-          test -n "$AI_ENDPOINT" || { echo "::error::Set the AI_ENDPOINT repository variable."; exit 1; }
-          test -n "$AI_MODEL" || { echo "::error::Set the AI_MODEL repository variable."; exit 1; }
       - uses: pelikhan/action-continuous-translation@923d1c9a88c47993a6d10c509c810f853c9205e6 # v0.2.11
         with:
-          openai_api_key: ${{ secrets.AI_API_KEY }}
-          openai_api_base: ${{ vars.AI_ENDPOINT }}
-          model_alias: |
-            translation: openai:${{ vars.AI_MODEL }}
-            validation: openai:${{ vars.AI_MODEL }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           lang: fr
           files: |
             - README.md
