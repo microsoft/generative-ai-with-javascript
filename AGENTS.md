@@ -397,7 +397,7 @@ This repository contains fictional AI-generated content. Historical characters g
 **Community Resources:**
 
 - Discord: https://discord.gg/kzRShWzttr
-- Azure AI Foundry Forum: https://aka.ms/foundry/forum
+- Microsoft Foundry Forum: https://aka.ms/foundry/forum
 - Related courses linked in main README.md
 
 **Performance Considerations:**
