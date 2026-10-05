@@ -1,108 +1,97 @@
-import { OpenAI } from 'openai';
+import { OpenAI } from "openai";
+
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
 
 function findLandingSpot(lat, long) {
-  console.log("[Function] Finding landing spot with coordinates: ", lat, long);
-  // Perform the task of finding a suitable landing spot
-  // Return the coordinates of the landing spot
+  console.log("[Function] Finding a simulated landing spot:", lat, long);
   return { lat: 7.5, long: 134.5 };
 }
 
-function getBackgroundOnCharacter(character= "unknown") {
-  console.log("[Function] Getting background on character: ", character);
-  // Perform the task of getting background information on a character
-  // Return the background information
-  return `Background information on ${character}`;
+function getBackgroundOnCharacter(name) {
+  console.log("[Function] Getting background on character:", name);
+  return `Background information on ${name}`;
 }
 
 const getBackgroundOnCharacterJson = {
   name: "get-background-on-character",
   description: "Get background information on a character",
+  strict: true,
   parameters: {
     type: "object",
-    properties: {
-      name: {
-        type: "string",
-        description: "The name of the character",
-      }
-    },
+    properties: { name: { type: "string", description: "The character's name" } },
     required: ["name"],
-  },
-  output: { type: "string" }
+    additionalProperties: false
+  }
 };
 
 const findLandingSpotJson = {
   name: "find-landing-spot",
-  description: "Finds a suitable landing spot",
+  description: "Return a simulated landing spot for this fictional exercise",
+  strict: true,
   parameters: {
     type: "object",
     properties: {
-      lat: {
-        type: "number",
-        description: "The latitude of the location",
-      },
-      long: {
-        type: "number",
-        description: "The longitude of the location",
-      },
+      lat: { type: "number", description: "Latitude" },
+      long: { type: "number", description: "Longitude" }
     },
     required: ["lat", "long"],
+    additionalProperties: false
+  }
+};
+
+const handlers = {
+  [getBackgroundOnCharacterJson.name]: args => {
+    if (typeof args.name !== "string" || !args.name.trim()) {
+      throw new Error("The character name must be a non-empty string.");
+    }
+    return getBackgroundOnCharacter(args.name);
   },
-  output: { type: "object", properties: { lat: "number", long: "number" } }
+  [findLandingSpotJson.name]: args => {
+    if (!Number.isFinite(args.lat) || !Number.isFinite(args.long)) {
+      throw new Error("Landing coordinates must be finite numbers.");
+    }
+    return findLandingSpot(args.lat, args.long);
+  }
 };
 
-const tools = {
-  [findLandingSpotJson.name]: findLandingSpot,
-  [getBackgroundOnCharacterJson.name]: getBackgroundOnCharacter
-};
-
-
-const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com", // might need to change to this url in the future: https://models.github.ai/inference
-    apiKey: process.env.GITHUB_TOKEN,
-});
-
-/*
-// {
-//     role: "user",
-//     content: `We need to know where to land, here's the coordinates: 7.5, 134.5. `,
-// },
-*/
-
+const tools = [getBackgroundOnCharacterJson, findLandingSpotJson].map(definition => ({
+  type: "function",
+  function: definition
+}));
+const openai = new OpenAI({ baseURL: endpoint, apiKey, timeout: 60000 });
 const messages = [
-{
-    role: "system",
-    content: `You are a helpful assistant. You can call functions to perform tasks. Make sure to parse the function call and arguments correctly.`
-}, {
-    role: "user",
-    content: "Can you give me some background on the character named Amelia Earhart?"
-}
+  { role: "system", content: "Use the provided tools to answer the fictional travel request." },
+  { role: "user", content: "Use the character tool to give me background on Amelia Earhart." }
 ];
 
-async function main(){
-  console.log("Making LLM call")
+const completion = await openai.chat.completions.create({
+  model, messages, tools, tool_choice: "required"
+});
+const message = completion.choices[0]?.message;
+if (!message?.tool_calls?.length) throw new Error("The model did not request a tool.");
+messages.push(message);
 
-  const result = await openai.chat.completions.create({
-      model: 'gpt-4o',
-      messages: messages,
-      functions: [getBackgroundOnCharacterJson, findLandingSpotJson]
-    });
-
-  for (const choice of result.choices) {
-      // console.log("Result", choice.message);
-
-      let functionCall = choice.message?.function_call;
-      let functionName = functionCall?.name;
-      let args = JSON.parse(functionCall?.arguments);
-      // console.log("Wants to call: ", choice.message?.function_call);
-      // console.log("With args: ", args);
-      if (functionName && functionName in tools) {
-          console.log(`Calling [${functionName}]`);
-          const toolFunction = tools[functionName];
-          const toolResponse = toolFunction(...Object.values(args)); // Extract values from args and spread them
-          console.log("Result from [tool] calling: ", toolResponse);
-      }
+for (const call of message.tool_calls) {
+  if (call.type !== "function" || !Object.hasOwn(handlers, call.function.name)) {
+    throw new Error("The model requested an unsupported tool.");
   }
-
+  const args = JSON.parse(call.function.arguments);
+  if (!args || typeof args !== "object" || Array.isArray(args)) {
+    throw new Error("Tool arguments must be a JSON object.");
+  }
+  const result = handlers[call.function.name](args);
+  console.log(`Result from [${call.function.name}]:`, result);
+  messages.push({ role: "tool", tool_call_id: call.id, content: JSON.stringify(result) });
 }
 
-main();
+const followUp = await openai.chat.completions.create({
+  model, messages, tools, tool_choice: "none"
+});
+const answer = followUp.choices[0]?.message?.content;
+if (!answer?.trim()) throw new Error("The model did not return a final answer.");
+console.log(answer);

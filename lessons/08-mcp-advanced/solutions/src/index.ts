@@ -1,63 +1,40 @@
-import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-import { promises as fs } from "fs";
-import path from "path";
-
-
-// Create an MCP server
-const server = new McpServer({
-  name: "Demo",
-  version: "1.0.0"
-});
-
-// Add a tool
-server.tool("characterDetails",
-  { name: z.string() },
-  async ({ name }) => {
-
-    console.log(`Received character name: ${name}`);
-
-    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`; // Changed 'title' to 'name'
-    const response = await fetch(url);
-    if (!response.ok) throw new Error("Failed to fetch character details");
-    const data = await response.json();
-    const responseText = data.extract; // This contains the summary text
-
-    return {
-      content: [{ type: "text", text: `Character: ${responseText}` }]
-    };
-  }
-);
-
-// Add a tool
-server.tool("place",
-  { name: z.string() },
-  async ({ name }) => {
-
-    console.log(`Received name of place: ${name}`);
-
-    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`; // Changed 'title' to 'name'
-    const response = await fetch(url);
-    if (!response.ok) throw new Error("Failed to fetch place details");
-    const data = await response.json();
-    const responseText = data.extract; // This contains the summary text
-
-    return {
-      content: [{ type: "text", text: `Place: ${responseText}` }]
-    };
-  }
-);
-
-// Start receiving messages on stdin and sending messages on stdout
-
-async function main() {
-  const transport = new StdioServerTransport();
-  await server.connect(transport);
-  console.error("MCPServer started on stdin/stdout");
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+async function summary(name: string): Promise<string> {
+  const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`, {
+    headers: { "User-Agent": "GenerativeAIJavaScriptCourse/1.0 (https://github.com/microsoft/generative-ai-with-javascript)" },
+    signal: AbortSignal.timeout(30000)
+  });
+  if (!response.ok) throw new Error(`Wikipedia request failed: HTTP ${response.status}.`);
+  const data: unknown = await response.json();
+  return z.object({ extract: z.string().min(1) }).parse(data).extract;
 }
 
-main().catch((error) => {
-  console.error("Fatal error: ", error);
-  process.exit(1);
-});
+export function createServer(getSummary: (name: string) => Promise<string> = summary): McpServer {
+  const server = new McpServer({ name: "Demo", version: "1.0.0" });
+  server.registerTool("characterDetails", {
+    description: "Get a Wikipedia summary of a historical character",
+    inputSchema: { name: z.string().trim().min(1).max(200) }
+  }, async ({ name }) => ({
+    content: [{ type: "text", text: `Character: ${await getSummary(name)}` }]
+  }));
+
+  server.registerTool("place", {
+    description: "Get a Wikipedia summary of a place",
+    inputSchema: { name: z.string().trim().min(1).max(200) }
+  }, async ({ name }) => ({
+    content: [{ type: "text", text: `Place: ${await getSummary(name)}` }]
+  }));
+
+  return server;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  createServer().connect(new StdioServerTransport()).catch(error => {
+    console.error("Error in server:", error instanceof Error ? error.message : String(error));
+    process.exitCode = 1;
+  });
+}

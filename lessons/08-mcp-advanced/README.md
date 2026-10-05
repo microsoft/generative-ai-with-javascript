@@ -92,14 +92,14 @@ If you want to interact with Hedy, run the [Characters](/app/README.md) app.
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`.
+3. Locate the console and run `npm ci` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Hedy.
 
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` for both local development and Codespaces. See the [setup guide](/docs/setup/README.md#configure-environment-variables).
 
 
 ## Adding a Large Language Model to a Client
@@ -133,76 +133,76 @@ Here's all the steps in code:
 ```typescript
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { CallToolResultSchema } from "@modelcontextprotocol/sdk/types.js";
+import { fileURLToPath } from "node:url";
+import { OpenAI } from "openai";
+import { z } from "zod";
 
-
-// create client instance
-const transport = new StdioClientTransport({
-  command: "node",
-  args: ["server.js"]
-});
-
-const client = new Client(
-  {
-    name: "example-client",
-    version: "1.0.0"
-  }
-);
-
-await client.connect(transport);
-
-// 1. make call to server, ask it for tools
-const { tools } = await client.listTools();
-
-// convert function
-function toToolSchema(method, schema) {
-  return {
-    name: method,
-    description: `This is a tool that does ${method}`,
-    parameters: schema,
-  };
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
 }
 
-// 2. convert the tools and resources response to a tools schema
-const toolsForLLM = tools.map((tool) => {
-  return toToolSchema(tool.method, tool.inputSchema);
+const openai = new OpenAI({ baseURL: endpoint, apiKey, timeout: 60000 });
+const client = new Client({ name: "example-client", version: "1.0.0" });
+const transport = new StdioClientTransport({
+  command: process.execPath,
+  args: [fileURLToPath(new URL("./index.js", import.meta.url))]
 });
 
-// 3. instantiate openai client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  model: "gpt-3.5-turbo",
-  temperature: 0.7,
-});
-
-// 4. make chat completion call to openai
-const response = await openai.chat.completions.create({
-  messages: [
-    {
-      role: "user",
-      content: `I want to add 5 and 10. Please use the tool ${toolsForLLM}`,
-    },
-  ],
-  functions: toolsForLLM,
-  function_call: "auto",
-});
-
-// 5. figure out what tool to call based on the response from openai
-const toolName = response.choices[0].message.function_call.name; // add
-const args = response.choices[0].message.function_call.arguments; // { a: 5, b: 10 }
-
-// 6. call the tool on the server
-const result = await client.callTool({
-  name: toolName,
-  arguments: args,
-});
-
-// 7. respond to user
-console.log(result); // 15
+try {
+  await client.connect(transport);
+  const { tools: serverTools } = await client.listTools();
+  const allowedNames = new Set(serverTools.map(tool => tool.name));
+  const tools: OpenAI.Chat.Completions.ChatCompletionTool[] = serverTools.map(tool => ({
+    type: "function",
+    function: {
+      name: tool.name,
+      description: tool.description,
+      parameters: tool.inputSchema
+    }
+  }));
+  console.log("Available tools:", [...allowedNames]);
+  const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
+    { role: "user", content: "Use the add tool to add 5 and 10." }
+  ];
+  const completion = await openai.chat.completions.create({
+    model, messages, tools, tool_choice: "required"
+  });
+  const message = completion.choices[0]?.message;
+  if (!message?.tool_calls?.length) throw new Error("The model did not request a tool.");
+  messages.push(message);
+  for (const call of message.tool_calls) {
+    if (call.type !== "function" || !allowedNames.has(call.function.name)) {
+      throw new Error("The model requested an unsupported MCP tool.");
+    }
+    const args = z.record(z.string(), z.unknown()).parse(JSON.parse(call.function.arguments));
+    const result = CallToolResultSchema.parse(await client.callTool({
+      name: call.function.name,
+      arguments: args
+    }));
+    const text = result.content.filter(item => item.type === "text").map(item => item.text).join("\n");
+    if (result.isError) throw new Error(`MCP tool failed: ${text}`);
+    if (!text) throw new Error("The MCP tool did not return text.");
+    console.log("Result from tool:", text);
+    messages.push({ role: "tool", tool_call_id: call.id, content: text });
+  }
+  const followUp = await openai.chat.completions.create({
+    model, messages, tools, tool_choice: "none"
+  });
+  const answer = followUp.choices[0]?.message?.content;
+  if (!answer?.trim()) throw new Error("The model did not return a final answer.");
+  console.log(answer);
+} finally {
+  await client.close();
+}
 ```
 
 In the preceding code we (focusing on our additions):
 
-- Created a function `toToolSchema` that converts the tools and resources response to a schema that can be used by the LLM.
+- Created a function `tools.map` that converts the tools and resources response to a schema that can be used by the LLM.
 - Asked the server for available tools and resources.
 - Converted the tools and resources response to a schema that can be used by the LLM.
 - Made a chat completion call to our AI, passing the converted tools as a parameter.
@@ -235,7 +235,7 @@ In the preceding code we (focusing on our additions):
   
 ## Solution
 
-[Solution](/lessons/08-mcp-advanced/solution/README.md)
+[Solution](/lessons/08-mcp-advanced/solutions/README.md)
 
 ## Knowledge Check
 
@@ -247,7 +247,7 @@ B. It creates a more natural conversation between the user and the server.
 
 C. It's better to have the LLM on the server.
 
-[Solution quiz](/lessons/08-mcp-advanced/solution/solution-quiz.md)
+[Solution quiz](/lessons/08-mcp-advanced/solutions/solution-quiz.md)
 
 ## Summary
 

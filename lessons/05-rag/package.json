@@ -1,0 +1,13 @@
+{
+  "name": "retrieval-examples",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cars": "node --env-file-if-exists=../../.env example/rag-cars.js",
+    "wikipedia": "node --env-file-if-exists=../../.env solution/rag-www.js"
+  },
+  "dependencies": {
+    "openai": "^7.28.0"
+  }
+}

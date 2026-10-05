@@ -10,14 +10,12 @@ This repository is a comprehensive learning course called "Generative AI for Beg
 - OpenAI SDK
 - Model Context Protocol (MCP)
 - Express.js (for web applications)
-- GitHub Models (free AI model access)
-- Azure OpenAI (optional alternative)
+- Microsoft Foundry or another OpenAI-compatible model provider
 
 **Architecture:**
 - Multi-package learning repository (not a monorepo, but lesson-based structure)
 - Each lesson in `/lessons/` contains standalone sample applications
 - Main companion app in `/app/` directory for character interactions
-- Video content and demos in `/videos/`
 - Documentation in `/docs/`
 
 ## Repository Structure
@@ -35,16 +33,15 @@ This repository is a comprehensive learning course called "Generative AI for Beg
 │   ├── 07-mcp/
 │   └── 08-mcp-advanced/
 ├── docs/             # Setup guides and additional resources
-├── videos/           # Video session content and demos
 └── .devcontainer/    # GitHub Codespaces configuration
 ```
 
 ## Setup Commands
 
 **Prerequisites:**
-- Node.js 20 or higher
-- GitHub account (for GitHub Models access)
-- Optional: Personal Access Token (PAT) if running locally
+- Node.js Long Term Support (LTS)
+- Microsoft Foundry model deployment or another OpenAI-compatible provider
+- Provider endpoint, API key, and model deployment name
 
 **Initial Setup:**
 
@@ -54,15 +51,10 @@ git clone https://github.com/microsoft/generative-ai-with-javascript.git
 cd generative-ai-with-javascript
 
 # Install root dependencies
-npm install
+npm ci
 
-# For GitHub Codespaces users (recommended):
-# The environment is pre-configured - no additional setup needed
-# Use built-in GITHUB_TOKEN environment variable
-
-# For local development:
-# 1. Create a GitHub Personal Access Token (PAT) at https://github.com/settings/tokens
-# 2. Set it as an environment variable: export GITHUB_TOKEN=your_token_here
+# Copy the environment template and add your provider settings
+cp .env.example .env
 ```
 
 **Running the Main Companion App:**
@@ -91,25 +83,25 @@ npm start
 1. Fork the repository
 2. Create a Codespace from your fork
 3. Pre-configured environment includes:
-   - Node.js 20
+   - Node.js LTS
    - VSCode extensions (EditorConfig, Code Runner, REST Client)
    - Ollama with phi3 and all-minilm models
-   - `GITHUB_TOKEN` automatically available
-4. Navigate to any lesson or app directory and run `npm install && npm start`
+4. Configure the repository-root `.env` file.
+5. Navigate to any lesson or app directory and run `npm ci && npm start`
 
 ### Local Development
 
-1. Ensure Node.js 20+ is installed
-2. Set `GITHUB_TOKEN` environment variable
-3. Navigate to the directory you want to work with
-4. Run `npm install` followed by `npm start`
+1. Install Node.js LTS.
+2. Copy `.env.example` to `.env`.
+3. Set `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL`.
+4. Navigate to the directory you want to work with.
+5. Run `npm ci` followed by `npm start`.
 
 ### Environment Variables
 
-- `GITHUB_TOKEN` - Required for GitHub Models API access
-  - Automatically available in GitHub Codespaces
-  - Must be set manually for local development
-- No scopes/permissions needed for the token when using GitHub Models
+- `AI_ENDPOINT` - OpenAI-compatible API base URL
+- `AI_API_KEY` - API key for the configured provider
+- `AI_MODEL` - Model deployment name used in requests
 
 ## Working with Lessons
 
@@ -118,7 +110,6 @@ Each lesson follows a consistent structure:
 - `README.md` - Main lesson content with narrative and technical instructions
 - `sample-app/` or `code/` - Starting code for exercises
 - `solution/` - Complete solution code
-- `translations/` - Lesson translations in various languages
 
 **To work on a lesson:**
 
@@ -142,7 +133,13 @@ npm run inspect  # Runs MCP inspector tool
 
 **Current Testing Setup:**
 
-This is primarily an educational repository focused on tutorial content. There are no automated unit or integration tests for the code samples.
+The repository has automated tests for the companion app, lesson samples, MCP builds, and documentation publication.
+
+Run all tests:
+
+```bash
+npm test
+```
 
 **Manual Testing Approach:**
 
@@ -170,8 +167,8 @@ This is primarily an educational repository focused on tutorial content. There a
    npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/call --tool-name add --tool-arg a=1 --tool-arg b=3
    ```
 
-4. **Verify GitHub Models integration:**
-   - Ensure `GITHUB_TOKEN` is set
+4. **Verify model integration:**
+   - Ensure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` are set
    - Run any lesson sample that calls OpenAI APIs
    - Verify responses are generated successfully
 
@@ -243,11 +240,11 @@ npm run build     # Builds documentation site
 - `profanity.yml` - Filters inappropriate content in PRs
 - `spelling.yml` - Spell checks documentation
 
-## GitHub Models Integration
+## Model Provider Integration
 
 **Primary AI Service:**
 
-This course uses GitHub Models for free access to AI capabilities. All code examples are configured to work with GitHub Models by default.
+This course uses Microsoft Foundry by default. The samples can also use another OpenAI-compatible provider.
 
 **API Configuration:**
 
@@ -255,16 +252,12 @@ This course uses GitHub Models for free access to AI capabilities. All code exam
 import { OpenAI } from 'openai';
 
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: process.env.AI_ENDPOINT,
+  apiKey: process.env.AI_API_KEY,
 });
 ```
 
-**Available Models:**
-
-- `gpt-4o` - Primary model used in examples
-- `gpt-4o-mini` - Lightweight alternative
-- Access via GitHub Models marketplace: https://github.com/marketplace/models
+Set `AI_MODEL` to the exact deployment name in Microsoft Foundry.
 
 ## Monorepo Navigation Tips
 
@@ -358,14 +351,11 @@ cd lessons/<lesson-name>/sample-app
 npm install
 ```
 
-**GitHub Models authentication issues:**
+**Model provider authentication issues:**
 
 ```bash
-# Verify token is set
-echo $GITHUB_TOKEN
-
-# For Codespaces: Token is automatically available
-# For local: Create PAT at https://github.com/settings/tokens
+# Verify the configuration names without printing the API key
+printf '%s\n' "$AI_ENDPOINT" "$AI_MODEL"
 ```
 
 **TypeScript compilation errors:**
@@ -397,19 +387,17 @@ This repository contains fictional AI-generated content. Historical characters g
 - Each lesson builds progressively on previous concepts
 - Narrative-driven learning with time-travel story
 - Hands-on coding exercises with solutions provided
-- Video content supplements written lessons
 
 **Contributing:**
 
 - See `.github/CONTRIBUTING.md` for contribution guidelines
 - Follow existing code patterns and structure
-- Add translations in `lessons/<lesson>/translations/`
 - Use issue templates in `.github/ISSUE_TEMPLATE/`
 
 **Community Resources:**
 
 - Discord: https://discord.gg/kzRShWzttr
-- Azure AI Foundry Forum: https://aka.ms/foundry/forum
+- Microsoft Foundry Forum: https://aka.ms/foundry/forum
 - Related courses linked in main README.md
 
 **Performance Considerations:**
@@ -417,4 +405,4 @@ This repository contains fictional AI-generated content. Historical characters g
 - GitHub Codespaces requires 16GB RAM (configured in devcontainer.json)
 - Ollama models (phi3, all-minilm) pre-installed in Codespaces
 - Keep lesson samples lightweight and focused
-- Use streaming for better UX in production apps (see lesson 10)
+- Use streaming for a better user experience in production apps.

@@ -4,13 +4,17 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@github/copilot-sdk": "^0.1.23",
-    "openai": "^4.78.1"
+    "@github/copilot-sdk": "1.0.16",
+    "openai": "^7.28.0"
   },
   "devDependencies": {
-    "tsx": "^4.21.0"
+    "tsx": "^4.23.15"
   },
   "scripts": {
-    "genai:translate": "npx genaiscript@latest run translator \"./lessons/*/README.md\" --no-run-trace --remote https://github.com/pelikhan/action-continuous-translation --remote-install -x glossaryFile=glossary.md -x lang=fr -x \"filenameTemplate={{dirname}}/translations/{{basename}}.{{lang}}{{extname}}\""
+    "build": "node scripts/build-docs.mjs",
+    "build:samples": "npm run build --prefix lessons/07-mcp/code && npm run build --prefix lessons/07-mcp/solution && npm run build --prefix lessons/08-mcp-advanced/solutions",
+    "test:samples": "npm run build:samples && node --test tests/samples.test.js",
+    "test:docs": "node --test tests/docs.test.js",
+    "test": "npm test --prefix app && npm run test:samples && npm run test:docs"
   }
 }

@@ -1,118 +1,55 @@
-Here's the solution:
+# Aerial Screw Prompt Solution
+
+This is a fictional, simplified physics exercise, not flight guidance. It demonstrates how clear inputs and assumptions improve a prompt.
+
+Save the code as `solution.js` in the lesson's `sample-app` directory. Run it with `node --env-file=../../../.env solution.js`, or select another environment file with Node's `--env-file` option.
 
 ```javascript
 import { OpenAI } from "openai";
-import readline from "node:readline";
+import { createInterface } from "node:readline/promises";
+import { stdin, stdout } from "node:process";
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
 
-const question = (query) => {
-  return new Promise((resolve) => {
-    rl.question(query, (answer) => {
-      resolve(answer);
-    });
+const openai = new OpenAI({ baseURL: endpoint, apiKey, timeout: 60000 });
+const rl = createInterface({ input: stdin, output: stdout });
+try {
+  async function number(question) {
+    const text = await rl.question(question);
+    const value = Number(text);
+    if (!text.trim() || !Number.isFinite(value)) throw new Error("Enter a finite number.");
+    return value;
+  }
+  const height = await number("Height above ground in meters: ");
+  const speed = await number("Forward speed in meters per second: ");
+  const gravity = await number("Gravity in meters per second squared: ");
+  const upwardSpeed = await number("Initial upward speed in meters per second: ");
+  if (height < 0 || speed <= 0 || gravity <= 0) {
+    throw new Error("Height must be non-negative; speed and gravity must be positive.");
+  }
+  const prompt = `For this fictional exercise, the hill is 100 meters away.
+Height is ${height} meters, forward speed is ${speed} meters per second,
+gravity is ${gravity} meters per second squared, and initial upward speed
+is ${upwardSpeed} meters per second. Ignore drag.
+Use horizontal travel time = 100 / forward speed and vertical height
+y(t) = initial height + initial upward speed * t - gravity * t^2 / 2.
+State the travel time and whether the machine reaches ground before the hill.
+Give a short result and check the units.`;
+  const completion = await openai.chat.completions.create({
+    model,
+    messages: [{ role: "user", content: prompt }]
   });
-};
-
-const height = await question("Enter the current height above the ground in meters:");
-
-const speed = await question("Enter the speed at which you're moving forward in meters per second:");
-
-const gravity = await question("Enter the gravity in meters per second squared:");
-
-const wind = await question("Enter the wind speed upwards in meters per second:");
-
-// Distance to the hill
-const distance = 100;
-
-// Create prompt including inputs should include chain of thought
-
-const prompt = `Current height above the ground: ${height} meters, Moving forward at: ${speed} meters per second, Gravity: ${gravity} meters per second squared, Wind upwards at: ${wind} meters per second, Distance to the hill: ${distance} meters, Time it will take to reach the hill: t, Here's the formula to calculate the time it will take to reach the hill: D = 1/2 * (g - w) * t^2.`;
-
-// Call the language model with the prompt
-
-const messages = [
-{
-    "role": "user",
-    "content": prompt
-}];
-
-// 2. Create client
-// -----------------------------------
-
-const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
-});
-
-// 3. Send the request
-// -----------------------------------
-
-const completion = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    messages: messages,
-});
-
-console.log(`Answer for "${prompt}":`);
-
-// 4. Print the answer
-// -----------------------------------
-
-console.log(completion.choices[0]?.message?.content);
-
+  const answer = completion.choices[0]?.message?.content;
+  if (!answer?.trim()) throw new Error("The model did not return an answer.");
+  console.log(answer);
+} finally {
+  rl.close();
+}
 ```
 
-## Sample output
-
-```text
-Enter the current height above the ground in meters:100
-Enter the speed at which you're moving forward in meters per second:3
-Enter the gravity in meters per second squared:9.82
-Enter the wind speed upwards in meters per second:3
-Answer for "Current height above the ground: 100 meters, Moving forward at: 3 meters per second, Gravity: 9.82 meters per second squared, Wind upwards at: 3 meters per second, Distance to the hill: 100 meters, Time it will take to reach the hill: t, Here's the formula to calculate the time it will take to reach the hill: D = 1/2 * (g - w) * t^2.":
-To determine the time \( t \) it will take to reach the hill, we can rearrange the formula you provided:
-
-\[
-D = \frac{1}{2} (g - w) t^2
-\]
-
-Where:
-- \( D \) is the distance to the hill (100 meters),
-- \( g \) is the acceleration due to gravity (9.82 m/s²),
-- \( w \) is the upward wind speed (3 m/s).
-
-First, we need to calculate \( g - w \):
-
-\[
-g - w = 9.82 \, \text{m/s}^2 - 3 \, \text{m/s} = 6.82 \, \text{m/s}^2
-\]
-
-Now, substituting \( D = 100 \) meters into the formula:
-
-\[
-100 = \frac{1}{2} \times 6.82 \times t^2
-\]
-
-To isolate \( t^2 \), we can multiply both sides by 2:
-
-\[
-200 = 6.82 t^2
-\]
-
-Next, we divide both sides by 6.82:
-
-\[
-t^2 = \frac{200}{6.82} \approx 29.34
-\]
-
-Now, taking the square root of both sides gives us \( t \):
-
-\[
-t \approx \sqrt{29.34} \approx 5.42 \, \text{seconds}
-\]
-
-So, it will take approximately **5.42 seconds** to reach the hill under the given conditions.
-```
+For height `100`, forward speed `3`, gravity `9.82`, and initial upward speed `3`, travel time to the hill is about `33.33` seconds. The simplified trajectory reaches ground after about `4.83` seconds, before reaching the hill. Check numerical answers rather than assuming the model is correct.

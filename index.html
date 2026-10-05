@@ -2,14 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web Dev for Beginners</title>
+  <title>Generative AI for Beginners with JavaScript</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="Description">
+  <meta name="description" content="Learn generative AI with JavaScript, Microsoft Foundry, and MCP.">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="docs/images/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="stylesheet" href="index.css">
-  </head>
+  <style>
+    .markdown-section .markdown-alert {
+      border-left: 0.25rem solid;
+      color: inherit;
+      margin: 1rem 0;
+      padding: 0.75rem 1rem;
+    }
+
+    .markdown-section .markdown-alert-title {
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+    }
+
+    .markdown-section .markdown-alert > :last-child {
+      margin-bottom: 0;
+    }
+
+    .markdown-alert-note {
+      border-color: #0969da;
+    }
+
+    .markdown-alert-note .markdown-alert-title {
+      color: #0969da;
+    }
+
+    .markdown-alert-tip {
+      border-color: #1a7f37;
+    }
+
+    .markdown-alert-tip .markdown-alert-title {
+      color: #1a7f37;
+    }
+
+    .markdown-alert-important {
+      border-color: #8250df;
+    }
+
+    .markdown-alert-important .markdown-alert-title {
+      color: #8250df;
+    }
+
+    .markdown-alert-warning {
+      border-color: #9a6700;
+    }
+
+    .markdown-alert-warning .markdown-alert-title {
+      color: #9a6700;
+    }
+
+    .markdown-alert-caution {
+      border-color: #d1242f;
+    }
+
+    .markdown-alert-caution .markdown-alert-title {
+      color: #d1242f;
+    }
+  </style>
+</head>
 <body>
   <div id="app"></div>
   <script type="text/javascript">
@@ -25,19 +81,32 @@
       name: 'Generative AI For Beginners with JavaScript',
       repo: 'https://github.com/microsoft/generative-ai-with-javascript',
       relativePath: true,
+      basePath: new URL('./', window.location.href).pathname,
       auto2top: false,
       notFoundPage: true,
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md',
-        '/(README.(.*))': '/translations/$1',
-        '#/((?!README).*)/README.(.*)': '$1/translations/README.$2',
-        '/((?!README).*)/((?!README).*)/README.(.*)': '$1/$2/translations/README.$3',
-
-        // handle English, since English files isn't in translation folders
-        '/(README$)': '/$1',
-        '#/((?!README).*)/(README$)': '$1/$2',
-        '/((?!README).*)/((?!README).*)/(README$)': '$1/$2/$3'
-      }
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      plugins: [
+        function (hook) {
+          hook.afterEach(function (html) {
+            const base = new URL('./', window.location.href).pathname;
+            const alerts = html.replace(
+              /<blockquote>\s*<p>\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:\s*<br\s*\/?>)?\s*(<\/p>\s*)?/gi,
+              function (match, type, paragraphEnd) {
+                const name = type.toLowerCase();
+                const title = name.charAt(0).toUpperCase() + name.slice(1);
+                const contentStart = paragraphEnd ? '' : '<p>';
+                return '<blockquote class="markdown-alert markdown-alert-' + name + '">' +
+                  '<p class="markdown-alert-title">' + title + '</p>' + contentStart;
+              }
+            );
+            return alerts.replace(/(\b(?:src|href)=["'])(\/(?!\/)[^"']*)/g, function (_, prefix, asset) {
+              return prefix + (asset.startsWith(base) ? asset : base + asset.slice(1));
+            });
+          });
+        }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>

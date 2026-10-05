@@ -19,6 +19,3 @@
    * **E. All of the above**
 
 </details>
-
-
-

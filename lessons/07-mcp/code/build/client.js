@@ -1,82 +1,69 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { CallToolResultSchema } from "@modelcontextprotocol/sdk/types.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
-import { OpenAI } from 'openai';
+import { CallToolResultSchema } from "@modelcontextprotocol/sdk/types.js";
+import { fileURLToPath } from "node:url";
+import { OpenAI } from "openai";
+import { z } from "zod";
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+    throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+const openai = new OpenAI({ baseURL: endpoint, apiKey, timeout: 60000 });
+const client = new Client({ name: "example-client", version: "1.0.0" });
 const transport = new StdioClientTransport({
-    command: "node",
-    args: ["build/index.js"]
+    command: process.execPath,
+    args: [fileURLToPath(new URL("./index.js", import.meta.url))]
 });
-const client = new Client({
-    name: "example-client",
-    version: "1.0.0"
-});
-await client.connect(transport);
-function toToolSchema(method, schema) {
-    return {
-        name: method,
-        description: `This is a tool that does ${method}`,
-        parameters: schema,
-    };
-}
-// list tools
-const { tools } = await client.listTools();
-tools.forEach((tool) => {
-    console.log(`Tool: ${tool.name}`);
-    console.log(`Description: ${tool.description}`);
-    console.log(`Input schema: ${JSON.stringify(tool.inputSchema)}`);
-});
-const toolsForLLM = tools.map((tool) => {
-    return toToolSchema(tool.name, tool.inputSchema);
-});
-console.log("Schema for tool", JSON.stringify(toolsForLLM, null, 2));
-// TODO feed this to an llm as functions
-const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com", // might need to change to this url in the future: https://models.github.ai/inference
-    apiKey: process.env.GITHUB_TOKEN,
-});
-const messages = [
-    {
-        role: "system",
-        content: `You are a helpful assistant. You can call functions to perform tasks. Make sure to parse the function call and arguments correctly.`
-    }, {
-        role: "user",
-        content: "Add 5 and 10",
-        name: "example-user" // Adding the required 'name' property for user role
-    }
-];
-openai.chat.completions.create({
-    model: 'gpt-4o',
-    messages: messages,
-    functions: toolsForLLM
-}).then((result) => {
-    console.log("Result", result.choices[0].message);
-}).catch((error) => {
-    console.error("Error:", error);
-});
-const result = await openai.chat.completions.create({
-    model: 'gpt-4o',
-    messages: messages,
-    functions: toolsForLLM
-});
-for (const choice of result.choices) {
-    // console.log("Result", choice.message);
-    let functionCall = choice.message?.function_call;
-    let functionName = functionCall?.name;
-    console.log("Function call: ", functionName);
-    let args = functionCall?.arguments;
-    await client.callTool({
-        name: functionName ?? "",
-        arguments: typeof args === "string" ? JSON.parse(args) : args ?? {}
-    }, CallToolResultSchema).then((result) => {
-        console.log("Result from tool: ", result);
+try {
+    await client.connect(transport);
+    const { tools: serverTools } = await client.listTools();
+    const allowedNames = new Set(serverTools.map(tool => tool.name));
+    const tools = serverTools.map(tool => ({
+        type: "function",
+        function: {
+            name: tool.name,
+            description: tool.description,
+            parameters: tool.inputSchema
+        }
+    }));
+    console.log("Available tools:", [...allowedNames]);
+    const messages = [
+        { role: "user", content: "Use the add tool to add 5 and 10." }
+    ];
+    const completion = await openai.chat.completions.create({
+        model, messages, tools, tool_choice: "required"
     });
+    const message = completion.choices[0]?.message;
+    if (!message?.tool_calls?.length)
+        throw new Error("The model did not request a tool.");
+    messages.push(message);
+    for (const call of message.tool_calls) {
+        if (call.type !== "function" || !allowedNames.has(call.function.name)) {
+            throw new Error("The model requested an unsupported MCP tool.");
+        }
+        const args = z.record(z.string(), z.unknown()).parse(JSON.parse(call.function.arguments));
+        const result = CallToolResultSchema.parse(await client.callTool({
+            name: call.function.name,
+            arguments: args
+        }));
+        const text = result.content.filter(item => item.type === "text").map(item => item.text).join("\n");
+        if (result.isError)
+            throw new Error(`MCP tool failed: ${text}`);
+        if (!text)
+            throw new Error("The MCP tool did not return text.");
+        console.log("Result from tool:", text);
+        messages.push({ role: "tool", tool_call_id: call.id, content: text });
+    }
+    const followUp = await openai.chat.completions.create({
+        model, messages, tools, tool_choice: "none"
+    });
+    const answer = followUp.choices[0]?.message?.content;
+    if (!answer?.trim())
+        throw new Error("The model did not return a final answer.");
+    console.log(answer);
 }
-// call tool
-// const result = await client.callTool({
-//   name: "add",
-//   arguments: {
-//     a: 5,
-//     b: 10
-//   }
-// });
-// console.log(`Result: ${JSON.stringify(result)}`);
+finally {
+    await client.close();
+}

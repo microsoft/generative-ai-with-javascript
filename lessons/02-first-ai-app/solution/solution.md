@@ -1,6 +1,6 @@
 Here's the solution
 
-```javascript 
+```javascript
 
 import { OpenAI } from "openai";
 // 1. Define the prompt
@@ -21,9 +21,16 @@ const messages = [
 // 2. Create client
 // -----------------------------------
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
 });
 
 
@@ -31,7 +38,7 @@ const openai = new OpenAI({
 // -----------------------------------
 
 const completion = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model,
     messages: messages,
 });
 

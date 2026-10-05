@@ -4,14 +4,13 @@
     "main": "solution.js",
     "type": "module",
     "scripts": {
-      "start": "node solution.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node --env-file-if-exists=../../../.env solution.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
-      "openai": "^4.91.1"
+        "openai": "^7.28.0"
     }
-  }
+}

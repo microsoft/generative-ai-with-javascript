@@ -1,191 +1,312 @@
-# Setting Up the Development Environment for This Course
+# Course Setup
 
-This lesson will guide you through setting up your development environment for this course. 
+Set up your tools, deploy a chat model in Microsoft Foundry, and configure this course's companion app. The app lets you speak with historical characters while you learn generative AI with JavaScript.
 
-There are many ways to set up your development environment, but we wanted to recommend a few options that will provide you with the best experience.
+Microsoft Foundry is a cloud service for deploying and using AI models. An application programming interface (API) lets your code send requests to that service. This course's companion app uses the Azure OpenAI-compatible API through the `openai` JavaScript package. You do not need an additional Foundry software development kit (SDK) or changes to the app's source code.
 
-- **Your chosen environment**. There's essentially two ways to set up your development environment for this course:
-  - **Option 1: GitHub Codespaces**: You can either use GitHub Codespaces. You can configure your GitHub Codespace by creating what's called a `.devcontainer` directory in the root of your repository. This will allow your GitHub Codespace environment to be pre-configured with all the tools and libraries you need so you can get started right away. See the file `.devcontainer/devcontainer.json` for installed Visual Studio Code extensions and other settings.
-  - **Option 2: Run locally**: set up your local machine. This will require you to install the necessary tools and libraries on your machine. A way to make this easier is to use a local devcontainer. This is a Docker container that has all the tools and libraries you need to run the app. You can find the `devcontainer.json` file in the `.devcontainer` directory.
-- **Access to AI models**. You can use GitHub Models or Azure OpenAI to interact with large language models. GitHub Models is free and easy to set up, while Azure OpenAI is a paid service that provides access to a wide range of AI models. How to set the latter up is covered [here](./getting-started-azure-openai.md).
+If you already have another OpenAI-compatible provider, use its API base URL, key, and model name with the same configuration variables. The Foundry resource steps below apply only to the Foundry option.
 
-## Which AI service should I use for this course?
+## Prerequisites
 
-We provide instructions for setting up your development environment with GitHub Models and Azure OpenAI. You can choose the one that best fits your needs. We recommend using GitHub Models for this course, but you can use any of these services.
+- A GitHub account for Codespaces or forking the course.
+- For Foundry, an Azure account with an active subscription and permission to create a resource, deploy a model, and read its API key.
+- Node.js Long Term Support (LTS).
+- Git and a text editor for local development. [Visual Studio Code](https://code.visualstudio.com/) is recommended.
+- Basic JavaScript and command line knowledge.
 
-## Choose your setup 
+> [!IMPORTANT]
+> Model usage can incur charges. Check deployment pricing, region availability, and quota (service usage limits) before creating resources. A GitHub account or Codespace does not supply your Foundry API key.
 
-> If **GitHub Models** is your choice, follow the rest of this document to set up your development environment with GitHub Models.
-> - **Azure OpenAI** have your eye? [This is the document for you](getting-started-azure-openai.md).
+## Choose Your Development Environment
 
-## Quick Start
+Use GitHub Codespaces or your local machine. Both options use the same model provider and `.env` configuration.
 
-The fastest way to get started is to use GitHub Codespaces as this will provide you with a pre-configured environment that has access to GitHub Models without any additional setup.
+### Option 1 : Creating a GitHub Codespace
 
-However, if you prefer to work on your local machine, there's a section below that will guide you through setting up your [local environment](#option-2--running-the-app-locally).
+1. Open [this repository](https://github.com/microsoft/generative-ai-with-javascript).
+2. Select **Fork** to create your own copy.
+3. In your fork, select **Code**, then **Codespaces**, then **Create codespace**.
+4. Wait for the environment to start. Open its terminal.
+5. Check the Node.js and npm versions:
 
-## GitHub Models explained
+   ```bash
+   node --version
+   npm --version
+   ```
 
-GitHub Models offers the following features:
+Use the LTS release, not the Current release. If you use nvm, run `nvm install` and `nvm use` from the repository root; `.nvmrc` selects the active LTS release. Continue with [Install Dependencies](#install-dependencies).
 
-- **Free access to AI models**: Experiment with various AI models for free.
-- **Interactive playground**: Test and interact with different models directly within your development environment.
-- **Reliable access**: Hosted within GitHub's infrastructure, these models offer reliable access and consistent performance.
+### Option 2 : Running the app locally
 
-### Free access to AI models
+1. Install [Node.js](https://nodejs.org/en/download) and [Git](https://git-scm.com/downloads) if needed.
+2. Check your tools:
 
-GitHub Models provides an intuitive way to experiment with various AI models directly within your development environment. This feature allows developers to test and interact with different models, understanding their capabilities and limitations before implementation.
+   ```bash
+   node --version
+   npm --version
+   git --version
+   ```
 
-### Interactive playground
+3. Clone the repository, or use the clone URL of your fork:
 
-To test out various AI models, GitHub Models offers an interactive playground. This feature allows developers to select from different models, input prompts, and evaluate model responses.
+   ```bash
+   git clone https://github.com/microsoft/generative-ai-with-javascript.git
+   cd generative-ai-with-javascript
+   ```
 
-> Here's a [playground](https://github.com/marketplace/models) for you to test and explore different AI models. 
+Continue with the commands below from the repository root.
 
-![GitHub Models playground](../images/playground.png)
+## Install Dependencies
 
-Additionally, developers can grab code snippets to integrate these models into their applications.
+Install the root packages and the companion app packages:
 
-![Playground code snippets](../images/playground-snippets.png)
+```bash
+npm ci
+npm ci --prefix app
+```
 
-Through a simple interface, you can explore model responses, evaluate performance, and determine the best fit for your application requirements. Hosted within GitHub's infrastructure, these models offer reliable access and consistent performance, making them ideal for development and testing phases. Best of all, there is a free tier to start your exploration without any cost.
+The app already includes `openai` and `dotenv`. Do not install `@azure/openai` or copy older Azure client code into `app.js`.
 
-**Getting started**
+Lesson packages are independent. Install their dependencies in the lesson directory when its instructions require it. TypeScript lessons have their own build commands. A global `tsx` installation is not required to run the companion app.
 
-To get started with GitHub Models, you need the following:
+## Set Up Microsoft Foundry
 
-- **A GitHub account**, you can sign up for free at GitHub.com.
-- **Optional: A personal access token**, this is something you will create in the next section. A token will uniquely identify you when you interact with GitHub Models. This step is optional if you're using GitHub Codespaces (as you can rely on the built-in token `GITHUB_TOKEN`) but mandatory if you're running the app locally.
+### 1. Create a Project
 
-## Optional: Setting up GitHub Access Tokens
+1. Sign in to the [Microsoft Foundry portal](https://ai.azure.com/).
+2. Use the new Foundry experience. Open the project selector and select **Create new project**.
+3. Enter a project name, such as `genai-javascript-course`.
+4. Open **Advanced options**. Select your subscription, resource group, and a region that supports your chosen model.
+5. Select **Create project** and wait for the project to be ready.
 
-> [!NOTE] 
-> You only need to do this step if you plan to use GitHub Models from your local machine. If you're using GitHub Codespaces, you can skip this step as there's a built-in variable called `GITHUB_TOKEN` that can access GitHub Models from within your GitHub Codespaces instance.
+If your account cannot create the resource or project, ask your Azure administrator for the required access. See the [official resource setup guide](https://learn.microsoft.com/en-us/azure/foundry/tutorials/quickstart-create-foundry-resources) for current portal steps and permissions.
 
-> [!TIP]
-> From a security standpoint, it's always a good idea to create a personal access token (PAT) with a limited scope and short expiration time.
+### 2. Deploy a Chat Model
 
-### Creating a Personal Access Token, PAT for GitHub Model access
+A deployment is a hosted model with a name that your application uses in API requests.
 
-1. Navigate to [GitHub Settings](https://github.com/settings/profile):
+1. Open **Discover**, then **Models**, and search for **gpt-5-mini**.
+2. Check the model's availability, deployment pricing, and quota.
+3. Select **Deploy**, then **Default settings**, or customize the deployment settings if needed.
+4. Wait for deployment to complete.
+5. Open the deployment details and record its deployment name. Use `gpt-5-mini` to match the example configuration, or use your own name and set `AI_MODEL` to that exact name.
 
-    - Click your profile picture in the top-right corner
-    - Select **Settings** from the dropdown menu
+In the classic portal, model deployment is under **Models + endpoints**. Portal labels can change; use the official setup guide linked above if your screen differs.
 
-    ![GitHub Settings](https://raw.githubusercontent.com/microsoft/Generative-AI-for-beginners-dotnet/main/02-SetupDevEnvironment/images/settings-github.png)
+If `gpt-5-mini` is not available, select another model that supports chat completions, such as `gpt-4.1`, and use its deployment name in `AI_MODEL`.
 
-1. Access [Developer Settings](https://github.com/settings/apps):
+**Models needed for this course:** One chat deployment is enough for the companion app and the basic CSV retrieval example in Lesson 5. Unlike the LangChain.js course, this setup does not require a second comparison model or a hosted embedding model. Deploy additional models only when your chosen exercise needs them.
 
-    - Scroll down the left sidebar
-    - Click on **Developer settings** (usually at the bottom)
+### 3. Get the API Key and Endpoint
 
-    ![Developer Settings](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/raw/main/02-SetupDevEnvironment/images/developer-settings-github.png)
+1. Open the Foundry resource associated with your project. Use its **Keys and Endpoint** page in the Azure portal, or the resource's endpoint and key details in Foundry.
+2. Copy an API key for that resource.
+3. Find its **Azure OpenAI resource endpoint**.
+4. Add `/openai/v1` to the resource endpoint if it is not already present.
 
-1. Generate a New Token:
+The API base URL must look like:
 
-    - Select **Personal access tokens** → **Tokens (classic)**
+```text
+https://your-resource.openai.azure.com/openai/v1
+```
 
-        ![Adding the Tokens(classic)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/raw/main/02-SetupDevEnvironment/images/tokens-classic-github.png)
+Use the resource endpoint and key from the same resource.
 
-    - In the dropdown in the middle of the page, click **Generate new token (classic)**
+> [!IMPORTANT]
+> Do not use a project URL ending in `/api/projects/...`, or a full `/chat/completions` request URL, as `AI_ENDPOINT`. The companion app needs the OpenAI-compatible API base URL. It adds the request path itself.
 
-        ![Create your Token](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/raw/main/02-SetupDevEnvironment/images/token-generate-github.png)
+This sample uses API-key authentication. If your organization does not permit it, ask your administrator for an approved learning resource or authentication approach. Do not disable organization security controls.
 
-    - Under "Note", provide a descriptive name (e.g., `GenAI-JavaScript-Course-Token`)
-    - Set an expiration date (recommended: 7 days for security best practices)
-    - There is no need adding any permissions to this token.
+## Configure Environment Variables
 
-> 💡 **Security Tip**: Always use the minimum required scope and shortest practical expiration time for your access tokens. This follows the principle of least privilege and helps maintain your account's tokens safe.
+Environment variables are configuration values that a running program can read. This app can load them from a private `.env` file instead of storing them in its source code.
 
-## Option 1 : Creating a GitHub Codespace
+### Create the File
+
+Create `.env` in the repository root, not in `app/`. If you already have a `.env` file, edit it instead of overwriting it.
+
+On macOS, Linux, WSL, or Codespaces:
+
+```bash
+cp .env.example .env
+```
+
+In Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+In Windows Command Prompt:
+
+```cmd
+copy .env.example .env
+```
+
+### Set Your Values
+
+Open `.env` in your editor:
+
+```dotenv
+AI_API_KEY=your_microsoft_foundry_api_key
+AI_ENDPOINT=https://your-resource.openai.azure.com/openai/v1
+AI_MODEL=gpt-5-mini
+```
+
+Replace the key and resource name. Set `AI_MODEL` to your actual deployment name, which can differ from the model's catalog name.
+
+The app reads the repository-root file automatically. Existing environment variables take priority over the file. Missing or blank settings stop the app with an error.
+
+The `.env` file is excluded from Git. Keep it private. Do not put keys in browser code, screenshots, issue reports, or commits. A GitHub personal access token is not a Foundry API key.
+
+### Use an Existing Environment File
+
+You can select another file with `ENV_FILE`. From the repository root on macOS, Linux, WSL, or Codespaces:
+
+```bash
+ENV_FILE="$HOME/.env" npm --prefix app start
+```
+
+In PowerShell:
+
+```powershell
+$env:ENV_FILE = "$HOME\.env"
+npm --prefix app start
+```
+
+An unreadable explicit file stops the app. Do not copy shared credentials into the repository when you can use the existing file.
+
+## Test Your Setup
+
+### Start the Companion App
+
+From the repository root:
+
+```bash
+npm --prefix app start
+```
+
+The terminal should show:
+
+```text
+Server is running on http://localhost:3000
+```
+
+1. Open `http://localhost:3000` locally. In Codespaces, open port 3000 from the **Ports** panel.
+2. Keep the forwarded port **Private**. The sample does not authenticate HTTP callers.
+3. Select Ada Lovelace from the character images.
+4. Send a short message, such as `Tell me about your work in mathematics.`
+5. Check that a response appears in the chat panel.
+
+A successful response confirms that your endpoint, key, and deployment work together. The response text can vary. The terminal startup message alone does not verify model access.
+
+Use **Ctrl+C** to stop the app.
+
+### Run the Local Regression Tests
+
+From the repository root:
+
+```bash
+npm --prefix app test
+```
+
+These tests check request validation, chat behavior, and SDK restrictions. They use local test services and do not verify your Foundry credentials.
+
+## Use the Configuration in Lesson Samples
 
 > [!NOTE]
-> You don't strictly need to create a GitHub Codespace instance to test out GitHub Models, but it's a nice way to get an environment where extensions and tools are pre-installed and ready to go. Let's cover first how to create a GitHub Codespace and in the next section, it will be explained how to run locally. 
+> The companion app and lesson AI clients use `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL`. Lesson package scripts load the repository-root `.env` when it exists. Existing environment variables take priority. Standalone scripts need the same variables before they start.
 
-Let's create a GitHub Codespace to use for the rest of this course.
+The lesson clients validate the required variables before creating an OpenAI client. This is the connection pattern:
 
-1. Open this repository's main page in a new window by [right-clicking here](https://github.com/microsoft/generative-ai-with-javascript) and selecting **Open in new window** from the context menu
-1. Fork this repo into your GitHub account by clicking the **Fork** button in the top right corner of the page
-1. Click the **Code** dropdown button and then select the **Codespaces** tab
-1. Select the **+** option.
+```javascript
+import { OpenAI } from 'openai';
 
-    ![Create Codespace](../images/create-codespace.png)
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
 
-### Verifying your Codespace is running correctly with GitHub Models
+const openai = new OpenAI({
+  baseURL: endpoint,
+  apiKey
+});
 
-Once your Codespace is fully loaded and configured, let's run a sample app to verify everything is working correctly.
+const completion = await openai.chat.completions.create({
+  model,
+  messages: [{ role: 'user', content: 'Tell me about Ada Lovelace.' }]
+});
 
-> [!NOTE]
-> If you are using a personal access token, you need to update the code in `app.js` in the `/app` directory to use your token. You can access your token using `process.env.<name of access token>`. If not, you can skip this instruction in this note.
+console.log(completion.choices[0]?.message?.content);
+```
 
-Follow these steps to run the sample app:
+For Lesson 2, install its own dependencies and run its start script:
 
-1. Open the terminal. Open a terminal window (if it's not open already).
+```bash
+cd lessons/02-first-ai-app/sample-app
+npm ci
+npm start
+```
 
-1. Switch to the proper directory by running the following command (providing you're in the repo root):
+For an existing home environment file, run `node --env-file="$HOME/.env" app.js` in that lesson directory instead. Use the lesson's build and run instructions for TypeScript or MCP examples. `ENV_FILE` is the companion app's file-selection option; Node's `--env-file` selects a file for a standalone lesson script.
 
-    ```bash
-    cd app
-    ```
+Lesson 5 has an independent package. Run `npm ci --prefix lessons/05-rag` from the repository root, then use `npm --prefix lessons/05-rag run cars` or `npm --prefix lessons/05-rag run wikipedia`.
 
-1. Install all the dependencies by running the following command:
+Lesson 4 includes a native JSON Schema example. Run `npm --prefix lessons/04-structured-output/sample-app run structured` to parse a validated travel request with the current OpenAI SDK and Zod.
 
-    ```bash
-    npm install
-    ```
+For MCP lessons, `npm run build` only compiles the code. `npm run client` builds and runs the client, while `npm start` runs the compiled server. Clients close their transport after completing their work.
 
-1. Run the application by running the following command:
+Models can support different request parameters. If a lesson sets parameters that your deployment rejects, such as `temperature` or `max_tokens`, use a compatible model or update the request for that model.
 
-    ```bash
-    npm start
-    ```
+## Optional: Use GitHub Copilot for Companion Chat
 
-1. It may take a couple of seconds, but eventually the application should start. You should see a message link to open a browser to `http://localhost:3000` displayed in the terminal.
+The companion app also has a Copilot SDK backend. This option requires GitHub Copilot access rather than a Foundry deployment.
 
-> 🙋 **Need help?**: Something not working? [Open an issue](https://github.com/microsoft/generative-ai-with-javascript/issues/new?template=Blank+issue) and we'll help you out.
+From the repository root:
 
+```bash
+npm --prefix app run start:sdk
+```
 
+Use a Copilot-compatible token or GitHub CLI authentication as described in the [app guide](../../app/README.md#run). This option is for companion chat; it does not configure the independent lesson samples.
 
-## Option 2 : Running the app locally
+The SDK backend is chat-only. Do not enable host tools or approve tool permissions to make chat work. Keep its forwarded port private.
 
-Even if GitHub Codespaces is a great way to get started, you can also run the app locally on your machine. To do so, you need to do the following. Start this step by copying the value for your token you created earlier in GitHub.
+## Troubleshooting
 
-- **Create and set an environment variable**: You need to set an environment variable with the token you created earlier. Create the variable and assign it the value of the token.
+| Problem | What to check |
+| --- | --- |
+| Node.js version error | Select Node.js LTS. Use `nvm use` if nvm is installed. |
+| `Cannot find module` | Run `npm ci` in the package directory. Root and app dependencies are separate. |
+| `AI_ENDPOINT`, `AI_API_KEY`, or `AI_MODEL` is required | Check the repository-root `.env`, spelling, and whether an existing environment variable overrides the file. |
+| The environment file could not be read | Check the `ENV_FILE` path and file permissions. |
+| HTTP 401 or invalid API key | Use a complete key from the same resource as the endpoint. Ask your administrator whether API-key authentication is allowed. |
+| HTTP 404 or deployment not found | Check the `/openai/v1` base URL and exact deployment name in `AI_MODEL`. |
+| HTTP 400 or unsupported parameter | Confirm that the chosen model supports the lesson's API and request parameters. |
+| HTTP 429 or a rate limit error | Wait before retrying. Check deployment quota and usage in Foundry. |
+| A generic error appears in the chat | Read the server terminal for the provider error. Remove keys and private resource details before sharing it. |
+| Port 3000 is in use | Stop your own earlier app instance, or set another `PORT` value before starting the app. |
 
-    on macOS or Linux, you can set an environment variable using the following command:
+## Setup Checklist
 
-    ```sh
-    export GITHUB_TOKEN=<your-token value>
-    ```
+- [ ] Node.js LTS is available.
+- [ ] Root and companion app dependencies are installed.
+- [ ] A chat model is deployed in Microsoft Foundry.
+- [ ] The deployment name, API key, and `/openai/v1` endpoint are in `.env` or a selected `ENV_FILE`.
+- [ ] The companion app returns a real model response.
+- [ ] Local regression tests pass.
+- [ ] Credentials remain private and any forwarded app port is private.
 
-    on Windows, you can set an environment variable using the following command:
+When you finish using the Azure resources, remove only deployments or resources that you created for this course. Do not delete shared resources without their owner's approval.
 
-    ```sh
-    set GITHUB_TOKEN=<your-token value>
-    ```
+## Next Steps and Resources
 
-    > [!TIP]
-    > You're recommended to create an `.env` file in the root and add [dotenv](https://www.npmjs.com/package/dotenv) to your project to manage your environment variables. Then you can access your token using `process.env.GITHUB_TOKEN`.
+- Continue with [Lesson 1: Introduction to Generative AI](../../lessons/01-intro-to-genai/README.md).
+- Read the [companion app guide](../../app/README.md).
+- See [Microsoft Foundry resource setup](https://learn.microsoft.com/en-us/azure/foundry/tutorials/quickstart-create-foundry-resources) and [Azure OpenAI-compatible endpoint guidance](https://learn.microsoft.com/en-us/azure/foundry-classic/openai/how-to/switching-endpoints).
+- Read [GitHub Codespaces documentation](https://docs.github.com/en/codespaces).
+- For course problems, use this repository's [issues page](https://github.com/microsoft/generative-ai-with-javascript/issues).
 
-    ```javascript
-    // add to top of app.js file in /app directory
- 
-    require('dotenv').config();
-    const token = process.env.TOKEN; // your token value
-
-    ```
-
-- **Run the app**: You can run the app by following the same steps as above, but instead of running `npm start` in the Codespace terminal, you can run it in your local terminal.
-
-## Summary
-
-In this lesson, you learned how to set up your development environment for the rest of the course. You created a GitHub Codespace or did a local setup and configured it to use GitHub Models. You also learned how to create a personal access token for GitHub Models and how to run a sample application to verify everything is working correctly.
-
-### Additional Resources
-
-You're encouraged to explore the following resources to deepen your understanding:
-
-- [Azure OpenAI](getting-started-azure-openai.md) to learn how to use Azure OpenAI in your development environment.
-- [GitHub Codespaces Documentation](https://docs.github.com/en/codespaces)
-- [GitHub Models Documentation](https://docs.github.com/en/github-models/prototyping-with-ai-models)
-
+The setup flow follows the [LangChain.js course setup](https://github.com/microsoft/langchainjs-for-beginners/blob/main/00-course-setup/README.md), with this course's repository, packages, model requirements, and companion app commands.

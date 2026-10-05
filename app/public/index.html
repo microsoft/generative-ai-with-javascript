@@ -80,11 +80,13 @@
     const sendBtn = document.querySelector("#sendBtn");
     const chatInput = document.querySelector("#chatInput");
     const conversationTpl = document.querySelector('#conversationTpl');
+    const responseWindow = document.querySelector('#responseWindow');
 
 
     let currentCharacter = characters[0];
     const maxVolume = 0.5;
     let utterance = null;
+    let sending = false;
 
     card.addEventListener("mousemove", (e) => {
       const { clientX, clientY } = e;
@@ -129,22 +131,22 @@
     sendBtn.addEventListener("click", send);
 
     chatInput.addEventListener("input", (e) => {
-      if (e.target.value) {
-        sendBtn.disabled = false;
-      } else {
-        sendBtn.disabled = true;
-      }
+      sendBtn.disabled = sending || !e.target.value;
     });
 
-    chatInput.addEventListener("keypress", (e) => {
+    chatInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
+        e.preventDefault();
         send();
       }
     });
 
     function send() {
       const message = chatInput.value;
-      if (!message) return;
+      if (!message || sending) return;
+      const requestedCharacter = currentCharacter;
+      sending = true;
+      sendBtn.disabled = true;
 
 
       appendConversation({
@@ -163,26 +165,38 @@
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ message, character: currentCharacter })
+        body: JSON.stringify({ message, character: { name: requestedCharacter.name } })
       })
-        .then(response => response.json())
+        .then(async response => {
+          const data = await response.json();
+          if (!response.ok) {
+            throw new Error(data.message || 'The request failed.');
+          }
+          return data;
+        })
         .then(data => {
           appendConversation({
             type: 'AGENT',
             message: data.answer,
-            character: currentCharacter
+            character: requestedCharacter
           });
 
           if (speakToggle.checked) {
             console.log("speaking");
-            say(data.answer);
+            say(data.answer, requestedCharacter);
           }
 
         })
         .catch(error => {
-          console.error('Error:', error.error);
+          console.error('Error:', error.message);
+          appendConversation({
+            type: 'AGENT',
+            message: error.message,
+            character: requestedCharacter
+          });
         })
         .finally(() => {
+          sending = false;
           chatInput.value = '';
           chatInput.disabled = false;
           chatInput.focus();
@@ -191,9 +205,9 @@
     }
 
 
-    function say(text) {
+    function say(text, character = currentCharacter) {
       utterance = new SpeechSynthesisUtterance(text);
-      utterance.voice = speechSynthesis.getVoices()[currentCharacter.voice || 0];
+      utterance.voice = speechSynthesis.getVoices()[character.voice || 0] || null;
       utterance.rate = 1;
       utterance.pitch = 1;
       utterance.volume = 1;
@@ -270,14 +284,8 @@
     function loadCharacterFromUrl() {
       const urlParams = new URLSearchParams(window.location.search);
       const characterName = urlParams.get('character');
-      if (characterName) {
-        const character = characters.find(c => c.name === characterName);
-        if (character) {
-          setCharacter(character, true);
-        }
-      }else {
-        setCharacter(currentCharacter, true);
-      }
+      const character = characters.find(c => c.name === characterName) || currentCharacter;
+      setCharacter(character, true);
     }
 
     loadCharacterFromUrl();

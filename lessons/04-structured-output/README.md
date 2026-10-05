@@ -10,18 +10,6 @@ In this chapter you will learn:
 
 If you haven't already, set up your development environment. Here's how you can do it: [Setup your environment](/docs/setup/README.md).
 
-## Related Resources
-
-It's worth rewatching the video on prompt engineering as it lays the foundation for what you're about to learn in this chapter.
-
-[![Watch a short video about prompt engineering](https://img.youtube.com/vi/gQ6TlyxBmWs/0.jpg)](https://www.youtube.com/watch?v=gQ6TlyxBmWs&list=PLlrxD0HtieHi5ZpsHULPLxm839IrhmeDk&index=3)
-
-_This video offers an introduction to improving your "prompting" skills, teaching you how to give clearer and more effective instructions to the AI to achieve better results._
-
-*🎥 Click on the image above to watch a short video about prompt engineering*
-
-💼 Slides: [Prompt engineering](/videos/slides/02-prompt-engineering.pptx)
-
 ## Narrative - Out of the frying pan and into the fire
 
 > [!NOTE]
@@ -55,8 +43,6 @@ Leonardo da Vinci steps forward, his eyes wide with wonder.
 **Leonardo:** "Incredible," he murmurs, running his fingers over the carvings. "But I hope this was of no importance." 
 
 Before you can react, a group of Aztec soldiers approaches.
-
-![Meeting with Aztecs](https://raw.githubusercontent.com/microsoft/generative-ai-with-javascript/main/lessons/04-structured-output/assets/meeting.png)
 
 **Soldier leader:** "Who are you, and what have you done?" he demands in Nahuatl.
 
@@ -126,14 +112,14 @@ If you want to interact with Montezuma, run the [Characters](/app/README.md) app
 
 1. Start a [![GitHub Codespace](https://img.shields.io/badge/GitHub-Codespace-brightgreen)](https://codespaces.new/microsoft/generative-ai-with-javascript)
 2. Navigate to _/app_ in the repo root.
-3. Locate the console and run `npm install` followed by `npm start`.
+3. Locate the console and run `npm ci` followed by `npm start`.
 4. Once it appears, select the "Open in Browser" button.
 5. Chat with Montezuma.
 
 For a more detailed explanation of the app, see [Detailed app explanation](/lessons/01-intro-to-genai/README.md#interact-with-dinocrates).
 
 > [!NOTE]
- > If you're running the project locally on your machine, please review the QuickStart guide to get a [GitHub personal access](/docs/setup/README.md#creating-a-personal-access-token-pat-for-github-model-access) token setup and replace the key in the code.
+> Configure `AI_ENDPOINT`, `AI_API_KEY`, and `AI_MODEL` in the repository-root `.env` for both local development and Codespaces. See the [setup guide](/docs/setup/README.md#configure-environment-variables).
 
 ## Structured Output
 
@@ -518,11 +504,10 @@ This combination of presenting skills and parameters and extracting data from pr
 
 **Instruction:** Write a prompt that asks for the boot sequence for the aerial screw, the text should be mirrored and encoded with a Caesar cipher with a shift of 3. Respond with the encoded text.
 
-See the [sample app](/app/README.md) for code to get started with. It contains a Node.js project with all the dependencies you need.
+See the [lesson starter](/lessons/04-structured-output/sample-app/app.js) for code to get started with. Run `npm ci` and `npm start` in `lessons/04-structured-output/sample-app`.
 
-> NOTE: If you haven't created a Codespace, please do so now as you will need it to get the AI communication in the sample app to work.
->
-> See the _Option 1 : Creating a GitHub Codespace*_*_ section of the [Setup your environment](/docs/setup/README.md) document.
+> [!NOTE]
+> Both local development and Codespaces work. Configure the model endpoint, key, and deployment in the repository-root `.env` as described in the [setup guide](/docs/setup/README.md).
 
 ## Solution
 
@@ -558,4 +543,16 @@ C. Generating unstructured text.
 
 ## Self-Study Resources
 
-- [Generative AI with JavaScript video series](https://aka.ms/genai-js)
+
+## Validated JSON with the Current SDK
+
+Run the native JSON Schema example from the repository root:
+
+```bash
+npm ci --prefix lessons/04-structured-output/sample-app
+npm --prefix lessons/04-structured-output/sample-app run structured
+```
+
+The sample uses `chat.completions.parse`, `zodResponseFormat`, and Zod to validate `skill`, `parameters`, and `extracted_data`. Missing results and model refusals produce errors.
+
+[structured-json.js](/lessons/04-structured-output/sample-app/structured-json.js)

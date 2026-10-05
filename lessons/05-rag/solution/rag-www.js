@@ -6,6 +6,13 @@
 import process from "node:process";
 import { OpenAI } from "openai";
 
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
+
 // 1. Ask a question about the web
 // -------------------------------
 
@@ -15,9 +22,16 @@ const question = `why did you create the web?`;
 // -------------------------------------------------
 
 // Load text data from Wikipedia's Tim Berners-Lee page
-const response = await fetch('https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&redirects=true&explaintext&titles=Tim%20Berners-Lee');
+const response = await fetch('https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&redirects=true&explaintext&titles=Tim%20Berners-Lee', {
+  headers: { "User-Agent": "GenerativeAIJavaScriptCourse/1.0 (https://github.com/microsoft/generative-ai-with-javascript)" },
+  signal: AbortSignal.timeout(30000)
+});
+if (!response.ok) throw new Error(`Wikipedia request failed: HTTP ${response.status}.`);
 const data = await response.json();
-const wikipediaInfo = Object.values(data.query.pages)[0]?.extract;
+const wikipediaInfo = data.query?.pages && Object.values(data.query.pages)[0]?.extract;
+if (typeof wikipediaInfo !== "string" || !wikipediaInfo.trim()) {
+  throw new Error("Wikipedia did not return source text.");
+}
 
 // 3. Context augmentation: create a combined prompt with the information
 // ----------------------------------------------------------------------
@@ -40,18 +54,26 @@ ${question}
 // -----------------------------------------------------------------------
 
 const openai = new OpenAI({
-  baseURL: "https://models.inference.ai.azure.com",
-  apiKey: process.env.GITHUB_TOKEN,
+  baseURL: endpoint,
+  apiKey,
+  timeout: 60000,
 });
 
 const chunks = await openai.chat.completions.create({
-  model: "gpt-4o-mini",
+  model,
   messages: [{ role: "user", content: augmentedPrompt }],
   stream: true,
 });
 
 console.log(`You:\n${question}\n\nTim:`);
 
+let receivedText = false;
 for await (const chunk of chunks) {
-  process.stdout.write(chunk.choices[0].delta.content ?? "");
+  const text = chunk.choices[0]?.delta.content;
+  if (text) {
+    receivedText = true;
+    process.stdout.write(text);
+  }
 }
+if (!receivedText) throw new Error("The model did not return an answer.");
+process.stdout.write("\n");

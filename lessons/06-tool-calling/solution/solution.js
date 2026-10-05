@@ -1,148 +1,105 @@
-import { OpenAI } from 'openai';
+import { OpenAI } from "openai";
 
-// 1: Define the functions
+const endpoint = process.env.AI_ENDPOINT?.trim();
+const apiKey = process.env.AI_API_KEY?.trim();
+const model = process.env.AI_MODEL?.trim();
+if (!endpoint || !apiKey || !model) {
+  throw new Error("Set AI_ENDPOINT, AI_API_KEY, and AI_MODEL before running the sample.");
+}
 
 function calculateDistance(lat1, long1, lat2, long2) {
-    // Perform the task of calculating the distance between two points
-    // Return the distance between the points
-    return Math.sqrt((lat2 - lat1) ** 2 + (long2 - long1) ** 2);
+  return Math.hypot(lat2 - lat1, long2 - long1);
 }
 
 function getGpsPosition(lat, long) {
-    // Perform the task of getting the GPS position of the current location
-    // Return the GPS position
-    return { lat: 7.5, long: 134.5 };
+  return { lat: 7.5, long: 134.5 };
 }
 
 function getWeatherForecast(lat, long) {
-    // Perform the task of getting the weather forecast for a given location
-    // Return the weather forecast
-    return "Sunny";
+  return "Sunny";
 }
 
-// 2: create metadata for the functions
 const calculateDistanceJson = {
-    name: "calculate-distance",
-    description: "Calculates th distance between two points",
-    parameters: {
-      type: "object",
-      properties: {
-        lat1: {
-          type: "number",
-          description: "The latitude of the first point",
-        },
-        long1: {
-          type: "number",
-          description: "The longitude of the first point",
-        },
-        lat2: {
-          type: "number",
-          description: "The latitude of the second point",
-        },
-        long2: {
-          type: "number",
-          description: "The longitude of the second point",
-        },
-      },
-      required: ["lat1", "long1", "lat2", "long2"],
+  name: "calculate-distance",
+  description: "Calculate a demonstration distance in coordinate units",
+  strict: true,
+  parameters: {
+    type: "object",
+    properties: {
+      lat1: { type: "number" }, long1: { type: "number" },
+      lat2: { type: "number" }, long2: { type: "number" }
     },
-    output: { type: "number" }
-  };
-
+    required: ["lat1", "long1", "lat2", "long2"],
+    additionalProperties: false
+  }
+};
 const getGpsPositionJson = {
   name: "get-gps-position",
-  description: "Gets the GPS position of the current location",
+  description: "Return simulated GPS coordinates for this fictional exercise",
+  strict: true,
   parameters: {
     type: "object",
-    properties: {
-        lat: {
-        type: "number",
-        description: "The latitude of the first point",
-        },
-        long: {
-        type: "number",
-        description: "The longitude of the first point",
-        },
-    },
+    properties: { lat: { type: "number" }, long: { type: "number" } },
     required: ["lat", "long"],
-  },
-  output: { type: "object", properties: { lat: "number", long: "number" } }
-}
-
+    additionalProperties: false
+  }
+};
 const getWeatherForecastJson = {
   name: "get-weather-forecast",
-  description: "Gets the weather forecast for a given location",
+  description: "Return a simulated weather forecast",
+  strict: true,
   parameters: {
     type: "object",
-    properties: {
-        lat: {
-        type: "number",
-        description: "The latitude of the location",
-        },
-        long: {
-        type: "number",
-        description: "The longitude of the location",
-        },
-    },
+    properties: { lat: { type: "number" }, long: { type: "number" } },
     required: ["lat", "long"],
-  },
-  output: { type: "string" }
-}
-
-// 3: create a tools object with the functions
-const tools = {
-  [calculateDistanceJson.name]: calculateDistance,
-  [getGpsPositionJson.name]: getGpsPosition,
-  [getWeatherForecastJson.name]: getWeatherForecast
+    additionalProperties: false
+  }
 };
 
-// 4: create an OpenAI instance with the tools
-const openai = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
-    apiKey: process.env.GITHUB_TOKEN,
-});
-
-// 5: create messages to test the functions
-// enable one of these messages at a time to test the functions
-const messages = [
-  {
-    role: "user",
-    content: `We need to know where to land, here's the coordinates: 7.5, 134.5. `,
-  },
-  // {
-  //   role: "user",
-  //   content: `What is the distance between the points 7.5, 134.5 and 8.5, 135.5?`,
-  // },
-  // {
-  //   role: "user",
-  //   content: `What is the weather forecast for the location 7.5, 134.5?`,
-  // },
-];
-
-// 6: make a chat completion
-async function main(){
-  const result = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    messages: messages,
-    functions: [calculateDistanceJson, getGpsPositionJson, getWeatherForecastJson]
+function coordinates(args, names) {
+  return names.map(name => {
+    if (!Number.isFinite(args[name])) throw new Error(`${name} must be a finite number.`);
+    return args[name];
   });
-
-    // 7: interpret the result
-    for (const choice of result.choices) {
-        // console.log("Result", choice.message);
-
-        let functionCall = choice.message?.function_call;
-        let functionName = functionCall?.name;
-        let args = JSON.parse(functionCall?.arguments);
-        // console.log("Wants to call: ", choice.message?.function_call);
-        // console.log("With args: ", args);
-        if (functionName && functionName in tools) {
-            console.log(`Calling [${functionName}]`);
-            const toolFunction = tools[functionName];
-            const toolResponse = toolFunction(...Object.values(args)); // Extract values from args and spread them
-            console.log("Result from [tool] calling: ", toolResponse);
-        }
-    }
 }
 
-main();
+const handlers = {
+  [calculateDistanceJson.name]: args =>
+    calculateDistance(...coordinates(args, ["lat1", "long1", "lat2", "long2"])),
+  [getGpsPositionJson.name]: args => getGpsPosition(...coordinates(args, ["lat", "long"])),
+  [getWeatherForecastJson.name]: args => getWeatherForecast(...coordinates(args, ["lat", "long"]))
+};
+const tools = [calculateDistanceJson, getGpsPositionJson, getWeatherForecastJson].map(definition => ({
+  type: "function",
+  function: definition
+}));
+const openai = new OpenAI({ baseURL: endpoint, apiKey, timeout: 60000 });
+const messages = [{
+  role: "user",
+  content: "Use the GPS tool to get the simulated position for coordinates 7.5, 134.5."
+}];
+
+const completion = await openai.chat.completions.create({
+  model, messages, tools, tool_choice: "required"
+});
+const message = completion.choices[0]?.message;
+if (!message?.tool_calls?.length) throw new Error("The model did not request a tool.");
+messages.push(message);
+for (const call of message.tool_calls) {
+  if (call.type !== "function" || !Object.hasOwn(handlers, call.function.name)) {
+    throw new Error("The model requested an unsupported tool.");
+  }
+  const args = JSON.parse(call.function.arguments);
+  if (!args || typeof args !== "object" || Array.isArray(args)) {
+    throw new Error("Tool arguments must be a JSON object.");
+  }
+  const result = handlers[call.function.name](args);
+  console.log(`Result from [${call.function.name}]:`, result);
+  messages.push({ role: "tool", tool_call_id: call.id, content: JSON.stringify(result) });
+}
+const followUp = await openai.chat.completions.create({
+  model, messages, tools, tool_choice: "none"
+});
+const answer = followUp.choices[0]?.message?.content;
+if (!answer?.trim()) throw new Error("The model did not return a final answer.");
+console.log(answer);

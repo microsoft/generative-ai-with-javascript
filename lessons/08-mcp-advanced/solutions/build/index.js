@@ -1,31 +1,37 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-// Create an MCP server
-const server = new McpServer({
-    name: "Demo",
-    version: "1.0.0"
-});
-// Add an addition tool
-server.tool("characterDetails", { name: z.string() }, async ({ name }) => {
-    console.log(`Received character name: ${name}`);
-    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`; // Changed 'title' to 'name'
-    const response = await fetch(url);
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+async function summary(name) {
+    const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`, {
+        headers: { "User-Agent": "GenerativeAIJavaScriptCourse/1.0 (https://github.com/microsoft/generative-ai-with-javascript)" },
+        signal: AbortSignal.timeout(30000)
+    });
     if (!response.ok)
-        throw new Error("Failed to fetch character details");
+        throw new Error(`Wikipedia request failed: HTTP ${response.status}.`);
     const data = await response.json();
-    const responseText = data.extract; // This contains the summary text
-    return {
-        content: [{ type: "text", text: `Character: ${responseText}` }]
-    };
-});
-// Start receiving messages on stdin and sending messages on stdout
-async function main() {
-    const transport = new StdioServerTransport();
-    await server.connect(transport);
-    console.error("MCPServer started on stdin/stdout");
+    return z.object({ extract: z.string().min(1) }).parse(data).extract;
 }
-main().catch((error) => {
-    console.error("Fatal error: ", error);
-    process.exit(1);
-});
+export function createServer(getSummary = summary) {
+    const server = new McpServer({ name: "Demo", version: "1.0.0" });
+    server.registerTool("characterDetails", {
+        description: "Get a Wikipedia summary of a historical character",
+        inputSchema: { name: z.string().trim().min(1).max(200) }
+    }, async ({ name }) => ({
+        content: [{ type: "text", text: `Character: ${await getSummary(name)}` }]
+    }));
+    server.registerTool("place", {
+        description: "Get a Wikipedia summary of a place",
+        inputSchema: { name: z.string().trim().min(1).max(200) }
+    }, async ({ name }) => ({
+        content: [{ type: "text", text: `Place: ${await getSummary(name)}` }]
+    }));
+    return server;
+}
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+    createServer().connect(new StdioServerTransport()).catch(error => {
+        console.error("Error in server:", error instanceof Error ? error.message : String(error));
+        process.exitCode = 1;
+    });
+}
